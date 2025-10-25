@@ -64,17 +64,21 @@ model LearningPathEnrollment {
 }
 
 model CurriculumStandard {
-  id                 String          @id @default(cuid())
-  bnccCode           String
-  competency         String
-  habilidades        String
-  description        String?
-  ageGroupId         String
-  ageGroup           AgeGroup        @relation(fields: [ageGroupId], references: [id], onDelete: Cascade)
-  contentModules     ContentModule[]
-  activities         Activity[]
-  createdAt          DateTime        @default(now())
-  updatedAt          DateTime        @updatedAt
+  id                   String          @id @default(cuid())
+  bnccCode             String
+  componenteCurricular String          @default("")
+  unidadeTematica      String          @default("")
+  objetoConhecimento   String          @default("[]")
+  competency           String
+  habilidades          String
+  description          String?
+  referencias          String?
+  ageGroupId           String
+  ageGroup             AgeGroup        @relation(fields: [ageGroupId], references: [id], onDelete: Cascade)
+  contentModules       ContentModule[]
+  activities           Activity[]
+  createdAt            DateTime        @default(now())
+  updatedAt            DateTime        @updatedAt
 
   @@unique([bnccCode, ageGroupId])
 }
@@ -86,6 +90,7 @@ model ContentModule {
   subtitle              String?
   description           String?
   theme                 String?
+  learningOutcomes      String?
   ageGroupId            String
   ageGroup              AgeGroup            @relation(fields: [ageGroupId], references: [id], onDelete: Cascade)
   learningPathId        String?

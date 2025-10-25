@@ -1,0 +1,226 @@
+{
+  "generatedAt": "2024-11-07",
+  "source": "docs/BNCC_EI_EF_110518_versaofinal_site.pdf",
+  "standards": [
+    {
+      "bnccCode": "EI03ET04",
+      "ageGroupSlug": "educacao-infantil",
+      "etapa": "Educação Infantil",
+      "componenteCurricular": "Campos de Experiência - Traços, Sons, Cores e Formas",
+      "unidadeTematica": "Expressões corporais e artísticas",
+      "objetoConhecimento": [
+        "Linguagens corporais e gestuais nas brincadeiras",
+        "Exploração de sons, ritmos e movimentos" 
+      ],
+      "competency": "Expressar-se por meio de gestos, sons, ritmos e movimentos nas interações do cotidiano.",
+      "habilidades": [
+        {
+          "codigo": "EI03ET04",
+          "descricao": "Expressar-se por meio de gestos, sons, ritmos e movimentos nas interações do cotidiano."
+        },
+        {
+          "codigo": "EI03EF01",
+          "descricao": "Participar de brincadeiras de dramatização, imitando, inventando personagens e enredos."
+        }
+      ],
+      "descricao": "Favorece a expressão artística e a comunicação corporal em contextos lúdicos.",
+      "referencias": [
+        {
+          "documento": "BNCC - Educação Infantil",
+          "secao": "Campos de experiências",
+          "paginaInicial": 45,
+          "paginaFinal": 47
+        }
+      ]
+    },
+    {
+      "bnccCode": "EF01LP06",
+      "ageGroupSlug": "fundamental-anos-iniciais",
+      "etapa": "Ensino Fundamental - Anos Iniciais",
+      "componenteCurricular": "Língua Portuguesa",
+      "unidadeTematica": "Leitura/escuta (compreensão)",
+      "objetoConhecimento": [
+        "Reconstrução de sentidos de textos literários e não literários",
+        "Relações entre sons, letras e palavras na alfabetização"
+      ],
+      "competency": "Ler e compreender textos curtos identificando assunto, personagens, locais e ações principais.",
+      "habilidades": [
+        {
+          "codigo": "EF01LP06",
+          "descricao": "Ler e compreender, com ajuda de professor ou colegas, textos curtos, identificando assunto, personagens, local e tempo de acontecimento."
+        }
+      ],
+      "descricao": "Promove o contato com textos curtos e cotidianos para consolidar estratégias de leitura inicial.",
+      "referencias": [
+        {
+          "documento": "BNCC - Língua Portuguesa",
+          "secao": "Ensino Fundamental Anos Iniciais",
+          "paginaInicial": 93,
+          "paginaFinal": 95
+        }
+      ]
+    },
+    {
+      "bnccCode": "EF35LP20",
+      "ageGroupSlug": "fundamental-anos-iniciais",
+      "etapa": "Ensino Fundamental - Anos Iniciais (3º ao 5º ano)",
+      "componenteCurricular": "Língua Portuguesa",
+      "unidadeTematica": "Produção de textos",
+      "objetoConhecimento": [
+        "Planejamento e produção de textos coesos",
+        "Adequação de registros para público conhecido"
+      ],
+      "competency": "Planejar, produzir e revisar textos de circulação escolar, considerando destinatário e finalidade comunicativa.",
+      "habilidades": [
+        {
+          "codigo": "EF35LP20",
+          "descricao": "Planejar e produzir, com a ajuda do professor, textos de autoria própria, considerando a situação comunicativa e o gênero em foco."
+        }
+      ],
+      "descricao": "Estimula práticas de escrita colaborativa com foco em propósito comunicativo real.",
+      "referencias": [
+        {
+          "documento": "BNCC - Língua Portuguesa",
+          "secao": "Ensino Fundamental Anos Iniciais",
+          "paginaInicial": 118,
+          "paginaFinal": 121
+        }
+      ]
+    },
+    {
+      "bnccCode": "EF05MA08",
+      "ageGroupSlug": "fundamental-anos-iniciais",
+      "etapa": "Ensino Fundamental - Anos Iniciais",
+      "componenteCurricular": "Matemática",
+      "unidadeTematica": "Números",
+      "objetoConhecimento": [
+        "Problemas de multiplicação e divisão com números naturais",
+        "Estratégias pessoais e algoritmos convencionais"
+      ],
+      "competency": "Resolver e elaborar problemas de multiplicação e divisão, envolvendo diferentes significados, utilizando estratégias pessoais e algoritmos convencionais.",
+      "habilidades": [
+        {
+          "codigo": "EF05MA08",
+          "descricao": "Resolver e elaborar problemas de multiplicação e divisão com números naturais, incluindo divisão com resto, utilizando estratégias pessoais, algoritmos e tecnologias digitais."
+        }
+      ],
+      "descricao": "Aprofunda a compreensão das operações de multiplicação e divisão em situações contextualizadas.",
+      "referencias": [
+        {
+          "documento": "BNCC - Matemática",
+          "secao": "Ensino Fundamental Anos Iniciais",
+          "paginaInicial": 282,
+          "paginaFinal": 284
+        }
+      ]
+    },
+    {
+      "bnccCode": "EF07MA16",
+      "ageGroupSlug": "fundamental-anos-finais",
+      "etapa": "Ensino Fundamental - Anos Finais",
+      "componenteCurricular": "Matemática",
+      "unidadeTematica": "Probabilidade e Estatística",
+      "objetoConhecimento": [
+        "Leitura e interpretação de gráficos e tabelas",
+        "Comunicação de conclusões a partir de dados"
+      ],
+      "competency": "Interpretar e analisar dados em tabelas e gráficos (colunas, barras, linhas) discutindo tendências e variações em contextos reais.",
+      "habilidades": [
+        {
+          "codigo": "EF07MA16",
+          "descricao": "Interpretar e analisar dados apresentados em tabelas e gráficos de colunas, barras e linhas, identificando tendências, variações e possíveis conclusões."
+        }
+      ],
+      "descricao": "Fortalece o pensamento estatístico para tomada de decisão em problemas da comunidade escolar.",
+      "referencias": [
+        {
+          "documento": "BNCC - Matemática",
+          "secao": "Ensino Fundamental Anos Finais",
+          "paginaInicial": 307,
+          "paginaFinal": 309
+        }
+      ]
+    },
+    {
+      "bnccCode": "EF69LP28",
+      "ageGroupSlug": "fundamental-anos-finais",
+      "etapa": "Ensino Fundamental - Anos Finais",
+      "componenteCurricular": "Língua Portuguesa",
+      "unidadeTematica": "Práticas de linguagem - Produção",
+      "objetoConhecimento": [
+        "Planejamento de textos multissemióticos",
+        "Uso crítico de linguagens digitais"
+      ],
+      "competency": "Planejar e produzir textos multimodais para socializar conhecimentos e posicionamentos em diferentes mídias.",
+      "habilidades": [
+        {
+          "codigo": "EF69LP28",
+          "descricao": "Planejar, produzir, revisar e editar textos multissemióticos, considerando o contexto de circulação e utilizando recursos de diferentes linguagens."
+        }
+      ],
+      "descricao": "Integra leitura, escrita e autoria digital em projetos colaborativos de comunicação.",
+      "referencias": [
+        {
+          "documento": "BNCC - Língua Portuguesa",
+          "secao": "Ensino Fundamental Anos Finais",
+          "paginaInicial": 160,
+          "paginaFinal": 163
+        }
+      ]
+    },
+    {
+      "bnccCode": "EF07CI02",
+      "ageGroupSlug": "fundamental-anos-finais",
+      "etapa": "Ensino Fundamental - Anos Finais",
+      "componenteCurricular": "Ciências",
+      "unidadeTematica": "Terra e Universo",
+      "objetoConhecimento": [
+        "Investigação de fenômenos naturais",
+        "Registro de dados e evidências"
+      ],
+      "competency": "Investigar fenômenos naturais e sociais, formulando hipóteses, registrando evidências e comunicando conclusões fundamentadas.",
+      "habilidades": [
+        {
+          "codigo": "EF07CI02",
+          "descricao": "Planejar e realizar experimentos para investigar fenômenos naturais, registrando dados, analisando resultados e comunicando conclusões."
+        }
+      ],
+      "descricao": "Articula investigação científica com comunicação colaborativa de achados.",
+      "referencias": [
+        {
+          "documento": "BNCC - Ciências",
+          "secao": "Ensino Fundamental Anos Finais",
+          "paginaInicial": 343,
+          "paginaFinal": 345
+        }
+      ]
+    },
+    {
+      "bnccCode": "EM13MAT305",
+      "ageGroupSlug": "ensino-medio",
+      "etapa": "Ensino Médio",
+      "componenteCurricular": "Matemática",
+      "unidadeTematica": "Probabilidade e Estatística",
+      "objetoConhecimento": [
+        "Modelagem de dados",
+        "Interpretação de indicadores estatísticos"
+      ],
+      "competency": "Utilizar conceitos de estatística e probabilidade para fundamentar decisões e projetos, considerando dados do território.",
+      "habilidades": [
+        {
+          "codigo": "EM13MAT305",
+          "descricao": "Construir e analisar modelos estatísticos aplicados a problemas reais, comunicando os resultados com diferentes linguagens."
+        }
+      ],
+      "descricao": "Integra análise de dados, resolução de problemas e comunicação de propostas de intervenção.",
+      "referencias": [
+        {
+          "documento": "BNCC - Matemática e suas Tecnologias",
+          "secao": "Itinerários formativos",
+          "paginaInicial": 526,
+          "paginaFinal": 529
+        }
+      ]
+    }
+  ]
+}

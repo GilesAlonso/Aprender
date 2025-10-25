@@ -42,6 +42,7 @@ export interface ActivityDetailLayoutProps {
   summary: string;
   estimatedTime: string;
   recommendedAges?: string;
+  bnccTags?: string[];
   competenceTags?: string[];
   steps?: ActivityStep[];
   resources?: ActivityResource[];
@@ -105,6 +106,7 @@ export const ActivityDetailLayout = ({
   summary,
   estimatedTime,
   recommendedAges = "9 a 12 anos",
+  bnccTags = [],
   competenceTags = ["Empatia", "Cidadania", "Modelagem de dados"],
   steps = DEFAULT_STEPS,
   resources = DEFAULT_RESOURCES,
@@ -129,6 +131,11 @@ export const ActivityDetailLayout = ({
           <span className="inline-flex items-center rounded-pill bg-secondary-50 px-4 py-1 font-semibold text-secondary-700">
             Faixa sugerida: {recommendedAges}
           </span>
+          {bnccTags.map((tag) => (
+            <Badge key={tag} variant="accent">
+              {tag}
+            </Badge>
+          ))}
           {competenceTags.map((tag) => (
             <span
               key={tag}

@@ -14,7 +14,14 @@ import { ModulesQueryInput, modulesQuerySchema } from "@/lib/validation";
 
 type CurriculumHabilidade = {
   codigo: string;
-  habilidade: string;
+  descricao: string;
+};
+
+type BnccReference = {
+  documento: string;
+  secao?: string;
+  paginaInicial?: number;
+  paginaFinal?: number;
 };
 
 type ModuleAccessStatus = "available" | "locked";
@@ -36,10 +43,17 @@ type ModuleResponse = {
   curriculumStandard: {
     id: string;
     bnccCode: string;
+    tag: string;
     competency: string;
     description: string | null;
+    componenteCurricular: string;
+    unidadeTematica: string;
+    objetoConhecimento: string[];
+    referencias: BnccReference[];
     habilidades: CurriculumHabilidade[];
   } | null;
+  learningOutcomes: string[];
+  bnccTag: string | null;
   activities: Array<{
     id: string;
     slug: string;
@@ -49,6 +63,15 @@ type ModuleResponse = {
     difficulty: string;
     description: string | null;
     metadata: Record<string, unknown> | null;
+    learningObjectives: string[];
+    curriculumStandard: {
+      id: string;
+      bnccCode: string;
+      tag: string;
+      componenteCurricular: string;
+      unidadeTematica: string;
+      habilidades: CurriculumHabilidade[];
+    } | null;
   }>;
   access: ModuleAccessStatus;
   lockMessage: string | null;
@@ -89,6 +112,9 @@ const fetchModulesForAgeGroup = async (ageGroupId: string) =>
         orderBy: {
           title: "asc",
         },
+        include: {
+          curriculumStandard: true,
+        },
       },
     },
     orderBy: {
@@ -98,47 +124,108 @@ const fetchModulesForAgeGroup = async (ageGroupId: string) =>
 
 type ModuleWithRelations = Awaited<ReturnType<typeof fetchModulesForAgeGroup>>[number];
 
+const parseJsonArray = <T>(value: string | null | undefined): T[] =>
+  safeJsonParse<T[]>(value) ?? [];
+
+const normalizeHabilidades = (
+  habilidades: Array<{ codigo: string; descricao?: string; habilidade?: string }>
+): CurriculumHabilidade[] =>
+  habilidades.map(({ codigo, descricao, habilidade }) => ({
+    codigo,
+    descricao: ((descricao ?? habilidade) ?? "").toString(),
+  }));
+
 const serializeModule = (
   module: ModuleWithRelations,
   access: ModuleAccessStatus,
   lockMessage: string | null
-): ModuleResponse => ({
-  id: module.id,
-  slug: module.slug,
-  title: module.title,
-  subtitle: module.subtitle,
-  description: module.description,
-  theme: module.theme,
-  ageGroup: {
-    id: module.ageGroup.id,
-    slug: module.ageGroup.slug,
-    name: module.ageGroup.name,
-    minAge: module.ageGroup.minAge,
-    maxAge: module.ageGroup.maxAge,
-  },
-  curriculumStandard: module.curriculumStandard
+): ModuleResponse => {
+  const moduleStandardRaw = module.curriculumStandard;
+
+  const moduleStandard = moduleStandardRaw
     ? {
-        id: module.curriculumStandard.id,
-        bnccCode: module.curriculumStandard.bnccCode,
-        competency: module.curriculumStandard.competency,
-        description: module.curriculumStandard.description,
-        habilidades:
-          safeJsonParse<CurriculumHabilidade[]>(module.curriculumStandard.habilidades) ?? [],
+        id: moduleStandardRaw.id,
+        bnccCode: moduleStandardRaw.bnccCode,
+        tag: `BNCC ${moduleStandardRaw.bnccCode}`,
+        competency: moduleStandardRaw.competency,
+        description: moduleStandardRaw.description,
+        componenteCurricular: moduleStandardRaw.componenteCurricular,
+        unidadeTematica: moduleStandardRaw.unidadeTematica,
+        objetoConhecimento: parseJsonArray<string>(moduleStandardRaw.objetoConhecimento),
+        referencias: parseJsonArray<BnccReference>(moduleStandardRaw.referencias),
+        habilidades: normalizeHabilidades(
+          parseJsonArray<{ codigo: string; descricao?: string; habilidade?: string }>(
+            moduleStandardRaw.habilidades
+          )
+        ),
       }
-    : null,
-  activities: module.activities.map((activity) => ({
-    id: activity.id,
-    slug: activity.slug,
-    title: activity.title,
-    prompt: activity.prompt,
-    activityType: activity.activityType,
-    difficulty: activity.difficulty,
-    description: activity.description,
-    metadata: safeJsonParse<Record<string, unknown>>(activity.metadata),
-  })),
-  access,
-  lockMessage,
-});
+    : null;
+
+  const activities = module.activities.map((activity) => {
+    const metadataRaw = safeJsonParse<Record<string, unknown>>(activity.metadata);
+    const metadataClone = metadataRaw ? { ...metadataRaw } : null;
+    const objectivesSource = metadataRaw as { learningObjectives?: unknown } | null;
+    const learningObjectivesRaw = objectivesSource?.learningObjectives;
+    const learningObjectives = Array.isArray(learningObjectivesRaw)
+      ? learningObjectivesRaw
+          .map((item) => `${item}`.trim())
+          .filter((item) => item.length > 0)
+      : [];
+
+    if (metadataClone && "learningObjectives" in metadataClone) {
+      delete (metadataClone as { learningObjectives?: unknown }).learningObjectives;
+    }
+
+    const cleanedMetadata = metadataClone && Object.keys(metadataClone).length > 0 ? metadataClone : null;
+
+    const activityStandardRaw = activity.curriculumStandard ?? moduleStandardRaw;
+    const activityStandard = activityStandardRaw
+      ? {
+          id: activityStandardRaw.id,
+          bnccCode: activityStandardRaw.bnccCode,
+          tag: `BNCC ${activityStandardRaw.bnccCode}`,
+          componenteCurricular: activityStandardRaw.componenteCurricular,
+          unidadeTematica: activityStandardRaw.unidadeTematica,
+          habilidades: parseJsonArray<CurriculumHabilidade>(activityStandardRaw.habilidades),
+        }
+      : null;
+
+    return {
+      id: activity.id,
+      slug: activity.slug,
+      title: activity.title,
+      prompt: activity.prompt,
+      activityType: activity.activityType,
+      difficulty: activity.difficulty,
+      description: activity.description,
+      metadata: cleanedMetadata,
+      learningObjectives,
+      curriculumStandard: activityStandard,
+    };
+  });
+
+  return {
+    id: module.id,
+    slug: module.slug,
+    title: module.title,
+    subtitle: module.subtitle,
+    description: module.description,
+    theme: module.theme,
+    ageGroup: {
+      id: module.ageGroup.id,
+      slug: module.ageGroup.slug,
+      name: module.ageGroup.name,
+      minAge: module.ageGroup.minAge,
+      maxAge: module.ageGroup.maxAge,
+    },
+    curriculumStandard: moduleStandard,
+    learningOutcomes: parseJsonArray<string>(module.learningOutcomes),
+    bnccTag: moduleStandard?.tag ?? null,
+    activities,
+    access,
+    lockMessage,
+  };
+};
 
 const buildLockMessage = (
   requested: AgeGroupSummary,

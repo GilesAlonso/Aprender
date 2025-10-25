@@ -1,0 +1,375 @@
+{
+  "updatedAt": "2024-11-07",
+  "modules": [
+    {
+      "slug": "historias-em-movimento",
+      "title": "Histórias em Movimento",
+      "subtitle": "Corpo e expressão",
+      "description": "Sequência de atividades corporais e musicais para contar histórias coletivas e acolhedoras.",
+      "theme": "Linguagens",
+      "discipline": "Linguagens",
+      "ageGroupSlug": "educacao-infantil",
+      "learningPathSlug": "aventuras-letrinhas",
+      "primaryBnccCode": "EI03ET04",
+      "learningOutcomes": [
+        "Experimentar gestos, ritmos e movimentos para comunicar emoções.",
+        "Ampliar repertórios de brincadeiras dramáticas em grupo.",
+        "Reconhecer a diversidade de expressões corporais na turma."
+      ],
+      "activities": [
+        {
+          "slug": "teatro-das-emocoes",
+          "title": "Teatro das Emoções",
+          "prompt": "Imite com o corpo um personagem da história e convide colegas para adivinhar!",
+          "activityType": "GAME",
+          "difficulty": "BEGINNER",
+          "bnccCode": "EI03ET04",
+          "learningObjectives": [
+            "Explorar gestos e expressões faciais para representar sentimentos.",
+            "Ampliar o vocabulário corporal nas brincadeiras coletivas."
+          ],
+          "description": "Brincadeira coletiva de dramatização para reconhecer emoções e movimentos.",
+          "metadata": {
+            "duracaoMinutos": 10,
+            "materiais": ["Fitas coloridas", "Instrumentos sonoros"],
+            "formato": "Roda"
+          }
+        },
+        {
+          "slug": "danca-dos-sons",
+          "title": "Dança dos Sons",
+          "prompt": "Crie passos para uma música usando objetos da sala como instrumentos.",
+          "activityType": "PUZZLE",
+          "difficulty": "BEGINNER",
+          "bnccCode": "EI03ET04",
+          "learningObjectives": [
+            "Perceber diferentes ritmos e sons a partir de objetos cotidianos.",
+            "Criar sequências corporais com acompanhamento musical."
+          ],
+          "description": "Atividade musical com exploração de ritmos e sequências.",
+          "metadata": {
+            "duracaoMinutos": 8,
+            "foco": "Ritmo e coordenação"
+          }
+        }
+      ]
+    },
+    {
+      "slug": "clubinho-das-palavras",
+      "title": "Clubinho das Palavras",
+      "subtitle": "Leituras compartilhadas",
+      "description": "Módulo para construir repertório de leitura e produção de bilhetes e convites.",
+      "theme": "Língua Portuguesa",
+      "discipline": "Língua Portuguesa",
+      "ageGroupSlug": "fundamental-anos-iniciais",
+      "learningPathSlug": "descobertas-palavras",
+      "primaryBnccCode": "EF01LP06",
+      "learningOutcomes": [
+        "Identificar informações principais em textos curtos do cotidiano escolar.",
+        "Relacionar sons e letras em palavras familiares.",
+        "Produzir mensagens curtas para situações reais da turma."
+      ],
+      "activities": [
+        {
+          "slug": "detectives-das-palavras",
+          "title": "Detetives das Palavras",
+          "prompt": "Encontre em pequenos textos palavras com o som da letra inicial do seu nome.",
+          "activityType": "QUIZ",
+          "difficulty": "BEGINNER",
+          "bnccCode": "EF01LP06",
+          "learningObjectives": [
+            "Identificar palavras com sons iniciais semelhantes.",
+            "Compartilhar estratégias de leitura com os colegas."
+          ],
+          "description": "Leitura compartilhada para identificar palavras e sons iniciais.",
+          "metadata": {
+            "generoTextual": "Bilhete",
+            "estrategia": "Leitura guiada"
+          }
+        },
+        {
+          "slug": "laboratorio-das-palavras",
+          "title": "Laboratório das Palavras",
+          "prompt": "Monte um convite para a turma usando as palavras investigadas na atividade anterior.",
+          "activityType": "GAME",
+          "difficulty": "INTERMEDIATE",
+          "bnccCode": "EF35LP20",
+          "learningObjectives": [
+            "Planejar coletivamente um texto com destinatário definido.",
+            "Revisar palavras-chave para garantir clareza do convite."
+          ],
+          "description": "Produção de texto coletivo com apoio de repertórios e modelos.",
+          "metadata": {
+            "suporte": "Cartolina",
+            "colaborativo": true
+          }
+        }
+      ]
+    },
+    {
+      "slug": "rota-das-operacoes",
+      "title": "Rota das Operações",
+      "subtitle": "Missões com multiplicação e divisão",
+      "description": "Sequência gamificada para aplicar estratégias de multiplicação e divisão em desafios da comunidade escolar.",
+      "theme": "Matemática",
+      "discipline": "Matemática",
+      "ageGroupSlug": "fundamental-anos-iniciais",
+      "learningPathSlug": "trilhas-numeros-vivos",
+      "primaryBnccCode": "EF05MA08",
+      "learningOutcomes": [
+        "Resolver problemas de multiplicação e divisão com apoio de representações visuais.",
+        "Comparar diferentes estratégias de cálculo e justificar escolhas.",
+        "Aplicar conceitos de igualdade e resto em situações contextualizadas."
+      ],
+      "activities": [
+        {
+          "slug": "missao-equipes-multiplicadoras",
+          "title": "Missão Equipes Multiplicadoras",
+          "prompt": "Organize os materiais da feira solidária distribuindo em partes iguais entre os grupos.",
+          "activityType": "GAME",
+          "difficulty": "INTERMEDIATE",
+          "bnccCode": "EF05MA08",
+          "learningObjectives": [
+            "Resolver problemas de distribuição proporcional utilizando multiplicação e divisão.",
+            "Registrar estratégias pessoais em quadros ou esquemas."] ,
+          "description": "Desafio colaborativo para calcular quantidades equivalentes em diferentes formações.",
+          "metadata": {
+            "duracaoMinutos": 20,
+            "materiais": ["Cartões numerados", "Cestos"],
+            "contexto": "Feira solidária da escola"
+          }
+        },
+        {
+          "slug": "estacao-resto-inteligente",
+          "title": "Estação do Resto Inteligente",
+          "prompt": "Descubra quantos kits completos podem ser montados com os materiais disponíveis e o que fazer com as sobras.",
+          "activityType": "PUZZLE",
+          "difficulty": "INTERMEDIATE",
+          "bnccCode": "EF05MA08",
+          "learningObjectives": [
+            "Interpretar o significado do resto em problemas de divisão.",
+            "Aplicar estratégias de cálculo mental e decomposição de números." 
+          ],
+          "description": "Investigação orientada para analisar restos e possibilidades de reagrupamento.",
+          "metadata": {
+            "duracaoMinutos": 15,
+            "ferramentas": ["Tabela coletiva", "Marcadores"],
+            "produtoFinal": "Plano de distribuição"
+          }
+        }
+      ]
+    },
+    {
+      "slug": "laboratorio-da-natureza",
+      "title": "Laboratório da Natureza",
+      "subtitle": "Investigação científica",
+      "description": "Experimentos guiados sobre recursos naturais, registro de evidências e comunicação multimodal.",
+      "theme": "Ciências",
+      "discipline": "Ciências",
+      "ageGroupSlug": "fundamental-anos-finais",
+      "learningPathSlug": "inventores-projetos",
+      "primaryBnccCode": "EF07CI02",
+      "learningOutcomes": [
+        "Planejar experimentos seguros para investigar fenômenos ambientais.",
+        "Registrar dados e evidências utilizando diferentes linguagens.",
+        "Argumentar com base em observações e fontes confiáveis."
+      ],
+      "activities": [
+        {
+          "slug": "experimento-da-agua",
+          "title": "Laboratório dos Recursos Naturais",
+          "prompt": "Analise diferentes amostras de água e registre evidências sobre consumo consciente.",
+          "activityType": "PUZZLE",
+          "difficulty": "INTERMEDIATE",
+          "bnccCode": "EF07CI02",
+          "learningObjectives": [
+            "Planejar etapas do experimento com definição de variáveis.",
+            "Comunicar resultados parciais em linguagem científica acessível."
+          ],
+          "description": "Experimento investigativo para observar transformações e discutir impacto ambiental.",
+          "metadata": {
+            "seguranca": "Orientação docente",
+            "registro": "Relato multimodal"
+          }
+        },
+        {
+          "slug": "quiz-sustentabilidade",
+          "title": "Quiz da Sustentabilidade",
+          "prompt": "Responda desafios sobre uso consciente da água, energia e consumo.",
+          "activityType": "QUIZ",
+          "difficulty": "ADVANCED",
+          "bnccCode": "EF07CI02",
+          "learningObjectives": [
+            "Avaliar conhecimentos construídos ao longo da sequência investigativa.",
+            "Relacionar conceitos científicos ao cotidiano da comunidade."
+          ],
+          "description": "Perguntas de múltipla escolha com feedback imediato e links para pesquisa.",
+          "metadata": {
+            "numeroQuestoes": 6,
+            "tipo": "Multipla escolha"
+          }
+        }
+      ]
+    },
+    {
+      "slug": "oficina-modelagem-dados",
+      "title": "Oficina Modelagem de Dados",
+      "subtitle": "Estatística para decisões",
+      "description": "Sequência colaborativa para interpretar gráficos, modelar dados da escola e propor ações baseadas em evidências.",
+      "theme": "Matemática",
+      "discipline": "Matemática",
+      "ageGroupSlug": "fundamental-anos-finais",
+      "learningPathSlug": "inventores-projetos",
+      "primaryBnccCode": "EF07MA16",
+      "learningOutcomes": [
+        "Interpretar gráficos e tabelas relacionando dados a contextos próximos.",
+        "Selecionar indicadores relevantes para acompanhar um problema real.",
+        "Argumentar a partir de evidências numéricas em relatórios e apresentações."
+      ],
+      "activities": [
+        {
+          "slug": "grafico-vivo-da-comunidade",
+          "title": "Gráfico Vivo da Comunidade",
+          "prompt": "Transforme dados da cantina em gráficos de barras e discuta mudanças possíveis.",
+          "activityType": "GAME",
+          "difficulty": "INTERMEDIATE",
+          "bnccCode": "EF07MA16",
+          "learningObjectives": [
+            "Ler e interpretar dados organizados em tabelas simples.",
+            "Construir gráficos adequados ao tipo de informação coletada." 
+          ],
+          "description": "Ateliê de visualização de dados com debate guiado sobre consumo consciente.",
+          "metadata": {
+            "duracaoMinutos": 25,
+            "ferramentas": ["Planilha colaborativa", "Cartazes"],
+            "produtoFinal": "Painel de gráficos"
+          }
+        },
+        {
+          "slug": "dash-impacto-escolar",
+          "title": "Dashboard de Impacto Escolar",
+          "prompt": "Escolha indicadores prioritários, monte um painel e apresente recomendações para o grêmio estudantil.",
+          "activityType": "PROJECT",
+          "difficulty": "ADVANCED",
+          "bnccCode": "EF07MA16",
+          "learningObjectives": [
+            "Selecionar variáveis relevantes para monitorar desafios locais.",
+            "Comunicar conclusões com argumentos embasados em dados." 
+          ],
+          "description": "Projeto final para modelar dados e comunicar propostas em formato multimodal.",
+          "metadata": {
+            "duracaoMinutos": 35,
+            "colaborativo": true,
+            "avaliacao": "Rubrica diagnóstica"
+          }
+        }
+      ]
+    },
+    {
+      "slug": "trilhas-narrativas-digitais",
+      "title": "Trilhas Narrativas Digitais",
+      "subtitle": "Autorias Multimídia",
+      "description": "Construção de narrativas multimodais para dar visibilidade às vozes da comunidade escolar.",
+      "theme": "Língua Portuguesa",
+      "discipline": "Língua Portuguesa",
+      "ageGroupSlug": "fundamental-anos-finais",
+      "learningPathSlug": "narrativas-conectadas",
+      "primaryBnccCode": "EF69LP28",
+      "learningOutcomes": [
+        "Planejar roteiros e pautas com intencionalidade comunicativa.",
+        "Utilizar recursos multimodais para produzir narrativas digitais.",
+        "Revisar e editar produções considerando feedback do grupo."
+      ],
+      "activities": [
+        {
+          "slug": "podcast-voz-da-comunidade",
+          "title": "Podcast Voz da Comunidade",
+          "prompt": "Crie um roteiro de podcast entrevistando pessoas sobre sonhos e desafios do bairro.",
+          "activityType": "PROJECT",
+          "difficulty": "INTERMEDIATE",
+          "bnccCode": "EF69LP28",
+          "learningObjectives": [
+            "Planejar entrevistas considerando público e finalidade.",
+            "Utilizar recursos de áudio e edição para tornar a mensagem clara." 
+          ],
+          "description": "Produção colaborativa de podcast para socializar pontos de vista da comunidade.",
+          "metadata": {
+            "formato": "Podcast colaborativo",
+            "duracaoMinutos": 30,
+            "publicacao": "Canal da escola"
+          }
+        },
+        {
+          "slug": "webdoc-historias-do-bairro",
+          "title": "Webdoc Histórias do Bairro",
+          "prompt": "Combine vídeos, fotos e textos para narrar transformações da escola nos últimos anos.",
+          "activityType": "PROJECT",
+          "difficulty": "ADVANCED",
+          "bnccCode": "EF69LP28",
+          "learningObjectives": [
+            "Selecionar linguagens adequadas para construir narrativas digitais complexas.",
+            "Revisar e editar materiais multimidiáticos para publicação segura." 
+          ],
+          "description": "Criação de webdocumentário colaborativo com curadoria de mídias diversas.",
+          "metadata": {
+            "duracaoMinutos": 40,
+            "ferramentas": ["Editor de vídeo", "Padlet"],
+            "produtoFinal": "Link público compartilhado"
+          }
+        }
+      ]
+    },
+    {
+      "slug": "estudio-dados-solidarios",
+      "title": "Estúdio de Dados Solidários",
+      "subtitle": "Projeto de vida e impacto",
+      "description": "Projeto interdisciplinar para investigar dados da comunidade, gerar protótipos e comunicar soluções.",
+      "theme": "Projeto de Vida",
+      "discipline": "Matemática e Projeto de Vida",
+      "ageGroupSlug": "ensino-medio",
+      "learningPathSlug": "trajetos-projeto-vida",
+      "primaryBnccCode": "EM13MAT305",
+      "learningOutcomes": [
+        "Aplicar conceitos estatísticos para interpretar indicadores sociais.",
+        "Propor soluções viáveis articuladas com projeto de vida coletivo.",
+        "Comunicar resultados em narrativas multimodais convincentes."
+      ],
+      "activities": [
+        {
+          "slug": "investigacao-dados-bairro",
+          "title": "Diagnóstico do Bairro",
+          "prompt": "Investigue dados públicos da sua cidade e proponha indicadores para acompanhar mudanças.",
+          "activityType": "GAME",
+          "difficulty": "ADVANCED",
+          "bnccCode": "EM13MAT305",
+          "learningObjectives": [
+            "Selecionar fontes de dados abertas com critérios de confiabilidade.",
+            "Construir modelos estatísticos simples para comunicar achados." 
+          ],
+          "description": "Desafio investigativo para analisar dados, formular hipóteses e comunicar resultados com infográficos.",
+          "metadata": {
+            "ferramentas": ["Planilha colaborativa", "Mapa digital"],
+            "entregavel": "Relatório visual"
+          }
+        },
+        {
+          "slug": "podcast-projeto-vida",
+          "title": "Podcast Projeto de Vida",
+          "prompt": "Crie um roteiro de podcast entrevistando pessoas sobre sonhos e desafios da comunidade.",
+          "activityType": "PROJECT",
+          "difficulty": "INTERMEDIATE",
+          "bnccCode": "EM13MAT305",
+          "learningObjectives": [
+            "Relacionar dados analisados a narrativas pessoais e coletivas.",
+            "Produzir roteiro multimodal integrando diferentes linguagens." 
+          ],
+          "description": "Atividade multimídia para exercitar comunicação, empatia e planejamento de ações coletivas.",
+          "metadata": {
+            "formato": "Podcast colaborativo",
+            "duracaoMinutos": 15
+          }
+        }
+      ]
+    }
+  ]
+}

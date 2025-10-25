@@ -16,6 +16,7 @@ const meta: Meta<typeof ActivityDetailLayout> = {
       "Os estudantes assumem o papel de guardiões da natureza e investigam como preservar a água da cidade.",
     estimatedTime: "25 minutos",
     recommendedAges: "10 a 12 anos",
+    bnccTags: ["BNCC EF07CI02"],
   },
 };
 
