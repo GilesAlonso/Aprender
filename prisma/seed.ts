@@ -1,15 +1,79 @@
+import { readFileSync } from "node:fs";
+import path from "node:path";
+import { fileURLToPath } from "node:url";
+
 import { PrismaClient } from "@prisma/client";
 
 import { BNCC_STAGE_CONFIG } from "../src/lib/personalization/age-stages";
 
 const prisma = new PrismaClient();
 
+const __filename = fileURLToPath(import.meta.url);
+const __dirname = path.dirname(__filename);
+const projectRoot = path.join(__dirname, "..");
+
 type CurriculumHabilidade = {
   codigo: string;
-  habilidade: string;
+  descricao: string;
 };
 
 type ActivityMetadata = Record<string, unknown>;
+
+type BnccReference = {
+  documento: string;
+  secao?: string;
+  paginaInicial?: number;
+  paginaFinal?: number;
+};
+
+type BnccStandardDefinition = {
+  bnccCode: string;
+  ageGroupSlug: string;
+  componenteCurricular: string;
+  unidadeTematica: string;
+  objetoConhecimento: string[] | string;
+  competency: string;
+  habilidades: CurriculumHabilidade[];
+  descricao?: string;
+  referencias?: BnccReference[];
+};
+
+type BnccDataset = {
+  generatedAt: string;
+  source: string;
+  standards: BnccStandardDefinition[];
+};
+
+type ModuleActivityDefinition = {
+  slug: string;
+  title: string;
+  prompt?: string;
+  activityType: string;
+  difficulty: string;
+  bnccCode: string;
+  learningObjectives: string[];
+  description?: string;
+  metadata?: ActivityMetadata;
+};
+
+type ModuleDefinition = {
+  slug: string;
+  title: string;
+  subtitle?: string;
+  description?: string;
+  theme?: string;
+  discipline?: string;
+  ageGroupSlug: string;
+  learningPathSlug?: string | null;
+  primaryBnccCode: string;
+  learningOutcomes?: string[];
+  activities: ModuleActivityDefinition[];
+};
+
+type ContentModuleDataset = {
+  updatedAt: string;
+  modules: ModuleDefinition[];
+};
 
 type RewardSeed = {
   title: string;
@@ -67,10 +131,24 @@ const learningPathsData = [
     ageGroupSlug: "fundamental-anos-iniciais",
   },
   {
+    slug: "trilhas-numeros-vivos",
+    title: "Trilhas de Números Vivos",
+    description:
+      "Itinerário matemático para fortalecer multiplicação e divisão contextualizadas.",
+    ageGroupSlug: "fundamental-anos-iniciais",
+  },
+  {
     slug: "inventores-projetos",
     title: "Inventores da Natureza",
     description:
       "Percurso investigativo interdisciplinar com debates, prototipagem e protagonismo juvenil.",
+    ageGroupSlug: "fundamental-anos-finais",
+  },
+  {
+    slug: "narrativas-conectadas",
+    title: "Narrativas Conectadas",
+    description:
+      "Trilha de autorias digitais e produção textual multimodal.",
     ageGroupSlug: "fundamental-anos-finais",
   },
   {
@@ -82,245 +160,18 @@ const learningPathsData = [
   },
 ] as const;
 
-const curriculumStandardsData = [
-  {
-    bnccCode: "EI03ET04",
-    competency:
-      "Expressar-se por meio de gestos, sons, ritmos e movimentos nas interações do cotidiano.",
-    habilidades: [
-      {
-        codigo: "EI03EF01",
-        habilidade:
-          "Participar de brincadeiras de dramatização, imitando, inventando personagens e enredos.",
-      },
-      {
-        codigo: "EI03CG05",
-        habilidade: "Explorar objetos, cenários e narrativas com curiosidade e imaginação.",
-      },
-    ] satisfies CurriculumHabilidade[],
-    description: "Campos de experiência Corpo, gestos e movimentos / Traços, sons, cores e formas.",
-    ageGroupSlug: "educacao-infantil",
-  },
-  {
-    bnccCode: "EF01LP06",
-    competency:
-      "Ler e compreender textos curtos identificando assunto e informações principais.",
-    habilidades: [
-      {
-        codigo: "EF01LP06",
-        habilidade:
-          "Ler e compreender textos curtos, identificando personagens, locais e ações principais.",
-      },
-      {
-        codigo: "EF02MA05",
-        habilidade: "Resolver problemas de adição e subtração envolvendo situações cotidianas.",
-      },
-    ] satisfies CurriculumHabilidade[],
-    description: "Integração entre Língua Portuguesa e Matemática nos anos iniciais.",
-    ageGroupSlug: "fundamental-anos-iniciais",
-  },
-  {
-    bnccCode: "EF07CI02",
-    competency:
-      "Investigar fenômenos naturais e sociais, formulando hipóteses e registrando evidências.",
-    habilidades: [
-      {
-        codigo: "EF07CI02",
-        habilidade:
-          "Planejar e realizar experimentos, analisando resultados para explicar fenômenos.",
-      },
-      {
-        codigo: "EF69LP32",
-        habilidade:
-          "Produzir textos multimodais para comunicar conclusões de pesquisas colaborativas.",
-      },
-    ] satisfies CurriculumHabilidade[],
-    description:
-      "Ciências da Natureza e Linguagens articuladas com projetos investigativos nos anos finais.",
-    ageGroupSlug: "fundamental-anos-finais",
-  },
-  {
-    bnccCode: "EM13MAT305",
-    competency:
-      "Utilizar conceitos de estatística e probabilidade para fundamentar decisões e projetos.",
-    habilidades: [
-      {
-        codigo: "EM13MAT305",
-        habilidade: "Construir e analisar modelos estatísticos aplicados a problemas reais.",
-      },
-      {
-        codigo: "EM13CHS602",
-        habilidade: "Investigar impactos socioambientais propondo soluções coletivas e viáveis.",
-      },
-    ] satisfies CurriculumHabilidade[],
-    description:
-      "Itinerário formativo integrando Matemática, Ciências Humanas e Projeto de Vida no Ensino Médio.",
-    ageGroupSlug: "ensino-medio",
-  },
-] as const;
+const loadJson = <T>(relativePath: string): T =>
+  JSON.parse(readFileSync(path.join(projectRoot, relativePath), "utf-8")) as T;
 
-const contentModulesData = [
-  {
-    slug: "historias-em-movimento",
-    title: "Histórias em Movimento",
-    subtitle: "Corpo e expressão",
-    description: "Sequência de atividades corporais e musicais para contar histórias coletivas.",
-    theme: "Linguagens",
-    ageGroupSlug: "educacao-infantil",
-    learningPathSlug: "aventuras-letrinhas",
-    curriculumStandardCode: "EI03ET04",
-  },
-  {
-    slug: "clubinho-das-palavras",
-    title: "Clubinho das Palavras",
-    subtitle: "Leituras compartilhadas",
-    description: "Módulo para construir repertório de leitura e produção de bilhetes e convites.",
-    theme: "Língua Portuguesa",
-    ageGroupSlug: "fundamental-anos-iniciais",
-    learningPathSlug: "descobertas-palavras",
-    curriculumStandardCode: "EF01LP06",
-  },
-  {
-    slug: "laboratorio-da-natureza",
-    title: "Laboratório da Natureza",
-    subtitle: "Investigação científica",
-    description:
-      "Experimentos guiados sobre recursos naturais, registro de evidências e comunicação multimodal.",
-    theme: "Ciências",
-    ageGroupSlug: "fundamental-anos-finais",
-    learningPathSlug: "inventores-projetos",
-    curriculumStandardCode: "EF07CI02",
-  },
-  {
-    slug: "estudio-dados-solidarios",
-    title: "Estúdio de Dados Solidários",
-    subtitle: "Projeto de vida e impacto",
-    description:
-      "Projeto interdisciplinar para investigar dados da comunidade, gerar protótipos e comunicar soluções.",
-    theme: "Projeto de Vida",
-    ageGroupSlug: "ensino-medio",
-    learningPathSlug: "trajetos-projeto-vida",
-    curriculumStandardCode: "EM13MAT305",
-  },
-] as const;
+const bnccDataset = loadJson<BnccDataset>("data/bncc/standards.json");
+const curriculumStandardsData = bnccDataset.standards;
 
-const activitiesData = [
-  {
-    slug: "teatro-das-emocoes",
-    title: "Teatro das Emoções",
-    prompt: "Imite com o corpo um personagem da história e convide colegas para adivinhar!",
-    activityType: "GAME",
-    difficulty: "BEGINNER",
-    description: "Brincadeira coletiva de dramatização para reconhecer emoções e movimentos.",
-    contentModuleSlug: "historias-em-movimento",
-    curriculumStandardCode: "EI03ET04",
-    metadata: {
-      duracaoMinutos: 10,
-      materiais: ["Fitas coloridas", "Instrumentos sonoros"],
-    } satisfies ActivityMetadata,
-  },
-  {
-    slug: "danca-dos-sons",
-    title: "Dança dos Sons",
-    prompt: "Crie passos para uma música usando objetos da sala como instrumentos.",
-    activityType: "PUZZLE",
-    difficulty: "BEGINNER",
-    description: "Atividade musical com exploração de ritmos e sequências.",
-    contentModuleSlug: "historias-em-movimento",
-    curriculumStandardCode: "EI03ET04",
-    metadata: {
-      duracaoMinutos: 8,
-      foco: "Ritmo e coordenação",
-    } satisfies ActivityMetadata,
-  },
-  {
-    slug: "detectives-das-palavras",
-    title: "Detetives das Palavras",
-    prompt: "Encontre em pequenos textos palavras com o som da letra inicial do seu nome.",
-    activityType: "QUIZ",
-    difficulty: "BEGINNER",
-    description: "Leitura compartilhada para identificar palavras e sons iniciais.",
-    contentModuleSlug: "clubinho-das-palavras",
-    curriculumStandardCode: "EF01LP06",
-    metadata: {
-      generoTextual: "Bilhete",
-      estrategia: "Leitura guiada",
-    } satisfies ActivityMetadata,
-  },
-  {
-    slug: "laboratorio-das-palavras",
-    title: "Laboratório das Palavras",
-    prompt: "Monte um convite para a turma usando as palavras investigadas na atividade anterior.",
-    activityType: "GAME",
-    difficulty: "INTERMEDIATE",
-    description: "Produção de texto coletivo com apoio de repertórios e modelos.",
-    contentModuleSlug: "clubinho-das-palavras",
-    curriculumStandardCode: "EF01LP06",
-    metadata: {
-      suporte: "Cartolina",
-      colaborativo: true,
-    } satisfies ActivityMetadata,
-  },
-  {
-    slug: "experimento-da-agua",
-    title: "Laboratório dos Recursos Naturais",
-    prompt: "Analise diferentes amostras de água e registre evidências sobre consumo consciente.",
-    activityType: "PUZZLE",
-    difficulty: "INTERMEDIATE",
-    description:
-      "Experimento investigativo para observar transformações e discutir impacto ambiental.",
-    contentModuleSlug: "laboratorio-da-natureza",
-    curriculumStandardCode: "EF07CI02",
-    metadata: {
-      seguranca: "Orientação docente",
-      registro: "Relato multimodal",
-    } satisfies ActivityMetadata,
-  },
-  {
-    slug: "quiz-sustentabilidade",
-    title: "Quiz da Sustentabilidade",
-    prompt: "Responda desafios sobre uso consciente da água, energia e consumo.",
-    activityType: "QUIZ",
-    difficulty: "ADVANCED",
-    description: "Perguntas de múltipla escolha com feedback imediato e links para pesquisa.",
-    contentModuleSlug: "laboratorio-da-natureza",
-    curriculumStandardCode: "EF07CI02",
-    metadata: {
-      numeroQuestoes: 6,
-      tipo: "Multipla escolha",
-    } satisfies ActivityMetadata,
-  },
-  {
-    slug: "investigacao-dados-bairro",
-    title: "Diagnóstico do Bairro",
-    prompt: "Investigue dados públicos da sua cidade e proponha indicadores para acompanhar mudanças.",
-    activityType: "GAME",
-    difficulty: "ADVANCED",
-    description:
-      "Desafio investigativo para analisar dados, formular hipóteses e comunicar resultados com infográficos.",
-    contentModuleSlug: "estudio-dados-solidarios",
-    curriculumStandardCode: "EM13MAT305",
-    metadata: {
-      ferramentas: ["Planilha colaborativa", "Mapa digital"],
-      entregavel: "Relatório visual",
-    } satisfies ActivityMetadata,
-  },
-  {
-    slug: "podcast-projeto-vida",
-    title: "Podcast Projeto de Vida",
-    prompt: "Crie um roteiro de podcast entrevistando pessoas sobre sonhos e desafios da comunidade.",
-    activityType: "QUIZ",
-    difficulty: "INTERMEDIATE",
-    description:
-      "Atividade multimídia para exercitar comunicação, empatia e planejamento de ações coletivas.",
-    contentModuleSlug: "estudio-dados-solidarios",
-    curriculumStandardCode: "EM13MAT305",
-    metadata: {
-      formato: "Podcast colaborativo",
-      duracaoMinutos: 15,
-    } satisfies ActivityMetadata,
-  },
-] as const;
+const contentDataset = loadJson<ContentModuleDataset>("data/content/modules.json");
+const contentModulesDataset = contentDataset.modules;
+
+const normalizeToArray = <T>(value: T | T[]): T[] => (Array.isArray(value) ? value : [value]);
+
+const toJsonString = (value: unknown): string => JSON.stringify(value);
 
 const usersData: UserSeed[] = [
   {
@@ -491,106 +342,156 @@ async function main() {
   const learningPathBySlug = Object.fromEntries(learningPaths.map((path) => [path.slug, path]));
 
   const curriculumStandards = await Promise.all(
-    curriculumStandardsData.map((standard) =>
-      prisma.curriculumStandard.upsert({
+    curriculumStandardsData.map((standard) => {
+      const ageGroup = ageGroupBySlug[standard.ageGroupSlug];
+      if (!ageGroup) {
+        throw new Error(
+          `Configuração de faixa etária não encontrada para o código BNCC ${standard.bnccCode} (${standard.ageGroupSlug}).`
+        );
+      }
+
+      const habilidadesJson = toJsonString(standard.habilidades);
+      const objetoConhecimentoJson = toJsonString(normalizeToArray(standard.objetoConhecimento));
+      const referenciasJson = standard.referencias ? toJsonString(standard.referencias) : null;
+
+      return prisma.curriculumStandard.upsert({
         where: {
           bnccCode_ageGroupId: {
             bnccCode: standard.bnccCode,
-            ageGroupId: ageGroupBySlug[standard.ageGroupSlug]?.id as string,
+            ageGroupId: ageGroup.id,
           },
         },
         update: {
+          componenteCurricular: standard.componenteCurricular,
+          unidadeTematica: standard.unidadeTematica,
+          objetoConhecimento: objetoConhecimentoJson,
           competency: standard.competency,
-          habilidades: toJsonString(standard.habilidades),
-          description: standard.description,
+          habilidades: habilidadesJson,
+          description: standard.descricao ?? null,
+          referencias: referenciasJson,
         },
         create: {
           bnccCode: standard.bnccCode,
+          componenteCurricular: standard.componenteCurricular,
+          unidadeTematica: standard.unidadeTematica,
+          objetoConhecimento: objetoConhecimentoJson,
           competency: standard.competency,
-          habilidades: toJsonString(standard.habilidades),
-          description: standard.description,
-          ageGroupId: ageGroupBySlug[standard.ageGroupSlug]?.id as string,
+          habilidades: habilidadesJson,
+          description: standard.descricao ?? null,
+          referencias: referenciasJson,
+          ageGroupId: ageGroup.id,
         },
-      })
-    )
+      });
+    })
   );
 
   const curriculumStandardByCode = Object.fromEntries(
     curriculumStandards.map((standard) => [`${standard.ageGroupId}:${standard.bnccCode}`, standard])
   );
 
-  const contentModules = await Promise.all(
-    contentModulesData.map((contentModuleData) => {
-      const ageGroup = ageGroupBySlug[contentModuleData.ageGroupSlug];
-      const learningPath = learningPathBySlug[contentModuleData.learningPathSlug];
-      const standard =
-        curriculumStandardByCode[`${ageGroup.id}:${contentModuleData.curriculumStandardCode}`];
+  const contentModuleBySlug: Record<string, Awaited<ReturnType<typeof prisma.contentModule.upsert>>> = {};
+  const activityBySlug: Record<string, Awaited<ReturnType<typeof prisma.activity.upsert>>> = {};
 
-      return prisma.contentModule.upsert({
-        where: { slug: contentModuleData.slug },
+  for (const moduleDefinition of contentModulesDataset) {
+    const ageGroup = ageGroupBySlug[moduleDefinition.ageGroupSlug];
+    if (!ageGroup) {
+      throw new Error(
+        `Módulo ${moduleDefinition.slug} faz referência a uma faixa etária desconhecida (${moduleDefinition.ageGroupSlug}).`
+      );
+    }
+
+    const learningPath = moduleDefinition.learningPathSlug
+      ? learningPathBySlug[moduleDefinition.learningPathSlug] ?? null
+      : null;
+
+    if (moduleDefinition.learningPathSlug && !learningPath) {
+      console.warn(
+        `Trilha '${moduleDefinition.learningPathSlug}' não encontrada para o módulo '${moduleDefinition.slug}'. O módulo será cadastrado sem trilha associada.`
+      );
+    }
+
+    const primaryStandard =
+      curriculumStandardByCode[`${ageGroup.id}:${moduleDefinition.primaryBnccCode}`];
+    if (!primaryStandard) {
+      throw new Error(
+        `Não foi possível localizar o código BNCC ${moduleDefinition.primaryBnccCode} para a faixa ${moduleDefinition.ageGroupSlug} ao cadastrar o módulo ${moduleDefinition.slug}.`
+      );
+    }
+
+    const learningOutcomesJson = moduleDefinition.learningOutcomes
+      ? toJsonString(moduleDefinition.learningOutcomes)
+      : null;
+
+    const moduleRecord = await prisma.contentModule.upsert({
+      where: { slug: moduleDefinition.slug },
+      update: {
+        title: moduleDefinition.title,
+        subtitle: moduleDefinition.subtitle,
+        description: moduleDefinition.description,
+        theme: moduleDefinition.theme ?? moduleDefinition.discipline ?? null,
+        learningOutcomes: learningOutcomesJson,
+        ageGroupId: ageGroup.id,
+        learningPathId: learningPath?.id ?? null,
+        curriculumStandardId: primaryStandard.id,
+      },
+      create: {
+        slug: moduleDefinition.slug,
+        title: moduleDefinition.title,
+        subtitle: moduleDefinition.subtitle,
+        description: moduleDefinition.description,
+        theme: moduleDefinition.theme ?? moduleDefinition.discipline ?? null,
+        learningOutcomes: learningOutcomesJson,
+        ageGroupId: ageGroup.id,
+        learningPathId: learningPath?.id ?? null,
+        curriculumStandardId: primaryStandard.id,
+      },
+    });
+
+    contentModuleBySlug[moduleRecord.slug] = moduleRecord;
+
+    for (const activityDefinition of moduleDefinition.activities) {
+      const activityStandard =
+        curriculumStandardByCode[`${ageGroup.id}:${activityDefinition.bnccCode}`];
+      if (!activityStandard) {
+        throw new Error(
+          `Não foi possível localizar o código BNCC ${activityDefinition.bnccCode} (módulo ${moduleDefinition.slug}, atividade ${activityDefinition.slug}).`
+        );
+      }
+
+      const metadataPayload = toJsonString({
+        ...(activityDefinition.metadata ?? {}),
+        learningObjectives: activityDefinition.learningObjectives,
+        bnccCode: activityDefinition.bnccCode,
+      });
+
+      const activityRecord = await prisma.activity.upsert({
+        where: { slug: activityDefinition.slug },
         update: {
-          title: contentModuleData.title,
-          subtitle: contentModuleData.subtitle,
-          description: contentModuleData.description,
-          theme: contentModuleData.theme,
-          ageGroupId: ageGroup.id,
-          learningPathId: learningPath?.id,
-          curriculumStandardId: standard?.id,
+          title: activityDefinition.title,
+          prompt: activityDefinition.prompt,
+          activityType: activityDefinition.activityType,
+          difficulty: activityDefinition.difficulty,
+          description: activityDefinition.description,
+          contentModuleId: moduleRecord.id,
+          curriculumStandardId: activityStandard.id,
+          metadata: metadataPayload,
         },
         create: {
-          slug: contentModuleData.slug,
-          title: contentModuleData.title,
-          subtitle: contentModuleData.subtitle,
-          description: contentModuleData.description,
-          theme: contentModuleData.theme,
-          ageGroupId: ageGroup.id,
-          learningPathId: learningPath?.id,
-          curriculumStandardId: standard?.id,
+          slug: activityDefinition.slug,
+          title: activityDefinition.title,
+          prompt: activityDefinition.prompt,
+          activityType: activityDefinition.activityType,
+          difficulty: activityDefinition.difficulty,
+          description: activityDefinition.description,
+          contentModuleId: moduleRecord.id,
+          curriculumStandardId: activityStandard.id,
+          metadata: metadataPayload,
         },
       });
-    })
-  );
 
-  const contentModuleBySlug = Object.fromEntries(
-    contentModules.map((contentModule) => [contentModule.slug, contentModule])
-  );
-
-  const activities = await Promise.all(
-    activitiesData.map((activity) => {
-      const contentModule = contentModuleBySlug[activity.contentModuleSlug];
-      const standard =
-        curriculumStandardByCode[`${contentModule.ageGroupId}:${activity.curriculumStandardCode}`];
-
-      return prisma.activity.upsert({
-        where: { slug: activity.slug },
-        update: {
-          title: activity.title,
-          prompt: activity.prompt,
-          activityType: activity.activityType,
-          difficulty: activity.difficulty,
-          description: activity.description,
-          contentModuleId: contentModule.id,
-          curriculumStandardId: standard?.id as string,
-          metadata: activity.metadata ? toJsonString(activity.metadata) : null,
-        },
-        create: {
-          slug: activity.slug,
-          title: activity.title,
-          prompt: activity.prompt,
-          activityType: activity.activityType,
-          difficulty: activity.difficulty,
-          description: activity.description,
-          contentModuleId: contentModule.id,
-          curriculumStandardId: standard?.id as string,
-          metadata: activity.metadata ? toJsonString(activity.metadata) : null,
-        },
-      });
-    })
-  );
-
-  const activityBySlug = Object.fromEntries(
-    activities.map((activity) => [activity.slug, activity])
-  );
+      activityBySlug[activityRecord.slug] = activityRecord;
+    }
+  }
 
   for (const userData of usersData) {
     const ageGroup = ageGroupBySlug[userData.ageGroupSlug];

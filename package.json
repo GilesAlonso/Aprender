@@ -19,6 +19,7 @@
     "db:migrate": "prisma migrate dev",
     "db:generate": "prisma generate",
     "db:seed": "prisma db seed",
+    "bncc:validate": "tsx scripts/validate-content.ts",
     "check": "pnpm lint && pnpm type-check && pnpm test"
   },
   "lint-staged": {
