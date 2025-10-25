@@ -17,7 +17,13 @@ model User {
   enrollments    LearningPathEnrollment[]
   attempts       Attempt[]
   progresses     Progress[]
+  competencies   CompetencyProgress[]
   rewards        Reward[]
+  xp             Int                      @default(0)
+  level          Int                      @default(1)
+  nextLevelAt    Int                      @default(1000)
+  currentStreak  Int                      @default(0)
+  longestStreak  Int                      @default(0)
   createdAt      DateTime                 @default(now())
   updatedAt      DateTime                 @updatedAt
 }
@@ -64,21 +70,22 @@ model LearningPathEnrollment {
 }
 
 model CurriculumStandard {
-  id                   String          @id @default(cuid())
-  bnccCode             String
-  componenteCurricular String          @default("")
-  unidadeTematica      String          @default("")
-  objetoConhecimento   String          @default("[]")
-  competency           String
-  habilidades          String
-  description          String?
-  referencias          String?
-  ageGroupId           String
-  ageGroup             AgeGroup        @relation(fields: [ageGroupId], references: [id], onDelete: Cascade)
-  contentModules       ContentModule[]
-  activities           Activity[]
-  createdAt            DateTime        @default(now())
-  updatedAt            DateTime        @updatedAt
+  id                     String                @id @default(cuid())
+  bnccCode               String
+  componenteCurricular   String                @default("")
+  unidadeTematica        String                @default("")
+  objetoConhecimento     String                @default("[]")
+  competency             String
+  habilidades            String
+  description            String?
+  referencias            String?
+  ageGroupId             String
+  ageGroup               AgeGroup              @relation(fields: [ageGroupId], references: [id], onDelete: Cascade)
+  contentModules         ContentModule[]
+  activities             Activity[]
+  competencyProgresses   CompetencyProgress[]
+  createdAt              DateTime              @default(now())
+  updatedAt              DateTime              @updatedAt
 
   @@unique([bnccCode, ageGroupId])
 }
@@ -139,30 +146,58 @@ model Attempt {
 }
 
 model Progress {
-  id               String   @id @default(cuid())
-  userId           String
-  contentModuleId  String
-  completion       Int      @default(0)
-  status           String   @default("NOT_STARTED")
-  lastActivityAt   DateTime?
-  totalAttempts    Int      @default(0)
-  user             User     @relation(fields: [userId], references: [id], onDelete: Cascade)
-  contentModule    ContentModule @relation(fields: [contentModuleId], references: [id], onDelete: Cascade)
-  createdAt        DateTime @default(now())
-  updatedAt        DateTime @updatedAt
+  id                 String         @id @default(cuid())
+  userId             String
+  contentModuleId    String
+  completion         Int            @default(0)
+  status             String         @default("NOT_STARTED")
+  lastActivityAt     DateTime?
+  totalAttempts      Int            @default(0)
+  currentStreak      Int            @default(0)
+  bestStreak         Int            @default(0)
+  averageAccuracy    Float          @default(0)
+  averageTimeSeconds Int            @default(0)
+  mastery            Int            @default(0)
+  user               User           @relation(fields: [userId], references: [id], onDelete: Cascade)
+  contentModule      ContentModule  @relation(fields: [contentModuleId], references: [id], onDelete: Cascade)
+  createdAt          DateTime       @default(now())
+  updatedAt          DateTime       @updatedAt
 
   @@unique([userId, contentModuleId])
 }
 
-model Reward {
-  id          String   @id @default(cuid())
-  userId      String
-  title       String
-  description String?
-  criteria    String?
-  icon        String?
-  unlockedAt  DateTime @default(now())
-  user        User     @relation(fields: [userId], references: [id], onDelete: Cascade)
+model CompetencyProgress {
+  id                   String             @id @default(cuid())
+  userId               String
+  curriculumStandardId String
+  mastery              Int                @default(0)
+  currentStreak        Int                @default(0)
+  bestStreak           Int                @default(0)
+  accuracy             Float              @default(0)
+  averageTimeSeconds   Int                @default(0)
+  attemptsCount        Int                @default(0)
+  lastInteractionAt    DateTime?
+  user                 User               @relation(fields: [userId], references: [id], onDelete: Cascade)
+  curriculumStandard   CurriculumStandard @relation(fields: [curriculumStandardId], references: [id], onDelete: Cascade)
 
-  @@unique([userId, title])
+  @@unique([userId, curriculumStandardId])
+}
+
+model Reward {
+  id            String   @id @default(cuid())
+  userId        String
+  code          String
+  title         String
+  description   String?
+  criteria      String?
+  icon          String?
+  category      String   @default("BADGE")
+  rarity        String   @default("COMMON")
+  xpAwarded     Int      @default(0)
+  levelAchieved Int?
+  metadata      String?
+  unlockedAt    DateTime @default(now())
+  user          User     @relation(fields: [userId], references: [id], onDelete: Cascade)
+
+  @@unique([userId, code])
 }
