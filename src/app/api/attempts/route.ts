@@ -3,6 +3,7 @@ import { ZodError } from "zod";
 
 import { prisma } from "@/lib/prisma";
 import { safeJsonParse, safeJsonStringify } from "@/lib/json";
+import { dispatchAnalyticsEvent } from "@/lib/analytics";
 import { LogAttemptInput, logAttemptSchema, progressStatusValues } from "@/lib/validation";
 
 const PROGRESS_STATUS = {
@@ -168,6 +169,15 @@ export async function POST(request: NextRequest) {
       }
 
       return buildResponse(attempt, progress);
+    });
+
+    dispatchAnalyticsEvent({
+      type: "attempt_logged",
+      attemptId: result.attempt.id,
+      activityId: result.attempt.activityId,
+      userId: result.attempt.userId,
+      success: result.attempt.success,
+      score: result.attempt.score ?? null,
     });
 
     return NextResponse.json(result, { status: 201 });
