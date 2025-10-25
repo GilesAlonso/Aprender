@@ -1,0 +1,28 @@
+{
+  "home": {
+    "badge": "Educando com tecnologia e afeto",
+    "title": "Aprender: trilhas personalizadas alinhadas à BNCC",
+    "description": "Um ambiente digital que combina inteligência artificial e orientação pedagógica para conectar cada estudante a conteúdos relevantes e envolventes.",
+    "mission": "Nossa missão é apoiar estudantes brasileiros com recursos acessíveis, empáticos e seguros, sempre em parceria com educadores e familiares.",
+    "cta": "Quero participar dos testes",
+    "secondaryCta": "Conheça a visão do projeto",
+    "panelTitle": "O que estamos construindo",
+    "highlights": [
+      {
+        "title": "Conteúdos alinhados à BNCC",
+        "description": "Mapeamos competências e habilidades para cada etapa do desenvolvimento infantil e fundamental."
+      },
+      {
+        "title": "Experiências personalizadas",
+        "description": "A inteligência artificial adapta desafios e atividades conforme o ritmo, os interesses e o contexto de cada criança."
+      },
+      {
+        "title": "Rede de apoio às famílias e educadores",
+        "description": "Relatórios gentis, recomendações práticas e comunicação contínua para fortalecer a jornada de aprendizagem."
+      }
+    ],
+    "disclaimer": "Estamos na fase inicial do produto. Sua colaboração ajuda a criar experiências mais humanas e inclusivas.",
+    "visionTitle": "Aprender com carinho, tecnologia e propósito",
+    "visionDescription": "Acreditamos que toda criança merece um caminho de aprendizagem acolhedor. Aprender combina ciência de dados, pedagogia e criatividade para apoiar diferentes estilos e ritmos."
+  }
+}
