@@ -82,6 +82,24 @@ export async function POST(request: NextRequest) {
       score: result.attempt.score ?? null,
     });
 
+    for (const reward of result.rewards) {
+      dispatchAnalyticsEvent({
+        type: "reward_unlocked",
+        userId: result.attempt.userId,
+        reward: {
+          id: reward.id,
+          code: reward.code,
+          title: reward.title,
+          category: reward.category,
+          rarity: reward.rarity,
+          xpAwarded: reward.xpAwarded,
+          levelAchieved: reward.levelAchieved ?? null,
+          metadata: safeJsonParse<Record<string, unknown>>(reward.metadata),
+          unlockedAt: reward.unlockedAt.toISOString(),
+        },
+      });
+    }
+
     const levelFloor =
       result.user.level <= 1 ? 0 : LEVEL_BASE_THRESHOLD + (result.user.level - 2) * LEVEL_STEP;
     const xpSpan = result.user.nextLevelAt - levelFloor;
@@ -96,6 +114,7 @@ export async function POST(request: NextRequest) {
           activityId: result.attempt.activityId,
           success: result.attempt.success,
           score: result.attempt.score,
+          maxScore: result.attempt.maxScore,
           accuracy: result.attempt.accuracy,
           timeSpentSeconds: result.attempt.timeSpentSeconds,
           submittedAt: result.attempt.submittedAt.toISOString(),

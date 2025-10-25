@@ -40,11 +40,28 @@ export type AttemptLoggedEvent = AnalyticsEventBase & {
   score?: number | null;
 };
 
+export type RewardUnlockedEvent = AnalyticsEventBase & {
+  type: "reward_unlocked";
+  userId: string;
+  reward: {
+    id: string;
+    code: string;
+    title: string;
+    category: string;
+    rarity: string;
+    xpAwarded: number;
+    levelAchieved?: number | null;
+    metadata?: Record<string, unknown> | null;
+    unlockedAt: string;
+  };
+};
+
 export type AnalyticsEvent =
   | ActivityStartedEvent
   | ActivityInteractionEvent
   | ActivityCompletedEvent
-  | AttemptLoggedEvent;
+  | AttemptLoggedEvent
+  | RewardUnlockedEvent;
 
 export type AnalyticsListener = (event: AnalyticsEvent) => void;
 
@@ -56,7 +73,9 @@ const withTimestamp = <T extends AnalyticsEventBase>(event: T): T & { timestamp:
   timestamp: event.timestamp ?? new Date().toISOString(),
 });
 
-export const dispatchAnalyticsEvent = <T extends AnalyticsEvent>(event: T): T & { timestamp: string } => {
+export const dispatchAnalyticsEvent = <T extends AnalyticsEvent>(
+  event: T
+): T & { timestamp: string } => {
   const payload = withTimestamp(event);
   history.push(payload);
 

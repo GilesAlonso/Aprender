@@ -75,6 +75,41 @@ export interface ProgressSummaryData {
   upcomingGoals: ProgressUpcomingGoal[];
 }
 
+export interface EducatorDigest {
+  learner: {
+    id: string;
+    displayName: string | null;
+    level: number;
+    xp: number;
+    xpToNext: number;
+    masteryAverage: number;
+    currentStreak: number;
+    longestStreak: number;
+    completedModules: number;
+    rewardCount: number;
+  };
+  strengths: Array<{
+    bnccCode: string;
+    competency: string;
+    mastery: number;
+  }>;
+  focusAreas: Array<{
+    moduleId: string;
+    title: string;
+    mastery: number;
+    recommendation: string;
+  }>;
+  recentRewards: Array<{
+    id: string;
+    title: string;
+    category: string;
+    rarity: string;
+    unlockedAt: string;
+  }>;
+  upcomingGoals: ProgressUpcomingGoal[];
+  recommendations: string[];
+}
+
 const parseRewardMetadata = (reward: Reward): Record<string, unknown> | null =>
   safeJsonParse<Record<string, unknown>>(reward.metadata) ?? null;
 
@@ -278,5 +313,97 @@ export const getProgressSummary = async (
     competencies: competencySummaries,
     rewards: rewardSummaries,
     upcomingGoals,
+  };
+};
+
+export const getEducatorDigest = async (
+  userId: string,
+  client: Client = prisma
+): Promise<EducatorDigest> => {
+  const summary = await getProgressSummary(userId, client);
+
+  const masteryAverage = summary.modules.length
+    ? Math.round(
+        summary.modules.reduce((accumulator, module) => accumulator + module.mastery, 0) /
+          summary.modules.length
+      )
+    : 0;
+
+  const strengths = summary.competencies
+    .filter((competency) => competency.mastery >= 80)
+    .sort((a, b) => b.mastery - a.mastery)
+    .slice(0, 3)
+    .map((competency) => ({
+      bnccCode: competency.bnccCode,
+      competency: competency.competency,
+      mastery: competency.mastery,
+    }));
+
+  const focusAreas = summary.modules
+    .filter((module) => module.mastery < 70)
+    .sort((a, b) => a.mastery - b.mastery)
+    .slice(0, 3)
+    .map((module) => ({
+      moduleId: module.id,
+      title: module.title,
+      mastery: module.mastery,
+      recommendation:
+        module.bnccCode !== null
+          ? `Retomar o módulo "${module.title}" destacando a competência ${module.bnccCode}.`
+          : `Retomar o módulo "${module.title}" reforçando evidências de aprendizagem.`,
+    }));
+
+  const recentRewards = summary.rewards.slice(0, 3).map((reward) => ({
+    id: reward.id,
+    title: reward.title,
+    category: reward.category,
+    rarity: reward.rarity,
+    unlockedAt: reward.unlockedAt,
+  }));
+
+  const recommendations = new Set<string>();
+
+  if (focusAreas[0]) {
+    recommendations.add(
+      `Planeje um acompanhamento dedicado para "${focusAreas[0].title}" e registre evidências de avanço.`
+    );
+  }
+
+  if (summary.upcomingGoals[0]) {
+    recommendations.add(
+      `Combine uma rotina curta para atingir a meta "${summary.upcomingGoals[0].title}".`
+    );
+  }
+
+  if (strengths[0]) {
+    recommendations.add(
+      `Compartilhe com a família o destaque em ${strengths[0].competency} e celebre a conquista.`
+    );
+  }
+
+  if (summary.user.currentStreak >= 3) {
+    recommendations.add(
+      "Mantenha a sequência de estudos com atividades rápidas diárias para preservar a motivação."
+    );
+  }
+
+  return {
+    learner: {
+      id: summary.user.id,
+      displayName: summary.user.displayName,
+      level: summary.user.level,
+      xp: summary.user.xp,
+      xpToNext: summary.user.xpToNext,
+      masteryAverage,
+      currentStreak: summary.user.currentStreak,
+      longestStreak: summary.user.longestStreak,
+      completedModules: summary.modules.filter((module) => module.completion >= 100).length,
+      rewardCount: summary.rewards.length,
+    },
+    strengths,
+    focusAreas,
+    recentRewards,
+    upcomingGoals: summary.upcomingGoals,
+    recommendations: Array.from(recommendations),
   };
 };

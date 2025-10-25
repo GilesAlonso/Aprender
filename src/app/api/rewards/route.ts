@@ -2,6 +2,7 @@ import { NextRequest, NextResponse } from "next/server";
 import { ZodError } from "zod";
 
 import { prisma } from "@/lib/prisma";
+import { safeJsonParse } from "@/lib/json";
 import { rewardsQuerySchema } from "@/lib/validation";
 
 export async function GET(request: NextRequest) {
@@ -30,10 +31,16 @@ export async function GET(request: NextRequest) {
     return NextResponse.json({
       rewards: rewards.map((reward) => ({
         id: reward.id,
+        code: reward.code,
         title: reward.title,
         description: reward.description,
         criteria: reward.criteria,
         icon: reward.icon,
+        category: reward.category,
+        rarity: reward.rarity,
+        xpAwarded: reward.xpAwarded,
+        levelAchieved: reward.levelAchieved,
+        metadata: safeJsonParse<Record<string, unknown>>(reward.metadata),
         unlockedAt: reward.unlockedAt.toISOString(),
       })),
     });
