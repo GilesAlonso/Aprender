@@ -41,6 +41,16 @@ export interface DashboardShellProps {
   navPrimaryAction?: { label: string; href: string };
   navSecondaryAction?: ReactNode;
   navLocaleSwitcher?: ReactNode;
+  personalizationSummary?: {
+    stage: string;
+    label: string;
+    ageRange: string;
+    competencies: string[];
+    habilidades: string[];
+    guidanceNote?: string | null;
+    learningStyle?: string | null;
+    message?: string;
+  };
 }
 
 const DEFAULT_HIGHLIGHTS: HighlightCard[] = [
@@ -84,6 +94,7 @@ export const DashboardShell = ({
   navPrimaryAction,
   navSecondaryAction,
   navLocaleSwitcher,
+  personalizationSummary,
 }: DashboardShellProps) => {
   const defaultAside = (
     <div className="space-y-6 lg:sticky lg:top-8">
@@ -156,6 +167,64 @@ export const DashboardShell = ({
                 <Button variant="secondary">Descobrir novidades</Button>
               </div>
             </div>
+
+            {personalizationSummary ? (
+              <Card tone="default" className="space-y-4">
+                <CardHeader className="space-y-3">
+                  <Badge variant="accent" soft>
+                    Jornada personalizada
+                  </Badge>
+                  <CardTitle className="text-display-xs">{personalizationSummary.label}</CardTitle>
+                  <CardDescription>
+                    {personalizationSummary.message ??
+                      `Conteúdos adaptados para ${personalizationSummary.stage} (${personalizationSummary.ageRange}).`}
+                  </CardDescription>
+                </CardHeader>
+                <CardContent className="grid gap-6 lg:grid-cols-2">
+                  <div className="space-y-3">
+                    <h3 className="text-body-lg font-semibold text-neutral-900">Competências</h3>
+                    <ul className="space-y-2 text-body-sm text-neutral-600">
+                      {personalizationSummary.competencies.map((competency) => (
+                        <li key={competency} className="flex gap-2">
+                          <span
+                            className="mt-2 inline-flex h-2 w-2 flex-none rounded-full bg-primary-400"
+                            aria-hidden="true"
+                          />
+                          <span>{competency}</span>
+                        </li>
+                      ))}
+                    </ul>
+                  </div>
+                  <div className="space-y-3">
+                    <h3 className="text-body-lg font-semibold text-neutral-900">Habilidades</h3>
+                    <ul className="space-y-2 text-body-sm text-neutral-600">
+                      {personalizationSummary.habilidades.map((habilidade) => (
+                        <li key={habilidade} className="flex gap-2">
+                          <span
+                            className="mt-2 inline-flex h-2 w-2 flex-none rounded-full bg-secondary-400"
+                            aria-hidden="true"
+                          />
+                          <span>{habilidade}</span>
+                        </li>
+                      ))}
+                    </ul>
+                  </div>
+                  {personalizationSummary.learningStyle ? (
+                    <div className="lg:col-span-2 rounded-3xl border border-neutral-200 bg-neutral-50 px-4 py-3 text-body-sm text-neutral-700">
+                      Estilo de aprendizagem favorito:{" "}
+                      <span className="font-semibold text-primary-600">
+                        {personalizationSummary.learningStyle}
+                      </span>
+                    </div>
+                  ) : null}
+                  {personalizationSummary.guidanceNote ? (
+                    <div className="lg:col-span-2 rounded-3xl border border-primary-100 bg-primary-50/70 px-4 py-3 text-body-sm text-primary-700">
+                      {personalizationSummary.guidanceNote}
+                    </div>
+                  ) : null}
+                </CardContent>
+              </Card>
+            ) : null}
 
             <div className="grid gap-4 md:grid-cols-2">
               {highlightCards.map((card) => (

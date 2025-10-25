@@ -29,8 +29,10 @@ export interface OnboardingFlowProps {
   currentStep?: number;
   onStepChange?: (index: number) => void;
   onContinue?: () => void;
+  onFinish?: () => void;
   onBack?: () => void;
   supportMessage?: string;
+  renderStepContent?: (step: OnboardingStep, index: number) => ReactNode;
 }
 
 const DEFAULT_STEPS: OnboardingStep[] = [
@@ -75,8 +77,10 @@ export const OnboardingFlow = ({
   currentStep,
   onStepChange,
   onContinue,
+  onFinish,
   onBack,
   supportMessage = "Dica: responda com sinceridade. Podemos ajustar tudo depois com um clique!",
+  renderStepContent,
 }: OnboardingFlowProps) => {
   const isControlled = currentStep !== undefined;
   const [internalStep, setInternalStep] = useState(0);
@@ -105,6 +109,13 @@ export const OnboardingFlow = ({
   };
 
   const handleContinue = () => {
+    const isLastStep = activeIndex === steps.length - 1;
+    if (isLastStep) {
+      onFinish?.();
+      onContinue?.();
+      return;
+    }
+
     const nextIndex = Math.min(activeIndex + 1, steps.length - 1);
     goToStep(nextIndex);
     onContinue?.();
@@ -187,6 +198,9 @@ export const OnboardingFlow = ({
               <div className="rounded-3xl border border-accent-100 bg-accent-50 px-4 py-3 text-body-sm text-accent-700">
                 {activeStep.tip}
               </div>
+            ) : null}
+            {renderStepContent ? (
+              <div className="space-y-4">{renderStepContent(activeStep, activeIndex)}</div>
             ) : null}
           </CardContent>
 

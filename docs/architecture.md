@@ -6,7 +6,7 @@ A plataforma utiliza **Prisma ORM** com **SQLite** em desenvolvimento (configura
 
 O diagrama lógico simplificado é o seguinte:
 
-- **AgeGroup** → segmenta aprendizes por faixa etária, controlando filtros de conteúdo.
+- **AgeGroup** → segmenta aprendizes por faixa etária (4–17 anos), controlando filtros de conteúdo e suportando overrides pedagógicos.
 - **LearningPath** → trilhas alinhadas a um AgeGroup; usuários se inscrevem via **LearningPathEnrollment**.
 - **CurriculumStandard** → referência direta a códigos, competências e habilidades da BNCC para cada AgeGroup.
 - **ContentModule** → unidades temáticas ligadas ao AgeGroup e a um CurriculumStandard. Servem como agrupador de atividades.
