@@ -49,9 +49,7 @@ describe("Learning API", () => {
     const user = await prisma.user.findUniqueOrThrow({ where: { email: "bruno@aprender.dev" } });
 
     const request = NextRequest.from(
-      new Request(
-        `http://localhost:3000/api/modules?userId=${user.id}&ageGroupSlug=ensino-medio`
-      )
+      new Request(`http://localhost:3000/api/modules?userId=${user.id}&ageGroupSlug=ensino-medio`)
     );
 
     const response = await getModules(request);
@@ -83,7 +81,9 @@ describe("Learning API", () => {
     expect(body.modules[0]?.lockMessage).toMatch(/Combine com um educador/i);
     expect(body.recommendedModules?.length).toBeGreaterThan(0);
     expect(
-      body.recommendedModules?.every((module) => module.ageGroup.slug === "fundamental-anos-iniciais")
+      body.recommendedModules?.every(
+        (module) => module.ageGroup.slug === "fundamental-anos-iniciais"
+      )
     ).toBe(true);
     expect(body.recommendedModules?.every((module) => module.access === "available")).toBe(true);
   });
@@ -131,15 +131,45 @@ describe("Learning API", () => {
     expect(response.status).toBe(201);
 
     const body = (await response.json()) as {
-      attempt: { id: string; userId: string; activityId: string; metadata: { tentativa: string } | null };
-      progress: { status: string; completion: number; totalAttempts: number };
+      attempt: {
+        id: string;
+        userId: string;
+        activityId: string;
+        metadata: { tentativa: string } | null;
+        score: number | null;
+      };
+      moduleProgress: {
+        status: string;
+        completion: number;
+        totalAttempts: number;
+        mastery: number;
+        currentStreak: number;
+      };
+      competencyProgress: {
+        mastery: number;
+        currentStreak: number;
+      };
+      userProgress: {
+        level: number;
+        xp: number;
+        xpGained: number;
+        xpProgressPercent: number;
+      };
+      rewardsUnlocked: Array<{ code: string }>;
     };
 
     expect(body.attempt.userId).toBe(user.id);
     expect(body.attempt.metadata?.tentativa).toBe("automática");
-    expect(body.progress.status).toBe("COMPLETED");
-    expect(body.progress.completion).toBe(100);
-    expect(body.progress.totalAttempts).toBe(1);
+    expect(body.attempt.score).toBe(payload.score);
+    expect(body.moduleProgress.status).toBe("COMPLETED");
+    expect(body.moduleProgress.completion).toBeGreaterThanOrEqual(100);
+    expect(body.moduleProgress.totalAttempts).toBe(1);
+    expect(body.moduleProgress.mastery).toBeGreaterThan(0);
+    expect(body.moduleProgress.currentStreak).toBe(1);
+    expect(body.competencyProgress.mastery).toBeGreaterThan(0);
+    expect(body.userProgress.xpGained).toBeGreaterThan(0);
+    expect(body.userProgress.xp).toBeGreaterThanOrEqual(body.userProgress.xpGained);
+    expect(body.userProgress.xpProgressPercent).toBeGreaterThan(0);
 
     const storedProgress = await prisma.progress.findUniqueOrThrow({
       where: {
@@ -151,8 +181,21 @@ describe("Learning API", () => {
     });
 
     expect(storedProgress.status).toBe("COMPLETED");
-    expect(storedProgress.completion).toBe(100);
+    expect(storedProgress.completion).toBeGreaterThanOrEqual(100);
     expect(storedProgress.totalAttempts).toBe(1);
+    expect(storedProgress.currentStreak).toBe(1);
+
+    const competencyProgress = await prisma.competencyProgress.findUniqueOrThrow({
+      where: {
+        userId_curriculumStandardId: {
+          userId: user.id,
+          curriculumStandardId: activity.curriculumStandardId,
+        },
+      },
+    });
+
+    expect(competencyProgress.mastery).toBeGreaterThan(0);
+    expect(competencyProgress.attemptsCount).toBe(1);
 
     const history = getAnalyticsHistory();
     const analyticsAttempt = history.find((event) => event.type === "attempt_logged");

@@ -37,7 +37,12 @@ export const rewardsQuerySchema = z.object({
   userId: z.string().cuid("userId inválido"),
 });
 
+export const progressSummaryQuerySchema = z.object({
+  userId: z.string().cuid("userId inválido"),
+});
+
 export type LogAttemptInput = z.infer<typeof logAttemptSchema>;
 export type ProgressMutationInput = z.infer<typeof progressMutationSchema>;
 export type ModulesQueryInput = z.infer<typeof modulesQuerySchema>;
 export type RewardsQueryInput = z.infer<typeof rewardsQuerySchema>;
+export type ProgressSummaryQueryInput = z.infer<typeof progressSummaryQuerySchema>;

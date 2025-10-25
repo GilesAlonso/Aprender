@@ -89,12 +89,10 @@ const MultipleChoiceQuestion = ({
 );
 
 const TrueFalseQuestion = ({
-  question,
   selected,
   onSelect,
   disabled,
 }: {
-  question: Extract<QuizQuestion, { type: "true-false" }>;
   selected?: boolean;
   onSelect: (value: boolean) => void;
   disabled: boolean;
@@ -146,7 +144,10 @@ const OrderingQuestion = ({
         {order.map((itemId, index) => {
           const item = question.items.find((entry) => entry.id === itemId);
           return (
-            <li key={itemId} className="flex items-center justify-between gap-3 rounded-2xl bg-white px-4 py-3 shadow-sm">
+            <li
+              key={itemId}
+              className="flex items-center justify-between gap-3 rounded-2xl bg-white px-4 py-3 shadow-sm"
+            >
               <span className="text-body-md font-medium text-neutral-800">{item?.text}</span>
               <div className="flex gap-2">
                 <Button
@@ -224,13 +225,19 @@ export const QuizActivityPlayer = ({ activity, onComplete }: QuizActivityPlayerP
 
   const answeredCount = useMemo(() => Object.keys(answers).length, [answers]);
   const totalQuestions = questions.length;
-  const progressValue = totalQuestions === 0 ? 0 : Math.round((answeredCount / totalQuestions) * 100);
+  const progressValue =
+    totalQuestions === 0 ? 0 : Math.round((answeredCount / totalQuestions) * 100);
 
   const currentQuestion = questions[currentIndex];
   const questionFeedback = currentQuestion ? feedbackMap[currentQuestion.id] : undefined;
   const questionAnswered = currentQuestion ? Boolean(answers[currentQuestion.id]) : false;
 
-  const handleAnswer = (question: QuizQuestion, answer: QuizAnswer, feedback?: string, correct?: boolean) => {
+  const handleAnswer = (
+    question: QuizQuestion,
+    answer: QuizAnswer,
+    feedback?: string,
+    correct?: boolean
+  ) => {
     setAnswers((prev) => ({ ...prev, [question.id]: answer }));
 
     const feedbackMessage = feedback ?? getDefaultFeedback(question, Boolean(correct));
@@ -311,7 +318,8 @@ export const QuizActivityPlayer = ({ activity, onComplete }: QuizActivityPlayerP
         <CardHeader>
           <CardTitle>Resultado do quiz</CardTitle>
           <CardDescription>
-            Você concluiu {evaluation.totalQuestions} questões com {evaluation.totalCorrect} acertos.
+            Você concluiu {evaluation.totalQuestions} questões com {evaluation.totalCorrect}{" "}
+            acertos.
           </CardDescription>
         </CardHeader>
         <CardContent className="gap-4">
@@ -354,7 +362,9 @@ export const QuizActivityPlayer = ({ activity, onComplete }: QuizActivityPlayerP
     <Card tone="neutral" className="gap-6">
       <CardHeader className="gap-4">
         <div className="flex flex-wrap items-center gap-3">
-          <Badge variant="info">Questão {currentIndex + 1} de {totalQuestions}</Badge>
+          <Badge variant="info">
+            Questão {currentIndex + 1} de {totalQuestions}
+          </Badge>
           <Badge variant="accent">{questionTypeLabel}</Badge>
         </div>
         <CardTitle className="text-display-xs text-neutral-900">{currentQuestion.prompt}</CardTitle>
@@ -368,9 +378,11 @@ export const QuizActivityPlayer = ({ activity, onComplete }: QuizActivityPlayerP
         {currentQuestion.type === "multiple-choice" ? (
           <MultipleChoiceQuestion
             question={currentQuestion}
-            selectedOptionId={answers[currentQuestion.id]?.type === "multiple-choice"
-              ? answers[currentQuestion.id]?.optionId
-              : undefined}
+            selectedOptionId={
+              answers[currentQuestion.id]?.type === "multiple-choice"
+                ? answers[currentQuestion.id]?.optionId
+                : undefined
+            }
             onSelect={(optionId) => {
               const option = currentQuestion.options.find((item) => item.id === optionId);
               const correct = option?.isCorrect ?? false;
@@ -389,9 +401,11 @@ export const QuizActivityPlayer = ({ activity, onComplete }: QuizActivityPlayerP
         {currentQuestion.type === "true-false" ? (
           <TrueFalseQuestion
             question={currentQuestion}
-            selected={answers[currentQuestion.id]?.type === "true-false"
-              ? answers[currentQuestion.id]?.answer
-              : undefined}
+            selected={
+              answers[currentQuestion.id]?.type === "true-false"
+                ? answers[currentQuestion.id]?.answer
+                : undefined
+            }
             onSelect={(value) => {
               const correct = currentQuestion.answer === value;
               const feedback = correct
@@ -468,7 +482,11 @@ export const QuizActivityPlayer = ({ activity, onComplete }: QuizActivityPlayerP
 
       <CardContent className="border-t border-neutral-100 pt-4">
         <div className="flex flex-wrap gap-3">
-          <Button variant="secondary" onClick={() => goToQuestion(currentIndex - 1)} disabled={currentIndex === 0}>
+          <Button
+            variant="secondary"
+            onClick={() => goToQuestion(currentIndex - 1)}
+            disabled={currentIndex === 0}
+          >
             Pergunta anterior
           </Button>
           {currentIndex < questions.length - 1 ? (
@@ -480,11 +498,7 @@ export const QuizActivityPlayer = ({ activity, onComplete }: QuizActivityPlayerP
               Próxima pergunta
             </Button>
           ) : (
-            <Button
-              variant="primary"
-              onClick={finalizeActivity}
-              disabled={!hasAllAnswers}
-            >
+            <Button variant="primary" onClick={finalizeActivity} disabled={!hasAllAnswers}>
               Ver resultado
             </Button>
           )}

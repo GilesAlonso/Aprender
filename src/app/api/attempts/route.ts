@@ -1,77 +1,13 @@
 import { NextRequest, NextResponse } from "next/server";
 import { ZodError } from "zod";
 
-import { prisma } from "@/lib/prisma";
-import { safeJsonParse, safeJsonStringify } from "@/lib/json";
 import { dispatchAnalyticsEvent } from "@/lib/analytics";
-import { LogAttemptInput, logAttemptSchema, progressStatusValues } from "@/lib/validation";
+import { prisma } from "@/lib/prisma";
+import { safeJsonParse } from "@/lib/json";
+import { LEVEL_BASE_THRESHOLD, LEVEL_STEP, applyProgressUpdate } from "@/lib/progress";
+import { LogAttemptInput, logAttemptSchema } from "@/lib/validation";
 
-const PROGRESS_STATUS = {
-  NOT_STARTED: "NOT_STARTED",
-  IN_PROGRESS: "IN_PROGRESS",
-  COMPLETED: "COMPLETED",
-} as const satisfies Record<(typeof progressStatusValues)[number], string>;
-
-const computeStatusFromAttempt = (existingCompletion: number, success: boolean, score?: number) => {
-  if (!success) {
-    if (existingCompletion >= 100) {
-      return PROGRESS_STATUS.COMPLETED;
-    }
-
-    return existingCompletion > 0 ? PROGRESS_STATUS.IN_PROGRESS : PROGRESS_STATUS.NOT_STARTED;
-  }
-
-  if (score !== undefined && score >= 90) {
-    return PROGRESS_STATUS.COMPLETED;
-  }
-
-  return PROGRESS_STATUS.IN_PROGRESS;
-};
-
-const computeCompletion = (existingCompletion: number, success: boolean, score?: number) => {
-  if (!success) {
-    return existingCompletion;
-  }
-
-  if (score !== undefined) {
-    if (score >= 90) {
-      return 100;
-    }
-
-    return Math.max(existingCompletion, Math.min(100, score));
-  }
-
-  return existingCompletion > 0 ? existingCompletion : 50;
-};
-
-const buildResponse = (
-  attempt: Awaited<ReturnType<typeof prisma.attempt.create>>,
-  progress: Awaited<ReturnType<typeof prisma.progress.create>>
-) => ({
-  attempt: {
-    id: attempt.id,
-    userId: attempt.userId,
-    activityId: attempt.activityId,
-    success: attempt.success,
-    score: attempt.score,
-    maxScore: attempt.maxScore,
-    accuracy: attempt.accuracy,
-    timeSpentSeconds: attempt.timeSpentSeconds,
-    submittedAt: attempt.submittedAt.toISOString(),
-    completedAt: attempt.completedAt?.toISOString() ?? null,
-    metadata: safeJsonParse<Record<string, unknown>>(attempt.metadata),
-  },
-  progress: {
-    id: progress.id,
-    userId: progress.userId,
-    contentModuleId: progress.contentModuleId,
-    completion: progress.completion,
-    status: progress.status,
-    lastActivityAt: progress.lastActivityAt?.toISOString() ?? null,
-    totalAttempts: progress.totalAttempts,
-    updatedAt: progress.updatedAt.toISOString(),
-  },
-});
+const clamp = (value: number, min = 0, max = 100) => Math.min(Math.max(value, min), max);
 
 export async function POST(request: NextRequest) {
   try {
@@ -79,11 +15,40 @@ export async function POST(request: NextRequest) {
     const input = logAttemptSchema.parse(payload) as LogAttemptInput;
 
     const [user, activity] = await Promise.all([
-      prisma.user.findUnique({ where: { id: input.userId } }),
+      prisma.user.findUnique({
+        where: { id: input.userId },
+        select: {
+          id: true,
+          displayName: true,
+          xp: true,
+          level: true,
+          nextLevelAt: true,
+          currentStreak: true,
+          longestStreak: true,
+        },
+      }),
       prisma.activity.findUnique({
         where: { id: input.activityId },
-        include: {
-          contentModule: true,
+        select: {
+          id: true,
+          slug: true,
+          title: true,
+          contentModuleId: true,
+          curriculumStandardId: true,
+          contentModule: {
+            select: {
+              id: true,
+              slug: true,
+              title: true,
+            },
+          },
+          curriculumStandard: {
+            select: {
+              id: true,
+              bnccCode: true,
+              competency: true,
+            },
+          },
         },
       }),
     ]);
@@ -96,80 +61,17 @@ export async function POST(request: NextRequest) {
       return NextResponse.json({ message: "Atividade não encontrada" }, { status: 404 });
     }
 
-    const result = await prisma.$transaction(async (transaction) => {
-      const submittedAt = new Date();
+    const submittedAt = new Date();
 
-      const attempt = await transaction.attempt.create({
-        data: {
-          userId: input.userId,
-          activityId: input.activityId,
-          success: input.success,
-          score: input.score,
-          maxScore: input.maxScore,
-          accuracy: input.accuracy,
-          timeSpentSeconds: input.timeSpentSeconds,
-          metadata: safeJsonStringify(input.metadata ?? null),
-          submittedAt,
-          completedAt: submittedAt,
-        },
-      });
-
-      const existingProgress = await transaction.progress.findUnique({
-        where: {
-          userId_contentModuleId: {
-            userId: input.userId,
-            contentModuleId: activity.contentModuleId,
-          },
-        },
-      });
-
-      let progress;
-
-      if (existingProgress) {
-        const nextCompletion = computeCompletion(
-          existingProgress.completion,
-          input.success,
-          input.score
-        );
-        const nextStatus =
-          existingProgress.status === PROGRESS_STATUS.COMPLETED
-            ? PROGRESS_STATUS.COMPLETED
-            : computeStatusFromAttempt(existingProgress.completion, input.success, input.score);
-
-        progress = await transaction.progress.update({
-          where: { id: existingProgress.id },
-          data: {
-            completion: nextCompletion,
-            status: nextStatus,
-            totalAttempts: {
-              increment: 1,
-            },
-            lastActivityAt: submittedAt,
-          },
-        });
-      } else {
-        const initialCompletion = computeCompletion(0, input.success, input.score);
-        const initialStatus =
-          initialCompletion >= 100
-            ? PROGRESS_STATUS.COMPLETED
-            : input.success
-              ? PROGRESS_STATUS.IN_PROGRESS
-              : PROGRESS_STATUS.NOT_STARTED;
-
-        progress = await transaction.progress.create({
-          data: {
-            userId: input.userId,
-            contentModuleId: activity.contentModuleId,
-            completion: initialCompletion,
-            status: initialStatus,
-            totalAttempts: 1,
-            lastActivityAt: submittedAt,
-          },
-        });
-      }
-
-      return buildResponse(attempt, progress);
-    });
+    const result = await prisma.$transaction((tx) =>
+      applyProgressUpdate({
+        tx,
+        activity,
+        userBefore: user,
+        attemptInput: input,
+        submittedAt,
+      })
+    );
 
     dispatchAnalyticsEvent({
       type: "attempt_logged",
@@ -180,7 +82,110 @@ export async function POST(request: NextRequest) {
       score: result.attempt.score ?? null,
     });
 
-    return NextResponse.json(result, { status: 201 });
+    for (const reward of result.rewards) {
+      dispatchAnalyticsEvent({
+        type: "reward_unlocked",
+        userId: result.attempt.userId,
+        reward: {
+          id: reward.id,
+          code: reward.code,
+          title: reward.title,
+          category: reward.category,
+          rarity: reward.rarity,
+          xpAwarded: reward.xpAwarded,
+          levelAchieved: reward.levelAchieved ?? null,
+          metadata: safeJsonParse<Record<string, unknown>>(reward.metadata),
+          unlockedAt: reward.unlockedAt.toISOString(),
+        },
+      });
+    }
+
+    const levelFloor =
+      result.user.level <= 1 ? 0 : LEVEL_BASE_THRESHOLD + (result.user.level - 2) * LEVEL_STEP;
+    const xpSpan = result.user.nextLevelAt - levelFloor;
+    const xpIntoLevel = result.user.xp - levelFloor;
+    const xpProgressPercent = xpSpan > 0 ? clamp(Math.round((xpIntoLevel / xpSpan) * 100)) : 100;
+
+    return NextResponse.json(
+      {
+        attempt: {
+          id: result.attempt.id,
+          userId: result.attempt.userId,
+          activityId: result.attempt.activityId,
+          success: result.attempt.success,
+          score: result.attempt.score,
+          maxScore: result.attempt.maxScore,
+          accuracy: result.attempt.accuracy,
+          timeSpentSeconds: result.attempt.timeSpentSeconds,
+          submittedAt: result.attempt.submittedAt.toISOString(),
+          metadata: safeJsonParse<Record<string, unknown>>(result.attempt.metadata),
+        },
+        moduleProgress: {
+          id: result.moduleProgress.id,
+          userId: result.moduleProgress.userId,
+          contentModuleId: result.moduleProgress.contentModuleId,
+          completion: result.moduleProgress.completion,
+          status: result.moduleProgress.status,
+          mastery: result.moduleProgress.mastery,
+          currentStreak: result.moduleProgress.currentStreak,
+          bestStreak: result.moduleProgress.bestStreak,
+          averageAccuracy: result.moduleProgress.averageAccuracy,
+          averageTimeSeconds: result.moduleProgress.averageTimeSeconds,
+          totalAttempts: result.moduleProgress.totalAttempts,
+          lastActivityAt: result.moduleProgress.lastActivityAt
+            ? result.moduleProgress.lastActivityAt.toISOString()
+            : null,
+          updatedAt: result.moduleProgress.updatedAt.toISOString(),
+          module: {
+            id: activity.contentModule.id,
+            slug: activity.contentModule.slug,
+            title: activity.contentModule.title,
+          },
+        },
+        competencyProgress: {
+          id: result.competencyProgress.id,
+          userId: result.competencyProgress.userId,
+          curriculumStandardId: result.competencyProgress.curriculumStandardId,
+          mastery: result.competencyProgress.mastery,
+          currentStreak: result.competencyProgress.currentStreak,
+          bestStreak: result.competencyProgress.bestStreak,
+          accuracy: result.competencyProgress.accuracy,
+          averageTimeSeconds: result.competencyProgress.averageTimeSeconds,
+          attemptsCount: result.competencyProgress.attemptsCount,
+          lastInteractionAt: result.competencyProgress.lastInteractionAt
+            ? result.competencyProgress.lastInteractionAt.toISOString()
+            : null,
+          competency: {
+            id: activity.curriculumStandard.id,
+            bnccCode: activity.curriculumStandard.bnccCode,
+            label: activity.curriculumStandard.competency,
+          },
+        },
+        userProgress: {
+          id: result.user.id,
+          xp: result.user.xp,
+          level: result.user.level,
+          nextLevelAt: result.user.nextLevelAt,
+          xpToNext: Math.max(0, result.user.nextLevelAt - result.user.xp),
+          xpGained: result.xpGained,
+          xpProgressPercent,
+          currentStreak: result.user.currentStreak,
+          longestStreak: result.user.longestStreak,
+        },
+        rewardsUnlocked: result.rewards.map((reward) => ({
+          id: reward.id,
+          code: reward.code,
+          title: reward.title,
+          category: reward.category,
+          rarity: reward.rarity,
+          xpAwarded: reward.xpAwarded,
+          levelAchieved: reward.levelAchieved,
+          unlockedAt: reward.unlockedAt.toISOString(),
+          metadata: safeJsonParse<Record<string, unknown>>(reward.metadata),
+        })),
+      },
+      { status: 201 }
+    );
   } catch (error) {
     if (error instanceof ZodError) {
       return NextResponse.json(
