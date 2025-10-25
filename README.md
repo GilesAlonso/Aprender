@@ -102,6 +102,10 @@ pnpm test:watch # acompanha alterações em modo observador
 4. Antes de abrir PR, execute `pnpm check` para garantir lint, type-check e testes verdes.
 5. Descreva claramente o impacto das mudanças e anexos relevantes (prints, logs, etc.).
 
+## Deploy na Vercel
+
+O passo a passo completo para configurar CI/CD, banco de dados gerenciado e domínios está documentado em [`docs/deployment-vercel.md`](./docs/deployment-vercel.md).
+
 ---
 
 **Referências:**

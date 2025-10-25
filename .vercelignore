@@ -1,0 +1,6 @@
+# Arquivos e diretórios ignorados durante o upload para a Vercel
+# Mantém o bundle de deploy mais enxuto e evita transferir materiais de apoio.
+
+docs/
+.storybook/
+*.log
