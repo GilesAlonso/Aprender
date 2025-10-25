@@ -4,6 +4,9 @@
 
 :root {
   color-scheme: light;
+  --ease-friendly: cubic-bezier(0.16, 1, 0.3, 1);
+  --ease-pop: cubic-bezier(0.34, 1.56, 0.64, 1);
+  --shadow-floating: 0 20px 40px rgba(55, 115, 246, 0.18);
 }
 
 html {
@@ -11,11 +14,12 @@ html {
 }
 
 body {
-  @apply min-h-screen bg-neutral-50 text-neutral-900 antialiased;
+  @apply min-h-screen bg-surface-100 text-neutral-900 antialiased;
+  font-feature-settings: "kern", "liga", "clig", "calt";
 }
 
 ::selection {
-  @apply bg-secondary-200 text-neutral-900;
+  @apply bg-accent-200 text-neutral-900;
 }
 
 @layer base {
@@ -25,25 +29,45 @@ body {
   h4,
   h5,
   h6 {
-    @apply font-display text-neutral-900;
+    @apply font-display tracking-tight text-neutral-900;
   }
 
   p {
-    @apply text-neutral-700;
+    @apply text-body-md text-neutral-700;
+  }
+
+  small {
+    @apply text-label-md text-neutral-500;
+  }
+
+  strong {
+    @apply text-neutral-900;
+  }
+
+  a {
+    @apply text-primary-600 underline-offset-4 transition-colors duration-200 ease-friendly hover:text-primary-500 focus-visible:text-primary-600;
+  }
+
+  *:focus-visible {
+    @apply outline-none ring-4 ring-primary-200 ring-offset-2 ring-offset-surface transition duration-200 ease-friendly;
   }
 }
 
 @layer components {
   .btn-primary {
-    @apply inline-flex items-center justify-center rounded-3xl bg-primary-500 px-6 py-3 font-semibold text-white shadow-glow transition hover:bg-primary-600 focus-visible:outline-none focus-visible:ring-4 focus-visible:ring-primary-200;
+    @apply inline-flex items-center justify-center gap-2 rounded-pill bg-primary-500 px-6 py-3 text-body-md font-semibold text-white shadow-bubble transition ease-friendly hover:bg-primary-600 active:bg-primary-700 focus-visible:ring-primary-200 disabled:cursor-not-allowed disabled:opacity-60;
   }
 
   .btn-secondary {
-    @apply inline-flex items-center justify-center rounded-3xl border border-transparent bg-white px-6 py-3 font-semibold text-primary-600 shadow-sm transition hover:border-primary-100 hover:shadow focus-visible:outline-none focus-visible:ring-4 focus-visible:ring-primary-100;
+    @apply inline-flex items-center justify-center gap-2 rounded-pill border border-primary-100 bg-white px-6 py-3 text-body-md font-semibold text-primary-600 shadow-card transition ease-friendly hover:bg-primary-50 active:bg-primary-100 focus-visible:ring-primary-100 disabled:cursor-not-allowed disabled:opacity-70;
   }
 
   .badge {
-    @apply inline-flex items-center gap-2 rounded-full bg-secondary-100 px-4 py-1 text-sm font-semibold uppercase tracking-wide text-secondary-700 shadow-sm;
+    @apply inline-flex items-center gap-2 rounded-pill bg-secondary-100 px-4 py-1 text-label-lg font-semibold uppercase tracking-[0.08em] text-secondary-700 drop-shadow-badge;
+  }
+
+  .surface-card {
+    @apply rounded-3xl border border-primary-50 bg-surface shadow-card;
   }
 }
 
@@ -51,4 +75,36 @@ body {
   .text-balance {
     text-wrap: balance;
   }
+
+  .bg-sparkle {
+    background-image: radial-gradient(circle, rgba(255, 103, 209, 0.18) 1px, transparent 1px);
+    background-size: 40px 40px;
+  }
+
+  .focus-ring-soft {
+    @apply ring-4 ring-primary-200 ring-offset-2 ring-offset-surface;
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  :root {
+    scroll-behavior: auto;
+  }
+
+  *,
+  *::before,
+  *::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+    scroll-behavior: auto !important;
+  }
+}
+
+body[data-motion="reduce"] *,
+body[data-motion="reduce"] *::before,
+body[data-motion="reduce"] *::after {
+  animation-duration: 0.01ms !important;
+  animation-iteration-count: 1 !important;
+  transition-duration: 0.01ms !important;
 }
