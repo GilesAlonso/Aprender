@@ -1,9 +1,10 @@
 import { NextRequest } from "next/server";
 import { afterAll, describe, expect, it } from "vitest";
 
-import { prisma } from "@/lib/prisma";
 import { GET as getModules } from "@/app/api/modules/route";
 import { POST as postAttempt } from "@/app/api/attempts/route";
+import { clearAnalyticsHistory, getAnalyticsHistory } from "@/lib/analytics";
+import { prisma } from "@/lib/prisma";
 
 describe("Learning API", () => {
   it("retorna módulos com contexto de faixa etária e acesso liberado", async () => {
@@ -87,7 +88,7 @@ describe("Learning API", () => {
     expect(body.recommendedModules?.every((module) => module.access === "available")).toBe(true);
   });
 
-  it("registra tentativas e atualiza progresso do estudante", async () => {
+  it("registra tentativas, atualiza progresso e emite analytics", async () => {
     const testEmail = `teste-${Date.now()}@aprender.dev`;
 
     const [ageGroup, activity] = await Promise.all([
@@ -103,6 +104,8 @@ describe("Learning API", () => {
         ageGroupId: ageGroup.id,
       },
     });
+
+    clearAnalyticsHistory();
 
     const payload = {
       userId: user.id,
@@ -128,7 +131,7 @@ describe("Learning API", () => {
     expect(response.status).toBe(201);
 
     const body = (await response.json()) as {
-      attempt: { userId: string; metadata: { tentativa: string } | null };
+      attempt: { id: string; userId: string; activityId: string; metadata: { tentativa: string } | null };
       progress: { status: string; completion: number; totalAttempts: number };
     };
 
@@ -150,6 +153,16 @@ describe("Learning API", () => {
     expect(storedProgress.status).toBe("COMPLETED");
     expect(storedProgress.completion).toBe(100);
     expect(storedProgress.totalAttempts).toBe(1);
+
+    const history = getAnalyticsHistory();
+    const analyticsAttempt = history.find((event) => event.type === "attempt_logged");
+    expect(analyticsAttempt).toBeDefined();
+    if (analyticsAttempt?.type === "attempt_logged") {
+      expect(analyticsAttempt.activityId).toBe(body.attempt.activityId);
+      expect(analyticsAttempt.userId).toBe(user.id);
+      expect(analyticsAttempt.attemptId).toBe(body.attempt.id);
+      expect(analyticsAttempt.score).toBe(payload.score);
+    }
   });
 });
 
