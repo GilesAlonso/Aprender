@@ -1,0 +1,1 @@
+este será um projeto que por meio de inteligência artificial apresentará conteúdos de apoio aos estudantes durante seu curso de aprendizado, adequado à sua faixa etária, conforme a base nacional curricular comum.
