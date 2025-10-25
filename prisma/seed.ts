@@ -1,5 +1,7 @@
 import { PrismaClient } from "@prisma/client";
 
+import { BNCC_STAGE_CONFIG } from "../src/lib/personalization/age-stages";
+
 const prisma = new PrismaClient();
 
 type CurriculumHabilidade = {
@@ -41,53 +43,42 @@ type UserSeed = {
   rewards: RewardSeed[];
 };
 
-const ageGroupsData = [
-  {
-    slug: "educacao-infantil",
-    name: "Educação Infantil (4-5 anos)",
-    minAge: 4,
-    maxAge: 5,
-    description:
-      "Primeiros contatos estruturados com linguagem oral, musicalidade e exploração corporal alinhados aos campos de experiência da BNCC.",
-  },
-  {
-    slug: "fundamental-anos-iniciais",
-    name: "Ensino Fundamental - Anos Iniciais (6-8 anos)",
-    minAge: 6,
-    maxAge: 8,
-    description:
-      "Primeiro ciclo alfabetizador com foco em leitura, produção de textos curtos e resolução de problemas cotidianos.",
-  },
-  {
-    slug: "fundamental-anos-finais",
-    name: "Ensino Fundamental - Anos Finais (9-11 anos)",
-    minAge: 9,
-    maxAge: 11,
-    description:
-      "Ampliação de repertório em linguagens, Ciências Humanas e Matemática com projetos integradores.",
-  },
-] as const;
+const ageGroupsData = BNCC_STAGE_CONFIG.map((stage) => ({
+  slug: stage.slug,
+  name: `${stage.stage} (${stage.minAge}-${stage.maxAge} anos)`,
+  minAge: stage.minAge,
+  maxAge: stage.maxAge,
+  description: stage.educatorSummary,
+}));
 
 const learningPathsData = [
   {
     slug: "aventuras-letrinhas",
     title: "Aventuras com Letrinhas",
     description:
-      "Sequência lúdica para apoiar crianças na consciência fonológica e na expressão corporal.",
+      "Sequência lúdica para apoiar crianças na consciência fonológica, oralidade e expressão corporal.",
     ageGroupSlug: "educacao-infantil",
   },
   {
     slug: "descobertas-palavras",
     title: "Descobertas das Palavras",
     description:
-      "Trilha para alfabetização inicial com foco em leitura e compreensão de pequenos textos.",
+      "Trilha para alfabetização inicial com foco em leitura, produção de textos curtos e resolução de problemas.",
     ageGroupSlug: "fundamental-anos-iniciais",
   },
   {
-    slug: "investigadores-natureza",
-    title: "Investigadores da Natureza",
-    description: "Percurso investigativo interdisciplinar sobre ciências e sustentabilidade.",
+    slug: "inventores-projetos",
+    title: "Inventores da Natureza",
+    description:
+      "Percurso investigativo interdisciplinar com debates, prototipagem e protagonismo juvenil.",
     ageGroupSlug: "fundamental-anos-finais",
+  },
+  {
+    slug: "trajetos-projeto-vida",
+    title: "Projetos de Vida e Impacto",
+    description:
+      "Itinerário para Ensino Médio que integra cultura digital, projeto de vida e desafios socioambientais.",
+    ageGroupSlug: "ensino-medio",
   },
 ] as const;
 
@@ -103,8 +94,8 @@ const curriculumStandardsData = [
           "Participar de brincadeiras de dramatização, imitando, inventando personagens e enredos.",
       },
       {
-        codigo: "EI03EF06",
-        habilidade: "Explorar sons, ritmos e melodias com o corpo e materiais sonoros.",
+        codigo: "EI03CG05",
+        habilidade: "Explorar objetos, cenários e narrativas com curiosidade e imaginação.",
       },
     ] satisfies CurriculumHabilidade[],
     description: "Campos de experiência Corpo, gestos e movimentos / Traços, sons, cores e formas.",
@@ -113,39 +104,58 @@ const curriculumStandardsData = [
   {
     bnccCode: "EF01LP06",
     competency:
-      "Reconhecer a função social da leitura e construir estratégias de compreensão de textos curtos.",
+      "Ler e compreender textos curtos identificando assunto e informações principais.",
     habilidades: [
       {
         codigo: "EF01LP06",
         habilidade:
-          "Ler e compreender textos curtos, identificando assunto, personagens e ações principais.",
+          "Ler e compreender textos curtos, identificando personagens, locais e ações principais.",
       },
       {
-        codigo: "EF01LP07",
-        habilidade:
-          "Planejar e produzir bilhetes, convites e listas com apoio de repertórios conhecidos.",
+        codigo: "EF02MA05",
+        habilidade: "Resolver problemas de adição e subtração envolvendo situações cotidianas.",
       },
     ] satisfies CurriculumHabilidade[],
-    description: "Língua Portuguesa - Práticas de Linguagem: Leitura e Produção de textos.",
+    description: "Integração entre Língua Portuguesa e Matemática nos anos iniciais.",
     ageGroupSlug: "fundamental-anos-iniciais",
   },
   {
-    bnccCode: "EF04CI02",
+    bnccCode: "EF07CI02",
     competency:
-      "Investigar fenômenos naturais e sociais, formulando hipóteses e registrando descobertas.",
+      "Investigar fenômenos naturais e sociais, formulando hipóteses e registrando evidências.",
     habilidades: [
       {
-        codigo: "EF04CI02",
+        codigo: "EF07CI02",
         habilidade:
-          "Planejar e realizar experimentos simples, registrando procedimentos, resultados e conclusões.",
+          "Planejar e realizar experimentos, analisando resultados para explicar fenômenos.",
       },
       {
-        codigo: "EF04CI06",
-        habilidade: "Resolver problemas envolvendo uso consciente de recursos naturais.",
+        codigo: "EF69LP32",
+        habilidade:
+          "Produzir textos multimodais para comunicar conclusões de pesquisas colaborativas.",
       },
     ] satisfies CurriculumHabilidade[],
-    description: "Ciências - Vida e Evolução / Matéria e Energia.",
+    description:
+      "Ciências da Natureza e Linguagens articuladas com projetos investigativos nos anos finais.",
     ageGroupSlug: "fundamental-anos-finais",
+  },
+  {
+    bnccCode: "EM13MAT305",
+    competency:
+      "Utilizar conceitos de estatística e probabilidade para fundamentar decisões e projetos.",
+    habilidades: [
+      {
+        codigo: "EM13MAT305",
+        habilidade: "Construir e analisar modelos estatísticos aplicados a problemas reais.",
+      },
+      {
+        codigo: "EM13CHS602",
+        habilidade: "Investigar impactos socioambientais propondo soluções coletivas e viáveis.",
+      },
+    ] satisfies CurriculumHabilidade[],
+    description:
+      "Itinerário formativo integrando Matemática, Ciências Humanas e Projeto de Vida no Ensino Médio.",
+    ageGroupSlug: "ensino-medio",
   },
 ] as const;
 
@@ -164,7 +174,7 @@ const contentModulesData = [
     slug: "clubinho-das-palavras",
     title: "Clubinho das Palavras",
     subtitle: "Leituras compartilhadas",
-    description: "Módulo para construir repertório de leitura com textos do cotidiano.",
+    description: "Módulo para construir repertório de leitura e produção de bilhetes e convites.",
     theme: "Língua Portuguesa",
     ageGroupSlug: "fundamental-anos-iniciais",
     learningPathSlug: "descobertas-palavras",
@@ -174,11 +184,23 @@ const contentModulesData = [
     slug: "laboratorio-da-natureza",
     title: "Laboratório da Natureza",
     subtitle: "Investigação científica",
-    description: "Experimentos guiados sobre ciclos da água e sustentabilidade.",
+    description:
+      "Experimentos guiados sobre recursos naturais, registro de evidências e comunicação multimodal.",
     theme: "Ciências",
     ageGroupSlug: "fundamental-anos-finais",
-    learningPathSlug: "investigadores-natureza",
-    curriculumStandardCode: "EF04CI02",
+    learningPathSlug: "inventores-projetos",
+    curriculumStandardCode: "EF07CI02",
+  },
+  {
+    slug: "estudio-dados-solidarios",
+    title: "Estúdio de Dados Solidários",
+    subtitle: "Projeto de vida e impacto",
+    description:
+      "Projeto interdisciplinar para investigar dados da comunidade, gerar protótipos e comunicar soluções.",
+    theme: "Projeto de Vida",
+    ageGroupSlug: "ensino-medio",
+    learningPathSlug: "trajetos-projeto-vida",
+    curriculumStandardCode: "EM13MAT305",
   },
 ] as const;
 
@@ -241,30 +263,61 @@ const activitiesData = [
   },
   {
     slug: "experimento-da-agua",
-    title: "Ciclo da Água em Casa",
-    prompt: "Monte um mini-ciclo da água com potes, papel filme e observe o que acontece.",
+    title: "Laboratório dos Recursos Naturais",
+    prompt: "Analise diferentes amostras de água e registre evidências sobre consumo consciente.",
     activityType: "PUZZLE",
     difficulty: "INTERMEDIATE",
-    description: "Experimento guiado para observar evaporação e condensação.",
+    description:
+      "Experimento investigativo para observar transformações e discutir impacto ambiental.",
     contentModuleSlug: "laboratorio-da-natureza",
-    curriculumStandardCode: "EF04CI02",
+    curriculumStandardCode: "EF07CI02",
     metadata: {
-      seguranca: "Adulto acompanhante",
-      registro: "Tabela de observação",
+      seguranca: "Orientação docente",
+      registro: "Relato multimodal",
     } satisfies ActivityMetadata,
   },
   {
     slug: "quiz-sustentabilidade",
     title: "Quiz da Sustentabilidade",
-    prompt: "Responda desafios sobre uso consciente da água e da energia.",
+    prompt: "Responda desafios sobre uso consciente da água, energia e consumo.",
     activityType: "QUIZ",
     difficulty: "ADVANCED",
-    description: "Perguntas de múltipla escolha com feedback imediato.",
+    description: "Perguntas de múltipla escolha com feedback imediato e links para pesquisa.",
     contentModuleSlug: "laboratorio-da-natureza",
-    curriculumStandardCode: "EF04CI02",
+    curriculumStandardCode: "EF07CI02",
     metadata: {
       numeroQuestoes: 6,
       tipo: "Multipla escolha",
+    } satisfies ActivityMetadata,
+  },
+  {
+    slug: "investigacao-dados-bairro",
+    title: "Diagnóstico do Bairro",
+    prompt: "Investigue dados públicos da sua cidade e proponha indicadores para acompanhar mudanças.",
+    activityType: "GAME",
+    difficulty: "ADVANCED",
+    description:
+      "Desafio investigativo para analisar dados, formular hipóteses e comunicar resultados com infográficos.",
+    contentModuleSlug: "estudio-dados-solidarios",
+    curriculumStandardCode: "EM13MAT305",
+    metadata: {
+      ferramentas: ["Planilha colaborativa", "Mapa digital"],
+      entregavel: "Relatório visual",
+    } satisfies ActivityMetadata,
+  },
+  {
+    slug: "podcast-projeto-vida",
+    title: "Podcast Projeto de Vida",
+    prompt: "Crie um roteiro de podcast entrevistando pessoas sobre sonhos e desafios da comunidade.",
+    activityType: "QUIZ",
+    difficulty: "INTERMEDIATE",
+    description:
+      "Atividade multimídia para exercitar comunicação, empatia e planejamento de ações coletivas.",
+    contentModuleSlug: "estudio-dados-solidarios",
+    curriculumStandardCode: "EM13MAT305",
+    metadata: {
+      formato: "Podcast colaborativo",
+      duracaoMinutos: 15,
     } satisfies ActivityMetadata,
   },
 ] as const;
@@ -341,6 +394,37 @@ const usersData: UserSeed[] = [
         description: "Identificou sons iniciais em diferentes textos.",
         criteria: "Concluir com sucesso duas atividades de leitura.",
         icon: "badge-letter",
+      },
+    ],
+  },
+  {
+    email: "carla@aprender.dev",
+    name: "Carla Souza",
+    displayName: "Carla",
+    ageGroupSlug: "ensino-medio",
+    learningPathSlugs: ["trajetos-projeto-vida"],
+    progress: [
+      {
+        contentModuleSlug: "estudio-dados-solidarios",
+        completion: 20,
+        status: "IN_PROGRESS",
+        totalAttempts: 1,
+      },
+    ],
+    attempts: [
+      {
+        activitySlug: "investigacao-dados-bairro",
+        success: true,
+        score: 92,
+        metadata: { analise: "Apresentou gráfico comparando bairros." },
+      },
+    ],
+    rewards: [
+      {
+        title: "Mentora da Comunidade",
+        description: "Compartilhou achados com a turma e propôs plano de ação.",
+        criteria: "Concluir relatório colaborativo com impacto social.",
+        icon: "medal-laranja",
       },
     ],
   },

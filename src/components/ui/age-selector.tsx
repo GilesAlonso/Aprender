@@ -25,28 +25,36 @@ export interface AgeSelectorProps {
 
 const DEFAULT_OPTIONS: AgeOption[] = [
   {
-    id: "exploradores-6-8",
-    faixa: "6 a 8 anos",
-    label: "Exploradores",
-    description: "Brincadeiras guiadas, histórias interativas e missões curtinhas.",
+    id: "educacao-infantil",
+    faixa: "4 a 5 anos",
+    label: "Exploradores do Faz de Conta",
+    description: "Histórias, músicas e movimento com apoio da família e educadores.",
     icon: <SparkIcon className="h-9 w-9 text-secondary-500" aria-hidden="true" />,
     accentColorClass: "bg-secondary-100",
   },
   {
-    id: "inventores-9-12",
-    faixa: "9 a 12 anos",
-    label: "Inventores",
-    description: "Projetos colaborativos, desafios lógicos e construção de repertório.",
+    id: "fundamental-anos-iniciais",
+    faixa: "6 a 10 anos",
+    label: "Investigadores das Primeiras Descobertas",
+    description: "Leituras compartilhadas, missões práticas e jogos de resolução de problemas.",
     icon: <PuzzleIcon className="h-9 w-9 text-primary-500" aria-hidden="true" />,
     accentColorClass: "bg-primary-100",
   },
   {
-    id: "visionarios-13-17",
-    faixa: "13 a 17 anos",
-    label: "Visionários",
-    description: "Trilhas para autonomia, debates e simuladores com propósito social.",
+    id: "fundamental-anos-finais",
+    faixa: "11 a 14 anos",
+    label: "Inventores de Projetos",
+    description: "Desafios investigativos, debates e prototipagem colaborativa.",
     icon: <RocketIcon className="h-9 w-9 text-accent-400" aria-hidden="true" />,
     accentColorClass: "bg-accent-100",
+  },
+  {
+    id: "ensino-medio",
+    faixa: "15 a 17 anos",
+    label: "Visionários de Impacto",
+    description: "Projetos autorais, dados reais e planejamento de escolhas futuras.",
+    icon: <RocketIcon className="h-9 w-9 text-success-500" aria-hidden="true" />,
+    accentColorClass: "bg-success-100",
   },
 ];
 

@@ -49,6 +49,23 @@ export const Completo: Story = {
     userRole: "Exploradora",
     heroMessage:
       "Escolhemos missões que conectam ciência, cuidado com o planeta e expressão artística.",
+    personalizationSummary: {
+      stage: "Ensino Fundamental - Anos Iniciais",
+      label: "Investigadores das Primeiras Descobertas",
+      ageRange: "6 a 10 anos",
+      competencies: [
+        "EF01LP06 - Ler e compreender textos curtos, identificando personagens, locais e ações principais.",
+        "EF02MA05 - Resolver problemas de adição e subtração envolvendo situações cotidianas.",
+      ],
+      habilidades: [
+        "Utilize jogos de palavras, leitura compartilhada e produção de bilhetes.",
+        "Proponha experimentos simples com registros ilustrados ou tabelas.",
+      ],
+      guidanceNote:
+        "Combine momentos de leitura em voz alta e brincadeiras de investigação com a família.",
+      learningStyle: "Mão na massa",
+      message: "Trilha personalizada para consolidar alfabetização com experimentos leves.",
+    },
     children: (
       <section className="space-y-4">
         <h2 className="text-display-sm font-semibold text-neutral-900">Acompanhamento familiar</h2>

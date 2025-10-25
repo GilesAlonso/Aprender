@@ -7,7 +7,10 @@ export const progressStatusValues = ["NOT_STARTED", "IN_PROGRESS", "COMPLETED"] 
 const metadataSchema = z.record(z.string(), z.unknown());
 
 export const modulesQuerySchema = z.object({
-  ageGroupSlug: z.string().min(1, "ageGroupSlug é obrigatório"),
+  ageGroupSlug: z.string().min(1, "ageGroupSlug é obrigatório").optional(),
+  overrideAgeGroupSlug: z.string().min(1, "overrideAgeGroupSlug é obrigatório").optional(),
+  userId: z.string().cuid("userId inválido").optional(),
+  age: z.coerce.number().int().min(4).max(17).optional(),
 });
 
 export const logAttemptSchema = z.object({

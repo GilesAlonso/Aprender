@@ -6,27 +6,85 @@ import { GET as getModules } from "@/app/api/modules/route";
 import { POST as postAttempt } from "@/app/api/attempts/route";
 
 describe("Learning API", () => {
-  it("retorna módulos filtrados por faixa etária", async () => {
+  it("retorna módulos com contexto de faixa etária e acesso liberado", async () => {
     const request = NextRequest.from(
-      new Request("http://localhost:3000/api/modules?ageGroupSlug=educacao-infantil")
+      new Request("http://localhost:3000/api/modules?ageGroupSlug=educacao-infantil&age=5")
     );
 
     const response = await getModules(request);
     expect(response.status).toBe(200);
 
     const body = (await response.json()) as {
+      context: {
+        studentAgeGroup: { slug: string };
+        requestedAgeGroup: { slug: string };
+        isLocked: boolean;
+        message: string;
+      };
       modules: Array<{
         ageGroup: { slug: string };
         curriculumStandard: { bnccCode: string } | null;
         activities: unknown[];
+        access: string;
+        lockMessage: string | null;
       }>;
+      recommendedModules?: unknown[];
     };
 
+    expect(body.context.studentAgeGroup.slug).toBe("educacao-infantil");
+    expect(body.context.requestedAgeGroup.slug).toBe("educacao-infantil");
+    expect(body.context.isLocked).toBe(false);
+    expect(body.context.message).toMatch(/Conteúdos adaptados/i);
     expect(Array.isArray(body.modules)).toBe(true);
     expect(body.modules.length).toBeGreaterThan(0);
     expect(body.modules.every((module) => module.ageGroup.slug === "educacao-infantil")).toBe(true);
+    expect(body.modules.every((module) => module.access === "available")).toBe(true);
     expect(body.modules[0]?.curriculumStandard?.bnccCode).toBe("EI03ET04");
     expect(body.modules[0]?.activities.length).toBeGreaterThan(0);
+    expect(body.recommendedModules).toBeUndefined();
+  });
+
+  it("informa quando a etapa solicitada está bloqueada e sugere alternativas", async () => {
+    const user = await prisma.user.findUniqueOrThrow({ where: { email: "bruno@aprender.dev" } });
+
+    const request = NextRequest.from(
+      new Request(
+        `http://localhost:3000/api/modules?userId=${user.id}&ageGroupSlug=ensino-medio`
+      )
+    );
+
+    const response = await getModules(request);
+    expect(response.status).toBe(200);
+
+    const body = (await response.json()) as {
+      context: {
+        studentAgeGroup: { slug: string };
+        requestedAgeGroup: { slug: string };
+        isLocked: boolean;
+        message: string;
+      };
+      modules: Array<{
+        ageGroup: { slug: string };
+        access: string;
+        lockMessage: string | null;
+      }>;
+      recommendedModules?: Array<{
+        ageGroup: { slug: string };
+        access: string;
+      }>;
+    };
+
+    expect(body.context.studentAgeGroup.slug).toBe("fundamental-anos-iniciais");
+    expect(body.context.requestedAgeGroup.slug).toBe("ensino-medio");
+    expect(body.context.isLocked).toBe(true);
+    expect(body.modules.length).toBeGreaterThan(0);
+    expect(body.modules.every((module) => module.access === "locked")).toBe(true);
+    expect(body.modules[0]?.lockMessage).toMatch(/Combine com um educador/i);
+    expect(body.recommendedModules?.length).toBeGreaterThan(0);
+    expect(
+      body.recommendedModules?.every((module) => module.ageGroup.slug === "fundamental-anos-iniciais")
+    ).toBe(true);
+    expect(body.recommendedModules?.every((module) => module.access === "available")).toBe(true);
   });
 
   it("registra tentativas e atualiza progresso do estudante", async () => {
