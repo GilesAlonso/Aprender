@@ -1,0 +1,28 @@
+{
+  "home": {
+    "badge": "Co-creating the future of learning",
+    "title": "Aprender: personalized journeys aligned with Brazil's curriculum",
+    "description": "A digital companion that blends artificial intelligence and pedagogy to connect every child with meaningful learning moments.",
+    "mission": "Our mission is to support Brazilian students with accessible, caring and safe resources, side by side with educators and families.",
+    "cta": "Join the early access list",
+    "secondaryCta": "Read our vision",
+    "panelTitle": "What we are building",
+    "highlights": [
+      {
+        "title": "BNCC-aligned content",
+        "description": "We map competencies and skills for each stage of early childhood and elementary education."
+      },
+      {
+        "title": "Personalized experiences",
+        "description": "Artificial intelligence adapts challenges and activities according to each child's rhythm, interests and context."
+      },
+      {
+        "title": "Support network for families and teachers",
+        "description": "Gentle reports, actionable recommendations and continuous communication to strengthen the learning journey."
+      }
+    ],
+    "disclaimer": "We are at the beginning of our product journey. Your collaboration helps us design inclusive and humane experiences.",
+    "visionTitle": "Learning with care, technology and purpose",
+    "visionDescription": "We believe every child deserves a welcoming learning path. Aprender blends data science, pedagogy and creativity to support different styles and rhythms."
+  }
+}

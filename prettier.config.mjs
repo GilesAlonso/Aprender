@@ -1,0 +1,10 @@
+const config = {
+  arrowParens: "always",
+  printWidth: 100,
+  semi: true,
+  singleQuote: false,
+  tabWidth: 2,
+  trailingComma: "es5"
+};
+
+export default config;
