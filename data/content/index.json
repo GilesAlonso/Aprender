@@ -1,6 +1,6 @@
 {
-  "generatedAt": "2025-10-26T21:06:15.271Z",
-  "contentHash": "76362e486a6bcdbfb651643fafc95c9c2975f542e99fccb8abe481ed4794827e",
+  "generatedAt": "2025-10-26T22:44:06.555Z",
+  "contentHash": "c7b1ee3bd03580b18374c01fa70709283f7eaedd31f26128c47c71b416f1ee39",
   "modulesBySubject": {
     "ciencias": ["laboratorio-da-natureza"],
     "lingua-portuguesa": [
@@ -9,7 +9,12 @@
       "clubinho-das-palavras",
       "familia-das-vogais",
       "frases-divertidas",
+      "historias-rimadas",
+      "hora-do-dialogo",
+      "jornal-da-turma",
+      "palavras-compostas",
       "palavras-em-acao",
+      "pontuacao-animada",
       "trilhas-narrativas-digitais"
     ],
     "linguagens": ["historias-em-movimento"],
@@ -22,7 +27,12 @@
       "clubinho-das-palavras",
       "familia-das-vogais",
       "frases-divertidas",
-      "palavras-em-acao"
+      "historias-rimadas",
+      "hora-do-dialogo",
+      "jornal-da-turma",
+      "palavras-compostas",
+      "palavras-em-acao",
+      "pontuacao-animada"
     ],
     "ef05": ["rota-das-operacoes"],
     "ef07": ["laboratorio-da-natureza", "oficina-modelagem-dados"],
@@ -128,6 +138,86 @@
         "activityType": "GAME"
       },
       {
+        "moduleSlug": "historias-rimadas",
+        "activitySlug": "eco-das-rimas",
+        "activityType": "QUIZ"
+      },
+      {
+        "moduleSlug": "historias-rimadas",
+        "activitySlug": "jogo-ritmo-rimado",
+        "activityType": "GAME"
+      },
+      {
+        "moduleSlug": "historias-rimadas",
+        "activitySlug": "pares-de-rima",
+        "activityType": "PUZZLE"
+      },
+      {
+        "moduleSlug": "historias-rimadas",
+        "activitySlug": "rima-no-final",
+        "activityType": "QUIZ"
+      },
+      {
+        "moduleSlug": "hora-do-dialogo",
+        "activitySlug": "escuta-atenta",
+        "activityType": "QUIZ"
+      },
+      {
+        "moduleSlug": "hora-do-dialogo",
+        "activitySlug": "jogo-turno-luz",
+        "activityType": "GAME"
+      },
+      {
+        "moduleSlug": "hora-do-dialogo",
+        "activitySlug": "puzzle-turnos",
+        "activityType": "PUZZLE"
+      },
+      {
+        "moduleSlug": "hora-do-dialogo",
+        "activitySlug": "turno-de-fala",
+        "activityType": "QUIZ"
+      },
+      {
+        "moduleSlug": "jornal-da-turma",
+        "activitySlug": "defina-o-publico",
+        "activityType": "QUIZ"
+      },
+      {
+        "moduleSlug": "jornal-da-turma",
+        "activitySlug": "jogo-planejamento-coletivo",
+        "activityType": "GAME"
+      },
+      {
+        "moduleSlug": "jornal-da-turma",
+        "activitySlug": "planeja-reportagem",
+        "activityType": "QUIZ"
+      },
+      {
+        "moduleSlug": "jornal-da-turma",
+        "activitySlug": "puzzle-funcoes-jornal",
+        "activityType": "PUZZLE"
+      },
+      {
+        "moduleSlug": "palavras-compostas",
+        "activitySlug": "campos-de-palavras",
+        "activityType": "QUIZ"
+      },
+      {
+        "moduleSlug": "palavras-compostas",
+        "activitySlug": "jogo-forma-palavra",
+        "activityType": "GAME"
+      },
+      {
+        "moduleSlug": "palavras-compostas",
+        "activitySlug": "palavra-composta-basica",
+        "activityType": "QUIZ"
+      },
+      {
+        "moduleSlug": "palavras-compostas",
+        "activitySlug": "puzzle-monta-composta",
+        "activityType": "PUZZLE"
+      },
+      {
         "moduleSlug": "palavras-em-acao",
         "activitySlug": "caixa-de-palavras",
         "activityType": "GAME"
@@ -145,6 +235,26 @@
       {
         "moduleSlug": "palavras-em-acao",
         "activitySlug": "puzzle-palavra-imagem",
+        "activityType": "PUZZLE"
+      },
+      {
+        "moduleSlug": "pontuacao-animada",
+        "activitySlug": "jogo-busca-ponto",
+        "activityType": "GAME"
+      },
+      {
+        "moduleSlug": "pontuacao-animada",
+        "activitySlug": "pergunta-ou-prossegue",
+        "activityType": "QUIZ"
+      },
+      {
+        "moduleSlug": "pontuacao-animada",
+        "activitySlug": "ponto-final-basico",
+        "activityType": "QUIZ"
+      },
+      {
+        "moduleSlug": "pontuacao-animada",
+        "activitySlug": "puzzle-sinais",
         "activityType": "PUZZLE"
       }
     ],
@@ -260,6 +370,81 @@
         "activityType": "QUIZ"
       },
       {
+        "moduleSlug": "historias-rimadas",
+        "activitySlug": "aliteracao-na-trilha",
+        "activityType": "QUIZ"
+      },
+      {
+        "moduleSlug": "historias-rimadas",
+        "activitySlug": "eco-de-sonoridades",
+        "activityType": "PUZZLE"
+      },
+      {
+        "moduleSlug": "historias-rimadas",
+        "activitySlug": "ordem-da-parlenda",
+        "activityType": "PUZZLE"
+      },
+      {
+        "moduleSlug": "historias-rimadas",
+        "activitySlug": "ritmo-na-historia",
+        "activityType": "QUIZ"
+      },
+      {
+        "moduleSlug": "historias-rimadas",
+        "activitySlug": "trilha-aliterativa",
+        "activityType": "GAME"
+      },
+      {
+        "moduleSlug": "hora-do-dialogo",
+        "activitySlug": "jogo-escuta-ativa",
+        "activityType": "GAME"
+      },
+      {
+        "moduleSlug": "hora-do-dialogo",
+        "activitySlug": "puzzle-relato-sequencia",
+        "activityType": "PUZZLE"
+      },
+      {
+        "moduleSlug": "hora-do-dialogo",
+        "activitySlug": "puzzle-sinais-de-escuta",
+        "activityType": "PUZZLE"
+      },
+      {
+        "moduleSlug": "hora-do-dialogo",
+        "activitySlug": "relato-bem-ordenado",
+        "activityType": "QUIZ"
+      },
+      {
+        "moduleSlug": "hora-do-dialogo",
+        "activitySlug": "resposta-educada",
+        "activityType": "QUIZ"
+      },
+      {
+        "moduleSlug": "jornal-da-turma",
+        "activitySlug": "jogo-coleta-fatos",
+        "activityType": "GAME"
+      },
+      {
+        "moduleSlug": "jornal-da-turma",
+        "activitySlug": "ordena-fatos",
+        "activityType": "QUIZ"
+      },
+      {
+        "moduleSlug": "jornal-da-turma",
+        "activitySlug": "puzzle-quadro-apoio",
+        "activityType": "PUZZLE"
+      },
+      {
+        "moduleSlug": "jornal-da-turma",
+        "activitySlug": "puzzle-roteiro",
+        "activityType": "PUZZLE"
+      },
+      {
+        "moduleSlug": "jornal-da-turma",
+        "activitySlug": "seleciona-informacao",
+        "activityType": "QUIZ"
+      },
+      {
         "moduleSlug": "laboratorio-da-natureza",
         "activitySlug": "experimento-da-agua",
         "activityType": "PUZZLE"
@@ -268,6 +453,31 @@
         "moduleSlug": "oficina-modelagem-dados",
         "activitySlug": "grafico-vivo-da-comunidade",
         "activityType": "GAME"
+      },
+      {
+        "moduleSlug": "palavras-compostas",
+        "activitySlug": "contexto-indica",
+        "activityType": "QUIZ"
+      },
+      {
+        "moduleSlug": "palavras-compostas",
+        "activitySlug": "dupla-significado",
+        "activityType": "QUIZ"
+      },
+      {
+        "moduleSlug": "palavras-compostas",
+        "activitySlug": "jogo-encaixa-sentido",
+        "activityType": "GAME"
+      },
+      {
+        "moduleSlug": "palavras-compostas",
+        "activitySlug": "puzzle-campo-semantico",
+        "activityType": "PUZZLE"
+      },
+      {
+        "moduleSlug": "palavras-compostas",
+        "activitySlug": "puzzle-contexto-pista",
+        "activityType": "PUZZLE"
       },
       {
         "moduleSlug": "palavras-em-acao",
@@ -293,6 +503,31 @@
         "moduleSlug": "palavras-em-acao",
         "activitySlug": "roda-das-rimas",
         "activityType": "GAME"
+      },
+      {
+        "moduleSlug": "pontuacao-animada",
+        "activitySlug": "emocao-na-frase",
+        "activityType": "QUIZ"
+      },
+      {
+        "moduleSlug": "pontuacao-animada",
+        "activitySlug": "escuta-da-pontuacao",
+        "activityType": "QUIZ"
+      },
+      {
+        "moduleSlug": "pontuacao-animada",
+        "activitySlug": "jogo-pergunta-surpresa",
+        "activityType": "GAME"
+      },
+      {
+        "moduleSlug": "pontuacao-animada",
+        "activitySlug": "puzzle-dialogo",
+        "activityType": "PUZZLE"
+      },
+      {
+        "moduleSlug": "pontuacao-animada",
+        "activitySlug": "puzzle-intencoes",
+        "activityType": "PUZZLE"
       },
       {
         "moduleSlug": "rota-das-operacoes",
@@ -397,6 +632,81 @@
         "activityType": "PUZZLE"
       },
       {
+        "moduleSlug": "historias-rimadas",
+        "activitySlug": "cria-rima-rapida",
+        "activityType": "GAME"
+      },
+      {
+        "moduleSlug": "historias-rimadas",
+        "activitySlug": "desafio-aliterativo",
+        "activityType": "QUIZ"
+      },
+      {
+        "moduleSlug": "historias-rimadas",
+        "activitySlug": "rima-e-cena",
+        "activityType": "PUZZLE"
+      },
+      {
+        "moduleSlug": "historias-rimadas",
+        "activitySlug": "ritmo-da-parlenda",
+        "activityType": "GAME"
+      },
+      {
+        "moduleSlug": "historias-rimadas",
+        "activitySlug": "verso-surpresa",
+        "activityType": "QUIZ"
+      },
+      {
+        "moduleSlug": "hora-do-dialogo",
+        "activitySlug": "dialogo-em-equipe",
+        "activityType": "QUIZ"
+      },
+      {
+        "moduleSlug": "hora-do-dialogo",
+        "activitySlug": "jogo-planeja-dialogo",
+        "activityType": "GAME"
+      },
+      {
+        "moduleSlug": "hora-do-dialogo",
+        "activitySlug": "jogo-relato-rapido",
+        "activityType": "GAME"
+      },
+      {
+        "moduleSlug": "hora-do-dialogo",
+        "activitySlug": "memorias-na-rodinha",
+        "activityType": "QUIZ"
+      },
+      {
+        "moduleSlug": "hora-do-dialogo",
+        "activitySlug": "puzzle-apoios-dialogo",
+        "activityType": "PUZZLE"
+      },
+      {
+        "moduleSlug": "jornal-da-turma",
+        "activitySlug": "jogo-design-jornal",
+        "activityType": "GAME"
+      },
+      {
+        "moduleSlug": "jornal-da-turma",
+        "activitySlug": "jogo-publica-e-divulga",
+        "activityType": "GAME"
+      },
+      {
+        "moduleSlug": "jornal-da-turma",
+        "activitySlug": "lancamento-do-jornal",
+        "activityType": "QUIZ"
+      },
+      {
+        "moduleSlug": "jornal-da-turma",
+        "activitySlug": "puzzle-revisao-final",
+        "activityType": "PUZZLE"
+      },
+      {
+        "moduleSlug": "jornal-da-turma",
+        "activitySlug": "revise-o-paragrafo",
+        "activityType": "QUIZ"
+      },
+      {
         "moduleSlug": "laboratorio-da-natureza",
         "activitySlug": "quiz-sustentabilidade",
         "activityType": "QUIZ"
@@ -405,6 +715,31 @@
         "moduleSlug": "oficina-modelagem-dados",
         "activitySlug": "dash-impacto-escolar",
         "activityType": "PROJECT"
+      },
+      {
+        "moduleSlug": "palavras-compostas",
+        "activitySlug": "deduza-o-significado",
+        "activityType": "QUIZ"
+      },
+      {
+        "moduleSlug": "palavras-compostas",
+        "activitySlug": "jogo-detective-palavras",
+        "activityType": "GAME"
+      },
+      {
+        "moduleSlug": "palavras-compostas",
+        "activitySlug": "jogo-explora-hibridos",
+        "activityType": "GAME"
+      },
+      {
+        "moduleSlug": "palavras-compostas",
+        "activitySlug": "palavra-surpresa",
+        "activityType": "QUIZ"
+      },
+      {
+        "moduleSlug": "palavras-compostas",
+        "activitySlug": "puzzle-expressoes-compostas",
+        "activityType": "PUZZLE"
       },
       {
         "moduleSlug": "palavras-em-acao",
@@ -424,6 +759,31 @@
       {
         "moduleSlug": "palavras-em-acao",
         "activitySlug": "puzzle-familia-palavras",
+        "activityType": "PUZZLE"
+      },
+      {
+        "moduleSlug": "pontuacao-animada",
+        "activitySlug": "corrige-a-pontuacao",
+        "activityType": "QUIZ"
+      },
+      {
+        "moduleSlug": "pontuacao-animada",
+        "activitySlug": "escolha-o-sinal",
+        "activityType": "QUIZ"
+      },
+      {
+        "moduleSlug": "pontuacao-animada",
+        "activitySlug": "jogo-exclamacao-energia",
+        "activityType": "GAME"
+      },
+      {
+        "moduleSlug": "pontuacao-animada",
+        "activitySlug": "jogo-pontua-texto",
+        "activityType": "GAME"
+      },
+      {
+        "moduleSlug": "pontuacao-animada",
+        "activitySlug": "puzzle-remix",
         "activityType": "PUZZLE"
       },
       {
@@ -454,6 +814,11 @@
       "activitySlug": "corrida-das-vogais",
       "activityType": "GAME"
     },
+    "game-cria-rima-rapida": {
+      "moduleSlug": "historias-rimadas",
+      "activitySlug": "cria-rima-rapida",
+      "activityType": "GAME"
+    },
     "game-detective-leitor": {
       "moduleSlug": "palavras-em-acao",
       "activitySlug": "detective-leitor",
@@ -467,6 +832,91 @@
     "game-frase-surpresa": {
       "moduleSlug": "frases-divertidas",
       "activitySlug": "frase-surpresa",
+      "activityType": "GAME"
+    },
+    "game-jogo-busca-ponto": {
+      "moduleSlug": "pontuacao-animada",
+      "activitySlug": "jogo-busca-ponto",
+      "activityType": "GAME"
+    },
+    "game-jogo-coleta-fatos": {
+      "moduleSlug": "jornal-da-turma",
+      "activitySlug": "jogo-coleta-fatos",
+      "activityType": "GAME"
+    },
+    "game-jogo-design-jornal": {
+      "moduleSlug": "jornal-da-turma",
+      "activitySlug": "jogo-design-jornal",
+      "activityType": "GAME"
+    },
+    "game-jogo-detective-palavras": {
+      "moduleSlug": "palavras-compostas",
+      "activitySlug": "jogo-detective-palavras",
+      "activityType": "GAME"
+    },
+    "game-jogo-encaixa-sentido": {
+      "moduleSlug": "palavras-compostas",
+      "activitySlug": "jogo-encaixa-sentido",
+      "activityType": "GAME"
+    },
+    "game-jogo-escuta-ativa": {
+      "moduleSlug": "hora-do-dialogo",
+      "activitySlug": "jogo-escuta-ativa",
+      "activityType": "GAME"
+    },
+    "game-jogo-exclamacao-energia": {
+      "moduleSlug": "pontuacao-animada",
+      "activitySlug": "jogo-exclamacao-energia",
+      "activityType": "GAME"
+    },
+    "game-jogo-explora-hibridos": {
+      "moduleSlug": "palavras-compostas",
+      "activitySlug": "jogo-explora-hibridos",
+      "activityType": "GAME"
+    },
+    "game-jogo-forma-palavra": {
+      "moduleSlug": "palavras-compostas",
+      "activitySlug": "jogo-forma-palavra",
+      "activityType": "GAME"
+    },
+    "game-jogo-pergunta-surpresa": {
+      "moduleSlug": "pontuacao-animada",
+      "activitySlug": "jogo-pergunta-surpresa",
+      "activityType": "GAME"
+    },
+    "game-jogo-planeja-dialogo": {
+      "moduleSlug": "hora-do-dialogo",
+      "activitySlug": "jogo-planeja-dialogo",
+      "activityType": "GAME"
+    },
+    "game-jogo-planejamento-coletivo": {
+      "moduleSlug": "jornal-da-turma",
+      "activitySlug": "jogo-planejamento-coletivo",
+      "activityType": "GAME"
+    },
+    "game-jogo-pontua-texto": {
+      "moduleSlug": "pontuacao-animada",
+      "activitySlug": "jogo-pontua-texto",
+      "activityType": "GAME"
+    },
+    "game-jogo-publica-e-divulga": {
+      "moduleSlug": "jornal-da-turma",
+      "activitySlug": "jogo-publica-e-divulga",
+      "activityType": "GAME"
+    },
+    "game-jogo-relato-rapido": {
+      "moduleSlug": "hora-do-dialogo",
+      "activitySlug": "jogo-relato-rapido",
+      "activityType": "GAME"
+    },
+    "game-jogo-ritmo-rimado": {
+      "moduleSlug": "historias-rimadas",
+      "activitySlug": "jogo-ritmo-rimado",
+      "activityType": "GAME"
+    },
+    "game-jogo-turno-luz": {
+      "moduleSlug": "hora-do-dialogo",
+      "activitySlug": "jogo-turno-luz",
       "activityType": "GAME"
     },
     "game-laboratorio-das-vogais": {
@@ -504,6 +954,11 @@
       "activitySlug": "revisao-rapida",
       "activityType": "GAME"
     },
+    "game-ritmo-da-parlenda": {
+      "moduleSlug": "historias-rimadas",
+      "activitySlug": "ritmo-da-parlenda",
+      "activityType": "GAME"
+    },
     "game-roda-das-rimas": {
       "moduleSlug": "palavras-em-acao",
       "activitySlug": "roda-das-rimas",
@@ -514,9 +969,39 @@
       "activitySlug": "roteiro-do-recado",
       "activityType": "GAME"
     },
+    "game-trilha-aliterativa": {
+      "moduleSlug": "historias-rimadas",
+      "activitySlug": "trilha-aliterativa",
+      "activityType": "GAME"
+    },
     "puzzle-danca-dos-sons": {
       "moduleSlug": "historias-em-movimento",
       "activitySlug": "danca-dos-sons",
+      "activityType": "PUZZLE"
+    },
+    "puzzle-eco-de-sonoridades": {
+      "moduleSlug": "historias-rimadas",
+      "activitySlug": "eco-de-sonoridades",
+      "activityType": "PUZZLE"
+    },
+    "puzzle-ordem-da-parlenda": {
+      "moduleSlug": "historias-rimadas",
+      "activitySlug": "ordem-da-parlenda",
+      "activityType": "PUZZLE"
+    },
+    "puzzle-pares-de-rima": {
+      "moduleSlug": "historias-rimadas",
+      "activitySlug": "pares-de-rima",
+      "activityType": "PUZZLE"
+    },
+    "puzzle-puzzle-apoios-dialogo": {
+      "moduleSlug": "hora-do-dialogo",
+      "activitySlug": "puzzle-apoios-dialogo",
+      "activityType": "PUZZLE"
+    },
+    "puzzle-puzzle-campo-semantico": {
+      "moduleSlug": "palavras-compostas",
+      "activitySlug": "puzzle-campo-semantico",
       "activityType": "PUZZLE"
     },
     "puzzle-puzzle-compasso-silabico": {
@@ -529,9 +1014,24 @@
       "activitySlug": "puzzle-completa-vogal",
       "activityType": "PUZZLE"
     },
+    "puzzle-puzzle-contexto-pista": {
+      "moduleSlug": "palavras-compostas",
+      "activitySlug": "puzzle-contexto-pista",
+      "activityType": "PUZZLE"
+    },
     "puzzle-puzzle-destinatario": {
       "moduleSlug": "bilhetes-e-recados",
       "activitySlug": "puzzle-destinatario",
+      "activityType": "PUZZLE"
+    },
+    "puzzle-puzzle-dialogo": {
+      "moduleSlug": "pontuacao-animada",
+      "activitySlug": "puzzle-dialogo",
+      "activityType": "PUZZLE"
+    },
+    "puzzle-puzzle-expressoes-compostas": {
+      "moduleSlug": "palavras-compostas",
+      "activitySlug": "puzzle-expressoes-compostas",
       "activityType": "PUZZLE"
     },
     "puzzle-puzzle-familia-palavras": {
@@ -544,6 +1044,11 @@
       "activitySlug": "puzzle-frase-imagem",
       "activityType": "PUZZLE"
     },
+    "puzzle-puzzle-funcoes-jornal": {
+      "moduleSlug": "jornal-da-turma",
+      "activitySlug": "puzzle-funcoes-jornal",
+      "activityType": "PUZZLE"
+    },
     "puzzle-puzzle-humor-frase": {
       "moduleSlug": "frases-divertidas",
       "activitySlug": "puzzle-humor-frase",
@@ -554,9 +1059,19 @@
       "activitySlug": "puzzle-intencao-frase",
       "activityType": "PUZZLE"
     },
+    "puzzle-puzzle-intencoes": {
+      "moduleSlug": "pontuacao-animada",
+      "activitySlug": "puzzle-intencoes",
+      "activityType": "PUZZLE"
+    },
     "puzzle-puzzle-melhorias": {
       "moduleSlug": "bilhetes-e-recados",
       "activitySlug": "puzzle-melhorias",
+      "activityType": "PUZZLE"
+    },
+    "puzzle-puzzle-monta-composta": {
+      "moduleSlug": "palavras-compostas",
+      "activitySlug": "puzzle-monta-composta",
       "activityType": "PUZZLE"
     },
     "puzzle-puzzle-ordem-bilhete": {
@@ -579,9 +1094,29 @@
       "activitySlug": "puzzle-palavras-frase",
       "activityType": "PUZZLE"
     },
+    "puzzle-puzzle-quadro-apoio": {
+      "moduleSlug": "jornal-da-turma",
+      "activitySlug": "puzzle-quadro-apoio",
+      "activityType": "PUZZLE"
+    },
+    "puzzle-puzzle-relato-sequencia": {
+      "moduleSlug": "hora-do-dialogo",
+      "activitySlug": "puzzle-relato-sequencia",
+      "activityType": "PUZZLE"
+    },
+    "puzzle-puzzle-remix": {
+      "moduleSlug": "pontuacao-animada",
+      "activitySlug": "puzzle-remix",
+      "activityType": "PUZZLE"
+    },
     "puzzle-puzzle-revisao": {
       "moduleSlug": "bilhetes-e-recados",
       "activitySlug": "puzzle-revisao",
+      "activityType": "PUZZLE"
+    },
+    "puzzle-puzzle-revisao-final": {
+      "moduleSlug": "jornal-da-turma",
+      "activitySlug": "puzzle-revisao-final",
       "activityType": "PUZZLE"
     },
     "puzzle-puzzle-rima-palavra": {
@@ -594,9 +1129,24 @@
       "activitySlug": "puzzle-rimas-sonoras",
       "activityType": "PUZZLE"
     },
+    "puzzle-puzzle-roteiro": {
+      "moduleSlug": "jornal-da-turma",
+      "activitySlug": "puzzle-roteiro",
+      "activityType": "PUZZLE"
+    },
     "puzzle-puzzle-silabas-dancarinas": {
       "moduleSlug": "brincando-com-sons",
       "activitySlug": "puzzle-silabas-dancarinas",
+      "activityType": "PUZZLE"
+    },
+    "puzzle-puzzle-sinais": {
+      "moduleSlug": "pontuacao-animada",
+      "activitySlug": "puzzle-sinais",
+      "activityType": "PUZZLE"
+    },
+    "puzzle-puzzle-sinais-de-escuta": {
+      "moduleSlug": "hora-do-dialogo",
+      "activitySlug": "puzzle-sinais-de-escuta",
       "activityType": "PUZZLE"
     },
     "puzzle-puzzle-som-inicial": {
@@ -609,6 +1159,11 @@
       "activitySlug": "puzzle-trilha-alfabeto",
       "activityType": "PUZZLE"
     },
+    "puzzle-puzzle-turnos": {
+      "moduleSlug": "hora-do-dialogo",
+      "activitySlug": "puzzle-turnos",
+      "activityType": "PUZZLE"
+    },
     "puzzle-puzzle-vogais-amigas": {
       "moduleSlug": "familia-das-vogais",
       "activitySlug": "puzzle-vogais-amigas",
@@ -619,6 +1174,16 @@
       "activitySlug": "puzzle-vogal-e-imagem",
       "activityType": "PUZZLE"
     },
+    "puzzle-rima-e-cena": {
+      "moduleSlug": "historias-rimadas",
+      "activitySlug": "rima-e-cena",
+      "activityType": "PUZZLE"
+    },
+    "quiz-aliteracao-na-trilha": {
+      "moduleSlug": "historias-rimadas",
+      "activitySlug": "aliteracao-na-trilha",
+      "activityType": "QUIZ"
+    },
     "quiz-batida-do-nome": {
       "moduleSlug": "brincando-com-sons",
       "activitySlug": "batida-do-nome",
@@ -627,6 +1192,11 @@
     "quiz-caixa-das-vogais": {
       "moduleSlug": "familia-das-vogais",
       "activitySlug": "caixa-das-vogais",
+      "activityType": "QUIZ"
+    },
+    "quiz-campos-de-palavras": {
+      "moduleSlug": "palavras-compostas",
+      "activitySlug": "campos-de-palavras",
       "activityType": "QUIZ"
     },
     "quiz-cantinho-das-palavras": {
@@ -644,6 +1214,11 @@
       "activitySlug": "completar-resposta",
       "activityType": "QUIZ"
     },
+    "quiz-contexto-indica": {
+      "moduleSlug": "palavras-compostas",
+      "activitySlug": "contexto-indica",
+      "activityType": "QUIZ"
+    },
     "quiz-coro-das-vogais": {
       "moduleSlug": "familia-das-vogais",
       "activitySlug": "coro-das-vogais",
@@ -652,6 +1227,26 @@
     "quiz-corrige-a-frase": {
       "moduleSlug": "bilhetes-e-recados",
       "activitySlug": "corrige-a-frase",
+      "activityType": "QUIZ"
+    },
+    "quiz-corrige-a-pontuacao": {
+      "moduleSlug": "pontuacao-animada",
+      "activitySlug": "corrige-a-pontuacao",
+      "activityType": "QUIZ"
+    },
+    "quiz-deduza-o-significado": {
+      "moduleSlug": "palavras-compostas",
+      "activitySlug": "deduza-o-significado",
+      "activityType": "QUIZ"
+    },
+    "quiz-defina-o-publico": {
+      "moduleSlug": "jornal-da-turma",
+      "activitySlug": "defina-o-publico",
+      "activityType": "QUIZ"
+    },
+    "quiz-desafio-aliterativo": {
+      "moduleSlug": "historias-rimadas",
+      "activitySlug": "desafio-aliterativo",
       "activityType": "QUIZ"
     },
     "quiz-descubra-o-humor": {
@@ -669,9 +1264,24 @@
       "activitySlug": "detetive-dos-pedacinhos",
       "activityType": "QUIZ"
     },
+    "quiz-dialogo-em-equipe": {
+      "moduleSlug": "hora-do-dialogo",
+      "activitySlug": "dialogo-em-equipe",
+      "activityType": "QUIZ"
+    },
     "quiz-duelo-de-palavras": {
       "moduleSlug": "palavras-em-acao",
       "activitySlug": "duelo-de-palavras",
+      "activityType": "QUIZ"
+    },
+    "quiz-dupla-significado": {
+      "moduleSlug": "palavras-compostas",
+      "activitySlug": "dupla-significado",
+      "activityType": "QUIZ"
+    },
+    "quiz-eco-das-rimas": {
+      "moduleSlug": "historias-rimadas",
+      "activitySlug": "eco-das-rimas",
       "activityType": "QUIZ"
     },
     "quiz-eco-dos-sons": {
@@ -684,9 +1294,29 @@
       "activitySlug": "elementos-do-bilhete",
       "activityType": "QUIZ"
     },
+    "quiz-emocao-na-frase": {
+      "moduleSlug": "pontuacao-animada",
+      "activitySlug": "emocao-na-frase",
+      "activityType": "QUIZ"
+    },
+    "quiz-escolha-o-sinal": {
+      "moduleSlug": "pontuacao-animada",
+      "activitySlug": "escolha-o-sinal",
+      "activityType": "QUIZ"
+    },
     "quiz-escolha-rapida": {
       "moduleSlug": "palavras-em-acao",
       "activitySlug": "escolha-rapida",
+      "activityType": "QUIZ"
+    },
+    "quiz-escuta-atenta": {
+      "moduleSlug": "hora-do-dialogo",
+      "activitySlug": "escuta-atenta",
+      "activityType": "QUIZ"
+    },
+    "quiz-escuta-da-pontuacao": {
+      "moduleSlug": "pontuacao-animada",
+      "activitySlug": "escuta-da-pontuacao",
       "activityType": "QUIZ"
     },
     "quiz-frase-ilustrada": {
@@ -699,9 +1329,19 @@
       "activitySlug": "intencao-da-frase",
       "activityType": "QUIZ"
     },
+    "quiz-lancamento-do-jornal": {
+      "moduleSlug": "jornal-da-turma",
+      "activitySlug": "lancamento-do-jornal",
+      "activityType": "QUIZ"
+    },
     "quiz-leitura-estrategica": {
       "moduleSlug": "palavras-em-acao",
       "activitySlug": "leitura-estrategica",
+      "activityType": "QUIZ"
+    },
+    "quiz-memorias-na-rodinha": {
+      "moduleSlug": "hora-do-dialogo",
+      "activitySlug": "memorias-na-rodinha",
       "activityType": "QUIZ"
     },
     "quiz-objetivo-do-recado": {
@@ -719,6 +1359,16 @@
       "activitySlug": "ordem-das-vogais",
       "activityType": "QUIZ"
     },
+    "quiz-ordena-fatos": {
+      "moduleSlug": "jornal-da-turma",
+      "activitySlug": "ordena-fatos",
+      "activityType": "QUIZ"
+    },
+    "quiz-palavra-composta-basica": {
+      "moduleSlug": "palavras-compostas",
+      "activitySlug": "palavra-composta-basica",
+      "activityType": "QUIZ"
+    },
     "quiz-palavra-e-figura": {
       "moduleSlug": "palavras-em-acao",
       "activitySlug": "palavra-e-figura",
@@ -727,6 +1377,26 @@
     "quiz-palavra-em-contexto": {
       "moduleSlug": "palavras-em-acao",
       "activitySlug": "palavra-em-contexto",
+      "activityType": "QUIZ"
+    },
+    "quiz-palavra-surpresa": {
+      "moduleSlug": "palavras-compostas",
+      "activitySlug": "palavra-surpresa",
+      "activityType": "QUIZ"
+    },
+    "quiz-pergunta-ou-prossegue": {
+      "moduleSlug": "pontuacao-animada",
+      "activitySlug": "pergunta-ou-prossegue",
+      "activityType": "QUIZ"
+    },
+    "quiz-planeja-reportagem": {
+      "moduleSlug": "jornal-da-turma",
+      "activitySlug": "planeja-reportagem",
+      "activityType": "QUIZ"
+    },
+    "quiz-ponto-final-basico": {
+      "moduleSlug": "pontuacao-animada",
+      "activitySlug": "ponto-final-basico",
       "activityType": "QUIZ"
     },
     "quiz-qual-o-destinatario": {
@@ -739,14 +1409,44 @@
       "activitySlug": "quem-faz-o-que",
       "activityType": "QUIZ"
     },
+    "quiz-relato-bem-ordenado": {
+      "moduleSlug": "hora-do-dialogo",
+      "activitySlug": "relato-bem-ordenado",
+      "activityType": "QUIZ"
+    },
+    "quiz-resposta-educada": {
+      "moduleSlug": "hora-do-dialogo",
+      "activitySlug": "resposta-educada",
+      "activityType": "QUIZ"
+    },
     "quiz-revendo-o-texto": {
       "moduleSlug": "bilhetes-e-recados",
       "activitySlug": "revendo-o-texto",
       "activityType": "QUIZ"
     },
+    "quiz-revise-o-paragrafo": {
+      "moduleSlug": "jornal-da-turma",
+      "activitySlug": "revise-o-paragrafo",
+      "activityType": "QUIZ"
+    },
+    "quiz-rima-no-final": {
+      "moduleSlug": "historias-rimadas",
+      "activitySlug": "rima-no-final",
+      "activityType": "QUIZ"
+    },
     "quiz-rimas-do-recreio": {
       "moduleSlug": "brincando-com-sons",
       "activitySlug": "rimas-do-recreio",
+      "activityType": "QUIZ"
+    },
+    "quiz-ritmo-na-historia": {
+      "moduleSlug": "historias-rimadas",
+      "activitySlug": "ritmo-na-historia",
+      "activityType": "QUIZ"
+    },
+    "quiz-seleciona-informacao": {
+      "moduleSlug": "jornal-da-turma",
+      "activitySlug": "seleciona-informacao",
       "activityType": "QUIZ"
     },
     "quiz-som-e-letra": {
@@ -762,6 +1462,16 @@
     "quiz-trilho-das-silabas": {
       "moduleSlug": "brincando-com-sons",
       "activitySlug": "trilho-das-silabas",
+      "activityType": "QUIZ"
+    },
+    "quiz-turno-de-fala": {
+      "moduleSlug": "hora-do-dialogo",
+      "activitySlug": "turno-de-fala",
+      "activityType": "QUIZ"
+    },
+    "quiz-verso-surpresa": {
+      "moduleSlug": "historias-rimadas",
+      "activitySlug": "verso-surpresa",
       "activityType": "QUIZ"
     },
     "quiz-vogal-exploradora": {
@@ -784,35 +1494,56 @@
       "familia-das-vogais": "EF01LP03",
       "frases-divertidas": "EF01LP07",
       "historias-em-movimento": "EI03ET04",
+      "historias-rimadas": "EF01LP11",
+      "hora-do-dialogo": "EF01LP12",
+      "jornal-da-turma": "EF01LP18",
       "laboratorio-da-natureza": "EF07CI02",
       "oficina-modelagem-dados": "EF07MA16",
+      "palavras-compostas": "EF01LP14",
       "palavras-em-acao": "EF01LP05",
+      "pontuacao-animada": "EF01LP16",
       "rota-das-operacoes": "EF05MA08",
       "trilhas-narrativas-digitais": "EF69LP28"
     },
     "activities": {
+      "aliteracao-na-trilha": "EF01LP11",
       "batalha-das-silabas": "EF01LP02",
       "batida-do-nome": "EF01LP02",
       "caca-sons-iniciais": "EF01LP01",
       "caixa-das-vogais": "EF01LP03",
       "caixa-de-palavras": "EF01LP05",
+      "campos-de-palavras": "EF01LP14",
       "cantinho-das-palavras": "EF01LP05",
       "checar-claridade": "EF01LP10",
       "completar-resposta": "EF01LP08",
+      "contexto-indica": "EF01LP15",
       "coro-das-vogais": "EF01LP04",
       "corrida-das-vogais": "EF01LP03",
       "corrige-a-frase": "EF01LP10",
+      "corrige-a-pontuacao": "EF01LP16",
+      "cria-rima-rapida": "EF01LP11",
       "danca-dos-sons": "EI03ET04",
       "dash-impacto-escolar": "EF07MA16",
+      "deduza-o-significado": "EF01LP15",
+      "defina-o-publico": "EF01LP23",
+      "desafio-aliterativo": "EF01LP11",
       "descubra-o-humor": "EF01LP08",
       "detective-leitor": "EF01LP06",
       "detectives-das-palavras": "EF01LP06",
       "detetive-dos-pedacinhos": "EF01LP02",
+      "dialogo-em-equipe": "EF01LP12",
       "dialogo-rapido": "EF01LP08",
       "duelo-de-palavras": "EF01LP06",
+      "dupla-significado": "EF01LP14",
+      "eco-das-rimas": "EF01LP11",
+      "eco-de-sonoridades": "EF01LP11",
       "eco-dos-sons": "EF01LP01",
       "elementos-do-bilhete": "EF01LP09",
+      "emocao-na-frase": "EF01LP17",
+      "escolha-o-sinal": "EF01LP17",
       "escolha-rapida": "EF01LP06",
+      "escuta-atenta": "EF01LP12",
+      "escuta-da-pontuacao": "EF01LP16",
       "estacao-resto-inteligente": "EF05MA08",
       "experimento-da-agua": "EF07CI02",
       "frase-ilustrada": "EF01LP07",
@@ -820,53 +1551,107 @@
       "grafico-vivo-da-comunidade": "EF07MA16",
       "intencao-da-frase": "EF01LP08",
       "investigacao-dados-bairro": "EM13MAT305",
+      "jogo-busca-ponto": "EF01LP16",
+      "jogo-coleta-fatos": "EF01LP19",
+      "jogo-design-jornal": "EF01LP22",
+      "jogo-detective-palavras": "EF01LP15",
+      "jogo-encaixa-sentido": "EF01LP15",
+      "jogo-escuta-ativa": "EF01LP12",
+      "jogo-exclamacao-energia": "EF01LP17",
+      "jogo-explora-hibridos": "EF01LP14",
+      "jogo-forma-palavra": "EF01LP14",
+      "jogo-pergunta-surpresa": "EF01LP17",
+      "jogo-planeja-dialogo": "EF01LP12",
+      "jogo-planejamento-coletivo": "EF01LP18",
+      "jogo-pontua-texto": "EF01LP16",
+      "jogo-publica-e-divulga": "EF01LP24",
+      "jogo-relato-rapido": "EF01LP13",
+      "jogo-ritmo-rimado": "EF01LP11",
+      "jogo-turno-luz": "EF01LP12",
       "laboratorio-das-palavras": "EF35LP20",
       "laboratorio-das-vogais": "EF01LP04",
+      "lancamento-do-jornal": "EF01LP24",
       "leitura-estrategica": "EF01LP06",
       "memoria-das-vogais": "EF01LP04",
+      "memorias-na-rodinha": "EF01LP13",
       "missao-equipes-multiplicadoras": "EF05MA08",
       "montar-frase": "EF01LP07",
       "objetivo-do-recado": "EF01LP09",
       "onde-acontece": "EF01LP07",
+      "ordem-da-parlenda": "EF01LP11",
       "ordem-das-vogais": "EF01LP03",
+      "ordena-fatos": "EF01LP20",
       "orquestra-de-silabas": "EF01LP02",
+      "palavra-composta-basica": "EF01LP14",
       "palavra-e-figura": "EF01LP05",
       "palavra-em-contexto": "EF01LP05",
+      "palavra-surpresa": "EF01LP14",
+      "pares-de-rima": "EF01LP11",
+      "pergunta-ou-prossegue": "EF01LP17",
+      "planeja-reportagem": "EF01LP18",
       "planejar-bilhete": "EF01LP09",
       "podcast-projeto-vida": "EM13MAT305",
       "podcast-voz-da-comunidade": "EF69LP28",
+      "ponto-final-basico": "EF01LP16",
+      "puzzle-apoios-dialogo": "EF01LP12",
+      "puzzle-campo-semantico": "EF01LP14",
       "puzzle-compasso-silabico": "EF01LP02",
       "puzzle-completa-vogal": "EF01LP04",
+      "puzzle-contexto-pista": "EF01LP15",
       "puzzle-destinatario": "EF01LP09",
+      "puzzle-dialogo": "EF01LP16",
+      "puzzle-expressoes-compostas": "EF01LP14",
       "puzzle-familia-palavras": "EF01LP06",
       "puzzle-frase-imagem": "EF01LP07",
+      "puzzle-funcoes-jornal": "EF01LP23",
       "puzzle-humor-frase": "EF01LP08",
       "puzzle-intencao-frase": "EF01LP08",
+      "puzzle-intencoes": "EF01LP17",
       "puzzle-melhorias": "EF01LP10",
+      "puzzle-monta-composta": "EF01LP14",
       "puzzle-ordem-bilhete": "EF01LP09",
       "puzzle-ordem-frase": "EF01LP07",
       "puzzle-palavra-imagem": "EF01LP05",
       "puzzle-palavras-frase": "EF01LP05",
+      "puzzle-quadro-apoio": "EF01LP22",
+      "puzzle-relato-sequencia": "EF01LP13",
+      "puzzle-remix": "EF01LP16",
       "puzzle-revisao": "EF01LP10",
+      "puzzle-revisao-final": "EF01LP21",
       "puzzle-rima-palavra": "EF01LP06",
       "puzzle-rimas-sonoras": "EF01LP01",
+      "puzzle-roteiro": "EF01LP20",
       "puzzle-silabas-dancarinas": "EF01LP02",
+      "puzzle-sinais": "EF01LP16",
+      "puzzle-sinais-de-escuta": "EF01LP12",
       "puzzle-som-inicial": "EF01LP01",
       "puzzle-trilha-alfabeto": "EF01LP03",
+      "puzzle-turnos": "EF01LP12",
       "puzzle-vogais-amigas": "EF01LP03",
       "puzzle-vogal-e-imagem": "EF01LP04",
       "qual-o-destinatario": "EF01LP09",
       "quem-faz-o-que": "EF01LP07",
       "quiz-sustentabilidade": "EF07CI02",
+      "relato-bem-ordenado": "EF01LP13",
+      "resposta-educada": "EF01LP12",
       "revendo-o-texto": "EF01LP10",
       "revisao-rapida": "EF01LP10",
+      "revise-o-paragrafo": "EF01LP21",
+      "rima-e-cena": "EF01LP11",
+      "rima-no-final": "EF01LP11",
       "rimas-do-recreio": "EF01LP01",
+      "ritmo-da-parlenda": "EF01LP11",
+      "ritmo-na-historia": "EF01LP11",
       "roda-das-rimas": "EF01LP06",
       "roteiro-do-recado": "EF01LP10",
+      "seleciona-informacao": "EF01LP19",
       "som-e-letra": "EF01LP04",
       "som-inicial-surpresa": "EF01LP01",
       "teatro-das-emocoes": "EI03ET04",
+      "trilha-aliterativa": "EF01LP11",
       "trilho-das-silabas": "EF01LP02",
+      "turno-de-fala": "EF01LP12",
+      "verso-surpresa": "EF01LP11",
       "vogal-exploradora": "EF01LP03",
       "vogal-misteriosa": "EF01LP04",
       "webdoc-historias-do-bairro": "EF69LP28"

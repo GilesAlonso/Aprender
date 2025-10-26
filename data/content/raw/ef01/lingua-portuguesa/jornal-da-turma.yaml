@@ -1,0 +1,2105 @@
+module:
+  slug: jornal-da-turma
+  title: Jornal da Turma
+  subtitle: Planejamento textual coletivo
+  description: Sequência colaborativa para planejar, escrever, revisar e publicar textos coletivos, experimentando diferentes papéis no jornal da turma.
+  theme: Língua Portuguesa
+  discipline: Língua Portuguesa
+  ageGroupSlug: fundamental-anos-iniciais
+  learningPathSlug: descobertas-palavras
+  primaryBnccCode: EF01LP18
+  secondaryBnccCodes:
+    - EF01LP19
+    - EF01LP20
+    - EF01LP21
+    - EF01LP22
+    - EF01LP23
+    - EF01LP24
+  learningOutcomes:
+    - Planejar textos coletivos definindo objetivo, público e formato.
+    - Selecionar e organizar informações relevantes em roteiros e notícias curtas.
+    - Revisar, diagramar e compartilhar produções coletivas com apoio de recursos visuais.
+  tags:
+    - producao-coletiva
+    - jornal
+    - escrita
+activities:
+  - partial: ../../_partials/acolhimento-base.yaml
+    slug: planeja-reportagem
+    title: Planeja Reportagem
+    prompt: Escolha o elemento que não pode faltar no planejamento da notícia coletiva.
+    type: QUIZ
+    difficulty: INICIAR
+    bncc:
+      code: EF01LP18
+      habilidades:
+        - EF01LP18
+        - EF01LP23
+    learningObjectives:
+      - Definir objetivo e público-alvo do texto coletivo.
+      - Selecionar tema relevante para a comunidade escolar.
+    description: Planeja Reportagem apresenta escolhas iniciais para organizar a produção coletiva do jornal.
+    metadata:
+      categoria: Planejamento
+      duracaoMinutos: 8
+      habilidades:
+        - EF01LP18
+        - EF01LP23
+      assetSlug: lp-material-caderno
+      assetUsage: Utilize Caderno colorido para escrita como apoio visual para destacar planejamento coletivo ao longo da atividade.
+      familiaEngajamento: Convide as famílias a observar planejamento coletivo em histórias, cantigas ou jogos em casa.
+      habilidadesSecundarias:
+        - EF01LP23
+      interactiveSlug: quiz-planeja-reportagem
+    accessibility:
+      hints:
+        - audience: ESTUDANTE
+          text: 'Passo 1: Observe o enunciado com atenção e sublinhe mentalmente planejamento coletivo.'
+        - audience: ESTUDANTE
+          text: 'Passo 2: Compare cada opção, repetindo os sons em voz alta se ajudar.'
+        - audience: ESTUDANTE
+          text: 'Passo 3: Respire fundo e confirme a alternativa escolhida com segurança.'
+        - audience: EDUCADOR
+          text: Guie a turma passo a passo, reforçando planejamento coletivo com gestos, pictogramas e pausas.
+        - audience: FAMILIA
+          text: Envie sugestões de jogos ou músicas que reforcem planejamento coletivo em casa.
+      feedback:
+        success: Excelente! Planejamento coletivo ficou evidente nas suas escolhas.
+        encouragement: Caso erre, releia com calma e utilize marcadores sonoros ou visuais para apoiar a decisão.
+        retry: Experimente revisar as pistas destacadas antes de tentar novamente.
+        accessibility: Ofereça tempo extra, recursos táteis e apoio auditivo individual para quem precisar.
+      assets:
+        - slug: lp-material-caderno
+          type: IMAGEM
+          title: Caderno colorido para escrita
+      alternatives:
+        - title: TEXTO EM CAIXA ALTA
+          description: OFEREÇA CARTÕES COM PLANEJAMENTO COLETIVO DESTACADO PARA QUE TODES ACOMPANHEM.
+          steps:
+            - FORNEÇA LETRAS GRANDES E ESPAÇADAS.
+            - GRIFE RIMAS OU PALAVRAS-CHAVE EM COR VIVA.
+      audioCue:
+        title: SINAL SONORO
+        description: Utilize um chocalho ou palmas para marcar o momento de focar em planejamento coletivo.
+        steps:
+          - Avise que o som indica a troca de etapa ou turno de fala.
+          - Repita o som e a instrução de forma pausada.
+      motorSupport:
+        - title: APOIO MOTOR
+          description: Disponibilize apoios físicos para navegação e registro das respostas.
+          steps:
+            - Ofereça ponteiras, clipes ampliados ou teclado virtual.
+            - Permita que duplas se alternem no controle do dispositivo.
+    prerequisites:
+      - type: SKILL
+        reference: EF01LP18
+        description: Conversar sobre temas que interessam à turma.
+    interactive:
+      slug: quiz-planeja-reportagem
+      title: Planeja Reportagem — Quiz
+      type: QUIZ
+      bnccDescription: Planejar textos coletivos considerando finalidade, gênero, público leitor e suporte.
+      estimatedTimeMinutes: 8
+      instructions:
+        - Leia ou escute cada questão antes de responder.
+        - Use as teclas numéricas ou toque nas alternativas para marcar sua escolha.
+        - Explique para a turma como identificou a resposta correta.
+      objectives:
+        - Definir objetivo e público-alvo do texto coletivo.
+        - Selecionar tema relevante para a comunidade escolar.
+      scoring:
+        correct: 10
+        incorrect: 0
+      adaptive:
+        increaseAfter: 2
+        decreaseAfter: 1
+      questions:
+        - id: planeja-reportagem-q1
+          type: multiple-choice
+          prompt: Qual item é essencial ao planejar a reportagem coletiva?
+          hint: Pense no que orienta a escrita.
+          options:
+            - id: planeja-reportagem-q1-1
+              text: Definir o público que vai ler
+              isCorrect: true
+              feedback: Perfeito! Saber quem lê orienta o planejamento.
+            - id: planeja-reportagem-q1-2
+              text: Escolher quem vai ilustrar depois
+              isCorrect: false
+              feedback: Importante, mas pode ser decidido após o planejamento.
+            - id: planeja-reportagem-q1-3
+              text: Guardar o jornal para a semana seguinte
+              isCorrect: false
+              feedback: O planejamento precisa acontecer antes da publicação.
+        - id: planeja-reportagem-q2
+          type: true-false
+          prompt: Planejar exige definir objetivo?
+          hint: Lembre do motivo de produzir a notícia.
+          statement: Planejar um texto coletivo envolve decidir o objetivo do texto.
+          answer: true
+          feedback:
+            'true': Correto! O objetivo orienta todo o planejamento.
+            'false': Observe como o objetivo guia as decisões da equipe.
+      accessibility:
+        hints:
+          - audience: ESTUDANTE
+            text: 'Passo 1: Leia ou escute cada instrução e identifique onde planejamento coletivo aparece no interativo.'
+          - audience: ESTUDANTE
+            text: 'Passo 2: Use Tab ou toque na tela para revisar todas as opções antes de confirmar.'
+          - audience: ESTUDANTE
+            text: 'Passo 3: Compartilhe com um colega por que escolheu a resposta apresentada.'
+          - audience: EDUCADOR
+            text: Guie a turma passo a passo, reforçando planejamento coletivo com gestos, pictogramas e pausas.
+          - audience: FAMILIA
+            text: Envie sugestões de jogos ou músicas que reforcem planejamento coletivo em casa.
+        feedback:
+          success: Excelente! Planejamento coletivo ficou evidente nas suas escolhas.
+          encouragement: Caso erre, releia com calma e utilize marcadores sonoros ou visuais para apoiar a decisão.
+          retry: Experimente revisar as pistas destacadas antes de tentar novamente.
+          accessibility: Ofereça tempo extra, recursos táteis e apoio auditivo individual para quem precisar.
+        assets:
+          - slug: lp-material-caderno
+            type: IMAGEM
+            title: Caderno colorido para escrita
+        alternatives:
+          - title: TEXTO EM CAIXA ALTA
+            description: OFEREÇA CARTÕES COM PLANEJAMENTO COLETIVO DESTACADO PARA QUE TODES ACOMPANHEM.
+            steps:
+              - FORNEÇA LETRAS GRANDES E ESPAÇADAS.
+              - GRIFE RIMAS OU PALAVRAS-CHAVE EM COR VIVA.
+        audioCue:
+          title: SINAL SONORO
+          description: Utilize um chocalho ou palmas para marcar o momento de focar em planejamento coletivo.
+          steps:
+            - Avise que o som indica a troca de etapa ou turno de fala.
+            - Repita o som e a instrução de forma pausada.
+        motorSupport:
+          - title: APOIO MOTOR
+            description: Disponibilize apoios físicos para navegação e registro das respostas.
+            steps:
+              - Ofereça ponteiras, clipes ampliados ou teclado virtual.
+              - Permita que duplas se alternem no controle do dispositivo.
+  - partial: ../../_partials/acolhimento-base.yaml
+    slug: defina-o-publico
+    title: Defina o Público
+    prompt: Selecione a melhor justificativa para escolher o público-alvo do jornal da turma.
+    type: QUIZ
+    difficulty: INICIAR
+    bncc:
+      code: EF01LP23
+      habilidades:
+        - EF01LP23
+        - EF01LP18
+    learningObjectives:
+      - Distribuir responsabilidades na equipe de produção.
+      - Justificar escolhas coletivas considerando o público leitor.
+    description: Defina o Público incentiva a turma a justificar quem vai receber o jornal e como adaptar o conteúdo.
+    metadata:
+      categoria: Organização da equipe
+      duracaoMinutos: 9
+      habilidades:
+        - EF01LP23
+        - EF01LP18
+      assetSlug: lp-letra-a
+      assetUsage: Utilize Ilustração da letra A como apoio visual para destacar definição de público ao longo da atividade.
+      familiaEngajamento: Convide as famílias a observar definição de público em histórias, cantigas ou jogos em casa.
+      habilidadesSecundarias:
+        - EF01LP18
+      interactiveSlug: quiz-defina-o-publico
+    accessibility:
+      hints:
+        - audience: ESTUDANTE
+          text: 'Passo 1: Observe o enunciado com atenção e sublinhe mentalmente definição de público.'
+        - audience: ESTUDANTE
+          text: 'Passo 2: Compare cada opção, repetindo os sons em voz alta se ajudar.'
+        - audience: ESTUDANTE
+          text: 'Passo 3: Respire fundo e confirme a alternativa escolhida com segurança.'
+        - audience: EDUCADOR
+          text: Guie a turma passo a passo, reforçando definição de público com gestos, pictogramas e pausas.
+        - audience: FAMILIA
+          text: Envie sugestões de jogos ou músicas que reforcem definição de público em casa.
+      feedback:
+        success: Excelente! Definição de público ficou evidente nas suas escolhas.
+        encouragement: Caso erre, releia com calma e utilize marcadores sonoros ou visuais para apoiar a decisão.
+        retry: Experimente revisar as pistas destacadas antes de tentar novamente.
+        accessibility: Ofereça tempo extra, recursos táteis e apoio auditivo individual para quem precisar.
+      assets:
+        - slug: lp-letra-a
+          type: IMAGEM
+          title: Ilustração da letra A
+      alternatives:
+        - title: TEXTO EM CAIXA ALTA
+          description: OFEREÇA CARTÕES COM DEFINIÇÃO DE PÚBLICO DESTACADO PARA QUE TODES ACOMPANHEM.
+          steps:
+            - FORNEÇA LETRAS GRANDES E ESPAÇADAS.
+            - GRIFE RIMAS OU PALAVRAS-CHAVE EM COR VIVA.
+      audioCue:
+        title: SINAL SONORO
+        description: Utilize um chocalho ou palmas para marcar o momento de focar em definição de público.
+        steps:
+          - Avise que o som indica a troca de etapa ou turno de fala.
+          - Repita o som e a instrução de forma pausada.
+      motorSupport:
+        - title: APOIO MOTOR
+          description: Disponibilize apoios físicos para navegação e registro das respostas.
+          steps:
+            - Ofereça ponteiras, clipes ampliados ou teclado virtual.
+            - Permita que duplas se alternem no controle do dispositivo.
+    prerequisites:
+      - type: ACTIVITY
+        reference: planeja-reportagem
+        description: Retomar as decisões do planejamento antes de definir o público.
+    interactive:
+      slug: quiz-defina-o-publico
+      title: Defina o Público — Quiz
+      type: QUIZ
+      bnccDescription: Distribuir responsabilidades e colaborar na produção de textos coletivos.
+      estimatedTimeMinutes: 9
+      instructions:
+        - Leia ou escute cada questão antes de responder.
+        - Use as teclas numéricas ou toque nas alternativas para marcar sua escolha.
+        - Explique para a turma como identificou a resposta correta.
+      objectives:
+        - Distribuir responsabilidades na equipe de produção.
+        - Justificar escolhas coletivas considerando o público leitor.
+      scoring:
+        correct: 10
+        incorrect: 0
+      adaptive:
+        increaseAfter: 2
+        decreaseAfter: 1
+      questions:
+        - id: defina-o-publico-q1
+          type: multiple-choice
+          prompt: Por que escolher o público-alvo ajuda a equipe?
+          hint: Pense em quem vai ler o jornal.
+          options:
+            - id: defina-o-publico-q1-1
+              text: Porque ajuda a escolher linguagem e assuntos
+              isCorrect: true
+              feedback: Muito bem! Assim o texto fica adequado aos leitores.
+            - id: defina-o-publico-q1-2
+              text: Porque evita que os colegas opinem
+              isCorrect: false
+              feedback: A produção coletiva precisa de escuta e colaboração.
+            - id: defina-o-publico-q1-3
+              text: Porque agiliza a entrega sem planejamento
+              isCorrect: false
+              feedback: Planejar sem pensar no público pode gerar confusão.
+        - id: defina-o-publico-q2
+          type: true-false
+          prompt: Público influencia o vocabulário?
+          hint: Pense em como falamos com crianças menores ou adultos.
+          statement: Conhecer o público define o tom e o vocabulário do jornal.
+          answer: true
+          feedback:
+            'true': Corretíssimo! Cada público pede um tom específico.
+            'false': Compare textos escritos para crianças e adultos para perceber a diferença.
+      accessibility:
+        hints:
+          - audience: ESTUDANTE
+            text: 'Passo 1: Leia ou escute cada instrução e identifique onde definição de público aparece no interativo.'
+          - audience: ESTUDANTE
+            text: 'Passo 2: Use Tab ou toque na tela para revisar todas as opções antes de confirmar.'
+          - audience: ESTUDANTE
+            text: 'Passo 3: Compartilhe com um colega por que escolheu a resposta apresentada.'
+          - audience: EDUCADOR
+            text: Guie a turma passo a passo, reforçando definição de público com gestos, pictogramas e pausas.
+          - audience: FAMILIA
+            text: Envie sugestões de jogos ou músicas que reforcem definição de público em casa.
+        feedback:
+          success: Excelente! Definição de público ficou evidente nas suas escolhas.
+          encouragement: Caso erre, releia com calma e utilize marcadores sonoros ou visuais para apoiar a decisão.
+          retry: Experimente revisar as pistas destacadas antes de tentar novamente.
+          accessibility: Ofereça tempo extra, recursos táteis e apoio auditivo individual para quem precisar.
+        assets:
+          - slug: lp-letra-a
+            type: IMAGEM
+            title: Ilustração da letra A
+        alternatives:
+          - title: TEXTO EM CAIXA ALTA
+            description: OFEREÇA CARTÕES COM DEFINIÇÃO DE PÚBLICO DESTACADO PARA QUE TODES ACOMPANHEM.
+            steps:
+              - FORNEÇA LETRAS GRANDES E ESPAÇADAS.
+              - GRIFE RIMAS OU PALAVRAS-CHAVE EM COR VIVA.
+        audioCue:
+          title: SINAL SONORO
+          description: Utilize um chocalho ou palmas para marcar o momento de focar em definição de público.
+          steps:
+            - Avise que o som indica a troca de etapa ou turno de fala.
+            - Repita o som e a instrução de forma pausada.
+        motorSupport:
+          - title: APOIO MOTOR
+            description: Disponibilize apoios físicos para navegação e registro das respostas.
+            steps:
+              - Ofereça ponteiras, clipes ampliados ou teclado virtual.
+              - Permita que duplas se alternem no controle do dispositivo.
+  - partial: ../../_partials/acolhimento-base.yaml
+    slug: seleciona-informacao
+    title: Seleciona Informação
+    prompt: Identifique a informação mais relevante para a notícia coletiva.
+    type: QUIZ
+    difficulty: PRATICAR
+    bncc:
+      code: EF01LP19
+      habilidades:
+        - EF01LP19
+    learningObjectives:
+      - Selecionar dados relevantes para compor a notícia coletiva.
+      - Explicar por que determinada informação deve aparecer no texto.
+    description: Seleciona Informação apresenta possíveis conteúdos para que a turma escolha o mais relevante ao título do jornal.
+    metadata:
+      categoria: Seleção de conteúdo
+      duracaoMinutos: 9
+      habilidades:
+        - EF01LP19
+      assetSlug: lp-letra-e
+      assetUsage: Utilize Ilustração da letra E como apoio visual para destacar seleção de informações ao longo da atividade.
+      familiaEngajamento: Convide as famílias a observar seleção de informações em histórias, cantigas ou jogos em casa.
+      interactiveSlug: quiz-seleciona-informacao
+    accessibility:
+      hints:
+        - audience: ESTUDANTE
+          text: 'Passo 1: Observe o enunciado com atenção e sublinhe mentalmente seleção de informações.'
+        - audience: ESTUDANTE
+          text: 'Passo 2: Compare cada opção, repetindo os sons em voz alta se ajudar.'
+        - audience: ESTUDANTE
+          text: 'Passo 3: Respire fundo e confirme a alternativa escolhida com segurança.'
+        - audience: EDUCADOR
+          text: Guie a turma passo a passo, reforçando seleção de informações com gestos, pictogramas e pausas.
+        - audience: FAMILIA
+          text: Envie sugestões de jogos ou músicas que reforcem seleção de informações em casa.
+      feedback:
+        success: Excelente! Seleção de informações ficou evidente nas suas escolhas.
+        encouragement: Caso erre, releia com calma e utilize marcadores sonoros ou visuais para apoiar a decisão.
+        retry: Experimente revisar as pistas destacadas antes de tentar novamente.
+        accessibility: Ofereça tempo extra, recursos táteis e apoio auditivo individual para quem precisar.
+      assets:
+        - slug: lp-letra-e
+          type: IMAGEM
+          title: Ilustração da letra E
+      alternatives:
+        - title: TEXTO EM CAIXA ALTA
+          description: OFEREÇA CARTÕES COM SELEÇÃO DE INFORMAÇÕES DESTACADO PARA QUE TODES ACOMPANHEM.
+          steps:
+            - FORNEÇA LETRAS GRANDES E ESPAÇADAS.
+            - GRIFE RIMAS OU PALAVRAS-CHAVE EM COR VIVA.
+      audioCue:
+        title: SINAL SONORO
+        description: Utilize um chocalho ou palmas para marcar o momento de focar em seleção de informações.
+        steps:
+          - Avise que o som indica a troca de etapa ou turno de fala.
+          - Repita o som e a instrução de forma pausada.
+      motorSupport:
+        - title: APOIO MOTOR
+          description: Disponibilize apoios físicos para navegação e registro das respostas.
+          steps:
+            - Ofereça ponteiras, clipes ampliados ou teclado virtual.
+            - Permita que duplas se alternem no controle do dispositivo.
+    prerequisites:
+      - type: ACTIVITY
+        reference: defina-o-publico
+        description: Retomar decisões sobre público antes de selecionar informações.
+    interactive:
+      slug: quiz-seleciona-informacao
+      title: Seleciona Informação — Quiz
+      type: QUIZ
+      bnccDescription: Selecionar e organizar informações relevantes para compor textos coletivos coerentes.
+      estimatedTimeMinutes: 9
+      instructions:
+        - Leia ou escute cada questão antes de responder.
+        - Use as teclas numéricas ou toque nas alternativas para marcar sua escolha.
+        - Explique para a turma como identificou a resposta correta.
+      objectives:
+        - Selecionar dados relevantes para compor a notícia coletiva.
+        - Explicar por que determinada informação deve aparecer no texto.
+      scoring:
+        correct: 10
+        incorrect: 0
+      adaptive:
+        increaseAfter: 2
+        decreaseAfter: 1
+      questions:
+        - id: seleciona-informacao-q1
+          type: multiple-choice
+          prompt: 'Tema: ''Feira de Ciências da escola''. Qual informação precisa entrar na notícia?'
+          hint: Pense no que o leitor precisa saber.
+          options:
+            - id: seleciona-informacao-q1-1
+              text: Data e horário da feira
+              isCorrect: true
+              feedback: Perfeito! Informar quando acontece é essencial.
+            - id: seleciona-informacao-q1-2
+              text: História completa da ciência
+              isCorrect: false
+              feedback: Concentre-se em dados do evento.
+            - id: seleciona-informacao-q1-3
+              text: Receita de bolo preferida da turma
+              isCorrect: false
+              feedback: Não se relaciona ao tema da notícia.
+        - id: seleciona-informacao-q2
+          type: true-false
+          prompt: Selecionar é escolher o que fica de fora?
+          hint: Pense na pauta cheia de ideias.
+          statement: Nem todas as ideias coletadas entram no texto final.
+          answer: true
+          feedback:
+            'true': Exato! Selecionar é priorizar as informações mais importantes.
+            'false': Observe como notícias trazem apenas dados essenciais.
+      accessibility:
+        hints:
+          - audience: ESTUDANTE
+            text: 'Passo 1: Leia ou escute cada instrução e identifique onde seleção de informações aparece no interativo.'
+          - audience: ESTUDANTE
+            text: 'Passo 2: Use Tab ou toque na tela para revisar todas as opções antes de confirmar.'
+          - audience: ESTUDANTE
+            text: 'Passo 3: Compartilhe com um colega por que escolheu a resposta apresentada.'
+          - audience: EDUCADOR
+            text: Guie a turma passo a passo, reforçando seleção de informações com gestos, pictogramas e pausas.
+          - audience: FAMILIA
+            text: Envie sugestões de jogos ou músicas que reforcem seleção de informações em casa.
+        feedback:
+          success: Excelente! Seleção de informações ficou evidente nas suas escolhas.
+          encouragement: Caso erre, releia com calma e utilize marcadores sonoros ou visuais para apoiar a decisão.
+          retry: Experimente revisar as pistas destacadas antes de tentar novamente.
+          accessibility: Ofereça tempo extra, recursos táteis e apoio auditivo individual para quem precisar.
+        assets:
+          - slug: lp-letra-e
+            type: IMAGEM
+            title: Ilustração da letra E
+        alternatives:
+          - title: TEXTO EM CAIXA ALTA
+            description: OFEREÇA CARTÕES COM SELEÇÃO DE INFORMAÇÕES DESTACADO PARA QUE TODES ACOMPANHEM.
+            steps:
+              - FORNEÇA LETRAS GRANDES E ESPAÇADAS.
+              - GRIFE RIMAS OU PALAVRAS-CHAVE EM COR VIVA.
+        audioCue:
+          title: SINAL SONORO
+          description: Utilize um chocalho ou palmas para marcar o momento de focar em seleção de informações.
+          steps:
+            - Avise que o som indica a troca de etapa ou turno de fala.
+            - Repita o som e a instrução de forma pausada.
+        motorSupport:
+          - title: APOIO MOTOR
+            description: Disponibilize apoios físicos para navegação e registro das respostas.
+            steps:
+              - Ofereça ponteiras, clipes ampliados ou teclado virtual.
+              - Permita que duplas se alternem no controle do dispositivo.
+  - partial: ../../_partials/acolhimento-base.yaml
+    slug: ordena-fatos
+    title: Ordena Fatos
+    prompt: Organize os acontecimentos na sequência correta.
+    type: QUIZ
+    difficulty: PRATICAR
+    bncc:
+      code: EF01LP20
+      habilidades:
+        - EF01LP20
+    learningObjectives:
+      - Sequenciar fatos principais em textos coletivos.
+      - Usar conectivos simples para organizar a narrativa.
+    description: Ordena Fatos desafia os estudantes a reorganizar fatos para fazer sentido na notícia.
+    metadata:
+      categoria: Sequência narrativa
+      duracaoMinutos: 10
+      habilidades:
+        - EF01LP20
+      assetSlug: lp-silaba-ba
+      assetUsage: Utilize Cartão da sílaba BA como apoio visual para destacar sequência de fatos ao longo da atividade.
+      familiaEngajamento: Convide as famílias a observar sequência de fatos em histórias, cantigas ou jogos em casa.
+      interactiveSlug: quiz-ordena-fatos
+    accessibility:
+      hints:
+        - audience: ESTUDANTE
+          text: 'Passo 1: Observe o enunciado com atenção e sublinhe mentalmente sequência de fatos.'
+        - audience: ESTUDANTE
+          text: 'Passo 2: Compare cada opção, repetindo os sons em voz alta se ajudar.'
+        - audience: ESTUDANTE
+          text: 'Passo 3: Respire fundo e confirme a alternativa escolhida com segurança.'
+        - audience: EDUCADOR
+          text: Guie a turma passo a passo, reforçando sequência de fatos com gestos, pictogramas e pausas.
+        - audience: FAMILIA
+          text: Envie sugestões de jogos ou músicas que reforcem sequência de fatos em casa.
+      feedback:
+        success: Excelente! Sequência de fatos ficou evidente nas suas escolhas.
+        encouragement: Caso erre, releia com calma e utilize marcadores sonoros ou visuais para apoiar a decisão.
+        retry: Experimente revisar as pistas destacadas antes de tentar novamente.
+        accessibility: Ofereça tempo extra, recursos táteis e apoio auditivo individual para quem precisar.
+      assets:
+        - slug: lp-silaba-ba
+          type: IMAGEM
+          title: Cartão da sílaba BA
+      alternatives:
+        - title: TEXTO EM CAIXA ALTA
+          description: OFEREÇA CARTÕES COM SEQUÊNCIA DE FATOS DESTACADO PARA QUE TODES ACOMPANHEM.
+          steps:
+            - FORNEÇA LETRAS GRANDES E ESPAÇADAS.
+            - GRIFE RIMAS OU PALAVRAS-CHAVE EM COR VIVA.
+      audioCue:
+        title: SINAL SONORO
+        description: Utilize um chocalho ou palmas para marcar o momento de focar em sequência de fatos.
+        steps:
+          - Avise que o som indica a troca de etapa ou turno de fala.
+          - Repita o som e a instrução de forma pausada.
+      motorSupport:
+        - title: APOIO MOTOR
+          description: Disponibilize apoios físicos para navegação e registro das respostas.
+          steps:
+            - Ofereça ponteiras, clipes ampliados ou teclado virtual.
+            - Permita que duplas se alternem no controle do dispositivo.
+    prerequisites:
+      - type: ACTIVITY
+        reference: seleciona-informacao
+        description: Selecionar informações antes de organizar a sequência.
+    interactive:
+      slug: quiz-ordena-fatos
+      title: Ordena Fatos — Quiz
+      type: QUIZ
+      bnccDescription: Sequenciar fatos e ideias em textos produzidos coletivamente, respeitando relações temporais simples.
+      estimatedTimeMinutes: 10
+      instructions:
+        - Leia ou escute cada questão antes de responder.
+        - Use as teclas numéricas ou toque nas alternativas para marcar sua escolha.
+        - Explique para a turma como identificou a resposta correta.
+      objectives:
+        - Sequenciar fatos principais em textos coletivos.
+        - Usar conectivos simples para organizar a narrativa.
+      scoring:
+        correct: 10
+        incorrect: 0
+      adaptive:
+        increaseAfter: 2
+        decreaseAfter: 1
+      questions:
+        - id: ordena-fatos-q1
+          type: multiple-choice
+          prompt: Quais passos organizam melhor a notícia sobre a visita ao parque científico?
+          hint: Pense em início, meio e fim.
+          options:
+            - id: ordena-fatos-q1-1
+              text: Saída da escola → visita ao laboratório → roda de conversa
+              isCorrect: true
+              feedback: Ótimo! A sequência respeita a ordem do evento.
+            - id: ordena-fatos-q1-2
+              text: Roda de conversa → saída da escola → visita ao laboratório
+              isCorrect: false
+              feedback: Reveja a ordem que realmente aconteceu.
+            - id: ordena-fatos-q1-3
+              text: Visita ao laboratório → conclusão do texto → saída da escola
+              isCorrect: false
+              feedback: O texto precisa começar com a saída da escola.
+        - id: ordena-fatos-q2
+          type: true-false
+          prompt: Sequência facilita a compreensão?
+          hint: Pense em relatos fora de ordem.
+          statement: Organizar fatos em sequência ajuda o leitor a entender a história.
+          answer: true
+          feedback:
+            'true': Certo! A sequência orienta o leitor do começo ao fim.
+            'false': Experimente contar um evento fora de ordem para notar a diferença.
+      accessibility:
+        hints:
+          - audience: ESTUDANTE
+            text: 'Passo 1: Leia ou escute cada instrução e identifique onde sequência de fatos aparece no interativo.'
+          - audience: ESTUDANTE
+            text: 'Passo 2: Use Tab ou toque na tela para revisar todas as opções antes de confirmar.'
+          - audience: ESTUDANTE
+            text: 'Passo 3: Compartilhe com um colega por que escolheu a resposta apresentada.'
+          - audience: EDUCADOR
+            text: Guie a turma passo a passo, reforçando sequência de fatos com gestos, pictogramas e pausas.
+          - audience: FAMILIA
+            text: Envie sugestões de jogos ou músicas que reforcem sequência de fatos em casa.
+        feedback:
+          success: Excelente! Sequência de fatos ficou evidente nas suas escolhas.
+          encouragement: Caso erre, releia com calma e utilize marcadores sonoros ou visuais para apoiar a decisão.
+          retry: Experimente revisar as pistas destacadas antes de tentar novamente.
+          accessibility: Ofereça tempo extra, recursos táteis e apoio auditivo individual para quem precisar.
+        assets:
+          - slug: lp-silaba-ba
+            type: IMAGEM
+            title: Cartão da sílaba BA
+        alternatives:
+          - title: TEXTO EM CAIXA ALTA
+            description: OFEREÇA CARTÕES COM SEQUÊNCIA DE FATOS DESTACADO PARA QUE TODES ACOMPANHEM.
+            steps:
+              - FORNEÇA LETRAS GRANDES E ESPAÇADAS.
+              - GRIFE RIMAS OU PALAVRAS-CHAVE EM COR VIVA.
+        audioCue:
+          title: SINAL SONORO
+          description: Utilize um chocalho ou palmas para marcar o momento de focar em sequência de fatos.
+          steps:
+            - Avise que o som indica a troca de etapa ou turno de fala.
+            - Repita o som e a instrução de forma pausada.
+        motorSupport:
+          - title: APOIO MOTOR
+            description: Disponibilize apoios físicos para navegação e registro das respostas.
+            steps:
+              - Ofereça ponteiras, clipes ampliados ou teclado virtual.
+              - Permita que duplas se alternem no controle do dispositivo.
+  - partial: ../../_partials/acolhimento-base.yaml
+    slug: revise-o-paragrafo
+    title: Revise o Parágrafo
+    prompt: Selecione a versão revisada corretamente para o parágrafo do jornal.
+    type: QUIZ
+    difficulty: DOMINAR
+    bncc:
+      code: EF01LP21
+      habilidades:
+        - EF01LP21
+        - EF01LP16
+    learningObjectives:
+      - Revisar ortografia, pontuação e clareza em textos coletivos.
+      - Sugerir ajustes respeitando as ideias do grupo.
+    description: Revise o Parágrafo apresenta opções de revisão para que o grupo escolha a versão mais clara e correta.
+    metadata:
+      categoria: Revisão coletiva
+      duracaoMinutos: 10
+      habilidades:
+        - EF01LP21
+        - EF01LP16
+      assetSlug: lp-letra-e
+      assetUsage: Utilize Ilustração da letra E como apoio visual para destacar revisão de texto ao longo da atividade.
+      familiaEngajamento: Convide as famílias a observar revisão de texto em histórias, cantigas ou jogos em casa.
+      habilidadesSecundarias:
+        - EF01LP16
+      interactiveSlug: quiz-revise-o-paragrafo
+    accessibility:
+      hints:
+        - audience: ESTUDANTE
+          text: 'Passo 1: Observe o enunciado com atenção e sublinhe mentalmente revisão de texto.'
+        - audience: ESTUDANTE
+          text: 'Passo 2: Compare cada opção, repetindo os sons em voz alta se ajudar.'
+        - audience: ESTUDANTE
+          text: 'Passo 3: Respire fundo e confirme a alternativa escolhida com segurança.'
+        - audience: EDUCADOR
+          text: Guie a turma passo a passo, reforçando revisão de texto com gestos, pictogramas e pausas.
+        - audience: FAMILIA
+          text: Envie sugestões de jogos ou músicas que reforcem revisão de texto em casa.
+      feedback:
+        success: Excelente! Revisão de texto ficou evidente nas suas escolhas.
+        encouragement: Caso erre, releia com calma e utilize marcadores sonoros ou visuais para apoiar a decisão.
+        retry: Experimente revisar as pistas destacadas antes de tentar novamente.
+        accessibility: Ofereça tempo extra, recursos táteis e apoio auditivo individual para quem precisar.
+      assets:
+        - slug: lp-letra-e
+          type: IMAGEM
+          title: Ilustração da letra E
+      alternatives:
+        - title: TEXTO EM CAIXA ALTA
+          description: OFEREÇA CARTÕES COM REVISÃO DE TEXTO DESTACADO PARA QUE TODES ACOMPANHEM.
+          steps:
+            - FORNEÇA LETRAS GRANDES E ESPAÇADAS.
+            - GRIFE RIMAS OU PALAVRAS-CHAVE EM COR VIVA.
+      audioCue:
+        title: SINAL SONORO
+        description: Utilize um chocalho ou palmas para marcar o momento de focar em revisão de texto.
+        steps:
+          - Avise que o som indica a troca de etapa ou turno de fala.
+          - Repita o som e a instrução de forma pausada.
+      motorSupport:
+        - title: APOIO MOTOR
+          description: Disponibilize apoios físicos para navegação e registro das respostas.
+          steps:
+            - Ofereça ponteiras, clipes ampliados ou teclado virtual.
+            - Permita que duplas se alternem no controle do dispositivo.
+    prerequisites:
+      - type: ACTIVITY
+        reference: ordena-fatos
+        description: Organizar fatos antes de revisar o texto.
+    interactive:
+      slug: quiz-revise-o-paragrafo
+      title: Revise o Parágrafo — Quiz
+      type: QUIZ
+      bnccDescription: Revisar textos coletivos ajustando vocabulário, ortografia e pontuação com apoio do grupo.
+      estimatedTimeMinutes: 10
+      instructions:
+        - Leia ou escute cada questão antes de responder.
+        - Use as teclas numéricas ou toque nas alternativas para marcar sua escolha.
+        - Explique para a turma como identificou a resposta correta.
+      objectives:
+        - Revisar ortografia, pontuação e clareza em textos coletivos.
+        - Sugerir ajustes respeitando as ideias do grupo.
+      scoring:
+        correct: 10
+        incorrect: 0
+      adaptive:
+        increaseAfter: 2
+        decreaseAfter: 1
+      questions:
+        - id: revise-o-paragrafo-q1
+          type: multiple-choice
+          prompt: Qual versão revisada mantém pontuação e clareza?
+          hint: Observe pontuação e repetição de palavras.
+          options:
+            - id: revise-o-paragrafo-q1-1
+              text: Na feira, os alunos mostraram inventos. A comunidade adorou.
+              isCorrect: true
+              feedback: Excelente! A versão está clara e pontuada corretamente.
+            - id: revise-o-paragrafo-q1-2
+              text: Na feira os alunos mostro inventos a comunidade adorou
+              isCorrect: false
+              feedback: Verifique ortografia e pontuação.
+            - id: revise-o-paragrafo-q1-3
+              text: Na feira, alunos mostraram inventos porque adorou.
+              isCorrect: false
+              feedback: A frase final precisa de sujeito claro.
+        - id: revise-o-paragrafo-q2
+          type: true-false
+          prompt: Revisar em grupo melhora o texto?
+          hint: Pense nas contribuições dos colegas.
+          statement: Revisar coletivamente melhora a qualidade do jornal.
+          answer: true
+          feedback:
+            'true': Sim! Cada colega percebe algo diferente na revisão.
+            'false': Compare textos revisados sozinho e em grupo para notar a melhoria.
+      accessibility:
+        hints:
+          - audience: ESTUDANTE
+            text: 'Passo 1: Leia ou escute cada instrução e identifique onde revisão de texto aparece no interativo.'
+          - audience: ESTUDANTE
+            text: 'Passo 2: Use Tab ou toque na tela para revisar todas as opções antes de confirmar.'
+          - audience: ESTUDANTE
+            text: 'Passo 3: Compartilhe com um colega por que escolheu a resposta apresentada.'
+          - audience: EDUCADOR
+            text: Guie a turma passo a passo, reforçando revisão de texto com gestos, pictogramas e pausas.
+          - audience: FAMILIA
+            text: Envie sugestões de jogos ou músicas que reforcem revisão de texto em casa.
+        feedback:
+          success: Excelente! Revisão de texto ficou evidente nas suas escolhas.
+          encouragement: Caso erre, releia com calma e utilize marcadores sonoros ou visuais para apoiar a decisão.
+          retry: Experimente revisar as pistas destacadas antes de tentar novamente.
+          accessibility: Ofereça tempo extra, recursos táteis e apoio auditivo individual para quem precisar.
+        assets:
+          - slug: lp-letra-e
+            type: IMAGEM
+            title: Ilustração da letra E
+        alternatives:
+          - title: TEXTO EM CAIXA ALTA
+            description: OFEREÇA CARTÕES COM REVISÃO DE TEXTO DESTACADO PARA QUE TODES ACOMPANHEM.
+            steps:
+              - FORNEÇA LETRAS GRANDES E ESPAÇADAS.
+              - GRIFE RIMAS OU PALAVRAS-CHAVE EM COR VIVA.
+        audioCue:
+          title: SINAL SONORO
+          description: Utilize um chocalho ou palmas para marcar o momento de focar em revisão de texto.
+          steps:
+            - Avise que o som indica a troca de etapa ou turno de fala.
+            - Repita o som e a instrução de forma pausada.
+        motorSupport:
+          - title: APOIO MOTOR
+            description: Disponibilize apoios físicos para navegação e registro das respostas.
+            steps:
+              - Ofereça ponteiras, clipes ampliados ou teclado virtual.
+              - Permita que duplas se alternem no controle do dispositivo.
+  - partial: ../../_partials/acolhimento-base.yaml
+    slug: lancamento-do-jornal
+    title: Lançamento do Jornal
+    prompt: Escolha a melhor estratégia para compartilhar o jornal com a comunidade.
+    type: QUIZ
+    difficulty: DOMINAR
+    bncc:
+      code: EF01LP24
+      habilidades:
+        - EF01LP24
+        - EF01LP22
+    learningObjectives:
+      - Planejar formas de divulgar o jornal coletivo.
+      - Avaliar o impacto do texto no público leitor.
+    description: Lançamento do Jornal apoia a turma a decidir como publicar e apresentar o jornal para a comunidade escolar.
+    metadata:
+      categoria: Divulgação
+      duracaoMinutos: 11
+      habilidades:
+        - EF01LP24
+        - EF01LP22
+      assetSlug: lp-silaba-la
+      assetUsage: Utilize Cartão da sílaba LA como apoio visual para destacar publicação e compartilhamento ao longo da atividade.
+      familiaEngajamento: Convide as famílias a observar publicação e compartilhamento em histórias, cantigas ou jogos em casa.
+      habilidadesSecundarias:
+        - EF01LP22
+      interactiveSlug: quiz-lancamento-do-jornal
+    accessibility:
+      hints:
+        - audience: ESTUDANTE
+          text: 'Passo 1: Observe o enunciado com atenção e sublinhe mentalmente publicação e compartilhamento.'
+        - audience: ESTUDANTE
+          text: 'Passo 2: Compare cada opção, repetindo os sons em voz alta se ajudar.'
+        - audience: ESTUDANTE
+          text: 'Passo 3: Respire fundo e confirme a alternativa escolhida com segurança.'
+        - audience: EDUCADOR
+          text: Guie a turma passo a passo, reforçando publicação e compartilhamento com gestos, pictogramas e pausas.
+        - audience: FAMILIA
+          text: Envie sugestões de jogos ou músicas que reforcem publicação e compartilhamento em casa.
+      feedback:
+        success: Excelente! Publicação e compartilhamento ficou evidente nas suas escolhas.
+        encouragement: Caso erre, releia com calma e utilize marcadores sonoros ou visuais para apoiar a decisão.
+        retry: Experimente revisar as pistas destacadas antes de tentar novamente.
+        accessibility: Ofereça tempo extra, recursos táteis e apoio auditivo individual para quem precisar.
+      assets:
+        - slug: lp-silaba-la
+          type: IMAGEM
+          title: Cartão da sílaba LA
+      alternatives:
+        - title: TEXTO EM CAIXA ALTA
+          description: OFEREÇA CARTÕES COM PUBLICAÇÃO E COMPARTILHAMENTO DESTACADO PARA QUE TODES ACOMPANHEM.
+          steps:
+            - FORNEÇA LETRAS GRANDES E ESPAÇADAS.
+            - GRIFE RIMAS OU PALAVRAS-CHAVE EM COR VIVA.
+      audioCue:
+        title: SINAL SONORO
+        description: Utilize um chocalho ou palmas para marcar o momento de focar em publicação e compartilhamento.
+        steps:
+          - Avise que o som indica a troca de etapa ou turno de fala.
+          - Repita o som e a instrução de forma pausada.
+      motorSupport:
+        - title: APOIO MOTOR
+          description: Disponibilize apoios físicos para navegação e registro das respostas.
+          steps:
+            - Ofereça ponteiras, clipes ampliados ou teclado virtual.
+            - Permita que duplas se alternem no controle do dispositivo.
+    prerequisites:
+      - type: ACTIVITY
+        reference: revise-o-paragrafo
+        description: Finalizar a revisão antes de planejar o lançamento.
+    interactive:
+      slug: quiz-lancamento-do-jornal
+      title: Lançamento do Jornal — Quiz
+      type: QUIZ
+      bnccDescription: Publicar e compartilhar textos coletivos avaliando os efeitos pretendidos no público leitor.
+      estimatedTimeMinutes: 11
+      instructions:
+        - Leia ou escute cada questão antes de responder.
+        - Use as teclas numéricas ou toque nas alternativas para marcar sua escolha.
+        - Explique para a turma como identificou a resposta correta.
+      objectives:
+        - Planejar formas de divulgar o jornal coletivo.
+        - Avaliar o impacto do texto no público leitor.
+      scoring:
+        correct: 10
+        incorrect: 0
+      adaptive:
+        increaseAfter: 2
+        decreaseAfter: 1
+      questions:
+        - id: lancamento-do-jornal-q1
+          type: multiple-choice
+          prompt: Qual estratégia ajuda a alcançar toda a comunidade?
+          hint: Pense em acessibilidade e alcance.
+          options:
+            - id: lancamento-do-jornal-q1-1
+              text: Apresentar o jornal na reunião de pais com versão digital e impressa
+              isCorrect: true
+              feedback: Ótimo! Combinar formatos amplia o alcance.
+            - id: lancamento-do-jornal-q1-2
+              text: Guardar o jornal só para a turma
+              isCorrect: false
+              feedback: Compartilhar amplia o impacto da produção.
+            - id: lancamento-do-jornal-q1-3
+              text: Entregar apenas para um colega
+              isCorrect: false
+              feedback: O jornal coletivo deve chegar a mais leitores.
+        - id: lancamento-do-jornal-q2
+          type: true-false
+          prompt: Publicar aproxima a comunidade?
+          hint: Considere o objetivo de compartilhar a produção.
+          statement: Publicar o jornal permite que a comunidade conheça o trabalho da turma.
+          answer: true
+          feedback:
+            'true': Perfeito! Publicar conta a história da turma para todos.
+            'false': Sem divulgação, ninguém descobre o trabalho realizado.
+      accessibility:
+        hints:
+          - audience: ESTUDANTE
+            text: 'Passo 1: Leia ou escute cada instrução e identifique onde publicação e compartilhamento aparece no interativo.'
+          - audience: ESTUDANTE
+            text: 'Passo 2: Use Tab ou toque na tela para revisar todas as opções antes de confirmar.'
+          - audience: ESTUDANTE
+            text: 'Passo 3: Compartilhe com um colega por que escolheu a resposta apresentada.'
+          - audience: EDUCADOR
+            text: Guie a turma passo a passo, reforçando publicação e compartilhamento com gestos, pictogramas e pausas.
+          - audience: FAMILIA
+            text: Envie sugestões de jogos ou músicas que reforcem publicação e compartilhamento em casa.
+        feedback:
+          success: Excelente! Publicação e compartilhamento ficou evidente nas suas escolhas.
+          encouragement: Caso erre, releia com calma e utilize marcadores sonoros ou visuais para apoiar a decisão.
+          retry: Experimente revisar as pistas destacadas antes de tentar novamente.
+          accessibility: Ofereça tempo extra, recursos táteis e apoio auditivo individual para quem precisar.
+        assets:
+          - slug: lp-silaba-la
+            type: IMAGEM
+            title: Cartão da sílaba LA
+        alternatives:
+          - title: TEXTO EM CAIXA ALTA
+            description: OFEREÇA CARTÕES COM PUBLICAÇÃO E COMPARTILHAMENTO DESTACADO PARA QUE TODES ACOMPANHEM.
+            steps:
+              - FORNEÇA LETRAS GRANDES E ESPAÇADAS.
+              - GRIFE RIMAS OU PALAVRAS-CHAVE EM COR VIVA.
+        audioCue:
+          title: SINAL SONORO
+          description: Utilize um chocalho ou palmas para marcar o momento de focar em publicação e compartilhamento.
+          steps:
+            - Avise que o som indica a troca de etapa ou turno de fala.
+            - Repita o som e a instrução de forma pausada.
+        motorSupport:
+          - title: APOIO MOTOR
+            description: Disponibilize apoios físicos para navegação e registro das respostas.
+            steps:
+              - Ofereça ponteiras, clipes ampliados ou teclado virtual.
+              - Permita que duplas se alternem no controle do dispositivo.
+  - partial: ../../_partials/acolhimento-base.yaml
+    slug: puzzle-funcoes-jornal
+    title: Funções do Jornal
+    prompt: Relacione cada papel da equipe às tarefas correspondentes.
+    type: PUZZLE
+    difficulty: INICIAR
+    bncc:
+      code: EF01LP23
+      habilidades:
+        - EF01LP23
+        - EF01LP18
+    learningObjectives:
+      - Explorar responsabilidades na equipe em situações mediadas pelo educador.
+      - Compartilhar estratégias pessoais com colegas durante a atividade.
+    description: Funções do Jornal incentiva a turma a explorar responsabilidades na equipe com apoios variados.
+    metadata:
+      categoria: Distribuição de papéis
+      duracaoMinutos: 9
+      habilidades:
+        - EF01LP23
+        - EF01LP18
+      assetSlug: lp-letra-a
+      assetUsage: Utilize Ilustração da letra A como apoio visual para destacar responsabilidades na equipe ao longo da atividade.
+      familiaEngajamento: Convide as famílias a observar responsabilidades na equipe em histórias, cantigas ou jogos em casa.
+      habilidadesSecundarias:
+        - EF01LP18
+      interactiveSlug: puzzle-puzzle-funcoes-jornal
+    accessibility:
+      hints:
+        - audience: ESTUDANTE
+          text: 'Passo 1: Observe o enunciado com atenção e sublinhe mentalmente responsabilidades na equipe.'
+        - audience: ESTUDANTE
+          text: 'Passo 2: Compare cada opção, repetindo os sons em voz alta se ajudar.'
+        - audience: ESTUDANTE
+          text: 'Passo 3: Respire fundo e confirme a alternativa escolhida com segurança.'
+        - audience: EDUCADOR
+          text: Guie a turma passo a passo, reforçando responsabilidades na equipe com gestos, pictogramas e pausas.
+        - audience: FAMILIA
+          text: Envie sugestões de jogos ou músicas que reforcem responsabilidades na equipe em casa.
+      feedback:
+        success: Excelente! Responsabilidades na equipe ficou evidente nas suas escolhas.
+        encouragement: Caso erre, releia com calma e utilize marcadores sonoros ou visuais para apoiar a decisão.
+        retry: Experimente revisar as pistas destacadas antes de tentar novamente.
+        accessibility: Ofereça tempo extra, recursos táteis e apoio auditivo individual para quem precisar.
+      assets:
+        - slug: lp-letra-a
+          type: IMAGEM
+          title: Ilustração da letra A
+      alternatives:
+        - title: TEXTO EM CAIXA ALTA
+          description: OFEREÇA CARTÕES COM RESPONSABILIDADES NA EQUIPE DESTACADO PARA QUE TODES ACOMPANHEM.
+          steps:
+            - FORNEÇA LETRAS GRANDES E ESPAÇADAS.
+            - GRIFE RIMAS OU PALAVRAS-CHAVE EM COR VIVA.
+      audioCue:
+        title: SINAL SONORO
+        description: Utilize um chocalho ou palmas para marcar o momento de focar em responsabilidades na equipe.
+        steps:
+          - Avise que o som indica a troca de etapa ou turno de fala.
+          - Repita o som e a instrução de forma pausada.
+      motorSupport:
+        - title: APOIO MOTOR
+          description: Disponibilize apoios físicos para navegação e registro das respostas.
+          steps:
+            - Ofereça ponteiras, clipes ampliados ou teclado virtual.
+            - Permita que duplas se alternem no controle do dispositivo.
+    prerequisites:
+      - type: ACTIVITY
+        reference: defina-o-publico
+        description: Discutir funções antes do jogo de associação.
+    interactive:
+      slug: puzzle-puzzle-funcoes-jornal
+      title: Funções do Jornal — Quebra-cabeça
+      type: PUZZLE
+      bnccDescription: Distribuir responsabilidades e colaborar na produção de textos coletivos.
+      estimatedTimeMinutes: 9
+      instructions:
+        - Observe cada cartão e relacione arrastando ou usando Tab + Enter.
+        - Converse sobre o motivo da combinação antes de confirmar.
+        - Revise as duplas formadas e proponha novas associações.
+      objectives:
+        - Explorar responsabilidades na equipe em situações mediadas pelo educador.
+        - Compartilhar estratégias pessoais com colegas durante a atividade.
+      puzzle:
+        mode: matching
+        successFeedback: Equipe alinhada! Cada função encontrou sua tarefa.
+        errorFeedback: Reveja os papéis antes de reorganizar.
+        pairs:
+          - id: puzzle-funcoes-jornal-pair-1
+            prompt: Repórter
+            match: Coleta informações e entrevista
+            hint: Pense em quem conversa com as fontes.
+            feedback: O repórter realiza entrevistas e levanta dados.
+          - id: puzzle-funcoes-jornal-pair-2
+            prompt: Editor
+            match: Organiza o texto e revê a linguagem
+            hint: Quem cuida da revisão final?
+            feedback: O editor garante coerência e clareza.
+          - id: puzzle-funcoes-jornal-pair-3
+            prompt: Designer
+            match: Organiza imagens e títulos
+            hint: Quem cuida da aparência do jornal?
+            feedback: O designer monta a diagramação e escolhe recursos visuais.
+      accessibility:
+        hints:
+          - audience: ESTUDANTE
+            text: 'Passo 1: Leia ou escute cada instrução e identifique onde responsabilidades na equipe aparece no interativo.'
+          - audience: ESTUDANTE
+            text: 'Passo 2: Use Tab ou toque na tela para revisar todas as opções antes de confirmar.'
+          - audience: ESTUDANTE
+            text: 'Passo 3: Compartilhe com um colega por que escolheu a resposta apresentada.'
+          - audience: EDUCADOR
+            text: Guie a turma passo a passo, reforçando responsabilidades na equipe com gestos, pictogramas e pausas.
+          - audience: FAMILIA
+            text: Envie sugestões de jogos ou músicas que reforcem responsabilidades na equipe em casa.
+        feedback:
+          success: Excelente! Responsabilidades na equipe ficou evidente nas suas escolhas.
+          encouragement: Caso erre, releia com calma e utilize marcadores sonoros ou visuais para apoiar a decisão.
+          retry: Experimente revisar as pistas destacadas antes de tentar novamente.
+          accessibility: Ofereça tempo extra, recursos táteis e apoio auditivo individual para quem precisar.
+        assets:
+          - slug: lp-letra-a
+            type: IMAGEM
+            title: Ilustração da letra A
+        alternatives:
+          - title: TEXTO EM CAIXA ALTA
+            description: OFEREÇA CARTÕES COM RESPONSABILIDADES NA EQUIPE DESTACADO PARA QUE TODES ACOMPANHEM.
+            steps:
+              - FORNEÇA LETRAS GRANDES E ESPAÇADAS.
+              - GRIFE RIMAS OU PALAVRAS-CHAVE EM COR VIVA.
+        audioCue:
+          title: SINAL SONORO
+          description: Utilize um chocalho ou palmas para marcar o momento de focar em responsabilidades na equipe.
+          steps:
+            - Avise que o som indica a troca de etapa ou turno de fala.
+            - Repita o som e a instrução de forma pausada.
+        motorSupport:
+          - title: APOIO MOTOR
+            description: Disponibilize apoios físicos para navegação e registro das respostas.
+            steps:
+              - Ofereça ponteiras, clipes ampliados ou teclado virtual.
+              - Permita que duplas se alternem no controle do dispositivo.
+  - partial: ../../_partials/acolhimento-base.yaml
+    slug: puzzle-quadro-apoio
+    title: Quadros de Apoio
+    prompt: Associe cada recurso visual à função no jornal.
+    type: PUZZLE
+    difficulty: PRATICAR
+    bncc:
+      code: EF01LP22
+      habilidades:
+        - EF01LP22
+        - EF01LP24
+    learningObjectives:
+      - Explorar uso de recursos visuais em situações mediadas pelo educador.
+      - Compartilhar estratégias pessoais com colegas durante a atividade.
+    description: Quadros de Apoio incentiva a turma a explorar uso de recursos visuais com apoios variados.
+    metadata:
+      categoria: Recursos visuais
+      duracaoMinutos: 10
+      habilidades:
+        - EF01LP22
+        - EF01LP24
+      assetSlug: lp-material-caderno
+      assetUsage: Utilize Caderno colorido para escrita como apoio visual para destacar uso de recursos visuais ao longo da atividade.
+      familiaEngajamento: Convide as famílias a observar uso de recursos visuais em histórias, cantigas ou jogos em casa.
+      habilidadesSecundarias:
+        - EF01LP24
+      interactiveSlug: puzzle-puzzle-quadro-apoio
+    accessibility:
+      hints:
+        - audience: ESTUDANTE
+          text: 'Passo 1: Observe o enunciado com atenção e sublinhe mentalmente uso de recursos visuais.'
+        - audience: ESTUDANTE
+          text: 'Passo 2: Compare cada opção, repetindo os sons em voz alta se ajudar.'
+        - audience: ESTUDANTE
+          text: 'Passo 3: Respire fundo e confirme a alternativa escolhida com segurança.'
+        - audience: EDUCADOR
+          text: Guie a turma passo a passo, reforçando uso de recursos visuais com gestos, pictogramas e pausas.
+        - audience: FAMILIA
+          text: Envie sugestões de jogos ou músicas que reforcem uso de recursos visuais em casa.
+      feedback:
+        success: Excelente! Uso de recursos visuais ficou evidente nas suas escolhas.
+        encouragement: Caso erre, releia com calma e utilize marcadores sonoros ou visuais para apoiar a decisão.
+        retry: Experimente revisar as pistas destacadas antes de tentar novamente.
+        accessibility: Ofereça tempo extra, recursos táteis e apoio auditivo individual para quem precisar.
+      assets:
+        - slug: lp-material-caderno
+          type: IMAGEM
+          title: Caderno colorido para escrita
+      alternatives:
+        - title: TEXTO EM CAIXA ALTA
+          description: OFEREÇA CARTÕES COM USO DE RECURSOS VISUAIS DESTACADO PARA QUE TODES ACOMPANHEM.
+          steps:
+            - FORNEÇA LETRAS GRANDES E ESPAÇADAS.
+            - GRIFE RIMAS OU PALAVRAS-CHAVE EM COR VIVA.
+      audioCue:
+        title: SINAL SONORO
+        description: Utilize um chocalho ou palmas para marcar o momento de focar em uso de recursos visuais.
+        steps:
+          - Avise que o som indica a troca de etapa ou turno de fala.
+          - Repita o som e a instrução de forma pausada.
+      motorSupport:
+        - title: APOIO MOTOR
+          description: Disponibilize apoios físicos para navegação e registro das respostas.
+          steps:
+            - Ofereça ponteiras, clipes ampliados ou teclado virtual.
+            - Permita que duplas se alternem no controle do dispositivo.
+    prerequisites:
+      - type: ACTIVITY
+        reference: revise-o-paragrafo
+        description: Pensar na clareza do texto antes de inserir recursos.
+    interactive:
+      slug: puzzle-puzzle-quadro-apoio
+      title: Quadros de Apoio — Quebra-cabeça
+      type: PUZZLE
+      bnccDescription: Utilizar elementos gráficos, imagens e recursos visuais que complementem textos coletivos.
+      estimatedTimeMinutes: 10
+      instructions:
+        - Observe cada cartão e relacione arrastando ou usando Tab + Enter.
+        - Converse sobre o motivo da combinação antes de confirmar.
+        - Revise as duplas formadas e proponha novas associações.
+      objectives:
+        - Explorar uso de recursos visuais em situações mediadas pelo educador.
+        - Compartilhar estratégias pessoais com colegas durante a atividade.
+      puzzle:
+        mode: matching
+        successFeedback: Recursos organizados! O jornal ficou informativo.
+        errorFeedback: Relembre a função de cada recurso antes de reorganizar.
+        pairs:
+          - id: puzzle-quadro-apoio-pair-1
+            prompt: Legenda
+            match: Explica resumidamente a imagem
+            hint: Quem contextualiza a foto?
+            feedback: A legenda orienta a leitura da imagem.
+          - id: puzzle-quadro-apoio-pair-2
+            prompt: Gráfico
+            match: Apresenta dados de forma visual
+            hint: Quando precisamos comparar números?
+            feedback: O gráfico facilita a leitura de dados.
+          - id: puzzle-quadro-apoio-pair-3
+            prompt: Caixa de destaque
+            match: Resume informações importantes
+            hint: Pense em quadros coloridos no jornal.
+            feedback: A caixa de destaque atrai o olhar e sintetiza o essencial.
+      accessibility:
+        hints:
+          - audience: ESTUDANTE
+            text: 'Passo 1: Leia ou escute cada instrução e identifique onde uso de recursos visuais aparece no interativo.'
+          - audience: ESTUDANTE
+            text: 'Passo 2: Use Tab ou toque na tela para revisar todas as opções antes de confirmar.'
+          - audience: ESTUDANTE
+            text: 'Passo 3: Compartilhe com um colega por que escolheu a resposta apresentada.'
+          - audience: EDUCADOR
+            text: Guie a turma passo a passo, reforçando uso de recursos visuais com gestos, pictogramas e pausas.
+          - audience: FAMILIA
+            text: Envie sugestões de jogos ou músicas que reforcem uso de recursos visuais em casa.
+        feedback:
+          success: Excelente! Uso de recursos visuais ficou evidente nas suas escolhas.
+          encouragement: Caso erre, releia com calma e utilize marcadores sonoros ou visuais para apoiar a decisão.
+          retry: Experimente revisar as pistas destacadas antes de tentar novamente.
+          accessibility: Ofereça tempo extra, recursos táteis e apoio auditivo individual para quem precisar.
+        assets:
+          - slug: lp-material-caderno
+            type: IMAGEM
+            title: Caderno colorido para escrita
+        alternatives:
+          - title: TEXTO EM CAIXA ALTA
+            description: OFEREÇA CARTÕES COM USO DE RECURSOS VISUAIS DESTACADO PARA QUE TODES ACOMPANHEM.
+            steps:
+              - FORNEÇA LETRAS GRANDES E ESPAÇADAS.
+              - GRIFE RIMAS OU PALAVRAS-CHAVE EM COR VIVA.
+        audioCue:
+          title: SINAL SONORO
+          description: Utilize um chocalho ou palmas para marcar o momento de focar em uso de recursos visuais.
+          steps:
+            - Avise que o som indica a troca de etapa ou turno de fala.
+            - Repita o som e a instrução de forma pausada.
+        motorSupport:
+          - title: APOIO MOTOR
+            description: Disponibilize apoios físicos para navegação e registro das respostas.
+            steps:
+              - Ofereça ponteiras, clipes ampliados ou teclado virtual.
+              - Permita que duplas se alternem no controle do dispositivo.
+  - partial: ../../_partials/acolhimento-base.yaml
+    slug: puzzle-roteiro
+    title: Roteiro do Texto
+    prompt: Relacione cada etapa do texto coletivo ao seu objetivo.
+    type: PUZZLE
+    difficulty: PRATICAR
+    bncc:
+      code: EF01LP20
+      habilidades:
+        - EF01LP20
+        - EF01LP18
+    learningObjectives:
+      - Explorar estrutura de reportagem em situações mediadas pelo educador.
+      - Compartilhar estratégias pessoais com colegas durante a atividade.
+    description: Roteiro do Texto incentiva a turma a explorar estrutura de reportagem com apoios variados.
+    metadata:
+      categoria: Estrutura textual
+      duracaoMinutos: 10
+      habilidades:
+        - EF01LP20
+        - EF01LP18
+      assetSlug: lp-letra-e
+      assetUsage: Utilize Ilustração da letra E como apoio visual para destacar estrutura de reportagem ao longo da atividade.
+      familiaEngajamento: Convide as famílias a observar estrutura de reportagem em histórias, cantigas ou jogos em casa.
+      habilidadesSecundarias:
+        - EF01LP18
+      interactiveSlug: puzzle-puzzle-roteiro
+    accessibility:
+      hints:
+        - audience: ESTUDANTE
+          text: 'Passo 1: Observe o enunciado com atenção e sublinhe mentalmente estrutura de reportagem.'
+        - audience: ESTUDANTE
+          text: 'Passo 2: Compare cada opção, repetindo os sons em voz alta se ajudar.'
+        - audience: ESTUDANTE
+          text: 'Passo 3: Respire fundo e confirme a alternativa escolhida com segurança.'
+        - audience: EDUCADOR
+          text: Guie a turma passo a passo, reforçando estrutura de reportagem com gestos, pictogramas e pausas.
+        - audience: FAMILIA
+          text: Envie sugestões de jogos ou músicas que reforcem estrutura de reportagem em casa.
+      feedback:
+        success: Excelente! Estrutura de reportagem ficou evidente nas suas escolhas.
+        encouragement: Caso erre, releia com calma e utilize marcadores sonoros ou visuais para apoiar a decisão.
+        retry: Experimente revisar as pistas destacadas antes de tentar novamente.
+        accessibility: Ofereça tempo extra, recursos táteis e apoio auditivo individual para quem precisar.
+      assets:
+        - slug: lp-letra-e
+          type: IMAGEM
+          title: Ilustração da letra E
+      alternatives:
+        - title: TEXTO EM CAIXA ALTA
+          description: OFEREÇA CARTÕES COM ESTRUTURA DE REPORTAGEM DESTACADO PARA QUE TODES ACOMPANHEM.
+          steps:
+            - FORNEÇA LETRAS GRANDES E ESPAÇADAS.
+            - GRIFE RIMAS OU PALAVRAS-CHAVE EM COR VIVA.
+      audioCue:
+        title: SINAL SONORO
+        description: Utilize um chocalho ou palmas para marcar o momento de focar em estrutura de reportagem.
+        steps:
+          - Avise que o som indica a troca de etapa ou turno de fala.
+          - Repita o som e a instrução de forma pausada.
+      motorSupport:
+        - title: APOIO MOTOR
+          description: Disponibilize apoios físicos para navegação e registro das respostas.
+          steps:
+            - Ofereça ponteiras, clipes ampliados ou teclado virtual.
+            - Permita que duplas se alternem no controle do dispositivo.
+    prerequisites:
+      - type: ACTIVITY
+        reference: ordena-fatos
+        description: Retomar a ordem dos fatos antes de associar etapas.
+    interactive:
+      slug: puzzle-puzzle-roteiro
+      title: Roteiro do Texto — Quebra-cabeça
+      type: PUZZLE
+      bnccDescription: Sequenciar fatos e ideias em textos produzidos coletivamente, respeitando relações temporais simples.
+      estimatedTimeMinutes: 10
+      instructions:
+        - Observe cada cartão e relacione arrastando ou usando Tab + Enter.
+        - Converse sobre o motivo da combinação antes de confirmar.
+        - Revise as duplas formadas e proponha novas associações.
+      objectives:
+        - Explorar estrutura de reportagem em situações mediadas pelo educador.
+        - Compartilhar estratégias pessoais com colegas durante a atividade.
+      puzzle:
+        mode: matching
+        successFeedback: Roteiro completo! A notícia ficou organizada.
+        errorFeedback: Analise novamente o objetivo de cada etapa.
+        pairs:
+          - id: puzzle-roteiro-pair-1
+            prompt: Título
+            match: Chama atenção para o tema
+            hint: Pense no que aparece primeiro.
+            feedback: O título apresenta o assunto principal.
+          - id: puzzle-roteiro-pair-2
+            prompt: Lead
+            match: Resume as informações principais
+            hint: Quem responde às perguntas o quê, quem, onde.
+            feedback: O lead sintetiza o essencial para o leitor.
+          - id: puzzle-roteiro-pair-3
+            prompt: Corpo do texto
+            match: Detalha os fatos em ordem
+            hint: Após o resumo, o que vem?
+            feedback: O corpo expande a história com detalhes.
+      accessibility:
+        hints:
+          - audience: ESTUDANTE
+            text: 'Passo 1: Leia ou escute cada instrução e identifique onde estrutura de reportagem aparece no interativo.'
+          - audience: ESTUDANTE
+            text: 'Passo 2: Use Tab ou toque na tela para revisar todas as opções antes de confirmar.'
+          - audience: ESTUDANTE
+            text: 'Passo 3: Compartilhe com um colega por que escolheu a resposta apresentada.'
+          - audience: EDUCADOR
+            text: Guie a turma passo a passo, reforçando estrutura de reportagem com gestos, pictogramas e pausas.
+          - audience: FAMILIA
+            text: Envie sugestões de jogos ou músicas que reforcem estrutura de reportagem em casa.
+        feedback:
+          success: Excelente! Estrutura de reportagem ficou evidente nas suas escolhas.
+          encouragement: Caso erre, releia com calma e utilize marcadores sonoros ou visuais para apoiar a decisão.
+          retry: Experimente revisar as pistas destacadas antes de tentar novamente.
+          accessibility: Ofereça tempo extra, recursos táteis e apoio auditivo individual para quem precisar.
+        assets:
+          - slug: lp-letra-e
+            type: IMAGEM
+            title: Ilustração da letra E
+        alternatives:
+          - title: TEXTO EM CAIXA ALTA
+            description: OFEREÇA CARTÕES COM ESTRUTURA DE REPORTAGEM DESTACADO PARA QUE TODES ACOMPANHEM.
+            steps:
+              - FORNEÇA LETRAS GRANDES E ESPAÇADAS.
+              - GRIFE RIMAS OU PALAVRAS-CHAVE EM COR VIVA.
+        audioCue:
+          title: SINAL SONORO
+          description: Utilize um chocalho ou palmas para marcar o momento de focar em estrutura de reportagem.
+          steps:
+            - Avise que o som indica a troca de etapa ou turno de fala.
+            - Repita o som e a instrução de forma pausada.
+        motorSupport:
+          - title: APOIO MOTOR
+            description: Disponibilize apoios físicos para navegação e registro das respostas.
+            steps:
+              - Ofereça ponteiras, clipes ampliados ou teclado virtual.
+              - Permita que duplas se alternem no controle do dispositivo.
+  - partial: ../../_partials/acolhimento-base.yaml
+    slug: puzzle-revisao-final
+    title: Revisão Final
+    prompt: Associe cada tipo de revisão ao ajuste correspondente.
+    type: PUZZLE
+    difficulty: DOMINAR
+    bncc:
+      code: EF01LP21
+      habilidades:
+        - EF01LP21
+        - EF01LP22
+    learningObjectives:
+      - Explorar checklist de revisão em situações mediadas pelo educador.
+      - Compartilhar estratégias pessoais com colegas durante a atividade.
+    description: Revisão Final incentiva a turma a explorar checklist de revisão com apoios variados.
+    metadata:
+      categoria: Revisão e diagramação
+      duracaoMinutos: 11
+      habilidades:
+        - EF01LP21
+        - EF01LP22
+      assetSlug: lp-silaba-la
+      assetUsage: Utilize Cartão da sílaba LA como apoio visual para destacar checklist de revisão ao longo da atividade.
+      familiaEngajamento: Convide as famílias a observar checklist de revisão em histórias, cantigas ou jogos em casa.
+      habilidadesSecundarias:
+        - EF01LP22
+      interactiveSlug: puzzle-puzzle-revisao-final
+    accessibility:
+      hints:
+        - audience: ESTUDANTE
+          text: 'Passo 1: Observe o enunciado com atenção e sublinhe mentalmente checklist de revisão.'
+        - audience: ESTUDANTE
+          text: 'Passo 2: Compare cada opção, repetindo os sons em voz alta se ajudar.'
+        - audience: ESTUDANTE
+          text: 'Passo 3: Respire fundo e confirme a alternativa escolhida com segurança.'
+        - audience: EDUCADOR
+          text: Guie a turma passo a passo, reforçando checklist de revisão com gestos, pictogramas e pausas.
+        - audience: FAMILIA
+          text: Envie sugestões de jogos ou músicas que reforcem checklist de revisão em casa.
+      feedback:
+        success: Excelente! Checklist de revisão ficou evidente nas suas escolhas.
+        encouragement: Caso erre, releia com calma e utilize marcadores sonoros ou visuais para apoiar a decisão.
+        retry: Experimente revisar as pistas destacadas antes de tentar novamente.
+        accessibility: Ofereça tempo extra, recursos táteis e apoio auditivo individual para quem precisar.
+      assets:
+        - slug: lp-silaba-la
+          type: IMAGEM
+          title: Cartão da sílaba LA
+      alternatives:
+        - title: TEXTO EM CAIXA ALTA
+          description: OFEREÇA CARTÕES COM CHECKLIST DE REVISÃO DESTACADO PARA QUE TODES ACOMPANHEM.
+          steps:
+            - FORNEÇA LETRAS GRANDES E ESPAÇADAS.
+            - GRIFE RIMAS OU PALAVRAS-CHAVE EM COR VIVA.
+      audioCue:
+        title: SINAL SONORO
+        description: Utilize um chocalho ou palmas para marcar o momento de focar em checklist de revisão.
+        steps:
+          - Avise que o som indica a troca de etapa ou turno de fala.
+          - Repita o som e a instrução de forma pausada.
+      motorSupport:
+        - title: APOIO MOTOR
+          description: Disponibilize apoios físicos para navegação e registro das respostas.
+          steps:
+            - Ofereça ponteiras, clipes ampliados ou teclado virtual.
+            - Permita que duplas se alternem no controle do dispositivo.
+    prerequisites:
+      - type: ACTIVITY
+        reference: revise-o-paragrafo
+        description: Aplicar revisão textual antes da checklist final.
+    interactive:
+      slug: puzzle-puzzle-revisao-final
+      title: Revisão Final — Quebra-cabeça
+      type: PUZZLE
+      bnccDescription: Revisar textos coletivos ajustando vocabulário, ortografia e pontuação com apoio do grupo.
+      estimatedTimeMinutes: 11
+      instructions:
+        - Observe cada cartão e relacione arrastando ou usando Tab + Enter.
+        - Converse sobre o motivo da combinação antes de confirmar.
+        - Revise as duplas formadas e proponha novas associações.
+      objectives:
+        - Explorar checklist de revisão em situações mediadas pelo educador.
+        - Compartilhar estratégias pessoais com colegas durante a atividade.
+      puzzle:
+        mode: matching
+        successFeedback: Checklist completo! O texto está pronto para publicar.
+        errorFeedback: Revise cada ajuste antes de reorganizar.
+        pairs:
+          - id: puzzle-revisao-final-pair-1
+            prompt: Revisão ortográfica
+            match: Confere letras e acentos
+            hint: Relaciona-se à escrita correta das palavras.
+            feedback: Ortografia correta deixa o texto profissional.
+          - id: puzzle-revisao-final-pair-2
+            prompt: Revisão de pontuação
+            match: Garante sinalização adequada
+            hint: Observe os sinais no final das frases.
+            feedback: Pontuação adequada facilita a leitura.
+          - id: puzzle-revisao-final-pair-3
+            prompt: Revisão de design
+            match: Alinha imagens e títulos
+            hint: Depois do texto, o que precisa ficar bonito?
+            feedback: O design final garante leitura confortável.
+      accessibility:
+        hints:
+          - audience: ESTUDANTE
+            text: 'Passo 1: Leia ou escute cada instrução e identifique onde checklist de revisão aparece no interativo.'
+          - audience: ESTUDANTE
+            text: 'Passo 2: Use Tab ou toque na tela para revisar todas as opções antes de confirmar.'
+          - audience: ESTUDANTE
+            text: 'Passo 3: Compartilhe com um colega por que escolheu a resposta apresentada.'
+          - audience: EDUCADOR
+            text: Guie a turma passo a passo, reforçando checklist de revisão com gestos, pictogramas e pausas.
+          - audience: FAMILIA
+            text: Envie sugestões de jogos ou músicas que reforcem checklist de revisão em casa.
+        feedback:
+          success: Excelente! Checklist de revisão ficou evidente nas suas escolhas.
+          encouragement: Caso erre, releia com calma e utilize marcadores sonoros ou visuais para apoiar a decisão.
+          retry: Experimente revisar as pistas destacadas antes de tentar novamente.
+          accessibility: Ofereça tempo extra, recursos táteis e apoio auditivo individual para quem precisar.
+        assets:
+          - slug: lp-silaba-la
+            type: IMAGEM
+            title: Cartão da sílaba LA
+        alternatives:
+          - title: TEXTO EM CAIXA ALTA
+            description: OFEREÇA CARTÕES COM CHECKLIST DE REVISÃO DESTACADO PARA QUE TODES ACOMPANHEM.
+            steps:
+              - FORNEÇA LETRAS GRANDES E ESPAÇADAS.
+              - GRIFE RIMAS OU PALAVRAS-CHAVE EM COR VIVA.
+        audioCue:
+          title: SINAL SONORO
+          description: Utilize um chocalho ou palmas para marcar o momento de focar em checklist de revisão.
+          steps:
+            - Avise que o som indica a troca de etapa ou turno de fala.
+            - Repita o som e a instrução de forma pausada.
+        motorSupport:
+          - title: APOIO MOTOR
+            description: Disponibilize apoios físicos para navegação e registro das respostas.
+            steps:
+              - Ofereça ponteiras, clipes ampliados ou teclado virtual.
+              - Permita que duplas se alternem no controle do dispositivo.
+  - partial: ../../_partials/acolhimento-base.yaml
+    slug: jogo-planejamento-coletivo
+    title: Planejamento Coletivo
+    prompt: Escolha os passos iniciais para planejar o jornal em equipe.
+    type: GAME
+    difficulty: INICIAR
+    bncc:
+      code: EF01LP18
+      habilidades:
+        - EF01LP18
+        - EF01LP23
+    learningObjectives:
+      - Explorar passos do planejamento em situações mediadas pelo educador.
+      - Compartilhar estratégias pessoais com colegas durante a atividade.
+    description: Planejamento Coletivo incentiva a turma a explorar passos do planejamento com apoios variados.
+    metadata:
+      categoria: Planejamento
+      duracaoMinutos: 12
+      habilidades:
+        - EF01LP18
+        - EF01LP23
+      assetSlug: lp-material-caderno
+      assetUsage: Utilize Caderno colorido para escrita como apoio visual para destacar passos do planejamento ao longo da atividade.
+      familiaEngajamento: Convide as famílias a observar passos do planejamento em histórias, cantigas ou jogos em casa.
+      habilidadesSecundarias:
+        - EF01LP23
+      interactiveSlug: game-jogo-planejamento-coletivo
+    accessibility:
+      hints:
+        - audience: ESTUDANTE
+          text: 'Passo 1: Observe o enunciado com atenção e sublinhe mentalmente passos do planejamento.'
+        - audience: ESTUDANTE
+          text: 'Passo 2: Compare cada opção, repetindo os sons em voz alta se ajudar.'
+        - audience: ESTUDANTE
+          text: 'Passo 3: Respire fundo e confirme a alternativa escolhida com segurança.'
+        - audience: EDUCADOR
+          text: Guie a turma passo a passo, reforçando passos do planejamento com gestos, pictogramas e pausas.
+        - audience: FAMILIA
+          text: Envie sugestões de jogos ou músicas que reforcem passos do planejamento em casa.
+      feedback:
+        success: Excelente! Passos do planejamento ficou evidente nas suas escolhas.
+        encouragement: Caso erre, releia com calma e utilize marcadores sonoros ou visuais para apoiar a decisão.
+        retry: Experimente revisar as pistas destacadas antes de tentar novamente.
+        accessibility: Ofereça tempo extra, recursos táteis e apoio auditivo individual para quem precisar.
+      assets:
+        - slug: lp-material-caderno
+          type: IMAGEM
+          title: Caderno colorido para escrita
+      alternatives:
+        - title: TEXTO EM CAIXA ALTA
+          description: OFEREÇA CARTÕES COM PASSOS DO PLANEJAMENTO DESTACADO PARA QUE TODES ACOMPANHEM.
+          steps:
+            - FORNEÇA LETRAS GRANDES E ESPAÇADAS.
+            - GRIFE RIMAS OU PALAVRAS-CHAVE EM COR VIVA.
+      audioCue:
+        title: SINAL SONORO
+        description: Utilize um chocalho ou palmas para marcar o momento de focar em passos do planejamento.
+        steps:
+          - Avise que o som indica a troca de etapa ou turno de fala.
+          - Repita o som e a instrução de forma pausada.
+      motorSupport:
+        - title: APOIO MOTOR
+          description: Disponibilize apoios físicos para navegação e registro das respostas.
+          steps:
+            - Ofereça ponteiras, clipes ampliados ou teclado virtual.
+            - Permita que duplas se alternem no controle do dispositivo.
+    prerequisites:
+      - type: ACTIVITY
+        reference: puzzle-funcoes-jornal
+        description: Relembrar papéis antes de planejar as etapas.
+    interactive:
+      slug: game-jogo-planejamento-coletivo
+      title: Planejamento Coletivo — Mini-jogo
+      type: GAME
+      bnccDescription: Planejar textos coletivos considerando finalidade, gênero, público leitor e suporte.
+      estimatedTimeMinutes: 12
+      instructions:
+        - Leia ou escute o desafio de cada fase com atenção.
+        - Digite ou selecione a resposta utilizando teclado, toque ou mouse.
+        - Ao final, compartilhe qual pista sonora ou visual ajudou a resolver a fase.
+      objectives:
+        - Explorar passos do planejamento em situações mediadas pelo educador.
+        - Compartilhar estratégias pessoais com colegas durante a atividade.
+      game:
+        mode: math-challenge
+        timeLimitSeconds: 120
+        lives: 3
+        victoryMessage: Planejamento pronto! A equipe sabe por onde começar.
+        gameOverMessage: Relembre os passos combinados e tente novamente com calma.
+        levels:
+          - id: jogo-planejamento-coletivo-level-1
+            challenge: Qual passo vem primeiro? (Escolher tema, Diagramar páginas, Imprimir jornal)
+            answer: Escolher tema
+            hint: Pense no início do processo.
+            successFeedback: Perfeito! Tudo começa com o tema.
+            failureFeedback: Revise a ordem do planejamento coletivo.
+          - id: jogo-planejamento-coletivo-level-2
+            challenge: Depois de escolher o tema, o que fazemos? (Definir público, Distribuir jornal, Guardar materiais)
+            answer: Definir público
+            hint: Lembre de quem vai ler.
+            successFeedback: Muito bem! O público orienta o texto.
+            failureFeedback: Observe a sequência lógica do planejamento.
+          - id: jogo-planejamento-coletivo-level-3
+            challenge: Qual passo vem antes de começar a escrever? (Coletar informações, Fazer cartazes, Escolher música)
+            answer: Coletar informações
+            hint: Precisamos de dados antes de redigir.
+            successFeedback: Excelente! Informações coletadas orientam o texto.
+            failureFeedback: Não dá para escrever sem dados relevantes.
+      accessibility:
+        hints:
+          - audience: ESTUDANTE
+            text: 'Passo 1: Leia ou escute cada instrução e identifique onde passos do planejamento aparece no interativo.'
+          - audience: ESTUDANTE
+            text: 'Passo 2: Use Tab ou toque na tela para revisar todas as opções antes de confirmar.'
+          - audience: ESTUDANTE
+            text: 'Passo 3: Compartilhe com um colega por que escolheu a resposta apresentada.'
+          - audience: EDUCADOR
+            text: Guie a turma passo a passo, reforçando passos do planejamento com gestos, pictogramas e pausas.
+          - audience: FAMILIA
+            text: Envie sugestões de jogos ou músicas que reforcem passos do planejamento em casa.
+        feedback:
+          success: Excelente! Passos do planejamento ficou evidente nas suas escolhas.
+          encouragement: Caso erre, releia com calma e utilize marcadores sonoros ou visuais para apoiar a decisão.
+          retry: Experimente revisar as pistas destacadas antes de tentar novamente.
+          accessibility: Ofereça tempo extra, recursos táteis e apoio auditivo individual para quem precisar.
+        assets:
+          - slug: lp-material-caderno
+            type: IMAGEM
+            title: Caderno colorido para escrita
+        alternatives:
+          - title: TEXTO EM CAIXA ALTA
+            description: OFEREÇA CARTÕES COM PASSOS DO PLANEJAMENTO DESTACADO PARA QUE TODES ACOMPANHEM.
+            steps:
+              - FORNEÇA LETRAS GRANDES E ESPAÇADAS.
+              - GRIFE RIMAS OU PALAVRAS-CHAVE EM COR VIVA.
+        audioCue:
+          title: SINAL SONORO
+          description: Utilize um chocalho ou palmas para marcar o momento de focar em passos do planejamento.
+          steps:
+            - Avise que o som indica a troca de etapa ou turno de fala.
+            - Repita o som e a instrução de forma pausada.
+        motorSupport:
+          - title: APOIO MOTOR
+            description: Disponibilize apoios físicos para navegação e registro das respostas.
+            steps:
+              - Ofereça ponteiras, clipes ampliados ou teclado virtual.
+              - Permita que duplas se alternem no controle do dispositivo.
+  - partial: ../../_partials/acolhimento-base.yaml
+    slug: jogo-coleta-fatos
+    title: Coleta Fatos
+    prompt: Selecione as informações que entram no roteiro da notícia coletiva.
+    type: GAME
+    difficulty: PRATICAR
+    bncc:
+      code: EF01LP19
+      habilidades:
+        - EF01LP19
+        - EF01LP20
+    learningObjectives:
+      - Explorar seleção de dados em situações mediadas pelo educador.
+      - Compartilhar estratégias pessoais com colegas durante a atividade.
+    description: Coleta Fatos incentiva a turma a explorar seleção de dados com apoios variados.
+    metadata:
+      categoria: Coleta de dados
+      duracaoMinutos: 12
+      habilidades:
+        - EF01LP19
+        - EF01LP20
+      assetSlug: lp-letra-a
+      assetUsage: Utilize Ilustração da letra A como apoio visual para destacar seleção de dados ao longo da atividade.
+      familiaEngajamento: Convide as famílias a observar seleção de dados em histórias, cantigas ou jogos em casa.
+      habilidadesSecundarias:
+        - EF01LP20
+      interactiveSlug: game-jogo-coleta-fatos
+    accessibility:
+      hints:
+        - audience: ESTUDANTE
+          text: 'Passo 1: Observe o enunciado com atenção e sublinhe mentalmente seleção de dados.'
+        - audience: ESTUDANTE
+          text: 'Passo 2: Compare cada opção, repetindo os sons em voz alta se ajudar.'
+        - audience: ESTUDANTE
+          text: 'Passo 3: Respire fundo e confirme a alternativa escolhida com segurança.'
+        - audience: EDUCADOR
+          text: Guie a turma passo a passo, reforçando seleção de dados com gestos, pictogramas e pausas.
+        - audience: FAMILIA
+          text: Envie sugestões de jogos ou músicas que reforcem seleção de dados em casa.
+      feedback:
+        success: Excelente! Seleção de dados ficou evidente nas suas escolhas.
+        encouragement: Caso erre, releia com calma e utilize marcadores sonoros ou visuais para apoiar a decisão.
+        retry: Experimente revisar as pistas destacadas antes de tentar novamente.
+        accessibility: Ofereça tempo extra, recursos táteis e apoio auditivo individual para quem precisar.
+      assets:
+        - slug: lp-letra-a
+          type: IMAGEM
+          title: Ilustração da letra A
+      alternatives:
+        - title: TEXTO EM CAIXA ALTA
+          description: OFEREÇA CARTÕES COM SELEÇÃO DE DADOS DESTACADO PARA QUE TODES ACOMPANHEM.
+          steps:
+            - FORNEÇA LETRAS GRANDES E ESPAÇADAS.
+            - GRIFE RIMAS OU PALAVRAS-CHAVE EM COR VIVA.
+      audioCue:
+        title: SINAL SONORO
+        description: Utilize um chocalho ou palmas para marcar o momento de focar em seleção de dados.
+        steps:
+          - Avise que o som indica a troca de etapa ou turno de fala.
+          - Repita o som e a instrução de forma pausada.
+      motorSupport:
+        - title: APOIO MOTOR
+          description: Disponibilize apoios físicos para navegação e registro das respostas.
+          steps:
+            - Ofereça ponteiras, clipes ampliados ou teclado virtual.
+            - Permita que duplas se alternem no controle do dispositivo.
+    prerequisites:
+      - type: ACTIVITY
+        reference: puzzle-roteiro
+        description: Rever etapas do texto antes da coleta de fatos.
+    interactive:
+      slug: game-jogo-coleta-fatos
+      title: Coleta Fatos — Mini-jogo
+      type: GAME
+      bnccDescription: Selecionar e organizar informações relevantes para compor textos coletivos coerentes.
+      estimatedTimeMinutes: 12
+      instructions:
+        - Leia ou escute o desafio de cada fase com atenção.
+        - Digite ou selecione a resposta utilizando teclado, toque ou mouse.
+        - Ao final, compartilhe qual pista sonora ou visual ajudou a resolver a fase.
+      objectives:
+        - Explorar seleção de dados em situações mediadas pelo educador.
+        - Compartilhar estratégias pessoais com colegas durante a atividade.
+      game:
+        mode: math-challenge
+        timeLimitSeconds: 120
+        lives: 3
+        victoryMessage: Roteiro montado! Informações prontas para o texto.
+        gameOverMessage: Revise as pistas do tema e tente novamente selecionando dados relevantes.
+        levels:
+          - id: jogo-coleta-fatos-level-1
+            challenge: 'Tema: visita ao museu. Qual informação é essencial? (Número de visitantes, Receita de bolo, Música preferida)'
+            answer: Número de visitantes
+            hint: Procure dado ligado ao evento.
+            successFeedback: Ótimo! O número mostra a importância da visita.
+            failureFeedback: Mantenha foco no tema do texto.
+          - id: jogo-coleta-fatos-level-2
+            challenge: 'Tema: campeonato interno. Qual informação entra? (Times participantes, Clima da semana, Filme favorito)'
+            answer: Times participantes
+            hint: Quem participou precisa aparecer.
+            successFeedback: Muito bem! Isso interessa ao leitor.
+            failureFeedback: Selecione dados relacionados ao campeonato.
+          - id: jogo-coleta-fatos-level-3
+            challenge: 'Tema: hortas na escola. Qual dado usar? (O que foi plantado, Preço da feira, Programa de TV)'
+            answer: O que foi plantado
+            hint: Pense no interesse do leitor.
+            successFeedback: Excelente! Essa informação complementa o texto.
+            failureFeedback: Escolha dados que respondam às curiosidades sobre a horta.
+      accessibility:
+        hints:
+          - audience: ESTUDANTE
+            text: 'Passo 1: Leia ou escute cada instrução e identifique onde seleção de dados aparece no interativo.'
+          - audience: ESTUDANTE
+            text: 'Passo 2: Use Tab ou toque na tela para revisar todas as opções antes de confirmar.'
+          - audience: ESTUDANTE
+            text: 'Passo 3: Compartilhe com um colega por que escolheu a resposta apresentada.'
+          - audience: EDUCADOR
+            text: Guie a turma passo a passo, reforçando seleção de dados com gestos, pictogramas e pausas.
+          - audience: FAMILIA
+            text: Envie sugestões de jogos ou músicas que reforcem seleção de dados em casa.
+        feedback:
+          success: Excelente! Seleção de dados ficou evidente nas suas escolhas.
+          encouragement: Caso erre, releia com calma e utilize marcadores sonoros ou visuais para apoiar a decisão.
+          retry: Experimente revisar as pistas destacadas antes de tentar novamente.
+          accessibility: Ofereça tempo extra, recursos táteis e apoio auditivo individual para quem precisar.
+        assets:
+          - slug: lp-letra-a
+            type: IMAGEM
+            title: Ilustração da letra A
+        alternatives:
+          - title: TEXTO EM CAIXA ALTA
+            description: OFEREÇA CARTÕES COM SELEÇÃO DE DADOS DESTACADO PARA QUE TODES ACOMPANHEM.
+            steps:
+              - FORNEÇA LETRAS GRANDES E ESPAÇADAS.
+              - GRIFE RIMAS OU PALAVRAS-CHAVE EM COR VIVA.
+        audioCue:
+          title: SINAL SONORO
+          description: Utilize um chocalho ou palmas para marcar o momento de focar em seleção de dados.
+          steps:
+            - Avise que o som indica a troca de etapa ou turno de fala.
+            - Repita o som e a instrução de forma pausada.
+        motorSupport:
+          - title: APOIO MOTOR
+            description: Disponibilize apoios físicos para navegação e registro das respostas.
+            steps:
+              - Ofereça ponteiras, clipes ampliados ou teclado virtual.
+              - Permita que duplas se alternem no controle do dispositivo.
+  - partial: ../../_partials/acolhimento-base.yaml
+    slug: jogo-design-jornal
+    title: Design do Jornal
+    prompt: Escolha o recurso visual que deixa a página mais informativa.
+    type: GAME
+    difficulty: DOMINAR
+    bncc:
+      code: EF01LP22
+      habilidades:
+        - EF01LP22
+        - EF01LP24
+    learningObjectives:
+      - Explorar uso de recursos gráficos em situações mediadas pelo educador.
+      - Compartilhar estratégias pessoais com colegas durante a atividade.
+    description: Design do Jornal incentiva a turma a explorar uso de recursos gráficos com apoios variados.
+    metadata:
+      categoria: Diagramação
+      duracaoMinutos: 13
+      habilidades:
+        - EF01LP22
+        - EF01LP24
+      assetSlug: lp-silaba-ba
+      assetUsage: Utilize Cartão da sílaba BA como apoio visual para destacar uso de recursos gráficos ao longo da atividade.
+      familiaEngajamento: Convide as famílias a observar uso de recursos gráficos em histórias, cantigas ou jogos em casa.
+      habilidadesSecundarias:
+        - EF01LP24
+      interactiveSlug: game-jogo-design-jornal
+    accessibility:
+      hints:
+        - audience: ESTUDANTE
+          text: 'Passo 1: Observe o enunciado com atenção e sublinhe mentalmente uso de recursos gráficos.'
+        - audience: ESTUDANTE
+          text: 'Passo 2: Compare cada opção, repetindo os sons em voz alta se ajudar.'
+        - audience: ESTUDANTE
+          text: 'Passo 3: Respire fundo e confirme a alternativa escolhida com segurança.'
+        - audience: EDUCADOR
+          text: Guie a turma passo a passo, reforçando uso de recursos gráficos com gestos, pictogramas e pausas.
+        - audience: FAMILIA
+          text: Envie sugestões de jogos ou músicas que reforcem uso de recursos gráficos em casa.
+      feedback:
+        success: Excelente! Uso de recursos gráficos ficou evidente nas suas escolhas.
+        encouragement: Caso erre, releia com calma e utilize marcadores sonoros ou visuais para apoiar a decisão.
+        retry: Experimente revisar as pistas destacadas antes de tentar novamente.
+        accessibility: Ofereça tempo extra, recursos táteis e apoio auditivo individual para quem precisar.
+      assets:
+        - slug: lp-silaba-ba
+          type: IMAGEM
+          title: Cartão da sílaba BA
+      alternatives:
+        - title: TEXTO EM CAIXA ALTA
+          description: OFEREÇA CARTÕES COM USO DE RECURSOS GRÁFICOS DESTACADO PARA QUE TODES ACOMPANHEM.
+          steps:
+            - FORNEÇA LETRAS GRANDES E ESPAÇADAS.
+            - GRIFE RIMAS OU PALAVRAS-CHAVE EM COR VIVA.
+      audioCue:
+        title: SINAL SONORO
+        description: Utilize um chocalho ou palmas para marcar o momento de focar em uso de recursos gráficos.
+        steps:
+          - Avise que o som indica a troca de etapa ou turno de fala.
+          - Repita o som e a instrução de forma pausada.
+      motorSupport:
+        - title: APOIO MOTOR
+          description: Disponibilize apoios físicos para navegação e registro das respostas.
+          steps:
+            - Ofereça ponteiras, clipes ampliados ou teclado virtual.
+            - Permita que duplas se alternem no controle do dispositivo.
+    prerequisites:
+      - type: ACTIVITY
+        reference: puzzle-quadro-apoio
+        description: Relembrar funções dos recursos antes de diagramar.
+    interactive:
+      slug: game-jogo-design-jornal
+      title: Design do Jornal — Mini-jogo
+      type: GAME
+      bnccDescription: Utilizar elementos gráficos, imagens e recursos visuais que complementem textos coletivos.
+      estimatedTimeMinutes: 13
+      instructions:
+        - Leia ou escute o desafio de cada fase com atenção.
+        - Digite ou selecione a resposta utilizando teclado, toque ou mouse.
+        - Ao final, compartilhe qual pista sonora ou visual ajudou a resolver a fase.
+      objectives:
+        - Explorar uso de recursos gráficos em situações mediadas pelo educador.
+        - Compartilhar estratégias pessoais com colegas durante a atividade.
+      game:
+        mode: math-challenge
+        timeLimitSeconds: 120
+        lives: 3
+        victoryMessage: Design alinhado! A página está clara e atrativa.
+        gameOverMessage: Observe as necessidades de leitura e tente novamente selecionando recursos.
+        levels:
+          - id: jogo-design-jornal-level-1
+            challenge: Página com muitos números. Qual recurso ajuda? (Gráfico colorido, Poema ilustrado, Álbum de figurinhas)
+            answer: Gráfico colorido
+            hint: Qual recurso organiza números?
+            successFeedback: Perfeito! O gráfico facilita a leitura dos dados.
+            failureFeedback: Observe a necessidade de visualizar os números.
+          - id: jogo-design-jornal-level-2
+            challenge: Foto de um experimento. Qual recurso complementa? (Legenda explicativa, Lista de compras, Piada da semana)
+            answer: Legenda explicativa
+            hint: Qual recurso descreve uma imagem?
+            successFeedback: Ótimo! A legenda explica a cena da foto.
+            failureFeedback: Escolha o recurso ligado diretamente à imagem.
+          - id: jogo-design-jornal-level-3
+            challenge: Resumo da reunião. Como destacar? (Caixa de destaque colorida, Figura geométrica, Título sem cor)
+            answer: Caixa de destaque colorida
+            hint: Qual recurso chama atenção para texto curto?
+            successFeedback: Excelente! A caixa destaca o resumo.
+            failureFeedback: Relembre os recursos que destacam informações.
+      accessibility:
+        hints:
+          - audience: ESTUDANTE
+            text: 'Passo 1: Leia ou escute cada instrução e identifique onde uso de recursos gráficos aparece no interativo.'
+          - audience: ESTUDANTE
+            text: 'Passo 2: Use Tab ou toque na tela para revisar todas as opções antes de confirmar.'
+          - audience: ESTUDANTE
+            text: 'Passo 3: Compartilhe com um colega por que escolheu a resposta apresentada.'
+          - audience: EDUCADOR
+            text: Guie a turma passo a passo, reforçando uso de recursos gráficos com gestos, pictogramas e pausas.
+          - audience: FAMILIA
+            text: Envie sugestões de jogos ou músicas que reforcem uso de recursos gráficos em casa.
+        feedback:
+          success: Excelente! Uso de recursos gráficos ficou evidente nas suas escolhas.
+          encouragement: Caso erre, releia com calma e utilize marcadores sonoros ou visuais para apoiar a decisão.
+          retry: Experimente revisar as pistas destacadas antes de tentar novamente.
+          accessibility: Ofereça tempo extra, recursos táteis e apoio auditivo individual para quem precisar.
+        assets:
+          - slug: lp-silaba-ba
+            type: IMAGEM
+            title: Cartão da sílaba BA
+        alternatives:
+          - title: TEXTO EM CAIXA ALTA
+            description: OFEREÇA CARTÕES COM USO DE RECURSOS GRÁFICOS DESTACADO PARA QUE TODES ACOMPANHEM.
+            steps:
+              - FORNEÇA LETRAS GRANDES E ESPAÇADAS.
+              - GRIFE RIMAS OU PALAVRAS-CHAVE EM COR VIVA.
+        audioCue:
+          title: SINAL SONORO
+          description: Utilize um chocalho ou palmas para marcar o momento de focar em uso de recursos gráficos.
+          steps:
+            - Avise que o som indica a troca de etapa ou turno de fala.
+            - Repita o som e a instrução de forma pausada.
+        motorSupport:
+          - title: APOIO MOTOR
+            description: Disponibilize apoios físicos para navegação e registro das respostas.
+            steps:
+              - Ofereça ponteiras, clipes ampliados ou teclado virtual.
+              - Permita que duplas se alternem no controle do dispositivo.
+  - partial: ../../_partials/acolhimento-base.yaml
+    slug: jogo-publica-e-divulga
+    title: Publica e Divulga
+    prompt: Escolha ações para divulgar o jornal e registrar feedback dos leitores.
+    type: GAME
+    difficulty: DOMINAR
+    bncc:
+      code: EF01LP24
+      habilidades:
+        - EF01LP24
+        - EF01LP23
+    learningObjectives:
+      - Explorar divulgação e retorno em situações mediadas pelo educador.
+      - Compartilhar estratégias pessoais com colegas durante a atividade.
+    description: Publica e Divulga incentiva a turma a explorar divulgação e retorno com apoios variados.
+    metadata:
+      categoria: Compartilhamento
+      duracaoMinutos: 13
+      habilidades:
+        - EF01LP24
+        - EF01LP23
+      assetSlug: lp-letra-e
+      assetUsage: Utilize Ilustração da letra E como apoio visual para destacar divulgação e retorno ao longo da atividade.
+      familiaEngajamento: Convide as famílias a observar divulgação e retorno em histórias, cantigas ou jogos em casa.
+      habilidadesSecundarias:
+        - EF01LP23
+      interactiveSlug: game-jogo-publica-e-divulga
+      audioPrompt: Grave uma mensagem coletiva convidando a comunidade a ler o jornal, simulando boletim de rádio.
+    accessibility:
+      hints:
+        - audience: ESTUDANTE
+          text: 'Passo 1: Observe o enunciado com atenção e sublinhe mentalmente divulgação e retorno.'
+        - audience: ESTUDANTE
+          text: 'Passo 2: Compare cada opção, repetindo os sons em voz alta se ajudar.'
+        - audience: ESTUDANTE
+          text: 'Passo 3: Respire fundo e confirme a alternativa escolhida com segurança.'
+        - audience: EDUCADOR
+          text: Guie a turma passo a passo, reforçando divulgação e retorno com gestos, pictogramas e pausas.
+        - audience: FAMILIA
+          text: Envie sugestões de jogos ou músicas que reforcem divulgação e retorno em casa.
+      feedback:
+        success: Excelente! Divulgação e retorno ficou evidente nas suas escolhas.
+        encouragement: Caso erre, releia com calma e utilize marcadores sonoros ou visuais para apoiar a decisão.
+        retry: Experimente revisar as pistas destacadas antes de tentar novamente.
+        accessibility: Ofereça tempo extra, recursos táteis e apoio auditivo individual para quem precisar.
+      assets:
+        - slug: lp-letra-e
+          type: IMAGEM
+          title: Ilustração da letra E
+      alternatives:
+        - title: TEXTO EM CAIXA ALTA
+          description: OFEREÇA CARTÕES COM DIVULGAÇÃO E RETORNO DESTACADO PARA QUE TODES ACOMPANHEM.
+          steps:
+            - FORNEÇA LETRAS GRANDES E ESPAÇADAS.
+            - GRIFE RIMAS OU PALAVRAS-CHAVE EM COR VIVA.
+      audioCue:
+        title: SINAL SONORO
+        description: Utilize um chocalho ou palmas para marcar o momento de focar em divulgação e retorno.
+        steps:
+          - Avise que o som indica a troca de etapa ou turno de fala.
+          - Repita o som e a instrução de forma pausada.
+      motorSupport:
+        - title: APOIO MOTOR
+          description: Disponibilize apoios físicos para navegação e registro das respostas.
+          steps:
+            - Ofereça ponteiras, clipes ampliados ou teclado virtual.
+            - Permita que duplas se alternem no controle do dispositivo.
+    prerequisites:
+      - type: ACTIVITY
+        reference: lancamento-do-jornal
+        description: Planejar o lançamento antes de escolher ações práticas.
+    interactive:
+      slug: game-jogo-publica-e-divulga
+      title: Publica e Divulga — Mini-jogo
+      type: GAME
+      bnccDescription: Publicar e compartilhar textos coletivos avaliando os efeitos pretendidos no público leitor.
+      estimatedTimeMinutes: 13
+      instructions:
+        - Leia ou escute o desafio de cada fase com atenção.
+        - Digite ou selecione a resposta utilizando teclado, toque ou mouse.
+        - Ao final, compartilhe qual pista sonora ou visual ajudou a resolver a fase.
+      objectives:
+        - Explorar divulgação e retorno em situações mediadas pelo educador.
+        - Compartilhar estratégias pessoais com colegas durante a atividade.
+      game:
+        mode: math-challenge
+        timeLimitSeconds: 120
+        lives: 3
+        victoryMessage: Divulgação concluída! O jornal alcançou o público.
+        gameOverMessage: Reveja as ações de divulgação e tente novamente planejando o retorno.
+        levels:
+          - id: jogo-publica-e-divulga-level-1
+            challenge: Qual ação ajuda a divulgar? (Criar cartaz no mural, Guardar jornais na gaveta, Deixar apenas na sala)
+            answer: Criar cartaz no mural
+            hint: Pense em visibilidade.
+            successFeedback: Ótimo! O cartaz apresenta o jornal aos visitantes.
+            failureFeedback: Reflita sobre onde as pessoas verão o convite.
+          - id: jogo-publica-e-divulga-level-2
+            challenge: Como registrar a reação dos leitores? (Criar caixa de comentários, Jogar revistas fora, Desligar a luz)
+            answer: Criar caixa de comentários
+            hint: Pense em receber feedback.
+            successFeedback: Excelente! Assim a comunidade deixa sugestões.
+            failureFeedback: Considere formas de ouvir o público.
+          - id: jogo-publica-e-divulga-level-3
+            challenge: Qual ação amplia o alcance digital? (Enviar versão em PDF no grupo da escola, Guardar pen drive na gaveta, Imprimir sem entregar)
+            answer: Enviar versão em PDF no grupo da escola
+            hint: Como disponibilizar o jornal online?
+            successFeedback: Muito bem! A versão digital amplia o alcance.
+            failureFeedback: Pense em compartilhar com quem não recebeu impresso.
+      accessibility:
+        hints:
+          - audience: ESTUDANTE
+            text: 'Passo 1: Leia ou escute cada instrução e identifique onde divulgação e retorno aparece no interativo.'
+          - audience: ESTUDANTE
+            text: 'Passo 2: Use Tab ou toque na tela para revisar todas as opções antes de confirmar.'
+          - audience: ESTUDANTE
+            text: 'Passo 3: Compartilhe com um colega por que escolheu a resposta apresentada.'
+          - audience: EDUCADOR
+            text: Guie a turma passo a passo, reforçando divulgação e retorno com gestos, pictogramas e pausas.
+          - audience: FAMILIA
+            text: Envie sugestões de jogos ou músicas que reforcem divulgação e retorno em casa.
+        feedback:
+          success: Excelente! Divulgação e retorno ficou evidente nas suas escolhas.
+          encouragement: Caso erre, releia com calma e utilize marcadores sonoros ou visuais para apoiar a decisão.
+          retry: Experimente revisar as pistas destacadas antes de tentar novamente.
+          accessibility: Ofereça tempo extra, recursos táteis e apoio auditivo individual para quem precisar.
+        assets:
+          - slug: lp-letra-e
+            type: IMAGEM
+            title: Ilustração da letra E
+        alternatives:
+          - title: TEXTO EM CAIXA ALTA
+            description: OFEREÇA CARTÕES COM DIVULGAÇÃO E RETORNO DESTACADO PARA QUE TODES ACOMPANHEM.
+            steps:
+              - FORNEÇA LETRAS GRANDES E ESPAÇADAS.
+              - GRIFE RIMAS OU PALAVRAS-CHAVE EM COR VIVA.
+        audioCue:
+          title: SINAL SONORO
+          description: Utilize um chocalho ou palmas para marcar o momento de focar em divulgação e retorno.
+          steps:
+            - Avise que o som indica a troca de etapa ou turno de fala.
+            - Repita o som e a instrução de forma pausada.
+        motorSupport:
+          - title: APOIO MOTOR
+            description: Disponibilize apoios físicos para navegação e registro das respostas.
+            steps:
+              - Ofereça ponteiras, clipes ampliados ou teclado virtual.
+              - Permita que duplas se alternem no controle do dispositivo.

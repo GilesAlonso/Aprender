@@ -273,6 +273,384 @@
       ]
     },
     {
+      "bnccCode": "EF01LP11",
+      "ageGroupSlug": "fundamental-anos-iniciais",
+      "etapa": "Ensino Fundamental - Anos Iniciais",
+      "componenteCurricular": "Língua Portuguesa",
+      "unidadeTematica": "Campo artístico-literário",
+      "objetoConhecimento": [
+        "Jogos sonoros: rimas, aliterações e refrões",
+        "Experimentação de parlendas, cantigas e poemas curtos"
+      ],
+      "competency": "Identificar e criar rimas e aliterações em textos orais e escritos curtos, percebendo musicalidade e ritmo.",
+      "habilidades": [
+        {
+          "codigo": "EF01LP11",
+          "descricao": "Identificar e produzir rimas, aliterações e jogos sonoros em parlendas, cantigas, trava-línguas e poemas curtos, com apoio do educador."
+        }
+      ],
+      "descricao": "Aproxima as crianças de textos rimados, incentivando a escuta atenta dos padrões sonoros e a experimentação de jogos de palavras.",
+      "referencias": [
+        {
+          "documento": "BNCC - Língua Portuguesa",
+          "secao": "Ensino Fundamental Anos Iniciais",
+          "paginaInicial": 100,
+          "paginaFinal": 101
+        }
+      ]
+    },
+    {
+      "bnccCode": "EF01LP12",
+      "ageGroupSlug": "fundamental-anos-iniciais",
+      "etapa": "Ensino Fundamental - Anos Iniciais",
+      "componenteCurricular": "Língua Portuguesa",
+      "unidadeTematica": "Campo da vida cotidiana",
+      "objetoConhecimento": [
+        "Participação em conversas e rodas de conversa",
+        "Uso de turnos de fala e estratégias de escuta ativa"
+      ],
+      "competency": "Participar de situações de interação oral, escutando com atenção, respeitando turnos e colaborando com o grupo.",
+      "habilidades": [
+        {
+          "codigo": "EF01LP12",
+          "descricao": "Participar de conversas, brincadeiras e apresentações orais, escutando ativamente, aguardando a sua vez de falar e respondendo de forma colaborativa."
+        }
+      ],
+      "descricao": "Favorece o desenvolvimento da oralidade e da escuta ativa em rodas de conversa, dramatizações e entrevistas guiadas.",
+      "referencias": [
+        {
+          "documento": "BNCC - Língua Portuguesa",
+          "secao": "Ensino Fundamental Anos Iniciais",
+          "paginaInicial": 101,
+          "paginaFinal": 102
+        }
+      ]
+    },
+    {
+      "bnccCode": "EF01LP13",
+      "ageGroupSlug": "fundamental-anos-iniciais",
+      "etapa": "Ensino Fundamental - Anos Iniciais",
+      "componenteCurricular": "Língua Portuguesa",
+      "unidadeTematica": "Campo da vida cotidiana",
+      "objetoConhecimento": [
+        "Relatos orais de experiências pessoais",
+        "Sequenciação de fatos e uso de marcadores temporais simples"
+      ],
+      "competency": "Relatar oralmente acontecimentos do cotidiano, organizando-os em sequência temporal e utilizando vocabulário adequado.",
+      "habilidades": [
+        {
+          "codigo": "EF01LP13",
+          "descricao": "Relatar oralmente experiências pessoais e acontecimentos da comunidade escolar, organizando início, meio e fim, com apoio de marcadores temporais simples."
+        }
+      ],
+      "descricao": "Estimula o planejamento de relatos coletivos e individuais, integrando memórias, personagens e locais relevantes para o grupo.",
+      "referencias": [
+        {
+          "documento": "BNCC - Língua Portuguesa",
+          "secao": "Ensino Fundamental Anos Iniciais",
+          "paginaInicial": 102,
+          "paginaFinal": 103
+        }
+      ]
+    },
+    {
+      "bnccCode": "EF01LP14",
+      "ageGroupSlug": "fundamental-anos-iniciais",
+      "etapa": "Ensino Fundamental - Anos Iniciais",
+      "componenteCurricular": "Língua Portuguesa",
+      "unidadeTematica": "Análise linguística/semiótica (Léxico e semântica)",
+      "objetoConhecimento": [
+        "Ampliação de vocabulário e campos semânticos",
+        "Formação de palavras compostas e expressões do cotidiano"
+      ],
+      "competency": "Relacionar palavras a campos semânticos e reconhecer formações lexicais frequentes, ampliando o repertório vocabular.",
+      "habilidades": [
+        {
+          "codigo": "EF01LP14",
+          "descricao": "Relacionar palavras por temas e campos semânticos, reconhecendo palavras compostas e expressões próprias do cotidiano escolar e familiar."
+        }
+      ],
+      "descricao": "Promove jogos de classificação e formação de palavras para expandir o vocabulário das crianças em situações significativas.",
+      "referencias": [
+        {
+          "documento": "BNCC - Língua Portuguesa",
+          "secao": "Ensino Fundamental Anos Iniciais",
+          "paginaInicial": 103,
+          "paginaFinal": 104
+        }
+      ]
+    },
+    {
+      "bnccCode": "EF01LP15",
+      "ageGroupSlug": "fundamental-anos-iniciais",
+      "etapa": "Ensino Fundamental - Anos Iniciais",
+      "componenteCurricular": "Língua Portuguesa",
+      "unidadeTematica": "Análise linguística/semiótica (Léxico e semântica)",
+      "objetoConhecimento": [
+        "Inferência de significados a partir do contexto",
+        "Sinonímia e antonímia iniciais"
+      ],
+      "competency": "Inferir significados de palavras e expressões desconhecidas utilizando pistas contextuais, partes conhecidas e relações de sentido.",
+      "habilidades": [
+        {
+          "codigo": "EF01LP15",
+          "descricao": "Inferir o significado de palavras novas a partir de pistas do contexto, de partes conhecidas e de relações de sinonímia e antonímia."
+        }
+      ],
+      "descricao": "Desenvolve estratégias para deduzir significados durante a leitura, valorizando o uso de pistas lexicais e contextuais.",
+      "referencias": [
+        {
+          "documento": "BNCC - Língua Portuguesa",
+          "secao": "Ensino Fundamental Anos Iniciais",
+          "paginaInicial": 104,
+          "paginaFinal": 105
+        }
+      ]
+    },
+    {
+      "bnccCode": "EF01LP16",
+      "ageGroupSlug": "fundamental-anos-iniciais",
+      "etapa": "Ensino Fundamental - Anos Iniciais",
+      "componenteCurricular": "Língua Portuguesa",
+      "unidadeTematica": "Análise linguística/semiótica (Pontuação)",
+      "objetoConhecimento": [
+        "Uso de ponto final em frases declarativas",
+        "Entonação associada ao encerramento de frases"
+      ],
+      "competency": "Reconhecer e utilizar o ponto final para encerrar frases declarativas, relacionando sinal e entonação.",
+      "habilidades": [
+        {
+          "codigo": "EF01LP16",
+          "descricao": "Identificar e empregar o ponto final em frases declarativas, ajustando a entonação ao ler em voz alta."
+        }
+      ],
+      "descricao": "Fortalece a compreensão de que a pontuação organiza o texto escrito e orienta a leitura em voz alta.",
+      "referencias": [
+        {
+          "documento": "BNCC - Língua Portuguesa",
+          "secao": "Ensino Fundamental Anos Iniciais",
+          "paginaInicial": 105,
+          "paginaFinal": 105
+        }
+      ]
+    },
+    {
+      "bnccCode": "EF01LP17",
+      "ageGroupSlug": "fundamental-anos-iniciais",
+      "etapa": "Ensino Fundamental - Anos Iniciais",
+      "componenteCurricular": "Língua Portuguesa",
+      "unidadeTematica": "Análise linguística/semiótica (Pontuação)",
+      "objetoConhecimento": [
+        "Uso de ponto de interrogação e de exclamação",
+        "Relação entre sinal e expressividade da fala"
+      ],
+      "competency": "Utilizar pontos de interrogação e de exclamação para marcar perguntas e emoções, ajustando entonação e intenção comunicativa.",
+      "habilidades": [
+        {
+          "codigo": "EF01LP17",
+          "descricao": "Empregar pontos de interrogação e de exclamação em frases simples, reconhecendo seus efeitos na entonação e no sentido do texto."
+        }
+      ],
+      "descricao": "Apoia o reconhecimento de diferentes intenções comunicativas e emoções expressas por meio da pontuação.",
+      "referencias": [
+        {
+          "documento": "BNCC - Língua Portuguesa",
+          "secao": "Ensino Fundamental Anos Iniciais",
+          "paginaInicial": 105,
+          "paginaFinal": 106
+        }
+      ]
+    },
+    {
+      "bnccCode": "EF01LP18",
+      "ageGroupSlug": "fundamental-anos-iniciais",
+      "etapa": "Ensino Fundamental - Anos Iniciais",
+      "componenteCurricular": "Língua Portuguesa",
+      "unidadeTematica": "Produção de textos",
+      "objetoConhecimento": [
+        "Planejamento de textos coletivos",
+        "Definição de tema, destinatário e formato"
+      ],
+      "competency": "Planejar textos coletivos, definindo objetivo, público e formato com apoio do professor e dos colegas.",
+      "habilidades": [
+        {
+          "codigo": "EF01LP18",
+          "descricao": "Planejar, com colaboração dos colegas e mediação docente, textos coletivos adequados a diferentes leitores e finalidades."
+        }
+      ],
+      "descricao": "Incentiva a organização do trabalho coletivo antes da escrita, com foco em objetivos e leitores reais.",
+      "referencias": [
+        {
+          "documento": "BNCC - Língua Portuguesa",
+          "secao": "Ensino Fundamental Anos Iniciais",
+          "paginaInicial": 112,
+          "paginaFinal": 113
+        }
+      ]
+    },
+    {
+      "bnccCode": "EF01LP19",
+      "ageGroupSlug": "fundamental-anos-iniciais",
+      "etapa": "Ensino Fundamental - Anos Iniciais",
+      "componenteCurricular": "Língua Portuguesa",
+      "unidadeTematica": "Produção de textos",
+      "objetoConhecimento": [
+        "Seleção e organização de informações",
+        "Uso de pautas e roteiros coletivos"
+      ],
+      "competency": "Selecionar e organizar informações relevantes para compor textos coletivos coerentes.",
+      "habilidades": [
+        {
+          "codigo": "EF01LP19",
+          "descricao": "Selecionar, com apoio do professor, informações relevantes para compor pautas, roteiros e textos coletivos."
+        }
+      ],
+      "descricao": "Favorece a coleta de dados e a escolha de informações que darão sustentação ao texto produzido em equipe.",
+      "referencias": [
+        {
+          "documento": "BNCC - Língua Portuguesa",
+          "secao": "Ensino Fundamental Anos Iniciais",
+          "paginaInicial": 113,
+          "paginaFinal": 114
+        }
+      ]
+    },
+    {
+      "bnccCode": "EF01LP20",
+      "ageGroupSlug": "fundamental-anos-iniciais",
+      "etapa": "Ensino Fundamental - Anos Iniciais",
+      "componenteCurricular": "Língua Portuguesa",
+      "unidadeTematica": "Produção de textos",
+      "objetoConhecimento": [
+        "Sequenciação de fatos e uso de marcadores temporais",
+        "Coesão em textos coletivos"
+      ],
+      "competency": "Sequenciar fatos e ideias em textos coletivos, utilizando marcadores temporais e conectivos simples.",
+      "habilidades": [
+        {
+          "codigo": "EF01LP20",
+          "descricao": "Organizar, com apoio do professor, a sequência de acontecimentos em textos coletivos, empregando marcadores temporais e articuladores básicos."
+        }
+      ],
+      "descricao": "Contribui para a construção de textos coerentes, respeitando ordem cronológica e lógica do tema abordado.",
+      "referencias": [
+        {
+          "documento": "BNCC - Língua Portuguesa",
+          "secao": "Ensino Fundamental Anos Iniciais",
+          "paginaInicial": 114,
+          "paginaFinal": 115
+        }
+      ]
+    },
+    {
+      "bnccCode": "EF01LP21",
+      "ageGroupSlug": "fundamental-anos-iniciais",
+      "etapa": "Ensino Fundamental - Anos Iniciais",
+      "componenteCurricular": "Língua Portuguesa",
+      "unidadeTematica": "Produção de textos",
+      "objetoConhecimento": [
+        "Revisão coletiva de textos",
+        "Uso de critérios de clareza, cortesia e adequação"
+      ],
+      "competency": "Revisar textos coletivos, verificando clareza, coesão, cortesia e atendimento ao propósito comunicativo.",
+      "habilidades": [
+        {
+          "codigo": "EF01LP21",
+          "descricao": "Revisar textos coletivos, com apoio do professor e dos colegas, ajustando vocabulário, pontuação e informações necessárias ao público."
+        }
+      ],
+      "descricao": "Consolida a cultura de revisão compartilhada, promovendo escuta das sugestões dos colegas e do professor.",
+      "referencias": [
+        {
+          "documento": "BNCC - Língua Portuguesa",
+          "secao": "Ensino Fundamental Anos Iniciais",
+          "paginaInicial": 115,
+          "paginaFinal": 116
+        }
+      ]
+    },
+    {
+      "bnccCode": "EF01LP22",
+      "ageGroupSlug": "fundamental-anos-iniciais",
+      "etapa": "Ensino Fundamental - Anos Iniciais",
+      "componenteCurricular": "Língua Portuguesa",
+      "unidadeTematica": "Campo das práticas de estudo e pesquisa",
+      "objetoConhecimento": [
+        "Uso de recursos visuais e multimodais",
+        "Integração de imagens, legendas e dados em textos"
+      ],
+      "competency": "Selecionar e utilizar recursos visuais (legendas, caixas de destaque, gráficos simples) para complementar textos coletivos.",
+      "habilidades": [
+        {
+          "codigo": "EF01LP22",
+          "descricao": "Planejar, com apoio docente, o uso de recursos visuais e multimodais (legendas, quadros, gráficos simples) que ampliem a compreensão do texto coletivo."
+        }
+      ],
+      "descricao": "Estimula a integração de elementos gráficos ao texto, favorecendo a leitura multimodal em jornais e murais escolares.",
+      "referencias": [
+        {
+          "documento": "BNCC - Língua Portuguesa",
+          "secao": "Ensino Fundamental Anos Iniciais",
+          "paginaInicial": 116,
+          "paginaFinal": 117
+        }
+      ]
+    },
+    {
+      "bnccCode": "EF01LP23",
+      "ageGroupSlug": "fundamental-anos-iniciais",
+      "etapa": "Ensino Fundamental - Anos Iniciais",
+      "componenteCurricular": "Língua Portuguesa",
+      "unidadeTematica": "Campo das práticas de estudo e pesquisa",
+      "objetoConhecimento": [
+        "Planejamento de tarefas coletivas",
+        "Distribuição de responsabilidades na produção"
+      ],
+      "competency": "Organizar e distribuir responsabilidades na produção de textos coletivos, colaborando com colegas e registrando decisões do grupo.",
+      "habilidades": [
+        {
+          "codigo": "EF01LP23",
+          "descricao": "Planejar e registrar, com a ajuda do professor, as tarefas de produção, revisão, ilustração e divulgação de textos coletivos."
+        }
+      ],
+      "descricao": "Promove o trabalho colaborativo, com definição de papéis e registro das decisões tomadas pela turma.",
+      "referencias": [
+        {
+          "documento": "BNCC - Língua Portuguesa",
+          "secao": "Ensino Fundamental Anos Iniciais",
+          "paginaInicial": 117,
+          "paginaFinal": 118
+        }
+      ]
+    },
+    {
+      "bnccCode": "EF01LP24",
+      "ageGroupSlug": "fundamental-anos-iniciais",
+      "etapa": "Ensino Fundamental - Anos Iniciais",
+      "componenteCurricular": "Língua Portuguesa",
+      "unidadeTematica": "Campo das práticas de estudo e pesquisa",
+      "objetoConhecimento": [
+        "Publicação e circulação de textos",
+        "Registro e avaliação do retorno do público"
+      ],
+      "competency": "Compartilhar textos coletivos em diferentes suportes, avaliando o impacto no público e registrando devolutivas.",
+      "habilidades": [
+        {
+          "codigo": "EF01LP24",
+          "descricao": "Publicar e socializar textos coletivos em diferentes suportes (impresso ou digital), registrando o retorno do público leitor com a mediação do professor."
+        }
+      ],
+      "descricao": "Valoriza a circulação do texto coletivo, planejando divulgação, registro de feedback e novas ações comunicativas.",
+      "referencias": [
+        {
+          "documento": "BNCC - Língua Portuguesa",
+          "secao": "Ensino Fundamental Anos Iniciais",
+          "paginaInicial": 118,
+          "paginaFinal": 119
+        }
+      ]
+    },
+    {
       "bnccCode": "EF05MA08",
       "ageGroupSlug": "fundamental-anos-iniciais",
       "etapa": "Ensino Fundamental - Anos Iniciais",

@@ -375,6 +375,17 @@ const usersData: UserSeed[] = [
         averageTimeSeconds: 102,
         mastery: 41,
       },
+      {
+        contentModuleSlug: "pontuacao-animada",
+        completion: 18,
+        status: "IN_PROGRESS",
+        totalAttempts: 1,
+        currentStreak: 1,
+        bestStreak: 2,
+        averageAccuracy: 0.82,
+        averageTimeSeconds: 123,
+        mastery: 44,
+      },
     ],
     attempts: [
       {
@@ -432,6 +443,14 @@ const usersData: UserSeed[] = [
         accuracy: 0.9,
         timeSpentSeconds: 78,
         metadata: { bilheteCompleto: true },
+      },
+      {
+        activitySlug: "ponto-final-basico",
+        success: true,
+        score: 88,
+        accuracy: 0.9,
+        timeSpentSeconds: 96,
+        metadata: { sinalEscolhido: "." },
       },
     ],
     rewards: [

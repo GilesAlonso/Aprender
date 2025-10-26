@@ -111,6 +111,58 @@ type AccessibilityContext = {
   interactiveSlug?: string;
 };
 
+const normalizeSupportEntry = (entry: unknown): Record<string, unknown> | null => {
+  if (typeof entry === "string") {
+    const normalized = entry.trim();
+    return normalized.length > 0 ? { description: normalized } : null;
+  }
+
+  if (isPlainObject(entry)) {
+    const descriptionValue = entry["description"];
+    const titleValue = entry["title"];
+    const stepsValue = entry["steps"];
+
+    const description =
+      typeof descriptionValue === "string" && descriptionValue.trim().length > 0
+        ? descriptionValue
+        : undefined;
+
+    if (!description) {
+      return null;
+    }
+
+    const steps = Array.isArray(stepsValue)
+      ? stepsValue
+          .map((item) => (typeof item === "string" ? item.trim() : String(item)))
+          .filter((item) => item.length > 0)
+      : undefined;
+
+    return (
+      removeEmpty({
+        title:
+          typeof titleValue === "string" && titleValue.trim().length > 0 ? titleValue : undefined,
+        description,
+        steps,
+      }) ?? null
+    );
+  }
+
+  return null;
+};
+
+const normalizeSupportCollection = (value: unknown): Record<string, unknown>[] | undefined => {
+  if (value === undefined || value === null) {
+    return undefined;
+  }
+
+  const items = Array.isArray(value) ? value : [value];
+  const normalized = items
+    .map((entry) => normalizeSupportEntry(entry))
+    .filter((entry): entry is Record<string, unknown> => entry !== null);
+
+  return normalized.length > 0 ? normalized : undefined;
+};
+
 const describeAccessibilityContext = (context: AccessibilityContext): string => {
   if (context.scope === "interactive") {
     return `interativo '${context.interactiveSlug ?? "desconhecido"}' da atividade '${context.activitySlug}' no módulo '${context.moduleSlug}'`;
@@ -215,12 +267,20 @@ const normalizeAccessibility = (
           )
       : undefined;
 
+  const alternatives = normalizeSupportCollection(data["alternatives"]);
+  const audioCueCollection = normalizeSupportCollection(data["audioCue"]);
+  const audioCue = audioCueCollection ? audioCueCollection[0] : undefined;
+  const motorSupport = normalizeSupportCollection(data["motorSupport"]);
+
   return (
     removeEmpty({
       hints,
       feedback,
       assets,
       prerequisites,
+      alternatives,
+      audioCue,
+      motorSupport,
     }) ?? undefined
   );
 };
