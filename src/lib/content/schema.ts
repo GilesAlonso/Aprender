@@ -37,13 +37,18 @@ const accessibilityFeedbackSchema = z
   })
   .partial();
 
-const accessibilityAssetSchema = z.object({
-  type: z.enum(["AUDIO", "VIDEO", "IMAGEM", "DOCUMENTO", "LINK"]).default("DOCUMENTO"),
-  uri: z.string().min(1),
-  title: z.string().min(1).optional(),
-  description: z.string().min(1).optional(),
-  altText: z.string().min(1).optional(),
-});
+const accessibilityAssetSchema = z
+  .object({
+    slug: z.string().min(1).optional(),
+    type: z.enum(["AUDIO", "VIDEO", "IMAGEM", "DOCUMENTO", "LINK"]).default("DOCUMENTO"),
+    uri: z.string().min(1).optional(),
+    title: z.string().min(1).optional(),
+    description: z.string().min(1).optional(),
+    altText: z.string().min(1).optional(),
+  })
+  .refine((value) => Boolean(value.slug) || Boolean(value.uri), {
+    message: "Assets de acessibilidade devem definir ao menos 'slug' ou 'uri'.",
+  });
 
 const prerequisiteSchema = z.object({
   type: z.enum(["MODULE", "ACTIVITY", "SKILL", "CONTEXT"]).default("SKILL"),

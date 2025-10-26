@@ -3,6 +3,7 @@ import { writeFileSync } from "node:fs";
 import path from "node:path";
 
 import type { ContentActivity, ContentModule } from "./schema";
+import { buildEf01AssetIndex, loadEf01AssetManifest, type Ef01AssetManifestEntry } from "./assets";
 import { loadWorkspace, CONTENT_DIR } from "./workspace";
 
 export type BuildOptions = {
@@ -46,6 +47,8 @@ export type BuildOutput = {
   interactive: InteractiveDataset;
   index: ContentIndexDataset;
 };
+
+type Ef01AssetIndex = Map<string, Ef01AssetManifestEntry>;
 
 const difficultyToLegacy: Record<string, string> = {
   INICIAR: "BEGINNER",
@@ -98,8 +101,28 @@ const removeEmpty = (value: Record<string, unknown>): Record<string, unknown> | 
   return entries.length > 0 ? Object.fromEntries(entries) : undefined;
 };
 
+type AccessibilityValue = NonNullable<ContentActivity["accessibility"]>;
+
+type AccessibilityContext = {
+  moduleSlug: string;
+  subjectSlug: string;
+  activitySlug: string;
+  scope: "activity" | "interactive";
+  interactiveSlug?: string;
+};
+
+const describeAccessibilityContext = (context: AccessibilityContext): string => {
+  if (context.scope === "interactive") {
+    return `interativo '${context.interactiveSlug ?? "desconhecido"}' da atividade '${context.activitySlug}' no módulo '${context.moduleSlug}'`;
+  }
+
+  return `atividade '${context.activitySlug}' no módulo '${context.moduleSlug}'`;
+};
+
 const normalizeAccessibility = (
-  accessibility: ContentActivity["accessibility"]
+  accessibility: ContentActivity["accessibility"],
+  assetIndex: Ef01AssetIndex,
+  context: AccessibilityContext
 ): Record<string, unknown> | undefined => {
   if (!accessibility) {
     return undefined;
@@ -118,14 +141,78 @@ const normalizeAccessibility = (
     ? (feedbackRaw as Record<string, unknown>)
     : undefined;
 
-  const assetsRaw = data["assets"];
-  const assets =
-    Array.isArray(assetsRaw) && assetsRaw.length > 0 ? (assetsRaw as unknown[]) : undefined;
-
   const prerequisitesRaw = data["prerequisites"];
   const prerequisites =
     Array.isArray(prerequisitesRaw) && prerequisitesRaw.length > 0
       ? (prerequisitesRaw as unknown[])
+      : undefined;
+
+  const assetsRaw = data["assets"];
+
+  const assets =
+    Array.isArray(assetsRaw) && assetsRaw.length > 0
+      ? (assetsRaw as AccessibilityValue["assets"])
+          .map((asset) => {
+            const base: Record<string, unknown> = {
+              type: asset.type,
+              slug: asset.slug,
+              uri: asset.uri,
+              title: asset.title,
+              description: asset.description,
+              altText: asset.altText,
+            };
+
+            if (asset.slug) {
+              const manifestEntry = assetIndex.get(asset.slug);
+              if (!manifestEntry) {
+                const location = describeAccessibilityContext(context);
+                throw new Error(
+                  `Asset '${asset.slug}' referenciado em ${location} não existe no manifest EF01.`
+                );
+              }
+
+              const resolvedUri = asset.uri ?? manifestEntry.files.svg;
+              const normalized = removeEmpty({
+                ...base,
+                subject: manifestEntry.subject,
+                theme: manifestEntry.theme,
+                uri: resolvedUri,
+                png: manifestEntry.files.png,
+                altText: asset.altText ?? manifestEntry.altText,
+                recommendedUsage: manifestEntry.recommendedUsage,
+                colorProfile: manifestEntry.colorProfile,
+                hash: manifestEntry.hash,
+                license: manifestEntry.license,
+              });
+
+              if (!normalized || !normalized["uri"]) {
+                const location = describeAccessibilityContext(context);
+                throw new Error(`Asset '${asset.slug}' em ${location} não pôde ser normalizado.`);
+              }
+
+              return normalized;
+            }
+
+            if (!asset.uri) {
+              const location = describeAccessibilityContext(context);
+              throw new Error(
+                `Asset sem slug nem URI encontrado em ${location}. Verifique o conteúdo.`
+              );
+            }
+
+            if (asset.type === "IMAGEM" && !asset.altText) {
+              const location = describeAccessibilityContext(context);
+              throw new Error(
+                `Asset de imagem '${asset.uri}' em ${location} precisa informar 'altText' ou referenciar um slug válido.`
+              );
+            }
+
+            return removeEmpty(base) ?? undefined;
+          })
+          .filter(
+            (value): value is Record<string, unknown> =>
+              value !== undefined && Object.keys(value).length > 0
+          )
       : undefined;
 
   return (
@@ -199,7 +286,11 @@ type InteractiveActivityOutput = {
   game?: Record<string, unknown>;
 };
 
-const buildActivityMetadata = (activity: ContentActivity): Record<string, unknown> | undefined => {
+const buildActivityMetadata = (
+  activity: ContentActivity,
+  module: ContentModule,
+  assetIndex: Ef01AssetIndex
+): Record<string, unknown> | undefined => {
   const base: Record<string, unknown> = activity.metadata ? { ...activity.metadata } : {};
 
   base.bncc = {
@@ -213,7 +304,13 @@ const buildActivityMetadata = (activity: ContentActivity): Record<string, unknow
 
   base.difficultyTier = activity.difficulty;
 
-  const accessibility = normalizeAccessibility(activity.accessibility);
+  const accessibility = normalizeAccessibility(activity.accessibility, assetIndex, {
+    moduleSlug: module.slug,
+    subjectSlug: module.subjectSlug,
+    activitySlug: activity.slug,
+    scope: "activity",
+  });
+
   if (accessibility) {
     base.accessibility = accessibility;
   }
@@ -237,7 +334,8 @@ const buildActivityMetadata = (activity: ContentActivity): Record<string, unknow
 const buildInteractiveEntry = (
   module: ContentModule,
   activity: ContentActivity,
-  difficulty: string
+  difficulty: string,
+  assetIndex: Ef01AssetIndex
 ): InteractiveActivityOutput | null => {
   if (!activity.interactive) {
     return null;
@@ -258,7 +356,14 @@ const buildInteractiveEntry = (
     objectives: [...interactive.objectives],
   };
 
-  const accessibility = normalizeAccessibility(interactive.accessibility);
+  const accessibility = normalizeAccessibility(interactive.accessibility, assetIndex, {
+    moduleSlug: module.slug,
+    subjectSlug: module.subjectSlug,
+    activitySlug: activity.slug,
+    scope: "interactive",
+    interactiveSlug: interactive.slug,
+  });
+
   if (accessibility) {
     base.accessibility = accessibility;
   }
@@ -303,9 +408,13 @@ const buildModuleEntry = (
   activities,
 });
 
-const buildModuleActivityEntry = (activity: ContentActivity): ModuleActivityOutput => {
+const buildModuleActivityEntry = (
+  activity: ContentActivity,
+  module: ContentModule,
+  assetIndex: Ef01AssetIndex
+): ModuleActivityOutput => {
   const difficulty = mapDifficulty(activity.difficulty);
-  const metadata = buildActivityMetadata(activity);
+  const metadata = buildActivityMetadata(activity, module, assetIndex);
 
   return {
     slug: activity.slug,
@@ -323,6 +432,8 @@ const buildModuleActivityEntry = (activity: ContentActivity): ModuleActivityOutp
 
 export const buildWorkspace = (options: BuildOptions = {}): BuildOutput => {
   const documents = loadWorkspace({ rootDir: options.rootDir });
+  const ef01Manifest = loadEf01AssetManifest();
+  const ef01AssetIndex = buildEf01AssetIndex(ef01Manifest);
   const buildTimestamp = new Date().toISOString();
 
   const modulesBySubject: Record<string, Set<string>> = {};
@@ -364,7 +475,12 @@ export const buildWorkspace = (options: BuildOptions = {}): BuildOutput => {
         activityType: activity.type,
       });
 
-      const interactiveEntry = buildInteractiveEntry(document.module, activity, difficulty);
+      const interactiveEntry = buildInteractiveEntry(
+        document.module,
+        activity,
+        difficulty,
+        ef01AssetIndex
+      );
       if (interactiveEntry) {
         interactiveOutput.push(interactiveEntry);
         interactiveIndex[interactiveEntry.slug] = {
@@ -374,7 +490,7 @@ export const buildWorkspace = (options: BuildOptions = {}): BuildOutput => {
         };
       }
 
-      return buildModuleActivityEntry(activity);
+      return buildModuleActivityEntry(activity, document.module, ef01AssetIndex);
     });
 
     modulesOutput.push(buildModuleEntry(document.module, activityEntries));

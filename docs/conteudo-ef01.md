@@ -37,11 +37,12 @@ O diretório `_partials` concentra trechos reutilizáveis. Nas atividades, basta
 
 Três scripts foram adicionados ao `package.json`:
 
-| Comando              | Descrição                                                                                |
-| -------------------- | ---------------------------------------------------------------------------------------- |
-| `pnpm content:lint`  | Valida os arquivos em `data/content/raw`, checando schema, BNCC e unicidade.             |
-| `pnpm content:build` | Executa o lint e gera `modules.json`, `interactive-activities.json` e `index.json`.      |
-| `pnpm check`         | Agora executa `content:lint`, `lint`, `content:build --no-write`, `type-check` e `test`. |
+| Comando               | Descrição                                                                                                    |
+| --------------------- | ------------------------------------------------------------------------------------------------------------ |
+| `pnpm content:lint`   | Valida os arquivos em `data/content/raw`, checando schema, BNCC e unicidade.                                 |
+| `pnpm content:assets` | Regenera as ilustrações e ícones EF01 em `public/assets/ef01` e atualiza `data/assets/ef01-manifest.json`.   |
+| `pnpm content:build`  | Executa o lint, regenera os assets EF01 e gera `modules.json`, `interactive-activities.json` e `index.json`. |
+| `pnpm check`          | Agora executa `content:lint`, `lint`, `content:build --no-write`, `type-check` e `test`.                     |
 
 Para fluxo diário:
 
@@ -72,6 +73,23 @@ O build gera três artefatos determinísticos:
 - `data/content/index.json`: tabelas auxiliares para lookup por sujeito, estágio e dificuldade, além de hash de conteúdo.
 
 Durante o build, os hashes são calculados via SHA-256 do conteúdo gerado. No ambiente de testes (`build.test.ts`), o relógio é fixado para manter snapshots estáveis.
+
+### Pipeline de assets EF01
+
+- `pnpm content:assets` executa `scripts/generate-ef01-assets.ts`, produzindo SVGs (256×256) e PNGs (512×512) em `public/assets/ef01/{lingua-portuguesa|ciencias}/`.
+- O manifest `data/assets/ef01-manifest.json` lista todos os assets com slug, tema, alt text em pt-BR, paleta utilizada e referência de licença (`public/assets/ef01/LICENSE.md`).
+- O comando `pnpm content:build` carrega o manifest, valida se todos os arquivos existem e injeta automaticamente `altText`, `recommendedUsage`, hashes de cache busting e perfis de cor nos metadados das atividades/interativos sempre que um asset é referenciado por `slug` em `accessibility.assets`.
+- Para usar um asset em uma atividade, basta adicionar algo como:
+
+  ```yaml
+  accessibility:
+    assets:
+      - slug: lp-silaba-ba
+        type: IMAGEM
+        title: "Sílabas para contação"
+  ```
+
+  O build preencherá os caminhos de SVG/PNG e o `altText` correspondente.
 
 ## Testes
 
