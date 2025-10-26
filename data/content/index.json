@@ -1,8 +1,15 @@
 {
-  "generatedAt": "2025-10-26T22:44:06.555Z",
-  "contentHash": "c7b1ee3bd03580b18374c01fa70709283f7eaedd31f26128c47c71b416f1ee39",
+  "generatedAt": "2025-10-26T23:36:22.380Z",
+  "contentHash": "28d16274cbe19b539aaafc15ee2f8a463d796e822069aa94383cddc3eed58ac6",
   "modulesBySubject": {
-    "ciencias": ["laboratorio-da-natureza"],
+    "ciencias": [
+      "ambientes-da-escola",
+      "animais-da-vizinhanca",
+      "cuidados-do-corpo",
+      "laboratorio-da-natureza",
+      "plantas-que-cuidamos",
+      "sentidos-curiosos"
+    ],
     "lingua-portuguesa": [
       "bilhetes-e-recados",
       "brincando-com-sons",
@@ -22,9 +29,12 @@
   },
   "modulesByStage": {
     "ef01": [
+      "ambientes-da-escola",
+      "animais-da-vizinhanca",
       "bilhetes-e-recados",
       "brincando-com-sons",
       "clubinho-das-palavras",
+      "cuidados-do-corpo",
       "familia-das-vogais",
       "frases-divertidas",
       "historias-rimadas",
@@ -32,7 +42,9 @@
       "jornal-da-turma",
       "palavras-compostas",
       "palavras-em-acao",
-      "pontuacao-animada"
+      "plantas-que-cuidamos",
+      "pontuacao-animada",
+      "sentidos-curiosos"
     ],
     "ef05": ["rota-das-operacoes"],
     "ef07": ["laboratorio-da-natureza", "oficina-modelagem-dados"],
@@ -42,6 +54,46 @@
   },
   "activitiesByDifficulty": {
     "INICIAR": [
+      {
+        "moduleSlug": "ambientes-da-escola",
+        "activitySlug": "circuito-da-limpeza",
+        "activityType": "QUIZ"
+      },
+      {
+        "moduleSlug": "ambientes-da-escola",
+        "activitySlug": "mapa-da-escola",
+        "activityType": "QUIZ"
+      },
+      {
+        "moduleSlug": "ambientes-da-escola",
+        "activitySlug": "tour-colaborativo",
+        "activityType": "GAME"
+      },
+      {
+        "moduleSlug": "ambientes-da-escola",
+        "activitySlug": "uso-dos-espacos",
+        "activityType": "PUZZLE"
+      },
+      {
+        "moduleSlug": "animais-da-vizinhanca",
+        "activitySlug": "casa-preferida",
+        "activityType": "QUIZ"
+      },
+      {
+        "moduleSlug": "animais-da-vizinhanca",
+        "activitySlug": "rota-dos-habitats",
+        "activityType": "PUZZLE"
+      },
+      {
+        "moduleSlug": "animais-da-vizinhanca",
+        "activitySlug": "som-da-mata",
+        "activityType": "QUIZ"
+      },
+      {
+        "moduleSlug": "animais-da-vizinhanca",
+        "activitySlug": "trilha-dos-sons",
+        "activityType": "GAME"
+      },
       {
         "moduleSlug": "bilhetes-e-recados",
         "activitySlug": "elementos-do-bilhete",
@@ -85,6 +137,26 @@
       {
         "moduleSlug": "clubinho-das-palavras",
         "activitySlug": "detectives-das-palavras",
+        "activityType": "QUIZ"
+      },
+      {
+        "moduleSlug": "cuidados-do-corpo",
+        "activitySlug": "desafio-habitos",
+        "activityType": "GAME"
+      },
+      {
+        "moduleSlug": "cuidados-do-corpo",
+        "activitySlug": "escova-superpoder",
+        "activityType": "QUIZ"
+      },
+      {
+        "moduleSlug": "cuidados-do-corpo",
+        "activitySlug": "kit-cuidados",
+        "activityType": "PUZZLE"
+      },
+      {
+        "moduleSlug": "cuidados-do-corpo",
+        "activitySlug": "rotina-higiene",
         "activityType": "QUIZ"
       },
       {
@@ -238,6 +310,26 @@
         "activityType": "PUZZLE"
       },
       {
+        "moduleSlug": "plantas-que-cuidamos",
+        "activitySlug": "ciclo-da-plantinha",
+        "activityType": "QUIZ"
+      },
+      {
+        "moduleSlug": "plantas-que-cuidamos",
+        "activitySlug": "laboratorio-do-plantio",
+        "activityType": "GAME"
+      },
+      {
+        "moduleSlug": "plantas-que-cuidamos",
+        "activitySlug": "partes-da-planta",
+        "activityType": "QUIZ"
+      },
+      {
+        "moduleSlug": "plantas-que-cuidamos",
+        "activitySlug": "sequencia-do-plantio",
+        "activityType": "PUZZLE"
+      },
+      {
         "moduleSlug": "pontuacao-animada",
         "activitySlug": "jogo-busca-ponto",
         "activityType": "GAME"
@@ -256,9 +348,89 @@
         "moduleSlug": "pontuacao-animada",
         "activitySlug": "puzzle-sinais",
         "activityType": "PUZZLE"
+      },
+      {
+        "moduleSlug": "sentidos-curiosos",
+        "activitySlug": "cheiro-surpresa",
+        "activityType": "QUIZ"
+      },
+      {
+        "moduleSlug": "sentidos-curiosos",
+        "activitySlug": "combina-sentidos",
+        "activityType": "PUZZLE"
+      },
+      {
+        "moduleSlug": "sentidos-curiosos",
+        "activitySlug": "ouvido-atento",
+        "activityType": "QUIZ"
+      },
+      {
+        "moduleSlug": "sentidos-curiosos",
+        "activitySlug": "rota-dos-sentidos",
+        "activityType": "GAME"
       }
     ],
     "PRATICAR": [
+      {
+        "moduleSlug": "ambientes-da-escola",
+        "activitySlug": "clima-da-sala",
+        "activityType": "QUIZ"
+      },
+      {
+        "moduleSlug": "ambientes-da-escola",
+        "activitySlug": "desafio-da-reciclagem",
+        "activityType": "GAME"
+      },
+      {
+        "moduleSlug": "ambientes-da-escola",
+        "activitySlug": "eco-gestos",
+        "activityType": "PUZZLE"
+      },
+      {
+        "moduleSlug": "ambientes-da-escola",
+        "activitySlug": "guardioes-dos-espacos",
+        "activityType": "GAME"
+      },
+      {
+        "moduleSlug": "ambientes-da-escola",
+        "activitySlug": "rota-da-seguranca",
+        "activityType": "QUIZ"
+      },
+      {
+        "moduleSlug": "ambientes-da-escola",
+        "activitySlug": "rotinas-compartilhadas",
+        "activityType": "PUZZLE"
+      },
+      {
+        "moduleSlug": "animais-da-vizinhanca",
+        "activitySlug": "cardapio-animal",
+        "activityType": "QUIZ"
+      },
+      {
+        "moduleSlug": "animais-da-vizinhanca",
+        "activitySlug": "movimento-animado",
+        "activityType": "QUIZ"
+      },
+      {
+        "moduleSlug": "animais-da-vizinhanca",
+        "activitySlug": "patrulha-biodiversidade",
+        "activityType": "GAME"
+      },
+      {
+        "moduleSlug": "animais-da-vizinhanca",
+        "activitySlug": "pegadas-misteriosas",
+        "activityType": "PUZZLE"
+      },
+      {
+        "moduleSlug": "animais-da-vizinhanca",
+        "activitySlug": "rede-alimentar",
+        "activityType": "PUZZLE"
+      },
+      {
+        "moduleSlug": "animais-da-vizinhanca",
+        "activitySlug": "rota-do-boto",
+        "activityType": "GAME"
+      },
       {
         "moduleSlug": "bilhetes-e-recados",
         "activitySlug": "corrige-a-frase",
@@ -313,6 +485,36 @@
         "moduleSlug": "clubinho-das-palavras",
         "activitySlug": "laboratorio-das-palavras",
         "activityType": "GAME"
+      },
+      {
+        "moduleSlug": "cuidados-do-corpo",
+        "activitySlug": "alimentacao-colorida",
+        "activityType": "PUZZLE"
+      },
+      {
+        "moduleSlug": "cuidados-do-corpo",
+        "activitySlug": "cronometro-escovacao",
+        "activityType": "GAME"
+      },
+      {
+        "moduleSlug": "cuidados-do-corpo",
+        "activitySlug": "descanso-saudavel",
+        "activityType": "QUIZ"
+      },
+      {
+        "moduleSlug": "cuidados-do-corpo",
+        "activitySlug": "guardioes-saude",
+        "activityType": "GAME"
+      },
+      {
+        "moduleSlug": "cuidados-do-corpo",
+        "activitySlug": "maos-protegidas",
+        "activityType": "QUIZ"
+      },
+      {
+        "moduleSlug": "cuidados-do-corpo",
+        "activitySlug": "sequencia-banho",
+        "activityType": "PUZZLE"
       },
       {
         "moduleSlug": "estudio-dados-solidarios",
@@ -505,6 +707,36 @@
         "activityType": "GAME"
       },
       {
+        "moduleSlug": "plantas-que-cuidamos",
+        "activitySlug": "agua-e-luz",
+        "activityType": "QUIZ"
+      },
+      {
+        "moduleSlug": "plantas-que-cuidamos",
+        "activitySlug": "amizades-ecologicas",
+        "activityType": "QUIZ"
+      },
+      {
+        "moduleSlug": "plantas-que-cuidamos",
+        "activitySlug": "guardioes-do-jardim",
+        "activityType": "GAME"
+      },
+      {
+        "moduleSlug": "plantas-que-cuidamos",
+        "activitySlug": "mapa-das-raizes",
+        "activityType": "PUZZLE"
+      },
+      {
+        "moduleSlug": "plantas-que-cuidamos",
+        "activitySlug": "rota-das-sementes",
+        "activityType": "GAME"
+      },
+      {
+        "moduleSlug": "plantas-que-cuidamos",
+        "activitySlug": "usos-das-plantas",
+        "activityType": "PUZZLE"
+      },
+      {
         "moduleSlug": "pontuacao-animada",
         "activitySlug": "emocao-na-frase",
         "activityType": "QUIZ"
@@ -540,12 +772,62 @@
         "activityType": "GAME"
       },
       {
+        "moduleSlug": "sentidos-curiosos",
+        "activitySlug": "detectives-sensoriais",
+        "activityType": "GAME"
+      },
+      {
+        "moduleSlug": "sentidos-curiosos",
+        "activitySlug": "mapa-dos-sons",
+        "activityType": "PUZZLE"
+      },
+      {
+        "moduleSlug": "sentidos-curiosos",
+        "activitySlug": "memoria-de-sabores",
+        "activityType": "GAME"
+      },
+      {
+        "moduleSlug": "sentidos-curiosos",
+        "activitySlug": "texturas-em-jogo",
+        "activityType": "PUZZLE"
+      },
+      {
+        "moduleSlug": "sentidos-curiosos",
+        "activitySlug": "toque-investigador",
+        "activityType": "QUIZ"
+      },
+      {
+        "moduleSlug": "sentidos-curiosos",
+        "activitySlug": "visao-detalhista",
+        "activityType": "QUIZ"
+      },
+      {
         "moduleSlug": "trilhas-narrativas-digitais",
         "activitySlug": "podcast-voz-da-comunidade",
         "activityType": "PROJECT"
       }
     ],
     "DOMINAR": [
+      {
+        "moduleSlug": "ambientes-da-escola",
+        "activitySlug": "assembleia-da-turma",
+        "activityType": "GAME"
+      },
+      {
+        "moduleSlug": "ambientes-da-escola",
+        "activitySlug": "sinais-da-escola",
+        "activityType": "PUZZLE"
+      },
+      {
+        "moduleSlug": "animais-da-vizinhanca",
+        "activitySlug": "defesas-criativas",
+        "activityType": "PUZZLE"
+      },
+      {
+        "moduleSlug": "animais-da-vizinhanca",
+        "activitySlug": "festival-das-aves",
+        "activityType": "GAME"
+      },
       {
         "moduleSlug": "bilhetes-e-recados",
         "activitySlug": "checar-claridade",
@@ -585,6 +867,16 @@
         "moduleSlug": "brincando-com-sons",
         "activitySlug": "puzzle-compasso-silabico",
         "activityType": "PUZZLE"
+      },
+      {
+        "moduleSlug": "cuidados-do-corpo",
+        "activitySlug": "cuidado-ferimentos",
+        "activityType": "PUZZLE"
+      },
+      {
+        "moduleSlug": "cuidados-do-corpo",
+        "activitySlug": "rotina-equilibrada",
+        "activityType": "GAME"
       },
       {
         "moduleSlug": "estudio-dados-solidarios",
@@ -762,6 +1054,16 @@
         "activityType": "PUZZLE"
       },
       {
+        "moduleSlug": "plantas-que-cuidamos",
+        "activitySlug": "alertas-do-jardim",
+        "activityType": "PUZZLE"
+      },
+      {
+        "moduleSlug": "plantas-que-cuidamos",
+        "activitySlug": "festival-das-plantas",
+        "activityType": "GAME"
+      },
+      {
         "moduleSlug": "pontuacao-animada",
         "activitySlug": "corrige-a-pontuacao",
         "activityType": "QUIZ"
@@ -787,6 +1089,16 @@
         "activityType": "PUZZLE"
       },
       {
+        "moduleSlug": "sentidos-curiosos",
+        "activitySlug": "orquestra-dos-sentidos",
+        "activityType": "GAME"
+      },
+      {
+        "moduleSlug": "sentidos-curiosos",
+        "activitySlug": "sentidos-em-acao",
+        "activityType": "PUZZLE"
+      },
+      {
         "moduleSlug": "trilhas-narrativas-digitais",
         "activitySlug": "webdoc-historias-do-bairro",
         "activityType": "PROJECT"
@@ -794,6 +1106,11 @@
     ]
   },
   "interactiveMap": {
+    "game-assembleia-da-turma": {
+      "moduleSlug": "ambientes-da-escola",
+      "activitySlug": "assembleia-da-turma",
+      "activityType": "GAME"
+    },
     "game-batalha-das-silabas": {
       "moduleSlug": "brincando-com-sons",
       "activitySlug": "batalha-das-silabas",
@@ -819,9 +1136,29 @@
       "activitySlug": "cria-rima-rapida",
       "activityType": "GAME"
     },
+    "game-cronometro-escovacao": {
+      "moduleSlug": "cuidados-do-corpo",
+      "activitySlug": "cronometro-escovacao",
+      "activityType": "GAME"
+    },
+    "game-desafio-da-reciclagem": {
+      "moduleSlug": "ambientes-da-escola",
+      "activitySlug": "desafio-da-reciclagem",
+      "activityType": "GAME"
+    },
+    "game-desafio-habitos": {
+      "moduleSlug": "cuidados-do-corpo",
+      "activitySlug": "desafio-habitos",
+      "activityType": "GAME"
+    },
     "game-detective-leitor": {
       "moduleSlug": "palavras-em-acao",
       "activitySlug": "detective-leitor",
+      "activityType": "GAME"
+    },
+    "game-detectives-sensoriais": {
+      "moduleSlug": "sentidos-curiosos",
+      "activitySlug": "detectives-sensoriais",
       "activityType": "GAME"
     },
     "game-dialogo-rapido": {
@@ -829,9 +1166,34 @@
       "activitySlug": "dialogo-rapido",
       "activityType": "GAME"
     },
+    "game-festival-das-aves": {
+      "moduleSlug": "animais-da-vizinhanca",
+      "activitySlug": "festival-das-aves",
+      "activityType": "GAME"
+    },
+    "game-festival-das-plantas": {
+      "moduleSlug": "plantas-que-cuidamos",
+      "activitySlug": "festival-das-plantas",
+      "activityType": "GAME"
+    },
     "game-frase-surpresa": {
       "moduleSlug": "frases-divertidas",
       "activitySlug": "frase-surpresa",
+      "activityType": "GAME"
+    },
+    "game-guardioes-do-jardim": {
+      "moduleSlug": "plantas-que-cuidamos",
+      "activitySlug": "guardioes-do-jardim",
+      "activityType": "GAME"
+    },
+    "game-guardioes-dos-espacos": {
+      "moduleSlug": "ambientes-da-escola",
+      "activitySlug": "guardioes-dos-espacos",
+      "activityType": "GAME"
+    },
+    "game-guardioes-saude": {
+      "moduleSlug": "cuidados-do-corpo",
+      "activitySlug": "guardioes-saude",
       "activityType": "GAME"
     },
     "game-jogo-busca-ponto": {
@@ -924,9 +1286,19 @@
       "activitySlug": "laboratorio-das-vogais",
       "activityType": "GAME"
     },
+    "game-laboratorio-do-plantio": {
+      "moduleSlug": "plantas-que-cuidamos",
+      "activitySlug": "laboratorio-do-plantio",
+      "activityType": "GAME"
+    },
     "game-memoria-das-vogais": {
       "moduleSlug": "familia-das-vogais",
       "activitySlug": "memoria-das-vogais",
+      "activityType": "GAME"
+    },
+    "game-memoria-de-sabores": {
+      "moduleSlug": "sentidos-curiosos",
+      "activitySlug": "memoria-de-sabores",
       "activityType": "GAME"
     },
     "game-missao-equipes-multiplicadoras": {
@@ -942,6 +1314,16 @@
     "game-orquestra-de-silabas": {
       "moduleSlug": "brincando-com-sons",
       "activitySlug": "orquestra-de-silabas",
+      "activityType": "GAME"
+    },
+    "game-orquestra-dos-sentidos": {
+      "moduleSlug": "sentidos-curiosos",
+      "activitySlug": "orquestra-dos-sentidos",
+      "activityType": "GAME"
+    },
+    "game-patrulha-biodiversidade": {
+      "moduleSlug": "animais-da-vizinhanca",
+      "activitySlug": "patrulha-biodiversidade",
       "activityType": "GAME"
     },
     "game-planejar-bilhete": {
@@ -964,9 +1346,34 @@
       "activitySlug": "roda-das-rimas",
       "activityType": "GAME"
     },
+    "game-rota-das-sementes": {
+      "moduleSlug": "plantas-que-cuidamos",
+      "activitySlug": "rota-das-sementes",
+      "activityType": "GAME"
+    },
+    "game-rota-do-boto": {
+      "moduleSlug": "animais-da-vizinhanca",
+      "activitySlug": "rota-do-boto",
+      "activityType": "GAME"
+    },
+    "game-rota-dos-sentidos": {
+      "moduleSlug": "sentidos-curiosos",
+      "activitySlug": "rota-dos-sentidos",
+      "activityType": "GAME"
+    },
     "game-roteiro-do-recado": {
       "moduleSlug": "bilhetes-e-recados",
       "activitySlug": "roteiro-do-recado",
+      "activityType": "GAME"
+    },
+    "game-rotina-equilibrada": {
+      "moduleSlug": "cuidados-do-corpo",
+      "activitySlug": "rotina-equilibrada",
+      "activityType": "GAME"
+    },
+    "game-tour-colaborativo": {
+      "moduleSlug": "ambientes-da-escola",
+      "activitySlug": "tour-colaborativo",
       "activityType": "GAME"
     },
     "game-trilha-aliterativa": {
@@ -974,14 +1381,64 @@
       "activitySlug": "trilha-aliterativa",
       "activityType": "GAME"
     },
+    "game-trilha-dos-sons": {
+      "moduleSlug": "animais-da-vizinhanca",
+      "activitySlug": "trilha-dos-sons",
+      "activityType": "GAME"
+    },
+    "puzzle-alertas-do-jardim": {
+      "moduleSlug": "plantas-que-cuidamos",
+      "activitySlug": "alertas-do-jardim",
+      "activityType": "PUZZLE"
+    },
+    "puzzle-alimentacao-colorida": {
+      "moduleSlug": "cuidados-do-corpo",
+      "activitySlug": "alimentacao-colorida",
+      "activityType": "PUZZLE"
+    },
+    "puzzle-combina-sentidos": {
+      "moduleSlug": "sentidos-curiosos",
+      "activitySlug": "combina-sentidos",
+      "activityType": "PUZZLE"
+    },
+    "puzzle-cuidado-ferimentos": {
+      "moduleSlug": "cuidados-do-corpo",
+      "activitySlug": "cuidado-ferimentos",
+      "activityType": "PUZZLE"
+    },
     "puzzle-danca-dos-sons": {
       "moduleSlug": "historias-em-movimento",
       "activitySlug": "danca-dos-sons",
       "activityType": "PUZZLE"
     },
+    "puzzle-defesas-criativas": {
+      "moduleSlug": "animais-da-vizinhanca",
+      "activitySlug": "defesas-criativas",
+      "activityType": "PUZZLE"
+    },
     "puzzle-eco-de-sonoridades": {
       "moduleSlug": "historias-rimadas",
       "activitySlug": "eco-de-sonoridades",
+      "activityType": "PUZZLE"
+    },
+    "puzzle-eco-gestos": {
+      "moduleSlug": "ambientes-da-escola",
+      "activitySlug": "eco-gestos",
+      "activityType": "PUZZLE"
+    },
+    "puzzle-kit-cuidados": {
+      "moduleSlug": "cuidados-do-corpo",
+      "activitySlug": "kit-cuidados",
+      "activityType": "PUZZLE"
+    },
+    "puzzle-mapa-das-raizes": {
+      "moduleSlug": "plantas-que-cuidamos",
+      "activitySlug": "mapa-das-raizes",
+      "activityType": "PUZZLE"
+    },
+    "puzzle-mapa-dos-sons": {
+      "moduleSlug": "sentidos-curiosos",
+      "activitySlug": "mapa-dos-sons",
       "activityType": "PUZZLE"
     },
     "puzzle-ordem-da-parlenda": {
@@ -992,6 +1449,11 @@
     "puzzle-pares-de-rima": {
       "moduleSlug": "historias-rimadas",
       "activitySlug": "pares-de-rima",
+      "activityType": "PUZZLE"
+    },
+    "puzzle-pegadas-misteriosas": {
+      "moduleSlug": "animais-da-vizinhanca",
+      "activitySlug": "pegadas-misteriosas",
       "activityType": "PUZZLE"
     },
     "puzzle-puzzle-apoios-dialogo": {
@@ -1174,14 +1636,74 @@
       "activitySlug": "puzzle-vogal-e-imagem",
       "activityType": "PUZZLE"
     },
+    "puzzle-rede-alimentar": {
+      "moduleSlug": "animais-da-vizinhanca",
+      "activitySlug": "rede-alimentar",
+      "activityType": "PUZZLE"
+    },
     "puzzle-rima-e-cena": {
       "moduleSlug": "historias-rimadas",
       "activitySlug": "rima-e-cena",
       "activityType": "PUZZLE"
     },
+    "puzzle-rota-dos-habitats": {
+      "moduleSlug": "animais-da-vizinhanca",
+      "activitySlug": "rota-dos-habitats",
+      "activityType": "PUZZLE"
+    },
+    "puzzle-rotinas-compartilhadas": {
+      "moduleSlug": "ambientes-da-escola",
+      "activitySlug": "rotinas-compartilhadas",
+      "activityType": "PUZZLE"
+    },
+    "puzzle-sentidos-em-acao": {
+      "moduleSlug": "sentidos-curiosos",
+      "activitySlug": "sentidos-em-acao",
+      "activityType": "PUZZLE"
+    },
+    "puzzle-sequencia-banho": {
+      "moduleSlug": "cuidados-do-corpo",
+      "activitySlug": "sequencia-banho",
+      "activityType": "PUZZLE"
+    },
+    "puzzle-sequencia-do-plantio": {
+      "moduleSlug": "plantas-que-cuidamos",
+      "activitySlug": "sequencia-do-plantio",
+      "activityType": "PUZZLE"
+    },
+    "puzzle-sinais-da-escola": {
+      "moduleSlug": "ambientes-da-escola",
+      "activitySlug": "sinais-da-escola",
+      "activityType": "PUZZLE"
+    },
+    "puzzle-texturas-em-jogo": {
+      "moduleSlug": "sentidos-curiosos",
+      "activitySlug": "texturas-em-jogo",
+      "activityType": "PUZZLE"
+    },
+    "puzzle-uso-dos-espacos": {
+      "moduleSlug": "ambientes-da-escola",
+      "activitySlug": "uso-dos-espacos",
+      "activityType": "PUZZLE"
+    },
+    "puzzle-usos-das-plantas": {
+      "moduleSlug": "plantas-que-cuidamos",
+      "activitySlug": "usos-das-plantas",
+      "activityType": "PUZZLE"
+    },
+    "quiz-agua-e-luz": {
+      "moduleSlug": "plantas-que-cuidamos",
+      "activitySlug": "agua-e-luz",
+      "activityType": "QUIZ"
+    },
     "quiz-aliteracao-na-trilha": {
       "moduleSlug": "historias-rimadas",
       "activitySlug": "aliteracao-na-trilha",
+      "activityType": "QUIZ"
+    },
+    "quiz-amizades-ecologicas": {
+      "moduleSlug": "plantas-que-cuidamos",
+      "activitySlug": "amizades-ecologicas",
       "activityType": "QUIZ"
     },
     "quiz-batida-do-nome": {
@@ -1204,9 +1726,39 @@
       "activitySlug": "cantinho-das-palavras",
       "activityType": "QUIZ"
     },
+    "quiz-cardapio-animal": {
+      "moduleSlug": "animais-da-vizinhanca",
+      "activitySlug": "cardapio-animal",
+      "activityType": "QUIZ"
+    },
+    "quiz-casa-preferida": {
+      "moduleSlug": "animais-da-vizinhanca",
+      "activitySlug": "casa-preferida",
+      "activityType": "QUIZ"
+    },
     "quiz-checar-claridade": {
       "moduleSlug": "bilhetes-e-recados",
       "activitySlug": "checar-claridade",
+      "activityType": "QUIZ"
+    },
+    "quiz-cheiro-surpresa": {
+      "moduleSlug": "sentidos-curiosos",
+      "activitySlug": "cheiro-surpresa",
+      "activityType": "QUIZ"
+    },
+    "quiz-ciclo-da-plantinha": {
+      "moduleSlug": "plantas-que-cuidamos",
+      "activitySlug": "ciclo-da-plantinha",
+      "activityType": "QUIZ"
+    },
+    "quiz-circuito-da-limpeza": {
+      "moduleSlug": "ambientes-da-escola",
+      "activitySlug": "circuito-da-limpeza",
+      "activityType": "QUIZ"
+    },
+    "quiz-clima-da-sala": {
+      "moduleSlug": "ambientes-da-escola",
+      "activitySlug": "clima-da-sala",
       "activityType": "QUIZ"
     },
     "quiz-completar-resposta": {
@@ -1247,6 +1799,11 @@
     "quiz-desafio-aliterativo": {
       "moduleSlug": "historias-rimadas",
       "activitySlug": "desafio-aliterativo",
+      "activityType": "QUIZ"
+    },
+    "quiz-descanso-saudavel": {
+      "moduleSlug": "cuidados-do-corpo",
+      "activitySlug": "descanso-saudavel",
       "activityType": "QUIZ"
     },
     "quiz-descubra-o-humor": {
@@ -1309,6 +1866,11 @@
       "activitySlug": "escolha-rapida",
       "activityType": "QUIZ"
     },
+    "quiz-escova-superpoder": {
+      "moduleSlug": "cuidados-do-corpo",
+      "activitySlug": "escova-superpoder",
+      "activityType": "QUIZ"
+    },
     "quiz-escuta-atenta": {
       "moduleSlug": "hora-do-dialogo",
       "activitySlug": "escuta-atenta",
@@ -1339,9 +1901,24 @@
       "activitySlug": "leitura-estrategica",
       "activityType": "QUIZ"
     },
+    "quiz-maos-protegidas": {
+      "moduleSlug": "cuidados-do-corpo",
+      "activitySlug": "maos-protegidas",
+      "activityType": "QUIZ"
+    },
+    "quiz-mapa-da-escola": {
+      "moduleSlug": "ambientes-da-escola",
+      "activitySlug": "mapa-da-escola",
+      "activityType": "QUIZ"
+    },
     "quiz-memorias-na-rodinha": {
       "moduleSlug": "hora-do-dialogo",
       "activitySlug": "memorias-na-rodinha",
+      "activityType": "QUIZ"
+    },
+    "quiz-movimento-animado": {
+      "moduleSlug": "animais-da-vizinhanca",
+      "activitySlug": "movimento-animado",
       "activityType": "QUIZ"
     },
     "quiz-objetivo-do-recado": {
@@ -1364,6 +1941,11 @@
       "activitySlug": "ordena-fatos",
       "activityType": "QUIZ"
     },
+    "quiz-ouvido-atento": {
+      "moduleSlug": "sentidos-curiosos",
+      "activitySlug": "ouvido-atento",
+      "activityType": "QUIZ"
+    },
     "quiz-palavra-composta-basica": {
       "moduleSlug": "palavras-compostas",
       "activitySlug": "palavra-composta-basica",
@@ -1382,6 +1964,11 @@
     "quiz-palavra-surpresa": {
       "moduleSlug": "palavras-compostas",
       "activitySlug": "palavra-surpresa",
+      "activityType": "QUIZ"
+    },
+    "quiz-partes-da-planta": {
+      "moduleSlug": "plantas-que-cuidamos",
+      "activitySlug": "partes-da-planta",
       "activityType": "QUIZ"
     },
     "quiz-pergunta-ou-prossegue": {
@@ -1444,9 +2031,24 @@
       "activitySlug": "ritmo-na-historia",
       "activityType": "QUIZ"
     },
+    "quiz-rota-da-seguranca": {
+      "moduleSlug": "ambientes-da-escola",
+      "activitySlug": "rota-da-seguranca",
+      "activityType": "QUIZ"
+    },
+    "quiz-rotina-higiene": {
+      "moduleSlug": "cuidados-do-corpo",
+      "activitySlug": "rotina-higiene",
+      "activityType": "QUIZ"
+    },
     "quiz-seleciona-informacao": {
       "moduleSlug": "jornal-da-turma",
       "activitySlug": "seleciona-informacao",
+      "activityType": "QUIZ"
+    },
+    "quiz-som-da-mata": {
+      "moduleSlug": "animais-da-vizinhanca",
+      "activitySlug": "som-da-mata",
       "activityType": "QUIZ"
     },
     "quiz-som-e-letra": {
@@ -1457,6 +2059,11 @@
     "quiz-som-inicial-surpresa": {
       "moduleSlug": "brincando-com-sons",
       "activitySlug": "som-inicial-surpresa",
+      "activityType": "QUIZ"
+    },
+    "quiz-toque-investigador": {
+      "moduleSlug": "sentidos-curiosos",
+      "activitySlug": "toque-investigador",
       "activityType": "QUIZ"
     },
     "quiz-trilho-das-silabas": {
@@ -1474,6 +2081,11 @@
       "activitySlug": "verso-surpresa",
       "activityType": "QUIZ"
     },
+    "quiz-visao-detalhista": {
+      "moduleSlug": "sentidos-curiosos",
+      "activitySlug": "visao-detalhista",
+      "activityType": "QUIZ"
+    },
     "quiz-vogal-exploradora": {
       "moduleSlug": "familia-das-vogais",
       "activitySlug": "vogal-exploradora",
@@ -1487,9 +2099,12 @@
   },
   "bncc": {
     "modules": {
+      "ambientes-da-escola": "EF01CI04",
+      "animais-da-vizinhanca": "EF01CI03",
       "bilhetes-e-recados": "EF01LP09",
       "brincando-com-sons": "EF01LP01",
       "clubinho-das-palavras": "EF01LP06",
+      "cuidados-do-corpo": "EF01CI02",
       "estudio-dados-solidarios": "EM13MAT305",
       "familia-das-vogais": "EF01LP03",
       "frases-divertidas": "EF01LP07",
@@ -1501,12 +2116,19 @@
       "oficina-modelagem-dados": "EF07MA16",
       "palavras-compostas": "EF01LP14",
       "palavras-em-acao": "EF01LP05",
+      "plantas-que-cuidamos": "EF01CI03",
       "pontuacao-animada": "EF01LP16",
       "rota-das-operacoes": "EF05MA08",
+      "sentidos-curiosos": "EF01CI01",
       "trilhas-narrativas-digitais": "EF69LP28"
     },
     "activities": {
+      "agua-e-luz": "EF01CI03",
+      "alertas-do-jardim": "EF01CI04",
+      "alimentacao-colorida": "EF01CI02",
       "aliteracao-na-trilha": "EF01LP11",
+      "amizades-ecologicas": "EF01CI04",
+      "assembleia-da-turma": "EF01CI04",
       "batalha-das-silabas": "EF01LP02",
       "batida-do-nome": "EF01LP02",
       "caca-sons-iniciais": "EF01LP01",
@@ -1514,7 +2136,14 @@
       "caixa-de-palavras": "EF01LP05",
       "campos-de-palavras": "EF01LP14",
       "cantinho-das-palavras": "EF01LP05",
+      "cardapio-animal": "EF01CI03",
+      "casa-preferida": "EF01CI03",
       "checar-claridade": "EF01LP10",
+      "cheiro-surpresa": "EF01CI01",
+      "ciclo-da-plantinha": "EF01CI03",
+      "circuito-da-limpeza": "EF01CI04",
+      "clima-da-sala": "EF01CI04",
+      "combina-sentidos": "EF01CI01",
       "completar-resposta": "EF01LP08",
       "contexto-indica": "EF01LP15",
       "coro-das-vogais": "EF01LP04",
@@ -1522,14 +2151,21 @@
       "corrige-a-frase": "EF01LP10",
       "corrige-a-pontuacao": "EF01LP16",
       "cria-rima-rapida": "EF01LP11",
+      "cronometro-escovacao": "EF01CI02",
+      "cuidado-ferimentos": "EF01CI02",
       "danca-dos-sons": "EI03ET04",
       "dash-impacto-escolar": "EF07MA16",
       "deduza-o-significado": "EF01LP15",
+      "defesas-criativas": "EF01CI03",
       "defina-o-publico": "EF01LP23",
       "desafio-aliterativo": "EF01LP11",
+      "desafio-da-reciclagem": "EF01CI04",
+      "desafio-habitos": "EF01CI02",
+      "descanso-saudavel": "EF01CI02",
       "descubra-o-humor": "EF01LP08",
       "detective-leitor": "EF01LP06",
       "detectives-das-palavras": "EF01LP06",
+      "detectives-sensoriais": "EF01CI01",
       "detetive-dos-pedacinhos": "EF01LP02",
       "dialogo-em-equipe": "EF01LP12",
       "dialogo-rapido": "EF01LP08",
@@ -1538,17 +2174,24 @@
       "eco-das-rimas": "EF01LP11",
       "eco-de-sonoridades": "EF01LP11",
       "eco-dos-sons": "EF01LP01",
+      "eco-gestos": "EF01CI04",
       "elementos-do-bilhete": "EF01LP09",
       "emocao-na-frase": "EF01LP17",
       "escolha-o-sinal": "EF01LP17",
       "escolha-rapida": "EF01LP06",
+      "escova-superpoder": "EF01CI02",
       "escuta-atenta": "EF01LP12",
       "escuta-da-pontuacao": "EF01LP16",
       "estacao-resto-inteligente": "EF05MA08",
       "experimento-da-agua": "EF07CI02",
+      "festival-das-aves": "EF01CI03",
+      "festival-das-plantas": "EF01CI04",
       "frase-ilustrada": "EF01LP07",
       "frase-surpresa": "EF01LP08",
       "grafico-vivo-da-comunidade": "EF07MA16",
+      "guardioes-do-jardim": "EF01CI04",
+      "guardioes-dos-espacos": "EF01CI04",
+      "guardioes-saude": "EF01CI02",
       "intencao-da-frase": "EF01LP08",
       "investigacao-dados-bairro": "EM13MAT305",
       "jogo-busca-ponto": "EF01LP16",
@@ -1568,25 +2211,38 @@
       "jogo-relato-rapido": "EF01LP13",
       "jogo-ritmo-rimado": "EF01LP11",
       "jogo-turno-luz": "EF01LP12",
+      "kit-cuidados": "EF01CI02",
       "laboratorio-das-palavras": "EF35LP20",
       "laboratorio-das-vogais": "EF01LP04",
+      "laboratorio-do-plantio": "EF01CI03",
       "lancamento-do-jornal": "EF01LP24",
       "leitura-estrategica": "EF01LP06",
+      "maos-protegidas": "EF01CI02",
+      "mapa-da-escola": "EF01CI04",
+      "mapa-das-raizes": "EF01CI03",
+      "mapa-dos-sons": "EF01CI01",
       "memoria-das-vogais": "EF01LP04",
+      "memoria-de-sabores": "EF01CI01",
       "memorias-na-rodinha": "EF01LP13",
       "missao-equipes-multiplicadoras": "EF05MA08",
       "montar-frase": "EF01LP07",
+      "movimento-animado": "EF01CI03",
       "objetivo-do-recado": "EF01LP09",
       "onde-acontece": "EF01LP07",
       "ordem-da-parlenda": "EF01LP11",
       "ordem-das-vogais": "EF01LP03",
       "ordena-fatos": "EF01LP20",
       "orquestra-de-silabas": "EF01LP02",
+      "orquestra-dos-sentidos": "EF01CI01",
+      "ouvido-atento": "EF01CI01",
       "palavra-composta-basica": "EF01LP14",
       "palavra-e-figura": "EF01LP05",
       "palavra-em-contexto": "EF01LP05",
       "palavra-surpresa": "EF01LP14",
       "pares-de-rima": "EF01LP11",
+      "partes-da-planta": "EF01CI03",
+      "patrulha-biodiversidade": "EF01CI03",
+      "pegadas-misteriosas": "EF01CI03",
       "pergunta-ou-prossegue": "EF01LP17",
       "planeja-reportagem": "EF01LP18",
       "planejar-bilhete": "EF01LP09",
@@ -1632,6 +2288,7 @@
       "qual-o-destinatario": "EF01LP09",
       "quem-faz-o-que": "EF01LP07",
       "quiz-sustentabilidade": "EF07CI02",
+      "rede-alimentar": "EF01CI03",
       "relato-bem-ordenado": "EF01LP13",
       "resposta-educada": "EF01LP12",
       "revendo-o-texto": "EF01LP10",
@@ -1643,15 +2300,35 @@
       "ritmo-da-parlenda": "EF01LP11",
       "ritmo-na-historia": "EF01LP11",
       "roda-das-rimas": "EF01LP06",
+      "rota-da-seguranca": "EF01CI04",
+      "rota-das-sementes": "EF01CI04",
+      "rota-do-boto": "EF01CI03",
+      "rota-dos-habitats": "EF01CI03",
+      "rota-dos-sentidos": "EF01CI01",
       "roteiro-do-recado": "EF01LP10",
+      "rotina-equilibrada": "EF01CI02",
+      "rotina-higiene": "EF01CI02",
+      "rotinas-compartilhadas": "EF01CI04",
       "seleciona-informacao": "EF01LP19",
+      "sentidos-em-acao": "EF01CI01",
+      "sequencia-banho": "EF01CI02",
+      "sequencia-do-plantio": "EF01CI03",
+      "sinais-da-escola": "EF01CI04",
+      "som-da-mata": "EF01CI03",
       "som-e-letra": "EF01LP04",
       "som-inicial-surpresa": "EF01LP01",
       "teatro-das-emocoes": "EI03ET04",
+      "texturas-em-jogo": "EF01CI01",
+      "toque-investigador": "EF01CI01",
+      "tour-colaborativo": "EF01CI04",
       "trilha-aliterativa": "EF01LP11",
+      "trilha-dos-sons": "EF01CI03",
       "trilho-das-silabas": "EF01LP02",
       "turno-de-fala": "EF01LP12",
+      "uso-dos-espacos": "EF01CI04",
+      "usos-das-plantas": "EF01CI03",
       "verso-surpresa": "EF01LP11",
+      "visao-detalhista": "EF01CI01",
       "vogal-exploradora": "EF01LP03",
       "vogal-misteriosa": "EF01LP04",
       "webdoc-historias-do-bairro": "EF69LP28"

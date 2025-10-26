@@ -50,6 +50,22 @@ data/
 | Pontuação Animada     | `pontuacao-animada`     | EF01LP16        | EF01LP17                                                   |
 | Jornal da Turma       | `jornal-da-turma`       | EF01LP18        | EF01LP19, EF01LP20, EF01LP21, EF01LP22, EF01LP23, EF01LP24 |
 
+## Catálogo EF01 de Ciências
+
+- **Sentidos Curiosos (EF01CI01)**: explora percepção sensorial, investigações com pistas multimodais e cuidados com os órgãos dos sentidos.
+- **Cuidados do Corpo (EF01CI02)**: promove hábitos de higiene, alimentação, descanso e cooperação familiar para manter a saúde cotidiana.
+- **Animais da Vizinhança (EF01CI03)**: observa seres vivos do entorno, investiga habitats e discute ações de preservação e biodiversidade.
+- **Plantas que Cuidamos (EF01CI03–EF01CI04)**: acompanha ciclos de vida, experimentos de germinação e cuidados com jardins compartilhados.
+- **Ambientes da Escola (EF01CI04)**: analisa espaços escolares, sustentabilidade e convivência responsável em rotinas colaborativas.
+
+| Módulo                | Slug                    | BNCC (primária) | BNCC (secundárias) |
+| --------------------- | ----------------------- | --------------- | ------------------ |
+| Sentidos Curiosos     | `sentidos-curiosos`     | EF01CI01        | EF01CI02, EF01CI04 |
+| Cuidados do Corpo     | `cuidados-do-corpo`     | EF01CI02        | EF01CI01, EF01CI04 |
+| Animais da Vizinhança | `animais-da-vizinhanca` | EF01CI03        | EF01CI04           |
+| Plantas que Cuidamos  | `plantas-que-cuidamos`  | EF01CI03        | EF01CI04           |
+| Ambientes da Escola   | `ambientes-da-escola`   | EF01CI04        | EF01CI03, EF01CI02 |
+
 Cada arquivo de módulo possui duas chaves principais:
 
 - `module`: metadados do módulo (slug, título, estágio, componente curricular, BNCC, resultados de aprendizagem, tags).

@@ -1,0 +1,1952 @@
+module:
+  stage: ef01
+  subjectSlug: ciencias
+  subject: Ciências
+  slug: ambientes-da-escola
+  title: Ambientes da Escola
+  subtitle: Explorar, cuidar e conviver nos espaços escolares
+  description: >-
+    Sequência que promove reconhecimento dos ambientes escolares, combinados de convivência e ações
+    sustentáveis para manter a escola acolhedora.
+  theme: Ciências
+  discipline: Ciências
+  ageGroupSlug: fundamental-anos-iniciais
+  learningPathSlug: exploradores-da-natureza
+  primaryBnccCode: EF01CI04
+  secondaryBnccCodes:
+    - EF01CI03
+  learningOutcomes:
+    - Reconhecer características e funções dos diferentes ambientes escolares.
+    - Planejar cuidados e rotinas compartilhadas que preservem os espaços.
+    - Participar de decisões coletivas que tornam a escola segura, limpa e acolhedora.
+  tags:
+    - ambientes
+    - convivencia
+    - sustentabilidade
+    - cidadania
+  estimatedDurationMinutes: 185
+  summary: >-
+    Doze atividades que combinam mapas, missões e assembleias colaborativas para cuidar dos espaços
+    escolares.
+activities:
+  - partial: ../../_partials/acolhimento-base.yaml
+    slug: mapa-da-escola
+    title: Mapa da Escola
+    prompt: Observe o mapa ilustrado e identifique o espaço que o enunciado descreve.
+    summary: Quiz que reconhece espaços escolares e suas funções.
+    type: QUIZ
+    difficulty: INICIAR
+    bncc:
+      code: EF01CI04
+      habilidades:
+        - EF01CI04
+    learningObjectives:
+      - Identificar espaços da escola e suas finalidades.
+      - Relacionar cuidados específicos a cada ambiente escolar.
+    description: >-
+      Mapa da Escola apresenta plantas baixas simples para localizar ambientes e discutir
+      combinações de uso.
+    metadata:
+      categoria: Cartografia escolar
+      duracaoMinutos: 8
+      tempoEstimadoMinutos: 8
+      habilidades:
+        - EF01CI04
+      assetSlug: cn-material-lupa
+      assetUsage: Use a lupa para localizar detalhes como portas, jardins e quadras no mapa.
+      familiaEngajamento: Peça às famílias que façam um mapa simples de casa com os espaços preferidos das crianças.
+      focoInvestigativo: reconhecimento de espaços da escola
+      modoCooperativo: false
+      tagsInterdisciplinares:
+        - Geografia
+        - Matemática
+      interactiveSlug: quiz-mapa-da-escola
+      habilidadesSecundarias:
+        - EF01CI02
+      recursoMapa: Mapa ampliado da escola com legendas.
+    accessibility:
+      hints:
+        - audience: ESTUDANTE
+          text: >-
+            Passo 1: Observe o desafio com calma e use a leitura em voz alta para investigar
+            reconhecimento de espaços da escola.
+        - audience: ESTUDANTE
+          text: >-
+            Passo 2: Faça pequenas pausas para perceber os detalhes e compartilhe o que notou sobre
+            reconhecimento de espaços da escola.
+        - audience: EDUCADOR
+          text: >-
+            Ofereça materiais táteis, áudio descrição e tempo extra para apoiar a exploração de
+            reconhecimento de espaços da escola.
+        - audience: FAMILIA
+          text: >-
+            Peça às famílias que façam um mapa simples de casa com os espaços preferidos das
+            crianças.
+      feedback:
+        success: >-
+          Excelente investigação! Você analisou reconhecimento de espaços da escola com olhar
+          científico.
+        encouragement: >-
+          Tudo bem errar no caminho. Use recursos visuais, gestos e sons para revisar as pistas
+          antes de tentar novamente.
+        retry: >-
+          Faça uma pausa, respire fundo e retome observando novos detalhes sobre reconhecimento de
+          espaços da escola.
+        accessibility: >-
+          Garanta apoios multimodais: contraste de cores, narração em voz alta, audiodescrição e
+          tempo estendido para quem precisar.
+      assets:
+        - slug: cn-material-lupa
+          type: IMAGEM
+          title: Lupa azul para observação
+          description: Use a lupa para localizar detalhes como portas, jardins e quadras no mapa.
+      alternatives:
+        - title: MATERIAIS CONCRETOS
+          description: Monte estações com objetos reais para reforçar reconhecimento de espaços da escola.
+          steps:
+            - Disponibilize cartões com pictogramas e legendas em caixa alta.
+            - Use texturas, aromas ou sons reais como apoio sensorial.
+      audioCue:
+        title: SINAL DE PAUSA
+        description: Utilize um sino suave ou chocalho para avisar a troca de etapa ou necessidade de pausa.
+        steps:
+          - Combine com a turma o significado do sinal antes de iniciar.
+          - Ofereça tempo suficiente após o sinal para reorganização corporal.
+      motorSupport:
+        - title: APOIO MOTOR
+          description: >-
+            Disponibilize apoios para toque, ponteiras, suportes de tablet e mesas acessíveis
+            durante a interação.
+          steps:
+            - Permita que duplas se alternem no controle do dispositivo.
+            - Ofereça apoio postural e ajustes de altura quando necessário.
+    prerequisites:
+      - type: SKILL
+        reference: EF01CI04
+        description: Relembrar passeios pela escola destacando cuidados com os ambientes compartilhados.
+    interactive:
+      slug: quiz-mapa-da-escola
+      title: Mapa da Escola — Quiz
+      type: QUIZ
+      bnccDescription: >-
+        Comparar diferentes ambientes, modos de convivência e cuidados com a natureza na comunidade
+        escolar.
+      estimatedTimeMinutes: 8
+      instructions:
+        - Leia ou escute cada pergunta com atenção.
+        - Use as setas ou toque nas alternativas antes de confirmar.
+        - Compartilhe como chegou à resposta com a turma.
+      objectives:
+        - Identificar espaços da escola e suas finalidades.
+        - Relacionar cuidados específicos a cada ambiente escolar.
+      scoring:
+        correct: 10
+        incorrect: 0
+      adaptive:
+        increaseAfter: 2
+        decreaseAfter: 1
+      questions:
+        - id: mapa-da-escola-q1
+          type: multiple-choice
+          prompt: Qual espaço da escola é indicado para leitura silenciosa e organização de livros?
+          hint: Procure um local com estantes e mesas confortáveis.
+          options:
+            - id: mapa-da-escola-q1-1
+              text: Biblioteca
+              isCorrect: true
+              feedback: Correto! A biblioteca é dedicada à leitura e empréstimo de livros.
+            - id: mapa-da-escola-q1-2
+              text: Quadra
+              isCorrect: false
+              feedback: A quadra é usada para jogos e educação física.
+            - id: mapa-da-escola-q1-3
+              text: Refeitório
+              isCorrect: false
+              feedback: O refeitório é destinado às refeições.
+        - id: mapa-da-escola-q2
+          type: true-false
+          prompt: A quadra precisa de calçados adequados e combinados para evitar acidentes?
+          hint: Lembre-se das orientações antes das aulas de educação física.
+          statement: Usar calçados adequados na quadra evita escorregões e machucados.
+          answer: true
+          feedback:
+            'true': Muito bem! Cuidado com o calçado mantém a quadra segura.
+            'false': 'Reflita: calçados adequados protegem durante as atividades esportivas.'
+      accessibility:
+        hints:
+          - audience: ESTUDANTE
+            text: >-
+              Use TAB, setas ou toques para navegar pelas ações digitais ligadas a reconhecimento de
+              espaços da escola.
+          - audience: EDUCADOR
+            text: Ative a leitura em voz alta e mantenha instruções visuais em contraste elevado.
+        feedback:
+          success: >-
+            Ótimo trabalho! As escolhas mostram entendimento sobre reconhecimento de espaços da
+            escola.
+          encouragement: >-
+            Caso se confunda, revise com a equipe, utilize o botão de repetir instruções e retome
+            com calma.
+          accessibility: >-
+            Disponibilize controle adaptado, tempo flexível e apoio auditivo individual sempre que
+            necessário.
+        assets:
+          - slug: cn-material-lupa
+            type: IMAGEM
+            title: Lupa azul para observação
+  - partial: ../../_partials/acolhimento-base.yaml
+    slug: circuito-da-limpeza
+    title: Circuito da Limpeza
+    prompt: Leia as situações e escolha o cuidado adequado para manter os espaços limpos.
+    summary: Quiz sobre hábitos de limpeza e organização nos ambientes escolares.
+    type: QUIZ
+    difficulty: INICIAR
+    bncc:
+      code: EF01CI04
+      habilidades:
+        - EF01CI04
+    learningObjectives:
+      - Identificar atitudes de higiene adequadas para cada ambiente escolar.
+      - Planejar rotinas simples de organização compartilhada.
+    description: Circuito da Limpeza apresenta exemplos práticos que reforçam a responsabilidade coletiva.
+    metadata:
+      categoria: Cuidado ambiental
+      duracaoMinutos: 9
+      tempoEstimadoMinutos: 9
+      habilidades:
+        - EF01CI04
+      assetSlug: cn-higiene-lavar-maos
+      assetUsage: A ilustração lembra a importância de higienizar as mãos após cuidar dos espaços.
+      familiaEngajamento: Combine com as famílias uma tabela de cuidados com o quarto ou área de estudos da criança.
+      focoInvestigativo: hábitos de higiene em diferentes espaços
+      modoCooperativo: true
+      tagsInterdisciplinares:
+        - Língua Portuguesa
+        - Matemática
+      interactiveSlug: quiz-circuito-da-limpeza
+      habilidadesSecundarias:
+        - EF01CI02
+      checkList: Checklist semanal de tarefas coletivas.
+    accessibility:
+      hints:
+        - audience: ESTUDANTE
+          text: >-
+            Passo 1: Observe o desafio com calma e use a leitura em voz alta para investigar hábitos
+            de higiene em diferentes espaços.
+        - audience: ESTUDANTE
+          text: >-
+            Passo 2: Faça pequenas pausas para perceber os detalhes e compartilhe o que notou sobre
+            hábitos de higiene em diferentes espaços.
+        - audience: EDUCADOR
+          text: >-
+            Ofereça materiais táteis, áudio descrição e tempo extra para apoiar a exploração de
+            hábitos de higiene em diferentes espaços.
+        - audience: FAMILIA
+          text: >-
+            Combine com as famílias uma tabela de cuidados com o quarto ou área de estudos da
+            criança.
+      feedback:
+        success: >-
+          Excelente investigação! Você analisou hábitos de higiene em diferentes espaços com olhar
+          científico.
+        encouragement: >-
+          Tudo bem errar no caminho. Use recursos visuais, gestos e sons para revisar as pistas
+          antes de tentar novamente.
+        retry: >-
+          Faça uma pausa, respire fundo e retome observando novos detalhes sobre hábitos de higiene
+          em diferentes espaços.
+        accessibility: >-
+          Garanta apoios multimodais: contraste de cores, narração em voz alta, audiodescrição e
+          tempo estendido para quem precisar.
+      assets:
+        - slug: cn-higiene-lavar-maos
+          type: IMAGEM
+          title: Lavagem cuidadosa das mãos
+          description: A ilustração lembra a importância de higienizar as mãos após cuidar dos espaços.
+      alternatives:
+        - title: MATERIAIS CONCRETOS
+          description: Monte estações com objetos reais para reforçar hábitos de higiene em diferentes espaços.
+          steps:
+            - Disponibilize cartões com pictogramas e legendas em caixa alta.
+            - Use texturas, aromas ou sons reais como apoio sensorial.
+      audioCue:
+        title: SINAL DE PAUSA
+        description: Utilize um sino suave ou chocalho para avisar a troca de etapa ou necessidade de pausa.
+        steps:
+          - Combine com a turma o significado do sinal antes de iniciar.
+          - Ofereça tempo suficiente após o sinal para reorganização corporal.
+      motorSupport:
+        - title: APOIO MOTOR
+          description: >-
+            Disponibilize apoios para toque, ponteiras, suportes de tablet e mesas acessíveis
+            durante a interação.
+          steps:
+            - Permita que duplas se alternem no controle do dispositivo.
+            - Ofereça apoio postural e ajustes de altura quando necessário.
+    prerequisites:
+      - type: SKILL
+        reference: EF01CI04
+        description: Relembrar passeios pela escola destacando cuidados com os ambientes compartilhados.
+    interactive:
+      slug: quiz-circuito-da-limpeza
+      title: Circuito da Limpeza — Quiz
+      type: QUIZ
+      bnccDescription: >-
+        Comparar diferentes ambientes, modos de convivência e cuidados com a natureza na comunidade
+        escolar.
+      estimatedTimeMinutes: 9
+      instructions:
+        - Leia ou escute cada pergunta com atenção.
+        - Use as setas ou toque nas alternativas antes de confirmar.
+        - Compartilhe como chegou à resposta com a turma.
+      objectives:
+        - Identificar atitudes de higiene adequadas para cada ambiente escolar.
+        - Planejar rotinas simples de organização compartilhada.
+      scoring:
+        correct: 10
+        incorrect: 0
+      adaptive:
+        increaseAfter: 2
+        decreaseAfter: 1
+      questions:
+        - id: circuito-da-limpeza-q1
+          type: multiple-choice
+          prompt: O que fazer ao terminar o lanche no refeitório?
+          hint: Pense em manter o espaço limpo para outras turmas.
+          options:
+            - id: circuito-da-limpeza-q1-1
+              text: Guardar restos no lixo correto e limpar a mesa com pano úmido
+              isCorrect: true
+              feedback: Excelente! Assim o espaço fica limpo para os próximos colegas.
+            - id: circuito-da-limpeza-q1-2
+              text: Deixar restos sobre a mesa para os funcionários recolherem
+              isCorrect: false
+              feedback: É importante colaborar e descartar corretamente.
+            - id: circuito-da-limpeza-q1-3
+              text: Levar a bandeja para a quadra
+              isCorrect: false
+              feedback: Materiais do refeitório devem ser guardados no próprio refeitório.
+        - id: circuito-da-limpeza-q2
+          type: true-false
+          prompt: Manter as pias limpas e jogar papel no lixo ajuda a evitar entupimentos?
+          hint: Observe as orientações da equipe de limpeza.
+          statement: Descartar papéis no lixo preserva canos e evita mau cheiro.
+          answer: true
+          feedback:
+            'true': Correto! Essa atitude protege o espaço e facilita o trabalho de todos.
+            'false': 'Reflita: papéis no lixo evitam entupimentos e cheiros ruins.'
+      accessibility:
+        hints:
+          - audience: ESTUDANTE
+            text: >-
+              Use TAB, setas ou toques para navegar pelas ações digitais ligadas a hábitos de
+              higiene em diferentes espaços.
+          - audience: EDUCADOR
+            text: Ative a leitura em voz alta e mantenha instruções visuais em contraste elevado.
+        feedback:
+          success: >-
+            Ótimo trabalho! As escolhas mostram entendimento sobre hábitos de higiene em diferentes
+            espaços.
+          encouragement: >-
+            Caso se confunda, revise com a equipe, utilize o botão de repetir instruções e retome
+            com calma.
+          accessibility: >-
+            Disponibilize controle adaptado, tempo flexível e apoio auditivo individual sempre que
+            necessário.
+        assets:
+          - slug: cn-higiene-lavar-maos
+            type: IMAGEM
+            title: Lavagem cuidadosa das mãos
+  - partial: ../../_partials/acolhimento-base.yaml
+    slug: clima-da-sala
+    title: Clima da Sala
+    prompt: Escolha atitudes que deixam a sala acolhedora e organizada para todos.
+    summary: Quiz sobre convivência e organização na sala de aula.
+    type: QUIZ
+    difficulty: PRATICAR
+    bncc:
+      code: EF01CI04
+      habilidades:
+        - EF01CI04
+    learningObjectives:
+      - Identificar comportamentos que favorecem o convívio respeitoso na sala.
+      - Planejar combinados para manter materiais organizados e acessíveis.
+    description: >-
+      Clima da Sala fortalece a criação de combinados que valorizam respeito e organização
+      compartilhada.
+    metadata:
+      categoria: Cultura de sala
+      duracaoMinutos: 10
+      tempoEstimadoMinutos: 10
+      habilidades:
+        - EF01CI04
+      assetSlug: cn-natureza-floresta
+      assetUsage: A floresta ilustra diversidade e equilíbrio, inspirando combinados de convivência.
+      familiaEngajamento: Converse com as famílias sobre combinados de convivência e organização no espaço de estudos.
+      focoInvestigativo: convivência e organização na sala
+      modoCooperativo: true
+      tagsInterdisciplinares:
+        - Língua Portuguesa
+        - Arte
+      interactiveSlug: quiz-clima-da-sala
+      habilidadesSecundarias:
+        - EF01CI02
+      muralCombinados: Mural de combinados construído pela turma.
+    accessibility:
+      hints:
+        - audience: ESTUDANTE
+          text: >-
+            Passo 1: Observe o desafio com calma e use a leitura em voz alta para investigar
+            convivência e organização na sala.
+        - audience: ESTUDANTE
+          text: >-
+            Passo 2: Faça pequenas pausas para perceber os detalhes e compartilhe o que notou sobre
+            convivência e organização na sala.
+        - audience: EDUCADOR
+          text: >-
+            Ofereça materiais táteis, áudio descrição e tempo extra para apoiar a exploração de
+            convivência e organização na sala.
+        - audience: FAMILIA
+          text: >-
+            Converse com as famílias sobre combinados de convivência e organização no espaço de
+            estudos.
+      feedback:
+        success: >-
+          Excelente investigação! Você analisou convivência e organização na sala com olhar
+          científico.
+        encouragement: >-
+          Tudo bem errar no caminho. Use recursos visuais, gestos e sons para revisar as pistas
+          antes de tentar novamente.
+        retry: >-
+          Faça uma pausa, respire fundo e retome observando novos detalhes sobre convivência e
+          organização na sala.
+        accessibility: >-
+          Garanta apoios multimodais: contraste de cores, narração em voz alta, audiodescrição e
+          tempo estendido para quem precisar.
+      assets:
+        - slug: cn-natureza-floresta
+          type: IMAGEM
+          title: Floresta ensolarada
+          description: A floresta ilustra diversidade e equilíbrio, inspirando combinados de convivência.
+      alternatives:
+        - title: MATERIAIS CONCRETOS
+          description: Monte estações com objetos reais para reforçar convivência e organização na sala.
+          steps:
+            - Disponibilize cartões com pictogramas e legendas em caixa alta.
+            - Use texturas, aromas ou sons reais como apoio sensorial.
+      audioCue:
+        title: SINAL DE PAUSA
+        description: Utilize um sino suave ou chocalho para avisar a troca de etapa ou necessidade de pausa.
+        steps:
+          - Combine com a turma o significado do sinal antes de iniciar.
+          - Ofereça tempo suficiente após o sinal para reorganização corporal.
+      motorSupport:
+        - title: APOIO MOTOR
+          description: >-
+            Disponibilize apoios para toque, ponteiras, suportes de tablet e mesas acessíveis
+            durante a interação.
+          steps:
+            - Permita que duplas se alternem no controle do dispositivo.
+            - Ofereça apoio postural e ajustes de altura quando necessário.
+    prerequisites:
+      - type: SKILL
+        reference: EF01CI04
+        description: Relembrar passeios pela escola destacando cuidados com os ambientes compartilhados.
+    interactive:
+      slug: quiz-clima-da-sala
+      title: Clima da Sala — Quiz
+      type: QUIZ
+      bnccDescription: >-
+        Comparar diferentes ambientes, modos de convivência e cuidados com a natureza na comunidade
+        escolar.
+      estimatedTimeMinutes: 10
+      instructions:
+        - Leia ou escute cada pergunta com atenção.
+        - Use as setas ou toque nas alternativas antes de confirmar.
+        - Compartilhe como chegou à resposta com a turma.
+      objectives:
+        - Identificar comportamentos que favorecem o convívio respeitoso na sala.
+        - Planejar combinados para manter materiais organizados e acessíveis.
+      scoring:
+        correct: 10
+        incorrect: 0
+      adaptive:
+        increaseAfter: 2
+        decreaseAfter: 1
+      questions:
+        - id: clima-da-sala-q1
+          type: multiple-choice
+          prompt: Como cuidar dos materiais coletivos após uma atividade artística?
+          hint: Pense em como facilitar o uso para a próxima turma.
+          options:
+            - id: clima-da-sala-q1-1
+              text: Limpar pincéis, guardar tintas e organizar mesas
+              isCorrect: true
+              feedback: Ótimo! Materiais limpos e guardados ficam prontos para os colegas.
+            - id: clima-da-sala-q1-2
+              text: Deixar os pincéis na água até o dia seguinte
+              isCorrect: false
+              feedback: A água suja estraga os pincéis; eles precisam ser lavados.
+            - id: clima-da-sala-q1-3
+              text: Guardar tudo sem limpar
+              isCorrect: false
+              feedback: É importante limpar antes de guardar para evitar sujeira.
+        - id: clima-da-sala-q2
+          type: true-false
+          prompt: Combinar turnos de fala ajuda a turma a se escutar melhor?
+          hint: Relembre as rodas de conversa.
+          statement: Turnos de fala organizados favorecem o respeito e a escuta ativa.
+          answer: true
+          feedback:
+            'true': Perfeito! Respeitar turnos garante que todas as vozes sejam ouvidas.
+            'false': 'Reflita: quando respeitamos turnos, todos conseguem participar.'
+      accessibility:
+        hints:
+          - audience: ESTUDANTE
+            text: >-
+              Use TAB, setas ou toques para navegar pelas ações digitais ligadas a convivência e
+              organização na sala.
+          - audience: EDUCADOR
+            text: Ative a leitura em voz alta e mantenha instruções visuais em contraste elevado.
+        feedback:
+          success: >-
+            Ótimo trabalho! As escolhas mostram entendimento sobre convivência e organização na
+            sala.
+          encouragement: >-
+            Caso se confunda, revise com a equipe, utilize o botão de repetir instruções e retome
+            com calma.
+          accessibility: >-
+            Disponibilize controle adaptado, tempo flexível e apoio auditivo individual sempre que
+            necessário.
+        assets:
+          - slug: cn-natureza-floresta
+            type: IMAGEM
+            title: Floresta ensolarada
+  - partial: ../../_partials/acolhimento-base.yaml
+    slug: rota-da-seguranca
+    title: Rota da Segurança
+    prompt: Leia os avisos e escolha o procedimento correto para manter todos seguros.
+    summary: Quiz sobre regras de segurança e circulação pelos ambientes.
+    type: QUIZ
+    difficulty: PRATICAR
+    bncc:
+      code: EF01CI04
+      habilidades:
+        - EF01CI04
+    learningObjectives:
+      - Reconhecer sinais e orientações de segurança nos ambientes escolares.
+      - Aplicar combinados que garantem circulação segura pelos espaços.
+    description: Rota da Segurança reforça o cuidado com escadas, corredores e entradas utilizadas diariamente.
+    metadata:
+      categoria: Proteção coletiva
+      duracaoMinutos: 10
+      tempoEstimadoMinutos: 10
+      habilidades:
+        - EF01CI04
+      assetSlug: cn-animal-boto
+      assetUsage: O boto lembra a importância de atenção e orientação em deslocamentos coletivos.
+      familiaEngajamento: Peça às famílias que discutam rotas seguras para chegar à escola e regras de travessia.
+      focoInvestigativo: segurança e circulação responsável na escola
+      modoCooperativo: false
+      tagsInterdisciplinares:
+        - Matemática
+        - Geografia
+      interactiveSlug: quiz-rota-da-seguranca
+      habilidadesSecundarias:
+        - EF01CI02
+      mapaSeguranca: Mapa com rotas de saída e pontos de encontro.
+    accessibility:
+      hints:
+        - audience: ESTUDANTE
+          text: >-
+            Passo 1: Observe o desafio com calma e use a leitura em voz alta para investigar
+            segurança e circulação responsável na escola.
+        - audience: ESTUDANTE
+          text: >-
+            Passo 2: Faça pequenas pausas para perceber os detalhes e compartilhe o que notou sobre
+            segurança e circulação responsável na escola.
+        - audience: EDUCADOR
+          text: >-
+            Ofereça materiais táteis, áudio descrição e tempo extra para apoiar a exploração de
+            segurança e circulação responsável na escola.
+        - audience: FAMILIA
+          text: Peça às famílias que discutam rotas seguras para chegar à escola e regras de travessia.
+      feedback:
+        success: >-
+          Excelente investigação! Você analisou segurança e circulação responsável na escola com
+          olhar científico.
+        encouragement: >-
+          Tudo bem errar no caminho. Use recursos visuais, gestos e sons para revisar as pistas
+          antes de tentar novamente.
+        retry: >-
+          Faça uma pausa, respire fundo e retome observando novos detalhes sobre segurança e
+          circulação responsável na escola.
+        accessibility: >-
+          Garanta apoios multimodais: contraste de cores, narração em voz alta, audiodescrição e
+          tempo estendido para quem precisar.
+      assets:
+        - slug: cn-animal-boto
+          type: IMAGEM
+          title: Boto cor-de-rosa investigativo
+          description: O boto lembra a importância de atenção e orientação em deslocamentos coletivos.
+      alternatives:
+        - title: MATERIAIS CONCRETOS
+          description: >-
+            Monte estações com objetos reais para reforçar segurança e circulação responsável na
+            escola.
+          steps:
+            - Disponibilize cartões com pictogramas e legendas em caixa alta.
+            - Use texturas, aromas ou sons reais como apoio sensorial.
+      audioCue:
+        title: SINAL DE PAUSA
+        description: Utilize um sino suave ou chocalho para avisar a troca de etapa ou necessidade de pausa.
+        steps:
+          - Combine com a turma o significado do sinal antes de iniciar.
+          - Ofereça tempo suficiente após o sinal para reorganização corporal.
+      motorSupport:
+        - title: APOIO MOTOR
+          description: >-
+            Disponibilize apoios para toque, ponteiras, suportes de tablet e mesas acessíveis
+            durante a interação.
+          steps:
+            - Permita que duplas se alternem no controle do dispositivo.
+            - Ofereça apoio postural e ajustes de altura quando necessário.
+    prerequisites:
+      - type: SKILL
+        reference: EF01CI04
+        description: Relembrar passeios pela escola destacando cuidados com os ambientes compartilhados.
+    interactive:
+      slug: quiz-rota-da-seguranca
+      title: Rota da Segurança — Quiz
+      type: QUIZ
+      bnccDescription: >-
+        Comparar diferentes ambientes, modos de convivência e cuidados com a natureza na comunidade
+        escolar.
+      estimatedTimeMinutes: 10
+      instructions:
+        - Leia ou escute cada pergunta com atenção.
+        - Use as setas ou toque nas alternativas antes de confirmar.
+        - Compartilhe como chegou à resposta com a turma.
+      objectives:
+        - Reconhecer sinais e orientações de segurança nos ambientes escolares.
+        - Aplicar combinados que garantem circulação segura pelos espaços.
+      scoring:
+        correct: 10
+        incorrect: 0
+      adaptive:
+        increaseAfter: 2
+        decreaseAfter: 1
+      questions:
+        - id: rota-da-seguranca-q1
+          type: multiple-choice
+          prompt: Ao descer a escada com a turma, qual atitude é a mais segura?
+          hint: Pense no que evita quedas e empurrões.
+          options:
+            - id: rota-da-seguranca-q1-1
+              text: Formar fila, segurar no corrimão e descer com calma
+              isCorrect: true
+              feedback: Excelente! Assim evitamos acidentes e mantemos o ritmo.
+            - id: rota-da-seguranca-q1-2
+              text: Descer correndo para chegar primeiro
+              isCorrect: false
+              feedback: Correr aumenta o risco de quedas.
+            - id: rota-da-seguranca-q1-3
+              text: Descer pulando dois degraus por vez
+              isCorrect: false
+              feedback: Pular degraus pode causar acidentes.
+        - id: rota-da-seguranca-q2
+          type: true-false
+          prompt: Em situações de evacuação, devemos seguir o caminho combinado sem levar mochilas?
+          hint: Lembre-se dos exercícios de evacuação.
+          statement: Seguir a rota combinada sem carregar mochilas ajuda a sair com segurança.
+          answer: true
+          feedback:
+            'true': Correto! Assim a saída fica rápida e organizada.
+            'false': 'Reflita: mochilas podem atrapalhar na hora de sair com segurança.'
+      accessibility:
+        hints:
+          - audience: ESTUDANTE
+            text: >-
+              Use TAB, setas ou toques para navegar pelas ações digitais ligadas a segurança e
+              circulação responsável na escola.
+          - audience: EDUCADOR
+            text: Ative a leitura em voz alta e mantenha instruções visuais em contraste elevado.
+        feedback:
+          success: >-
+            Ótimo trabalho! As escolhas mostram entendimento sobre segurança e circulação
+            responsável na escola.
+          encouragement: >-
+            Caso se confunda, revise com a equipe, utilize o botão de repetir instruções e retome
+            com calma.
+          accessibility: >-
+            Disponibilize controle adaptado, tempo flexível e apoio auditivo individual sempre que
+            necessário.
+        assets:
+          - slug: cn-animal-boto
+            type: IMAGEM
+            title: Boto cor-de-rosa investigativo
+  - partial: ../../_partials/acolhimento-base.yaml
+    slug: uso-dos-espacos
+    title: Uso dos Espaços
+    prompt: Relacione cada ambiente da escola às atividades que acontecem nele.
+    summary: Quebra-cabeça sobre funções dos espaços escolares.
+    type: PUZZLE
+    difficulty: INICIAR
+    bncc:
+      code: EF01CI04
+      habilidades:
+        - EF01CI04
+    learningObjectives:
+      - Relacionar ambientes escolares às atividades apropriadas.
+      - Discutir cuidados específicos para manter cada espaço em bom estado.
+    description: Uso dos Espaços reforça a compreensão das funções de cada ambiente e como preservá-los.
+    metadata:
+      categoria: Organização espacial
+      duracaoMinutos: 11
+      tempoEstimadoMinutos: 11
+      habilidades:
+        - EF01CI04
+      assetSlug: cn-material-lupa
+      assetUsage: A lupa ajuda a observar detalhes das placas e mobiliários em cada ambiente.
+      familiaEngajamento: >-
+        Incentive as famílias a discutir como organizam diferentes espaços de casa para cada
+        atividade.
+      focoInvestigativo: funções e normas em ambientes escolares
+      modoCooperativo: true
+      tagsInterdisciplinares:
+        - Língua Portuguesa
+        - Arte
+      interactiveSlug: puzzle-uso-dos-espacos
+      habilidadesSecundarias:
+        - EF01CI02
+      legendas: Cartões ilustrados com as atividades de cada espaço.
+    accessibility:
+      hints:
+        - audience: ESTUDANTE
+          text: >-
+            Passo 1: Observe o desafio com calma e use a leitura em voz alta para investigar funções
+            e normas em ambientes escolares.
+        - audience: ESTUDANTE
+          text: >-
+            Passo 2: Faça pequenas pausas para perceber os detalhes e compartilhe o que notou sobre
+            funções e normas em ambientes escolares.
+        - audience: EDUCADOR
+          text: >-
+            Ofereça materiais táteis, áudio descrição e tempo extra para apoiar a exploração de
+            funções e normas em ambientes escolares.
+        - audience: FAMILIA
+          text: >-
+            Incentive as famílias a discutir como organizam diferentes espaços de casa para cada
+            atividade.
+      feedback:
+        success: >-
+          Excelente investigação! Você analisou funções e normas em ambientes escolares com olhar
+          científico.
+        encouragement: >-
+          Tudo bem errar no caminho. Use recursos visuais, gestos e sons para revisar as pistas
+          antes de tentar novamente.
+        retry: >-
+          Faça uma pausa, respire fundo e retome observando novos detalhes sobre funções e normas em
+          ambientes escolares.
+        accessibility: >-
+          Garanta apoios multimodais: contraste de cores, narração em voz alta, audiodescrição e
+          tempo estendido para quem precisar.
+      assets:
+        - slug: cn-material-lupa
+          type: IMAGEM
+          title: Lupa azul para observação
+          description: A lupa ajuda a observar detalhes das placas e mobiliários em cada ambiente.
+      alternatives:
+        - title: MATERIAIS CONCRETOS
+          description: Monte estações com objetos reais para reforçar funções e normas em ambientes escolares.
+          steps:
+            - Disponibilize cartões com pictogramas e legendas em caixa alta.
+            - Use texturas, aromas ou sons reais como apoio sensorial.
+      audioCue:
+        title: SINAL DE PAUSA
+        description: Utilize um sino suave ou chocalho para avisar a troca de etapa ou necessidade de pausa.
+        steps:
+          - Combine com a turma o significado do sinal antes de iniciar.
+          - Ofereça tempo suficiente após o sinal para reorganização corporal.
+      motorSupport:
+        - title: APOIO MOTOR
+          description: >-
+            Disponibilize apoios para toque, ponteiras, suportes de tablet e mesas acessíveis
+            durante a interação.
+          steps:
+            - Permita que duplas se alternem no controle do dispositivo.
+            - Ofereça apoio postural e ajustes de altura quando necessário.
+    prerequisites:
+      - type: SKILL
+        reference: EF01CI04
+        description: Relembrar passeios pela escola destacando cuidados com os ambientes compartilhados.
+    interactive:
+      slug: puzzle-uso-dos-espacos
+      title: Uso dos Espaços — Quebra-cabeça
+      type: PUZZLE
+      bnccDescription: >-
+        Comparar diferentes ambientes, modos de convivência e cuidados com a natureza na comunidade
+        escolar.
+      estimatedTimeMinutes: 11
+      instructions:
+        - Observe cada cartão do quebra-cabeça.
+        - Arraste ou selecione a combinação que faça sentido.
+        - Explique para o grupo qual pista levou à associação.
+      objectives:
+        - Relacionar ambientes escolares às atividades apropriadas.
+        - Discutir cuidados específicos para manter cada espaço em bom estado.
+      puzzle:
+        mode: matching
+        successFeedback: Perfeito! Cada ambiente recebeu a atividade correspondente.
+        errorFeedback: Analise novamente e pense em qual espaço melhor acolhe cada atividade.
+        pairs:
+          - id: uso-dos-espacos-pair-1
+            prompt: Laboratório de ciências
+            match: Experimentar e observar com equipamentos
+            hint: Qual espaço é ideal para experimentos?
+            feedback: O laboratório tem materiais específicos para observação.
+          - id: uso-dos-espacos-pair-2
+            prompt: Biblioteca
+            match: Ler, estudar em silêncio e emprestar livros
+            hint: Pense em um ambiente silencioso.
+            feedback: A biblioteca acolhe leituras e pesquisas silenciosas.
+          - id: uso-dos-espacos-pair-3
+            prompt: Quadra
+            match: Praticar esportes e jogos corporais
+            hint: Onde acontecem as aulas de educação física?
+            feedback: A quadra recebe atividades corporais e jogos.
+          - id: uso-dos-espacos-pair-4
+            prompt: Sala multimídia
+            match: Assistir vídeos educativos e usar tecnologia
+            hint: Qual espaço possui projetores e computadores?
+            feedback: A sala multimídia integra tecnologia às aulas.
+      accessibility:
+        hints:
+          - audience: ESTUDANTE
+            text: >-
+              Use TAB, setas ou toques para navegar pelas ações digitais ligadas a funções e normas
+              em ambientes escolares.
+          - audience: EDUCADOR
+            text: Ative a leitura em voz alta e mantenha instruções visuais em contraste elevado.
+        feedback:
+          success: >-
+            Ótimo trabalho! As escolhas mostram entendimento sobre funções e normas em ambientes
+            escolares.
+          encouragement: >-
+            Caso se confunda, revise com a equipe, utilize o botão de repetir instruções e retome
+            com calma.
+          accessibility: >-
+            Disponibilize controle adaptado, tempo flexível e apoio auditivo individual sempre que
+            necessário.
+        assets:
+          - slug: cn-material-lupa
+            type: IMAGEM
+            title: Lupa azul para observação
+  - partial: ../../_partials/acolhimento-base.yaml
+    slug: rotinas-compartilhadas
+    title: Rotinas Compartilhadas
+    prompt: Associe cada momento da rotina escolar ao combinado correspondente.
+    summary: Quebra-cabeça sobre regras e combinados ao longo do dia.
+    type: PUZZLE
+    difficulty: PRATICAR
+    bncc:
+      code: EF01CI04
+      habilidades:
+        - EF01CI04
+    learningObjectives:
+      - Reconhecer combinados que organizam a rotina escolar.
+      - Explicar por que cada combinado favorece a convivência.
+    description: Rotinas Compartilhadas revela a importância de acordos coletivos para cada momento do dia.
+    metadata:
+      categoria: Gestão da rotina
+      duracaoMinutos: 10
+      tempoEstimadoMinutos: 10
+      habilidades:
+        - EF01CI04
+      assetSlug: cn-natureza-floresta
+      assetUsage: A floresta inspira equilíbrio e colaboração entre diferentes partes do dia.
+      familiaEngajamento: >-
+        Peça às famílias que construam um painel com a rotina diária em casa destacando
+        responsabilidades.
+      focoInvestigativo: organização do tempo e combinados coletivos
+      modoCooperativo: true
+      tagsInterdisciplinares:
+        - Matemática
+        - Língua Portuguesa
+      interactiveSlug: puzzle-rotinas-compartilhadas
+      habilidadesSecundarias:
+        - EF01CI02
+      agendaVisual: Agenda visual compartilhada com ícones.
+    accessibility:
+      hints:
+        - audience: ESTUDANTE
+          text: >-
+            Passo 1: Observe o desafio com calma e use a leitura em voz alta para investigar
+            organização do tempo e combinados coletivos.
+        - audience: ESTUDANTE
+          text: >-
+            Passo 2: Faça pequenas pausas para perceber os detalhes e compartilhe o que notou sobre
+            organização do tempo e combinados coletivos.
+        - audience: EDUCADOR
+          text: >-
+            Ofereça materiais táteis, áudio descrição e tempo extra para apoiar a exploração de
+            organização do tempo e combinados coletivos.
+        - audience: FAMILIA
+          text: >-
+            Peça às famílias que construam um painel com a rotina diária em casa destacando
+            responsabilidades.
+      feedback:
+        success: >-
+          Excelente investigação! Você analisou organização do tempo e combinados coletivos com
+          olhar científico.
+        encouragement: >-
+          Tudo bem errar no caminho. Use recursos visuais, gestos e sons para revisar as pistas
+          antes de tentar novamente.
+        retry: >-
+          Faça uma pausa, respire fundo e retome observando novos detalhes sobre organização do
+          tempo e combinados coletivos.
+        accessibility: >-
+          Garanta apoios multimodais: contraste de cores, narração em voz alta, audiodescrição e
+          tempo estendido para quem precisar.
+      assets:
+        - slug: cn-natureza-floresta
+          type: IMAGEM
+          title: Floresta ensolarada
+          description: A floresta inspira equilíbrio e colaboração entre diferentes partes do dia.
+      alternatives:
+        - title: MATERIAIS CONCRETOS
+          description: >-
+            Monte estações com objetos reais para reforçar organização do tempo e combinados
+            coletivos.
+          steps:
+            - Disponibilize cartões com pictogramas e legendas em caixa alta.
+            - Use texturas, aromas ou sons reais como apoio sensorial.
+      audioCue:
+        title: SINAL DE PAUSA
+        description: Utilize um sino suave ou chocalho para avisar a troca de etapa ou necessidade de pausa.
+        steps:
+          - Combine com a turma o significado do sinal antes de iniciar.
+          - Ofereça tempo suficiente após o sinal para reorganização corporal.
+      motorSupport:
+        - title: APOIO MOTOR
+          description: >-
+            Disponibilize apoios para toque, ponteiras, suportes de tablet e mesas acessíveis
+            durante a interação.
+          steps:
+            - Permita que duplas se alternem no controle do dispositivo.
+            - Ofereça apoio postural e ajustes de altura quando necessário.
+    prerequisites:
+      - type: SKILL
+        reference: EF01CI04
+        description: Relembrar passeios pela escola destacando cuidados com os ambientes compartilhados.
+    interactive:
+      slug: puzzle-rotinas-compartilhadas
+      title: Rotinas Compartilhadas — Quebra-cabeça
+      type: PUZZLE
+      bnccDescription: >-
+        Comparar diferentes ambientes, modos de convivência e cuidados com a natureza na comunidade
+        escolar.
+      estimatedTimeMinutes: 10
+      instructions:
+        - Observe cada cartão do quebra-cabeça.
+        - Arraste ou selecione a combinação que faça sentido.
+        - Explique para o grupo qual pista levou à associação.
+      objectives:
+        - Reconhecer combinados que organizam a rotina escolar.
+        - Explicar por que cada combinado favorece a convivência.
+      puzzle:
+        mode: matching
+        successFeedback: Ótimo! A rotina ficou organizada com os combinados corretos.
+        errorFeedback: Voltem aos horários e combinem novamente as ações.
+        pairs:
+          - id: rotinas-compartilhadas-pair-1
+            prompt: Entrada da manhã
+            match: Cumprimentar colegas e guardar mochilas no local combinado
+            hint: O que fazemos antes da aula começar?
+            feedback: Guardar mochilas e cumprimentar organiza o início do dia.
+          - id: rotinas-compartilhadas-pair-2
+            prompt: Hora do lanche
+            match: Lavar as mãos e sentar-se com calma no refeitório
+            hint: Quais cuidados antecedem a refeição?
+            feedback: Higiene e calma garantem lanche saudável.
+          - id: rotinas-compartilhadas-pair-3
+            prompt: Transição para o parque
+            match: Formar fila e ouvir a orientação do educador
+            hint: Como garantimos segurança ao sair?
+            feedback: Fila organizada facilita deslocamentos seguros.
+          - id: rotinas-compartilhadas-pair-4
+            prompt: Final da aula
+            match: Revisar o material e deixar a sala arrumada
+            hint: O que precisamos fazer antes de ir embora?
+            feedback: Sala organizada garante um recomeço tranquilo no dia seguinte.
+      accessibility:
+        hints:
+          - audience: ESTUDANTE
+            text: >-
+              Use TAB, setas ou toques para navegar pelas ações digitais ligadas a organização do
+              tempo e combinados coletivos.
+          - audience: EDUCADOR
+            text: Ative a leitura em voz alta e mantenha instruções visuais em contraste elevado.
+        feedback:
+          success: >-
+            Ótimo trabalho! As escolhas mostram entendimento sobre organização do tempo e combinados
+            coletivos.
+          encouragement: >-
+            Caso se confunda, revise com a equipe, utilize o botão de repetir instruções e retome
+            com calma.
+          accessibility: >-
+            Disponibilize controle adaptado, tempo flexível e apoio auditivo individual sempre que
+            necessário.
+        assets:
+          - slug: cn-natureza-floresta
+            type: IMAGEM
+            title: Floresta ensolarada
+  - partial: ../../_partials/acolhimento-base.yaml
+    slug: eco-gestos
+    title: Eco Gestos
+    prompt: Relacione cada situação ambiental ao gesto responsável correspondente.
+    summary: Quebra-cabeça sobre sustentabilidade nos ambientes da escola.
+    type: PUZZLE
+    difficulty: PRATICAR
+    bncc:
+      code: EF01CI04
+      habilidades:
+        - EF01CI04
+    learningObjectives:
+      - Selecionar atitudes sustentáveis nos ambientes escolares.
+      - Discussão sobre consequências positivas dessas atitudes.
+    description: Eco Gestos reúne situações que estimulam o uso consciente da água, energia e materiais.
+    metadata:
+      categoria: Cuidado ambiental
+      duracaoMinutos: 10
+      tempoEstimadoMinutos: 10
+      habilidades:
+        - EF01CI04
+      assetSlug: cn-natureza-rio
+      assetUsage: O rio reforça a importância de preservar recursos naturais.
+      familiaEngajamento: Incentive as famílias a separar resíduos em casa e compartilhar práticas sustentáveis.
+      focoInvestigativo: sustentabilidade e uso consciente dos espaços
+      modoCooperativo: true
+      tagsInterdisciplinares:
+        - Ciências
+        - Matemática
+      interactiveSlug: puzzle-eco-gestos
+      habilidadesSecundarias:
+        - EF01CI03
+      campanha: Campanha de economia de recursos na escola.
+    accessibility:
+      hints:
+        - audience: ESTUDANTE
+          text: >-
+            Passo 1: Observe o desafio com calma e use a leitura em voz alta para investigar
+            sustentabilidade e uso consciente dos espaços.
+        - audience: ESTUDANTE
+          text: >-
+            Passo 2: Faça pequenas pausas para perceber os detalhes e compartilhe o que notou sobre
+            sustentabilidade e uso consciente dos espaços.
+        - audience: EDUCADOR
+          text: >-
+            Ofereça materiais táteis, áudio descrição e tempo extra para apoiar a exploração de
+            sustentabilidade e uso consciente dos espaços.
+        - audience: FAMILIA
+          text: Incentive as famílias a separar resíduos em casa e compartilhar práticas sustentáveis.
+      feedback:
+        success: >-
+          Excelente investigação! Você analisou sustentabilidade e uso consciente dos espaços com
+          olhar científico.
+        encouragement: >-
+          Tudo bem errar no caminho. Use recursos visuais, gestos e sons para revisar as pistas
+          antes de tentar novamente.
+        retry: >-
+          Faça uma pausa, respire fundo e retome observando novos detalhes sobre sustentabilidade e
+          uso consciente dos espaços.
+        accessibility: >-
+          Garanta apoios multimodais: contraste de cores, narração em voz alta, audiodescrição e
+          tempo estendido para quem precisar.
+      assets:
+        - slug: cn-natureza-rio
+          type: IMAGEM
+          title: Rio sinuoso e calmo
+          description: O rio reforça a importância de preservar recursos naturais.
+      alternatives:
+        - title: MATERIAIS CONCRETOS
+          description: >-
+            Monte estações com objetos reais para reforçar sustentabilidade e uso consciente dos
+            espaços.
+          steps:
+            - Disponibilize cartões com pictogramas e legendas em caixa alta.
+            - Use texturas, aromas ou sons reais como apoio sensorial.
+      audioCue:
+        title: SINAL DE PAUSA
+        description: Utilize um sino suave ou chocalho para avisar a troca de etapa ou necessidade de pausa.
+        steps:
+          - Combine com a turma o significado do sinal antes de iniciar.
+          - Ofereça tempo suficiente após o sinal para reorganização corporal.
+      motorSupport:
+        - title: APOIO MOTOR
+          description: >-
+            Disponibilize apoios para toque, ponteiras, suportes de tablet e mesas acessíveis
+            durante a interação.
+          steps:
+            - Permita que duplas se alternem no controle do dispositivo.
+            - Ofereça apoio postural e ajustes de altura quando necessário.
+    prerequisites:
+      - type: SKILL
+        reference: EF01CI04
+        description: Relembrar passeios pela escola destacando cuidados com os ambientes compartilhados.
+    interactive:
+      slug: puzzle-eco-gestos
+      title: Eco Gestos — Quebra-cabeça
+      type: PUZZLE
+      bnccDescription: >-
+        Comparar diferentes ambientes, modos de convivência e cuidados com a natureza na comunidade
+        escolar.
+      estimatedTimeMinutes: 10
+      instructions:
+        - Observe cada cartão do quebra-cabeça.
+        - Arraste ou selecione a combinação que faça sentido.
+        - Explique para o grupo qual pista levou à associação.
+      objectives:
+        - Selecionar atitudes sustentáveis nos ambientes escolares.
+        - Discussão sobre consequências positivas dessas atitudes.
+      puzzle:
+        mode: matching
+        successFeedback: Excelente! Os gestos sustentáveis foram escolhidos corretamente.
+        errorFeedback: Releiam as situações e avaliem qual gesto faz mais sentido.
+        pairs:
+          - id: eco-gestos-pair-1
+            prompt: Luzes acesas em sala vazia
+            match: Apagar as lâmpadas ao sair
+            hint: Pense em economizar energia.
+            feedback: Apagar as luzes evita desperdício de energia.
+          - id: eco-gestos-pair-2
+            prompt: Sobrou papel usado apenas de um lado
+            match: Reutilizar como rascunho ou dobradura
+            hint: Como aproveitar o papel restante?
+            feedback: Reutilizar otimiza o uso do papel.
+          - id: eco-gestos-pair-3
+            prompt: Garrafas plásticas após o lanche
+            match: Descartar na lixeira de recicláveis
+            hint: Qual destino correto para reciclagem?
+            feedback: Reciclar garrafas reduz resíduos.
+          - id: eco-gestos-pair-4
+            prompt: Torneira pingando após lavar as mãos
+            match: Fechar bem a torneira e avisar a equipe se necessário
+            hint: Como evitar desperdício de água?
+            feedback: Fechar e avisar previne desperdícios.
+      accessibility:
+        hints:
+          - audience: ESTUDANTE
+            text: >-
+              Use TAB, setas ou toques para navegar pelas ações digitais ligadas a sustentabilidade
+              e uso consciente dos espaços.
+          - audience: EDUCADOR
+            text: Ative a leitura em voz alta e mantenha instruções visuais em contraste elevado.
+        feedback:
+          success: >-
+            Ótimo trabalho! As escolhas mostram entendimento sobre sustentabilidade e uso consciente
+            dos espaços.
+          encouragement: >-
+            Caso se confunda, revise com a equipe, utilize o botão de repetir instruções e retome
+            com calma.
+          accessibility: >-
+            Disponibilize controle adaptado, tempo flexível e apoio auditivo individual sempre que
+            necessário.
+        assets:
+          - slug: cn-natureza-rio
+            type: IMAGEM
+            title: Rio sinuoso e calmo
+  - partial: ../../_partials/acolhimento-base.yaml
+    slug: sinais-da-escola
+    title: Sinais da Escola
+    prompt: Associe cada sinal ou pictograma à orientação que ele comunica.
+    summary: Quebra-cabeça sobre leitura de sinais e pictogramas escolares.
+    type: PUZZLE
+    difficulty: DOMINAR
+    bncc:
+      code: EF01CI04
+      habilidades:
+        - EF01CI04
+    learningObjectives:
+      - Interpretar sinais visuais presentes nos ambientes escolares.
+      - Explicar por que seguir orientações visuais garante segurança e respeito.
+    description: >-
+      Sinais da Escola desenvolve a leitura de pictogramas que orientam a circulação e os cuidados
+      coletivos.
+    metadata:
+      categoria: Comunicação visual
+      duracaoMinutos: 12
+      tempoEstimadoMinutos: 12
+      habilidades:
+        - EF01CI04
+      assetSlug: cn-material-lupa
+      assetUsage: A lupa apoia a leitura dos símbolos e detalhes dos pictogramas.
+      familiaEngajamento: Peça às famílias que observem sinais na vizinhança e conversem sobre seus significados.
+      focoInvestigativo: interpretação de sinais visuais nos ambientes
+      modoCooperativo: true
+      tagsInterdisciplinares:
+        - Língua Portuguesa
+        - Arte
+      interactiveSlug: puzzle-sinais-da-escola
+      habilidadesSecundarias:
+        - EF01CI02
+      galeriaSinais: Coleção de sinais produzidos pelos estudantes.
+    accessibility:
+      hints:
+        - audience: ESTUDANTE
+          text: >-
+            Passo 1: Observe o desafio com calma e use a leitura em voz alta para investigar
+            interpretação de sinais visuais nos ambientes.
+        - audience: ESTUDANTE
+          text: >-
+            Passo 2: Faça pequenas pausas para perceber os detalhes e compartilhe o que notou sobre
+            interpretação de sinais visuais nos ambientes.
+        - audience: EDUCADOR
+          text: >-
+            Ofereça materiais táteis, áudio descrição e tempo extra para apoiar a exploração de
+            interpretação de sinais visuais nos ambientes.
+        - audience: FAMILIA
+          text: Peça às famílias que observem sinais na vizinhança e conversem sobre seus significados.
+      feedback:
+        success: >-
+          Excelente investigação! Você analisou interpretação de sinais visuais nos ambientes com
+          olhar científico.
+        encouragement: >-
+          Tudo bem errar no caminho. Use recursos visuais, gestos e sons para revisar as pistas
+          antes de tentar novamente.
+        retry: >-
+          Faça uma pausa, respire fundo e retome observando novos detalhes sobre interpretação de
+          sinais visuais nos ambientes.
+        accessibility: >-
+          Garanta apoios multimodais: contraste de cores, narração em voz alta, audiodescrição e
+          tempo estendido para quem precisar.
+      assets:
+        - slug: cn-material-lupa
+          type: IMAGEM
+          title: Lupa azul para observação
+          description: A lupa apoia a leitura dos símbolos e detalhes dos pictogramas.
+      alternatives:
+        - title: MATERIAIS CONCRETOS
+          description: >-
+            Monte estações com objetos reais para reforçar interpretação de sinais visuais nos
+            ambientes.
+          steps:
+            - Disponibilize cartões com pictogramas e legendas em caixa alta.
+            - Use texturas, aromas ou sons reais como apoio sensorial.
+      audioCue:
+        title: SINAL DE PAUSA
+        description: Utilize um sino suave ou chocalho para avisar a troca de etapa ou necessidade de pausa.
+        steps:
+          - Combine com a turma o significado do sinal antes de iniciar.
+          - Ofereça tempo suficiente após o sinal para reorganização corporal.
+      motorSupport:
+        - title: APOIO MOTOR
+          description: >-
+            Disponibilize apoios para toque, ponteiras, suportes de tablet e mesas acessíveis
+            durante a interação.
+          steps:
+            - Permita que duplas se alternem no controle do dispositivo.
+            - Ofereça apoio postural e ajustes de altura quando necessário.
+    prerequisites:
+      - type: SKILL
+        reference: EF01CI04
+        description: Relembrar passeios pela escola destacando cuidados com os ambientes compartilhados.
+    interactive:
+      slug: puzzle-sinais-da-escola
+      title: Sinais da Escola — Quebra-cabeça
+      type: PUZZLE
+      bnccDescription: >-
+        Comparar diferentes ambientes, modos de convivência e cuidados com a natureza na comunidade
+        escolar.
+      estimatedTimeMinutes: 12
+      instructions:
+        - Observe cada cartão do quebra-cabeça.
+        - Arraste ou selecione a combinação que faça sentido.
+        - Explique para o grupo qual pista levou à associação.
+      objectives:
+        - Interpretar sinais visuais presentes nos ambientes escolares.
+        - Explicar por que seguir orientações visuais garante segurança e respeito.
+      puzzle:
+        mode: matching
+        successFeedback: Muito bom! Os sinais foram interpretados corretamente.
+        errorFeedback: Repare nos detalhes e releiam o que cada símbolo comunica.
+        pairs:
+          - id: sinais-da-escola-pair-1
+            prompt: Símbolo de mãos com espuma
+            match: Lave as mãos neste local
+            hint: Veja se há água ou sabão no símbolo.
+            feedback: Esse sinal indica ponto de higienização.
+          - id: sinais-da-escola-pair-2
+            prompt: Ícone de fone de ouvido com X
+            match: Utilizar voz baixa ou silêncio
+            hint: Onde precisamos de silêncio?
+            feedback: Esse sinal lembra de falar baixo ou manter silêncio.
+          - id: sinais-da-escola-pair-3
+            prompt: Desenho de lixeira colorida
+            match: Separe resíduos conforme a cor indicada
+            hint: Observe as cores da reciclagem.
+            feedback: Cores ajudam a identificar o tipo de resíduo.
+          - id: sinais-da-escola-pair-4
+            prompt: Figura de pessoa subindo escada com seta
+            match: Circular pelo lado direito ao subir
+            hint: Pense na direção segura na escada.
+            feedback: A seta indica a direção de circulação segura.
+      accessibility:
+        hints:
+          - audience: ESTUDANTE
+            text: >-
+              Use TAB, setas ou toques para navegar pelas ações digitais ligadas a interpretação de
+              sinais visuais nos ambientes.
+          - audience: EDUCADOR
+            text: Ative a leitura em voz alta e mantenha instruções visuais em contraste elevado.
+        feedback:
+          success: >-
+            Ótimo trabalho! As escolhas mostram entendimento sobre interpretação de sinais visuais
+            nos ambientes.
+          encouragement: >-
+            Caso se confunda, revise com a equipe, utilize o botão de repetir instruções e retome
+            com calma.
+          accessibility: >-
+            Disponibilize controle adaptado, tempo flexível e apoio auditivo individual sempre que
+            necessário.
+        assets:
+          - slug: cn-material-lupa
+            type: IMAGEM
+            title: Lupa azul para observação
+  - partial: ../../_partials/acolhimento-base.yaml
+    slug: tour-colaborativo
+    title: Tour Colaborativo
+    prompt: Planeje um tour para apresentar os espaços da escola aos novos colegas.
+    summary: Mini-jogo de planejamento de roteiro pelos ambientes escolares.
+    type: GAME
+    difficulty: INICIAR
+    bncc:
+      code: EF01CI04
+      habilidades:
+        - EF01CI04
+    learningObjectives:
+      - Organizar um roteiro que apresente os principais espaços da escola.
+      - Explicar regras e combinados de convivência enquanto percorre os ambientes.
+    description: Tour Colaborativo incentiva a turma a planejar percursos acolhedores e informativos.
+    metadata:
+      categoria: Exploração guiada
+      duracaoMinutos: 12
+      tempoEstimadoMinutos: 12
+      habilidades:
+        - EF01CI04
+      assetSlug: cn-material-lupa
+      assetUsage: A lupa incentiva observar detalhes de cada espaço durante o tour.
+      familiaEngajamento: >-
+        Convide as famílias a fazer um tour pela escola durante reuniões, orientando as crianças a
+        explicar cada espaço.
+      focoInvestigativo: orientação espacial e acolhimento
+      modoCooperativo: true
+      tagsInterdisciplinares:
+        - Língua Portuguesa
+        - Geografia
+      interactiveSlug: game-tour-colaborativo
+      habilidadesSecundarias:
+        - EF01CI01
+      roteiro: Checklist de espaços para visitar durante o tour.
+    accessibility:
+      hints:
+        - audience: ESTUDANTE
+          text: >-
+            Passo 1: Observe o desafio com calma e use a leitura em voz alta para investigar
+            orientação espacial e acolhimento.
+        - audience: ESTUDANTE
+          text: >-
+            Passo 2: Faça pequenas pausas para perceber os detalhes e compartilhe o que notou sobre
+            orientação espacial e acolhimento.
+        - audience: EDUCADOR
+          text: >-
+            Ofereça materiais táteis, áudio descrição e tempo extra para apoiar a exploração de
+            orientação espacial e acolhimento.
+        - audience: FAMILIA
+          text: >-
+            Convide as famílias a fazer um tour pela escola durante reuniões, orientando as crianças
+            a explicar cada espaço.
+      feedback:
+        success: >-
+          Excelente investigação! Você analisou orientação espacial e acolhimento com olhar
+          científico.
+        encouragement: >-
+          Tudo bem errar no caminho. Use recursos visuais, gestos e sons para revisar as pistas
+          antes de tentar novamente.
+        retry: >-
+          Faça uma pausa, respire fundo e retome observando novos detalhes sobre orientação espacial
+          e acolhimento.
+        accessibility: >-
+          Garanta apoios multimodais: contraste de cores, narração em voz alta, audiodescrição e
+          tempo estendido para quem precisar.
+      assets:
+        - slug: cn-material-lupa
+          type: IMAGEM
+          title: Lupa azul para observação
+          description: A lupa incentiva observar detalhes de cada espaço durante o tour.
+      alternatives:
+        - title: MATERIAIS CONCRETOS
+          description: Monte estações com objetos reais para reforçar orientação espacial e acolhimento.
+          steps:
+            - Disponibilize cartões com pictogramas e legendas em caixa alta.
+            - Use texturas, aromas ou sons reais como apoio sensorial.
+      audioCue:
+        title: SINAL DE PAUSA
+        description: Utilize um sino suave ou chocalho para avisar a troca de etapa ou necessidade de pausa.
+        steps:
+          - Combine com a turma o significado do sinal antes de iniciar.
+          - Ofereça tempo suficiente após o sinal para reorganização corporal.
+      motorSupport:
+        - title: APOIO MOTOR
+          description: >-
+            Disponibilize apoios para toque, ponteiras, suportes de tablet e mesas acessíveis
+            durante a interação.
+          steps:
+            - Permita que duplas se alternem no controle do dispositivo.
+            - Ofereça apoio postural e ajustes de altura quando necessário.
+    prerequisites:
+      - type: SKILL
+        reference: EF01CI04
+        description: Relembrar passeios pela escola destacando cuidados com os ambientes compartilhados.
+    interactive:
+      slug: game-tour-colaborativo
+      title: Tour Colaborativo — Mini-jogo
+      type: GAME
+      bnccDescription: >-
+        Comparar diferentes ambientes, modos de convivência e cuidados com a natureza na comunidade
+        escolar.
+      estimatedTimeMinutes: 12
+      instructions:
+        - Leia ou escute a missão de cada fase.
+        - Use as setas, toques ou cliques para registrar a resposta.
+        - Converse com o grupo sobre outras estratégias possíveis.
+      objectives:
+        - Organizar um roteiro que apresente os principais espaços da escola.
+        - Explicar regras e combinados de convivência enquanto percorre os ambientes.
+      game:
+        mode: math-challenge
+        timeLimitSeconds: 80
+        lives: 3
+        victoryMessage: Tour concluído! Novos colegas conheceram a escola com acolhimento.
+        gameOverMessage: Reorganize o roteiro e tente novamente destacando novos espaços.
+        levels:
+          - id: tour-colaborativo-level-1
+            challenge: Qual espaço apresentar primeiro para guardar materiais?
+            answer: A sala da turma com armários identificados
+            hint: Comece pelo local onde ficarão diariamente.
+            successFeedback: Ótimo! A sala da turma é o ponto principal.
+            failureFeedback: 'Reflita: onde os colegas ficarão boa parte do tempo?'
+          - id: tour-colaborativo-level-2
+            challenge: Durante o tour, como explicar o uso do refeitório?
+            answer: Mostrar o local das filas e lembrar da higiene antes das refeições
+            hint: Inclua combinados de higiene.
+            successFeedback: Muito bem! Higiene e organização guiam o refeitório.
+            failureFeedback: Considere mencionar higiene e organização.
+          - id: tour-colaborativo-level-3
+            challenge: Encerrando o tour, qual ambiente destaca convivência e leitura?
+            answer: Biblioteca, com orientações de empréstimo de livros
+            hint: Finalize em um espaço acolhedor.
+            successFeedback: Perfeito! Biblioteca acolhe e incentiva leitura.
+            failureFeedback: 'Reflita: a biblioteca é um espaço especial para todos.'
+      accessibility:
+        hints:
+          - audience: ESTUDANTE
+            text: >-
+              Use TAB, setas ou toques para navegar pelas ações digitais ligadas a orientação
+              espacial e acolhimento.
+          - audience: EDUCADOR
+            text: Ative a leitura em voz alta e mantenha instruções visuais em contraste elevado.
+        feedback:
+          success: >-
+            Ótimo trabalho! As escolhas mostram entendimento sobre orientação espacial e
+            acolhimento.
+          encouragement: >-
+            Caso se confunda, revise com a equipe, utilize o botão de repetir instruções e retome
+            com calma.
+          accessibility: >-
+            Disponibilize controle adaptado, tempo flexível e apoio auditivo individual sempre que
+            necessário.
+        assets:
+          - slug: cn-material-lupa
+            type: IMAGEM
+            title: Lupa azul para observação
+  - partial: ../../_partials/acolhimento-base.yaml
+    slug: guardioes-dos-espacos
+    title: Guardiões dos Espaços
+    prompt: Escolha em equipe as ações necessárias quando cada espaço precisa de atenção.
+    summary: Mini-jogo cooperativo para solucionar desafios nos ambientes escolares.
+    type: GAME
+    difficulty: PRATICAR
+    bncc:
+      code: EF01CI04
+      habilidades:
+        - EF01CI04
+    learningObjectives:
+      - Tomar decisões coletivas para manter os ambientes em boas condições.
+      - Comunicar combinações e delegar tarefas de forma respeitosa.
+    description: >-
+      Guardiões dos Espaços apresenta situações reais que exigem cooperação para solucionar
+      problemas.
+    metadata:
+      categoria: Missões cooperativas
+      duracaoMinutos: 13
+      tempoEstimadoMinutos: 13
+      habilidades:
+        - EF01CI04
+      assetSlug: cn-natureza-floresta
+      assetUsage: A floresta simboliza o equilíbrio necessário entre pessoas e espaços.
+      familiaEngajamento: >-
+        Peça às famílias que dividam responsabilidades em casa, destacando como cada pessoa cuida de
+        um espaço.
+      focoInvestigativo: resolução de problemas nos ambientes compartilhados
+      modoCooperativo: true
+      tagsInterdisciplinares:
+        - Língua Portuguesa
+        - Matemática
+      interactiveSlug: game-guardioes-dos-espacos
+      habilidadesSecundarias:
+        - EF01CI02
+      quadroResponsaveis: Quadro com responsáveis pelos ambientes.
+    accessibility:
+      hints:
+        - audience: ESTUDANTE
+          text: >-
+            Passo 1: Observe o desafio com calma e use a leitura em voz alta para investigar
+            resolução de problemas nos ambientes compartilhados.
+        - audience: ESTUDANTE
+          text: >-
+            Passo 2: Faça pequenas pausas para perceber os detalhes e compartilhe o que notou sobre
+            resolução de problemas nos ambientes compartilhados.
+        - audience: EDUCADOR
+          text: >-
+            Ofereça materiais táteis, áudio descrição e tempo extra para apoiar a exploração de
+            resolução de problemas nos ambientes compartilhados.
+        - audience: FAMILIA
+          text: >-
+            Peça às famílias que dividam responsabilidades em casa, destacando como cada pessoa
+            cuida de um espaço.
+      feedback:
+        success: >-
+          Excelente investigação! Você analisou resolução de problemas nos ambientes compartilhados
+          com olhar científico.
+        encouragement: >-
+          Tudo bem errar no caminho. Use recursos visuais, gestos e sons para revisar as pistas
+          antes de tentar novamente.
+        retry: >-
+          Faça uma pausa, respire fundo e retome observando novos detalhes sobre resolução de
+          problemas nos ambientes compartilhados.
+        accessibility: >-
+          Garanta apoios multimodais: contraste de cores, narração em voz alta, audiodescrição e
+          tempo estendido para quem precisar.
+      assets:
+        - slug: cn-natureza-floresta
+          type: IMAGEM
+          title: Floresta ensolarada
+          description: A floresta simboliza o equilíbrio necessário entre pessoas e espaços.
+      alternatives:
+        - title: MATERIAIS CONCRETOS
+          description: >-
+            Monte estações com objetos reais para reforçar resolução de problemas nos ambientes
+            compartilhados.
+          steps:
+            - Disponibilize cartões com pictogramas e legendas em caixa alta.
+            - Use texturas, aromas ou sons reais como apoio sensorial.
+      audioCue:
+        title: SINAL DE PAUSA
+        description: Utilize um sino suave ou chocalho para avisar a troca de etapa ou necessidade de pausa.
+        steps:
+          - Combine com a turma o significado do sinal antes de iniciar.
+          - Ofereça tempo suficiente após o sinal para reorganização corporal.
+      motorSupport:
+        - title: APOIO MOTOR
+          description: >-
+            Disponibilize apoios para toque, ponteiras, suportes de tablet e mesas acessíveis
+            durante a interação.
+          steps:
+            - Permita que duplas se alternem no controle do dispositivo.
+            - Ofereça apoio postural e ajustes de altura quando necessário.
+    prerequisites:
+      - type: SKILL
+        reference: EF01CI04
+        description: Relembrar passeios pela escola destacando cuidados com os ambientes compartilhados.
+    interactive:
+      slug: game-guardioes-dos-espacos
+      title: Guardiões dos Espaços — Mini-jogo
+      type: GAME
+      bnccDescription: >-
+        Comparar diferentes ambientes, modos de convivência e cuidados com a natureza na comunidade
+        escolar.
+      estimatedTimeMinutes: 13
+      instructions:
+        - Leia ou escute a missão de cada fase.
+        - Use as setas, toques ou cliques para registrar a resposta.
+        - Converse com o grupo sobre outras estratégias possíveis.
+      objectives:
+        - Tomar decisões coletivas para manter os ambientes em boas condições.
+        - Comunicar combinações e delegar tarefas de forma respeitosa.
+      game:
+        mode: math-challenge
+        timeLimitSeconds: 90
+        lives: 3
+        victoryMessage: Ambientes cuidados! A escola segue acolhedora para todos.
+        gameOverMessage: Revejam as decisões e tentem novamente distribuindo as tarefas.
+        levels:
+          - id: guardioes-dos-espacos-level-1
+            challenge: O parque está com brinquedos fora do lugar após o recreio.
+            answer: Organizar mutirão para recolher brinquedos e revisar regras de uso
+            hint: Combine organização e diálogo.
+            successFeedback: Ótimo! Organização e diálogo mantêm o parque seguro.
+            failureFeedback: 'Reflita: além de arrumar, é preciso lembrar combinados.'
+          - id: guardioes-dos-espacos-level-2
+            challenge: A sala multimídia está com fios no chão.
+            answer: Desligar equipamentos, enrolar cabos e avisar a equipe de tecnologia
+            hint: Pense em segurança elétrica.
+            successFeedback: Excelente! Assim evitamos quedas e danos aos aparelhos.
+            failureFeedback: Considere desligar e organizar antes de avisar.
+          - id: guardioes-dos-espacos-level-3
+            challenge: No corredor, surgiram marcas de tinta após atividade artística.
+            answer: Isolar a área e avisar a equipe de limpeza, oferecendo ajuda com panos úmidos
+            hint: Combine segurança e colaboração.
+            successFeedback: Muito bem! Ajudar e avisar preserva o corredor.
+            failureFeedback: 'Reflita: segurança e avisos são fundamentais.'
+      accessibility:
+        hints:
+          - audience: ESTUDANTE
+            text: >-
+              Use TAB, setas ou toques para navegar pelas ações digitais ligadas a resolução de
+              problemas nos ambientes compartilhados.
+          - audience: EDUCADOR
+            text: Ative a leitura em voz alta e mantenha instruções visuais em contraste elevado.
+        feedback:
+          success: >-
+            Ótimo trabalho! As escolhas mostram entendimento sobre resolução de problemas nos
+            ambientes compartilhados.
+          encouragement: >-
+            Caso se confunda, revise com a equipe, utilize o botão de repetir instruções e retome
+            com calma.
+          accessibility: >-
+            Disponibilize controle adaptado, tempo flexível e apoio auditivo individual sempre que
+            necessário.
+        assets:
+          - slug: cn-natureza-floresta
+            type: IMAGEM
+            title: Floresta ensolarada
+  - partial: ../../_partials/acolhimento-base.yaml
+    slug: desafio-da-reciclagem
+    title: Desafio da Reciclagem
+    prompt: Classifique rapidamente os resíduos e escolha o destino correto.
+    summary: Mini-jogo dinâmico sobre separação de resíduos na escola.
+    type: GAME
+    difficulty: PRATICAR
+    bncc:
+      code: EF01CI04
+      habilidades:
+        - EF01CI04
+    learningObjectives:
+      - Diferenciar resíduos orgânicos, recicláveis e rejeitos.
+      - Agir rapidamente para manter os espaços limpos e sustentáveis.
+    description: >-
+      Desafio da Reciclagem incentiva decisões rápidas para separar resíduos durante a rotina
+      escolar.
+    metadata:
+      categoria: Sustentabilidade ativa
+      duracaoMinutos: 12
+      tempoEstimadoMinutos: 12
+      habilidades:
+        - EF01CI04
+      assetSlug: cn-natureza-rio
+      assetUsage: O rio lembra que resíduos descartados corretamente protegem a água.
+      familiaEngajamento: Convide as famílias a criar uma estação de reciclagem em casa com etiquetas coloridas.
+      focoInvestigativo: gestão de resíduos nos ambientes escolares
+      modoCooperativo: true
+      tagsInterdisciplinares:
+        - Matemática
+        - Ciências
+      interactiveSlug: game-desafio-da-reciclagem
+      habilidadesSecundarias:
+        - EF01CI03
+      lixeirasCodigo: Cores padronizadas das lixeiras da escola.
+    accessibility:
+      hints:
+        - audience: ESTUDANTE
+          text: >-
+            Passo 1: Observe o desafio com calma e use a leitura em voz alta para investigar gestão
+            de resíduos nos ambientes escolares.
+        - audience: ESTUDANTE
+          text: >-
+            Passo 2: Faça pequenas pausas para perceber os detalhes e compartilhe o que notou sobre
+            gestão de resíduos nos ambientes escolares.
+        - audience: EDUCADOR
+          text: >-
+            Ofereça materiais táteis, áudio descrição e tempo extra para apoiar a exploração de
+            gestão de resíduos nos ambientes escolares.
+        - audience: FAMILIA
+          text: Convide as famílias a criar uma estação de reciclagem em casa com etiquetas coloridas.
+      feedback:
+        success: >-
+          Excelente investigação! Você analisou gestão de resíduos nos ambientes escolares com olhar
+          científico.
+        encouragement: >-
+          Tudo bem errar no caminho. Use recursos visuais, gestos e sons para revisar as pistas
+          antes de tentar novamente.
+        retry: >-
+          Faça uma pausa, respire fundo e retome observando novos detalhes sobre gestão de resíduos
+          nos ambientes escolares.
+        accessibility: >-
+          Garanta apoios multimodais: contraste de cores, narração em voz alta, audiodescrição e
+          tempo estendido para quem precisar.
+      assets:
+        - slug: cn-natureza-rio
+          type: IMAGEM
+          title: Rio sinuoso e calmo
+          description: O rio lembra que resíduos descartados corretamente protegem a água.
+      alternatives:
+        - title: MATERIAIS CONCRETOS
+          description: >-
+            Monte estações com objetos reais para reforçar gestão de resíduos nos ambientes
+            escolares.
+          steps:
+            - Disponibilize cartões com pictogramas e legendas em caixa alta.
+            - Use texturas, aromas ou sons reais como apoio sensorial.
+      audioCue:
+        title: SINAL DE PAUSA
+        description: Utilize um sino suave ou chocalho para avisar a troca de etapa ou necessidade de pausa.
+        steps:
+          - Combine com a turma o significado do sinal antes de iniciar.
+          - Ofereça tempo suficiente após o sinal para reorganização corporal.
+      motorSupport:
+        - title: APOIO MOTOR
+          description: >-
+            Disponibilize apoios para toque, ponteiras, suportes de tablet e mesas acessíveis
+            durante a interação.
+          steps:
+            - Permita que duplas se alternem no controle do dispositivo.
+            - Ofereça apoio postural e ajustes de altura quando necessário.
+    prerequisites:
+      - type: SKILL
+        reference: EF01CI04
+        description: Relembrar passeios pela escola destacando cuidados com os ambientes compartilhados.
+    interactive:
+      slug: game-desafio-da-reciclagem
+      title: Desafio da Reciclagem — Mini-jogo
+      type: GAME
+      bnccDescription: >-
+        Comparar diferentes ambientes, modos de convivência e cuidados com a natureza na comunidade
+        escolar.
+      estimatedTimeMinutes: 12
+      instructions:
+        - Leia ou escute a missão de cada fase.
+        - Use as setas, toques ou cliques para registrar a resposta.
+        - Converse com o grupo sobre outras estratégias possíveis.
+      objectives:
+        - Diferenciar resíduos orgânicos, recicláveis e rejeitos.
+        - Agir rapidamente para manter os espaços limpos e sustentáveis.
+      game:
+        mode: math-challenge
+        timeLimitSeconds: 70
+        lives: 3
+        victoryMessage: Parabéns! Os resíduos foram separados corretamente.
+        gameOverMessage: Revejam as categorias e tentem novamente acelerando a decisão.
+        levels:
+          - id: desafio-da-reciclagem-level-1
+            challenge: Restos de frutas e cascas no refeitório
+            answer: Descartar na lixeira de resíduos orgânicos para compostagem
+            hint: São resíduos orgânicos.
+            successFeedback: Ótimo! Orgânicos podem virar adubo.
+            failureFeedback: 'Lembre-se: restos de comida vão para a composteira.'
+          - id: desafio-da-reciclagem-level-2
+            challenge: Folhas impressas usadas só de um lado
+            answer: Guardar na caixa de rascunhos para reutilizar
+            hint: Podem ser reaproveitadas.
+            successFeedback: Muito bem! Reutilizar evita desperdício.
+            failureFeedback: 'Reflita: o papel ainda pode ser utilizado.'
+          - id: desafio-da-reciclagem-level-3
+            challenge: Caneta sem carga
+            answer: Descartar no ponto de coleta de resíduos não recicláveis
+            hint: Não é reciclável comum.
+            successFeedback: Correto! Canetas devem ser descartadas em locais específicos.
+            failureFeedback: Considere o ponto para resíduos não recicláveis.
+      accessibility:
+        hints:
+          - audience: ESTUDANTE
+            text: >-
+              Use TAB, setas ou toques para navegar pelas ações digitais ligadas a gestão de
+              resíduos nos ambientes escolares.
+          - audience: EDUCADOR
+            text: Ative a leitura em voz alta e mantenha instruções visuais em contraste elevado.
+        feedback:
+          success: >-
+            Ótimo trabalho! As escolhas mostram entendimento sobre gestão de resíduos nos ambientes
+            escolares.
+          encouragement: >-
+            Caso se confunda, revise com a equipe, utilize o botão de repetir instruções e retome
+            com calma.
+          accessibility: >-
+            Disponibilize controle adaptado, tempo flexível e apoio auditivo individual sempre que
+            necessário.
+        assets:
+          - slug: cn-natureza-rio
+            type: IMAGEM
+            title: Rio sinuoso e calmo
+  - partial: ../../_partials/acolhimento-base.yaml
+    slug: assembleia-da-turma
+    title: Assembleia da Turma
+    prompt: Conduza uma assembleia simulada definindo melhorias para os ambientes escolares.
+    summary: Mini-jogo de tomada de decisão coletiva sobre convivência e espaços.
+    type: GAME
+    difficulty: DOMINAR
+    bncc:
+      code: EF01CI04
+      habilidades:
+        - EF01CI04
+    learningObjectives:
+      - Escutar propostas dos colegas e registrar decisões coletivas.
+      - Definir ações de melhoria para os ambientes considerando recursos disponíveis.
+    description: >-
+      Assembleia da Turma promove protagonismo para decidir melhorias nos espaços e definir
+      responsabilidades.
+    metadata:
+      categoria: Governança estudantil
+      duracaoMinutos: 14
+      tempoEstimadoMinutos: 14
+      habilidades:
+        - EF01CI04
+      assetSlug: cn-natureza-floresta
+      assetUsage: A floresta simboliza o equilíbrio entre todas as vozes da comunidade.
+      familiaEngajamento: >-
+        Sugira que as famílias realizem pequenas assembleias domésticas para discutir cuidados com a
+        casa.
+      focoInvestigativo: participação coletiva na melhoria dos ambientes
+      modoCooperativo: true
+      tagsInterdisciplinares:
+        - Língua Portuguesa
+        - Arte
+      interactiveSlug: game-assembleia-da-turma
+      habilidadesSecundarias:
+        - EF01CI02
+        - EF01CI03
+      ataAssembleia: Ata ilustrada com as decisões da turma.
+    accessibility:
+      hints:
+        - audience: ESTUDANTE
+          text: >-
+            Passo 1: Observe o desafio com calma e use a leitura em voz alta para investigar
+            participação coletiva na melhoria dos ambientes.
+        - audience: ESTUDANTE
+          text: >-
+            Passo 2: Faça pequenas pausas para perceber os detalhes e compartilhe o que notou sobre
+            participação coletiva na melhoria dos ambientes.
+        - audience: EDUCADOR
+          text: >-
+            Ofereça materiais táteis, áudio descrição e tempo extra para apoiar a exploração de
+            participação coletiva na melhoria dos ambientes.
+        - audience: FAMILIA
+          text: >-
+            Sugira que as famílias realizem pequenas assembleias domésticas para discutir cuidados
+            com a casa.
+      feedback:
+        success: >-
+          Excelente investigação! Você analisou participação coletiva na melhoria dos ambientes com
+          olhar científico.
+        encouragement: >-
+          Tudo bem errar no caminho. Use recursos visuais, gestos e sons para revisar as pistas
+          antes de tentar novamente.
+        retry: >-
+          Faça uma pausa, respire fundo e retome observando novos detalhes sobre participação
+          coletiva na melhoria dos ambientes.
+        accessibility: >-
+          Garanta apoios multimodais: contraste de cores, narração em voz alta, audiodescrição e
+          tempo estendido para quem precisar.
+      assets:
+        - slug: cn-natureza-floresta
+          type: IMAGEM
+          title: Floresta ensolarada
+          description: A floresta simboliza o equilíbrio entre todas as vozes da comunidade.
+      alternatives:
+        - title: MATERIAIS CONCRETOS
+          description: >-
+            Monte estações com objetos reais para reforçar participação coletiva na melhoria dos
+            ambientes.
+          steps:
+            - Disponibilize cartões com pictogramas e legendas em caixa alta.
+            - Use texturas, aromas ou sons reais como apoio sensorial.
+      audioCue:
+        title: SINAL DE PAUSA
+        description: Utilize um sino suave ou chocalho para avisar a troca de etapa ou necessidade de pausa.
+        steps:
+          - Combine com a turma o significado do sinal antes de iniciar.
+          - Ofereça tempo suficiente após o sinal para reorganização corporal.
+      motorSupport:
+        - title: APOIO MOTOR
+          description: >-
+            Disponibilize apoios para toque, ponteiras, suportes de tablet e mesas acessíveis
+            durante a interação.
+          steps:
+            - Permita que duplas se alternem no controle do dispositivo.
+            - Ofereça apoio postural e ajustes de altura quando necessário.
+    prerequisites:
+      - type: SKILL
+        reference: EF01CI04
+        description: Relembrar passeios pela escola destacando cuidados com os ambientes compartilhados.
+    interactive:
+      slug: game-assembleia-da-turma
+      title: Assembleia da Turma — Mini-jogo
+      type: GAME
+      bnccDescription: >-
+        Comparar diferentes ambientes, modos de convivência e cuidados com a natureza na comunidade
+        escolar.
+      estimatedTimeMinutes: 14
+      instructions:
+        - Leia ou escute a missão de cada fase.
+        - Use as setas, toques ou cliques para registrar a resposta.
+        - Converse com o grupo sobre outras estratégias possíveis.
+      objectives:
+        - Escutar propostas dos colegas e registrar decisões coletivas.
+        - Definir ações de melhoria para os ambientes considerando recursos disponíveis.
+      game:
+        mode: math-challenge
+        timeLimitSeconds: 95
+        lives: 4
+        victoryMessage: Assembleia concluída! As melhorias foram definidas coletivamente.
+        gameOverMessage: Revejam as propostas e tentem novamente ouvindo todas as vozes.
+        levels:
+          - id: assembleia-da-turma-level-1
+            challenge: Três colegas sugerem plantas novas para o pátio.
+            answer: Registrar a proposta e votar em conjunto as espécies a escolher
+            hint: Garanta participação de todos.
+            successFeedback: Ótimo! Registrar e votar garante decisão coletiva.
+            failureFeedback: 'Reflita: todos precisam opinar antes de decidir.'
+          - id: assembleia-da-turma-level-2
+            challenge: O som na hora do estudo está alto mesmo após combinados.
+            answer: Criar novas estratégias, como semáforo do silêncio e apoio de monitores
+            hint: Pense em soluções criativas.
+            successFeedback: Excelente! Estratégias criativas ajudam na convivência.
+            failureFeedback: Considere novas ideias para reforçar o combinado.
+          - id: assembleia-da-turma-level-3
+            challenge: Faltam materiais para decorar o mural dos ambientes.
+            answer: Solicitar doações e reutilizar materiais disponíveis
+            hint: Busque solução sustentável.
+            successFeedback: Muito bem! Reutilizar materiais gera mais mudas para compartilhar.
+            failureFeedback: Considere reutilizar materiais para multiplicar as mudas.
+      accessibility:
+        hints:
+          - audience: ESTUDANTE
+            text: >-
+              Use TAB, setas ou toques para navegar pelas ações digitais ligadas a participação
+              coletiva na melhoria dos ambientes.
+          - audience: EDUCADOR
+            text: Ative a leitura em voz alta e mantenha instruções visuais em contraste elevado.
+        feedback:
+          success: >-
+            Ótimo trabalho! As escolhas mostram entendimento sobre participação coletiva na melhoria
+            dos ambientes.
+          encouragement: >-
+            Caso se confunda, revise com a equipe, utilize o botão de repetir instruções e retome
+            com calma.
+          accessibility: >-
+            Disponibilize controle adaptado, tempo flexível e apoio auditivo individual sempre que
+            necessário.
+        assets:
+          - slug: cn-natureza-floresta
+            type: IMAGEM
+            title: Floresta ensolarada

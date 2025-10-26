@@ -1,0 +1,1950 @@
+module:
+  stage: ef01
+  subjectSlug: ciencias
+  subject: Ciências
+  slug: animais-da-vizinhanca
+  title: Animais da Vizinhança
+  subtitle: Características e habitats próximos da comunidade
+  description: >-
+    Sequência investigativa que explora animais presentes na vizinhança da escola, relacionando
+    sons, movimentos, alimentação e proteção dos habitats.
+  theme: Ciências
+  discipline: Ciências
+  ageGroupSlug: fundamental-anos-iniciais
+  learningPathSlug: exploradores-da-natureza
+  primaryBnccCode: EF01CI03
+  secondaryBnccCodes:
+    - EF01CI04
+  learningOutcomes:
+    - >-
+      Identificar características físicas e comportamentos de animais presentes no cotidiano da
+      turma.
+    - Relacionar animais aos habitats e recursos que garantem alimentação e proteção.
+    - Planejar atitudes coletivas que respeitam e preservam a biodiversidade local.
+  tags:
+    - animais
+    - biodiversidade
+    - habitats
+    - investigacao
+  estimatedDurationMinutes: 185
+  summary: >-
+    Com 12 atividades, a turma observa, investiga e protege animais da vizinhança por meio de
+    quizzes, puzzles e mini-jogos cooperativos.
+activities:
+  - partial: ../../_partials/acolhimento-base.yaml
+    slug: som-da-mata
+    title: Som da Mata
+    prompt: Escute as pistas e identifique qual animal está se comunicando.
+    summary: Quiz auditivo sobre animais da vizinhança e seus sons.
+    type: QUIZ
+    difficulty: INICIAR
+    bncc:
+      code: EF01CI03
+      habilidades:
+        - EF01CI03
+    learningObjectives:
+      - Associar sons característicos a animais comuns da vizinhança.
+      - Descrever pistas sonoras que ajudam a identificar diferentes espécies.
+    description: >-
+      Som da Mata estimula a turma a perceber sons de animais e relacioná-los a imagens e
+      comportamentos.
+    metadata:
+      categoria: Audição animal
+      duracaoMinutos: 8
+      tempoEstimadoMinutos: 8
+      habilidades:
+        - EF01CI03
+      assetSlug: cn-animal-tucano
+      assetUsage: Mostre o tucano para conversar sobre aves que usam cantos marcantes na floresta.
+      familiaEngajamento: >-
+        Sugira que as famílias reproduzam sons de animais em casa e criem adivinhas sonoras com as
+        crianças.
+      focoInvestigativo: reconhecimento de sons de animais locais
+      modoCooperativo: false
+      tagsInterdisciplinares:
+        - Música
+        - Língua Portuguesa
+      interactiveSlug: quiz-som-da-mata
+      habilidadesSecundarias:
+        - EF01CI01
+      recursoAudio: Biblioteca de sons curtos com volume ajustável.
+    accessibility:
+      hints:
+        - audience: ESTUDANTE
+          text: >-
+            Passo 1: Observe o desafio com calma e use a leitura em voz alta para investigar
+            reconhecimento de sons de animais locais.
+        - audience: ESTUDANTE
+          text: >-
+            Passo 2: Faça pequenas pausas para perceber os detalhes e compartilhe o que notou sobre
+            reconhecimento de sons de animais locais.
+        - audience: EDUCADOR
+          text: >-
+            Ofereça materiais táteis, áudio descrição e tempo extra para apoiar a exploração de
+            reconhecimento de sons de animais locais.
+        - audience: FAMILIA
+          text: >-
+            Sugira que as famílias reproduzam sons de animais em casa e criem adivinhas sonoras com
+            as crianças.
+      feedback:
+        success: >-
+          Excelente investigação! Você analisou reconhecimento de sons de animais locais com olhar
+          científico.
+        encouragement: >-
+          Tudo bem errar no caminho. Use recursos visuais, gestos e sons para revisar as pistas
+          antes de tentar novamente.
+        retry: >-
+          Faça uma pausa, respire fundo e retome observando novos detalhes sobre reconhecimento de
+          sons de animais locais.
+        accessibility: >-
+          Garanta apoios multimodais: contraste de cores, narração em voz alta, audiodescrição e
+          tempo estendido para quem precisar.
+      assets:
+        - slug: cn-animal-tucano
+          type: IMAGEM
+          title: Tucano atento na mata
+          description: Mostre o tucano para conversar sobre aves que usam cantos marcantes na floresta.
+      alternatives:
+        - title: MATERIAIS CONCRETOS
+          description: Monte estações com objetos reais para reforçar reconhecimento de sons de animais locais.
+          steps:
+            - Disponibilize cartões com pictogramas e legendas em caixa alta.
+            - Use texturas, aromas ou sons reais como apoio sensorial.
+      audioCue:
+        title: SINAL DE PAUSA
+        description: Utilize um sino suave ou chocalho para avisar a troca de etapa ou necessidade de pausa.
+        steps:
+          - Combine com a turma o significado do sinal antes de iniciar.
+          - Ofereça tempo suficiente após o sinal para reorganização corporal.
+      motorSupport:
+        - title: APOIO MOTOR
+          description: >-
+            Disponibilize apoios para toque, ponteiras, suportes de tablet e mesas acessíveis
+            durante a interação.
+          steps:
+            - Permita que duplas se alternem no controle do dispositivo.
+            - Ofereça apoio postural e ajustes de altura quando necessário.
+    prerequisites:
+      - type: SKILL
+        reference: EF01CI03
+        description: Compartilhar observações já feitas sobre animais e plantas próximos da escola.
+    interactive:
+      slug: quiz-som-da-mata
+      title: Som da Mata — Quiz
+      type: QUIZ
+      bnccDescription: Observar características de animais e plantas, relacionando-as aos ambientes em que vivem.
+      estimatedTimeMinutes: 8
+      instructions:
+        - Leia ou escute cada pergunta com atenção.
+        - Use as setas ou toque nas alternativas antes de confirmar.
+        - Compartilhe como chegou à resposta com a turma.
+      objectives:
+        - Associar sons característicos a animais comuns da vizinhança.
+        - Descrever pistas sonoras que ajudam a identificar diferentes espécies.
+      scoring:
+        correct: 10
+        incorrect: 0
+      adaptive:
+        increaseAfter: 2
+        decreaseAfter: 1
+      questions:
+        - id: som-da-mata-q1
+          type: multiple-choice
+          prompt: Qual animal realiza um canto agudo, colorido e costuma ficar nas copas das árvores?
+          hint: Pense em aves com bicos chamativos da floresta.
+          options:
+            - id: som-da-mata-q1-1
+              text: Tucano
+              isCorrect: true
+              feedback: Isso mesmo! O tucano usa seu canto vibrante entre as árvores altas.
+            - id: som-da-mata-q1-2
+              text: Boto cor-de-rosa
+              isCorrect: false
+              feedback: O boto vive na água e não canta nas copas das árvores.
+            - id: som-da-mata-q1-3
+              text: Jabuti
+              isCorrect: false
+              feedback: O jabuti faz sons discretos e vive no chão, não nas copas.
+        - id: som-da-mata-q2
+          type: true-false
+          prompt: Grilos e cigarras costumam cantar no entardecer?
+          hint: Relembre os sons ouvidos ao final do dia no jardim da escola.
+          statement: Grilos e cigarras cantam no entardecer, marcando os sons da vizinhança.
+          answer: true
+          feedback:
+            'true': Perfeito! Esses insetos aquecem suas asas e cantam ao entardecer.
+            'false': 'Tente ouvir novamente: grilos e cigarras cantam bastante quando o sol se despede.'
+      accessibility:
+        hints:
+          - audience: ESTUDANTE
+            text: >-
+              Use TAB, setas ou toques para navegar pelas ações digitais ligadas a reconhecimento de
+              sons de animais locais.
+          - audience: EDUCADOR
+            text: Ative a leitura em voz alta e mantenha instruções visuais em contraste elevado.
+        feedback:
+          success: >-
+            Ótimo trabalho! As escolhas mostram entendimento sobre reconhecimento de sons de animais
+            locais.
+          encouragement: >-
+            Caso se confunda, revise com a equipe, utilize o botão de repetir instruções e retome
+            com calma.
+          accessibility: >-
+            Disponibilize controle adaptado, tempo flexível e apoio auditivo individual sempre que
+            necessário.
+        assets:
+          - slug: cn-animal-tucano
+            type: IMAGEM
+            title: Tucano atento na mata
+  - partial: ../../_partials/acolhimento-base.yaml
+    slug: casa-preferida
+    title: Casa Preferida
+    prompt: Escolha o habitat que combina com cada animal apresentado.
+    summary: Quiz sobre ambientes e necessidades dos animais.
+    type: QUIZ
+    difficulty: INICIAR
+    bncc:
+      code: EF01CI03
+      habilidades:
+        - EF01CI03
+    learningObjectives:
+      - Relacionar características de animais ao ambiente em que vivem.
+      - Justificar escolhas de habitat usando pistas de alimentação e proteção.
+    description: Casa Preferida aproxima animais da vizinhança dos ambientes que oferecem abrigo e alimento.
+    metadata:
+      categoria: Ambientes naturais
+      duracaoMinutos: 9
+      tempoEstimadoMinutos: 9
+      habilidades:
+        - EF01CI03
+      assetSlug: cn-natureza-floresta
+      assetUsage: Utilize a ilustração da floresta para explorar diferentes alturas, luzes e esconderijos.
+      familiaEngajamento: >-
+        Proponha que as famílias pesquisem fotos de habitats brasileiros e compartilhem curiosidades
+        com a turma.
+      focoInvestigativo: reconhecimento de habitats e necessidades dos animais
+      modoCooperativo: true
+      tagsInterdisciplinares:
+        - Geografia
+        - Arte
+      interactiveSlug: quiz-casa-preferida
+      habilidadesSecundarias:
+        - EF01CI04
+      mapaColaborativo: Painel com fotos de ambientes da comunidade.
+    accessibility:
+      hints:
+        - audience: ESTUDANTE
+          text: >-
+            Passo 1: Observe o desafio com calma e use a leitura em voz alta para investigar
+            reconhecimento de habitats e necessidades dos animais.
+        - audience: ESTUDANTE
+          text: >-
+            Passo 2: Faça pequenas pausas para perceber os detalhes e compartilhe o que notou sobre
+            reconhecimento de habitats e necessidades dos animais.
+        - audience: EDUCADOR
+          text: >-
+            Ofereça materiais táteis, áudio descrição e tempo extra para apoiar a exploração de
+            reconhecimento de habitats e necessidades dos animais.
+        - audience: FAMILIA
+          text: >-
+            Proponha que as famílias pesquisem fotos de habitats brasileiros e compartilhem
+            curiosidades com a turma.
+      feedback:
+        success: >-
+          Excelente investigação! Você analisou reconhecimento de habitats e necessidades dos
+          animais com olhar científico.
+        encouragement: >-
+          Tudo bem errar no caminho. Use recursos visuais, gestos e sons para revisar as pistas
+          antes de tentar novamente.
+        retry: >-
+          Faça uma pausa, respire fundo e retome observando novos detalhes sobre reconhecimento de
+          habitats e necessidades dos animais.
+        accessibility: >-
+          Garanta apoios multimodais: contraste de cores, narração em voz alta, audiodescrição e
+          tempo estendido para quem precisar.
+      assets:
+        - slug: cn-natureza-floresta
+          type: IMAGEM
+          title: Floresta ensolarada
+          description: Utilize a ilustração da floresta para explorar diferentes alturas, luzes e esconderijos.
+      alternatives:
+        - title: MATERIAIS CONCRETOS
+          description: >-
+            Monte estações com objetos reais para reforçar reconhecimento de habitats e necessidades
+            dos animais.
+          steps:
+            - Disponibilize cartões com pictogramas e legendas em caixa alta.
+            - Use texturas, aromas ou sons reais como apoio sensorial.
+      audioCue:
+        title: SINAL DE PAUSA
+        description: Utilize um sino suave ou chocalho para avisar a troca de etapa ou necessidade de pausa.
+        steps:
+          - Combine com a turma o significado do sinal antes de iniciar.
+          - Ofereça tempo suficiente após o sinal para reorganização corporal.
+      motorSupport:
+        - title: APOIO MOTOR
+          description: >-
+            Disponibilize apoios para toque, ponteiras, suportes de tablet e mesas acessíveis
+            durante a interação.
+          steps:
+            - Permita que duplas se alternem no controle do dispositivo.
+            - Ofereça apoio postural e ajustes de altura quando necessário.
+    prerequisites:
+      - type: SKILL
+        reference: EF01CI03
+        description: Compartilhar observações já feitas sobre animais e plantas próximos da escola.
+    interactive:
+      slug: quiz-casa-preferida
+      title: Casa Preferida — Quiz
+      type: QUIZ
+      bnccDescription: Observar características de animais e plantas, relacionando-as aos ambientes em que vivem.
+      estimatedTimeMinutes: 9
+      instructions:
+        - Leia ou escute cada pergunta com atenção.
+        - Use as setas ou toque nas alternativas antes de confirmar.
+        - Compartilhe como chegou à resposta com a turma.
+      objectives:
+        - Relacionar características de animais ao ambiente em que vivem.
+        - Justificar escolhas de habitat usando pistas de alimentação e proteção.
+      scoring:
+        correct: 10
+        incorrect: 0
+      adaptive:
+        increaseAfter: 2
+        decreaseAfter: 1
+      questions:
+        - id: casa-preferida-q1
+          type: multiple-choice
+          prompt: Qual ambiente oferece água doce e tranquila para o boto cor-de-rosa viver?
+          hint: Pense em rios calmos do Norte do Brasil.
+          options:
+            - id: casa-preferida-q1-1
+              text: Rios de água doce com vegetação
+              isCorrect: true
+              feedback: Correto! O boto vive em rios de água doce e gosta de margens com vegetação.
+            - id: casa-preferida-q1-2
+              text: Topo de montanhas geladas
+              isCorrect: false
+              feedback: Montanhas geladas não oferecem água para o boto nadar.
+            - id: casa-preferida-q1-3
+              text: Deserto com areia muito quente
+              isCorrect: false
+              feedback: O boto precisa de muita água, diferente do deserto.
+        - id: casa-preferida-q2
+          type: true-false
+          prompt: Tucanos gostam de viver em árvores altas da floresta?
+          hint: Observe o formato do bico e o corpo leve desse animal.
+          statement: Tucanos vivem em árvores altas da floresta, onde encontram frutos e abrigo.
+          answer: true
+          feedback:
+            'true': Muito bem! Tucanos usam as copas para se alimentar e se esconder.
+            'false': 'Relembre: os tucanos usam o bico para alcançar frutos nas árvores altas.'
+      accessibility:
+        hints:
+          - audience: ESTUDANTE
+            text: >-
+              Use TAB, setas ou toques para navegar pelas ações digitais ligadas a reconhecimento de
+              habitats e necessidades dos animais.
+          - audience: EDUCADOR
+            text: Ative a leitura em voz alta e mantenha instruções visuais em contraste elevado.
+        feedback:
+          success: >-
+            Ótimo trabalho! As escolhas mostram entendimento sobre reconhecimento de habitats e
+            necessidades dos animais.
+          encouragement: >-
+            Caso se confunda, revise com a equipe, utilize o botão de repetir instruções e retome
+            com calma.
+          accessibility: >-
+            Disponibilize controle adaptado, tempo flexível e apoio auditivo individual sempre que
+            necessário.
+        assets:
+          - slug: cn-natureza-floresta
+            type: IMAGEM
+            title: Floresta ensolarada
+  - partial: ../../_partials/acolhimento-base.yaml
+    slug: movimento-animado
+    title: Movimento Animado
+    prompt: Observe como cada animal se move e escolha a melhor descrição.
+    summary: Quiz sobre deslocamento e adaptações corporais.
+    type: QUIZ
+    difficulty: PRATICAR
+    bncc:
+      code: EF01CI03
+      habilidades:
+        - EF01CI03
+    learningObjectives:
+      - Identificar diferentes formas de deslocamento dos animais.
+      - Relacionar partes do corpo dos animais ao tipo de movimento realizado.
+    description: Movimento Animado evidencia como nadadeiras, asas e patas ajudam os animais a se deslocarem.
+    metadata:
+      categoria: Deslocamentos na natureza
+      duracaoMinutos: 10
+      tempoEstimadoMinutos: 10
+      habilidades:
+        - EF01CI03
+      assetSlug: cn-animal-boto
+      assetUsage: Mostre o boto para comentar as nadadeiras e a respiração na superfície.
+      familiaEngajamento: >-
+        Peça às famílias que imitem movimentos de animais em jogos corporais, observando diferenças
+        entre nadar, voar e caminhar.
+      focoInvestigativo: movimentos característicos de animais
+      modoCooperativo: true
+      tagsInterdisciplinares:
+        - Educação Física
+        - Arte
+      interactiveSlug: quiz-movimento-animado
+      habilidadesSecundarias:
+        - EF01CI01
+      sugestaoBrincadeira: Circuito motor imitando animais.
+    accessibility:
+      hints:
+        - audience: ESTUDANTE
+          text: >-
+            Passo 1: Observe o desafio com calma e use a leitura em voz alta para investigar
+            movimentos característicos de animais.
+        - audience: ESTUDANTE
+          text: >-
+            Passo 2: Faça pequenas pausas para perceber os detalhes e compartilhe o que notou sobre
+            movimentos característicos de animais.
+        - audience: EDUCADOR
+          text: >-
+            Ofereça materiais táteis, áudio descrição e tempo extra para apoiar a exploração de
+            movimentos característicos de animais.
+        - audience: FAMILIA
+          text: >-
+            Peça às famílias que imitem movimentos de animais em jogos corporais, observando
+            diferenças entre nadar, voar e caminhar.
+      feedback:
+        success: >-
+          Excelente investigação! Você analisou movimentos característicos de animais com olhar
+          científico.
+        encouragement: >-
+          Tudo bem errar no caminho. Use recursos visuais, gestos e sons para revisar as pistas
+          antes de tentar novamente.
+        retry: >-
+          Faça uma pausa, respire fundo e retome observando novos detalhes sobre movimentos
+          característicos de animais.
+        accessibility: >-
+          Garanta apoios multimodais: contraste de cores, narração em voz alta, audiodescrição e
+          tempo estendido para quem precisar.
+      assets:
+        - slug: cn-animal-boto
+          type: IMAGEM
+          title: Boto cor-de-rosa investigativo
+          description: Mostre o boto para comentar as nadadeiras e a respiração na superfície.
+      alternatives:
+        - title: MATERIAIS CONCRETOS
+          description: Monte estações com objetos reais para reforçar movimentos característicos de animais.
+          steps:
+            - Disponibilize cartões com pictogramas e legendas em caixa alta.
+            - Use texturas, aromas ou sons reais como apoio sensorial.
+      audioCue:
+        title: SINAL DE PAUSA
+        description: Utilize um sino suave ou chocalho para avisar a troca de etapa ou necessidade de pausa.
+        steps:
+          - Combine com a turma o significado do sinal antes de iniciar.
+          - Ofereça tempo suficiente após o sinal para reorganização corporal.
+      motorSupport:
+        - title: APOIO MOTOR
+          description: >-
+            Disponibilize apoios para toque, ponteiras, suportes de tablet e mesas acessíveis
+            durante a interação.
+          steps:
+            - Permita que duplas se alternem no controle do dispositivo.
+            - Ofereça apoio postural e ajustes de altura quando necessário.
+    prerequisites:
+      - type: SKILL
+        reference: EF01CI03
+        description: Compartilhar observações já feitas sobre animais e plantas próximos da escola.
+    interactive:
+      slug: quiz-movimento-animado
+      title: Movimento Animado — Quiz
+      type: QUIZ
+      bnccDescription: Observar características de animais e plantas, relacionando-as aos ambientes em que vivem.
+      estimatedTimeMinutes: 10
+      instructions:
+        - Leia ou escute cada pergunta com atenção.
+        - Use as setas ou toque nas alternativas antes de confirmar.
+        - Compartilhe como chegou à resposta com a turma.
+      objectives:
+        - Identificar diferentes formas de deslocamento dos animais.
+        - Relacionar partes do corpo dos animais ao tipo de movimento realizado.
+      scoring:
+        correct: 10
+        incorrect: 0
+      adaptive:
+        increaseAfter: 2
+        decreaseAfter: 1
+      questions:
+        - id: movimento-animado-q1
+          type: multiple-choice
+          prompt: Como o boto cor-de-rosa respira enquanto nada?
+          hint: Observe que ele precisa vir à superfície.
+          options:
+            - id: movimento-animado-q1-1
+              text: Sobe para fora d'água e usa o furo no topo da cabeça
+              isCorrect: true
+              feedback: Exato! O boto sobe para respirar pelo espiráculo.
+            - id: movimento-animado-q1-2
+              text: Respira debaixo d'água pelas nadadeiras
+              isCorrect: false
+              feedback: As nadadeiras ajudam a nadar, não a respirar.
+            - id: movimento-animado-q1-3
+              text: Respira pela cauda quando mergulha fundo
+              isCorrect: false
+              feedback: A cauda serve para impulsionar, não para respirar.
+        - id: movimento-animado-q2
+          type: true-false
+          prompt: Tatus se protegem enrolando o corpo e caminhando devagar?
+          hint: Lembre-se da carapaça rígida dos tatus.
+          statement: Tatus enrolam o corpo e se movem devagar para se proteger.
+          answer: true
+          feedback:
+            'true': Isso mesmo! O corpo rígido ajuda a deixar o tatu protegido.
+            'false': 'Reflita: o tatu usa a carapaça e movimentos lentos para se proteger.'
+      accessibility:
+        hints:
+          - audience: ESTUDANTE
+            text: >-
+              Use TAB, setas ou toques para navegar pelas ações digitais ligadas a movimentos
+              característicos de animais.
+          - audience: EDUCADOR
+            text: Ative a leitura em voz alta e mantenha instruções visuais em contraste elevado.
+        feedback:
+          success: >-
+            Ótimo trabalho! As escolhas mostram entendimento sobre movimentos característicos de
+            animais.
+          encouragement: >-
+            Caso se confunda, revise com a equipe, utilize o botão de repetir instruções e retome
+            com calma.
+          accessibility: >-
+            Disponibilize controle adaptado, tempo flexível e apoio auditivo individual sempre que
+            necessário.
+        assets:
+          - slug: cn-animal-boto
+            type: IMAGEM
+            title: Boto cor-de-rosa investigativo
+  - partial: ../../_partials/acolhimento-base.yaml
+    slug: cardapio-animal
+    title: Cardápio Animal
+    prompt: Descubra o que cada animal come no ambiente onde vive.
+    summary: Quiz sobre alimentação e cadeia alimentar simples.
+    type: QUIZ
+    difficulty: PRATICAR
+    bncc:
+      code: EF01CI03
+      habilidades:
+        - EF01CI03
+    learningObjectives:
+      - Relacionar alimentos às preferências de animais conhecidos.
+      - Refletir sobre como os ambientes fornecem comida para os animais.
+    description: Cardápio Animal relaciona animais da vizinhança aos alimentos disponíveis em seus habitats.
+    metadata:
+      categoria: Cadeias alimentares
+      duracaoMinutos: 9
+      tempoEstimadoMinutos: 9
+      habilidades:
+        - EF01CI03
+      assetSlug: cn-natureza-rio
+      assetUsage: Use a paisagem do rio para destacar a variedade de alimentos aquáticos.
+      familiaEngajamento: >-
+        Convide as famílias a pesquisar o que os animais locais comem e elaborar um mural de
+        curiosidades.
+      focoInvestigativo: hábitos alimentares dos animais
+      modoCooperativo: false
+      tagsInterdisciplinares:
+        - Matemática
+        - Língua Portuguesa
+      interactiveSlug: quiz-cardapio-animal
+      habilidadesSecundarias:
+        - EF01CI04
+      tabelaSabores: Quadro com alimentos e animais correspondentes.
+    accessibility:
+      hints:
+        - audience: ESTUDANTE
+          text: >-
+            Passo 1: Observe o desafio com calma e use a leitura em voz alta para investigar hábitos
+            alimentares dos animais.
+        - audience: ESTUDANTE
+          text: >-
+            Passo 2: Faça pequenas pausas para perceber os detalhes e compartilhe o que notou sobre
+            hábitos alimentares dos animais.
+        - audience: EDUCADOR
+          text: >-
+            Ofereça materiais táteis, áudio descrição e tempo extra para apoiar a exploração de
+            hábitos alimentares dos animais.
+        - audience: FAMILIA
+          text: >-
+            Convide as famílias a pesquisar o que os animais locais comem e elaborar um mural de
+            curiosidades.
+      feedback:
+        success: >-
+          Excelente investigação! Você analisou hábitos alimentares dos animais com olhar
+          científico.
+        encouragement: >-
+          Tudo bem errar no caminho. Use recursos visuais, gestos e sons para revisar as pistas
+          antes de tentar novamente.
+        retry: >-
+          Faça uma pausa, respire fundo e retome observando novos detalhes sobre hábitos alimentares
+          dos animais.
+        accessibility: >-
+          Garanta apoios multimodais: contraste de cores, narração em voz alta, audiodescrição e
+          tempo estendido para quem precisar.
+      assets:
+        - slug: cn-natureza-rio
+          type: IMAGEM
+          title: Rio sinuoso e calmo
+          description: Use a paisagem do rio para destacar a variedade de alimentos aquáticos.
+      alternatives:
+        - title: MATERIAIS CONCRETOS
+          description: Monte estações com objetos reais para reforçar hábitos alimentares dos animais.
+          steps:
+            - Disponibilize cartões com pictogramas e legendas em caixa alta.
+            - Use texturas, aromas ou sons reais como apoio sensorial.
+      audioCue:
+        title: SINAL DE PAUSA
+        description: Utilize um sino suave ou chocalho para avisar a troca de etapa ou necessidade de pausa.
+        steps:
+          - Combine com a turma o significado do sinal antes de iniciar.
+          - Ofereça tempo suficiente após o sinal para reorganização corporal.
+      motorSupport:
+        - title: APOIO MOTOR
+          description: >-
+            Disponibilize apoios para toque, ponteiras, suportes de tablet e mesas acessíveis
+            durante a interação.
+          steps:
+            - Permita que duplas se alternem no controle do dispositivo.
+            - Ofereça apoio postural e ajustes de altura quando necessário.
+    prerequisites:
+      - type: SKILL
+        reference: EF01CI03
+        description: Compartilhar observações já feitas sobre animais e plantas próximos da escola.
+    interactive:
+      slug: quiz-cardapio-animal
+      title: Cardápio Animal — Quiz
+      type: QUIZ
+      bnccDescription: Observar características de animais e plantas, relacionando-as aos ambientes em que vivem.
+      estimatedTimeMinutes: 9
+      instructions:
+        - Leia ou escute cada pergunta com atenção.
+        - Use as setas ou toque nas alternativas antes de confirmar.
+        - Compartilhe como chegou à resposta com a turma.
+      objectives:
+        - Relacionar alimentos às preferências de animais conhecidos.
+        - Refletir sobre como os ambientes fornecem comida para os animais.
+      scoring:
+        correct: 10
+        incorrect: 0
+      adaptive:
+        increaseAfter: 2
+        decreaseAfter: 1
+      questions:
+        - id: cardapio-animal-q1
+          type: multiple-choice
+          prompt: Qual alimento combina com o boto cor-de-rosa durante suas caçadas?
+          hint: Observe que ele vive em rios de água doce.
+          options:
+            - id: cardapio-animal-q1-1
+              text: Peixes pequenos e crustáceos
+              isCorrect: true
+              feedback: Correto! O boto caça peixes e pequenos crustáceos.
+            - id: cardapio-animal-q1-2
+              text: Folhas de árvores altas
+              isCorrect: false
+              feedback: Folhas são mais consumidas por animais herbívoros terrestres.
+            - id: cardapio-animal-q1-3
+              text: Frutas secas do deserto
+              isCorrect: false
+              feedback: O boto não vive no deserto e precisa de alimentos da água.
+        - id: cardapio-animal-q2
+          type: true-false
+          prompt: Tucanos ajudam a espalhar sementes ao comer frutas?
+          hint: Repare no bico grande e na dieta colorida.
+          statement: Tucanos comem frutas e espalham sementes pela floresta.
+          answer: true
+          feedback:
+            'true': Ótimo! Depois de comer frutas, eles espalham sementes ao voar.
+            'false': Lembre-se de que os tucanos dispersam sementes ao se alimentar.
+      accessibility:
+        hints:
+          - audience: ESTUDANTE
+            text: >-
+              Use TAB, setas ou toques para navegar pelas ações digitais ligadas a hábitos
+              alimentares dos animais.
+          - audience: EDUCADOR
+            text: Ative a leitura em voz alta e mantenha instruções visuais em contraste elevado.
+        feedback:
+          success: Ótimo trabalho! As escolhas mostram entendimento sobre hábitos alimentares dos animais.
+          encouragement: >-
+            Caso se confunda, revise com a equipe, utilize o botão de repetir instruções e retome
+            com calma.
+          accessibility: >-
+            Disponibilize controle adaptado, tempo flexível e apoio auditivo individual sempre que
+            necessário.
+        assets:
+          - slug: cn-natureza-rio
+            type: IMAGEM
+            title: Rio sinuoso e calmo
+  - partial: ../../_partials/acolhimento-base.yaml
+    slug: rota-dos-habitats
+    title: Rota dos Habitats
+    prompt: Associe cada animal ao habitat que oferece abrigo e alimento.
+    summary: Quebra-cabeça de correspondência entre animais e ambientes.
+    type: PUZZLE
+    difficulty: INICIAR
+    bncc:
+      code: EF01CI03
+      habilidades:
+        - EF01CI03
+    learningObjectives:
+      - Relacionar recursos naturais às necessidades dos animais.
+      - Explicar em duplas por que cada animal vive em determinado habitat.
+    description: >-
+      Rota dos Habitats organiza pistas de alimentação, temperatura e abrigo para comparar
+      ambientes.
+    metadata:
+      categoria: Mapa da vizinhança
+      duracaoMinutos: 10
+      tempoEstimadoMinutos: 10
+      habilidades:
+        - EF01CI03
+      assetSlug: cn-natureza-floresta
+      assetUsage: A floresta ajuda a visualizar árvores, frutos e ninhos para as combinações.
+      familiaEngajamento: >-
+        Sugira que as famílias construam um diorama simples mostrando o habitat de um animal
+        escolhido.
+      focoInvestigativo: associação de habitats e recursos naturais
+      modoCooperativo: true
+      tagsInterdisciplinares:
+        - Geografia
+        - Arte
+      interactiveSlug: puzzle-rota-dos-habitats
+      habilidadesSecundarias:
+        - EF01CI04
+      recursoMapa: Mapa gigante da escola com adesivos de habitats.
+    accessibility:
+      hints:
+        - audience: ESTUDANTE
+          text: >-
+            Passo 1: Observe o desafio com calma e use a leitura em voz alta para investigar
+            associação de habitats e recursos naturais.
+        - audience: ESTUDANTE
+          text: >-
+            Passo 2: Faça pequenas pausas para perceber os detalhes e compartilhe o que notou sobre
+            associação de habitats e recursos naturais.
+        - audience: EDUCADOR
+          text: >-
+            Ofereça materiais táteis, áudio descrição e tempo extra para apoiar a exploração de
+            associação de habitats e recursos naturais.
+        - audience: FAMILIA
+          text: >-
+            Sugira que as famílias construam um diorama simples mostrando o habitat de um animal
+            escolhido.
+      feedback:
+        success: >-
+          Excelente investigação! Você analisou associação de habitats e recursos naturais com olhar
+          científico.
+        encouragement: >-
+          Tudo bem errar no caminho. Use recursos visuais, gestos e sons para revisar as pistas
+          antes de tentar novamente.
+        retry: >-
+          Faça uma pausa, respire fundo e retome observando novos detalhes sobre associação de
+          habitats e recursos naturais.
+        accessibility: >-
+          Garanta apoios multimodais: contraste de cores, narração em voz alta, audiodescrição e
+          tempo estendido para quem precisar.
+      assets:
+        - slug: cn-natureza-floresta
+          type: IMAGEM
+          title: Floresta ensolarada
+          description: A floresta ajuda a visualizar árvores, frutos e ninhos para as combinações.
+      alternatives:
+        - title: MATERIAIS CONCRETOS
+          description: >-
+            Monte estações com objetos reais para reforçar associação de habitats e recursos
+            naturais.
+          steps:
+            - Disponibilize cartões com pictogramas e legendas em caixa alta.
+            - Use texturas, aromas ou sons reais como apoio sensorial.
+      audioCue:
+        title: SINAL DE PAUSA
+        description: Utilize um sino suave ou chocalho para avisar a troca de etapa ou necessidade de pausa.
+        steps:
+          - Combine com a turma o significado do sinal antes de iniciar.
+          - Ofereça tempo suficiente após o sinal para reorganização corporal.
+      motorSupport:
+        - title: APOIO MOTOR
+          description: >-
+            Disponibilize apoios para toque, ponteiras, suportes de tablet e mesas acessíveis
+            durante a interação.
+          steps:
+            - Permita que duplas se alternem no controle do dispositivo.
+            - Ofereça apoio postural e ajustes de altura quando necessário.
+    prerequisites:
+      - type: SKILL
+        reference: EF01CI03
+        description: Compartilhar observações já feitas sobre animais e plantas próximos da escola.
+    interactive:
+      slug: puzzle-rota-dos-habitats
+      title: Rota dos Habitats — Quebra-cabeça
+      type: PUZZLE
+      bnccDescription: Observar características de animais e plantas, relacionando-as aos ambientes em que vivem.
+      estimatedTimeMinutes: 10
+      instructions:
+        - Observe cada cartão do quebra-cabeça.
+        - Arraste ou selecione a combinação que faça sentido.
+        - Explique para o grupo qual pista levou à associação.
+      objectives:
+        - Relacionar recursos naturais às necessidades dos animais.
+        - Explicar em duplas por que cada animal vive em determinado habitat.
+      puzzle:
+        mode: matching
+        successFeedback: Excelente! Cada animal encontrou o habitat ideal.
+        errorFeedback: Releiam as pistas e conversem sobre o que cada ambiente oferece.
+        pairs:
+          - id: rota-dos-habitats-pair-1
+            prompt: Boto cor-de-rosa
+            match: Rios e igarapés de água doce
+            hint: Procure locais com muita água.
+            feedback: Os rios calmos são a casa do boto.
+          - id: rota-dos-habitats-pair-2
+            prompt: Tucano
+            match: Copas de árvores com muitos frutos
+            hint: Analise onde há frutas e galhos altos.
+            feedback: Tucanos preferem árvores com frutos variados.
+          - id: rota-dos-habitats-pair-3
+            prompt: Gato-do-mato
+            match: Mata fechada com tocas e folhas secas
+            hint: Lembre-se de animais que precisam se esconder.
+            feedback: O gato-do-mato usa tocas entre folhas e galhos caídos.
+          - id: rota-dos-habitats-pair-4
+            prompt: Tartaruga-da-amazônia
+            match: Praias de rio com bancos de areia
+            hint: Busque locais para tomar sol e botar ovos.
+            feedback: Tartarugas usam as praias de rio para descansar.
+      accessibility:
+        hints:
+          - audience: ESTUDANTE
+            text: >-
+              Use TAB, setas ou toques para navegar pelas ações digitais ligadas a associação de
+              habitats e recursos naturais.
+          - audience: EDUCADOR
+            text: Ative a leitura em voz alta e mantenha instruções visuais em contraste elevado.
+        feedback:
+          success: >-
+            Ótimo trabalho! As escolhas mostram entendimento sobre associação de habitats e recursos
+            naturais.
+          encouragement: >-
+            Caso se confunda, revise com a equipe, utilize o botão de repetir instruções e retome
+            com calma.
+          accessibility: >-
+            Disponibilize controle adaptado, tempo flexível e apoio auditivo individual sempre que
+            necessário.
+        assets:
+          - slug: cn-natureza-floresta
+            type: IMAGEM
+            title: Floresta ensolarada
+  - partial: ../../_partials/acolhimento-base.yaml
+    slug: rede-alimentar
+    title: Rede Alimentar da Vizinhança
+    prompt: Relacione cada alimento às espécies que dele dependem.
+    summary: Quebra-cabeça sobre interdependência alimentar.
+    type: PUZZLE
+    difficulty: PRATICAR
+    bncc:
+      code: EF01CI03
+      habilidades:
+        - EF01CI03
+    learningObjectives:
+      - Reconhecer relações alimentares básicas entre plantas e animais.
+      - Explicar como mudanças em um elemento da cadeia afetam os demais.
+    description: >-
+      Rede Alimentar propõe associações que destacam a dependência entre plantas, insetos e animais
+      maiores.
+    metadata:
+      categoria: Circuito de energia
+      duracaoMinutos: 11
+      tempoEstimadoMinutos: 11
+      habilidades:
+        - EF01CI03
+      assetSlug: cn-natureza-rio
+      assetUsage: Use a paisagem do rio para representar fluxos de energia entre produtores e consumidores.
+      familiaEngajamento: >-
+        Peça que as famílias montem esquemas simples mostrando quem se alimenta de quê na
+        vizinhança.
+      focoInvestigativo: cadeias alimentares simples
+      modoCooperativo: true
+      tagsInterdisciplinares:
+        - Matemática
+        - Língua Portuguesa
+      interactiveSlug: puzzle-rede-alimentar
+      habilidadesSecundarias:
+        - EF01CI04
+      materialDeApoio: Cartões coloridos com setas autocolantes.
+    accessibility:
+      hints:
+        - audience: ESTUDANTE
+          text: >-
+            Passo 1: Observe o desafio com calma e use a leitura em voz alta para investigar cadeias
+            alimentares simples.
+        - audience: ESTUDANTE
+          text: >-
+            Passo 2: Faça pequenas pausas para perceber os detalhes e compartilhe o que notou sobre
+            cadeias alimentares simples.
+        - audience: EDUCADOR
+          text: >-
+            Ofereça materiais táteis, áudio descrição e tempo extra para apoiar a exploração de
+            cadeias alimentares simples.
+        - audience: FAMILIA
+          text: >-
+            Peça que as famílias montem esquemas simples mostrando quem se alimenta de quê na
+            vizinhança.
+      feedback:
+        success: Excelente investigação! Você analisou cadeias alimentares simples com olhar científico.
+        encouragement: >-
+          Tudo bem errar no caminho. Use recursos visuais, gestos e sons para revisar as pistas
+          antes de tentar novamente.
+        retry: >-
+          Faça uma pausa, respire fundo e retome observando novos detalhes sobre cadeias alimentares
+          simples.
+        accessibility: >-
+          Garanta apoios multimodais: contraste de cores, narração em voz alta, audiodescrição e
+          tempo estendido para quem precisar.
+      assets:
+        - slug: cn-natureza-rio
+          type: IMAGEM
+          title: Rio sinuoso e calmo
+          description: >-
+            Use a paisagem do rio para representar fluxos de energia entre produtores e
+            consumidores.
+      alternatives:
+        - title: MATERIAIS CONCRETOS
+          description: Monte estações com objetos reais para reforçar cadeias alimentares simples.
+          steps:
+            - Disponibilize cartões com pictogramas e legendas em caixa alta.
+            - Use texturas, aromas ou sons reais como apoio sensorial.
+      audioCue:
+        title: SINAL DE PAUSA
+        description: Utilize um sino suave ou chocalho para avisar a troca de etapa ou necessidade de pausa.
+        steps:
+          - Combine com a turma o significado do sinal antes de iniciar.
+          - Ofereça tempo suficiente após o sinal para reorganização corporal.
+      motorSupport:
+        - title: APOIO MOTOR
+          description: >-
+            Disponibilize apoios para toque, ponteiras, suportes de tablet e mesas acessíveis
+            durante a interação.
+          steps:
+            - Permita que duplas se alternem no controle do dispositivo.
+            - Ofereça apoio postural e ajustes de altura quando necessário.
+    prerequisites:
+      - type: SKILL
+        reference: EF01CI03
+        description: Compartilhar observações já feitas sobre animais e plantas próximos da escola.
+    interactive:
+      slug: puzzle-rede-alimentar
+      title: Rede Alimentar da Vizinhança — Quebra-cabeça
+      type: PUZZLE
+      bnccDescription: Observar características de animais e plantas, relacionando-as aos ambientes em que vivem.
+      estimatedTimeMinutes: 11
+      instructions:
+        - Observe cada cartão do quebra-cabeça.
+        - Arraste ou selecione a combinação que faça sentido.
+        - Explique para o grupo qual pista levou à associação.
+      objectives:
+        - Reconhecer relações alimentares básicas entre plantas e animais.
+        - Explicar como mudanças em um elemento da cadeia afetam os demais.
+      puzzle:
+        mode: matching
+        successFeedback: Muito bom! A cadeia alimentar ficou completa.
+        errorFeedback: Revejam cada pista e conversem sobre quem depende de quem.
+        pairs:
+          - id: rede-alimentar-pair-1
+            prompt: Flores do jardim
+            match: Abelhas e borboletas que coletam néctar
+            hint: Quem visita flores para se alimentar?
+            feedback: Abelhas e borboletas dependem das flores para produzir energia.
+          - id: rede-alimentar-pair-2
+            prompt: Peixinhos do rio
+            match: Boto cor-de-rosa durante a caça
+            hint: Quem caça no rio para comer?
+            feedback: O boto busca peixes pequenos e médios no rio.
+          - id: rede-alimentar-pair-3
+            prompt: Frutas maduras
+            match: Tucanos e macacos que espalham sementes
+            hint: Que animais usam o bico ou as mãos para comer frutas?
+            feedback: Frutas alimentam aves e mamíferos que dispersam sementes.
+          - id: rede-alimentar-pair-4
+            prompt: Folhas baixas
+            match: Capivaras que pastam perto da água
+            hint: Qual animal herbívoro vive perto da água?
+            feedback: Capivaras mastigam folhas e capim às margens dos rios.
+      accessibility:
+        hints:
+          - audience: ESTUDANTE
+            text: >-
+              Use TAB, setas ou toques para navegar pelas ações digitais ligadas a cadeias
+              alimentares simples.
+          - audience: EDUCADOR
+            text: Ative a leitura em voz alta e mantenha instruções visuais em contraste elevado.
+        feedback:
+          success: Ótimo trabalho! As escolhas mostram entendimento sobre cadeias alimentares simples.
+          encouragement: >-
+            Caso se confunda, revise com a equipe, utilize o botão de repetir instruções e retome
+            com calma.
+          accessibility: >-
+            Disponibilize controle adaptado, tempo flexível e apoio auditivo individual sempre que
+            necessário.
+        assets:
+          - slug: cn-natureza-rio
+            type: IMAGEM
+            title: Rio sinuoso e calmo
+  - partial: ../../_partials/acolhimento-base.yaml
+    slug: pegadas-misteriosas
+    title: Pegadas Misteriosas
+    prompt: Combine cada pegada à espécie que costuma deixá-la na vizinhança.
+    summary: Quebra-cabeça de observação de marcas no solo.
+    type: PUZZLE
+    difficulty: PRATICAR
+    bncc:
+      code: EF01CI03
+      habilidades:
+        - EF01CI03
+    learningObjectives:
+      - Observar detalhes de pegadas e relacioná-las a animais respectivos.
+      - Registrar evidências físicas que indicam a presença de animais.
+    description: >-
+      Pegadas Misteriosas incentiva a turma a deduzir qual animal passou pelo local usando pistas no
+      solo.
+    metadata:
+      categoria: Investigação de campo
+      duracaoMinutos: 10
+      tempoEstimadoMinutos: 10
+      habilidades:
+        - EF01CI03
+      assetSlug: cn-material-lupa
+      assetUsage: Use a lupa para incentivar a análise detalhada das pegadas.
+      familiaEngajamento: >-
+        Convide as famílias a procurar pegadas em parques ou praças e fotografar para compartilhar
+        com a turma.
+      focoInvestigativo: identificação de pegadas e pistas físicas
+      modoCooperativo: true
+      tagsInterdisciplinares:
+        - Arte
+        - Matemática
+      interactiveSlug: puzzle-pegadas-misteriosas
+      habilidadesSecundarias:
+        - EF01CI01
+      moldePegada: Use argila ou massa para criar moldes das pegadas.
+    accessibility:
+      hints:
+        - audience: ESTUDANTE
+          text: >-
+            Passo 1: Observe o desafio com calma e use a leitura em voz alta para investigar
+            identificação de pegadas e pistas físicas.
+        - audience: ESTUDANTE
+          text: >-
+            Passo 2: Faça pequenas pausas para perceber os detalhes e compartilhe o que notou sobre
+            identificação de pegadas e pistas físicas.
+        - audience: EDUCADOR
+          text: >-
+            Ofereça materiais táteis, áudio descrição e tempo extra para apoiar a exploração de
+            identificação de pegadas e pistas físicas.
+        - audience: FAMILIA
+          text: >-
+            Convide as famílias a procurar pegadas em parques ou praças e fotografar para
+            compartilhar com a turma.
+      feedback:
+        success: >-
+          Excelente investigação! Você analisou identificação de pegadas e pistas físicas com olhar
+          científico.
+        encouragement: >-
+          Tudo bem errar no caminho. Use recursos visuais, gestos e sons para revisar as pistas
+          antes de tentar novamente.
+        retry: >-
+          Faça uma pausa, respire fundo e retome observando novos detalhes sobre identificação de
+          pegadas e pistas físicas.
+        accessibility: >-
+          Garanta apoios multimodais: contraste de cores, narração em voz alta, audiodescrição e
+          tempo estendido para quem precisar.
+      assets:
+        - slug: cn-material-lupa
+          type: IMAGEM
+          title: Lupa azul para observação
+          description: Use a lupa para incentivar a análise detalhada das pegadas.
+      alternatives:
+        - title: MATERIAIS CONCRETOS
+          description: >-
+            Monte estações com objetos reais para reforçar identificação de pegadas e pistas
+            físicas.
+          steps:
+            - Disponibilize cartões com pictogramas e legendas em caixa alta.
+            - Use texturas, aromas ou sons reais como apoio sensorial.
+      audioCue:
+        title: SINAL DE PAUSA
+        description: Utilize um sino suave ou chocalho para avisar a troca de etapa ou necessidade de pausa.
+        steps:
+          - Combine com a turma o significado do sinal antes de iniciar.
+          - Ofereça tempo suficiente após o sinal para reorganização corporal.
+      motorSupport:
+        - title: APOIO MOTOR
+          description: >-
+            Disponibilize apoios para toque, ponteiras, suportes de tablet e mesas acessíveis
+            durante a interação.
+          steps:
+            - Permita que duplas se alternem no controle do dispositivo.
+            - Ofereça apoio postural e ajustes de altura quando necessário.
+    prerequisites:
+      - type: SKILL
+        reference: EF01CI03
+        description: Compartilhar observações já feitas sobre animais e plantas próximos da escola.
+    interactive:
+      slug: puzzle-pegadas-misteriosas
+      title: Pegadas Misteriosas — Quebra-cabeça
+      type: PUZZLE
+      bnccDescription: Observar características de animais e plantas, relacionando-as aos ambientes em que vivem.
+      estimatedTimeMinutes: 10
+      instructions:
+        - Observe cada cartão do quebra-cabeça.
+        - Arraste ou selecione a combinação que faça sentido.
+        - Explique para o grupo qual pista levou à associação.
+      objectives:
+        - Observar detalhes de pegadas e relacioná-las a animais respectivos.
+        - Registrar evidências físicas que indicam a presença de animais.
+      puzzle:
+        mode: matching
+        successFeedback: Investigação concluída! Todas as pegadas foram identificadas.
+        errorFeedback: Analise novamente o número de dedos e o formato das pegadas.
+        pairs:
+          - id: pegadas-misteriosas-pair-1
+            prompt: Pegada com dedos longos e marca de garras leves
+            match: Tucano caminhando pelo chão úmido
+            hint: Observe aves que também andam no solo.
+            feedback: Tucanos deixam marcas finas com garras delicadas.
+          - id: pegadas-misteriosas-pair-2
+            prompt: Marca redonda com listras e garras fortes
+            match: Onça ou gato-do-mato explorando a trilha
+            hint: Qual felino vive na mata e tem garras fortes?
+            feedback: Felinos deixam almofadas arredondadas e garras marcadas.
+          - id: pegadas-misteriosas-pair-3
+            prompt: Marcas largas em forma de casco
+            match: Capivara passando perto da água
+            hint: Qual mamífero tem cascos semi-arredondados?
+            feedback: Capivaras deixam marcas largas e sem dedos aparentes.
+          - id: pegadas-misteriosas-pair-4
+            prompt: Trilho serpenteando sem patas
+            match: Serpente que desliza pela areia
+            hint: Qual animal não tem patas e deixa rastro contínuo?
+            feedback: Serpentes deixam rastros em onda no solo.
+      accessibility:
+        hints:
+          - audience: ESTUDANTE
+            text: >-
+              Use TAB, setas ou toques para navegar pelas ações digitais ligadas a identificação de
+              pegadas e pistas físicas.
+          - audience: EDUCADOR
+            text: Ative a leitura em voz alta e mantenha instruções visuais em contraste elevado.
+        feedback:
+          success: >-
+            Ótimo trabalho! As escolhas mostram entendimento sobre identificação de pegadas e pistas
+            físicas.
+          encouragement: >-
+            Caso se confunda, revise com a equipe, utilize o botão de repetir instruções e retome
+            com calma.
+          accessibility: >-
+            Disponibilize controle adaptado, tempo flexível e apoio auditivo individual sempre que
+            necessário.
+        assets:
+          - slug: cn-material-lupa
+            type: IMAGEM
+            title: Lupa azul para observação
+  - partial: ../../_partials/acolhimento-base.yaml
+    slug: defesas-criativas
+    title: Defesas Criativas
+    prompt: Associe cada animal à maneira como ele se protege na natureza.
+    summary: Quebra-cabeça sobre estratégias de defesa e sobrevivência.
+    type: PUZZLE
+    difficulty: DOMINAR
+    bncc:
+      code: EF01CI03
+      habilidades:
+        - EF01CI03
+    learningObjectives:
+      - Relacionar características do corpo dos animais às estratégias de proteção.
+      - Argumentar sobre como cada adaptação ajuda na sobrevivência.
+    description: Defesas Criativas evidencia diferentes formas de proteção usadas pelos animais da região.
+    metadata:
+      categoria: Proteção animal
+      duracaoMinutos: 12
+      tempoEstimadoMinutos: 12
+      habilidades:
+        - EF01CI03
+      assetSlug: cn-animal-boto
+      assetUsage: Fale sobre como o boto usa cores e movimentos para se proteger.
+      familiaEngajamento: >-
+        Peça às famílias que criem histórias em quadrinhos mostrando uma adaptação de defesa de um
+        animal.
+      focoInvestigativo: adaptações e estratégias de sobrevivência
+      modoCooperativo: true
+      tagsInterdisciplinares:
+        - Arte
+        - Língua Portuguesa
+      interactiveSlug: puzzle-defesas-criativas
+      habilidadesSecundarias:
+        - EF01CI04
+      produtoFinal: Cartaz com adaptações ilustradas pelos estudantes.
+    accessibility:
+      hints:
+        - audience: ESTUDANTE
+          text: >-
+            Passo 1: Observe o desafio com calma e use a leitura em voz alta para investigar
+            adaptações e estratégias de sobrevivência.
+        - audience: ESTUDANTE
+          text: >-
+            Passo 2: Faça pequenas pausas para perceber os detalhes e compartilhe o que notou sobre
+            adaptações e estratégias de sobrevivência.
+        - audience: EDUCADOR
+          text: >-
+            Ofereça materiais táteis, áudio descrição e tempo extra para apoiar a exploração de
+            adaptações e estratégias de sobrevivência.
+        - audience: FAMILIA
+          text: >-
+            Peça às famílias que criem histórias em quadrinhos mostrando uma adaptação de defesa de
+            um animal.
+      feedback:
+        success: >-
+          Excelente investigação! Você analisou adaptações e estratégias de sobrevivência com olhar
+          científico.
+        encouragement: >-
+          Tudo bem errar no caminho. Use recursos visuais, gestos e sons para revisar as pistas
+          antes de tentar novamente.
+        retry: >-
+          Faça uma pausa, respire fundo e retome observando novos detalhes sobre adaptações e
+          estratégias de sobrevivência.
+        accessibility: >-
+          Garanta apoios multimodais: contraste de cores, narração em voz alta, audiodescrição e
+          tempo estendido para quem precisar.
+      assets:
+        - slug: cn-animal-boto
+          type: IMAGEM
+          title: Boto cor-de-rosa investigativo
+          description: Fale sobre como o boto usa cores e movimentos para se proteger.
+      alternatives:
+        - title: MATERIAIS CONCRETOS
+          description: >-
+            Monte estações com objetos reais para reforçar adaptações e estratégias de
+            sobrevivência.
+          steps:
+            - Disponibilize cartões com pictogramas e legendas em caixa alta.
+            - Use texturas, aromas ou sons reais como apoio sensorial.
+      audioCue:
+        title: SINAL DE PAUSA
+        description: Utilize um sino suave ou chocalho para avisar a troca de etapa ou necessidade de pausa.
+        steps:
+          - Combine com a turma o significado do sinal antes de iniciar.
+          - Ofereça tempo suficiente após o sinal para reorganização corporal.
+      motorSupport:
+        - title: APOIO MOTOR
+          description: >-
+            Disponibilize apoios para toque, ponteiras, suportes de tablet e mesas acessíveis
+            durante a interação.
+          steps:
+            - Permita que duplas se alternem no controle do dispositivo.
+            - Ofereça apoio postural e ajustes de altura quando necessário.
+    prerequisites:
+      - type: SKILL
+        reference: EF01CI03
+        description: Compartilhar observações já feitas sobre animais e plantas próximos da escola.
+    interactive:
+      slug: puzzle-defesas-criativas
+      title: Defesas Criativas — Quebra-cabeça
+      type: PUZZLE
+      bnccDescription: Observar características de animais e plantas, relacionando-as aos ambientes em que vivem.
+      estimatedTimeMinutes: 12
+      instructions:
+        - Observe cada cartão do quebra-cabeça.
+        - Arraste ou selecione a combinação que faça sentido.
+        - Explique para o grupo qual pista levou à associação.
+      objectives:
+        - Relacionar características do corpo dos animais às estratégias de proteção.
+        - Argumentar sobre como cada adaptação ajuda na sobrevivência.
+      puzzle:
+        mode: matching
+        successFeedback: Muito bom! Vocês descobriram como cada animal se protege.
+        errorFeedback: Releiam as descrições e conversem sobre qual comportamento combina com o animal.
+        pairs:
+          - id: defesas-criativas-pair-1
+            prompt: Boto cor-de-rosa
+            match: Nada em grupos e usa sons para se orientar no rio
+            hint: Repare em animais que vivem juntos e usam sons.
+            feedback: Botos se protegem nadando juntos e emitindo sons.
+          - id: defesas-criativas-pair-2
+            prompt: Tatu-bola
+            match: Enrola o corpo formando uma bola rígida
+            hint: Qual animal usa a carapaça como escudo?
+            feedback: O tatu-bola se enrola para se proteger.
+          - id: defesas-criativas-pair-3
+            prompt: Sapo colorido
+            match: Usa cores vivas para avisar que é venenoso
+            hint: Qual animal usa cores como aviso?
+            feedback: Cores vivas alertam predadores sobre veneno.
+          - id: defesas-criativas-pair-4
+            prompt: Garça
+            match: Fica imóvel e camufla entre os galhos próximos à água
+            hint: Pense em aves que caçam paradas.
+            feedback: Garças camuflam e permanecem imóveis para se proteger.
+      accessibility:
+        hints:
+          - audience: ESTUDANTE
+            text: >-
+              Use TAB, setas ou toques para navegar pelas ações digitais ligadas a adaptações e
+              estratégias de sobrevivência.
+          - audience: EDUCADOR
+            text: Ative a leitura em voz alta e mantenha instruções visuais em contraste elevado.
+        feedback:
+          success: >-
+            Ótimo trabalho! As escolhas mostram entendimento sobre adaptações e estratégias de
+            sobrevivência.
+          encouragement: >-
+            Caso se confunda, revise com a equipe, utilize o botão de repetir instruções e retome
+            com calma.
+          accessibility: >-
+            Disponibilize controle adaptado, tempo flexível e apoio auditivo individual sempre que
+            necessário.
+        assets:
+          - slug: cn-animal-boto
+            type: IMAGEM
+            title: Boto cor-de-rosa investigativo
+  - partial: ../../_partials/acolhimento-base.yaml
+    slug: trilha-dos-sons
+    title: Trilha dos Sons
+    prompt: Siga a trilha sonora e indique quais animais aparecem em cada ponto.
+    summary: Mini-jogo sensorial com foco em audição e observação.
+    type: GAME
+    difficulty: INICIAR
+    bncc:
+      code: EF01CI03
+      habilidades:
+        - EF01CI03
+    learningObjectives:
+      - Reconhecer sons de animais e relacioná-los aos ambientes onde vivem.
+      - Cooperar para registrar observações sonoras em mapas simples.
+    description: >-
+      Trilha dos Sons apresenta pontos do mapa com pistas auditivas que indicam a presença de
+      animais.
+    metadata:
+      categoria: Caça sonora
+      duracaoMinutos: 12
+      tempoEstimadoMinutos: 12
+      habilidades:
+        - EF01CI03
+      assetSlug: cn-natureza-rio
+      assetUsage: Use a paisagem do rio para ambientar a trilha de sons naturais.
+      familiaEngajamento: Convide as famílias a criar jogos de localização de sons no quintal ou na varanda.
+      focoInvestigativo: identificação auditiva e espacial de animais
+      modoCooperativo: true
+      tagsInterdisciplinares:
+        - Música
+        - Geografia
+      interactiveSlug: game-trilha-dos-sons
+      habilidadesSecundarias:
+        - EF01CI01
+      mapaSonoro: Mapa digital com ícones que emitem sons.
+    accessibility:
+      hints:
+        - audience: ESTUDANTE
+          text: >-
+            Passo 1: Observe o desafio com calma e use a leitura em voz alta para investigar
+            identificação auditiva e espacial de animais.
+        - audience: ESTUDANTE
+          text: >-
+            Passo 2: Faça pequenas pausas para perceber os detalhes e compartilhe o que notou sobre
+            identificação auditiva e espacial de animais.
+        - audience: EDUCADOR
+          text: >-
+            Ofereça materiais táteis, áudio descrição e tempo extra para apoiar a exploração de
+            identificação auditiva e espacial de animais.
+        - audience: FAMILIA
+          text: Convide as famílias a criar jogos de localização de sons no quintal ou na varanda.
+      feedback:
+        success: >-
+          Excelente investigação! Você analisou identificação auditiva e espacial de animais com
+          olhar científico.
+        encouragement: >-
+          Tudo bem errar no caminho. Use recursos visuais, gestos e sons para revisar as pistas
+          antes de tentar novamente.
+        retry: >-
+          Faça uma pausa, respire fundo e retome observando novos detalhes sobre identificação
+          auditiva e espacial de animais.
+        accessibility: >-
+          Garanta apoios multimodais: contraste de cores, narração em voz alta, audiodescrição e
+          tempo estendido para quem precisar.
+      assets:
+        - slug: cn-natureza-rio
+          type: IMAGEM
+          title: Rio sinuoso e calmo
+          description: Use a paisagem do rio para ambientar a trilha de sons naturais.
+      alternatives:
+        - title: MATERIAIS CONCRETOS
+          description: >-
+            Monte estações com objetos reais para reforçar identificação auditiva e espacial de
+            animais.
+          steps:
+            - Disponibilize cartões com pictogramas e legendas em caixa alta.
+            - Use texturas, aromas ou sons reais como apoio sensorial.
+      audioCue:
+        title: SINAL DE PAUSA
+        description: Utilize um sino suave ou chocalho para avisar a troca de etapa ou necessidade de pausa.
+        steps:
+          - Combine com a turma o significado do sinal antes de iniciar.
+          - Ofereça tempo suficiente após o sinal para reorganização corporal.
+      motorSupport:
+        - title: APOIO MOTOR
+          description: >-
+            Disponibilize apoios para toque, ponteiras, suportes de tablet e mesas acessíveis
+            durante a interação.
+          steps:
+            - Permita que duplas se alternem no controle do dispositivo.
+            - Ofereça apoio postural e ajustes de altura quando necessário.
+    prerequisites:
+      - type: SKILL
+        reference: EF01CI03
+        description: Compartilhar observações já feitas sobre animais e plantas próximos da escola.
+    interactive:
+      slug: game-trilha-dos-sons
+      title: Trilha dos Sons — Mini-jogo
+      type: GAME
+      bnccDescription: Observar características de animais e plantas, relacionando-as aos ambientes em que vivem.
+      estimatedTimeMinutes: 12
+      instructions:
+        - Leia ou escute a missão de cada fase.
+        - Use as setas, toques ou cliques para registrar a resposta.
+        - Converse com o grupo sobre outras estratégias possíveis.
+      objectives:
+        - Reconhecer sons de animais e relacioná-los aos ambientes onde vivem.
+        - Cooperar para registrar observações sonoras em mapas simples.
+      game:
+        mode: math-challenge
+        timeLimitSeconds: 85
+        lives: 3
+        victoryMessage: Trilha concluída! Todas as vozes da natureza foram identificadas.
+        gameOverMessage: Voltem à trilha sonora, ajustem as pistas e tentem novamente.
+        levels:
+          - id: trilha-dos-sons-level-1
+            challenge: Você escuta asas batendo e um canto agudo nas árvores altas.
+            answer: Tucano
+            hint: Pense em aves coloridas que vivem nas copas.
+            successFeedback: Ótimo! Tucanos cantam nas copas das árvores.
+            failureFeedback: Tente lembrar quais aves vivem nas árvores altas.
+          - id: trilha-dos-sons-level-2
+            challenge: Ao lado do rio, há respingos e um apito longo debaixo d'água.
+            answer: Boto cor-de-rosa
+            hint: Que animal usa sons na água doce?
+            successFeedback: Certo! O boto emite sons e respira na superfície.
+            failureFeedback: Considere animais que vivem em rios e fazem sons debaixo d'água.
+          - id: trilha-dos-sons-level-3
+            challenge: No chão molhado, você percebe coaxos contínuos perto das folhas.
+            answer: Sapo da mata
+            hint: Quem canta perto de folhas úmidas?
+            successFeedback: Perfeito! Sapos cantam perto das folhas molhadas.
+            failureFeedback: Lembre-se dos anfíbios que moram na mata úmida.
+      accessibility:
+        hints:
+          - audience: ESTUDANTE
+            text: >-
+              Use TAB, setas ou toques para navegar pelas ações digitais ligadas a identificação
+              auditiva e espacial de animais.
+          - audience: EDUCADOR
+            text: Ative a leitura em voz alta e mantenha instruções visuais em contraste elevado.
+        feedback:
+          success: >-
+            Ótimo trabalho! As escolhas mostram entendimento sobre identificação auditiva e espacial
+            de animais.
+          encouragement: >-
+            Caso se confunda, revise com a equipe, utilize o botão de repetir instruções e retome
+            com calma.
+          accessibility: >-
+            Disponibilize controle adaptado, tempo flexível e apoio auditivo individual sempre que
+            necessário.
+        assets:
+          - slug: cn-natureza-rio
+            type: IMAGEM
+            title: Rio sinuoso e calmo
+  - partial: ../../_partials/acolhimento-base.yaml
+    slug: patrulha-biodiversidade
+    title: Patrulha da Biodiversidade
+    prompt: Escolha atitudes que ajudam a proteger os animais da vizinhança.
+    summary: Mini-jogo de tomada de decisões ambientais.
+    type: GAME
+    difficulty: PRATICAR
+    bncc:
+      code: EF01CI03
+      habilidades:
+        - EF01CI03
+        - EF01CI04
+    learningObjectives:
+      - Selecionar atitudes que preservam animais e seus habitats.
+      - Argumentar sobre consequências de práticas que ameaçam a biodiversidade.
+    description: Patrulha da Biodiversidade apresenta missões rápidas em que a turma escolhe ações de proteção.
+    metadata:
+      categoria: Missões ecológicas
+      duracaoMinutos: 13
+      tempoEstimadoMinutos: 13
+      habilidades:
+        - EF01CI03
+        - EF01CI04
+      assetSlug: cn-natureza-floresta
+      assetUsage: Projete a floresta para falar sobre equilíbrio entre pessoas e natureza.
+      familiaEngajamento: >-
+        Solicite que as famílias identifiquem áreas verdes do bairro e pensem em formas de
+        preservá-las.
+      focoInvestigativo: cuidado com animais e ambientes naturais
+      modoCooperativo: true
+      tagsInterdisciplinares:
+        - Geografia
+        - Língua Portuguesa
+      interactiveSlug: game-patrulha-biodiversidade
+      habilidadesSecundarias:
+        - EF01CI02
+      registroMissao: Planilha coletiva para anotar compromissos de cuidado.
+    accessibility:
+      hints:
+        - audience: ESTUDANTE
+          text: >-
+            Passo 1: Observe o desafio com calma e use a leitura em voz alta para investigar cuidado
+            com animais e ambientes naturais.
+        - audience: ESTUDANTE
+          text: >-
+            Passo 2: Faça pequenas pausas para perceber os detalhes e compartilhe o que notou sobre
+            cuidado com animais e ambientes naturais.
+        - audience: EDUCADOR
+          text: >-
+            Ofereça materiais táteis, áudio descrição e tempo extra para apoiar a exploração de
+            cuidado com animais e ambientes naturais.
+        - audience: FAMILIA
+          text: >-
+            Solicite que as famílias identifiquem áreas verdes do bairro e pensem em formas de
+            preservá-las.
+      feedback:
+        success: >-
+          Excelente investigação! Você analisou cuidado com animais e ambientes naturais com olhar
+          científico.
+        encouragement: >-
+          Tudo bem errar no caminho. Use recursos visuais, gestos e sons para revisar as pistas
+          antes de tentar novamente.
+        retry: >-
+          Faça uma pausa, respire fundo e retome observando novos detalhes sobre cuidado com animais
+          e ambientes naturais.
+        accessibility: >-
+          Garanta apoios multimodais: contraste de cores, narração em voz alta, audiodescrição e
+          tempo estendido para quem precisar.
+      assets:
+        - slug: cn-natureza-floresta
+          type: IMAGEM
+          title: Floresta ensolarada
+          description: Projete a floresta para falar sobre equilíbrio entre pessoas e natureza.
+      alternatives:
+        - title: MATERIAIS CONCRETOS
+          description: Monte estações com objetos reais para reforçar cuidado com animais e ambientes naturais.
+          steps:
+            - Disponibilize cartões com pictogramas e legendas em caixa alta.
+            - Use texturas, aromas ou sons reais como apoio sensorial.
+      audioCue:
+        title: SINAL DE PAUSA
+        description: Utilize um sino suave ou chocalho para avisar a troca de etapa ou necessidade de pausa.
+        steps:
+          - Combine com a turma o significado do sinal antes de iniciar.
+          - Ofereça tempo suficiente após o sinal para reorganização corporal.
+      motorSupport:
+        - title: APOIO MOTOR
+          description: >-
+            Disponibilize apoios para toque, ponteiras, suportes de tablet e mesas acessíveis
+            durante a interação.
+          steps:
+            - Permita que duplas se alternem no controle do dispositivo.
+            - Ofereça apoio postural e ajustes de altura quando necessário.
+    prerequisites:
+      - type: SKILL
+        reference: EF01CI03
+        description: Compartilhar observações já feitas sobre animais e plantas próximos da escola.
+    interactive:
+      slug: game-patrulha-biodiversidade
+      title: Patrulha da Biodiversidade — Mini-jogo
+      type: GAME
+      bnccDescription: Observar características de animais e plantas, relacionando-as aos ambientes em que vivem.
+      estimatedTimeMinutes: 13
+      instructions:
+        - Leia ou escute a missão de cada fase.
+        - Use as setas, toques ou cliques para registrar a resposta.
+        - Converse com o grupo sobre outras estratégias possíveis.
+      objectives:
+        - Selecionar atitudes que preservam animais e seus habitats.
+        - Argumentar sobre consequências de práticas que ameaçam a biodiversidade.
+      game:
+        mode: math-challenge
+        timeLimitSeconds: 90
+        lives: 3
+        victoryMessage: Vocês protegeram a vizinhança! Os animais continuam seguros.
+        gameOverMessage: Revejam as atitudes e tentem novamente planejando novas estratégias.
+        levels:
+          - id: patrulha-biodiversidade-level-1
+            challenge: Um colega quer alimentar os peixes do rio com restos de salgadinho.
+            answer: Explicar que restos humanos podem prejudicar os animais
+            hint: Escolha o cuidado mais seguro para os peixes.
+            successFeedback: Perfeito! Alimentos inadequados prejudicam os peixes.
+            failureFeedback: 'Reflita: restos humanos não fazem parte da dieta dos peixes.'
+          - id: patrulha-biodiversidade-level-2
+            challenge: Há lixo perto das árvores onde os tucanos descansam.
+            answer: Organizar mutirão para recolher e separar o lixo
+            hint: Pense em ações coletivas para limpar o ambiente.
+            successFeedback: Ótima decisão! Limpeza coletiva protege os animais.
+            failureFeedback: Considere uma ação cooperativa de limpeza.
+          - id: patrulha-biodiversidade-level-3
+            challenge: Um grupo pretende capturar sapos para brincar.
+            answer: Conversar com adulto e explicar que os sapos controlam insetos
+            hint: Escolha uma atitude responsável com os animais.
+            successFeedback: Excelente! Avisar e explicar protege os sapos da vizinhança.
+            failureFeedback: Lembre-se de envolver adultos e explicar por que o animal é importante.
+      accessibility:
+        hints:
+          - audience: ESTUDANTE
+            text: >-
+              Use TAB, setas ou toques para navegar pelas ações digitais ligadas a cuidado com
+              animais e ambientes naturais.
+          - audience: EDUCADOR
+            text: Ative a leitura em voz alta e mantenha instruções visuais em contraste elevado.
+        feedback:
+          success: >-
+            Ótimo trabalho! As escolhas mostram entendimento sobre cuidado com animais e ambientes
+            naturais.
+          encouragement: >-
+            Caso se confunda, revise com a equipe, utilize o botão de repetir instruções e retome
+            com calma.
+          accessibility: >-
+            Disponibilize controle adaptado, tempo flexível e apoio auditivo individual sempre que
+            necessário.
+        assets:
+          - slug: cn-natureza-floresta
+            type: IMAGEM
+            title: Floresta ensolarada
+  - partial: ../../_partials/acolhimento-base.yaml
+    slug: rota-do-boto
+    title: Rota do Boto
+    prompt: Ajude o boto a seguir pelo rio escolhendo caminhos seguros.
+    summary: Mini-jogo sobre navegação em rios e cuidados ambientais.
+    type: GAME
+    difficulty: PRATICAR
+    bncc:
+      code: EF01CI03
+      habilidades:
+        - EF01CI03
+        - EF01CI04
+    learningObjectives:
+      - Identificar riscos e proteções em ambientes aquáticos naturais.
+      - Planejar rotas seguras considerando preservação e convivência.
+    description: >-
+      Rota do Boto apresenta escolhas de percurso que destacam cuidados com rios e animais
+      aquáticos.
+    metadata:
+      categoria: Exploração fluvial
+      duracaoMinutos: 12
+      tempoEstimadoMinutos: 12
+      habilidades:
+        - EF01CI03
+        - EF01CI04
+      assetSlug: cn-animal-boto
+      assetUsage: A imagem do boto reforça a importância de rios limpos e profundos.
+      familiaEngajamento: >-
+        Sugira que as famílias procurem notícias sobre rios da região e conversem sobre cuidados
+        necessários.
+      focoInvestigativo: orientação espacial e segurança em ambientes aquáticos
+      modoCooperativo: true
+      tagsInterdisciplinares:
+        - Matemática
+        - Geografia
+      interactiveSlug: game-rota-do-boto
+      habilidadesSecundarias:
+        - EF01CI02
+      cenarios:
+        - Margem com barcos
+        - Trecho poluído
+        - Área de vegetação densa
+    accessibility:
+      hints:
+        - audience: ESTUDANTE
+          text: >-
+            Passo 1: Observe o desafio com calma e use a leitura em voz alta para investigar
+            orientação espacial e segurança em ambientes aquáticos.
+        - audience: ESTUDANTE
+          text: >-
+            Passo 2: Faça pequenas pausas para perceber os detalhes e compartilhe o que notou sobre
+            orientação espacial e segurança em ambientes aquáticos.
+        - audience: EDUCADOR
+          text: >-
+            Ofereça materiais táteis, áudio descrição e tempo extra para apoiar a exploração de
+            orientação espacial e segurança em ambientes aquáticos.
+        - audience: FAMILIA
+          text: >-
+            Sugira que as famílias procurem notícias sobre rios da região e conversem sobre cuidados
+            necessários.
+      feedback:
+        success: >-
+          Excelente investigação! Você analisou orientação espacial e segurança em ambientes
+          aquáticos com olhar científico.
+        encouragement: >-
+          Tudo bem errar no caminho. Use recursos visuais, gestos e sons para revisar as pistas
+          antes de tentar novamente.
+        retry: >-
+          Faça uma pausa, respire fundo e retome observando novos detalhes sobre orientação espacial
+          e segurança em ambientes aquáticos.
+        accessibility: >-
+          Garanta apoios multimodais: contraste de cores, narração em voz alta, audiodescrição e
+          tempo estendido para quem precisar.
+      assets:
+        - slug: cn-animal-boto
+          type: IMAGEM
+          title: Boto cor-de-rosa investigativo
+          description: A imagem do boto reforça a importância de rios limpos e profundos.
+      alternatives:
+        - title: MATERIAIS CONCRETOS
+          description: >-
+            Monte estações com objetos reais para reforçar orientação espacial e segurança em
+            ambientes aquáticos.
+          steps:
+            - Disponibilize cartões com pictogramas e legendas em caixa alta.
+            - Use texturas, aromas ou sons reais como apoio sensorial.
+      audioCue:
+        title: SINAL DE PAUSA
+        description: Utilize um sino suave ou chocalho para avisar a troca de etapa ou necessidade de pausa.
+        steps:
+          - Combine com a turma o significado do sinal antes de iniciar.
+          - Ofereça tempo suficiente após o sinal para reorganização corporal.
+      motorSupport:
+        - title: APOIO MOTOR
+          description: >-
+            Disponibilize apoios para toque, ponteiras, suportes de tablet e mesas acessíveis
+            durante a interação.
+          steps:
+            - Permita que duplas se alternem no controle do dispositivo.
+            - Ofereça apoio postural e ajustes de altura quando necessário.
+    prerequisites:
+      - type: SKILL
+        reference: EF01CI03
+        description: Compartilhar observações já feitas sobre animais e plantas próximos da escola.
+    interactive:
+      slug: game-rota-do-boto
+      title: Rota do Boto — Mini-jogo
+      type: GAME
+      bnccDescription: Observar características de animais e plantas, relacionando-as aos ambientes em que vivem.
+      estimatedTimeMinutes: 12
+      instructions:
+        - Leia ou escute a missão de cada fase.
+        - Use as setas, toques ou cliques para registrar a resposta.
+        - Converse com o grupo sobre outras estratégias possíveis.
+      objectives:
+        - Identificar riscos e proteções em ambientes aquáticos naturais.
+        - Planejar rotas seguras considerando preservação e convivência.
+      game:
+        mode: math-challenge
+        timeLimitSeconds: 88
+        lives: 3
+        victoryMessage: O boto chegou com segurança! O rio continua protegido.
+        gameOverMessage: Replanejem a rota observando os sinais do rio para tentar novamente.
+        levels:
+          - id: rota-do-boto-level-1
+            challenge: Há um trecho com redes de pesca próximas à superfície.
+            answer: Desviar para uma área sem redes e avisar pescadores responsáveis
+            hint: Pense em manter o boto longe de objetos que prendem.
+            successFeedback: Muito bem! Evitar redes mantém o boto seguro.
+            failureFeedback: 'Reflita: redes podem prender o boto, é melhor desviar.'
+          - id: rota-do-boto-level-2
+            challenge: O rio fica raso próximo a bancos de areia.
+            answer: Buscar um canal mais profundo com corrente suave
+            hint: Considere a profundidade necessária para o boto nadar.
+            successFeedback: Ótima escolha! O canal profundo permite nadar com segurança.
+            failureFeedback: 'Pense: o boto precisa de água funda para nadar.'
+          - id: rota-do-boto-level-3
+            challenge: A margem está com lixo plástico boiando.
+            answer: Registrar o local e combinar mutirão de limpeza com a comunidade
+            hint: Escolha atitude que protege o ambiente e os animais.
+            successFeedback: Excelente! Limpar o rio ajuda todos os animais.
+            failureFeedback: Lembre-se de propor soluções coletivas para o lixo.
+      accessibility:
+        hints:
+          - audience: ESTUDANTE
+            text: >-
+              Use TAB, setas ou toques para navegar pelas ações digitais ligadas a orientação
+              espacial e segurança em ambientes aquáticos.
+          - audience: EDUCADOR
+            text: Ative a leitura em voz alta e mantenha instruções visuais em contraste elevado.
+        feedback:
+          success: >-
+            Ótimo trabalho! As escolhas mostram entendimento sobre orientação espacial e segurança
+            em ambientes aquáticos.
+          encouragement: >-
+            Caso se confunda, revise com a equipe, utilize o botão de repetir instruções e retome
+            com calma.
+          accessibility: >-
+            Disponibilize controle adaptado, tempo flexível e apoio auditivo individual sempre que
+            necessário.
+        assets:
+          - slug: cn-animal-boto
+            type: IMAGEM
+            title: Boto cor-de-rosa investigativo
+  - partial: ../../_partials/acolhimento-base.yaml
+    slug: festival-das-aves
+    title: Festival das Aves
+    prompt: Coordene a equipe para observar aves sem perturbar seus comportamentos.
+    summary: Mini-jogo cooperativo sobre observação responsável.
+    type: GAME
+    difficulty: DOMINAR
+    bncc:
+      code: EF01CI03
+      habilidades:
+        - EF01CI03
+        - EF01CI04
+    learningObjectives:
+      - Planejar observações de aves respeitando seu espaço.
+      - Registrar cores, sons e comportamentos de forma colaborativa.
+    description: Festival das Aves integra cooperação, registro e ética na observação de animais da vizinhança.
+    metadata:
+      categoria: Expedição cooperativa
+      duracaoMinutos: 14
+      tempoEstimadoMinutos: 14
+      habilidades:
+        - EF01CI03
+        - EF01CI04
+      assetSlug: cn-animal-tucano
+      assetUsage: A imagem do tucano inspira cuidados durante a observação de aves coloridas.
+      familiaEngajamento: Combine com as famílias um passeio para observar aves em praças, registrando sons e cores.
+      focoInvestigativo: observação cuidadosa e registro de aves
+      modoCooperativo: true
+      tagsInterdisciplinares:
+        - Arte
+        - Língua Portuguesa
+      interactiveSlug: game-festival-das-aves
+      habilidadesSecundarias:
+        - EF01CI01
+      instrumentos:
+        - Binóculos artesanais
+        - Caderno de campo coletivo
+    accessibility:
+      hints:
+        - audience: ESTUDANTE
+          text: >-
+            Passo 1: Observe o desafio com calma e use a leitura em voz alta para investigar
+            observação cuidadosa e registro de aves.
+        - audience: ESTUDANTE
+          text: >-
+            Passo 2: Faça pequenas pausas para perceber os detalhes e compartilhe o que notou sobre
+            observação cuidadosa e registro de aves.
+        - audience: EDUCADOR
+          text: >-
+            Ofereça materiais táteis, áudio descrição e tempo extra para apoiar a exploração de
+            observação cuidadosa e registro de aves.
+        - audience: FAMILIA
+          text: >-
+            Combine com as famílias um passeio para observar aves em praças, registrando sons e
+            cores.
+      feedback:
+        success: >-
+          Excelente investigação! Você analisou observação cuidadosa e registro de aves com olhar
+          científico.
+        encouragement: >-
+          Tudo bem errar no caminho. Use recursos visuais, gestos e sons para revisar as pistas
+          antes de tentar novamente.
+        retry: >-
+          Faça uma pausa, respire fundo e retome observando novos detalhes sobre observação
+          cuidadosa e registro de aves.
+        accessibility: >-
+          Garanta apoios multimodais: contraste de cores, narração em voz alta, audiodescrição e
+          tempo estendido para quem precisar.
+      assets:
+        - slug: cn-animal-tucano
+          type: IMAGEM
+          title: Tucano atento na mata
+          description: A imagem do tucano inspira cuidados durante a observação de aves coloridas.
+      alternatives:
+        - title: MATERIAIS CONCRETOS
+          description: Monte estações com objetos reais para reforçar observação cuidadosa e registro de aves.
+          steps:
+            - Disponibilize cartões com pictogramas e legendas em caixa alta.
+            - Use texturas, aromas ou sons reais como apoio sensorial.
+      audioCue:
+        title: SINAL DE PAUSA
+        description: Utilize um sino suave ou chocalho para avisar a troca de etapa ou necessidade de pausa.
+        steps:
+          - Combine com a turma o significado do sinal antes de iniciar.
+          - Ofereça tempo suficiente após o sinal para reorganização corporal.
+      motorSupport:
+        - title: APOIO MOTOR
+          description: >-
+            Disponibilize apoios para toque, ponteiras, suportes de tablet e mesas acessíveis
+            durante a interação.
+          steps:
+            - Permita que duplas se alternem no controle do dispositivo.
+            - Ofereça apoio postural e ajustes de altura quando necessário.
+    prerequisites:
+      - type: SKILL
+        reference: EF01CI03
+        description: Compartilhar observações já feitas sobre animais e plantas próximos da escola.
+    interactive:
+      slug: game-festival-das-aves
+      title: Festival das Aves — Mini-jogo
+      type: GAME
+      bnccDescription: Observar características de animais e plantas, relacionando-as aos ambientes em que vivem.
+      estimatedTimeMinutes: 14
+      instructions:
+        - Leia ou escute a missão de cada fase.
+        - Use as setas, toques ou cliques para registrar a resposta.
+        - Converse com o grupo sobre outras estratégias possíveis.
+      objectives:
+        - Planejar observações de aves respeitando seu espaço.
+        - Registrar cores, sons e comportamentos de forma colaborativa.
+      game:
+        mode: math-challenge
+        timeLimitSeconds: 95
+        lives: 4
+        victoryMessage: Expedição bem-sucedida! As aves foram observadas com respeito.
+        gameOverMessage: Reorganizem os turnos de observação e tentem novamente com mais calma.
+        levels:
+          - id: festival-das-aves-level-1
+            challenge: Uma ave colorida pousa num galho baixo. Como registrar sem assustá-la?
+            answer: Observar em silêncio e anotar cores à distância
+            hint: Evite movimentos bruscos e aproximação.
+            successFeedback: Excelente! Observação silenciosa protege a ave.
+            failureFeedback: 'Reflita: chegar perto demais pode assustar a ave.'
+          - id: festival-das-aves-level-2
+            challenge: A equipe quer tocar flauta para chamar os pássaros.
+            answer: Usar sons suaves apenas após combinar com o educador
+            hint: Pense no impacto do som nos animais.
+            successFeedback: Boa escolha! Sons suaves planejados evitam estresse.
+            failureFeedback: Considere que sons fortes podem afastar as aves.
+          - id: festival-das-aves-level-3
+            challenge: Choveu e o caminho ficou escorregadio perto dos ninhos.
+            answer: Redesenhar a rota e manter distância segura das árvores
+            hint: Proteja o grupo e os ninhos.
+            successFeedback: Muito bem! Distância segura garante proteção aos ninhos.
+            failureFeedback: Reflita sobre segurança ao redor dos ninhos durante a chuva.
+      accessibility:
+        hints:
+          - audience: ESTUDANTE
+            text: >-
+              Use TAB, setas ou toques para navegar pelas ações digitais ligadas a observação
+              cuidadosa e registro de aves.
+          - audience: EDUCADOR
+            text: Ative a leitura em voz alta e mantenha instruções visuais em contraste elevado.
+        feedback:
+          success: >-
+            Ótimo trabalho! As escolhas mostram entendimento sobre observação cuidadosa e registro
+            de aves.
+          encouragement: >-
+            Caso se confunda, revise com a equipe, utilize o botão de repetir instruções e retome
+            com calma.
+          accessibility: >-
+            Disponibilize controle adaptado, tempo flexível e apoio auditivo individual sempre que
+            necessário.
+        assets:
+          - slug: cn-animal-tucano
+            type: IMAGEM
+            title: Tucano atento na mata
