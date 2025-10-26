@@ -1,0 +1,158 @@
+[
+  {
+    "bnccCode": "EF01CI01",
+    "componenteCurricular": "Ciências",
+    "etapa": "Ensino Fundamental - Anos Iniciais",
+    "ageGroupSlug": "fundamental-anos-iniciais",
+    "unidadeTematica": "Matéria e energia",
+    "objetoConhecimento": [
+      "Características dos materiais"
+    ],
+    "competency": "Comparar características de diferentes materiais presentes em objetos de uso cotidiano, discutindo sua origem, os modos como são descartados e como podem ser usados de forma mais consciente",
+    "habilidades": [
+      {
+        "codigo": "EF01CI01",
+        "descricao": "Comparar características de diferentes materiais presentes em objetos de uso cotidiano, discutindo sua origem, os modos como são descartados e como podem ser usados de forma mais consciente"
+      }
+    ],
+    "descricao": "Compara materiais cotidianos discutindo origem, descarte e uso consciente.",
+    "referencias": [
+      {
+        "documento": "BNCC - Ciências",
+        "secao": "Ensino Fundamental Anos Iniciais",
+        "paginaInicial": 332,
+        "paginaFinal": 332
+      }
+    ]
+  },
+  {
+    "bnccCode": "EF01CI02",
+    "componenteCurricular": "Ciências",
+    "etapa": "Ensino Fundamental - Anos Iniciais",
+    "ageGroupSlug": "fundamental-anos-iniciais",
+    "unidadeTematica": "Vida e evolução",
+    "objetoConhecimento": [
+      "Corpo humano"
+    ],
+    "competency": "Localizar, nomear e representar graficamente (por meio de desenhos) partes do corpo humano e explicar suas funções",
+    "habilidades": [
+      {
+        "codigo": "EF01CI02",
+        "descricao": "Localizar, nomear e representar graficamente (por meio de desenhos) partes do corpo humano e explicar suas funções"
+      }
+    ],
+    "descricao": "Localiza e descreve partes do corpo humano e suas funções essenciais.",
+    "referencias": [
+      {
+        "documento": "BNCC - Ciências",
+        "secao": "Ensino Fundamental Anos Iniciais",
+        "paginaInicial": 332,
+        "paginaFinal": 332
+      }
+    ]
+  },
+  {
+    "bnccCode": "EF01CI03",
+    "componenteCurricular": "Ciências",
+    "etapa": "Ensino Fundamental - Anos Iniciais",
+    "ageGroupSlug": "fundamental-anos-iniciais",
+    "unidadeTematica": "Vida e evolução",
+    "objetoConhecimento": [
+      "Corpo humano"
+    ],
+    "competency": "Discutir as razões pelas quais os hábitos de higiene do corpo (lavar as mãos antes de comer, escovar os dentes, limpar os olhos, o nariz e as orelhas etc.) são necessários para a manutenção da saúde",
+    "habilidades": [
+      {
+        "codigo": "EF01CI03",
+        "descricao": "Discutir as razões pelas quais os hábitos de higiene do corpo (lavar as mãos antes de comer, escovar os dentes, limpar os olhos, o nariz e as orelhas etc.) são necessários para a manutenção da saúde"
+      }
+    ],
+    "descricao": "Relaciona hábitos de higiene corporal à manutenção da saúde.",
+    "referencias": [
+      {
+        "documento": "BNCC - Ciências",
+        "secao": "Ensino Fundamental Anos Iniciais",
+        "paginaInicial": 332,
+        "paginaFinal": 332
+      }
+    ]
+  },
+  {
+    "bnccCode": "EF01CI04",
+    "componenteCurricular": "Ciências",
+    "etapa": "Ensino Fundamental - Anos Iniciais",
+    "ageGroupSlug": "fundamental-anos-iniciais",
+    "unidadeTematica": "Vida e evolução",
+    "objetoConhecimento": [
+      "Respeito à diversidade"
+    ],
+    "competency": "Comparar características físicas entre os colegas, reconhecendo a diversidade e a importância da valorização, do acolhimento e do respeito às diferenças",
+    "habilidades": [
+      {
+        "codigo": "EF01CI04",
+        "descricao": "Comparar características físicas entre os colegas, reconhecendo a diversidade e a importância da valorização, do acolhimento e do respeito às diferenças"
+      }
+    ],
+    "descricao": "Valoriza diferenças físicas entre colegas promovendo acolhimento e respeito.",
+    "referencias": [
+      {
+        "documento": "BNCC - Ciências",
+        "secao": "Ensino Fundamental Anos Iniciais",
+        "paginaInicial": 332,
+        "paginaFinal": 332
+      }
+    ]
+  },
+  {
+    "bnccCode": "EF01CI05",
+    "componenteCurricular": "Ciências",
+    "etapa": "Ensino Fundamental - Anos Iniciais",
+    "ageGroupSlug": "fundamental-anos-iniciais",
+    "unidadeTematica": "Terra e Universo",
+    "objetoConhecimento": [
+      "Escalas de tempo"
+    ],
+    "competency": "Identificar e nomear diferentes escalas de tempo: os períodos diários (manhã, tarde, noite) e a sucessão de dias, semanas, meses e anos",
+    "habilidades": [
+      {
+        "codigo": "EF01CI05",
+        "descricao": "Identificar e nomear diferentes escalas de tempo: os períodos diários (manhã, tarde, noite) e a sucessão de dias, semanas, meses e anos"
+      }
+    ],
+    "descricao": "Nomeia escalas de tempo diárias e relaciona dias, semanas, meses e anos.",
+    "referencias": [
+      {
+        "documento": "BNCC - Ciências",
+        "secao": "Ensino Fundamental Anos Iniciais",
+        "paginaInicial": 332,
+        "paginaFinal": 332
+      }
+    ]
+  },
+  {
+    "bnccCode": "EF01CI06",
+    "componenteCurricular": "Ciências",
+    "etapa": "Ensino Fundamental - Anos Iniciais",
+    "ageGroupSlug": "fundamental-anos-iniciais",
+    "unidadeTematica": "Terra e Universo",
+    "objetoConhecimento": [
+      "Escalas de tempo"
+    ],
+    "competency": "Selecionar exemplos de como a sucessão de dias e noites orienta o ritmo de atividades diárias de seres humanos e de outros seres vivos",
+    "habilidades": [
+      {
+        "codigo": "EF01CI06",
+        "descricao": "Selecionar exemplos de como a sucessão de dias e noites orienta o ritmo de atividades diárias de seres humanos e de outros seres vivos"
+      }
+    ],
+    "descricao": "Relaciona a sucessão de dias e noites ao ritmo das atividades de seres vivos.",
+    "referencias": [
+      {
+        "documento": "BNCC - Ciências",
+        "secao": "Ensino Fundamental Anos Iniciais",
+        "paginaInicial": 332,
+        "paginaFinal": 332
+      }
+    ]
+  }
+]

@@ -1,8 +1,9 @@
-import { readFileSync } from "node:fs";
 import path from "node:path";
 
+import { getBnccCodesByAgeGroup, getBnccHabilidadeCodes } from "@/lib/bncc";
+
 import type { ContentModuleDocument } from "./workspace";
-import { CONTENT_DIR, loadWorkspace } from "./workspace";
+import { loadWorkspace } from "./workspace";
 
 export type LintSeverity = "error" | "warning";
 
@@ -24,53 +25,6 @@ export type LintOptions = {
   rootDir?: string;
 };
 
-type CurriculumHabilidade = {
-  codigo: string;
-};
-
-type BnccStandard = {
-  bnccCode: string;
-  ageGroupSlug: string;
-  habilidades: CurriculumHabilidade[];
-};
-
-type BnccDataset = {
-  standards: BnccStandard[];
-};
-
-const BNCC_DATASET_PATH = path.join(CONTENT_DIR, "..", "bncc", "standards.json");
-
-const loadBnccDataset = (): BnccDataset => {
-  const content = readFileSync(BNCC_DATASET_PATH, "utf-8");
-  const parsed = JSON.parse(content) as BnccDataset;
-  if (!Array.isArray(parsed.standards)) {
-    throw new Error("Dataset de BNCC não possui lista 'standards'.");
-  }
-  return parsed;
-};
-
-const buildBnccIndexes = (dataset: BnccDataset) => {
-  const standardsByAgeGroup = new Map<string, Set<string>>();
-  const habilidadesCodes = new Set<string>();
-
-  for (const standard of dataset.standards) {
-    const ageGroup = standard.ageGroupSlug;
-    if (!standardsByAgeGroup.has(ageGroup)) {
-      standardsByAgeGroup.set(ageGroup, new Set());
-    }
-
-    standardsByAgeGroup.get(ageGroup)?.add(standard.bnccCode);
-
-    for (const habilidade of standard.habilidades) {
-      habilidadesCodes.add(habilidade.codigo);
-    }
-  }
-
-  return {
-    standardsByAgeGroup,
-    habilidadesCodes,
-  };
-};
 
 const addIssue = (collection: LintIssue[], issue: LintIssue) => {
   collection.push(issue);
@@ -261,9 +215,11 @@ export const lintWorkspace = (options: LintOptions = {}): LintResult => {
     };
   }
 
-  let bnccDataset: BnccDataset;
+  let standardsByAgeGroup: Map<string, Set<string>>;
+  let habilidadesCodes: Set<string>;
   try {
-    bnccDataset = loadBnccDataset();
+    standardsByAgeGroup = getBnccCodesByAgeGroup();
+    habilidadesCodes = getBnccHabilidadeCodes();
   } catch (error) {
     const message = error instanceof Error ? error.message : String(error);
     const fatalIssue: LintIssue = {
@@ -279,8 +235,6 @@ export const lintWorkspace = (options: LintOptions = {}): LintResult => {
       warnings: [],
     };
   }
-
-  const { standardsByAgeGroup, habilidadesCodes } = buildBnccIndexes(bnccDataset);
 
   const moduleSlugIndex = new Map<string, string>();
   const activitySlugIndex = new Map<string, { module: string; filePath: string }>();
