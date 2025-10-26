@@ -1,0 +1,2115 @@
+module:
+  slug: historias-rimadas
+  title: Histórias Rimadas
+  subtitle: Rimas e aliterações em ação
+  description: Sequência que amplia repertório de parlendas, poemas e histórias rimadas, explorando ritmo, musicalidade e criação coletiva de versos.
+  theme: Língua Portuguesa
+  discipline: Língua Portuguesa
+  ageGroupSlug: fundamental-anos-iniciais
+  learningPathSlug: descobertas-palavras
+  primaryBnccCode: EF01LP11
+  secondaryBnccCodes:
+    - EF01LP01
+    - EF01LP02
+  learningOutcomes:
+    - Identificar rimas e aliterações em textos orais curtos.
+    - Experimentar manipulações sonoras com apoio de gestos, percussão corporal e recursos visuais.
+    - Criar pequenos versos coletivos mantendo ritmo e coesão sonora.
+  tags:
+    - rimas
+    - oralidade
+    - poesia
+activities:
+  - partial: ../../_partials/acolhimento-base.yaml
+    slug: rima-no-final
+    title: Rima no Final
+    prompt: Complete o verso escolhendo a palavra que mantém a rima.
+    type: QUIZ
+    difficulty: INICIAR
+    bncc:
+      code: EF01LP11
+      habilidades:
+        - EF01LP11
+        - EF01LP01
+    learningObjectives:
+      - Perceber rimas ao final de versos curtos.
+      - Apoiar colegas destacando sons parecidos durante a leitura.
+    description: Rima no Final incentiva a turma a completar versos simples usando rimas conhecidas.
+    metadata:
+      categoria: Rimas finais
+      duracaoMinutos: 8
+      habilidades:
+        - EF01LP11
+        - EF01LP01
+      assetSlug: lp-letra-a
+      assetUsage: Utilize Ilustração da letra A como apoio visual para destacar identificação de rimas ao longo da atividade.
+      familiaEngajamento: Convide as famílias a observar identificação de rimas em histórias, cantigas ou jogos em casa.
+      habilidadesSecundarias:
+        - EF01LP01
+      interactiveSlug: quiz-rima-no-final
+    accessibility:
+      hints:
+        - audience: ESTUDANTE
+          text: 'Passo 1: Observe o enunciado com atenção e sublinhe mentalmente identificação de rimas.'
+        - audience: ESTUDANTE
+          text: 'Passo 2: Compare cada opção, repetindo os sons em voz alta se ajudar.'
+        - audience: ESTUDANTE
+          text: 'Passo 3: Respire fundo e confirme a alternativa escolhida com segurança.'
+        - audience: EDUCADOR
+          text: Guie a turma passo a passo, reforçando identificação de rimas com gestos, pictogramas e pausas.
+        - audience: FAMILIA
+          text: Envie sugestões de jogos ou músicas que reforcem identificação de rimas em casa.
+      feedback:
+        success: Excelente! Identificação de rimas ficou evidente nas suas escolhas.
+        encouragement: Caso erre, releia com calma e utilize marcadores sonoros ou visuais para apoiar a decisão.
+        retry: Experimente revisar as pistas destacadas antes de tentar novamente.
+        accessibility: Ofereça tempo extra, recursos táteis e apoio auditivo individual para quem precisar.
+      assets:
+        - slug: lp-letra-a
+          type: IMAGEM
+          title: Ilustração da letra A
+      alternatives:
+        - title: TEXTO EM CAIXA ALTA
+          description: OFEREÇA CARTÕES COM IDENTIFICAÇÃO DE RIMAS DESTACADO PARA QUE TODES ACOMPANHEM.
+          steps:
+            - FORNEÇA LETRAS GRANDES E ESPAÇADAS.
+            - GRIFE RIMAS OU PALAVRAS-CHAVE EM COR VIVA.
+      audioCue:
+        title: SINAL SONORO
+        description: Utilize um chocalho ou palmas para marcar o momento de focar em identificação de rimas.
+        steps:
+          - Avise que o som indica a troca de etapa ou turno de fala.
+          - Repita o som e a instrução de forma pausada.
+      motorSupport:
+        - title: APOIO MOTOR
+          description: Disponibilize apoios físicos para navegação e registro das respostas.
+          steps:
+            - Ofereça ponteiras, clipes ampliados ou teclado virtual.
+            - Permita que duplas se alternem no controle do dispositivo.
+    prerequisites:
+      - type: SKILL
+        reference: EF01LP11
+        description: Recitar parlendas com rimas marcadas pelo educador.
+    interactive:
+      slug: quiz-rima-no-final
+      title: Rima no Final — Quiz
+      type: QUIZ
+      bnccDescription: Identificar e criar rimas, aliterações e jogos de palavras em textos orais curtos, explorando ritmo e musicalidade.
+      estimatedTimeMinutes: 8
+      instructions:
+        - Leia ou escute cada questão antes de responder.
+        - Use as teclas numéricas ou toque nas alternativas para marcar sua escolha.
+        - Explique para a turma como identificou a resposta correta.
+      objectives:
+        - Perceber rimas ao final de versos curtos.
+        - Apoiar colegas destacando sons parecidos durante a leitura.
+      scoring:
+        correct: 10
+        incorrect: 0
+      adaptive:
+        increaseAfter: 2
+        decreaseAfter: 1
+      questions:
+        - id: rima-no-final-q1
+          type: multiple-choice
+          prompt: 'Complete o verso: ''A menina pulou corda com a ____.'''
+          hint: Pense em palavras que terminam com o mesmo som de 'corda'.
+          options:
+            - id: rima-no-final-q1-1
+              text: borda
+              isCorrect: true
+              feedback: Ótimo! 'Borda' repete o som final de 'corda' e mantém a rima.
+            - id: rima-no-final-q1-2
+              text: janela
+              isCorrect: false
+              feedback: Observe o som final da palavra para manter a rima proposta.
+            - id: rima-no-final-q1-3
+              text: flauta
+              isCorrect: false
+              feedback: Releia o verso e encontre uma palavra com final parecido.
+        - id: rima-no-final-q2
+          type: true-false
+          prompt: As palavras 'corda' e 'borda' rimam?
+          hint: Repita as palavras lentamente e compare os finais.
+          statement: As palavras 'corda' e 'borda' rimam porque terminam com o mesmo som.
+          answer: true
+          feedback:
+            'true': Isso aí! O som final é igual e forma a rima.
+            'false': Experimente repetir as palavras lentamente para perceber a rima.
+      accessibility:
+        hints:
+          - audience: ESTUDANTE
+            text: 'Passo 1: Leia ou escute cada instrução e identifique onde identificação de rimas aparece no interativo.'
+          - audience: ESTUDANTE
+            text: 'Passo 2: Use Tab ou toque na tela para revisar todas as opções antes de confirmar.'
+          - audience: ESTUDANTE
+            text: 'Passo 3: Compartilhe com um colega por que escolheu a resposta apresentada.'
+          - audience: EDUCADOR
+            text: Guie a turma passo a passo, reforçando identificação de rimas com gestos, pictogramas e pausas.
+          - audience: FAMILIA
+            text: Envie sugestões de jogos ou músicas que reforcem identificação de rimas em casa.
+        feedback:
+          success: Excelente! Identificação de rimas ficou evidente nas suas escolhas.
+          encouragement: Caso erre, releia com calma e utilize marcadores sonoros ou visuais para apoiar a decisão.
+          retry: Experimente revisar as pistas destacadas antes de tentar novamente.
+          accessibility: Ofereça tempo extra, recursos táteis e apoio auditivo individual para quem precisar.
+        assets:
+          - slug: lp-letra-a
+            type: IMAGEM
+            title: Ilustração da letra A
+        alternatives:
+          - title: TEXTO EM CAIXA ALTA
+            description: OFEREÇA CARTÕES COM IDENTIFICAÇÃO DE RIMAS DESTACADO PARA QUE TODES ACOMPANHEM.
+            steps:
+              - FORNEÇA LETRAS GRANDES E ESPAÇADAS.
+              - GRIFE RIMAS OU PALAVRAS-CHAVE EM COR VIVA.
+        audioCue:
+          title: SINAL SONORO
+          description: Utilize um chocalho ou palmas para marcar o momento de focar em identificação de rimas.
+          steps:
+            - Avise que o som indica a troca de etapa ou turno de fala.
+            - Repita o som e a instrução de forma pausada.
+        motorSupport:
+          - title: APOIO MOTOR
+            description: Disponibilize apoios físicos para navegação e registro das respostas.
+            steps:
+              - Ofereça ponteiras, clipes ampliados ou teclado virtual.
+              - Permita que duplas se alternem no controle do dispositivo.
+  - partial: ../../_partials/acolhimento-base.yaml
+    slug: eco-das-rimas
+    title: Eco das Rimas
+    prompt: Escolha a palavra que mantém a rima com o termo destacado na parlenda.
+    type: QUIZ
+    difficulty: INICIAR
+    bncc:
+      code: EF01LP11
+      habilidades:
+        - EF01LP11
+        - EF01LP02
+    learningObjectives:
+      - Comparar palavras para identificar rimas em parlendas conhecidas.
+      - Utilizar gestos ou batidas para marcar o ritmo rimado.
+    description: Eco das Rimas convida a turma a reconhecer rimas em versos conhecidos, reforçando o ritmo coletivo.
+    metadata:
+      categoria: Comparação de rimas
+      duracaoMinutos: 9
+      habilidades:
+        - EF01LP11
+        - EF01LP02
+      assetSlug: lp-letra-e
+      assetUsage: Utilize Ilustração da letra E como apoio visual para destacar comparação de rimas ao longo da atividade.
+      familiaEngajamento: Convide as famílias a observar comparação de rimas em histórias, cantigas ou jogos em casa.
+      habilidadesSecundarias:
+        - EF01LP02
+      interactiveSlug: quiz-eco-das-rimas
+    accessibility:
+      hints:
+        - audience: ESTUDANTE
+          text: 'Passo 1: Observe o enunciado com atenção e sublinhe mentalmente comparação de rimas.'
+        - audience: ESTUDANTE
+          text: 'Passo 2: Compare cada opção, repetindo os sons em voz alta se ajudar.'
+        - audience: ESTUDANTE
+          text: 'Passo 3: Respire fundo e confirme a alternativa escolhida com segurança.'
+        - audience: EDUCADOR
+          text: Guie a turma passo a passo, reforçando comparação de rimas com gestos, pictogramas e pausas.
+        - audience: FAMILIA
+          text: Envie sugestões de jogos ou músicas que reforcem comparação de rimas em casa.
+      feedback:
+        success: Excelente! Comparação de rimas ficou evidente nas suas escolhas.
+        encouragement: Caso erre, releia com calma e utilize marcadores sonoros ou visuais para apoiar a decisão.
+        retry: Experimente revisar as pistas destacadas antes de tentar novamente.
+        accessibility: Ofereça tempo extra, recursos táteis e apoio auditivo individual para quem precisar.
+      assets:
+        - slug: lp-letra-e
+          type: IMAGEM
+          title: Ilustração da letra E
+      alternatives:
+        - title: TEXTO EM CAIXA ALTA
+          description: OFEREÇA CARTÕES COM COMPARAÇÃO DE RIMAS DESTACADO PARA QUE TODES ACOMPANHEM.
+          steps:
+            - FORNEÇA LETRAS GRANDES E ESPAÇADAS.
+            - GRIFE RIMAS OU PALAVRAS-CHAVE EM COR VIVA.
+      audioCue:
+        title: SINAL SONORO
+        description: Utilize um chocalho ou palmas para marcar o momento de focar em comparação de rimas.
+        steps:
+          - Avise que o som indica a troca de etapa ou turno de fala.
+          - Repita o som e a instrução de forma pausada.
+      motorSupport:
+        - title: APOIO MOTOR
+          description: Disponibilize apoios físicos para navegação e registro das respostas.
+          steps:
+            - Ofereça ponteiras, clipes ampliados ou teclado virtual.
+            - Permita que duplas se alternem no controle do dispositivo.
+    prerequisites:
+      - type: ACTIVITY
+        reference: rima-no-final
+        description: Relembrar como as rimas aparecem ao final dos versos.
+    interactive:
+      slug: quiz-eco-das-rimas
+      title: Eco das Rimas — Quiz
+      type: QUIZ
+      bnccDescription: Identificar e criar rimas, aliterações e jogos de palavras em textos orais curtos, explorando ritmo e musicalidade.
+      estimatedTimeMinutes: 9
+      instructions:
+        - Leia ou escute cada questão antes de responder.
+        - Use as teclas numéricas ou toque nas alternativas para marcar sua escolha.
+        - Explique para a turma como identificou a resposta correta.
+      objectives:
+        - Comparar palavras para identificar rimas em parlendas conhecidas.
+        - Utilizar gestos ou batidas para marcar o ritmo rimado.
+      scoring:
+        correct: 10
+        incorrect: 0
+      adaptive:
+        increaseAfter: 2
+        decreaseAfter: 1
+      questions:
+        - id: eco-das-rimas-q1
+          type: multiple-choice
+          prompt: Na parlenda 'Peixe vivo, peixe vivo', qual palavra mantém a rima com 'peixe'?
+          hint: Observe o som final e procure uma palavra com final semelhante.
+          options:
+            - id: eco-das-rimas-q1-1
+              text: feixe
+              isCorrect: true
+              feedback: Perfeito! 'Peixe' e 'feixe' terminam com o mesmo som.
+            - id: eco-das-rimas-q1-2
+              text: faca
+              isCorrect: false
+              feedback: Tente novamente, buscando sons que combinem com 'peixe'.
+            - id: eco-das-rimas-q1-3
+              text: janela
+              isCorrect: false
+              feedback: A palavra escolhida precisa repetir o final sonoro de 'peixe'.
+        - id: eco-das-rimas-q2
+          type: true-false
+          prompt: As palavras 'peixe' e 'feixe' rimam?
+          hint: Compare os sons finais e perceba se são iguais.
+          statement: A palavra 'peixe' rima com 'feixe'.
+          answer: true
+          feedback:
+            'true': Muito bem! As duas palavras repetem o mesmo final sonoro.
+            'false': Leia em voz alta novamente e veja como o som final se repete.
+      accessibility:
+        hints:
+          - audience: ESTUDANTE
+            text: 'Passo 1: Leia ou escute cada instrução e identifique onde comparação de rimas aparece no interativo.'
+          - audience: ESTUDANTE
+            text: 'Passo 2: Use Tab ou toque na tela para revisar todas as opções antes de confirmar.'
+          - audience: ESTUDANTE
+            text: 'Passo 3: Compartilhe com um colega por que escolheu a resposta apresentada.'
+          - audience: EDUCADOR
+            text: Guie a turma passo a passo, reforçando comparação de rimas com gestos, pictogramas e pausas.
+          - audience: FAMILIA
+            text: Envie sugestões de jogos ou músicas que reforcem comparação de rimas em casa.
+        feedback:
+          success: Excelente! Comparação de rimas ficou evidente nas suas escolhas.
+          encouragement: Caso erre, releia com calma e utilize marcadores sonoros ou visuais para apoiar a decisão.
+          retry: Experimente revisar as pistas destacadas antes de tentar novamente.
+          accessibility: Ofereça tempo extra, recursos táteis e apoio auditivo individual para quem precisar.
+        assets:
+          - slug: lp-letra-e
+            type: IMAGEM
+            title: Ilustração da letra E
+        alternatives:
+          - title: TEXTO EM CAIXA ALTA
+            description: OFEREÇA CARTÕES COM COMPARAÇÃO DE RIMAS DESTACADO PARA QUE TODES ACOMPANHEM.
+            steps:
+              - FORNEÇA LETRAS GRANDES E ESPAÇADAS.
+              - GRIFE RIMAS OU PALAVRAS-CHAVE EM COR VIVA.
+        audioCue:
+          title: SINAL SONORO
+          description: Utilize um chocalho ou palmas para marcar o momento de focar em comparação de rimas.
+          steps:
+            - Avise que o som indica a troca de etapa ou turno de fala.
+            - Repita o som e a instrução de forma pausada.
+        motorSupport:
+          - title: APOIO MOTOR
+            description: Disponibilize apoios físicos para navegação e registro das respostas.
+            steps:
+              - Ofereça ponteiras, clipes ampliados ou teclado virtual.
+              - Permita que duplas se alternem no controle do dispositivo.
+  - partial: ../../_partials/acolhimento-base.yaml
+    slug: ritmo-na-historia
+    title: Ritmo na História
+    prompt: Analise qual verso mantém o ritmo e a rima da história rimada.
+    type: QUIZ
+    difficulty: PRATICAR
+    bncc:
+      code: EF01LP11
+      habilidades:
+        - EF01LP11
+        - EF01LP03
+    learningObjectives:
+      - Perceber repetições sonoras que mantêm ritmo em histórias rimadas.
+      - Explicar oralmente por que determinado verso combina com o anterior.
+    description: Ritmo na História desafia a turma a manter o compasso rimado de pequenos versos narrativos.
+    metadata:
+      categoria: Ritmo rimado
+      duracaoMinutos: 9
+      habilidades:
+        - EF01LP11
+        - EF01LP03
+      assetSlug: lp-material-caderno
+      assetUsage: Utilize Caderno colorido para escrita como apoio visual para destacar manutenção do ritmo rimado ao longo da atividade.
+      familiaEngajamento: Convide as famílias a observar manutenção do ritmo rimado em histórias, cantigas ou jogos em casa.
+      habilidadesSecundarias:
+        - EF01LP03
+      interactiveSlug: quiz-ritmo-na-historia
+    accessibility:
+      hints:
+        - audience: ESTUDANTE
+          text: 'Passo 1: Observe o enunciado com atenção e sublinhe mentalmente manutenção do ritmo rimado.'
+        - audience: ESTUDANTE
+          text: 'Passo 2: Compare cada opção, repetindo os sons em voz alta se ajudar.'
+        - audience: ESTUDANTE
+          text: 'Passo 3: Respire fundo e confirme a alternativa escolhida com segurança.'
+        - audience: EDUCADOR
+          text: Guie a turma passo a passo, reforçando manutenção do ritmo rimado com gestos, pictogramas e pausas.
+        - audience: FAMILIA
+          text: Envie sugestões de jogos ou músicas que reforcem manutenção do ritmo rimado em casa.
+      feedback:
+        success: Excelente! Manutenção do ritmo rimado ficou evidente nas suas escolhas.
+        encouragement: Caso erre, releia com calma e utilize marcadores sonoros ou visuais para apoiar a decisão.
+        retry: Experimente revisar as pistas destacadas antes de tentar novamente.
+        accessibility: Ofereça tempo extra, recursos táteis e apoio auditivo individual para quem precisar.
+      assets:
+        - slug: lp-material-caderno
+          type: IMAGEM
+          title: Caderno colorido para escrita
+      alternatives:
+        - title: TEXTO EM CAIXA ALTA
+          description: OFEREÇA CARTÕES COM MANUTENÇÃO DO RITMO RIMADO DESTACADO PARA QUE TODES ACOMPANHEM.
+          steps:
+            - FORNEÇA LETRAS GRANDES E ESPAÇADAS.
+            - GRIFE RIMAS OU PALAVRAS-CHAVE EM COR VIVA.
+      audioCue:
+        title: SINAL SONORO
+        description: Utilize um chocalho ou palmas para marcar o momento de focar em manutenção do ritmo rimado.
+        steps:
+          - Avise que o som indica a troca de etapa ou turno de fala.
+          - Repita o som e a instrução de forma pausada.
+      motorSupport:
+        - title: APOIO MOTOR
+          description: Disponibilize apoios físicos para navegação e registro das respostas.
+          steps:
+            - Ofereça ponteiras, clipes ampliados ou teclado virtual.
+            - Permita que duplas se alternem no controle do dispositivo.
+    prerequisites:
+      - type: ACTIVITY
+        reference: eco-das-rimas
+        description: Retomar rimas para sustentar o ritmo das parlendas.
+    interactive:
+      slug: quiz-ritmo-na-historia
+      title: Ritmo na História — Quiz
+      type: QUIZ
+      bnccDescription: Identificar e criar rimas, aliterações e jogos de palavras em textos orais curtos, explorando ritmo e musicalidade.
+      estimatedTimeMinutes: 9
+      instructions:
+        - Leia ou escute cada questão antes de responder.
+        - Use as teclas numéricas ou toque nas alternativas para marcar sua escolha.
+        - Explique para a turma como identificou a resposta correta.
+      objectives:
+        - Perceber repetições sonoras que mantêm ritmo em histórias rimadas.
+        - Explicar oralmente por que determinado verso combina com o anterior.
+      scoring:
+        correct: 10
+        incorrect: 0
+      adaptive:
+        increaseAfter: 2
+        decreaseAfter: 1
+      questions:
+        - id: ritmo-na-historia-q1
+          type: multiple-choice
+          prompt: 'História rimada: ''O gato saiu cedo, levou sua ____''. Qual opção mantém o ritmo e a rima?'
+          hint: Procure uma palavra que combine com 'cedo' na leitura rimada.
+          options:
+            - id: ritmo-na-historia-q1-1
+              text: credo
+              isCorrect: true
+              feedback: Isso! 'Cedo' e 'credo' repetem o final sonoro e mantêm o ritmo.
+            - id: ritmo-na-historia-q1-2
+              text: bola
+              isCorrect: false
+              feedback: 'Observe o final da palavra: precisa combinar com ''cedo''.'
+            - id: ritmo-na-historia-q1-3
+              text: sapato
+              isCorrect: false
+              feedback: Releia os versos e escolha a palavra que rima com 'cedo'.
+        - id: ritmo-na-historia-q2
+          type: true-false
+          prompt: Rimas ajudam a história a manter o ritmo?
+          hint: Pense como as rimas marcam a batida na leitura.
+          statement: Manter a rima ajuda a história a continuar com o mesmo ritmo.
+          answer: true
+          feedback:
+            'true': Exato! A rima mantém o ritmo e facilita a memorização.
+            'false': Experimente ler os versos rimados e perceber como o ritmo se mantém.
+      accessibility:
+        hints:
+          - audience: ESTUDANTE
+            text: 'Passo 1: Leia ou escute cada instrução e identifique onde manutenção do ritmo rimado aparece no interativo.'
+          - audience: ESTUDANTE
+            text: 'Passo 2: Use Tab ou toque na tela para revisar todas as opções antes de confirmar.'
+          - audience: ESTUDANTE
+            text: 'Passo 3: Compartilhe com um colega por que escolheu a resposta apresentada.'
+          - audience: EDUCADOR
+            text: Guie a turma passo a passo, reforçando manutenção do ritmo rimado com gestos, pictogramas e pausas.
+          - audience: FAMILIA
+            text: Envie sugestões de jogos ou músicas que reforcem manutenção do ritmo rimado em casa.
+        feedback:
+          success: Excelente! Manutenção do ritmo rimado ficou evidente nas suas escolhas.
+          encouragement: Caso erre, releia com calma e utilize marcadores sonoros ou visuais para apoiar a decisão.
+          retry: Experimente revisar as pistas destacadas antes de tentar novamente.
+          accessibility: Ofereça tempo extra, recursos táteis e apoio auditivo individual para quem precisar.
+        assets:
+          - slug: lp-material-caderno
+            type: IMAGEM
+            title: Caderno colorido para escrita
+        alternatives:
+          - title: TEXTO EM CAIXA ALTA
+            description: OFEREÇA CARTÕES COM MANUTENÇÃO DO RITMO RIMADO DESTACADO PARA QUE TODES ACOMPANHEM.
+            steps:
+              - FORNEÇA LETRAS GRANDES E ESPAÇADAS.
+              - GRIFE RIMAS OU PALAVRAS-CHAVE EM COR VIVA.
+        audioCue:
+          title: SINAL SONORO
+          description: Utilize um chocalho ou palmas para marcar o momento de focar em manutenção do ritmo rimado.
+          steps:
+            - Avise que o som indica a troca de etapa ou turno de fala.
+            - Repita o som e a instrução de forma pausada.
+        motorSupport:
+          - title: APOIO MOTOR
+            description: Disponibilize apoios físicos para navegação e registro das respostas.
+            steps:
+              - Ofereça ponteiras, clipes ampliados ou teclado virtual.
+              - Permita que duplas se alternem no controle do dispositivo.
+  - partial: ../../_partials/acolhimento-base.yaml
+    slug: aliteracao-na-trilha
+    title: Aliteração na Trilha
+    prompt: Escolha a frase que apresenta aliteração com o som indicado.
+    type: QUIZ
+    difficulty: PRATICAR
+    bncc:
+      code: EF01LP11
+      habilidades:
+        - EF01LP11
+        - EF01LP02
+    learningObjectives:
+      - Identificar repetições de sons iniciais em frases curtas.
+      - Criar gestos ou batidas que acompanhem aliterações.
+    description: Aliteração na Trilha estimula a turma a localizar sons iniciais repetidos em frases divertidas.
+    metadata:
+      categoria: Aliterações
+      duracaoMinutos: 10
+      habilidades:
+        - EF01LP11
+        - EF01LP02
+      assetSlug: lp-silaba-ba
+      assetUsage: Utilize Cartão da sílaba BA como apoio visual para destacar exploração de aliterações ao longo da atividade.
+      familiaEngajamento: Convide as famílias a observar exploração de aliterações em histórias, cantigas ou jogos em casa.
+      habilidadesSecundarias:
+        - EF01LP02
+      interactiveSlug: quiz-aliteracao-na-trilha
+    accessibility:
+      hints:
+        - audience: ESTUDANTE
+          text: 'Passo 1: Observe o enunciado com atenção e sublinhe mentalmente exploração de aliterações.'
+        - audience: ESTUDANTE
+          text: 'Passo 2: Compare cada opção, repetindo os sons em voz alta se ajudar.'
+        - audience: ESTUDANTE
+          text: 'Passo 3: Respire fundo e confirme a alternativa escolhida com segurança.'
+        - audience: EDUCADOR
+          text: Guie a turma passo a passo, reforçando exploração de aliterações com gestos, pictogramas e pausas.
+        - audience: FAMILIA
+          text: Envie sugestões de jogos ou músicas que reforcem exploração de aliterações em casa.
+      feedback:
+        success: Excelente! Exploração de aliterações ficou evidente nas suas escolhas.
+        encouragement: Caso erre, releia com calma e utilize marcadores sonoros ou visuais para apoiar a decisão.
+        retry: Experimente revisar as pistas destacadas antes de tentar novamente.
+        accessibility: Ofereça tempo extra, recursos táteis e apoio auditivo individual para quem precisar.
+      assets:
+        - slug: lp-silaba-ba
+          type: IMAGEM
+          title: Cartão da sílaba BA
+      alternatives:
+        - title: TEXTO EM CAIXA ALTA
+          description: OFEREÇA CARTÕES COM EXPLORAÇÃO DE ALITERAÇÕES DESTACADO PARA QUE TODES ACOMPANHEM.
+          steps:
+            - FORNEÇA LETRAS GRANDES E ESPAÇADAS.
+            - GRIFE RIMAS OU PALAVRAS-CHAVE EM COR VIVA.
+      audioCue:
+        title: SINAL SONORO
+        description: Utilize um chocalho ou palmas para marcar o momento de focar em exploração de aliterações.
+        steps:
+          - Avise que o som indica a troca de etapa ou turno de fala.
+          - Repita o som e a instrução de forma pausada.
+      motorSupport:
+        - title: APOIO MOTOR
+          description: Disponibilize apoios físicos para navegação e registro das respostas.
+          steps:
+            - Ofereça ponteiras, clipes ampliados ou teclado virtual.
+            - Permita que duplas se alternem no controle do dispositivo.
+    prerequisites:
+      - type: ACTIVITY
+        reference: ritmo-na-historia
+        description: Retomar rimas antes de observar sons iniciais repetidos.
+    interactive:
+      slug: quiz-aliteracao-na-trilha
+      title: Aliteração na Trilha — Quiz
+      type: QUIZ
+      bnccDescription: Identificar e criar rimas, aliterações e jogos de palavras em textos orais curtos, explorando ritmo e musicalidade.
+      estimatedTimeMinutes: 10
+      instructions:
+        - Leia ou escute cada questão antes de responder.
+        - Use as teclas numéricas ou toque nas alternativas para marcar sua escolha.
+        - Explique para a turma como identificou a resposta correta.
+      objectives:
+        - Identificar repetições de sons iniciais em frases curtas.
+        - Criar gestos ou batidas que acompanhem aliterações.
+      scoring:
+        correct: 10
+        incorrect: 0
+      adaptive:
+        increaseAfter: 2
+        decreaseAfter: 1
+      questions:
+        - id: aliteracao-na-trilha-q1
+          type: multiple-choice
+          prompt: Qual frase apresenta aliteração com o som /m/?
+          hint: Procure palavras que começam com o mesmo som.
+          options:
+            - id: aliteracao-na-trilha-q1-1
+              text: Marta mistura mel no mingau.
+              isCorrect: true
+              feedback: Perfeito! O som /m/ se repete em várias palavras.
+            - id: aliteracao-na-trilha-q1-2
+              text: Sofia pula pedra na praça.
+              isCorrect: false
+              feedback: 'Repare nos sons iniciais: eles são diferentes.'
+            - id: aliteracao-na-trilha-q1-3
+              text: Lia canta uma canção suave.
+              isCorrect: false
+              feedback: 'Atenção ao som inicial repetido: procure o som /m/.'
+        - id: aliteracao-na-trilha-q2
+          type: true-false
+          prompt: Repetir o som inicial forma aliteração?
+          hint: Pense nas batidas que fazemos quando os sons iniciais são iguais.
+          statement: Repetir o mesmo som inicial em várias palavras cria aliteração.
+          answer: true
+          feedback:
+            'true': Isso! A aliteração acontece quando repetimos sons iniciais.
+            'false': Relembre exemplos com sons repetidos para identificar a aliteração.
+      accessibility:
+        hints:
+          - audience: ESTUDANTE
+            text: 'Passo 1: Leia ou escute cada instrução e identifique onde exploração de aliterações aparece no interativo.'
+          - audience: ESTUDANTE
+            text: 'Passo 2: Use Tab ou toque na tela para revisar todas as opções antes de confirmar.'
+          - audience: ESTUDANTE
+            text: 'Passo 3: Compartilhe com um colega por que escolheu a resposta apresentada.'
+          - audience: EDUCADOR
+            text: Guie a turma passo a passo, reforçando exploração de aliterações com gestos, pictogramas e pausas.
+          - audience: FAMILIA
+            text: Envie sugestões de jogos ou músicas que reforcem exploração de aliterações em casa.
+        feedback:
+          success: Excelente! Exploração de aliterações ficou evidente nas suas escolhas.
+          encouragement: Caso erre, releia com calma e utilize marcadores sonoros ou visuais para apoiar a decisão.
+          retry: Experimente revisar as pistas destacadas antes de tentar novamente.
+          accessibility: Ofereça tempo extra, recursos táteis e apoio auditivo individual para quem precisar.
+        assets:
+          - slug: lp-silaba-ba
+            type: IMAGEM
+            title: Cartão da sílaba BA
+        alternatives:
+          - title: TEXTO EM CAIXA ALTA
+            description: OFEREÇA CARTÕES COM EXPLORAÇÃO DE ALITERAÇÕES DESTACADO PARA QUE TODES ACOMPANHEM.
+            steps:
+              - FORNEÇA LETRAS GRANDES E ESPAÇADAS.
+              - GRIFE RIMAS OU PALAVRAS-CHAVE EM COR VIVA.
+        audioCue:
+          title: SINAL SONORO
+          description: Utilize um chocalho ou palmas para marcar o momento de focar em exploração de aliterações.
+          steps:
+            - Avise que o som indica a troca de etapa ou turno de fala.
+            - Repita o som e a instrução de forma pausada.
+        motorSupport:
+          - title: APOIO MOTOR
+            description: Disponibilize apoios físicos para navegação e registro das respostas.
+            steps:
+              - Ofereça ponteiras, clipes ampliados ou teclado virtual.
+              - Permita que duplas se alternem no controle do dispositivo.
+  - partial: ../../_partials/acolhimento-base.yaml
+    slug: verso-surpresa
+    title: Verso Surpresa
+    prompt: Escolha a continuação que mantém a rima e o sentido do verso final.
+    type: QUIZ
+    difficulty: DOMINAR
+    bncc:
+      code: EF01LP11
+      habilidades:
+        - EF01LP11
+        - EF01LP01
+        - EF01LP02
+    learningObjectives:
+      - Criar versos curtos mantendo a rima apresentada.
+      - Justificar oralmente a escolha de palavras rimadas.
+    description: Verso Surpresa desafia a turma a completar versos finais com criatividade e ritmo.
+    metadata:
+      categoria: Criação de versos
+      duracaoMinutos: 10
+      habilidades:
+        - EF01LP11
+        - EF01LP01
+        - EF01LP02
+      assetSlug: lp-letra-e
+      assetUsage: Utilize Ilustração da letra E como apoio visual para destacar criação de versos rimados ao longo da atividade.
+      familiaEngajamento: Convide as famílias a observar criação de versos rimados em histórias, cantigas ou jogos em casa.
+      habilidadesSecundarias:
+        - EF01LP01
+        - EF01LP02
+      interactiveSlug: quiz-verso-surpresa
+    accessibility:
+      hints:
+        - audience: ESTUDANTE
+          text: 'Passo 1: Observe o enunciado com atenção e sublinhe mentalmente criação de versos rimados.'
+        - audience: ESTUDANTE
+          text: 'Passo 2: Compare cada opção, repetindo os sons em voz alta se ajudar.'
+        - audience: ESTUDANTE
+          text: 'Passo 3: Respire fundo e confirme a alternativa escolhida com segurança.'
+        - audience: EDUCADOR
+          text: Guie a turma passo a passo, reforçando criação de versos rimados com gestos, pictogramas e pausas.
+        - audience: FAMILIA
+          text: Envie sugestões de jogos ou músicas que reforcem criação de versos rimados em casa.
+      feedback:
+        success: Excelente! Criação de versos rimados ficou evidente nas suas escolhas.
+        encouragement: Caso erre, releia com calma e utilize marcadores sonoros ou visuais para apoiar a decisão.
+        retry: Experimente revisar as pistas destacadas antes de tentar novamente.
+        accessibility: Ofereça tempo extra, recursos táteis e apoio auditivo individual para quem precisar.
+      assets:
+        - slug: lp-letra-e
+          type: IMAGEM
+          title: Ilustração da letra E
+      alternatives:
+        - title: TEXTO EM CAIXA ALTA
+          description: OFEREÇA CARTÕES COM CRIAÇÃO DE VERSOS RIMADOS DESTACADO PARA QUE TODES ACOMPANHEM.
+          steps:
+            - FORNEÇA LETRAS GRANDES E ESPAÇADAS.
+            - GRIFE RIMAS OU PALAVRAS-CHAVE EM COR VIVA.
+      audioCue:
+        title: SINAL SONORO
+        description: Utilize um chocalho ou palmas para marcar o momento de focar em criação de versos rimados.
+        steps:
+          - Avise que o som indica a troca de etapa ou turno de fala.
+          - Repita o som e a instrução de forma pausada.
+      motorSupport:
+        - title: APOIO MOTOR
+          description: Disponibilize apoios físicos para navegação e registro das respostas.
+          steps:
+            - Ofereça ponteiras, clipes ampliados ou teclado virtual.
+            - Permita que duplas se alternem no controle do dispositivo.
+    prerequisites:
+      - type: ACTIVITY
+        reference: aliteracao-na-trilha
+        description: Relembrar como sons repetidos sustentam a musicalidade.
+    interactive:
+      slug: quiz-verso-surpresa
+      title: Verso Surpresa — Quiz
+      type: QUIZ
+      bnccDescription: Identificar e criar rimas, aliterações e jogos de palavras em textos orais curtos, explorando ritmo e musicalidade.
+      estimatedTimeMinutes: 10
+      instructions:
+        - Leia ou escute cada questão antes de responder.
+        - Use as teclas numéricas ou toque nas alternativas para marcar sua escolha.
+        - Explique para a turma como identificou a resposta correta.
+      objectives:
+        - Criar versos curtos mantendo a rima apresentada.
+        - Justificar oralmente a escolha de palavras rimadas.
+      scoring:
+        correct: 10
+        incorrect: 0
+      adaptive:
+        increaseAfter: 2
+        decreaseAfter: 1
+      questions:
+        - id: verso-surpresa-q1
+          type: multiple-choice
+          prompt: 'Verso: ''No jardim da escola nasceu uma flor ____''. Qual final mantém a rima?'
+          hint: Observe o som final da palavra 'flor'.
+          options:
+            - id: verso-surpresa-q1-1
+              text: cheia de cor
+              isCorrect: true
+              feedback: Muito bem! 'Flor' e 'cor' rimam e mantêm o sentido.
+            - id: verso-surpresa-q1-2
+              text: brilhante e feliz
+              isCorrect: false
+              feedback: Tente novamente com uma palavra que rime com 'flor'.
+            - id: verso-surpresa-q1-3
+              text: cheia de perfume
+              isCorrect: false
+              feedback: Procure um final que repita o som final de 'flor'.
+        - id: verso-surpresa-q2
+          type: true-false
+          prompt: Rimas mantêm a musicalidade do verso?
+          hint: Relembre como a rima finaliza o verso com ritmo.
+          statement: Escolher palavras que rimam ajuda a manter a musicalidade do verso.
+          answer: true
+          feedback:
+            'true': Excelente! A rima fortalece o ritmo e a sonoridade do texto.
+            'false': Perceba como versos rimados ficam mais musicais ao serem lidos.
+      accessibility:
+        hints:
+          - audience: ESTUDANTE
+            text: 'Passo 1: Leia ou escute cada instrução e identifique onde criação de versos rimados aparece no interativo.'
+          - audience: ESTUDANTE
+            text: 'Passo 2: Use Tab ou toque na tela para revisar todas as opções antes de confirmar.'
+          - audience: ESTUDANTE
+            text: 'Passo 3: Compartilhe com um colega por que escolheu a resposta apresentada.'
+          - audience: EDUCADOR
+            text: Guie a turma passo a passo, reforçando criação de versos rimados com gestos, pictogramas e pausas.
+          - audience: FAMILIA
+            text: Envie sugestões de jogos ou músicas que reforcem criação de versos rimados em casa.
+        feedback:
+          success: Excelente! Criação de versos rimados ficou evidente nas suas escolhas.
+          encouragement: Caso erre, releia com calma e utilize marcadores sonoros ou visuais para apoiar a decisão.
+          retry: Experimente revisar as pistas destacadas antes de tentar novamente.
+          accessibility: Ofereça tempo extra, recursos táteis e apoio auditivo individual para quem precisar.
+        assets:
+          - slug: lp-letra-e
+            type: IMAGEM
+            title: Ilustração da letra E
+        alternatives:
+          - title: TEXTO EM CAIXA ALTA
+            description: OFEREÇA CARTÕES COM CRIAÇÃO DE VERSOS RIMADOS DESTACADO PARA QUE TODES ACOMPANHEM.
+            steps:
+              - FORNEÇA LETRAS GRANDES E ESPAÇADAS.
+              - GRIFE RIMAS OU PALAVRAS-CHAVE EM COR VIVA.
+        audioCue:
+          title: SINAL SONORO
+          description: Utilize um chocalho ou palmas para marcar o momento de focar em criação de versos rimados.
+          steps:
+            - Avise que o som indica a troca de etapa ou turno de fala.
+            - Repita o som e a instrução de forma pausada.
+        motorSupport:
+          - title: APOIO MOTOR
+            description: Disponibilize apoios físicos para navegação e registro das respostas.
+            steps:
+              - Ofereça ponteiras, clipes ampliados ou teclado virtual.
+              - Permita que duplas se alternem no controle do dispositivo.
+  - partial: ../../_partials/acolhimento-base.yaml
+    slug: desafio-aliterativo
+    title: Desafio Aliterativo
+    prompt: Analise a sequência e escolha a frase que mantém a aliteração proposta.
+    type: QUIZ
+    difficulty: DOMINAR
+    bncc:
+      code: EF01LP11
+      habilidades:
+        - EF01LP11
+        - EF01LP02
+    learningObjectives:
+      - Sequenciar frases mantendo aliterações planejadas.
+      - Criar novas frases com apoio de aliterações discutidas em grupo.
+    description: Desafio Aliterativo estimula a turma a escolher frases que preservam padrões sonoros constantes.
+    metadata:
+      categoria: Sequência sonora
+      duracaoMinutos: 11
+      habilidades:
+        - EF01LP11
+        - EF01LP02
+      assetSlug: lp-silaba-la
+      assetUsage: Utilize Cartão da sílaba LA como apoio visual para destacar sequência de aliterações ao longo da atividade.
+      familiaEngajamento: Convide as famílias a observar sequência de aliterações em histórias, cantigas ou jogos em casa.
+      habilidadesSecundarias:
+        - EF01LP02
+      interactiveSlug: quiz-desafio-aliterativo
+    accessibility:
+      hints:
+        - audience: ESTUDANTE
+          text: 'Passo 1: Observe o enunciado com atenção e sublinhe mentalmente sequência de aliterações.'
+        - audience: ESTUDANTE
+          text: 'Passo 2: Compare cada opção, repetindo os sons em voz alta se ajudar.'
+        - audience: ESTUDANTE
+          text: 'Passo 3: Respire fundo e confirme a alternativa escolhida com segurança.'
+        - audience: EDUCADOR
+          text: Guie a turma passo a passo, reforçando sequência de aliterações com gestos, pictogramas e pausas.
+        - audience: FAMILIA
+          text: Envie sugestões de jogos ou músicas que reforcem sequência de aliterações em casa.
+      feedback:
+        success: Excelente! Sequência de aliterações ficou evidente nas suas escolhas.
+        encouragement: Caso erre, releia com calma e utilize marcadores sonoros ou visuais para apoiar a decisão.
+        retry: Experimente revisar as pistas destacadas antes de tentar novamente.
+        accessibility: Ofereça tempo extra, recursos táteis e apoio auditivo individual para quem precisar.
+      assets:
+        - slug: lp-silaba-la
+          type: IMAGEM
+          title: Cartão da sílaba LA
+      alternatives:
+        - title: TEXTO EM CAIXA ALTA
+          description: OFEREÇA CARTÕES COM SEQUÊNCIA DE ALITERAÇÕES DESTACADO PARA QUE TODES ACOMPANHEM.
+          steps:
+            - FORNEÇA LETRAS GRANDES E ESPAÇADAS.
+            - GRIFE RIMAS OU PALAVRAS-CHAVE EM COR VIVA.
+      audioCue:
+        title: SINAL SONORO
+        description: Utilize um chocalho ou palmas para marcar o momento de focar em sequência de aliterações.
+        steps:
+          - Avise que o som indica a troca de etapa ou turno de fala.
+          - Repita o som e a instrução de forma pausada.
+      motorSupport:
+        - title: APOIO MOTOR
+          description: Disponibilize apoios físicos para navegação e registro das respostas.
+          steps:
+            - Ofereça ponteiras, clipes ampliados ou teclado virtual.
+            - Permita que duplas se alternem no controle do dispositivo.
+    prerequisites:
+      - type: ACTIVITY
+        reference: verso-surpresa
+        description: Retomar rimas antes de manter aliterações em várias frases.
+    interactive:
+      slug: quiz-desafio-aliterativo
+      title: Desafio Aliterativo — Quiz
+      type: QUIZ
+      bnccDescription: Identificar e criar rimas, aliterações e jogos de palavras em textos orais curtos, explorando ritmo e musicalidade.
+      estimatedTimeMinutes: 11
+      instructions:
+        - Leia ou escute cada questão antes de responder.
+        - Use as teclas numéricas ou toque nas alternativas para marcar sua escolha.
+        - Explique para a turma como identificou a resposta correta.
+      objectives:
+        - Sequenciar frases mantendo aliterações planejadas.
+        - Criar novas frases com apoio de aliterações discutidas em grupo.
+      scoring:
+        correct: 10
+        incorrect: 0
+      adaptive:
+        increaseAfter: 2
+        decreaseAfter: 1
+      questions:
+        - id: desafio-aliterativo-q1
+          type: multiple-choice
+          prompt: Para continuar a sequência com som /p/, qual frase se encaixa melhor?
+          hint: Note se a frase repete o som /p/ em várias palavras.
+          options:
+            - id: desafio-aliterativo-q1-1
+              text: Pedro pinta pipas coloridas.
+              isCorrect: true
+              feedback: Isso! A frase repete o som /p/ e mantém a sequência proposta.
+            - id: desafio-aliterativo-q1-2
+              text: Carla organiza livros na estante.
+              isCorrect: false
+              feedback: 'Observe os sons iniciais: eles não repetem o som /p/.'
+            - id: desafio-aliterativo-q1-3
+              text: Lia prepara um suco gelado.
+              isCorrect: false
+              feedback: Procure uma opção em que o som /p/ se repita várias vezes.
+        - id: desafio-aliterativo-q2
+          type: true-false
+          prompt: Frases com o mesmo som inicial reforçam a aliteração?
+          hint: Pense nas batidas repetidas quando pronunciamos as palavras.
+          statement: Frases com o mesmo som inicial reforçam a aliteração de uma sequência.
+          answer: true
+          feedback:
+            'true': Correto! Repetir o som inicial mantém a aliteração na sequência.
+            'false': Relembre exemplos de frases com o mesmo som inicial para confirmar.
+      accessibility:
+        hints:
+          - audience: ESTUDANTE
+            text: 'Passo 1: Leia ou escute cada instrução e identifique onde sequência de aliterações aparece no interativo.'
+          - audience: ESTUDANTE
+            text: 'Passo 2: Use Tab ou toque na tela para revisar todas as opções antes de confirmar.'
+          - audience: ESTUDANTE
+            text: 'Passo 3: Compartilhe com um colega por que escolheu a resposta apresentada.'
+          - audience: EDUCADOR
+            text: Guie a turma passo a passo, reforçando sequência de aliterações com gestos, pictogramas e pausas.
+          - audience: FAMILIA
+            text: Envie sugestões de jogos ou músicas que reforcem sequência de aliterações em casa.
+        feedback:
+          success: Excelente! Sequência de aliterações ficou evidente nas suas escolhas.
+          encouragement: Caso erre, releia com calma e utilize marcadores sonoros ou visuais para apoiar a decisão.
+          retry: Experimente revisar as pistas destacadas antes de tentar novamente.
+          accessibility: Ofereça tempo extra, recursos táteis e apoio auditivo individual para quem precisar.
+        assets:
+          - slug: lp-silaba-la
+            type: IMAGEM
+            title: Cartão da sílaba LA
+        alternatives:
+          - title: TEXTO EM CAIXA ALTA
+            description: OFEREÇA CARTÕES COM SEQUÊNCIA DE ALITERAÇÕES DESTACADO PARA QUE TODES ACOMPANHEM.
+            steps:
+              - FORNEÇA LETRAS GRANDES E ESPAÇADAS.
+              - GRIFE RIMAS OU PALAVRAS-CHAVE EM COR VIVA.
+        audioCue:
+          title: SINAL SONORO
+          description: Utilize um chocalho ou palmas para marcar o momento de focar em sequência de aliterações.
+          steps:
+            - Avise que o som indica a troca de etapa ou turno de fala.
+            - Repita o som e a instrução de forma pausada.
+        motorSupport:
+          - title: APOIO MOTOR
+            description: Disponibilize apoios físicos para navegação e registro das respostas.
+            steps:
+              - Ofereça ponteiras, clipes ampliados ou teclado virtual.
+              - Permita que duplas se alternem no controle do dispositivo.
+  - partial: ../../_partials/acolhimento-base.yaml
+    slug: pares-de-rima
+    title: Pares de Rima
+    prompt: Relacione cada palavra ao par que rima com ela.
+    type: PUZZLE
+    difficulty: INICIAR
+    bncc:
+      code: EF01LP11
+      habilidades:
+        - EF01LP11
+        - EF01LP01
+    learningObjectives:
+      - Explorar associação de rimas em situações mediadas pelo educador.
+      - Compartilhar estratégias pessoais com colegas durante a atividade.
+    description: Pares de Rima incentiva a turma a explorar associação de rimas com apoios variados.
+    metadata:
+      categoria: Correspondência rimada
+      duracaoMinutos: 9
+      habilidades:
+        - EF01LP11
+        - EF01LP01
+      assetSlug: lp-letra-a
+      assetUsage: Utilize Ilustração da letra A como apoio visual para destacar associação de rimas ao longo da atividade.
+      familiaEngajamento: Convide as famílias a observar associação de rimas em histórias, cantigas ou jogos em casa.
+      habilidadesSecundarias:
+        - EF01LP01
+      interactiveSlug: puzzle-pares-de-rima
+    accessibility:
+      hints:
+        - audience: ESTUDANTE
+          text: 'Passo 1: Observe o enunciado com atenção e sublinhe mentalmente associação de rimas.'
+        - audience: ESTUDANTE
+          text: 'Passo 2: Compare cada opção, repetindo os sons em voz alta se ajudar.'
+        - audience: ESTUDANTE
+          text: 'Passo 3: Respire fundo e confirme a alternativa escolhida com segurança.'
+        - audience: EDUCADOR
+          text: Guie a turma passo a passo, reforçando associação de rimas com gestos, pictogramas e pausas.
+        - audience: FAMILIA
+          text: Envie sugestões de jogos ou músicas que reforcem associação de rimas em casa.
+      feedback:
+        success: Excelente! Associação de rimas ficou evidente nas suas escolhas.
+        encouragement: Caso erre, releia com calma e utilize marcadores sonoros ou visuais para apoiar a decisão.
+        retry: Experimente revisar as pistas destacadas antes de tentar novamente.
+        accessibility: Ofereça tempo extra, recursos táteis e apoio auditivo individual para quem precisar.
+      assets:
+        - slug: lp-letra-a
+          type: IMAGEM
+          title: Ilustração da letra A
+      alternatives:
+        - title: TEXTO EM CAIXA ALTA
+          description: OFEREÇA CARTÕES COM ASSOCIAÇÃO DE RIMAS DESTACADO PARA QUE TODES ACOMPANHEM.
+          steps:
+            - FORNEÇA LETRAS GRANDES E ESPAÇADAS.
+            - GRIFE RIMAS OU PALAVRAS-CHAVE EM COR VIVA.
+      audioCue:
+        title: SINAL SONORO
+        description: Utilize um chocalho ou palmas para marcar o momento de focar em associação de rimas.
+        steps:
+          - Avise que o som indica a troca de etapa ou turno de fala.
+          - Repita o som e a instrução de forma pausada.
+      motorSupport:
+        - title: APOIO MOTOR
+          description: Disponibilize apoios físicos para navegação e registro das respostas.
+          steps:
+            - Ofereça ponteiras, clipes ampliados ou teclado virtual.
+            - Permita que duplas se alternem no controle do dispositivo.
+    prerequisites:
+      - type: ACTIVITY
+        reference: rima-no-final
+        description: Recordar as rimas identificadas no quiz anterior.
+    interactive:
+      slug: puzzle-pares-de-rima
+      title: Pares de Rima — Quebra-cabeça
+      type: PUZZLE
+      bnccDescription: Identificar e criar rimas, aliterações e jogos de palavras em textos orais curtos, explorando ritmo e musicalidade.
+      estimatedTimeMinutes: 9
+      instructions:
+        - Observe cada cartão e relacione arrastando ou usando Tab + Enter.
+        - Converse sobre o motivo da combinação antes de confirmar.
+        - Revise as duplas formadas e proponha novas associações.
+      objectives:
+        - Explorar associação de rimas em situações mediadas pelo educador.
+        - Compartilhar estratégias pessoais com colegas durante a atividade.
+      puzzle:
+        mode: matching
+        successFeedback: As combinações rimaram com perfeição!
+        errorFeedback: Revise os sons finais e tente novamente devagar.
+        pairs:
+          - id: pares-de-rima-pair-1
+            prompt: Rima com 'pato'
+            match: sapato
+            hint: Observe os sons finais.
+            feedback: As duas palavras terminam com 'ato'.
+          - id: pares-de-rima-pair-2
+            prompt: Rima com 'casa'
+            match: asa
+            hint: Pense no som final semelhante.
+            feedback: Os sons finais combinam perfeitamente.
+          - id: pares-de-rima-pair-3
+            prompt: Rima com 'sino'
+            match: menino
+            hint: Procure palavras com final semelhante.
+            feedback: O final 'ino' aparece nas duas palavras.
+      accessibility:
+        hints:
+          - audience: ESTUDANTE
+            text: 'Passo 1: Leia ou escute cada instrução e identifique onde associação de rimas aparece no interativo.'
+          - audience: ESTUDANTE
+            text: 'Passo 2: Use Tab ou toque na tela para revisar todas as opções antes de confirmar.'
+          - audience: ESTUDANTE
+            text: 'Passo 3: Compartilhe com um colega por que escolheu a resposta apresentada.'
+          - audience: EDUCADOR
+            text: Guie a turma passo a passo, reforçando associação de rimas com gestos, pictogramas e pausas.
+          - audience: FAMILIA
+            text: Envie sugestões de jogos ou músicas que reforcem associação de rimas em casa.
+        feedback:
+          success: Excelente! Associação de rimas ficou evidente nas suas escolhas.
+          encouragement: Caso erre, releia com calma e utilize marcadores sonoros ou visuais para apoiar a decisão.
+          retry: Experimente revisar as pistas destacadas antes de tentar novamente.
+          accessibility: Ofereça tempo extra, recursos táteis e apoio auditivo individual para quem precisar.
+        assets:
+          - slug: lp-letra-a
+            type: IMAGEM
+            title: Ilustração da letra A
+        alternatives:
+          - title: TEXTO EM CAIXA ALTA
+            description: OFEREÇA CARTÕES COM ASSOCIAÇÃO DE RIMAS DESTACADO PARA QUE TODES ACOMPANHEM.
+            steps:
+              - FORNEÇA LETRAS GRANDES E ESPAÇADAS.
+              - GRIFE RIMAS OU PALAVRAS-CHAVE EM COR VIVA.
+        audioCue:
+          title: SINAL SONORO
+          description: Utilize um chocalho ou palmas para marcar o momento de focar em associação de rimas.
+          steps:
+            - Avise que o som indica a troca de etapa ou turno de fala.
+            - Repita o som e a instrução de forma pausada.
+        motorSupport:
+          - title: APOIO MOTOR
+            description: Disponibilize apoios físicos para navegação e registro das respostas.
+            steps:
+              - Ofereça ponteiras, clipes ampliados ou teclado virtual.
+              - Permita que duplas se alternem no controle do dispositivo.
+  - partial: ../../_partials/acolhimento-base.yaml
+    slug: ordem-da-parlenda
+    title: Ordem da Parlenda
+    prompt: Associe cada parte da parlenda à posição correta.
+    type: PUZZLE
+    difficulty: PRATICAR
+    bncc:
+      code: EF01LP11
+      habilidades:
+        - EF01LP11
+        - EF01LP02
+    learningObjectives:
+      - Explorar sequência de versos rimados em situações mediadas pelo educador.
+      - Compartilhar estratégias pessoais com colegas durante a atividade.
+    description: Ordem da Parlenda incentiva a turma a explorar sequência de versos rimados com apoios variados.
+    metadata:
+      categoria: Sequência rimada
+      duracaoMinutos: 10
+      habilidades:
+        - EF01LP11
+        - EF01LP02
+      assetSlug: lp-material-caderno
+      assetUsage: Utilize Caderno colorido para escrita como apoio visual para destacar sequência de versos rimados ao longo da atividade.
+      familiaEngajamento: Convide as famílias a observar sequência de versos rimados em histórias, cantigas ou jogos em casa.
+      habilidadesSecundarias:
+        - EF01LP02
+      interactiveSlug: puzzle-ordem-da-parlenda
+    accessibility:
+      hints:
+        - audience: ESTUDANTE
+          text: 'Passo 1: Observe o enunciado com atenção e sublinhe mentalmente sequência de versos rimados.'
+        - audience: ESTUDANTE
+          text: 'Passo 2: Compare cada opção, repetindo os sons em voz alta se ajudar.'
+        - audience: ESTUDANTE
+          text: 'Passo 3: Respire fundo e confirme a alternativa escolhida com segurança.'
+        - audience: EDUCADOR
+          text: Guie a turma passo a passo, reforçando sequência de versos rimados com gestos, pictogramas e pausas.
+        - audience: FAMILIA
+          text: Envie sugestões de jogos ou músicas que reforcem sequência de versos rimados em casa.
+      feedback:
+        success: Excelente! Sequência de versos rimados ficou evidente nas suas escolhas.
+        encouragement: Caso erre, releia com calma e utilize marcadores sonoros ou visuais para apoiar a decisão.
+        retry: Experimente revisar as pistas destacadas antes de tentar novamente.
+        accessibility: Ofereça tempo extra, recursos táteis e apoio auditivo individual para quem precisar.
+      assets:
+        - slug: lp-material-caderno
+          type: IMAGEM
+          title: Caderno colorido para escrita
+      alternatives:
+        - title: TEXTO EM CAIXA ALTA
+          description: OFEREÇA CARTÕES COM SEQUÊNCIA DE VERSOS RIMADOS DESTACADO PARA QUE TODES ACOMPANHEM.
+          steps:
+            - FORNEÇA LETRAS GRANDES E ESPAÇADAS.
+            - GRIFE RIMAS OU PALAVRAS-CHAVE EM COR VIVA.
+      audioCue:
+        title: SINAL SONORO
+        description: Utilize um chocalho ou palmas para marcar o momento de focar em sequência de versos rimados.
+        steps:
+          - Avise que o som indica a troca de etapa ou turno de fala.
+          - Repita o som e a instrução de forma pausada.
+      motorSupport:
+        - title: APOIO MOTOR
+          description: Disponibilize apoios físicos para navegação e registro das respostas.
+          steps:
+            - Ofereça ponteiras, clipes ampliados ou teclado virtual.
+            - Permita que duplas se alternem no controle do dispositivo.
+    prerequisites:
+      - type: ACTIVITY
+        reference: pares-de-rima
+        description: Retomar rimas para organizar a sequência rimada.
+    interactive:
+      slug: puzzle-ordem-da-parlenda
+      title: Ordem da Parlenda — Quebra-cabeça
+      type: PUZZLE
+      bnccDescription: Identificar e criar rimas, aliterações e jogos de palavras em textos orais curtos, explorando ritmo e musicalidade.
+      estimatedTimeMinutes: 10
+      instructions:
+        - Observe cada cartão e relacione arrastando ou usando Tab + Enter.
+        - Converse sobre o motivo da combinação antes de confirmar.
+        - Revise as duplas formadas e proponha novas associações.
+      objectives:
+        - Explorar sequência de versos rimados em situações mediadas pelo educador.
+        - Compartilhar estratégias pessoais com colegas durante a atividade.
+      puzzle:
+        mode: matching
+        successFeedback: Sequência completa! A parlenda ganhou ritmo.
+        errorFeedback: Verifique a ordem dos versos e tente novamente.
+        pairs:
+          - id: ordem-da-parlenda-pair-1
+            prompt: Início da parlenda
+            match: Hoje é domingo
+            hint: Lembre como a parlenda começa.
+            feedback: Esse verso abre a parlenda tradicional.
+          - id: ordem-da-parlenda-pair-2
+            prompt: Meio da parlenda
+            match: Pé de cachimbo
+            hint: Procure a parte que continua a rima.
+            feedback: A sequência mantém o ritmo com o verso central.
+          - id: ordem-da-parlenda-pair-3
+            prompt: Final da parlenda
+            match: O galo cantou
+            hint: Qual verso encerra com rima?
+            feedback: Esse verso finaliza a parlenda mantendo a rima.
+      accessibility:
+        hints:
+          - audience: ESTUDANTE
+            text: 'Passo 1: Leia ou escute cada instrução e identifique onde sequência de versos rimados aparece no interativo.'
+          - audience: ESTUDANTE
+            text: 'Passo 2: Use Tab ou toque na tela para revisar todas as opções antes de confirmar.'
+          - audience: ESTUDANTE
+            text: 'Passo 3: Compartilhe com um colega por que escolheu a resposta apresentada.'
+          - audience: EDUCADOR
+            text: Guie a turma passo a passo, reforçando sequência de versos rimados com gestos, pictogramas e pausas.
+          - audience: FAMILIA
+            text: Envie sugestões de jogos ou músicas que reforcem sequência de versos rimados em casa.
+        feedback:
+          success: Excelente! Sequência de versos rimados ficou evidente nas suas escolhas.
+          encouragement: Caso erre, releia com calma e utilize marcadores sonoros ou visuais para apoiar a decisão.
+          retry: Experimente revisar as pistas destacadas antes de tentar novamente.
+          accessibility: Ofereça tempo extra, recursos táteis e apoio auditivo individual para quem precisar.
+        assets:
+          - slug: lp-material-caderno
+            type: IMAGEM
+            title: Caderno colorido para escrita
+        alternatives:
+          - title: TEXTO EM CAIXA ALTA
+            description: OFEREÇA CARTÕES COM SEQUÊNCIA DE VERSOS RIMADOS DESTACADO PARA QUE TODES ACOMPANHEM.
+            steps:
+              - FORNEÇA LETRAS GRANDES E ESPAÇADAS.
+              - GRIFE RIMAS OU PALAVRAS-CHAVE EM COR VIVA.
+        audioCue:
+          title: SINAL SONORO
+          description: Utilize um chocalho ou palmas para marcar o momento de focar em sequência de versos rimados.
+          steps:
+            - Avise que o som indica a troca de etapa ou turno de fala.
+            - Repita o som e a instrução de forma pausada.
+        motorSupport:
+          - title: APOIO MOTOR
+            description: Disponibilize apoios físicos para navegação e registro das respostas.
+            steps:
+              - Ofereça ponteiras, clipes ampliados ou teclado virtual.
+              - Permita que duplas se alternem no controle do dispositivo.
+  - partial: ../../_partials/acolhimento-base.yaml
+    slug: eco-de-sonoridades
+    title: Eco de Sonoridades
+    prompt: Relacione o som inicial à frase que apresenta a mesma aliteração.
+    type: PUZZLE
+    difficulty: PRATICAR
+    bncc:
+      code: EF01LP11
+      habilidades:
+        - EF01LP11
+        - EF01LP02
+    learningObjectives:
+      - Explorar identificação de sons iniciais em situações mediadas pelo educador.
+      - Compartilhar estratégias pessoais com colegas durante a atividade.
+    description: Eco de Sonoridades incentiva a turma a explorar identificação de sons iniciais com apoios variados.
+    metadata:
+      categoria: Aliterações
+      duracaoMinutos: 10
+      habilidades:
+        - EF01LP11
+        - EF01LP02
+      assetSlug: lp-letra-e
+      assetUsage: Utilize Ilustração da letra E como apoio visual para destacar identificação de sons iniciais ao longo da atividade.
+      familiaEngajamento: Convide as famílias a observar identificação de sons iniciais em histórias, cantigas ou jogos em casa.
+      habilidadesSecundarias:
+        - EF01LP02
+      interactiveSlug: puzzle-eco-de-sonoridades
+    accessibility:
+      hints:
+        - audience: ESTUDANTE
+          text: 'Passo 1: Observe o enunciado com atenção e sublinhe mentalmente identificação de sons iniciais.'
+        - audience: ESTUDANTE
+          text: 'Passo 2: Compare cada opção, repetindo os sons em voz alta se ajudar.'
+        - audience: ESTUDANTE
+          text: 'Passo 3: Respire fundo e confirme a alternativa escolhida com segurança.'
+        - audience: EDUCADOR
+          text: Guie a turma passo a passo, reforçando identificação de sons iniciais com gestos, pictogramas e pausas.
+        - audience: FAMILIA
+          text: Envie sugestões de jogos ou músicas que reforcem identificação de sons iniciais em casa.
+      feedback:
+        success: Excelente! Identificação de sons iniciais ficou evidente nas suas escolhas.
+        encouragement: Caso erre, releia com calma e utilize marcadores sonoros ou visuais para apoiar a decisão.
+        retry: Experimente revisar as pistas destacadas antes de tentar novamente.
+        accessibility: Ofereça tempo extra, recursos táteis e apoio auditivo individual para quem precisar.
+      assets:
+        - slug: lp-letra-e
+          type: IMAGEM
+          title: Ilustração da letra E
+      alternatives:
+        - title: TEXTO EM CAIXA ALTA
+          description: OFEREÇA CARTÕES COM IDENTIFICAÇÃO DE SONS INICIAIS DESTACADO PARA QUE TODES ACOMPANHEM.
+          steps:
+            - FORNEÇA LETRAS GRANDES E ESPAÇADAS.
+            - GRIFE RIMAS OU PALAVRAS-CHAVE EM COR VIVA.
+      audioCue:
+        title: SINAL SONORO
+        description: Utilize um chocalho ou palmas para marcar o momento de focar em identificação de sons iniciais.
+        steps:
+          - Avise que o som indica a troca de etapa ou turno de fala.
+          - Repita o som e a instrução de forma pausada.
+      motorSupport:
+        - title: APOIO MOTOR
+          description: Disponibilize apoios físicos para navegação e registro das respostas.
+          steps:
+            - Ofereça ponteiras, clipes ampliados ou teclado virtual.
+            - Permita que duplas se alternem no controle do dispositivo.
+    prerequisites:
+      - type: ACTIVITY
+        reference: aliteracao-na-trilha
+        description: Relembrar exemplos de aliteração apresentados na trilha.
+    interactive:
+      slug: puzzle-eco-de-sonoridades
+      title: Eco de Sonoridades — Quebra-cabeça
+      type: PUZZLE
+      bnccDescription: Identificar e criar rimas, aliterações e jogos de palavras em textos orais curtos, explorando ritmo e musicalidade.
+      estimatedTimeMinutes: 10
+      instructions:
+        - Observe cada cartão e relacione arrastando ou usando Tab + Enter.
+        - Converse sobre o motivo da combinação antes de confirmar.
+        - Revise as duplas formadas e proponha novas associações.
+      objectives:
+        - Explorar identificação de sons iniciais em situações mediadas pelo educador.
+        - Compartilhar estratégias pessoais com colegas durante a atividade.
+      puzzle:
+        mode: matching
+        successFeedback: As aliterações ecoaram certinho!
+        errorFeedback: Ouça novamente os sons iniciais e reorganize as cartas.
+        pairs:
+          - id: eco-de-sonoridades-pair-1
+            prompt: Som /b/
+            match: Bia brinca com bolhas brilhantes.
+            hint: Perceba o som inicial repetido.
+            feedback: O som /b/ aparece em várias palavras da frase.
+          - id: eco-de-sonoridades-pair-2
+            prompt: Som /r/
+            match: Rico rato roda rápido.
+            hint: Ouça o som forte que se repete.
+            feedback: O som /r/ se repete marcando a aliteração.
+          - id: eco-de-sonoridades-pair-3
+            prompt: Som /l/
+            match: Lia leva lápis lilás.
+            hint: Procure o som suave repetido.
+            feedback: O som /l/ aparece no início de cada palavra.
+      accessibility:
+        hints:
+          - audience: ESTUDANTE
+            text: 'Passo 1: Leia ou escute cada instrução e identifique onde identificação de sons iniciais aparece no interativo.'
+          - audience: ESTUDANTE
+            text: 'Passo 2: Use Tab ou toque na tela para revisar todas as opções antes de confirmar.'
+          - audience: ESTUDANTE
+            text: 'Passo 3: Compartilhe com um colega por que escolheu a resposta apresentada.'
+          - audience: EDUCADOR
+            text: Guie a turma passo a passo, reforçando identificação de sons iniciais com gestos, pictogramas e pausas.
+          - audience: FAMILIA
+            text: Envie sugestões de jogos ou músicas que reforcem identificação de sons iniciais em casa.
+        feedback:
+          success: Excelente! Identificação de sons iniciais ficou evidente nas suas escolhas.
+          encouragement: Caso erre, releia com calma e utilize marcadores sonoros ou visuais para apoiar a decisão.
+          retry: Experimente revisar as pistas destacadas antes de tentar novamente.
+          accessibility: Ofereça tempo extra, recursos táteis e apoio auditivo individual para quem precisar.
+        assets:
+          - slug: lp-letra-e
+            type: IMAGEM
+            title: Ilustração da letra E
+        alternatives:
+          - title: TEXTO EM CAIXA ALTA
+            description: OFEREÇA CARTÕES COM IDENTIFICAÇÃO DE SONS INICIAIS DESTACADO PARA QUE TODES ACOMPANHEM.
+            steps:
+              - FORNEÇA LETRAS GRANDES E ESPAÇADAS.
+              - GRIFE RIMAS OU PALAVRAS-CHAVE EM COR VIVA.
+        audioCue:
+          title: SINAL SONORO
+          description: Utilize um chocalho ou palmas para marcar o momento de focar em identificação de sons iniciais.
+          steps:
+            - Avise que o som indica a troca de etapa ou turno de fala.
+            - Repita o som e a instrução de forma pausada.
+        motorSupport:
+          - title: APOIO MOTOR
+            description: Disponibilize apoios físicos para navegação e registro das respostas.
+            steps:
+              - Ofereça ponteiras, clipes ampliados ou teclado virtual.
+              - Permita que duplas se alternem no controle do dispositivo.
+  - partial: ../../_partials/acolhimento-base.yaml
+    slug: rima-e-cena
+    title: Rima e Cena
+    prompt: Combine cada verso rimado com a cena que o representa.
+    type: PUZZLE
+    difficulty: DOMINAR
+    bncc:
+      code: EF01LP11
+      habilidades:
+        - EF01LP11
+        - EF01LP01
+    learningObjectives:
+      - Explorar interpretação de versos rimados em situações mediadas pelo educador.
+      - Compartilhar estratégias pessoais com colegas durante a atividade.
+    description: Rima e Cena incentiva a turma a explorar interpretação de versos rimados com apoios variados.
+    metadata:
+      categoria: Interpretação rimada
+      duracaoMinutos: 11
+      habilidades:
+        - EF01LP11
+        - EF01LP01
+      assetSlug: lp-silaba-ba
+      assetUsage: Utilize Cartão da sílaba BA como apoio visual para destacar interpretação de versos rimados ao longo da atividade.
+      familiaEngajamento: Convide as famílias a observar interpretação de versos rimados em histórias, cantigas ou jogos em casa.
+      habilidadesSecundarias:
+        - EF01LP01
+      interactiveSlug: puzzle-rima-e-cena
+    accessibility:
+      hints:
+        - audience: ESTUDANTE
+          text: 'Passo 1: Observe o enunciado com atenção e sublinhe mentalmente interpretação de versos rimados.'
+        - audience: ESTUDANTE
+          text: 'Passo 2: Compare cada opção, repetindo os sons em voz alta se ajudar.'
+        - audience: ESTUDANTE
+          text: 'Passo 3: Respire fundo e confirme a alternativa escolhida com segurança.'
+        - audience: EDUCADOR
+          text: Guie a turma passo a passo, reforçando interpretação de versos rimados com gestos, pictogramas e pausas.
+        - audience: FAMILIA
+          text: Envie sugestões de jogos ou músicas que reforcem interpretação de versos rimados em casa.
+      feedback:
+        success: Excelente! Interpretação de versos rimados ficou evidente nas suas escolhas.
+        encouragement: Caso erre, releia com calma e utilize marcadores sonoros ou visuais para apoiar a decisão.
+        retry: Experimente revisar as pistas destacadas antes de tentar novamente.
+        accessibility: Ofereça tempo extra, recursos táteis e apoio auditivo individual para quem precisar.
+      assets:
+        - slug: lp-silaba-ba
+          type: IMAGEM
+          title: Cartão da sílaba BA
+      alternatives:
+        - title: TEXTO EM CAIXA ALTA
+          description: OFEREÇA CARTÕES COM INTERPRETAÇÃO DE VERSOS RIMADOS DESTACADO PARA QUE TODES ACOMPANHEM.
+          steps:
+            - FORNEÇA LETRAS GRANDES E ESPAÇADAS.
+            - GRIFE RIMAS OU PALAVRAS-CHAVE EM COR VIVA.
+      audioCue:
+        title: SINAL SONORO
+        description: Utilize um chocalho ou palmas para marcar o momento de focar em interpretação de versos rimados.
+        steps:
+          - Avise que o som indica a troca de etapa ou turno de fala.
+          - Repita o som e a instrução de forma pausada.
+      motorSupport:
+        - title: APOIO MOTOR
+          description: Disponibilize apoios físicos para navegação e registro das respostas.
+          steps:
+            - Ofereça ponteiras, clipes ampliados ou teclado virtual.
+            - Permita que duplas se alternem no controle do dispositivo.
+    prerequisites:
+      - type: ACTIVITY
+        reference: eco-de-sonoridades
+        description: Utilizar os sons destacados para interpretar cenas rimadas.
+    interactive:
+      slug: puzzle-rima-e-cena
+      title: Rima e Cena — Quebra-cabeça
+      type: PUZZLE
+      bnccDescription: Identificar e criar rimas, aliterações e jogos de palavras em textos orais curtos, explorando ritmo e musicalidade.
+      estimatedTimeMinutes: 11
+      instructions:
+        - Observe cada cartão e relacione arrastando ou usando Tab + Enter.
+        - Converse sobre o motivo da combinação antes de confirmar.
+        - Revise as duplas formadas e proponha novas associações.
+      objectives:
+        - Explorar interpretação de versos rimados em situações mediadas pelo educador.
+        - Compartilhar estratégias pessoais com colegas durante a atividade.
+      puzzle:
+        mode: matching
+        successFeedback: Versos e cenas combinados! A história ficou completa.
+        errorFeedback: Releia as rimas e observe as cenas antes de tentar novamente.
+        pairs:
+          - id: rima-e-cena-pair-1
+            prompt: 'Verso: ''A lua clara dança no telhado dourado.'''
+            match: Cena noturna com luz amarelada sobre as casas.
+            hint: Visualize a imagem sugerida pela rima.
+            feedback: A cena destaca a lua brilhando sobre o telhado.
+          - id: rima-e-cena-pair-2
+            prompt: 'Verso: ''O vento leve leva folhas pelo chão.'''
+            match: Folhas voando em volta de uma criança sorrindo.
+            hint: Perceba o movimento descrito no verso.
+            feedback: O verso descreve folhas em movimento com o vento.
+          - id: rima-e-cena-pair-3
+            prompt: 'Verso: ''No lago alegre pula um sapo cantor.'''
+            match: Sapo cantando sobre uma pedra no lago.
+            hint: Identifique o personagem principal.
+            feedback: A cena corresponde ao sapo que canta no lago.
+      accessibility:
+        hints:
+          - audience: ESTUDANTE
+            text: 'Passo 1: Leia ou escute cada instrução e identifique onde interpretação de versos rimados aparece no interativo.'
+          - audience: ESTUDANTE
+            text: 'Passo 2: Use Tab ou toque na tela para revisar todas as opções antes de confirmar.'
+          - audience: ESTUDANTE
+            text: 'Passo 3: Compartilhe com um colega por que escolheu a resposta apresentada.'
+          - audience: EDUCADOR
+            text: Guie a turma passo a passo, reforçando interpretação de versos rimados com gestos, pictogramas e pausas.
+          - audience: FAMILIA
+            text: Envie sugestões de jogos ou músicas que reforcem interpretação de versos rimados em casa.
+        feedback:
+          success: Excelente! Interpretação de versos rimados ficou evidente nas suas escolhas.
+          encouragement: Caso erre, releia com calma e utilize marcadores sonoros ou visuais para apoiar a decisão.
+          retry: Experimente revisar as pistas destacadas antes de tentar novamente.
+          accessibility: Ofereça tempo extra, recursos táteis e apoio auditivo individual para quem precisar.
+        assets:
+          - slug: lp-silaba-ba
+            type: IMAGEM
+            title: Cartão da sílaba BA
+        alternatives:
+          - title: TEXTO EM CAIXA ALTA
+            description: OFEREÇA CARTÕES COM INTERPRETAÇÃO DE VERSOS RIMADOS DESTACADO PARA QUE TODES ACOMPANHEM.
+            steps:
+              - FORNEÇA LETRAS GRANDES E ESPAÇADAS.
+              - GRIFE RIMAS OU PALAVRAS-CHAVE EM COR VIVA.
+        audioCue:
+          title: SINAL SONORO
+          description: Utilize um chocalho ou palmas para marcar o momento de focar em interpretação de versos rimados.
+          steps:
+            - Avise que o som indica a troca de etapa ou turno de fala.
+            - Repita o som e a instrução de forma pausada.
+        motorSupport:
+          - title: APOIO MOTOR
+            description: Disponibilize apoios físicos para navegação e registro das respostas.
+            steps:
+              - Ofereça ponteiras, clipes ampliados ou teclado virtual.
+              - Permita que duplas se alternem no controle do dispositivo.
+  - partial: ../../_partials/acolhimento-base.yaml
+    slug: jogo-ritmo-rimado
+    title: Jogo Ritmo Rimado
+    prompt: Escolha palavras que mantêm a rima de cada verso.
+    type: GAME
+    difficulty: INICIAR
+    bncc:
+      code: EF01LP11
+      habilidades:
+        - EF01LP11
+        - EF01LP01
+    learningObjectives:
+      - Explorar seleção de rimas em jogo em situações mediadas pelo educador.
+      - Compartilhar estratégias pessoais com colegas durante a atividade.
+    description: Jogo Ritmo Rimado incentiva a turma a explorar seleção de rimas em jogo com apoios variados.
+    metadata:
+      categoria: Rimas em jogo
+      duracaoMinutos: 12
+      habilidades:
+        - EF01LP11
+        - EF01LP01
+      assetSlug: lp-material-caderno
+      assetUsage: Utilize Caderno colorido para escrita como apoio visual para destacar seleção de rimas em jogo ao longo da atividade.
+      familiaEngajamento: Convide as famílias a observar seleção de rimas em jogo em histórias, cantigas ou jogos em casa.
+      habilidadesSecundarias:
+        - EF01LP01
+      interactiveSlug: game-jogo-ritmo-rimado
+    accessibility:
+      hints:
+        - audience: ESTUDANTE
+          text: 'Passo 1: Observe o enunciado com atenção e sublinhe mentalmente seleção de rimas em jogo.'
+        - audience: ESTUDANTE
+          text: 'Passo 2: Compare cada opção, repetindo os sons em voz alta se ajudar.'
+        - audience: ESTUDANTE
+          text: 'Passo 3: Respire fundo e confirme a alternativa escolhida com segurança.'
+        - audience: EDUCADOR
+          text: Guie a turma passo a passo, reforçando seleção de rimas em jogo com gestos, pictogramas e pausas.
+        - audience: FAMILIA
+          text: Envie sugestões de jogos ou músicas que reforcem seleção de rimas em jogo em casa.
+      feedback:
+        success: Excelente! Seleção de rimas em jogo ficou evidente nas suas escolhas.
+        encouragement: Caso erre, releia com calma e utilize marcadores sonoros ou visuais para apoiar a decisão.
+        retry: Experimente revisar as pistas destacadas antes de tentar novamente.
+        accessibility: Ofereça tempo extra, recursos táteis e apoio auditivo individual para quem precisar.
+      assets:
+        - slug: lp-material-caderno
+          type: IMAGEM
+          title: Caderno colorido para escrita
+      alternatives:
+        - title: TEXTO EM CAIXA ALTA
+          description: OFEREÇA CARTÕES COM SELEÇÃO DE RIMAS EM JOGO DESTACADO PARA QUE TODES ACOMPANHEM.
+          steps:
+            - FORNEÇA LETRAS GRANDES E ESPAÇADAS.
+            - GRIFE RIMAS OU PALAVRAS-CHAVE EM COR VIVA.
+      audioCue:
+        title: SINAL SONORO
+        description: Utilize um chocalho ou palmas para marcar o momento de focar em seleção de rimas em jogo.
+        steps:
+          - Avise que o som indica a troca de etapa ou turno de fala.
+          - Repita o som e a instrução de forma pausada.
+      motorSupport:
+        - title: APOIO MOTOR
+          description: Disponibilize apoios físicos para navegação e registro das respostas.
+          steps:
+            - Ofereça ponteiras, clipes ampliados ou teclado virtual.
+            - Permita que duplas se alternem no controle do dispositivo.
+    prerequisites:
+      - type: ACTIVITY
+        reference: ordem-da-parlenda
+        description: Revisar a sequência rimada antes de jogar.
+    interactive:
+      slug: game-jogo-ritmo-rimado
+      title: Jogo Ritmo Rimado — Mini-jogo
+      type: GAME
+      bnccDescription: Identificar e criar rimas, aliterações e jogos de palavras em textos orais curtos, explorando ritmo e musicalidade.
+      estimatedTimeMinutes: 12
+      instructions:
+        - Leia ou escute o desafio de cada fase com atenção.
+        - Digite ou selecione a resposta utilizando teclado, toque ou mouse.
+        - Ao final, compartilhe qual pista sonora ou visual ajudou a resolver a fase.
+      objectives:
+        - Explorar seleção de rimas em jogo em situações mediadas pelo educador.
+        - Compartilhar estratégias pessoais com colegas durante a atividade.
+      game:
+        mode: math-challenge
+        timeLimitSeconds: 120
+        lives: 3
+        victoryMessage: Rimas certeiras! Você manteve o ritmo do poema.
+        gameOverMessage: Releia os versos e tente novamente buscando finais parecidos.
+        levels:
+          - id: jogo-ritmo-rimado-level-1
+            challenge: Qual palavra rima com 'pato'? (sapato, cabelo, janela)
+            answer: sapato
+            hint: Observe o final das palavras.
+            successFeedback: Sapato combina com 'pato' e mantém a rima!
+            failureFeedback: Leia as opções em voz alta e perceba os sons finais.
+          - id: jogo-ritmo-rimado-level-2
+            challenge: Qual palavra rima com 'caminho'? (ninho, cadeira, janela)
+            answer: ninho
+            hint: Repita as palavras e compare os sons finais.
+            successFeedback: Muito bem! 'Caminho' e 'ninho' rimam.
+            failureFeedback: Observe novamente o final das palavras para encontrar a rima.
+          - id: jogo-ritmo-rimado-level-3
+            challenge: Qual palavra rima com 'estrela'? (vela, sapato, livro)
+            answer: vela
+            hint: Busque palavras que terminem com o mesmo som.
+            successFeedback: Você manteve a rima com 'estrela' ao escolher 'vela'.
+            failureFeedback: Retome a leitura rimada e tente de novo com atenção.
+      accessibility:
+        hints:
+          - audience: ESTUDANTE
+            text: 'Passo 1: Leia ou escute cada instrução e identifique onde seleção de rimas em jogo aparece no interativo.'
+          - audience: ESTUDANTE
+            text: 'Passo 2: Use Tab ou toque na tela para revisar todas as opções antes de confirmar.'
+          - audience: ESTUDANTE
+            text: 'Passo 3: Compartilhe com um colega por que escolheu a resposta apresentada.'
+          - audience: EDUCADOR
+            text: Guie a turma passo a passo, reforçando seleção de rimas em jogo com gestos, pictogramas e pausas.
+          - audience: FAMILIA
+            text: Envie sugestões de jogos ou músicas que reforcem seleção de rimas em jogo em casa.
+        feedback:
+          success: Excelente! Seleção de rimas em jogo ficou evidente nas suas escolhas.
+          encouragement: Caso erre, releia com calma e utilize marcadores sonoros ou visuais para apoiar a decisão.
+          retry: Experimente revisar as pistas destacadas antes de tentar novamente.
+          accessibility: Ofereça tempo extra, recursos táteis e apoio auditivo individual para quem precisar.
+        assets:
+          - slug: lp-material-caderno
+            type: IMAGEM
+            title: Caderno colorido para escrita
+        alternatives:
+          - title: TEXTO EM CAIXA ALTA
+            description: OFEREÇA CARTÕES COM SELEÇÃO DE RIMAS EM JOGO DESTACADO PARA QUE TODES ACOMPANHEM.
+            steps:
+              - FORNEÇA LETRAS GRANDES E ESPAÇADAS.
+              - GRIFE RIMAS OU PALAVRAS-CHAVE EM COR VIVA.
+        audioCue:
+          title: SINAL SONORO
+          description: Utilize um chocalho ou palmas para marcar o momento de focar em seleção de rimas em jogo.
+          steps:
+            - Avise que o som indica a troca de etapa ou turno de fala.
+            - Repita o som e a instrução de forma pausada.
+        motorSupport:
+          - title: APOIO MOTOR
+            description: Disponibilize apoios físicos para navegação e registro das respostas.
+            steps:
+              - Ofereça ponteiras, clipes ampliados ou teclado virtual.
+              - Permita que duplas se alternem no controle do dispositivo.
+  - partial: ../../_partials/acolhimento-base.yaml
+    slug: trilha-aliterativa
+    title: Trilha Aliterativa
+    prompt: Selecione palavras que mantêm a mesma aliteração.
+    type: GAME
+    difficulty: PRATICAR
+    bncc:
+      code: EF01LP11
+      habilidades:
+        - EF01LP11
+        - EF01LP02
+    learningObjectives:
+      - Explorar identificação de aliterações em situações mediadas pelo educador.
+      - Compartilhar estratégias pessoais com colegas durante a atividade.
+    description: Trilha Aliterativa incentiva a turma a explorar identificação de aliterações com apoios variados.
+    metadata:
+      categoria: Aliterações em jogo
+      duracaoMinutos: 12
+      habilidades:
+        - EF01LP11
+        - EF01LP02
+      assetSlug: lp-letra-a
+      assetUsage: Utilize Ilustração da letra A como apoio visual para destacar identificação de aliterações ao longo da atividade.
+      familiaEngajamento: Convide as famílias a observar identificação de aliterações em histórias, cantigas ou jogos em casa.
+      habilidadesSecundarias:
+        - EF01LP02
+      interactiveSlug: game-trilha-aliterativa
+    accessibility:
+      hints:
+        - audience: ESTUDANTE
+          text: 'Passo 1: Observe o enunciado com atenção e sublinhe mentalmente identificação de aliterações.'
+        - audience: ESTUDANTE
+          text: 'Passo 2: Compare cada opção, repetindo os sons em voz alta se ajudar.'
+        - audience: ESTUDANTE
+          text: 'Passo 3: Respire fundo e confirme a alternativa escolhida com segurança.'
+        - audience: EDUCADOR
+          text: Guie a turma passo a passo, reforçando identificação de aliterações com gestos, pictogramas e pausas.
+        - audience: FAMILIA
+          text: Envie sugestões de jogos ou músicas que reforcem identificação de aliterações em casa.
+      feedback:
+        success: Excelente! Identificação de aliterações ficou evidente nas suas escolhas.
+        encouragement: Caso erre, releia com calma e utilize marcadores sonoros ou visuais para apoiar a decisão.
+        retry: Experimente revisar as pistas destacadas antes de tentar novamente.
+        accessibility: Ofereça tempo extra, recursos táteis e apoio auditivo individual para quem precisar.
+      assets:
+        - slug: lp-letra-a
+          type: IMAGEM
+          title: Ilustração da letra A
+      alternatives:
+        - title: TEXTO EM CAIXA ALTA
+          description: OFEREÇA CARTÕES COM IDENTIFICAÇÃO DE ALITERAÇÕES DESTACADO PARA QUE TODES ACOMPANHEM.
+          steps:
+            - FORNEÇA LETRAS GRANDES E ESPAÇADAS.
+            - GRIFE RIMAS OU PALAVRAS-CHAVE EM COR VIVA.
+      audioCue:
+        title: SINAL SONORO
+        description: Utilize um chocalho ou palmas para marcar o momento de focar em identificação de aliterações.
+        steps:
+          - Avise que o som indica a troca de etapa ou turno de fala.
+          - Repita o som e a instrução de forma pausada.
+      motorSupport:
+        - title: APOIO MOTOR
+          description: Disponibilize apoios físicos para navegação e registro das respostas.
+          steps:
+            - Ofereça ponteiras, clipes ampliados ou teclado virtual.
+            - Permita que duplas se alternem no controle do dispositivo.
+    prerequisites:
+      - type: ACTIVITY
+        reference: aliteracao-na-trilha
+        description: Retomar exemplos de aliteração antes do jogo.
+    interactive:
+      slug: game-trilha-aliterativa
+      title: Trilha Aliterativa — Mini-jogo
+      type: GAME
+      bnccDescription: Identificar e criar rimas, aliterações e jogos de palavras em textos orais curtos, explorando ritmo e musicalidade.
+      estimatedTimeMinutes: 12
+      instructions:
+        - Leia ou escute o desafio de cada fase com atenção.
+        - Digite ou selecione a resposta utilizando teclado, toque ou mouse.
+        - Ao final, compartilhe qual pista sonora ou visual ajudou a resolver a fase.
+      objectives:
+        - Explorar identificação de aliterações em situações mediadas pelo educador.
+        - Compartilhar estratégias pessoais com colegas durante a atividade.
+      game:
+        mode: math-challenge
+        timeLimitSeconds: 120
+        lives: 3
+        victoryMessage: A trilha ficou cheia de sons repetidos!
+        gameOverMessage: Revise os sons iniciais de cada palavra e tente novamente.
+        levels:
+          - id: trilha-aliterativa-level-1
+            challenge: 'Escolha a palavra que mantém o som /m/: (mala, gato, sol)'
+            answer: mala
+            hint: Observe o som inicial das palavras.
+            successFeedback: Excelente! 'Mala' mantém o som /m/ repetido.
+            failureFeedback: Repita os sons iniciais para encontrar a aliteração.
+          - id: trilha-aliterativa-level-2
+            challenge: Qual palavra continua a aliteração de 'Bia brinca'? (bola, janela, sapo)
+            answer: bola
+            hint: Perceba o som inicial que se repete.
+            successFeedback: '''Bola'' mantém a sequência com o som /b/.'
+            failureFeedback: Ouça novamente os sons para manter a aliteração.
+          - id: trilha-aliterativa-level-3
+            challenge: 'Complete: ''Lia leva ____ leve.'' (livros, garrafa, panela)'
+            answer: livros
+            hint: Procure uma palavra que repita o som /l/.
+            successFeedback: Muito bem! 'Livros' mantém a aliteração com o som /l/.
+            failureFeedback: Releia a frase e destaque o som que se repete.
+      accessibility:
+        hints:
+          - audience: ESTUDANTE
+            text: 'Passo 1: Leia ou escute cada instrução e identifique onde identificação de aliterações aparece no interativo.'
+          - audience: ESTUDANTE
+            text: 'Passo 2: Use Tab ou toque na tela para revisar todas as opções antes de confirmar.'
+          - audience: ESTUDANTE
+            text: 'Passo 3: Compartilhe com um colega por que escolheu a resposta apresentada.'
+          - audience: EDUCADOR
+            text: Guie a turma passo a passo, reforçando identificação de aliterações com gestos, pictogramas e pausas.
+          - audience: FAMILIA
+            text: Envie sugestões de jogos ou músicas que reforcem identificação de aliterações em casa.
+        feedback:
+          success: Excelente! Identificação de aliterações ficou evidente nas suas escolhas.
+          encouragement: Caso erre, releia com calma e utilize marcadores sonoros ou visuais para apoiar a decisão.
+          retry: Experimente revisar as pistas destacadas antes de tentar novamente.
+          accessibility: Ofereça tempo extra, recursos táteis e apoio auditivo individual para quem precisar.
+        assets:
+          - slug: lp-letra-a
+            type: IMAGEM
+            title: Ilustração da letra A
+        alternatives:
+          - title: TEXTO EM CAIXA ALTA
+            description: OFEREÇA CARTÕES COM IDENTIFICAÇÃO DE ALITERAÇÕES DESTACADO PARA QUE TODES ACOMPANHEM.
+            steps:
+              - FORNEÇA LETRAS GRANDES E ESPAÇADAS.
+              - GRIFE RIMAS OU PALAVRAS-CHAVE EM COR VIVA.
+        audioCue:
+          title: SINAL SONORO
+          description: Utilize um chocalho ou palmas para marcar o momento de focar em identificação de aliterações.
+          steps:
+            - Avise que o som indica a troca de etapa ou turno de fala.
+            - Repita o som e a instrução de forma pausada.
+        motorSupport:
+          - title: APOIO MOTOR
+            description: Disponibilize apoios físicos para navegação e registro das respostas.
+            steps:
+              - Ofereça ponteiras, clipes ampliados ou teclado virtual.
+              - Permita que duplas se alternem no controle do dispositivo.
+  - partial: ../../_partials/acolhimento-base.yaml
+    slug: ritmo-da-parlenda
+    title: Ritmo da Parlenda
+    prompt: Selecione o verso que mantém o ritmo da parlenda apresentada.
+    type: GAME
+    difficulty: DOMINAR
+    bncc:
+      code: EF01LP11
+      habilidades:
+        - EF01LP11
+        - EF01LP01
+    learningObjectives:
+      - Explorar marcação rítmica de parlendas em situações mediadas pelo educador.
+      - Compartilhar estratégias pessoais com colegas durante a atividade.
+    description: Ritmo da Parlenda incentiva a turma a explorar marcação rítmica de parlendas com apoios variados.
+    metadata:
+      categoria: Sequência rimada
+      duracaoMinutos: 13
+      habilidades:
+        - EF01LP11
+        - EF01LP01
+      assetSlug: lp-silaba-la
+      assetUsage: Utilize Cartão da sílaba LA como apoio visual para destacar marcação rítmica de parlendas ao longo da atividade.
+      familiaEngajamento: Convide as famílias a observar marcação rítmica de parlendas em histórias, cantigas ou jogos em casa.
+      habilidadesSecundarias:
+        - EF01LP01
+      interactiveSlug: game-ritmo-da-parlenda
+      audioPrompt: Convide a turma a bater palmas ao ouvir o áudio de referência para sentir o ritmo da parlenda.
+    accessibility:
+      hints:
+        - audience: ESTUDANTE
+          text: 'Passo 1: Observe o enunciado com atenção e sublinhe mentalmente marcação rítmica de parlendas.'
+        - audience: ESTUDANTE
+          text: 'Passo 2: Compare cada opção, repetindo os sons em voz alta se ajudar.'
+        - audience: ESTUDANTE
+          text: 'Passo 3: Respire fundo e confirme a alternativa escolhida com segurança.'
+        - audience: EDUCADOR
+          text: Guie a turma passo a passo, reforçando marcação rítmica de parlendas com gestos, pictogramas e pausas.
+        - audience: FAMILIA
+          text: Envie sugestões de jogos ou músicas que reforcem marcação rítmica de parlendas em casa.
+      feedback:
+        success: Excelente! Marcação rítmica de parlendas ficou evidente nas suas escolhas.
+        encouragement: Caso erre, releia com calma e utilize marcadores sonoros ou visuais para apoiar a decisão.
+        retry: Experimente revisar as pistas destacadas antes de tentar novamente.
+        accessibility: Ofereça tempo extra, recursos táteis e apoio auditivo individual para quem precisar.
+      assets:
+        - slug: lp-silaba-la
+          type: IMAGEM
+          title: Cartão da sílaba LA
+      alternatives:
+        - title: TEXTO EM CAIXA ALTA
+          description: OFEREÇA CARTÕES COM MARCAÇÃO RÍTMICA DE PARLENDAS DESTACADO PARA QUE TODES ACOMPANHEM.
+          steps:
+            - FORNEÇA LETRAS GRANDES E ESPAÇADAS.
+            - GRIFE RIMAS OU PALAVRAS-CHAVE EM COR VIVA.
+      audioCue:
+        title: SINAL SONORO
+        description: Utilize um chocalho ou palmas para marcar o momento de focar em marcação rítmica de parlendas.
+        steps:
+          - Avise que o som indica a troca de etapa ou turno de fala.
+          - Repita o som e a instrução de forma pausada.
+      motorSupport:
+        - title: APOIO MOTOR
+          description: Disponibilize apoios físicos para navegação e registro das respostas.
+          steps:
+            - Ofereça ponteiras, clipes ampliados ou teclado virtual.
+            - Permita que duplas se alternem no controle do dispositivo.
+    prerequisites:
+      - type: ACTIVITY
+        reference: ordem-da-parlenda
+        description: Retomar a sequência da parlenda para reconhecer o ritmo.
+    interactive:
+      slug: game-ritmo-da-parlenda
+      title: Ritmo da Parlenda — Mini-jogo
+      type: GAME
+      bnccDescription: Identificar e criar rimas, aliterações e jogos de palavras em textos orais curtos, explorando ritmo e musicalidade.
+      estimatedTimeMinutes: 13
+      instructions:
+        - Leia ou escute o desafio de cada fase com atenção.
+        - Digite ou selecione a resposta utilizando teclado, toque ou mouse.
+        - Ao final, compartilhe qual pista sonora ou visual ajudou a resolver a fase.
+      objectives:
+        - Explorar marcação rítmica de parlendas em situações mediadas pelo educador.
+        - Compartilhar estratégias pessoais com colegas durante a atividade.
+      game:
+        mode: math-challenge
+        timeLimitSeconds: 120
+        lives: 3
+        victoryMessage: A batida rimada ficou perfeita!
+        gameOverMessage: Retome a leitura com palmas e tente novamente organizando os versos.
+        levels:
+          - id: ritmo-da-parlenda-level-1
+            challenge: Qual verso vem após 'Hoje é domingo'? (pé de cachimbo, a tarde chegou, vamos brincar)
+            answer: pé de cachimbo
+            hint: Relembre a parlenda completa.
+            successFeedback: Muito bem! Você manteve o ritmo tradicional da parlenda.
+            failureFeedback: Repita a parlenda em voz alta e tente novamente.
+          - id: ritmo-da-parlenda-level-2
+            challenge: 'Escolha o verso que fecha ''Atirei o pau no ____.'': (gato, pato, rato)'
+            answer: gato
+            hint: Lembre da versão mais conhecida da parlenda.
+            successFeedback: Você escolheu o verso que mantém a rima e o ritmo.
+            failureFeedback: Relembre a parlenda completa para encontrar o verso correto.
+          - id: ritmo-da-parlenda-level-3
+            challenge: 'Complete ''Quem quer pão, que procure o ____'': (padeiro, fogão, João)'
+            answer: João
+            hint: Pense na rima que fecha a cantiga.
+            successFeedback: Ótimo! O verso mantém a rima com 'pão'.
+            failureFeedback: Releia o verso e compare os sons finais.
+      accessibility:
+        hints:
+          - audience: ESTUDANTE
+            text: 'Passo 1: Leia ou escute cada instrução e identifique onde marcação rítmica de parlendas aparece no interativo.'
+          - audience: ESTUDANTE
+            text: 'Passo 2: Use Tab ou toque na tela para revisar todas as opções antes de confirmar.'
+          - audience: ESTUDANTE
+            text: 'Passo 3: Compartilhe com um colega por que escolheu a resposta apresentada.'
+          - audience: EDUCADOR
+            text: Guie a turma passo a passo, reforçando marcação rítmica de parlendas com gestos, pictogramas e pausas.
+          - audience: FAMILIA
+            text: Envie sugestões de jogos ou músicas que reforcem marcação rítmica de parlendas em casa.
+        feedback:
+          success: Excelente! Marcação rítmica de parlendas ficou evidente nas suas escolhas.
+          encouragement: Caso erre, releia com calma e utilize marcadores sonoros ou visuais para apoiar a decisão.
+          retry: Experimente revisar as pistas destacadas antes de tentar novamente.
+          accessibility: Ofereça tempo extra, recursos táteis e apoio auditivo individual para quem precisar.
+        assets:
+          - slug: lp-silaba-la
+            type: IMAGEM
+            title: Cartão da sílaba LA
+        alternatives:
+          - title: TEXTO EM CAIXA ALTA
+            description: OFEREÇA CARTÕES COM MARCAÇÃO RÍTMICA DE PARLENDAS DESTACADO PARA QUE TODES ACOMPANHEM.
+            steps:
+              - FORNEÇA LETRAS GRANDES E ESPAÇADAS.
+              - GRIFE RIMAS OU PALAVRAS-CHAVE EM COR VIVA.
+        audioCue:
+          title: SINAL SONORO
+          description: Utilize um chocalho ou palmas para marcar o momento de focar em marcação rítmica de parlendas.
+          steps:
+            - Avise que o som indica a troca de etapa ou turno de fala.
+            - Repita o som e a instrução de forma pausada.
+        motorSupport:
+          - title: APOIO MOTOR
+            description: Disponibilize apoios físicos para navegação e registro das respostas.
+            steps:
+              - Ofereça ponteiras, clipes ampliados ou teclado virtual.
+              - Permita que duplas se alternem no controle do dispositivo.
+  - partial: ../../_partials/acolhimento-base.yaml
+    slug: cria-rima-rapida
+    title: Cria Rima Rápida
+    prompt: Digite palavras que completam versos rimados.
+    type: GAME
+    difficulty: DOMINAR
+    bncc:
+      code: EF01LP11
+      habilidades:
+        - EF01LP11
+        - EF01LP01
+        - EF01LP02
+    learningObjectives:
+      - Explorar produção de rimas em situações mediadas pelo educador.
+      - Compartilhar estratégias pessoais com colegas durante a atividade.
+    description: Cria Rima Rápida incentiva a turma a explorar produção de rimas com apoios variados.
+    metadata:
+      categoria: Criação rimada
+      duracaoMinutos: 13
+      habilidades:
+        - EF01LP11
+        - EF01LP01
+        - EF01LP02
+      assetSlug: lp-letra-e
+      assetUsage: Utilize Ilustração da letra E como apoio visual para destacar produção de rimas ao longo da atividade.
+      familiaEngajamento: Convide as famílias a observar produção de rimas em histórias, cantigas ou jogos em casa.
+      habilidadesSecundarias:
+        - EF01LP01
+        - EF01LP02
+      interactiveSlug: game-cria-rima-rapida
+    accessibility:
+      hints:
+        - audience: ESTUDANTE
+          text: 'Passo 1: Observe o enunciado com atenção e sublinhe mentalmente produção de rimas.'
+        - audience: ESTUDANTE
+          text: 'Passo 2: Compare cada opção, repetindo os sons em voz alta se ajudar.'
+        - audience: ESTUDANTE
+          text: 'Passo 3: Respire fundo e confirme a alternativa escolhida com segurança.'
+        - audience: EDUCADOR
+          text: Guie a turma passo a passo, reforçando produção de rimas com gestos, pictogramas e pausas.
+        - audience: FAMILIA
+          text: Envie sugestões de jogos ou músicas que reforcem produção de rimas em casa.
+      feedback:
+        success: Excelente! Produção de rimas ficou evidente nas suas escolhas.
+        encouragement: Caso erre, releia com calma e utilize marcadores sonoros ou visuais para apoiar a decisão.
+        retry: Experimente revisar as pistas destacadas antes de tentar novamente.
+        accessibility: Ofereça tempo extra, recursos táteis e apoio auditivo individual para quem precisar.
+      assets:
+        - slug: lp-letra-e
+          type: IMAGEM
+          title: Ilustração da letra E
+      alternatives:
+        - title: TEXTO EM CAIXA ALTA
+          description: OFEREÇA CARTÕES COM PRODUÇÃO DE RIMAS DESTACADO PARA QUE TODES ACOMPANHEM.
+          steps:
+            - FORNEÇA LETRAS GRANDES E ESPAÇADAS.
+            - GRIFE RIMAS OU PALAVRAS-CHAVE EM COR VIVA.
+      audioCue:
+        title: SINAL SONORO
+        description: Utilize um chocalho ou palmas para marcar o momento de focar em produção de rimas.
+        steps:
+          - Avise que o som indica a troca de etapa ou turno de fala.
+          - Repita o som e a instrução de forma pausada.
+      motorSupport:
+        - title: APOIO MOTOR
+          description: Disponibilize apoios físicos para navegação e registro das respostas.
+          steps:
+            - Ofereça ponteiras, clipes ampliados ou teclado virtual.
+            - Permita que duplas se alternem no controle do dispositivo.
+    prerequisites:
+      - type: ACTIVITY
+        reference: verso-surpresa
+        description: Retomar a criação de versos antes do desafio digitado.
+    interactive:
+      slug: game-cria-rima-rapida
+      title: Cria Rima Rápida — Mini-jogo
+      type: GAME
+      bnccDescription: Identificar e criar rimas, aliterações e jogos de palavras em textos orais curtos, explorando ritmo e musicalidade.
+      estimatedTimeMinutes: 13
+      instructions:
+        - Leia ou escute o desafio de cada fase com atenção.
+        - Digite ou selecione a resposta utilizando teclado, toque ou mouse.
+        - Ao final, compartilhe qual pista sonora ou visual ajudou a resolver a fase.
+      objectives:
+        - Explorar produção de rimas em situações mediadas pelo educador.
+        - Compartilhar estratégias pessoais com colegas durante a atividade.
+      game:
+        mode: math-challenge
+        timeLimitSeconds: 120
+        lives: 3
+        victoryMessage: Versos criados! Suas rimas deram ritmo à história.
+        gameOverMessage: Revise os sons finais e tente novamente construindo novas rimas.
+        levels:
+          - id: cria-rima-rapida-level-1
+            challenge: Digite uma palavra que rima com 'sol'.
+            answer: farol
+            hint: Pense em palavras que terminam com o som 'ol'.
+            successFeedback: Muito bem! 'Farol' mantém a rima com 'sol'.
+            failureFeedback: Experimente repetir 'sol' e buscar palavras com o mesmo final.
+          - id: cria-rima-rapida-level-2
+            challenge: Digite uma palavra que rima com 'chão'.
+            answer: balão
+            hint: Procure finais que soem como 'ão'.
+            successFeedback: Excelente! 'Balão' mantém a rima com 'chão'.
+            failureFeedback: Leia em voz alta e procure palavras com final 'ão'.
+          - id: cria-rima-rapida-level-3
+            challenge: Digite uma palavra que rima com 'luz'.
+            answer: cruz
+            hint: Busque palavras pequenas com final 'uz'.
+            successFeedback: Perfeito! 'Cruz' rima com 'luz'.
+            failureFeedback: Repita 'luz' e procure palavras com o mesmo final.
+      accessibility:
+        hints:
+          - audience: ESTUDANTE
+            text: 'Passo 1: Leia ou escute cada instrução e identifique onde produção de rimas aparece no interativo.'
+          - audience: ESTUDANTE
+            text: 'Passo 2: Use Tab ou toque na tela para revisar todas as opções antes de confirmar.'
+          - audience: ESTUDANTE
+            text: 'Passo 3: Compartilhe com um colega por que escolheu a resposta apresentada.'
+          - audience: EDUCADOR
+            text: Guie a turma passo a passo, reforçando produção de rimas com gestos, pictogramas e pausas.
+          - audience: FAMILIA
+            text: Envie sugestões de jogos ou músicas que reforcem produção de rimas em casa.
+        feedback:
+          success: Excelente! Produção de rimas ficou evidente nas suas escolhas.
+          encouragement: Caso erre, releia com calma e utilize marcadores sonoros ou visuais para apoiar a decisão.
+          retry: Experimente revisar as pistas destacadas antes de tentar novamente.
+          accessibility: Ofereça tempo extra, recursos táteis e apoio auditivo individual para quem precisar.
+        assets:
+          - slug: lp-letra-e
+            type: IMAGEM
+            title: Ilustração da letra E
+        alternatives:
+          - title: TEXTO EM CAIXA ALTA
+            description: OFEREÇA CARTÕES COM PRODUÇÃO DE RIMAS DESTACADO PARA QUE TODES ACOMPANHEM.
+            steps:
+              - FORNEÇA LETRAS GRANDES E ESPAÇADAS.
+              - GRIFE RIMAS OU PALAVRAS-CHAVE EM COR VIVA.
+        audioCue:
+          title: SINAL SONORO
+          description: Utilize um chocalho ou palmas para marcar o momento de focar em produção de rimas.
+          steps:
+            - Avise que o som indica a troca de etapa ou turno de fala.
+            - Repita o som e a instrução de forma pausada.
+        motorSupport:
+          - title: APOIO MOTOR
+            description: Disponibilize apoios físicos para navegação e registro das respostas.
+            steps:
+              - Ofereça ponteiras, clipes ampliados ou teclado virtual.
+              - Permita que duplas se alternem no controle do dispositivo.

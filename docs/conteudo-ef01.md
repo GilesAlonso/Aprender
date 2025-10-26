@@ -20,6 +20,36 @@ data/
    └─ index.json                 # Tabelas de lookup geradas automaticamente
 ```
 
+## Catálogo EF01 de Língua Portuguesa
+
+- **Brincando com Sons (EF01LP01–EF01LP02)**: desenvolve consciência fonológica com jogos de rima, aliteração e segmentação silábica apoiados por gestos, ritmos e interativos multimodais.
+- **Família das Vogais (EF01LP03–EF01LP04)**: explora grafias e sons das vogais em diferentes suportes, articulando leitura, escrita e manipulação de palavras.
+- **Palavras em Ação (EF01LP05–EF01LP06)**: amplia o repertório de leitura de palavras frequentes, conectando vocabulário do cotidiano a estratégias de decodificação.
+- **Clubinho das Palavras (EF01LP06 + EF35LP20)**: promove leituras compartilhadas, produção de bilhetes e organização de pequenas mensagens para circulação real na comunidade escolar.
+- **Frases Divertidas (EF01LP07–EF01LP08)**: fortalece a compreensão de frases curtas, inferindo intenções e reorganizando palavras para manter coesão e humor.
+- **Bilhetes e Recados (EF01LP09–EF01LP10)**: orienta planejamento e revisão de textos funcionais breves, cuidando de cortesia, clareza e destinatário.
+- **Histórias Rimadas (EF01LP11 + EF01LP01–EF01LP02)**: retoma jogos de linguagem com parlendas e poemas, expandindo a criação de versos rimados e aliterações em diferentes mídias.
+- **Hora do Diálogo (EF01LP12–EF01LP13)**: trabalha escuta ativa, turnos de fala e relatos orais, simulando entrevistas, rodas de conversa e apresentações guiadas.
+- **Palavras Compostas (EF01LP14–EF01LP15)**: amplia vocabulário com palavras compostas, campos semânticos e inferência de significados a partir de pistas contextuais.
+- **Pontuação Animada (EF01LP16–EF01LP17)**: exercita leitura expressiva e escrita de frases com ponto final, interrogação e exclamação, relacionando sinal e entonação.
+- **Jornal da Turma (EF01LP18–EF01LP24)**: percorre todo o ciclo de produção coletiva do jornal escolar, do planejamento e coleta à revisão, diagramação e divulgação.
+
+### Tabela de habilidades por módulo
+
+| Módulo                | Slug                    | BNCC (primária) | BNCC (secundárias)                                         |
+| --------------------- | ----------------------- | --------------- | ---------------------------------------------------------- |
+| Brincando com Sons    | `brincando-com-sons`    | EF01LP01        | EF01LP02                                                   |
+| Família das Vogais    | `familia-das-vogais`    | EF01LP03        | EF01LP04                                                   |
+| Palavras em Ação      | `palavras-em-acao`      | EF01LP05        | EF01LP06                                                   |
+| Clubinho das Palavras | `clubinho-das-palavras` | EF01LP06        | EF35LP20                                                   |
+| Frases Divertidas     | `frases-divertidas`     | EF01LP07        | EF01LP08                                                   |
+| Bilhetes e Recados    | `bilhetes-e-recados`    | EF01LP09        | EF01LP10                                                   |
+| Histórias Rimadas     | `historias-rimadas`     | EF01LP11        | EF01LP01, EF01LP02                                         |
+| Hora do Diálogo       | `hora-do-dialogo`       | EF01LP12        | EF01LP13                                                   |
+| Palavras Compostas    | `palavras-compostas`    | EF01LP14        | EF01LP15                                                   |
+| Pontuação Animada     | `pontuacao-animada`     | EF01LP16        | EF01LP17                                                   |
+| Jornal da Turma       | `jornal-da-turma`       | EF01LP18        | EF01LP19, EF01LP20, EF01LP21, EF01LP22, EF01LP23, EF01LP24 |
+
 Cada arquivo de módulo possui duas chaves principais:
 
 - `module`: metadados do módulo (slug, título, estágio, componente curricular, BNCC, resultados de aprendizagem, tags).

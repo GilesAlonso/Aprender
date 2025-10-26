@@ -1,0 +1,2088 @@
+module:
+  slug: palavras-compostas
+  title: Palavras Compostas
+  subtitle: Ampliação de vocabulário em contexto
+  description: Sequência que apresenta palavras compostas, amplia campos semânticos e estimula a dedução de significados a partir de pistas visuais e textuais.
+  theme: Língua Portuguesa
+  discipline: Língua Portuguesa
+  ageGroupSlug: fundamental-anos-iniciais
+  learningPathSlug: descobertas-palavras
+  primaryBnccCode: EF01LP14
+  secondaryBnccCodes:
+    - EF01LP15
+  learningOutcomes:
+    - Reconhecer palavras compostas formadas por duas ou mais palavras simples.
+    - Relacionar palavras a campos semânticos do cotidiano, ampliando repertório.
+    - Inferir significados de palavras desconhecidas a partir de contexto e morfologia.
+  tags:
+    - vocabulário
+    - palavras-compostas
+    - contexto
+activities:
+  - partial: ../../_partials/acolhimento-base.yaml
+    slug: palavra-composta-basica
+    title: Palavra Composta Básica
+    prompt: Escolha a palavra composta formada pelas duas palavras apresentadas.
+    type: QUIZ
+    difficulty: INICIAR
+    bncc:
+      code: EF01LP14
+      habilidades:
+        - EF01LP14
+    learningObjectives:
+      - Identificar palavras compostas a partir da junção de palavras simples.
+      - Relacionar palavra composta ao objeto representado.
+    description: Palavra Composta Básica apresenta combinações simples que originam palavras compostas frequentes.
+    metadata:
+      categoria: Formação de palavras
+      duracaoMinutos: 8
+      habilidades:
+        - EF01LP14
+      assetSlug: lp-material-caderno
+      assetUsage: Utilize Caderno colorido para escrita como apoio visual para destacar formação de palavras compostas ao longo da atividade.
+      familiaEngajamento: Convide as famílias a observar formação de palavras compostas em histórias, cantigas ou jogos em casa.
+      interactiveSlug: quiz-palavra-composta-basica
+    accessibility:
+      hints:
+        - audience: ESTUDANTE
+          text: 'Passo 1: Observe o enunciado com atenção e sublinhe mentalmente formação de palavras compostas.'
+        - audience: ESTUDANTE
+          text: 'Passo 2: Compare cada opção, repetindo os sons em voz alta se ajudar.'
+        - audience: ESTUDANTE
+          text: 'Passo 3: Respire fundo e confirme a alternativa escolhida com segurança.'
+        - audience: EDUCADOR
+          text: Guie a turma passo a passo, reforçando formação de palavras compostas com gestos, pictogramas e pausas.
+        - audience: FAMILIA
+          text: Envie sugestões de jogos ou músicas que reforcem formação de palavras compostas em casa.
+      feedback:
+        success: Excelente! Formação de palavras compostas ficou evidente nas suas escolhas.
+        encouragement: Caso erre, releia com calma e utilize marcadores sonoros ou visuais para apoiar a decisão.
+        retry: Experimente revisar as pistas destacadas antes de tentar novamente.
+        accessibility: Ofereça tempo extra, recursos táteis e apoio auditivo individual para quem precisar.
+      assets:
+        - slug: lp-material-caderno
+          type: IMAGEM
+          title: Caderno colorido para escrita
+      alternatives:
+        - title: TEXTO EM CAIXA ALTA
+          description: OFEREÇA CARTÕES COM FORMAÇÃO DE PALAVRAS COMPOSTAS DESTACADO PARA QUE TODES ACOMPANHEM.
+          steps:
+            - FORNEÇA LETRAS GRANDES E ESPAÇADAS.
+            - GRIFE RIMAS OU PALAVRAS-CHAVE EM COR VIVA.
+      audioCue:
+        title: SINAL SONORO
+        description: Utilize um chocalho ou palmas para marcar o momento de focar em formação de palavras compostas.
+        steps:
+          - Avise que o som indica a troca de etapa ou turno de fala.
+          - Repita o som e a instrução de forma pausada.
+      motorSupport:
+        - title: APOIO MOTOR
+          description: Disponibilize apoios físicos para navegação e registro das respostas.
+          steps:
+            - Ofereça ponteiras, clipes ampliados ou teclado virtual.
+            - Permita que duplas se alternem no controle do dispositivo.
+    prerequisites:
+      - type: SKILL
+        reference: EF01LP14
+        description: Reconhecer palavras simples relacionadas ao cotidiano.
+    interactive:
+      slug: quiz-palavra-composta-basica
+      title: Palavra Composta Básica — Quiz
+      type: QUIZ
+      bnccDescription: Ampliar o vocabulário relacionando palavras a campos semânticos e contextos de uso.
+      estimatedTimeMinutes: 8
+      instructions:
+        - Leia ou escute cada questão antes de responder.
+        - Use as teclas numéricas ou toque nas alternativas para marcar sua escolha.
+        - Explique para a turma como identificou a resposta correta.
+      objectives:
+        - Identificar palavras compostas a partir da junção de palavras simples.
+        - Relacionar palavra composta ao objeto representado.
+      scoring:
+        correct: 10
+        incorrect: 0
+      adaptive:
+        increaseAfter: 2
+        decreaseAfter: 1
+      questions:
+        - id: palavra-composta-basica-q1
+          type: multiple-choice
+          prompt: Qual palavra surge de 'guarda' + 'chuva'?
+          hint: Junte as duas palavras e veja se formam um objeto conhecido.
+          options:
+            - id: palavra-composta-basica-q1-1
+              text: guarda-chuva
+              isCorrect: true
+              feedback: Muito bem! 'Guarda-chuva' é a palavra composta.
+            - id: palavra-composta-basica-q1-2
+              text: guarda roupa
+              isCorrect: false
+              feedback: Observe o objeto formado pelas duas palavras.
+            - id: palavra-composta-basica-q1-3
+              text: chuva forte
+              isCorrect: false
+              feedback: Procure a palavra que junta as duas palavras simples.
+        - id: palavra-composta-basica-q2
+          type: true-false
+          prompt: Palavras compostas são formadas por duas palavras simples?
+          hint: Relembre exemplos que você já conhece.
+          statement: Palavras compostas podem ser formadas por duas palavras simples.
+          answer: true
+          feedback:
+            'true': Isso mesmo! Ao juntar palavras simples criamos novas palavras.
+            'false': Veja como 'guarda' + 'chuva' formam uma palavra composta.
+      accessibility:
+        hints:
+          - audience: ESTUDANTE
+            text: 'Passo 1: Leia ou escute cada instrução e identifique onde formação de palavras compostas aparece no interativo.'
+          - audience: ESTUDANTE
+            text: 'Passo 2: Use Tab ou toque na tela para revisar todas as opções antes de confirmar.'
+          - audience: ESTUDANTE
+            text: 'Passo 3: Compartilhe com um colega por que escolheu a resposta apresentada.'
+          - audience: EDUCADOR
+            text: Guie a turma passo a passo, reforçando formação de palavras compostas com gestos, pictogramas e pausas.
+          - audience: FAMILIA
+            text: Envie sugestões de jogos ou músicas que reforcem formação de palavras compostas em casa.
+        feedback:
+          success: Excelente! Formação de palavras compostas ficou evidente nas suas escolhas.
+          encouragement: Caso erre, releia com calma e utilize marcadores sonoros ou visuais para apoiar a decisão.
+          retry: Experimente revisar as pistas destacadas antes de tentar novamente.
+          accessibility: Ofereça tempo extra, recursos táteis e apoio auditivo individual para quem precisar.
+        assets:
+          - slug: lp-material-caderno
+            type: IMAGEM
+            title: Caderno colorido para escrita
+        alternatives:
+          - title: TEXTO EM CAIXA ALTA
+            description: OFEREÇA CARTÕES COM FORMAÇÃO DE PALAVRAS COMPOSTAS DESTACADO PARA QUE TODES ACOMPANHEM.
+            steps:
+              - FORNEÇA LETRAS GRANDES E ESPAÇADAS.
+              - GRIFE RIMAS OU PALAVRAS-CHAVE EM COR VIVA.
+        audioCue:
+          title: SINAL SONORO
+          description: Utilize um chocalho ou palmas para marcar o momento de focar em formação de palavras compostas.
+          steps:
+            - Avise que o som indica a troca de etapa ou turno de fala.
+            - Repita o som e a instrução de forma pausada.
+        motorSupport:
+          - title: APOIO MOTOR
+            description: Disponibilize apoios físicos para navegação e registro das respostas.
+            steps:
+              - Ofereça ponteiras, clipes ampliados ou teclado virtual.
+              - Permita que duplas se alternem no controle do dispositivo.
+  - partial: ../../_partials/acolhimento-base.yaml
+    slug: campos-de-palavras
+    title: Campos de Palavras
+    prompt: Escolha a palavra que pertence ao mesmo campo semântico apresentado.
+    type: QUIZ
+    difficulty: INICIAR
+    bncc:
+      code: EF01LP14
+      habilidades:
+        - EF01LP14
+        - EF01LP15
+    learningObjectives:
+      - Relacionar palavras a um mesmo tema ou campo semântico.
+      - Ampliar repertório lexical por meio de agrupamentos temáticos.
+    description: Campos de Palavras estimula as crianças a perceber agrupamentos de palavras que pertencem ao mesmo assunto.
+    metadata:
+      categoria: Campos semânticos
+      duracaoMinutos: 9
+      habilidades:
+        - EF01LP14
+        - EF01LP15
+      assetSlug: lp-letra-a
+      assetUsage: Utilize Ilustração da letra A como apoio visual para destacar campos semânticos ao longo da atividade.
+      familiaEngajamento: Convide as famílias a observar campos semânticos em histórias, cantigas ou jogos em casa.
+      habilidadesSecundarias:
+        - EF01LP15
+      interactiveSlug: quiz-campos-de-palavras
+    accessibility:
+      hints:
+        - audience: ESTUDANTE
+          text: 'Passo 1: Observe o enunciado com atenção e sublinhe mentalmente campos semânticos.'
+        - audience: ESTUDANTE
+          text: 'Passo 2: Compare cada opção, repetindo os sons em voz alta se ajudar.'
+        - audience: ESTUDANTE
+          text: 'Passo 3: Respire fundo e confirme a alternativa escolhida com segurança.'
+        - audience: EDUCADOR
+          text: Guie a turma passo a passo, reforçando campos semânticos com gestos, pictogramas e pausas.
+        - audience: FAMILIA
+          text: Envie sugestões de jogos ou músicas que reforcem campos semânticos em casa.
+      feedback:
+        success: Excelente! Campos semânticos ficou evidente nas suas escolhas.
+        encouragement: Caso erre, releia com calma e utilize marcadores sonoros ou visuais para apoiar a decisão.
+        retry: Experimente revisar as pistas destacadas antes de tentar novamente.
+        accessibility: Ofereça tempo extra, recursos táteis e apoio auditivo individual para quem precisar.
+      assets:
+        - slug: lp-letra-a
+          type: IMAGEM
+          title: Ilustração da letra A
+      alternatives:
+        - title: TEXTO EM CAIXA ALTA
+          description: OFEREÇA CARTÕES COM CAMPOS SEMÂNTICOS DESTACADO PARA QUE TODES ACOMPANHEM.
+          steps:
+            - FORNEÇA LETRAS GRANDES E ESPAÇADAS.
+            - GRIFE RIMAS OU PALAVRAS-CHAVE EM COR VIVA.
+      audioCue:
+        title: SINAL SONORO
+        description: Utilize um chocalho ou palmas para marcar o momento de focar em campos semânticos.
+        steps:
+          - Avise que o som indica a troca de etapa ou turno de fala.
+          - Repita o som e a instrução de forma pausada.
+      motorSupport:
+        - title: APOIO MOTOR
+          description: Disponibilize apoios físicos para navegação e registro das respostas.
+          steps:
+            - Ofereça ponteiras, clipes ampliados ou teclado virtual.
+            - Permita que duplas se alternem no controle do dispositivo.
+    prerequisites:
+      - type: ACTIVITY
+        reference: palavra-composta-basica
+        description: Retomar exemplos de palavras antes de agrupá-las.
+    interactive:
+      slug: quiz-campos-de-palavras
+      title: Campos de Palavras — Quiz
+      type: QUIZ
+      bnccDescription: Ampliar o vocabulário relacionando palavras a campos semânticos e contextos de uso.
+      estimatedTimeMinutes: 9
+      instructions:
+        - Leia ou escute cada questão antes de responder.
+        - Use as teclas numéricas ou toque nas alternativas para marcar sua escolha.
+        - Explique para a turma como identificou a resposta correta.
+      objectives:
+        - Relacionar palavras a um mesmo tema ou campo semântico.
+        - Ampliar repertório lexical por meio de agrupamentos temáticos.
+      scoring:
+        correct: 10
+        incorrect: 0
+      adaptive:
+        increaseAfter: 2
+        decreaseAfter: 1
+      questions:
+        - id: campos-de-palavras-q1
+          type: multiple-choice
+          prompt: Qual palavra pertence ao campo das 'brincadeiras ao ar livre'?
+          hint: Pense em brincadeiras que acontecem fora da sala.
+          options:
+            - id: campos-de-palavras-q1-1
+              text: amarelinha
+              isCorrect: true
+              feedback: Ótimo! Amarelinha é brincadeira ao ar livre.
+            - id: campos-de-palavras-q1-2
+              text: lição
+              isCorrect: false
+              feedback: Reflita se a palavra combina com o campo proposto.
+            - id: campos-de-palavras-q1-3
+              text: caderno
+              isCorrect: false
+              feedback: Procure algo relacionado à brincadeira fora da sala.
+        - id: campos-de-palavras-q2
+          type: true-false
+          prompt: Campos semânticos ajudam a organizar ideias?
+          hint: Pense em listas de palavras semelhantes.
+          statement: Palavras do mesmo campo semântico ajudam a organizar ideias.
+          answer: true
+          feedback:
+            'true': Isso mesmo! Agrupar palavras facilita a compreensão de temas.
+            'false': Observe como brincar, jogar, correr pertencem ao campo 'brincadeiras'.
+      accessibility:
+        hints:
+          - audience: ESTUDANTE
+            text: 'Passo 1: Leia ou escute cada instrução e identifique onde campos semânticos aparece no interativo.'
+          - audience: ESTUDANTE
+            text: 'Passo 2: Use Tab ou toque na tela para revisar todas as opções antes de confirmar.'
+          - audience: ESTUDANTE
+            text: 'Passo 3: Compartilhe com um colega por que escolheu a resposta apresentada.'
+          - audience: EDUCADOR
+            text: Guie a turma passo a passo, reforçando campos semânticos com gestos, pictogramas e pausas.
+          - audience: FAMILIA
+            text: Envie sugestões de jogos ou músicas que reforcem campos semânticos em casa.
+        feedback:
+          success: Excelente! Campos semânticos ficou evidente nas suas escolhas.
+          encouragement: Caso erre, releia com calma e utilize marcadores sonoros ou visuais para apoiar a decisão.
+          retry: Experimente revisar as pistas destacadas antes de tentar novamente.
+          accessibility: Ofereça tempo extra, recursos táteis e apoio auditivo individual para quem precisar.
+        assets:
+          - slug: lp-letra-a
+            type: IMAGEM
+            title: Ilustração da letra A
+        alternatives:
+          - title: TEXTO EM CAIXA ALTA
+            description: OFEREÇA CARTÕES COM CAMPOS SEMÂNTICOS DESTACADO PARA QUE TODES ACOMPANHEM.
+            steps:
+              - FORNEÇA LETRAS GRANDES E ESPAÇADAS.
+              - GRIFE RIMAS OU PALAVRAS-CHAVE EM COR VIVA.
+        audioCue:
+          title: SINAL SONORO
+          description: Utilize um chocalho ou palmas para marcar o momento de focar em campos semânticos.
+          steps:
+            - Avise que o som indica a troca de etapa ou turno de fala.
+            - Repita o som e a instrução de forma pausada.
+        motorSupport:
+          - title: APOIO MOTOR
+            description: Disponibilize apoios físicos para navegação e registro das respostas.
+            steps:
+              - Ofereça ponteiras, clipes ampliados ou teclado virtual.
+              - Permita que duplas se alternem no controle do dispositivo.
+  - partial: ../../_partials/acolhimento-base.yaml
+    slug: contexto-indica
+    title: Contexto Indica
+    prompt: Identifique o significado da palavra destacada usando o contexto.
+    type: QUIZ
+    difficulty: PRATICAR
+    bncc:
+      code: EF01LP15
+      habilidades:
+        - EF01LP15
+    learningObjectives:
+      - Inferir significado de palavras novas a partir de pistas contextuais.
+      - Explicar oralmente qual pista ajudou a deduzir o significado.
+    description: Contexto Indica propõe frases curtas para que os estudantes infiram significados com apoio das pistas ao redor da palavra.
+    metadata:
+      categoria: Contexto e significado
+      duracaoMinutos: 9
+      habilidades:
+        - EF01LP15
+      assetSlug: lp-letra-e
+      assetUsage: Utilize Ilustração da letra E como apoio visual para destacar inferência de significado ao longo da atividade.
+      familiaEngajamento: Convide as famílias a observar inferência de significado em histórias, cantigas ou jogos em casa.
+      interactiveSlug: quiz-contexto-indica
+    accessibility:
+      hints:
+        - audience: ESTUDANTE
+          text: 'Passo 1: Observe o enunciado com atenção e sublinhe mentalmente inferência de significado.'
+        - audience: ESTUDANTE
+          text: 'Passo 2: Compare cada opção, repetindo os sons em voz alta se ajudar.'
+        - audience: ESTUDANTE
+          text: 'Passo 3: Respire fundo e confirme a alternativa escolhida com segurança.'
+        - audience: EDUCADOR
+          text: Guie a turma passo a passo, reforçando inferência de significado com gestos, pictogramas e pausas.
+        - audience: FAMILIA
+          text: Envie sugestões de jogos ou músicas que reforcem inferência de significado em casa.
+      feedback:
+        success: Excelente! Inferência de significado ficou evidente nas suas escolhas.
+        encouragement: Caso erre, releia com calma e utilize marcadores sonoros ou visuais para apoiar a decisão.
+        retry: Experimente revisar as pistas destacadas antes de tentar novamente.
+        accessibility: Ofereça tempo extra, recursos táteis e apoio auditivo individual para quem precisar.
+      assets:
+        - slug: lp-letra-e
+          type: IMAGEM
+          title: Ilustração da letra E
+      alternatives:
+        - title: TEXTO EM CAIXA ALTA
+          description: OFEREÇA CARTÕES COM INFERÊNCIA DE SIGNIFICADO DESTACADO PARA QUE TODES ACOMPANHEM.
+          steps:
+            - FORNEÇA LETRAS GRANDES E ESPAÇADAS.
+            - GRIFE RIMAS OU PALAVRAS-CHAVE EM COR VIVA.
+      audioCue:
+        title: SINAL SONORO
+        description: Utilize um chocalho ou palmas para marcar o momento de focar em inferência de significado.
+        steps:
+          - Avise que o som indica a troca de etapa ou turno de fala.
+          - Repita o som e a instrução de forma pausada.
+      motorSupport:
+        - title: APOIO MOTOR
+          description: Disponibilize apoios físicos para navegação e registro das respostas.
+          steps:
+            - Ofereça ponteiras, clipes ampliados ou teclado virtual.
+            - Permita que duplas se alternem no controle do dispositivo.
+    prerequisites:
+      - type: ACTIVITY
+        reference: campos-de-palavras
+        description: Relembrar agrupamentos semânticos antes de deduzir significados.
+    interactive:
+      slug: quiz-contexto-indica
+      title: Contexto Indica — Quiz
+      type: QUIZ
+      bnccDescription: Inferir o significado de palavras desconhecidas utilizando pistas do contexto e de palavras conhecidas.
+      estimatedTimeMinutes: 9
+      instructions:
+        - Leia ou escute cada questão antes de responder.
+        - Use as teclas numéricas ou toque nas alternativas para marcar sua escolha.
+        - Explique para a turma como identificou a resposta correta.
+      objectives:
+        - Inferir significado de palavras novas a partir de pistas contextuais.
+        - Explicar oralmente qual pista ajudou a deduzir o significado.
+      scoring:
+        correct: 10
+        incorrect: 0
+      adaptive:
+        increaseAfter: 2
+        decreaseAfter: 1
+      questions:
+        - id: contexto-indica-q1
+          type: multiple-choice
+          prompt: Na frase 'Pedro vestiu o guarda-pó para pintar', o que significa 'guarda-pó'?
+          hint: Observe a palavra 'pintar' e pense no objeto usado.
+          options:
+            - id: contexto-indica-q1-1
+              text: Um avental que protege a roupa
+              isCorrect: true
+              feedback: Perfeito! O contexto da pintura revela o significado.
+            - id: contexto-indica-q1-2
+              text: Um pó colorido
+              isCorrect: false
+              feedback: Releia a frase percebendo o que Pedro vestiu.
+            - id: contexto-indica-q1-3
+              text: Um brinquedo novo
+              isCorrect: false
+              feedback: Analise as pistas da frase para encontrar o sentido.
+        - id: contexto-indica-q2
+          type: true-false
+          prompt: O contexto ajuda a entender palavras novas?
+          hint: Pense nas pistas oferecidas pela frase.
+          statement: O contexto da frase ajuda a entender palavras desconhecidas.
+          answer: true
+          feedback:
+            'true': Sim! As pistas da frase revelam o significado.
+            'false': Releia a frase e perceba como as pistas ajudam na compreensão.
+      accessibility:
+        hints:
+          - audience: ESTUDANTE
+            text: 'Passo 1: Leia ou escute cada instrução e identifique onde inferência de significado aparece no interativo.'
+          - audience: ESTUDANTE
+            text: 'Passo 2: Use Tab ou toque na tela para revisar todas as opções antes de confirmar.'
+          - audience: ESTUDANTE
+            text: 'Passo 3: Compartilhe com um colega por que escolheu a resposta apresentada.'
+          - audience: EDUCADOR
+            text: Guie a turma passo a passo, reforçando inferência de significado com gestos, pictogramas e pausas.
+          - audience: FAMILIA
+            text: Envie sugestões de jogos ou músicas que reforcem inferência de significado em casa.
+        feedback:
+          success: Excelente! Inferência de significado ficou evidente nas suas escolhas.
+          encouragement: Caso erre, releia com calma e utilize marcadores sonoros ou visuais para apoiar a decisão.
+          retry: Experimente revisar as pistas destacadas antes de tentar novamente.
+          accessibility: Ofereça tempo extra, recursos táteis e apoio auditivo individual para quem precisar.
+        assets:
+          - slug: lp-letra-e
+            type: IMAGEM
+            title: Ilustração da letra E
+        alternatives:
+          - title: TEXTO EM CAIXA ALTA
+            description: OFEREÇA CARTÕES COM INFERÊNCIA DE SIGNIFICADO DESTACADO PARA QUE TODES ACOMPANHEM.
+            steps:
+              - FORNEÇA LETRAS GRANDES E ESPAÇADAS.
+              - GRIFE RIMAS OU PALAVRAS-CHAVE EM COR VIVA.
+        audioCue:
+          title: SINAL SONORO
+          description: Utilize um chocalho ou palmas para marcar o momento de focar em inferência de significado.
+          steps:
+            - Avise que o som indica a troca de etapa ou turno de fala.
+            - Repita o som e a instrução de forma pausada.
+        motorSupport:
+          - title: APOIO MOTOR
+            description: Disponibilize apoios físicos para navegação e registro das respostas.
+            steps:
+              - Ofereça ponteiras, clipes ampliados ou teclado virtual.
+              - Permita que duplas se alternem no controle do dispositivo.
+  - partial: ../../_partials/acolhimento-base.yaml
+    slug: dupla-significado
+    title: Dupla de Significados
+    prompt: Escolha a palavra composta que traz o significado indicado pelo contexto.
+    type: QUIZ
+    difficulty: PRATICAR
+    bncc:
+      code: EF01LP14
+      habilidades:
+        - EF01LP14
+        - EF01LP15
+    learningObjectives:
+      - Relacionar palavras compostas ao contexto de uso.
+      - Explicar como cada parte da palavra contribui para o significado.
+    description: Dupla de Significados desafia a turminha a selecionar a palavra composta mais adequada ao contexto apresentado.
+    metadata:
+      categoria: Vocabulário contextual
+      duracaoMinutos: 10
+      habilidades:
+        - EF01LP14
+        - EF01LP15
+      assetSlug: lp-silaba-ba
+      assetUsage: Utilize Cartão da sílaba BA como apoio visual para destacar interpretação de palavras compostas ao longo da atividade.
+      familiaEngajamento: Convide as famílias a observar interpretação de palavras compostas em histórias, cantigas ou jogos em casa.
+      habilidadesSecundarias:
+        - EF01LP15
+      interactiveSlug: quiz-dupla-significado
+    accessibility:
+      hints:
+        - audience: ESTUDANTE
+          text: 'Passo 1: Observe o enunciado com atenção e sublinhe mentalmente interpretação de palavras compostas.'
+        - audience: ESTUDANTE
+          text: 'Passo 2: Compare cada opção, repetindo os sons em voz alta se ajudar.'
+        - audience: ESTUDANTE
+          text: 'Passo 3: Respire fundo e confirme a alternativa escolhida com segurança.'
+        - audience: EDUCADOR
+          text: Guie a turma passo a passo, reforçando interpretação de palavras compostas com gestos, pictogramas e pausas.
+        - audience: FAMILIA
+          text: Envie sugestões de jogos ou músicas que reforcem interpretação de palavras compostas em casa.
+      feedback:
+        success: Excelente! Interpretação de palavras compostas ficou evidente nas suas escolhas.
+        encouragement: Caso erre, releia com calma e utilize marcadores sonoros ou visuais para apoiar a decisão.
+        retry: Experimente revisar as pistas destacadas antes de tentar novamente.
+        accessibility: Ofereça tempo extra, recursos táteis e apoio auditivo individual para quem precisar.
+      assets:
+        - slug: lp-silaba-ba
+          type: IMAGEM
+          title: Cartão da sílaba BA
+      alternatives:
+        - title: TEXTO EM CAIXA ALTA
+          description: OFEREÇA CARTÕES COM INTERPRETAÇÃO DE PALAVRAS COMPOSTAS DESTACADO PARA QUE TODES ACOMPANHEM.
+          steps:
+            - FORNEÇA LETRAS GRANDES E ESPAÇADAS.
+            - GRIFE RIMAS OU PALAVRAS-CHAVE EM COR VIVA.
+      audioCue:
+        title: SINAL SONORO
+        description: Utilize um chocalho ou palmas para marcar o momento de focar em interpretação de palavras compostas.
+        steps:
+          - Avise que o som indica a troca de etapa ou turno de fala.
+          - Repita o som e a instrução de forma pausada.
+      motorSupport:
+        - title: APOIO MOTOR
+          description: Disponibilize apoios físicos para navegação e registro das respostas.
+          steps:
+            - Ofereça ponteiras, clipes ampliados ou teclado virtual.
+            - Permita que duplas se alternem no controle do dispositivo.
+    prerequisites:
+      - type: ACTIVITY
+        reference: contexto-indica
+        description: Praticar inferência antes de escolher palavras compostas em contexto.
+    interactive:
+      slug: quiz-dupla-significado
+      title: Dupla de Significados — Quiz
+      type: QUIZ
+      bnccDescription: Ampliar o vocabulário relacionando palavras a campos semânticos e contextos de uso.
+      estimatedTimeMinutes: 10
+      instructions:
+        - Leia ou escute cada questão antes de responder.
+        - Use as teclas numéricas ou toque nas alternativas para marcar sua escolha.
+        - Explique para a turma como identificou a resposta correta.
+      objectives:
+        - Relacionar palavras compostas ao contexto de uso.
+        - Explicar como cada parte da palavra contribui para o significado.
+      scoring:
+        correct: 10
+        incorrect: 0
+      adaptive:
+        increaseAfter: 2
+        decreaseAfter: 1
+      questions:
+        - id: dupla-significado-q1
+          type: multiple-choice
+          prompt: 'Frase: ''Durante a noite, o ____ iluminou a sala''. Qual palavra composta completa o sentido?'
+          hint: Pense no objeto usado para iluminar.
+          options:
+            - id: dupla-significado-q1-1
+              text: abajur
+              isCorrect: false
+              feedback: Observe se a palavra é composta.
+            - id: dupla-significado-q1-2
+              text: lampião
+              isCorrect: false
+              feedback: Procure uma palavra composta por duas palavras.
+            - id: dupla-significado-q1-3
+              text: luz-de-vela
+              isCorrect: true
+              feedback: Excelente! 'Luz-de-vela' é composta e ilumina a sala.
+        - id: dupla-significado-q2
+          type: true-false
+          prompt: As partes da palavra composta ajudam no significado?
+          hint: Repare no que cada parte significa.
+          statement: Partes de uma palavra composta ajudam a entender o significado.
+          answer: true
+          feedback:
+            'true': Correto! Cada parte adiciona uma pista sobre o objeto.
+            'false': Veja como 'luz' e 'vela' explicam a palavra completa.
+      accessibility:
+        hints:
+          - audience: ESTUDANTE
+            text: 'Passo 1: Leia ou escute cada instrução e identifique onde interpretação de palavras compostas aparece no interativo.'
+          - audience: ESTUDANTE
+            text: 'Passo 2: Use Tab ou toque na tela para revisar todas as opções antes de confirmar.'
+          - audience: ESTUDANTE
+            text: 'Passo 3: Compartilhe com um colega por que escolheu a resposta apresentada.'
+          - audience: EDUCADOR
+            text: Guie a turma passo a passo, reforçando interpretação de palavras compostas com gestos, pictogramas e pausas.
+          - audience: FAMILIA
+            text: Envie sugestões de jogos ou músicas que reforcem interpretação de palavras compostas em casa.
+        feedback:
+          success: Excelente! Interpretação de palavras compostas ficou evidente nas suas escolhas.
+          encouragement: Caso erre, releia com calma e utilize marcadores sonoros ou visuais para apoiar a decisão.
+          retry: Experimente revisar as pistas destacadas antes de tentar novamente.
+          accessibility: Ofereça tempo extra, recursos táteis e apoio auditivo individual para quem precisar.
+        assets:
+          - slug: lp-silaba-ba
+            type: IMAGEM
+            title: Cartão da sílaba BA
+        alternatives:
+          - title: TEXTO EM CAIXA ALTA
+            description: OFEREÇA CARTÕES COM INTERPRETAÇÃO DE PALAVRAS COMPOSTAS DESTACADO PARA QUE TODES ACOMPANHEM.
+            steps:
+              - FORNEÇA LETRAS GRANDES E ESPAÇADAS.
+              - GRIFE RIMAS OU PALAVRAS-CHAVE EM COR VIVA.
+        audioCue:
+          title: SINAL SONORO
+          description: Utilize um chocalho ou palmas para marcar o momento de focar em interpretação de palavras compostas.
+          steps:
+            - Avise que o som indica a troca de etapa ou turno de fala.
+            - Repita o som e a instrução de forma pausada.
+        motorSupport:
+          - title: APOIO MOTOR
+            description: Disponibilize apoios físicos para navegação e registro das respostas.
+            steps:
+              - Ofereça ponteiras, clipes ampliados ou teclado virtual.
+              - Permita que duplas se alternem no controle do dispositivo.
+  - partial: ../../_partials/acolhimento-base.yaml
+    slug: palavra-surpresa
+    title: Palavra Surpresa
+    prompt: Interprete a palavra composta destacada e escolha sua melhor definição.
+    type: QUIZ
+    difficulty: DOMINAR
+    bncc:
+      code: EF01LP14
+      habilidades:
+        - EF01LP14
+        - EF01LP15
+    learningObjectives:
+      - Analisar partes de palavras compostas para deduzir significados.
+      - Justificar oralmente a escolha do significado mais adequado.
+    description: Palavra Surpresa apresenta palavras compostas menos habituais para que a turma explore pistas semânticas e morfológicas.
+    metadata:
+      categoria: Análise morfológica
+      duracaoMinutos: 11
+      habilidades:
+        - EF01LP14
+        - EF01LP15
+      assetSlug: lp-letra-e
+      assetUsage: Utilize Ilustração da letra E como apoio visual para destacar significado de compostas ao longo da atividade.
+      familiaEngajamento: Convide as famílias a observar significado de compostas em histórias, cantigas ou jogos em casa.
+      habilidadesSecundarias:
+        - EF01LP15
+      interactiveSlug: quiz-palavra-surpresa
+    accessibility:
+      hints:
+        - audience: ESTUDANTE
+          text: 'Passo 1: Observe o enunciado com atenção e sublinhe mentalmente significado de compostas.'
+        - audience: ESTUDANTE
+          text: 'Passo 2: Compare cada opção, repetindo os sons em voz alta se ajudar.'
+        - audience: ESTUDANTE
+          text: 'Passo 3: Respire fundo e confirme a alternativa escolhida com segurança.'
+        - audience: EDUCADOR
+          text: Guie a turma passo a passo, reforçando significado de compostas com gestos, pictogramas e pausas.
+        - audience: FAMILIA
+          text: Envie sugestões de jogos ou músicas que reforcem significado de compostas em casa.
+      feedback:
+        success: Excelente! Significado de compostas ficou evidente nas suas escolhas.
+        encouragement: Caso erre, releia com calma e utilize marcadores sonoros ou visuais para apoiar a decisão.
+        retry: Experimente revisar as pistas destacadas antes de tentar novamente.
+        accessibility: Ofereça tempo extra, recursos táteis e apoio auditivo individual para quem precisar.
+      assets:
+        - slug: lp-letra-e
+          type: IMAGEM
+          title: Ilustração da letra E
+      alternatives:
+        - title: TEXTO EM CAIXA ALTA
+          description: OFEREÇA CARTÕES COM SIGNIFICADO DE COMPOSTAS DESTACADO PARA QUE TODES ACOMPANHEM.
+          steps:
+            - FORNEÇA LETRAS GRANDES E ESPAÇADAS.
+            - GRIFE RIMAS OU PALAVRAS-CHAVE EM COR VIVA.
+      audioCue:
+        title: SINAL SONORO
+        description: Utilize um chocalho ou palmas para marcar o momento de focar em significado de compostas.
+        steps:
+          - Avise que o som indica a troca de etapa ou turno de fala.
+          - Repita o som e a instrução de forma pausada.
+      motorSupport:
+        - title: APOIO MOTOR
+          description: Disponibilize apoios físicos para navegação e registro das respostas.
+          steps:
+            - Ofereça ponteiras, clipes ampliados ou teclado virtual.
+            - Permita que duplas se alternem no controle do dispositivo.
+    prerequisites:
+      - type: ACTIVITY
+        reference: dupla-significado
+        description: Retomar o uso de pistas contextuais antes de analisar palavras menos comuns.
+    interactive:
+      slug: quiz-palavra-surpresa
+      title: Palavra Surpresa — Quiz
+      type: QUIZ
+      bnccDescription: Ampliar o vocabulário relacionando palavras a campos semânticos e contextos de uso.
+      estimatedTimeMinutes: 11
+      instructions:
+        - Leia ou escute cada questão antes de responder.
+        - Use as teclas numéricas ou toque nas alternativas para marcar sua escolha.
+        - Explique para a turma como identificou a resposta correta.
+      objectives:
+        - Analisar partes de palavras compostas para deduzir significados.
+        - Justificar oralmente a escolha do significado mais adequado.
+      scoring:
+        correct: 10
+        incorrect: 0
+      adaptive:
+        increaseAfter: 2
+        decreaseAfter: 1
+      questions:
+        - id: palavra-surpresa-q1
+          type: multiple-choice
+          prompt: O que significa 'ponta-cabeça' na frase 'João ficou de ponta-cabeça no parque'?
+          hint: Imagine o corpo de João nessa posição.
+          options:
+            - id: palavra-surpresa-q1-1
+              text: Ficar com os pés para o alto e a cabeça para baixo
+              isCorrect: true
+              feedback: Muito bem! A palavra composta indica a posição do corpo.
+            - id: palavra-surpresa-q1-2
+              text: Ficar muito pensativo
+              isCorrect: false
+              feedback: Observe como cada parte da palavra descreve o movimento.
+            - id: palavra-surpresa-q1-3
+              text: Ficar parado observando
+              isCorrect: false
+              feedback: Releia a palavra percebendo 'ponta' e 'cabeça'.
+        - id: palavra-surpresa-q2
+          type: true-false
+          prompt: As partes da palavra ajudam a entender expressões?
+          hint: Pense em palavras compostas que descrevem ações.
+          statement: Conhecer as partes da palavra composta ajuda a entender figuras de linguagem.
+          answer: true
+          feedback:
+            'true': Ótimo! As partes da palavra orientam o sentido figurado.
+            'false': Veja como 'ponta' e 'cabeça' descrevem a posição corporal.
+      accessibility:
+        hints:
+          - audience: ESTUDANTE
+            text: 'Passo 1: Leia ou escute cada instrução e identifique onde significado de compostas aparece no interativo.'
+          - audience: ESTUDANTE
+            text: 'Passo 2: Use Tab ou toque na tela para revisar todas as opções antes de confirmar.'
+          - audience: ESTUDANTE
+            text: 'Passo 3: Compartilhe com um colega por que escolheu a resposta apresentada.'
+          - audience: EDUCADOR
+            text: Guie a turma passo a passo, reforçando significado de compostas com gestos, pictogramas e pausas.
+          - audience: FAMILIA
+            text: Envie sugestões de jogos ou músicas que reforcem significado de compostas em casa.
+        feedback:
+          success: Excelente! Significado de compostas ficou evidente nas suas escolhas.
+          encouragement: Caso erre, releia com calma e utilize marcadores sonoros ou visuais para apoiar a decisão.
+          retry: Experimente revisar as pistas destacadas antes de tentar novamente.
+          accessibility: Ofereça tempo extra, recursos táteis e apoio auditivo individual para quem precisar.
+        assets:
+          - slug: lp-letra-e
+            type: IMAGEM
+            title: Ilustração da letra E
+        alternatives:
+          - title: TEXTO EM CAIXA ALTA
+            description: OFEREÇA CARTÕES COM SIGNIFICADO DE COMPOSTAS DESTACADO PARA QUE TODES ACOMPANHEM.
+            steps:
+              - FORNEÇA LETRAS GRANDES E ESPAÇADAS.
+              - GRIFE RIMAS OU PALAVRAS-CHAVE EM COR VIVA.
+        audioCue:
+          title: SINAL SONORO
+          description: Utilize um chocalho ou palmas para marcar o momento de focar em significado de compostas.
+          steps:
+            - Avise que o som indica a troca de etapa ou turno de fala.
+            - Repita o som e a instrução de forma pausada.
+        motorSupport:
+          - title: APOIO MOTOR
+            description: Disponibilize apoios físicos para navegação e registro das respostas.
+            steps:
+              - Ofereça ponteiras, clipes ampliados ou teclado virtual.
+              - Permita que duplas se alternem no controle do dispositivo.
+  - partial: ../../_partials/acolhimento-base.yaml
+    slug: deduza-o-significado
+    title: Deduza o Significado
+    prompt: Analise a frase e escolha o significado aproximado da palavra em destaque.
+    type: QUIZ
+    difficulty: DOMINAR
+    bncc:
+      code: EF01LP15
+      habilidades:
+        - EF01LP15
+        - EF01LP14
+    learningObjectives:
+      - Inferir significados usando pistas contextuais e conhecimento prévio.
+      - Debater com colegas as hipóteses construídas a partir do texto.
+    description: Deduza o Significado desafia a turma a interpretar palavras desconhecidas utilizando várias pistas do enunciado.
+    metadata:
+      categoria: Inferência lexical
+      duracaoMinutos: 11
+      habilidades:
+        - EF01LP15
+        - EF01LP14
+      assetSlug: lp-silaba-la
+      assetUsage: Utilize Cartão da sílaba LA como apoio visual para destacar inferência lexical avançada ao longo da atividade.
+      familiaEngajamento: Convide as famílias a observar inferência lexical avançada em histórias, cantigas ou jogos em casa.
+      habilidadesSecundarias:
+        - EF01LP14
+      interactiveSlug: quiz-deduza-o-significado
+    accessibility:
+      hints:
+        - audience: ESTUDANTE
+          text: 'Passo 1: Observe o enunciado com atenção e sublinhe mentalmente inferência lexical avançada.'
+        - audience: ESTUDANTE
+          text: 'Passo 2: Compare cada opção, repetindo os sons em voz alta se ajudar.'
+        - audience: ESTUDANTE
+          text: 'Passo 3: Respire fundo e confirme a alternativa escolhida com segurança.'
+        - audience: EDUCADOR
+          text: Guie a turma passo a passo, reforçando inferência lexical avançada com gestos, pictogramas e pausas.
+        - audience: FAMILIA
+          text: Envie sugestões de jogos ou músicas que reforcem inferência lexical avançada em casa.
+      feedback:
+        success: Excelente! Inferência lexical avançada ficou evidente nas suas escolhas.
+        encouragement: Caso erre, releia com calma e utilize marcadores sonoros ou visuais para apoiar a decisão.
+        retry: Experimente revisar as pistas destacadas antes de tentar novamente.
+        accessibility: Ofereça tempo extra, recursos táteis e apoio auditivo individual para quem precisar.
+      assets:
+        - slug: lp-silaba-la
+          type: IMAGEM
+          title: Cartão da sílaba LA
+      alternatives:
+        - title: TEXTO EM CAIXA ALTA
+          description: OFEREÇA CARTÕES COM INFERÊNCIA LEXICAL AVANÇADA DESTACADO PARA QUE TODES ACOMPANHEM.
+          steps:
+            - FORNEÇA LETRAS GRANDES E ESPAÇADAS.
+            - GRIFE RIMAS OU PALAVRAS-CHAVE EM COR VIVA.
+      audioCue:
+        title: SINAL SONORO
+        description: Utilize um chocalho ou palmas para marcar o momento de focar em inferência lexical avançada.
+        steps:
+          - Avise que o som indica a troca de etapa ou turno de fala.
+          - Repita o som e a instrução de forma pausada.
+      motorSupport:
+        - title: APOIO MOTOR
+          description: Disponibilize apoios físicos para navegação e registro das respostas.
+          steps:
+            - Ofereça ponteiras, clipes ampliados ou teclado virtual.
+            - Permita que duplas se alternem no controle do dispositivo.
+    prerequisites:
+      - type: ACTIVITY
+        reference: palavra-surpresa
+        description: Retomar análise de palavras compostas antes de ampliar inferências.
+    interactive:
+      slug: quiz-deduza-o-significado
+      title: Deduza o Significado — Quiz
+      type: QUIZ
+      bnccDescription: Inferir o significado de palavras desconhecidas utilizando pistas do contexto e de palavras conhecidas.
+      estimatedTimeMinutes: 11
+      instructions:
+        - Leia ou escute cada questão antes de responder.
+        - Use as teclas numéricas ou toque nas alternativas para marcar sua escolha.
+        - Explique para a turma como identificou a resposta correta.
+      objectives:
+        - Inferir significados usando pistas contextuais e conhecimento prévio.
+        - Debater com colegas as hipóteses construídas a partir do texto.
+      scoring:
+        correct: 10
+        incorrect: 0
+      adaptive:
+        increaseAfter: 2
+        decreaseAfter: 1
+      questions:
+        - id: deduza-o-significado-q1
+          type: multiple-choice
+          prompt: '''O vendedor usou um megafone para chamar atenção''. Qual o significado de ''megafone''?'
+          hint: Observe que recurso ajuda a chamar atenção.
+          options:
+            - id: deduza-o-significado-q1-1
+              text: Aparelho que amplia a voz
+              isCorrect: true
+              feedback: Perfeito! 'Mega' sugere grande e 'fone' relaciona-se a som.
+            - id: deduza-o-significado-q1-2
+              text: Cartaz colorido
+              isCorrect: false
+              feedback: Verifique se 'fone' se relaciona a som ou imagem.
+            - id: deduza-o-significado-q1-3
+              text: Sapato brilhoso
+              isCorrect: false
+              feedback: Procure pistas na frase que indiquem o significado.
+        - id: deduza-o-significado-q2
+          type: true-false
+          prompt: '''Mega'' indica algo grande?'
+          hint: Lembre de palavras com 'mega'.
+          statement: O prefixo 'mega' indica algo grande ou intenso.
+          answer: true
+          feedback:
+            'true': Correto! 'Mega' reforça a ideia de grande intensidade.
+            'false': Reveja palavras como 'megastore' para associar o sentido.
+      accessibility:
+        hints:
+          - audience: ESTUDANTE
+            text: 'Passo 1: Leia ou escute cada instrução e identifique onde inferência lexical avançada aparece no interativo.'
+          - audience: ESTUDANTE
+            text: 'Passo 2: Use Tab ou toque na tela para revisar todas as opções antes de confirmar.'
+          - audience: ESTUDANTE
+            text: 'Passo 3: Compartilhe com um colega por que escolheu a resposta apresentada.'
+          - audience: EDUCADOR
+            text: Guie a turma passo a passo, reforçando inferência lexical avançada com gestos, pictogramas e pausas.
+          - audience: FAMILIA
+            text: Envie sugestões de jogos ou músicas que reforcem inferência lexical avançada em casa.
+        feedback:
+          success: Excelente! Inferência lexical avançada ficou evidente nas suas escolhas.
+          encouragement: Caso erre, releia com calma e utilize marcadores sonoros ou visuais para apoiar a decisão.
+          retry: Experimente revisar as pistas destacadas antes de tentar novamente.
+          accessibility: Ofereça tempo extra, recursos táteis e apoio auditivo individual para quem precisar.
+        assets:
+          - slug: lp-silaba-la
+            type: IMAGEM
+            title: Cartão da sílaba LA
+        alternatives:
+          - title: TEXTO EM CAIXA ALTA
+            description: OFEREÇA CARTÕES COM INFERÊNCIA LEXICAL AVANÇADA DESTACADO PARA QUE TODES ACOMPANHEM.
+            steps:
+              - FORNEÇA LETRAS GRANDES E ESPAÇADAS.
+              - GRIFE RIMAS OU PALAVRAS-CHAVE EM COR VIVA.
+        audioCue:
+          title: SINAL SONORO
+          description: Utilize um chocalho ou palmas para marcar o momento de focar em inferência lexical avançada.
+          steps:
+            - Avise que o som indica a troca de etapa ou turno de fala.
+            - Repita o som e a instrução de forma pausada.
+        motorSupport:
+          - title: APOIO MOTOR
+            description: Disponibilize apoios físicos para navegação e registro das respostas.
+            steps:
+              - Ofereça ponteiras, clipes ampliados ou teclado virtual.
+              - Permita que duplas se alternem no controle do dispositivo.
+  - partial: ../../_partials/acolhimento-base.yaml
+    slug: puzzle-monta-composta
+    title: Monta Composta
+    prompt: Associe combinações de palavras aos objetos formados.
+    type: PUZZLE
+    difficulty: INICIAR
+    bncc:
+      code: EF01LP14
+      habilidades:
+        - EF01LP14
+    learningObjectives:
+      - Explorar montagem de palavras compostas em situações mediadas pelo educador.
+      - Compartilhar estratégias pessoais com colegas durante a atividade.
+    description: Monta Composta incentiva a turma a explorar montagem de palavras compostas com apoios variados.
+    metadata:
+      categoria: Formação de compostas
+      duracaoMinutos: 9
+      habilidades:
+        - EF01LP14
+      assetSlug: lp-letra-a
+      assetUsage: Utilize Ilustração da letra A como apoio visual para destacar montagem de palavras compostas ao longo da atividade.
+      familiaEngajamento: Convide as famílias a observar montagem de palavras compostas em histórias, cantigas ou jogos em casa.
+      interactiveSlug: puzzle-puzzle-monta-composta
+    accessibility:
+      hints:
+        - audience: ESTUDANTE
+          text: 'Passo 1: Observe o enunciado com atenção e sublinhe mentalmente montagem de palavras compostas.'
+        - audience: ESTUDANTE
+          text: 'Passo 2: Compare cada opção, repetindo os sons em voz alta se ajudar.'
+        - audience: ESTUDANTE
+          text: 'Passo 3: Respire fundo e confirme a alternativa escolhida com segurança.'
+        - audience: EDUCADOR
+          text: Guie a turma passo a passo, reforçando montagem de palavras compostas com gestos, pictogramas e pausas.
+        - audience: FAMILIA
+          text: Envie sugestões de jogos ou músicas que reforcem montagem de palavras compostas em casa.
+      feedback:
+        success: Excelente! Montagem de palavras compostas ficou evidente nas suas escolhas.
+        encouragement: Caso erre, releia com calma e utilize marcadores sonoros ou visuais para apoiar a decisão.
+        retry: Experimente revisar as pistas destacadas antes de tentar novamente.
+        accessibility: Ofereça tempo extra, recursos táteis e apoio auditivo individual para quem precisar.
+      assets:
+        - slug: lp-letra-a
+          type: IMAGEM
+          title: Ilustração da letra A
+      alternatives:
+        - title: TEXTO EM CAIXA ALTA
+          description: OFEREÇA CARTÕES COM MONTAGEM DE PALAVRAS COMPOSTAS DESTACADO PARA QUE TODES ACOMPANHEM.
+          steps:
+            - FORNEÇA LETRAS GRANDES E ESPAÇADAS.
+            - GRIFE RIMAS OU PALAVRAS-CHAVE EM COR VIVA.
+      audioCue:
+        title: SINAL SONORO
+        description: Utilize um chocalho ou palmas para marcar o momento de focar em montagem de palavras compostas.
+        steps:
+          - Avise que o som indica a troca de etapa ou turno de fala.
+          - Repita o som e a instrução de forma pausada.
+      motorSupport:
+        - title: APOIO MOTOR
+          description: Disponibilize apoios físicos para navegação e registro das respostas.
+          steps:
+            - Ofereça ponteiras, clipes ampliados ou teclado virtual.
+            - Permita que duplas se alternem no controle do dispositivo.
+    prerequisites:
+      - type: ACTIVITY
+        reference: palavra-composta-basica
+        description: Retomar exemplos antes de montar novas palavras.
+    interactive:
+      slug: puzzle-puzzle-monta-composta
+      title: Monta Composta — Quebra-cabeça
+      type: PUZZLE
+      bnccDescription: Ampliar o vocabulário relacionando palavras a campos semânticos e contextos de uso.
+      estimatedTimeMinutes: 9
+      instructions:
+        - Observe cada cartão e relacione arrastando ou usando Tab + Enter.
+        - Converse sobre o motivo da combinação antes de confirmar.
+        - Revise as duplas formadas e proponha novas associações.
+      objectives:
+        - Explorar montagem de palavras compostas em situações mediadas pelo educador.
+        - Compartilhar estratégias pessoais com colegas durante a atividade.
+      puzzle:
+        mode: matching
+        successFeedback: Palavras montadas! O vocabulário cresceu.
+        errorFeedback: Relembre as combinações e tente novamente.
+        pairs:
+          - id: puzzle-monta-composta-pair-1
+            prompt: guarda + roupa
+            match: guarda-roupa
+            hint: Procure um móvel usado para organizar roupas.
+            feedback: A combinação forma o móvel conhecido no quarto.
+          - id: puzzle-monta-composta-pair-2
+            prompt: para + raios
+            match: pára-raios
+            hint: Imagine algo que protege prédios durante tempestades.
+            feedback: A palavra composta indica o equipamento de proteção.
+          - id: puzzle-monta-composta-pair-3
+            prompt: meia + noite
+            match: meia-noite
+            hint: Pense em um horário especial do dia.
+            feedback: A junção cria a palavra composta 'meia-noite'.
+      accessibility:
+        hints:
+          - audience: ESTUDANTE
+            text: 'Passo 1: Leia ou escute cada instrução e identifique onde montagem de palavras compostas aparece no interativo.'
+          - audience: ESTUDANTE
+            text: 'Passo 2: Use Tab ou toque na tela para revisar todas as opções antes de confirmar.'
+          - audience: ESTUDANTE
+            text: 'Passo 3: Compartilhe com um colega por que escolheu a resposta apresentada.'
+          - audience: EDUCADOR
+            text: Guie a turma passo a passo, reforçando montagem de palavras compostas com gestos, pictogramas e pausas.
+          - audience: FAMILIA
+            text: Envie sugestões de jogos ou músicas que reforcem montagem de palavras compostas em casa.
+        feedback:
+          success: Excelente! Montagem de palavras compostas ficou evidente nas suas escolhas.
+          encouragement: Caso erre, releia com calma e utilize marcadores sonoros ou visuais para apoiar a decisão.
+          retry: Experimente revisar as pistas destacadas antes de tentar novamente.
+          accessibility: Ofereça tempo extra, recursos táteis e apoio auditivo individual para quem precisar.
+        assets:
+          - slug: lp-letra-a
+            type: IMAGEM
+            title: Ilustração da letra A
+        alternatives:
+          - title: TEXTO EM CAIXA ALTA
+            description: OFEREÇA CARTÕES COM MONTAGEM DE PALAVRAS COMPOSTAS DESTACADO PARA QUE TODES ACOMPANHEM.
+            steps:
+              - FORNEÇA LETRAS GRANDES E ESPAÇADAS.
+              - GRIFE RIMAS OU PALAVRAS-CHAVE EM COR VIVA.
+        audioCue:
+          title: SINAL SONORO
+          description: Utilize um chocalho ou palmas para marcar o momento de focar em montagem de palavras compostas.
+          steps:
+            - Avise que o som indica a troca de etapa ou turno de fala.
+            - Repita o som e a instrução de forma pausada.
+        motorSupport:
+          - title: APOIO MOTOR
+            description: Disponibilize apoios físicos para navegação e registro das respostas.
+            steps:
+              - Ofereça ponteiras, clipes ampliados ou teclado virtual.
+              - Permita que duplas se alternem no controle do dispositivo.
+  - partial: ../../_partials/acolhimento-base.yaml
+    slug: puzzle-campo-semantico
+    title: Campo Semântico
+    prompt: Relacione cada palavra ao campo temático correspondente.
+    type: PUZZLE
+    difficulty: PRATICAR
+    bncc:
+      code: EF01LP14
+      habilidades:
+        - EF01LP14
+        - EF01LP15
+    learningObjectives:
+      - Explorar agrupamento semântico em situações mediadas pelo educador.
+      - Compartilhar estratégias pessoais com colegas durante a atividade.
+    description: Campo Semântico incentiva a turma a explorar agrupamento semântico com apoios variados.
+    metadata:
+      categoria: Agrupamentos lexicais
+      duracaoMinutos: 10
+      habilidades:
+        - EF01LP14
+        - EF01LP15
+      assetSlug: lp-material-caderno
+      assetUsage: Utilize Caderno colorido para escrita como apoio visual para destacar agrupamento semântico ao longo da atividade.
+      familiaEngajamento: Convide as famílias a observar agrupamento semântico em histórias, cantigas ou jogos em casa.
+      habilidadesSecundarias:
+        - EF01LP15
+      interactiveSlug: puzzle-puzzle-campo-semantico
+    accessibility:
+      hints:
+        - audience: ESTUDANTE
+          text: 'Passo 1: Observe o enunciado com atenção e sublinhe mentalmente agrupamento semântico.'
+        - audience: ESTUDANTE
+          text: 'Passo 2: Compare cada opção, repetindo os sons em voz alta se ajudar.'
+        - audience: ESTUDANTE
+          text: 'Passo 3: Respire fundo e confirme a alternativa escolhida com segurança.'
+        - audience: EDUCADOR
+          text: Guie a turma passo a passo, reforçando agrupamento semântico com gestos, pictogramas e pausas.
+        - audience: FAMILIA
+          text: Envie sugestões de jogos ou músicas que reforcem agrupamento semântico em casa.
+      feedback:
+        success: Excelente! Agrupamento semântico ficou evidente nas suas escolhas.
+        encouragement: Caso erre, releia com calma e utilize marcadores sonoros ou visuais para apoiar a decisão.
+        retry: Experimente revisar as pistas destacadas antes de tentar novamente.
+        accessibility: Ofereça tempo extra, recursos táteis e apoio auditivo individual para quem precisar.
+      assets:
+        - slug: lp-material-caderno
+          type: IMAGEM
+          title: Caderno colorido para escrita
+      alternatives:
+        - title: TEXTO EM CAIXA ALTA
+          description: OFEREÇA CARTÕES COM AGRUPAMENTO SEMÂNTICO DESTACADO PARA QUE TODES ACOMPANHEM.
+          steps:
+            - FORNEÇA LETRAS GRANDES E ESPAÇADAS.
+            - GRIFE RIMAS OU PALAVRAS-CHAVE EM COR VIVA.
+      audioCue:
+        title: SINAL SONORO
+        description: Utilize um chocalho ou palmas para marcar o momento de focar em agrupamento semântico.
+        steps:
+          - Avise que o som indica a troca de etapa ou turno de fala.
+          - Repita o som e a instrução de forma pausada.
+      motorSupport:
+        - title: APOIO MOTOR
+          description: Disponibilize apoios físicos para navegação e registro das respostas.
+          steps:
+            - Ofereça ponteiras, clipes ampliados ou teclado virtual.
+            - Permita que duplas se alternem no controle do dispositivo.
+    prerequisites:
+      - type: ACTIVITY
+        reference: campos-de-palavras
+        description: Retomar exemplos de campos semânticos antes de associar.
+    interactive:
+      slug: puzzle-puzzle-campo-semantico
+      title: Campo Semântico — Quebra-cabeça
+      type: PUZZLE
+      bnccDescription: Ampliar o vocabulário relacionando palavras a campos semânticos e contextos de uso.
+      estimatedTimeMinutes: 10
+      instructions:
+        - Observe cada cartão e relacione arrastando ou usando Tab + Enter.
+        - Converse sobre o motivo da combinação antes de confirmar.
+        - Revise as duplas formadas e proponha novas associações.
+      objectives:
+        - Explorar agrupamento semântico em situações mediadas pelo educador.
+        - Compartilhar estratégias pessoais com colegas durante a atividade.
+      puzzle:
+        mode: matching
+        successFeedback: Campos organizados! O vocabulário ficou variado.
+        errorFeedback: Revise os temas e reorganize os cartões.
+        pairs:
+          - id: puzzle-campo-semantico-pair-1
+            prompt: Cozinha
+            match: panela
+            hint: Qual objeto pertence à cozinha?
+            feedback: A panela integra o campo da cozinha.
+          - id: puzzle-campo-semantico-pair-2
+            prompt: Transporte
+            match: bicicleta
+            hint: Pense em meios de deslocamento.
+            feedback: A bicicleta pertence ao campo transporte.
+          - id: puzzle-campo-semantico-pair-3
+            prompt: Comunicação
+            match: telefone
+            hint: Qual objeto serve para conversar?
+            feedback: Telefone integra o campo comunicação.
+      accessibility:
+        hints:
+          - audience: ESTUDANTE
+            text: 'Passo 1: Leia ou escute cada instrução e identifique onde agrupamento semântico aparece no interativo.'
+          - audience: ESTUDANTE
+            text: 'Passo 2: Use Tab ou toque na tela para revisar todas as opções antes de confirmar.'
+          - audience: ESTUDANTE
+            text: 'Passo 3: Compartilhe com um colega por que escolheu a resposta apresentada.'
+          - audience: EDUCADOR
+            text: Guie a turma passo a passo, reforçando agrupamento semântico com gestos, pictogramas e pausas.
+          - audience: FAMILIA
+            text: Envie sugestões de jogos ou músicas que reforcem agrupamento semântico em casa.
+        feedback:
+          success: Excelente! Agrupamento semântico ficou evidente nas suas escolhas.
+          encouragement: Caso erre, releia com calma e utilize marcadores sonoros ou visuais para apoiar a decisão.
+          retry: Experimente revisar as pistas destacadas antes de tentar novamente.
+          accessibility: Ofereça tempo extra, recursos táteis e apoio auditivo individual para quem precisar.
+        assets:
+          - slug: lp-material-caderno
+            type: IMAGEM
+            title: Caderno colorido para escrita
+        alternatives:
+          - title: TEXTO EM CAIXA ALTA
+            description: OFEREÇA CARTÕES COM AGRUPAMENTO SEMÂNTICO DESTACADO PARA QUE TODES ACOMPANHEM.
+            steps:
+              - FORNEÇA LETRAS GRANDES E ESPAÇADAS.
+              - GRIFE RIMAS OU PALAVRAS-CHAVE EM COR VIVA.
+        audioCue:
+          title: SINAL SONORO
+          description: Utilize um chocalho ou palmas para marcar o momento de focar em agrupamento semântico.
+          steps:
+            - Avise que o som indica a troca de etapa ou turno de fala.
+            - Repita o som e a instrução de forma pausada.
+        motorSupport:
+          - title: APOIO MOTOR
+            description: Disponibilize apoios físicos para navegação e registro das respostas.
+            steps:
+              - Ofereça ponteiras, clipes ampliados ou teclado virtual.
+              - Permita que duplas se alternem no controle do dispositivo.
+  - partial: ../../_partials/acolhimento-base.yaml
+    slug: puzzle-contexto-pista
+    title: Pistas do Contexto
+    prompt: Associe a frase à pista que ajuda a entender a palavra destacada.
+    type: PUZZLE
+    difficulty: PRATICAR
+    bncc:
+      code: EF01LP15
+      habilidades:
+        - EF01LP15
+    learningObjectives:
+      - Explorar pistas de significado em situações mediadas pelo educador.
+      - Compartilhar estratégias pessoais com colegas durante a atividade.
+    description: Pistas do Contexto incentiva a turma a explorar pistas de significado com apoios variados.
+    metadata:
+      categoria: Inferência contextual
+      duracaoMinutos: 10
+      habilidades:
+        - EF01LP15
+      assetSlug: lp-letra-e
+      assetUsage: Utilize Ilustração da letra E como apoio visual para destacar pistas de significado ao longo da atividade.
+      familiaEngajamento: Convide as famílias a observar pistas de significado em histórias, cantigas ou jogos em casa.
+      interactiveSlug: puzzle-puzzle-contexto-pista
+    accessibility:
+      hints:
+        - audience: ESTUDANTE
+          text: 'Passo 1: Observe o enunciado com atenção e sublinhe mentalmente pistas de significado.'
+        - audience: ESTUDANTE
+          text: 'Passo 2: Compare cada opção, repetindo os sons em voz alta se ajudar.'
+        - audience: ESTUDANTE
+          text: 'Passo 3: Respire fundo e confirme a alternativa escolhida com segurança.'
+        - audience: EDUCADOR
+          text: Guie a turma passo a passo, reforçando pistas de significado com gestos, pictogramas e pausas.
+        - audience: FAMILIA
+          text: Envie sugestões de jogos ou músicas que reforcem pistas de significado em casa.
+      feedback:
+        success: Excelente! Pistas de significado ficou evidente nas suas escolhas.
+        encouragement: Caso erre, releia com calma e utilize marcadores sonoros ou visuais para apoiar a decisão.
+        retry: Experimente revisar as pistas destacadas antes de tentar novamente.
+        accessibility: Ofereça tempo extra, recursos táteis e apoio auditivo individual para quem precisar.
+      assets:
+        - slug: lp-letra-e
+          type: IMAGEM
+          title: Ilustração da letra E
+      alternatives:
+        - title: TEXTO EM CAIXA ALTA
+          description: OFEREÇA CARTÕES COM PISTAS DE SIGNIFICADO DESTACADO PARA QUE TODES ACOMPANHEM.
+          steps:
+            - FORNEÇA LETRAS GRANDES E ESPAÇADAS.
+            - GRIFE RIMAS OU PALAVRAS-CHAVE EM COR VIVA.
+      audioCue:
+        title: SINAL SONORO
+        description: Utilize um chocalho ou palmas para marcar o momento de focar em pistas de significado.
+        steps:
+          - Avise que o som indica a troca de etapa ou turno de fala.
+          - Repita o som e a instrução de forma pausada.
+      motorSupport:
+        - title: APOIO MOTOR
+          description: Disponibilize apoios físicos para navegação e registro das respostas.
+          steps:
+            - Ofereça ponteiras, clipes ampliados ou teclado virtual.
+            - Permita que duplas se alternem no controle do dispositivo.
+    prerequisites:
+      - type: ACTIVITY
+        reference: contexto-indica
+        description: Retomar exemplos de inferência antes de associar pistas.
+    interactive:
+      slug: puzzle-puzzle-contexto-pista
+      title: Pistas do Contexto — Quebra-cabeça
+      type: PUZZLE
+      bnccDescription: Inferir o significado de palavras desconhecidas utilizando pistas do contexto e de palavras conhecidas.
+      estimatedTimeMinutes: 10
+      instructions:
+        - Observe cada cartão e relacione arrastando ou usando Tab + Enter.
+        - Converse sobre o motivo da combinação antes de confirmar.
+        - Revise as duplas formadas e proponha novas associações.
+      objectives:
+        - Explorar pistas de significado em situações mediadas pelo educador.
+        - Compartilhar estratégias pessoais com colegas durante a atividade.
+      puzzle:
+        mode: matching
+        successFeedback: Pistas identificadas! As palavras ficaram claras.
+        errorFeedback: Analise novamente as frases para identificar as pistas.
+        pairs:
+          - id: puzzle-contexto-pista-pair-1
+            prompt: 'A toalha estava encharcada depois da chuva. (palavra: encharcada)'
+            match: Indica que está muito molhada
+            hint: Observe o que aconteceu com a toalha.
+            feedback: O contexto 'chuva' indica que a toalha ficou muito molhada.
+          - id: puzzle-contexto-pista-pair-2
+            prompt: 'O menino sussurrou segredos no ouvido. (palavra: sussurrou)'
+            match: Fala em voz bem baixa
+            hint: Veja onde ele falou.
+            feedback: Falar no ouvido sugere voz baixa, ou sussurro.
+          - id: puzzle-contexto-pista-pair-3
+            prompt: 'A praça estava lotada de famílias. (palavra: lotada)'
+            match: Estava muito cheia
+            hint: Olhe o número de pessoas.
+            feedback: '''Lotada'' indica local cheio de pessoas.'
+      accessibility:
+        hints:
+          - audience: ESTUDANTE
+            text: 'Passo 1: Leia ou escute cada instrução e identifique onde pistas de significado aparece no interativo.'
+          - audience: ESTUDANTE
+            text: 'Passo 2: Use Tab ou toque na tela para revisar todas as opções antes de confirmar.'
+          - audience: ESTUDANTE
+            text: 'Passo 3: Compartilhe com um colega por que escolheu a resposta apresentada.'
+          - audience: EDUCADOR
+            text: Guie a turma passo a passo, reforçando pistas de significado com gestos, pictogramas e pausas.
+          - audience: FAMILIA
+            text: Envie sugestões de jogos ou músicas que reforcem pistas de significado em casa.
+        feedback:
+          success: Excelente! Pistas de significado ficou evidente nas suas escolhas.
+          encouragement: Caso erre, releia com calma e utilize marcadores sonoros ou visuais para apoiar a decisão.
+          retry: Experimente revisar as pistas destacadas antes de tentar novamente.
+          accessibility: Ofereça tempo extra, recursos táteis e apoio auditivo individual para quem precisar.
+        assets:
+          - slug: lp-letra-e
+            type: IMAGEM
+            title: Ilustração da letra E
+        alternatives:
+          - title: TEXTO EM CAIXA ALTA
+            description: OFEREÇA CARTÕES COM PISTAS DE SIGNIFICADO DESTACADO PARA QUE TODES ACOMPANHEM.
+            steps:
+              - FORNEÇA LETRAS GRANDES E ESPAÇADAS.
+              - GRIFE RIMAS OU PALAVRAS-CHAVE EM COR VIVA.
+        audioCue:
+          title: SINAL SONORO
+          description: Utilize um chocalho ou palmas para marcar o momento de focar em pistas de significado.
+          steps:
+            - Avise que o som indica a troca de etapa ou turno de fala.
+            - Repita o som e a instrução de forma pausada.
+        motorSupport:
+          - title: APOIO MOTOR
+            description: Disponibilize apoios físicos para navegação e registro das respostas.
+            steps:
+              - Ofereça ponteiras, clipes ampliados ou teclado virtual.
+              - Permita que duplas se alternem no controle do dispositivo.
+  - partial: ../../_partials/acolhimento-base.yaml
+    slug: puzzle-expressoes-compostas
+    title: Expressões Compostas
+    prompt: Associe a expressão composta ao significado figurado.
+    type: PUZZLE
+    difficulty: DOMINAR
+    bncc:
+      code: EF01LP14
+      habilidades:
+        - EF01LP14
+        - EF01LP15
+    learningObjectives:
+      - Explorar interpretação figurada em situações mediadas pelo educador.
+      - Compartilhar estratégias pessoais com colegas durante a atividade.
+    description: Expressões Compostas incentiva a turma a explorar interpretação figurada com apoios variados.
+    metadata:
+      categoria: Expressões idiomáticas
+      duracaoMinutos: 11
+      habilidades:
+        - EF01LP14
+        - EF01LP15
+      assetSlug: lp-silaba-la
+      assetUsage: Utilize Cartão da sílaba LA como apoio visual para destacar interpretação figurada ao longo da atividade.
+      familiaEngajamento: Convide as famílias a observar interpretação figurada em histórias, cantigas ou jogos em casa.
+      habilidadesSecundarias:
+        - EF01LP15
+      interactiveSlug: puzzle-puzzle-expressoes-compostas
+    accessibility:
+      hints:
+        - audience: ESTUDANTE
+          text: 'Passo 1: Observe o enunciado com atenção e sublinhe mentalmente interpretação figurada.'
+        - audience: ESTUDANTE
+          text: 'Passo 2: Compare cada opção, repetindo os sons em voz alta se ajudar.'
+        - audience: ESTUDANTE
+          text: 'Passo 3: Respire fundo e confirme a alternativa escolhida com segurança.'
+        - audience: EDUCADOR
+          text: Guie a turma passo a passo, reforçando interpretação figurada com gestos, pictogramas e pausas.
+        - audience: FAMILIA
+          text: Envie sugestões de jogos ou músicas que reforcem interpretação figurada em casa.
+      feedback:
+        success: Excelente! Interpretação figurada ficou evidente nas suas escolhas.
+        encouragement: Caso erre, releia com calma e utilize marcadores sonoros ou visuais para apoiar a decisão.
+        retry: Experimente revisar as pistas destacadas antes de tentar novamente.
+        accessibility: Ofereça tempo extra, recursos táteis e apoio auditivo individual para quem precisar.
+      assets:
+        - slug: lp-silaba-la
+          type: IMAGEM
+          title: Cartão da sílaba LA
+      alternatives:
+        - title: TEXTO EM CAIXA ALTA
+          description: OFEREÇA CARTÕES COM INTERPRETAÇÃO FIGURADA DESTACADO PARA QUE TODES ACOMPANHEM.
+          steps:
+            - FORNEÇA LETRAS GRANDES E ESPAÇADAS.
+            - GRIFE RIMAS OU PALAVRAS-CHAVE EM COR VIVA.
+      audioCue:
+        title: SINAL SONORO
+        description: Utilize um chocalho ou palmas para marcar o momento de focar em interpretação figurada.
+        steps:
+          - Avise que o som indica a troca de etapa ou turno de fala.
+          - Repita o som e a instrução de forma pausada.
+      motorSupport:
+        - title: APOIO MOTOR
+          description: Disponibilize apoios físicos para navegação e registro das respostas.
+          steps:
+            - Ofereça ponteiras, clipes ampliados ou teclado virtual.
+            - Permita que duplas se alternem no controle do dispositivo.
+    prerequisites:
+      - type: ACTIVITY
+        reference: palavra-surpresa
+        description: Relembrar palavras compostas antes de interpretar expressões.
+    interactive:
+      slug: puzzle-puzzle-expressoes-compostas
+      title: Expressões Compostas — Quebra-cabeça
+      type: PUZZLE
+      bnccDescription: Ampliar o vocabulário relacionando palavras a campos semânticos e contextos de uso.
+      estimatedTimeMinutes: 11
+      instructions:
+        - Observe cada cartão e relacione arrastando ou usando Tab + Enter.
+        - Converse sobre o motivo da combinação antes de confirmar.
+        - Revise as duplas formadas e proponha novas associações.
+      objectives:
+        - Explorar interpretação figurada em situações mediadas pelo educador.
+        - Compartilhar estratégias pessoais com colegas durante a atividade.
+      puzzle:
+        mode: matching
+        successFeedback: Expressões compreendidas! Vocabulário ampliado.
+        errorFeedback: Releia as expressões e verifique o sentido figurado.
+        pairs:
+          - id: puzzle-expressoes-compostas-pair-1
+            prompt: pé-de-moleque
+            match: Doce feito com amendoim e rapadura
+            hint: Pense em um alimento brasileiro.
+            feedback: A expressão nomeia um doce tradicional.
+          - id: puzzle-expressoes-compostas-pair-2
+            prompt: mão-na-roda
+            match: Ajuda importante em uma situação
+            hint: Lembre de expressões que indicam apoio.
+            feedback: '''Mão-na-roda'' significa ajuda que facilita a tarefa.'
+          - id: puzzle-expressoes-compostas-pair-3
+            prompt: boca-a-boca
+            match: Divulgação feita pelas pessoas
+            hint: Observe o contexto de conversa entre pessoas.
+            feedback: A expressão indica notícia espalhada pelas pessoas.
+      accessibility:
+        hints:
+          - audience: ESTUDANTE
+            text: 'Passo 1: Leia ou escute cada instrução e identifique onde interpretação figurada aparece no interativo.'
+          - audience: ESTUDANTE
+            text: 'Passo 2: Use Tab ou toque na tela para revisar todas as opções antes de confirmar.'
+          - audience: ESTUDANTE
+            text: 'Passo 3: Compartilhe com um colega por que escolheu a resposta apresentada.'
+          - audience: EDUCADOR
+            text: Guie a turma passo a passo, reforçando interpretação figurada com gestos, pictogramas e pausas.
+          - audience: FAMILIA
+            text: Envie sugestões de jogos ou músicas que reforcem interpretação figurada em casa.
+        feedback:
+          success: Excelente! Interpretação figurada ficou evidente nas suas escolhas.
+          encouragement: Caso erre, releia com calma e utilize marcadores sonoros ou visuais para apoiar a decisão.
+          retry: Experimente revisar as pistas destacadas antes de tentar novamente.
+          accessibility: Ofereça tempo extra, recursos táteis e apoio auditivo individual para quem precisar.
+        assets:
+          - slug: lp-silaba-la
+            type: IMAGEM
+            title: Cartão da sílaba LA
+        alternatives:
+          - title: TEXTO EM CAIXA ALTA
+            description: OFEREÇA CARTÕES COM INTERPRETAÇÃO FIGURADA DESTACADO PARA QUE TODES ACOMPANHEM.
+            steps:
+              - FORNEÇA LETRAS GRANDES E ESPAÇADAS.
+              - GRIFE RIMAS OU PALAVRAS-CHAVE EM COR VIVA.
+        audioCue:
+          title: SINAL SONORO
+          description: Utilize um chocalho ou palmas para marcar o momento de focar em interpretação figurada.
+          steps:
+            - Avise que o som indica a troca de etapa ou turno de fala.
+            - Repita o som e a instrução de forma pausada.
+        motorSupport:
+          - title: APOIO MOTOR
+            description: Disponibilize apoios físicos para navegação e registro das respostas.
+            steps:
+              - Ofereça ponteiras, clipes ampliados ou teclado virtual.
+              - Permita que duplas se alternem no controle do dispositivo.
+  - partial: ../../_partials/acolhimento-base.yaml
+    slug: jogo-forma-palavra
+    title: Forma Palavra
+    prompt: Escolha a palavra composta que corresponde às imagens.
+    type: GAME
+    difficulty: INICIAR
+    bncc:
+      code: EF01LP14
+      habilidades:
+        - EF01LP14
+    learningObjectives:
+      - Explorar identificação de palavras compostas em situações mediadas pelo educador.
+      - Compartilhar estratégias pessoais com colegas durante a atividade.
+    description: Forma Palavra incentiva a turma a explorar identificação de palavras compostas com apoios variados.
+    metadata:
+      categoria: Formação em jogo
+      duracaoMinutos: 12
+      habilidades:
+        - EF01LP14
+      assetSlug: lp-material-caderno
+      assetUsage: Utilize Caderno colorido para escrita como apoio visual para destacar identificação de palavras compostas ao longo da atividade.
+      familiaEngajamento: Convide as famílias a observar identificação de palavras compostas em histórias, cantigas ou jogos em casa.
+      interactiveSlug: game-jogo-forma-palavra
+    accessibility:
+      hints:
+        - audience: ESTUDANTE
+          text: 'Passo 1: Observe o enunciado com atenção e sublinhe mentalmente identificação de palavras compostas.'
+        - audience: ESTUDANTE
+          text: 'Passo 2: Compare cada opção, repetindo os sons em voz alta se ajudar.'
+        - audience: ESTUDANTE
+          text: 'Passo 3: Respire fundo e confirme a alternativa escolhida com segurança.'
+        - audience: EDUCADOR
+          text: Guie a turma passo a passo, reforçando identificação de palavras compostas com gestos, pictogramas e pausas.
+        - audience: FAMILIA
+          text: Envie sugestões de jogos ou músicas que reforcem identificação de palavras compostas em casa.
+      feedback:
+        success: Excelente! Identificação de palavras compostas ficou evidente nas suas escolhas.
+        encouragement: Caso erre, releia com calma e utilize marcadores sonoros ou visuais para apoiar a decisão.
+        retry: Experimente revisar as pistas destacadas antes de tentar novamente.
+        accessibility: Ofereça tempo extra, recursos táteis e apoio auditivo individual para quem precisar.
+      assets:
+        - slug: lp-material-caderno
+          type: IMAGEM
+          title: Caderno colorido para escrita
+      alternatives:
+        - title: TEXTO EM CAIXA ALTA
+          description: OFEREÇA CARTÕES COM IDENTIFICAÇÃO DE PALAVRAS COMPOSTAS DESTACADO PARA QUE TODES ACOMPANHEM.
+          steps:
+            - FORNEÇA LETRAS GRANDES E ESPAÇADAS.
+            - GRIFE RIMAS OU PALAVRAS-CHAVE EM COR VIVA.
+      audioCue:
+        title: SINAL SONORO
+        description: Utilize um chocalho ou palmas para marcar o momento de focar em identificação de palavras compostas.
+        steps:
+          - Avise que o som indica a troca de etapa ou turno de fala.
+          - Repita o som e a instrução de forma pausada.
+      motorSupport:
+        - title: APOIO MOTOR
+          description: Disponibilize apoios físicos para navegação e registro das respostas.
+          steps:
+            - Ofereça ponteiras, clipes ampliados ou teclado virtual.
+            - Permita que duplas se alternem no controle do dispositivo.
+    prerequisites:
+      - type: ACTIVITY
+        reference: puzzle-monta-composta
+        description: Montar palavras antes de identificá-las em jogo.
+    interactive:
+      slug: game-jogo-forma-palavra
+      title: Forma Palavra — Mini-jogo
+      type: GAME
+      bnccDescription: Ampliar o vocabulário relacionando palavras a campos semânticos e contextos de uso.
+      estimatedTimeMinutes: 12
+      instructions:
+        - Leia ou escute o desafio de cada fase com atenção.
+        - Digite ou selecione a resposta utilizando teclado, toque ou mouse.
+        - Ao final, compartilhe qual pista sonora ou visual ajudou a resolver a fase.
+      objectives:
+        - Explorar identificação de palavras compostas em situações mediadas pelo educador.
+        - Compartilhar estratégias pessoais com colegas durante a atividade.
+      game:
+        mode: math-challenge
+        timeLimitSeconds: 120
+        lives: 3
+        victoryMessage: Palavras montadas! Você ampliou o vocabulário.
+        gameOverMessage: Observe novamente as imagens e tente de novo com atenção.
+        levels:
+          - id: jogo-forma-palavra-level-1
+            challenge: Imagem de uma bola + imagem de algemas. Qual palavra composta? (bola-de-neve, bola-de-ferro, bola-de-futebol)
+            answer: bola-de-ferro
+            hint: Perceba como as imagens se combinam.
+            successFeedback: Ótimo! Você identificou a palavra composta correta.
+            failureFeedback: Reveja o que cada parte da palavra representa.
+          - id: jogo-forma-palavra-level-2
+            challenge: Imagem de um telefone + imagem de um livro. (telefone sem fio, livro-caixa, telefone-livro)
+            answer: telefone sem fio
+            hint: Observe qual combinação forma uma palavra conhecida.
+            successFeedback: Muito bem! A expressão 'telefone sem fio' é composta.
+            failureFeedback: Busque a palavra composta que você já ouviu em brincadeiras.
+          - id: jogo-forma-palavra-level-3
+            challenge: Imagem de sol + imagem de óculos. (óculos escuros, guarda-sol, sol-e-mar)
+            answer: óculos escuros
+            hint: Perceba qual palavra liga sol a proteção dos olhos.
+            successFeedback: Excelente! Óculos escuros relaciona-se à luz do sol.
+            failureFeedback: Veja que 'óculos escuros' é composto e protege do sol.
+      accessibility:
+        hints:
+          - audience: ESTUDANTE
+            text: 'Passo 1: Leia ou escute cada instrução e identifique onde identificação de palavras compostas aparece no interativo.'
+          - audience: ESTUDANTE
+            text: 'Passo 2: Use Tab ou toque na tela para revisar todas as opções antes de confirmar.'
+          - audience: ESTUDANTE
+            text: 'Passo 3: Compartilhe com um colega por que escolheu a resposta apresentada.'
+          - audience: EDUCADOR
+            text: Guie a turma passo a passo, reforçando identificação de palavras compostas com gestos, pictogramas e pausas.
+          - audience: FAMILIA
+            text: Envie sugestões de jogos ou músicas que reforcem identificação de palavras compostas em casa.
+        feedback:
+          success: Excelente! Identificação de palavras compostas ficou evidente nas suas escolhas.
+          encouragement: Caso erre, releia com calma e utilize marcadores sonoros ou visuais para apoiar a decisão.
+          retry: Experimente revisar as pistas destacadas antes de tentar novamente.
+          accessibility: Ofereça tempo extra, recursos táteis e apoio auditivo individual para quem precisar.
+        assets:
+          - slug: lp-material-caderno
+            type: IMAGEM
+            title: Caderno colorido para escrita
+        alternatives:
+          - title: TEXTO EM CAIXA ALTA
+            description: OFEREÇA CARTÕES COM IDENTIFICAÇÃO DE PALAVRAS COMPOSTAS DESTACADO PARA QUE TODES ACOMPANHEM.
+            steps:
+              - FORNEÇA LETRAS GRANDES E ESPAÇADAS.
+              - GRIFE RIMAS OU PALAVRAS-CHAVE EM COR VIVA.
+        audioCue:
+          title: SINAL SONORO
+          description: Utilize um chocalho ou palmas para marcar o momento de focar em identificação de palavras compostas.
+          steps:
+            - Avise que o som indica a troca de etapa ou turno de fala.
+            - Repita o som e a instrução de forma pausada.
+        motorSupport:
+          - title: APOIO MOTOR
+            description: Disponibilize apoios físicos para navegação e registro das respostas.
+            steps:
+              - Ofereça ponteiras, clipes ampliados ou teclado virtual.
+              - Permita que duplas se alternem no controle do dispositivo.
+  - partial: ../../_partials/acolhimento-base.yaml
+    slug: jogo-encaixa-sentido
+    title: Encaixa Sentido
+    prompt: Selecione o significado que melhor se encaixa na palavra destacada.
+    type: GAME
+    difficulty: PRATICAR
+    bncc:
+      code: EF01LP15
+      habilidades:
+        - EF01LP15
+        - EF01LP14
+    learningObjectives:
+      - Explorar inferência contextual em situações mediadas pelo educador.
+      - Compartilhar estratégias pessoais com colegas durante a atividade.
+    description: Encaixa Sentido incentiva a turma a explorar inferência contextual com apoios variados.
+    metadata:
+      categoria: Significados em jogo
+      duracaoMinutos: 12
+      habilidades:
+        - EF01LP15
+        - EF01LP14
+      assetSlug: lp-letra-a
+      assetUsage: Utilize Ilustração da letra A como apoio visual para destacar inferência contextual ao longo da atividade.
+      familiaEngajamento: Convide as famílias a observar inferência contextual em histórias, cantigas ou jogos em casa.
+      habilidadesSecundarias:
+        - EF01LP14
+      interactiveSlug: game-jogo-encaixa-sentido
+    accessibility:
+      hints:
+        - audience: ESTUDANTE
+          text: 'Passo 1: Observe o enunciado com atenção e sublinhe mentalmente inferência contextual.'
+        - audience: ESTUDANTE
+          text: 'Passo 2: Compare cada opção, repetindo os sons em voz alta se ajudar.'
+        - audience: ESTUDANTE
+          text: 'Passo 3: Respire fundo e confirme a alternativa escolhida com segurança.'
+        - audience: EDUCADOR
+          text: Guie a turma passo a passo, reforçando inferência contextual com gestos, pictogramas e pausas.
+        - audience: FAMILIA
+          text: Envie sugestões de jogos ou músicas que reforcem inferência contextual em casa.
+      feedback:
+        success: Excelente! Inferência contextual ficou evidente nas suas escolhas.
+        encouragement: Caso erre, releia com calma e utilize marcadores sonoros ou visuais para apoiar a decisão.
+        retry: Experimente revisar as pistas destacadas antes de tentar novamente.
+        accessibility: Ofereça tempo extra, recursos táteis e apoio auditivo individual para quem precisar.
+      assets:
+        - slug: lp-letra-a
+          type: IMAGEM
+          title: Ilustração da letra A
+      alternatives:
+        - title: TEXTO EM CAIXA ALTA
+          description: OFEREÇA CARTÕES COM INFERÊNCIA CONTEXTUAL DESTACADO PARA QUE TODES ACOMPANHEM.
+          steps:
+            - FORNEÇA LETRAS GRANDES E ESPAÇADAS.
+            - GRIFE RIMAS OU PALAVRAS-CHAVE EM COR VIVA.
+      audioCue:
+        title: SINAL SONORO
+        description: Utilize um chocalho ou palmas para marcar o momento de focar em inferência contextual.
+        steps:
+          - Avise que o som indica a troca de etapa ou turno de fala.
+          - Repita o som e a instrução de forma pausada.
+      motorSupport:
+        - title: APOIO MOTOR
+          description: Disponibilize apoios físicos para navegação e registro das respostas.
+          steps:
+            - Ofereça ponteiras, clipes ampliados ou teclado virtual.
+            - Permita que duplas se alternem no controle do dispositivo.
+    prerequisites:
+      - type: ACTIVITY
+        reference: puzzle-contexto-pista
+        description: Relembrar pistas contextuais antes do jogo.
+    interactive:
+      slug: game-jogo-encaixa-sentido
+      title: Encaixa Sentido — Mini-jogo
+      type: GAME
+      bnccDescription: Inferir o significado de palavras desconhecidas utilizando pistas do contexto e de palavras conhecidas.
+      estimatedTimeMinutes: 12
+      instructions:
+        - Leia ou escute o desafio de cada fase com atenção.
+        - Digite ou selecione a resposta utilizando teclado, toque ou mouse.
+        - Ao final, compartilhe qual pista sonora ou visual ajudou a resolver a fase.
+      objectives:
+        - Explorar inferência contextual em situações mediadas pelo educador.
+        - Compartilhar estratégias pessoais com colegas durante a atividade.
+      game:
+        mode: math-challenge
+        timeLimitSeconds: 120
+        lives: 3
+        victoryMessage: Significados encaixados! Você entendeu o contexto.
+        gameOverMessage: Releia as frases com calma e tente novamente identificando as pistas.
+        levels:
+          - id: jogo-encaixa-sentido-level-1
+            challenge: '''O trem-bala passou rápido pelos trilhos''. Aqui ''trem-bala'' significa... (trem muito veloz, trem cheio de balas, brinquedo de parque)'
+            answer: trem muito veloz
+            hint: Observe o adjetivo 'rápido'.
+            successFeedback: Isso! A palavra composta indica velocidade.
+            failureFeedback: Repare em pistas contextuais que indicam velocidade.
+          - id: jogo-encaixa-sentido-level-2
+            challenge: '''Marina usou um guarda-sol na praia''. O guarda-sol serve para... (guardar objetos, proteger do sol, carregar água)'
+            answer: proteger do sol
+            hint: Considere onde Marina está.
+            successFeedback: Perfeito! O objeto protege do sol na praia.
+            failureFeedback: Veja como o contexto da praia aponta o significado.
+          - id: jogo-encaixa-sentido-level-3
+            challenge: '''Pedro escreveu um bilhete usando papel-carbono''. O papel-carbono ajuda a... (fazer cópia, pintar, dobrar)'
+            answer: fazer cópia
+            hint: Pense na função do papel-carbono.
+            successFeedback: Muito bem! A palavra composta revela a função.
+            failureFeedback: Relembre o que acontece quando usamos papel-carbono.
+      accessibility:
+        hints:
+          - audience: ESTUDANTE
+            text: 'Passo 1: Leia ou escute cada instrução e identifique onde inferência contextual aparece no interativo.'
+          - audience: ESTUDANTE
+            text: 'Passo 2: Use Tab ou toque na tela para revisar todas as opções antes de confirmar.'
+          - audience: ESTUDANTE
+            text: 'Passo 3: Compartilhe com um colega por que escolheu a resposta apresentada.'
+          - audience: EDUCADOR
+            text: Guie a turma passo a passo, reforçando inferência contextual com gestos, pictogramas e pausas.
+          - audience: FAMILIA
+            text: Envie sugestões de jogos ou músicas que reforcem inferência contextual em casa.
+        feedback:
+          success: Excelente! Inferência contextual ficou evidente nas suas escolhas.
+          encouragement: Caso erre, releia com calma e utilize marcadores sonoros ou visuais para apoiar a decisão.
+          retry: Experimente revisar as pistas destacadas antes de tentar novamente.
+          accessibility: Ofereça tempo extra, recursos táteis e apoio auditivo individual para quem precisar.
+        assets:
+          - slug: lp-letra-a
+            type: IMAGEM
+            title: Ilustração da letra A
+        alternatives:
+          - title: TEXTO EM CAIXA ALTA
+            description: OFEREÇA CARTÕES COM INFERÊNCIA CONTEXTUAL DESTACADO PARA QUE TODES ACOMPANHEM.
+            steps:
+              - FORNEÇA LETRAS GRANDES E ESPAÇADAS.
+              - GRIFE RIMAS OU PALAVRAS-CHAVE EM COR VIVA.
+        audioCue:
+          title: SINAL SONORO
+          description: Utilize um chocalho ou palmas para marcar o momento de focar em inferência contextual.
+          steps:
+            - Avise que o som indica a troca de etapa ou turno de fala.
+            - Repita o som e a instrução de forma pausada.
+        motorSupport:
+          - title: APOIO MOTOR
+            description: Disponibilize apoios físicos para navegação e registro das respostas.
+            steps:
+              - Ofereça ponteiras, clipes ampliados ou teclado virtual.
+              - Permita que duplas se alternem no controle do dispositivo.
+  - partial: ../../_partials/acolhimento-base.yaml
+    slug: jogo-explora-hibridos
+    title: Explora Híbridos
+    prompt: Digite a parte que falta para formar a palavra composta indicada pelo contexto.
+    type: GAME
+    difficulty: DOMINAR
+    bncc:
+      code: EF01LP14
+      habilidades:
+        - EF01LP14
+        - EF01LP15
+    learningObjectives:
+      - Explorar completar palavras compostas em situações mediadas pelo educador.
+      - Compartilhar estratégias pessoais com colegas durante a atividade.
+    description: Explora Híbridos incentiva a turma a explorar completar palavras compostas com apoios variados.
+    metadata:
+      categoria: Completar compostas
+      duracaoMinutos: 13
+      habilidades:
+        - EF01LP14
+        - EF01LP15
+      assetSlug: lp-silaba-ba
+      assetUsage: Utilize Cartão da sílaba BA como apoio visual para destacar completar palavras compostas ao longo da atividade.
+      familiaEngajamento: Convide as famílias a observar completar palavras compostas em histórias, cantigas ou jogos em casa.
+      habilidadesSecundarias:
+        - EF01LP15
+      interactiveSlug: game-jogo-explora-hibridos
+      audioPrompt: Convide a turma a repetir a palavra em voz alta após completar, simulando gravação coletiva do vocabulário.
+    accessibility:
+      hints:
+        - audience: ESTUDANTE
+          text: 'Passo 1: Observe o enunciado com atenção e sublinhe mentalmente completar palavras compostas.'
+        - audience: ESTUDANTE
+          text: 'Passo 2: Compare cada opção, repetindo os sons em voz alta se ajudar.'
+        - audience: ESTUDANTE
+          text: 'Passo 3: Respire fundo e confirme a alternativa escolhida com segurança.'
+        - audience: EDUCADOR
+          text: Guie a turma passo a passo, reforçando completar palavras compostas com gestos, pictogramas e pausas.
+        - audience: FAMILIA
+          text: Envie sugestões de jogos ou músicas que reforcem completar palavras compostas em casa.
+      feedback:
+        success: Excelente! Completar palavras compostas ficou evidente nas suas escolhas.
+        encouragement: Caso erre, releia com calma e utilize marcadores sonoros ou visuais para apoiar a decisão.
+        retry: Experimente revisar as pistas destacadas antes de tentar novamente.
+        accessibility: Ofereça tempo extra, recursos táteis e apoio auditivo individual para quem precisar.
+      assets:
+        - slug: lp-silaba-ba
+          type: IMAGEM
+          title: Cartão da sílaba BA
+      alternatives:
+        - title: TEXTO EM CAIXA ALTA
+          description: OFEREÇA CARTÕES COM COMPLETAR PALAVRAS COMPOSTAS DESTACADO PARA QUE TODES ACOMPANHEM.
+          steps:
+            - FORNEÇA LETRAS GRANDES E ESPAÇADAS.
+            - GRIFE RIMAS OU PALAVRAS-CHAVE EM COR VIVA.
+      audioCue:
+        title: SINAL SONORO
+        description: Utilize um chocalho ou palmas para marcar o momento de focar em completar palavras compostas.
+        steps:
+          - Avise que o som indica a troca de etapa ou turno de fala.
+          - Repita o som e a instrução de forma pausada.
+      motorSupport:
+        - title: APOIO MOTOR
+          description: Disponibilize apoios físicos para navegação e registro das respostas.
+          steps:
+            - Ofereça ponteiras, clipes ampliados ou teclado virtual.
+            - Permita que duplas se alternem no controle do dispositivo.
+    prerequisites:
+      - type: ACTIVITY
+        reference: puzzle-monta-composta
+        description: Retomar combinações antes de completar palavras digitando.
+    interactive:
+      slug: game-jogo-explora-hibridos
+      title: Explora Híbridos — Mini-jogo
+      type: GAME
+      bnccDescription: Ampliar o vocabulário relacionando palavras a campos semânticos e contextos de uso.
+      estimatedTimeMinutes: 13
+      instructions:
+        - Leia ou escute o desafio de cada fase com atenção.
+        - Digite ou selecione a resposta utilizando teclado, toque ou mouse.
+        - Ao final, compartilhe qual pista sonora ou visual ajudou a resolver a fase.
+      objectives:
+        - Explorar completar palavras compostas em situações mediadas pelo educador.
+        - Compartilhar estratégias pessoais com colegas durante a atividade.
+      game:
+        mode: math-challenge
+        timeLimitSeconds: 120
+        lives: 3
+        victoryMessage: Palavra completa! Você explorou o significado oculto.
+        gameOverMessage: Relembre as partes da palavra e tente novamente digitando com calma.
+        levels:
+          - id: jogo-explora-hibridos-level-1
+            challenge: 'Complete: ''passa-____'' (dica: usado para consertar roupa)'
+            answer: fio
+            hint: Pense no objeto utilizado para costurar.
+            successFeedback: Muito bem! 'Passa-fio' indica o instrumento de costura.
+            failureFeedback: Relembre o objeto usado para passar linha na agulha.
+          - id: jogo-explora-hibridos-level-2
+            challenge: 'Complete: ''beija-____'' (dica: ave que se alimenta de néctar)'
+            answer: flor
+            hint: Lembre do pássaro pequeno colorido.
+            successFeedback: Perfeito! 'Beija-flor' forma a palavra composta.
+            failureFeedback: Pense no movimento da ave ao se alimentar.
+          - id: jogo-explora-hibridos-level-3
+            challenge: 'Complete: ''pára-____'' (dica: usado em dias de chuva)'
+            answer: raios
+            hint: Recorde o objeto que protege prédios.
+            successFeedback: Excelente! 'Pára-raios' protege em dias de tempestade.
+            failureFeedback: Relembre a palavra composta estudada nas atividades.
+      accessibility:
+        hints:
+          - audience: ESTUDANTE
+            text: 'Passo 1: Leia ou escute cada instrução e identifique onde completar palavras compostas aparece no interativo.'
+          - audience: ESTUDANTE
+            text: 'Passo 2: Use Tab ou toque na tela para revisar todas as opções antes de confirmar.'
+          - audience: ESTUDANTE
+            text: 'Passo 3: Compartilhe com um colega por que escolheu a resposta apresentada.'
+          - audience: EDUCADOR
+            text: Guie a turma passo a passo, reforçando completar palavras compostas com gestos, pictogramas e pausas.
+          - audience: FAMILIA
+            text: Envie sugestões de jogos ou músicas que reforcem completar palavras compostas em casa.
+        feedback:
+          success: Excelente! Completar palavras compostas ficou evidente nas suas escolhas.
+          encouragement: Caso erre, releia com calma e utilize marcadores sonoros ou visuais para apoiar a decisão.
+          retry: Experimente revisar as pistas destacadas antes de tentar novamente.
+          accessibility: Ofereça tempo extra, recursos táteis e apoio auditivo individual para quem precisar.
+        assets:
+          - slug: lp-silaba-ba
+            type: IMAGEM
+            title: Cartão da sílaba BA
+        alternatives:
+          - title: TEXTO EM CAIXA ALTA
+            description: OFEREÇA CARTÕES COM COMPLETAR PALAVRAS COMPOSTAS DESTACADO PARA QUE TODES ACOMPANHEM.
+            steps:
+              - FORNEÇA LETRAS GRANDES E ESPAÇADAS.
+              - GRIFE RIMAS OU PALAVRAS-CHAVE EM COR VIVA.
+        audioCue:
+          title: SINAL SONORO
+          description: Utilize um chocalho ou palmas para marcar o momento de focar em completar palavras compostas.
+          steps:
+            - Avise que o som indica a troca de etapa ou turno de fala.
+            - Repita o som e a instrução de forma pausada.
+        motorSupport:
+          - title: APOIO MOTOR
+            description: Disponibilize apoios físicos para navegação e registro das respostas.
+            steps:
+              - Ofereça ponteiras, clipes ampliados ou teclado virtual.
+              - Permita que duplas se alternem no controle do dispositivo.
+  - partial: ../../_partials/acolhimento-base.yaml
+    slug: jogo-detective-palavras
+    title: Detetive de Palavras
+    prompt: Analise as pistas e escolha a definição correta da palavra composta.
+    type: GAME
+    difficulty: DOMINAR
+    bncc:
+      code: EF01LP15
+      habilidades:
+        - EF01LP15
+        - EF01LP14
+    learningObjectives:
+      - Explorar dedução lexical em situações mediadas pelo educador.
+      - Compartilhar estratégias pessoais com colegas durante a atividade.
+    description: Detetive de Palavras incentiva a turma a explorar dedução lexical com apoios variados.
+    metadata:
+      categoria: Detetive lexical
+      duracaoMinutos: 13
+      habilidades:
+        - EF01LP15
+        - EF01LP14
+      assetSlug: lp-letra-e
+      assetUsage: Utilize Ilustração da letra E como apoio visual para destacar dedução lexical ao longo da atividade.
+      familiaEngajamento: Convide as famílias a observar dedução lexical em histórias, cantigas ou jogos em casa.
+      habilidadesSecundarias:
+        - EF01LP14
+      interactiveSlug: game-jogo-detective-palavras
+    accessibility:
+      hints:
+        - audience: ESTUDANTE
+          text: 'Passo 1: Observe o enunciado com atenção e sublinhe mentalmente dedução lexical.'
+        - audience: ESTUDANTE
+          text: 'Passo 2: Compare cada opção, repetindo os sons em voz alta se ajudar.'
+        - audience: ESTUDANTE
+          text: 'Passo 3: Respire fundo e confirme a alternativa escolhida com segurança.'
+        - audience: EDUCADOR
+          text: Guie a turma passo a passo, reforçando dedução lexical com gestos, pictogramas e pausas.
+        - audience: FAMILIA
+          text: Envie sugestões de jogos ou músicas que reforcem dedução lexical em casa.
+      feedback:
+        success: Excelente! Dedução lexical ficou evidente nas suas escolhas.
+        encouragement: Caso erre, releia com calma e utilize marcadores sonoros ou visuais para apoiar a decisão.
+        retry: Experimente revisar as pistas destacadas antes de tentar novamente.
+        accessibility: Ofereça tempo extra, recursos táteis e apoio auditivo individual para quem precisar.
+      assets:
+        - slug: lp-letra-e
+          type: IMAGEM
+          title: Ilustração da letra E
+      alternatives:
+        - title: TEXTO EM CAIXA ALTA
+          description: OFEREÇA CARTÕES COM DEDUÇÃO LEXICAL DESTACADO PARA QUE TODES ACOMPANHEM.
+          steps:
+            - FORNEÇA LETRAS GRANDES E ESPAÇADAS.
+            - GRIFE RIMAS OU PALAVRAS-CHAVE EM COR VIVA.
+      audioCue:
+        title: SINAL SONORO
+        description: Utilize um chocalho ou palmas para marcar o momento de focar em dedução lexical.
+        steps:
+          - Avise que o som indica a troca de etapa ou turno de fala.
+          - Repita o som e a instrução de forma pausada.
+      motorSupport:
+        - title: APOIO MOTOR
+          description: Disponibilize apoios físicos para navegação e registro das respostas.
+          steps:
+            - Ofereça ponteiras, clipes ampliados ou teclado virtual.
+            - Permita que duplas se alternem no controle do dispositivo.
+    prerequisites:
+      - type: ACTIVITY
+        reference: puzzle-expressoes-compostas
+        description: Relembrar expressões compostas antes de atuar como detetive.
+    interactive:
+      slug: game-jogo-detective-palavras
+      title: Detetive de Palavras — Mini-jogo
+      type: GAME
+      bnccDescription: Inferir o significado de palavras desconhecidas utilizando pistas do contexto e de palavras conhecidas.
+      estimatedTimeMinutes: 13
+      instructions:
+        - Leia ou escute o desafio de cada fase com atenção.
+        - Digite ou selecione a resposta utilizando teclado, toque ou mouse.
+        - Ao final, compartilhe qual pista sonora ou visual ajudou a resolver a fase.
+      objectives:
+        - Explorar dedução lexical em situações mediadas pelo educador.
+        - Compartilhar estratégias pessoais com colegas durante a atividade.
+      game:
+        mode: math-challenge
+        timeLimitSeconds: 120
+        lives: 3
+        victoryMessage: Caso resolvido! Você interpretou todas as pistas.
+        gameOverMessage: Releia as pistas calmamente e tente novamente deduzindo o sentido.
+        levels:
+          - id: jogo-detective-palavras-level-1
+            challenge: 'Pistas: usado em emergências, faz muito barulho, chama a atenção na rua. Qual palavra composta? (gira-sol, carro-bomba, carro de som)'
+            answer: carro de som
+            hint: Pense no veículo que anuncia mensagens.
+            successFeedback: Muito bem! Você associou as pistas corretamente.
+            failureFeedback: Observe quais pistas falam sobre som alto e rua.
+          - id: jogo-detective-palavras-level-2
+            challenge: 'Pistas: fica na cabeça, protege do sol forte, usado na praia. (chapéu de chuva, guarda-sol, chapéu-de-sol)'
+            answer: chapéu-de-sol
+            hint: Lembre da palavra que indica proteção na cabeça.
+            successFeedback: Excelente! O 'chapéu-de-sol' protege na praia.
+            failureFeedback: Veja qual palavra realmente fica na cabeça.
+          - id: jogo-detective-palavras-level-3
+            challenge: 'Pistas: ajuda a guardar memória, registra fotos e palavras, usado pelos estudantes. (caderno inteligente, livro-caixa, diário de bordo)'
+            answer: diário de bordo
+            hint: Pense em um caderno que registra acontecimentos.
+            successFeedback: Caso resolvido! Você relacionou todas as pistas.
+            failureFeedback: Procure a palavra composta que indica registro diário.
+      accessibility:
+        hints:
+          - audience: ESTUDANTE
+            text: 'Passo 1: Leia ou escute cada instrução e identifique onde dedução lexical aparece no interativo.'
+          - audience: ESTUDANTE
+            text: 'Passo 2: Use Tab ou toque na tela para revisar todas as opções antes de confirmar.'
+          - audience: ESTUDANTE
+            text: 'Passo 3: Compartilhe com um colega por que escolheu a resposta apresentada.'
+          - audience: EDUCADOR
+            text: Guie a turma passo a passo, reforçando dedução lexical com gestos, pictogramas e pausas.
+          - audience: FAMILIA
+            text: Envie sugestões de jogos ou músicas que reforcem dedução lexical em casa.
+        feedback:
+          success: Excelente! Dedução lexical ficou evidente nas suas escolhas.
+          encouragement: Caso erre, releia com calma e utilize marcadores sonoros ou visuais para apoiar a decisão.
+          retry: Experimente revisar as pistas destacadas antes de tentar novamente.
+          accessibility: Ofereça tempo extra, recursos táteis e apoio auditivo individual para quem precisar.
+        assets:
+          - slug: lp-letra-e
+            type: IMAGEM
+            title: Ilustração da letra E
+        alternatives:
+          - title: TEXTO EM CAIXA ALTA
+            description: OFEREÇA CARTÕES COM DEDUÇÃO LEXICAL DESTACADO PARA QUE TODES ACOMPANHEM.
+            steps:
+              - FORNEÇA LETRAS GRANDES E ESPAÇADAS.
+              - GRIFE RIMAS OU PALAVRAS-CHAVE EM COR VIVA.
+        audioCue:
+          title: SINAL SONORO
+          description: Utilize um chocalho ou palmas para marcar o momento de focar em dedução lexical.
+          steps:
+            - Avise que o som indica a troca de etapa ou turno de fala.
+            - Repita o som e a instrução de forma pausada.
+        motorSupport:
+          - title: APOIO MOTOR
+            description: Disponibilize apoios físicos para navegação e registro das respostas.
+            steps:
+              - Ofereça ponteiras, clipes ampliados ou teclado virtual.
+              - Permita que duplas se alternem no controle do dispositivo.

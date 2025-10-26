@@ -1,0 +1,2084 @@
+module:
+  slug: hora-do-dialogo
+  title: Hora do Diálogo
+  subtitle: Oralidade e escuta em foco
+  description: Sequência que fortalece a escuta atenta, os turnos de fala e a organização de relatos orais em rodas, entrevistas e dramatizações curtas.
+  theme: Língua Portuguesa
+  discipline: Língua Portuguesa
+  ageGroupSlug: fundamental-anos-iniciais
+  learningPathSlug: descobertas-palavras
+  primaryBnccCode: EF01LP12
+  secondaryBnccCodes:
+    - EF01LP13
+  learningOutcomes:
+    - Respeitar turnos de fala, utilizando sinais corporais e verbais para entrar e sair do diálogo.
+    - Planejar relatos orais com início, meio e fim, apoiando-se em memórias recentes.
+    - Empregar estratégias de escuta ativa, como paráfrases, perguntas e feedback gestual.
+  tags:
+    - oralidade
+    - escuta
+    - dialogo
+activities:
+  - partial: ../../_partials/acolhimento-base.yaml
+    slug: turno-de-fala
+    title: Turno de Fala
+    prompt: Identifique a melhor atitude para entrar no diálogo sem interromper colegas.
+    type: QUIZ
+    difficulty: INICIAR
+    bncc:
+      code: EF01LP12
+      habilidades:
+        - EF01LP12
+        - EF01LP13
+    learningObjectives:
+      - Reconhecer sinais corporais e verbais que indicam a vez de falar.
+      - Praticar a espera ativa antes de responder a colegas.
+    description: Turno de Fala apresenta situações simples para que a turma escolha o momento adequado de participar do diálogo.
+    metadata:
+      categoria: Turnos e respeito
+      duracaoMinutos: 8
+      habilidades:
+        - EF01LP12
+        - EF01LP13
+      assetSlug: lp-material-caderno
+      assetUsage: Utilize Caderno colorido para escrita como apoio visual para destacar organização de turnos de fala ao longo da atividade.
+      familiaEngajamento: Convide as famílias a observar organização de turnos de fala em histórias, cantigas ou jogos em casa.
+      habilidadesSecundarias:
+        - EF01LP13
+      interactiveSlug: quiz-turno-de-fala
+    accessibility:
+      hints:
+        - audience: ESTUDANTE
+          text: 'Passo 1: Observe o enunciado com atenção e sublinhe mentalmente organização de turnos de fala.'
+        - audience: ESTUDANTE
+          text: 'Passo 2: Compare cada opção, repetindo os sons em voz alta se ajudar.'
+        - audience: ESTUDANTE
+          text: 'Passo 3: Respire fundo e confirme a alternativa escolhida com segurança.'
+        - audience: EDUCADOR
+          text: Guie a turma passo a passo, reforçando organização de turnos de fala com gestos, pictogramas e pausas.
+        - audience: FAMILIA
+          text: Envie sugestões de jogos ou músicas que reforcem organização de turnos de fala em casa.
+      feedback:
+        success: Excelente! Organização de turnos de fala ficou evidente nas suas escolhas.
+        encouragement: Caso erre, releia com calma e utilize marcadores sonoros ou visuais para apoiar a decisão.
+        retry: Experimente revisar as pistas destacadas antes de tentar novamente.
+        accessibility: Ofereça tempo extra, recursos táteis e apoio auditivo individual para quem precisar.
+      assets:
+        - slug: lp-material-caderno
+          type: IMAGEM
+          title: Caderno colorido para escrita
+      alternatives:
+        - title: TEXTO EM CAIXA ALTA
+          description: OFEREÇA CARTÕES COM ORGANIZAÇÃO DE TURNOS DE FALA DESTACADO PARA QUE TODES ACOMPANHEM.
+          steps:
+            - FORNEÇA LETRAS GRANDES E ESPAÇADAS.
+            - GRIFE RIMAS OU PALAVRAS-CHAVE EM COR VIVA.
+      audioCue:
+        title: SINAL SONORO
+        description: Utilize um chocalho ou palmas para marcar o momento de focar em organização de turnos de fala.
+        steps:
+          - Avise que o som indica a troca de etapa ou turno de fala.
+          - Repita o som e a instrução de forma pausada.
+      motorSupport:
+        - title: APOIO MOTOR
+          description: Disponibilize apoios físicos para navegação e registro das respostas.
+          steps:
+            - Ofereça ponteiras, clipes ampliados ou teclado virtual.
+            - Permita que duplas se alternem no controle do dispositivo.
+    prerequisites:
+      - type: SKILL
+        reference: EF01LP12
+        description: Participar de rodas de conversa mediadas pelo educador.
+    interactive:
+      slug: quiz-turno-de-fala
+      title: Turno de Fala — Quiz
+      type: QUIZ
+      bnccDescription: Participar de conversas, respeitando turnos de fala, escutando com atenção e respondendo com pertinência.
+      estimatedTimeMinutes: 8
+      instructions:
+        - Leia ou escute cada questão antes de responder.
+        - Use as teclas numéricas ou toque nas alternativas para marcar sua escolha.
+        - Explique para a turma como identificou a resposta correta.
+      objectives:
+        - Reconhecer sinais corporais e verbais que indicam a vez de falar.
+        - Praticar a espera ativa antes de responder a colegas.
+      scoring:
+        correct: 10
+        incorrect: 0
+      adaptive:
+        increaseAfter: 2
+        decreaseAfter: 1
+      questions:
+        - id: turno-de-fala-q1
+          type: multiple-choice
+          prompt: Durante a roda, Ana terminou de falar. Qual atitude mostra que você quer falar sem interromper?
+          hint: Lembre como sinalizar a vez com respeito.
+          options:
+            - id: turno-de-fala-q1-1
+              text: Levantar a mão e esperar o olhar do grupo.
+              isCorrect: true
+              feedback: Perfeito! O gesto mostra que você espera sua vez de falar.
+            - id: turno-de-fala-q1-2
+              text: Começar a falar mais alto.
+              isCorrect: false
+              feedback: Experimente usar um sinal combinado antes de falar.
+            - id: turno-de-fala-q1-3
+              text: Cutucar o colega ao lado.
+              isCorrect: false
+              feedback: 'Evite interromper: sinalize com a mão e aguarde.'
+        - id: turno-de-fala-q2
+          type: true-false
+          prompt: Levantar a mão ajuda a organizar o diálogo?
+          hint: Pense em como a turma combina quem fala depois.
+          statement: Levantar a mão antes de falar ajuda a organizar os turnos de fala.
+          answer: true
+          feedback:
+            'true': Isso mesmo! O sinal mostra que você está pronto para falar.
+            'false': Repare como levantar a mão evita interrupções.
+      accessibility:
+        hints:
+          - audience: ESTUDANTE
+            text: 'Passo 1: Leia ou escute cada instrução e identifique onde organização de turnos de fala aparece no interativo.'
+          - audience: ESTUDANTE
+            text: 'Passo 2: Use Tab ou toque na tela para revisar todas as opções antes de confirmar.'
+          - audience: ESTUDANTE
+            text: 'Passo 3: Compartilhe com um colega por que escolheu a resposta apresentada.'
+          - audience: EDUCADOR
+            text: Guie a turma passo a passo, reforçando organização de turnos de fala com gestos, pictogramas e pausas.
+          - audience: FAMILIA
+            text: Envie sugestões de jogos ou músicas que reforcem organização de turnos de fala em casa.
+        feedback:
+          success: Excelente! Organização de turnos de fala ficou evidente nas suas escolhas.
+          encouragement: Caso erre, releia com calma e utilize marcadores sonoros ou visuais para apoiar a decisão.
+          retry: Experimente revisar as pistas destacadas antes de tentar novamente.
+          accessibility: Ofereça tempo extra, recursos táteis e apoio auditivo individual para quem precisar.
+        assets:
+          - slug: lp-material-caderno
+            type: IMAGEM
+            title: Caderno colorido para escrita
+        alternatives:
+          - title: TEXTO EM CAIXA ALTA
+            description: OFEREÇA CARTÕES COM ORGANIZAÇÃO DE TURNOS DE FALA DESTACADO PARA QUE TODES ACOMPANHEM.
+            steps:
+              - FORNEÇA LETRAS GRANDES E ESPAÇADAS.
+              - GRIFE RIMAS OU PALAVRAS-CHAVE EM COR VIVA.
+        audioCue:
+          title: SINAL SONORO
+          description: Utilize um chocalho ou palmas para marcar o momento de focar em organização de turnos de fala.
+          steps:
+            - Avise que o som indica a troca de etapa ou turno de fala.
+            - Repita o som e a instrução de forma pausada.
+        motorSupport:
+          - title: APOIO MOTOR
+            description: Disponibilize apoios físicos para navegação e registro das respostas.
+            steps:
+              - Ofereça ponteiras, clipes ampliados ou teclado virtual.
+              - Permita que duplas se alternem no controle do dispositivo.
+  - partial: ../../_partials/acolhimento-base.yaml
+    slug: escuta-atenta
+    title: Escuta Atenta
+    prompt: Escolha a atitude que demonstra escuta ativa durante a conversa.
+    type: QUIZ
+    difficulty: INICIAR
+    bncc:
+      code: EF01LP12
+      habilidades:
+        - EF01LP12
+    learningObjectives:
+      - Identificar atitudes que demonstram atenção à fala do colega.
+      - Responder com gentileza após ouvir o interlocutor.
+    description: Escuta Atenta reforça gestos e expressões que indicam curiosidade, respeito e compreensão durante o diálogo.
+    metadata:
+      categoria: Escuta ativa
+      duracaoMinutos: 9
+      habilidades:
+        - EF01LP12
+      assetSlug: lp-letra-a
+      assetUsage: Utilize Ilustração da letra A como apoio visual para destacar escuta ativa ao longo da atividade.
+      familiaEngajamento: Convide as famílias a observar escuta ativa em histórias, cantigas ou jogos em casa.
+      interactiveSlug: quiz-escuta-atenta
+    accessibility:
+      hints:
+        - audience: ESTUDANTE
+          text: 'Passo 1: Observe o enunciado com atenção e sublinhe mentalmente escuta ativa.'
+        - audience: ESTUDANTE
+          text: 'Passo 2: Compare cada opção, repetindo os sons em voz alta se ajudar.'
+        - audience: ESTUDANTE
+          text: 'Passo 3: Respire fundo e confirme a alternativa escolhida com segurança.'
+        - audience: EDUCADOR
+          text: Guie a turma passo a passo, reforçando escuta ativa com gestos, pictogramas e pausas.
+        - audience: FAMILIA
+          text: Envie sugestões de jogos ou músicas que reforcem escuta ativa em casa.
+      feedback:
+        success: Excelente! Escuta ativa ficou evidente nas suas escolhas.
+        encouragement: Caso erre, releia com calma e utilize marcadores sonoros ou visuais para apoiar a decisão.
+        retry: Experimente revisar as pistas destacadas antes de tentar novamente.
+        accessibility: Ofereça tempo extra, recursos táteis e apoio auditivo individual para quem precisar.
+      assets:
+        - slug: lp-letra-a
+          type: IMAGEM
+          title: Ilustração da letra A
+      alternatives:
+        - title: TEXTO EM CAIXA ALTA
+          description: OFEREÇA CARTÕES COM ESCUTA ATIVA DESTACADO PARA QUE TODES ACOMPANHEM.
+          steps:
+            - FORNEÇA LETRAS GRANDES E ESPAÇADAS.
+            - GRIFE RIMAS OU PALAVRAS-CHAVE EM COR VIVA.
+      audioCue:
+        title: SINAL SONORO
+        description: Utilize um chocalho ou palmas para marcar o momento de focar em escuta ativa.
+        steps:
+          - Avise que o som indica a troca de etapa ou turno de fala.
+          - Repita o som e a instrução de forma pausada.
+      motorSupport:
+        - title: APOIO MOTOR
+          description: Disponibilize apoios físicos para navegação e registro das respostas.
+          steps:
+            - Ofereça ponteiras, clipes ampliados ou teclado virtual.
+            - Permita que duplas se alternem no controle do dispositivo.
+    prerequisites:
+      - type: ACTIVITY
+        reference: turno-de-fala
+        description: Retomar combinações de turnos antes de observar atitudes de escuta.
+    interactive:
+      slug: quiz-escuta-atenta
+      title: Escuta Atenta — Quiz
+      type: QUIZ
+      bnccDescription: Participar de conversas, respeitando turnos de fala, escutando com atenção e respondendo com pertinência.
+      estimatedTimeMinutes: 9
+      instructions:
+        - Leia ou escute cada questão antes de responder.
+        - Use as teclas numéricas ou toque nas alternativas para marcar sua escolha.
+        - Explique para a turma como identificou a resposta correta.
+      objectives:
+        - Identificar atitudes que demonstram atenção à fala do colega.
+        - Responder com gentileza após ouvir o interlocutor.
+      scoring:
+        correct: 10
+        incorrect: 0
+      adaptive:
+        increaseAfter: 2
+        decreaseAfter: 1
+      questions:
+        - id: escuta-atenta-q1
+          type: multiple-choice
+          prompt: Qual atitude mostra escuta ativa enquanto um colega fala?
+          hint: Pense em gestos que demonstram atenção.
+          options:
+            - id: escuta-atenta-q1-1
+              text: Olhar para quem fala e balançar a cabeça concordando.
+              isCorrect: true
+              feedback: Ótimo! O gesto mostra interesse e respeito.
+            - id: escuta-atenta-q1-2
+              text: Mexer no caderno e falar com outro colega.
+              isCorrect: false
+              feedback: Tente manter o foco dando atenção a quem fala.
+            - id: escuta-atenta-q1-3
+              text: Virar de costas para ouvir melhor.
+              isCorrect: false
+              feedback: Olhar para quem fala ajuda a manter a escuta ativa.
+        - id: escuta-atenta-q2
+          type: true-false
+          prompt: Olhar para quem fala demonstra escuta?
+          hint: Relembre como mostramos interesse sem falar nada.
+          statement: Olhar para quem fala demonstra escuta atenta.
+          answer: true
+          feedback:
+            'true': Isso mesmo! O olhar atento mostra que você está ouvindo.
+            'false': Perceba como manter o olhar ajuda a compreender melhor.
+      accessibility:
+        hints:
+          - audience: ESTUDANTE
+            text: 'Passo 1: Leia ou escute cada instrução e identifique onde escuta ativa aparece no interativo.'
+          - audience: ESTUDANTE
+            text: 'Passo 2: Use Tab ou toque na tela para revisar todas as opções antes de confirmar.'
+          - audience: ESTUDANTE
+            text: 'Passo 3: Compartilhe com um colega por que escolheu a resposta apresentada.'
+          - audience: EDUCADOR
+            text: Guie a turma passo a passo, reforçando escuta ativa com gestos, pictogramas e pausas.
+          - audience: FAMILIA
+            text: Envie sugestões de jogos ou músicas que reforcem escuta ativa em casa.
+        feedback:
+          success: Excelente! Escuta ativa ficou evidente nas suas escolhas.
+          encouragement: Caso erre, releia com calma e utilize marcadores sonoros ou visuais para apoiar a decisão.
+          retry: Experimente revisar as pistas destacadas antes de tentar novamente.
+          accessibility: Ofereça tempo extra, recursos táteis e apoio auditivo individual para quem precisar.
+        assets:
+          - slug: lp-letra-a
+            type: IMAGEM
+            title: Ilustração da letra A
+        alternatives:
+          - title: TEXTO EM CAIXA ALTA
+            description: OFEREÇA CARTÕES COM ESCUTA ATIVA DESTACADO PARA QUE TODES ACOMPANHEM.
+            steps:
+              - FORNEÇA LETRAS GRANDES E ESPAÇADAS.
+              - GRIFE RIMAS OU PALAVRAS-CHAVE EM COR VIVA.
+        audioCue:
+          title: SINAL SONORO
+          description: Utilize um chocalho ou palmas para marcar o momento de focar em escuta ativa.
+          steps:
+            - Avise que o som indica a troca de etapa ou turno de fala.
+            - Repita o som e a instrução de forma pausada.
+        motorSupport:
+          - title: APOIO MOTOR
+            description: Disponibilize apoios físicos para navegação e registro das respostas.
+            steps:
+              - Ofereça ponteiras, clipes ampliados ou teclado virtual.
+              - Permita que duplas se alternem no controle do dispositivo.
+  - partial: ../../_partials/acolhimento-base.yaml
+    slug: resposta-educada
+    title: Resposta Educada
+    prompt: Escolha a resposta que mantém o diálogo respeitoso.
+    type: QUIZ
+    difficulty: PRATICAR
+    bncc:
+      code: EF01LP12
+      habilidades:
+        - EF01LP12
+        - EF01LP13
+    learningObjectives:
+      - Responder com gentileza após ouvir uma pergunta.
+      - Retomar informações ditas pelo colega antes de dar opinião.
+    description: Resposta Educada propõe pequenas situações para que a turma experimente respostas respeitosas e colaborativas.
+    metadata:
+      categoria: Respostas no diálogo
+      duracaoMinutos: 9
+      habilidades:
+        - EF01LP12
+        - EF01LP13
+      assetSlug: lp-letra-e
+      assetUsage: Utilize Ilustração da letra E como apoio visual para destacar respostas adequadas ao longo da atividade.
+      familiaEngajamento: Convide as famílias a observar respostas adequadas em histórias, cantigas ou jogos em casa.
+      habilidadesSecundarias:
+        - EF01LP13
+      interactiveSlug: quiz-resposta-educada
+    accessibility:
+      hints:
+        - audience: ESTUDANTE
+          text: 'Passo 1: Observe o enunciado com atenção e sublinhe mentalmente respostas adequadas.'
+        - audience: ESTUDANTE
+          text: 'Passo 2: Compare cada opção, repetindo os sons em voz alta se ajudar.'
+        - audience: ESTUDANTE
+          text: 'Passo 3: Respire fundo e confirme a alternativa escolhida com segurança.'
+        - audience: EDUCADOR
+          text: Guie a turma passo a passo, reforçando respostas adequadas com gestos, pictogramas e pausas.
+        - audience: FAMILIA
+          text: Envie sugestões de jogos ou músicas que reforcem respostas adequadas em casa.
+      feedback:
+        success: Excelente! Respostas adequadas ficou evidente nas suas escolhas.
+        encouragement: Caso erre, releia com calma e utilize marcadores sonoros ou visuais para apoiar a decisão.
+        retry: Experimente revisar as pistas destacadas antes de tentar novamente.
+        accessibility: Ofereça tempo extra, recursos táteis e apoio auditivo individual para quem precisar.
+      assets:
+        - slug: lp-letra-e
+          type: IMAGEM
+          title: Ilustração da letra E
+      alternatives:
+        - title: TEXTO EM CAIXA ALTA
+          description: OFEREÇA CARTÕES COM RESPOSTAS ADEQUADAS DESTACADO PARA QUE TODES ACOMPANHEM.
+          steps:
+            - FORNEÇA LETRAS GRANDES E ESPAÇADAS.
+            - GRIFE RIMAS OU PALAVRAS-CHAVE EM COR VIVA.
+      audioCue:
+        title: SINAL SONORO
+        description: Utilize um chocalho ou palmas para marcar o momento de focar em respostas adequadas.
+        steps:
+          - Avise que o som indica a troca de etapa ou turno de fala.
+          - Repita o som e a instrução de forma pausada.
+      motorSupport:
+        - title: APOIO MOTOR
+          description: Disponibilize apoios físicos para navegação e registro das respostas.
+          steps:
+            - Ofereça ponteiras, clipes ampliados ou teclado virtual.
+            - Permita que duplas se alternem no controle do dispositivo.
+    prerequisites:
+      - type: ACTIVITY
+        reference: escuta-atenta
+        description: Relembrar atitudes de escuta antes de responder.
+    interactive:
+      slug: quiz-resposta-educada
+      title: Resposta Educada — Quiz
+      type: QUIZ
+      bnccDescription: Participar de conversas, respeitando turnos de fala, escutando com atenção e respondendo com pertinência.
+      estimatedTimeMinutes: 9
+      instructions:
+        - Leia ou escute cada questão antes de responder.
+        - Use as teclas numéricas ou toque nas alternativas para marcar sua escolha.
+        - Explique para a turma como identificou a resposta correta.
+      objectives:
+        - Responder com gentileza após ouvir uma pergunta.
+        - Retomar informações ditas pelo colega antes de dar opinião.
+      scoring:
+        correct: 10
+        incorrect: 0
+      adaptive:
+        increaseAfter: 2
+        decreaseAfter: 1
+      questions:
+        - id: resposta-educada-q1
+          type: multiple-choice
+          prompt: 'Colega: ''Você pode me explicar a brincadeira?'' Qual resposta mantém o diálogo gentil?'
+          hint: Lembre de agradecer e explicar com clareza.
+          options:
+            - id: resposta-educada-q1-1
+              text: Claro! Primeiro formamos uma roda e depois cantamos juntos.
+              isCorrect: true
+              feedback: Excelente! Você respondeu com clareza e gentileza.
+            - id: resposta-educada-q1-2
+              text: Não sei, pergunta para outra pessoa.
+              isCorrect: false
+              feedback: Experimente acolher a pergunta com respeito.
+            - id: resposta-educada-q1-3
+              text: Já falei isso ontem, presta atenção!
+              isCorrect: false
+              feedback: Tente responder sem julgar o colega.
+        - id: resposta-educada-q2
+          type: true-false
+          prompt: Retomar a pergunta mostra cuidado com o diálogo?
+          hint: Pense em como manter a conversa amigável.
+          statement: Responder retomando a pergunta mostra cuidado com a conversa.
+          answer: true
+          feedback:
+            'true': Muito bem! Retomar a questão ajuda a manter o diálogo claro.
+            'false': Perceba como repetir a ideia do colega torna a conversa gentil.
+      accessibility:
+        hints:
+          - audience: ESTUDANTE
+            text: 'Passo 1: Leia ou escute cada instrução e identifique onde respostas adequadas aparece no interativo.'
+          - audience: ESTUDANTE
+            text: 'Passo 2: Use Tab ou toque na tela para revisar todas as opções antes de confirmar.'
+          - audience: ESTUDANTE
+            text: 'Passo 3: Compartilhe com um colega por que escolheu a resposta apresentada.'
+          - audience: EDUCADOR
+            text: Guie a turma passo a passo, reforçando respostas adequadas com gestos, pictogramas e pausas.
+          - audience: FAMILIA
+            text: Envie sugestões de jogos ou músicas que reforcem respostas adequadas em casa.
+        feedback:
+          success: Excelente! Respostas adequadas ficou evidente nas suas escolhas.
+          encouragement: Caso erre, releia com calma e utilize marcadores sonoros ou visuais para apoiar a decisão.
+          retry: Experimente revisar as pistas destacadas antes de tentar novamente.
+          accessibility: Ofereça tempo extra, recursos táteis e apoio auditivo individual para quem precisar.
+        assets:
+          - slug: lp-letra-e
+            type: IMAGEM
+            title: Ilustração da letra E
+        alternatives:
+          - title: TEXTO EM CAIXA ALTA
+            description: OFEREÇA CARTÕES COM RESPOSTAS ADEQUADAS DESTACADO PARA QUE TODES ACOMPANHEM.
+            steps:
+              - FORNEÇA LETRAS GRANDES E ESPAÇADAS.
+              - GRIFE RIMAS OU PALAVRAS-CHAVE EM COR VIVA.
+        audioCue:
+          title: SINAL SONORO
+          description: Utilize um chocalho ou palmas para marcar o momento de focar em respostas adequadas.
+          steps:
+            - Avise que o som indica a troca de etapa ou turno de fala.
+            - Repita o som e a instrução de forma pausada.
+        motorSupport:
+          - title: APOIO MOTOR
+            description: Disponibilize apoios físicos para navegação e registro das respostas.
+            steps:
+              - Ofereça ponteiras, clipes ampliados ou teclado virtual.
+              - Permita que duplas se alternem no controle do dispositivo.
+  - partial: ../../_partials/acolhimento-base.yaml
+    slug: relato-bem-ordenado
+    title: Relato Bem Ordenado
+    prompt: Escolha a frase que mantém a sequência do relato.
+    type: QUIZ
+    difficulty: PRATICAR
+    bncc:
+      code: EF01LP13
+      habilidades:
+        - EF01LP13
+    learningObjectives:
+      - Organizar relatos curtos com começo, meio e fim.
+      - Apresentar detalhes relevantes ao narrar uma experiência.
+    description: Relato Bem Ordenado auxilia as crianças a perceber a sequência lógica ao narrar acontecimentos do cotidiano.
+    metadata:
+      categoria: Sequência narrativa
+      duracaoMinutos: 10
+      habilidades:
+        - EF01LP13
+      assetSlug: lp-silaba-ba
+      assetUsage: Utilize Cartão da sílaba BA como apoio visual para destacar organização de relatos ao longo da atividade.
+      familiaEngajamento: Convide as famílias a observar organização de relatos em histórias, cantigas ou jogos em casa.
+      interactiveSlug: quiz-relato-bem-ordenado
+    accessibility:
+      hints:
+        - audience: ESTUDANTE
+          text: 'Passo 1: Observe o enunciado com atenção e sublinhe mentalmente organização de relatos.'
+        - audience: ESTUDANTE
+          text: 'Passo 2: Compare cada opção, repetindo os sons em voz alta se ajudar.'
+        - audience: ESTUDANTE
+          text: 'Passo 3: Respire fundo e confirme a alternativa escolhida com segurança.'
+        - audience: EDUCADOR
+          text: Guie a turma passo a passo, reforçando organização de relatos com gestos, pictogramas e pausas.
+        - audience: FAMILIA
+          text: Envie sugestões de jogos ou músicas que reforcem organização de relatos em casa.
+      feedback:
+        success: Excelente! Organização de relatos ficou evidente nas suas escolhas.
+        encouragement: Caso erre, releia com calma e utilize marcadores sonoros ou visuais para apoiar a decisão.
+        retry: Experimente revisar as pistas destacadas antes de tentar novamente.
+        accessibility: Ofereça tempo extra, recursos táteis e apoio auditivo individual para quem precisar.
+      assets:
+        - slug: lp-silaba-ba
+          type: IMAGEM
+          title: Cartão da sílaba BA
+      alternatives:
+        - title: TEXTO EM CAIXA ALTA
+          description: OFEREÇA CARTÕES COM ORGANIZAÇÃO DE RELATOS DESTACADO PARA QUE TODES ACOMPANHEM.
+          steps:
+            - FORNEÇA LETRAS GRANDES E ESPAÇADAS.
+            - GRIFE RIMAS OU PALAVRAS-CHAVE EM COR VIVA.
+      audioCue:
+        title: SINAL SONORO
+        description: Utilize um chocalho ou palmas para marcar o momento de focar em organização de relatos.
+        steps:
+          - Avise que o som indica a troca de etapa ou turno de fala.
+          - Repita o som e a instrução de forma pausada.
+      motorSupport:
+        - title: APOIO MOTOR
+          description: Disponibilize apoios físicos para navegação e registro das respostas.
+          steps:
+            - Ofereça ponteiras, clipes ampliados ou teclado virtual.
+            - Permita que duplas se alternem no controle do dispositivo.
+    prerequisites:
+      - type: ACTIVITY
+        reference: resposta-educada
+        description: Lembrar de respostas completas antes de organizar um relato.
+    interactive:
+      slug: quiz-relato-bem-ordenado
+      title: Relato Bem Ordenado — Quiz
+      type: QUIZ
+      bnccDescription: Relatar oralmente vivências e histórias conhecidas, organizando-as em sequência lógica simples.
+      estimatedTimeMinutes: 10
+      instructions:
+        - Leia ou escute cada questão antes de responder.
+        - Use as teclas numéricas ou toque nas alternativas para marcar sua escolha.
+        - Explique para a turma como identificou a resposta correta.
+      objectives:
+        - Organizar relatos curtos com começo, meio e fim.
+        - Apresentar detalhes relevantes ao narrar uma experiência.
+      scoring:
+        correct: 10
+        incorrect: 0
+      adaptive:
+        increaseAfter: 2
+        decreaseAfter: 1
+      questions:
+        - id: relato-bem-ordenado-q1
+          type: multiple-choice
+          prompt: 'Relato: ''Na excursão vimos o museu e depois almoçamos''. Qual frase completa o final do relato?'
+          hint: Pense no que aconteceu após o almoço.
+          options:
+            - id: relato-bem-ordenado-q1-1
+              text: Voltamos para a escola cantando no ônibus.
+              isCorrect: true
+              feedback: Ótimo! A frase conclui o relato cronologicamente.
+            - id: relato-bem-ordenado-q1-2
+              text: Quero ir ao parque amanhã.
+              isCorrect: false
+              feedback: Procure uma frase que finalize a mesma experiência.
+            - id: relato-bem-ordenado-q1-3
+              text: O museu era distante da escola.
+              isCorrect: false
+              feedback: Essa informação já apareceu antes no relato?
+        - id: relato-bem-ordenado-q2
+          type: true-false
+          prompt: Sequência temporal deixa o relato mais claro?
+          hint: Pense em relatos com começo, meio e fim.
+          statement: Relatos ficam mais claros quando seguem uma sequência temporal.
+          answer: true
+          feedback:
+            'true': Isso mesmo! Sequenciar ajuda todos a entenderem o que ocorreu.
+            'false': Imagine contar uma história fora de ordem. Complica, não é?
+      accessibility:
+        hints:
+          - audience: ESTUDANTE
+            text: 'Passo 1: Leia ou escute cada instrução e identifique onde organização de relatos aparece no interativo.'
+          - audience: ESTUDANTE
+            text: 'Passo 2: Use Tab ou toque na tela para revisar todas as opções antes de confirmar.'
+          - audience: ESTUDANTE
+            text: 'Passo 3: Compartilhe com um colega por que escolheu a resposta apresentada.'
+          - audience: EDUCADOR
+            text: Guie a turma passo a passo, reforçando organização de relatos com gestos, pictogramas e pausas.
+          - audience: FAMILIA
+            text: Envie sugestões de jogos ou músicas que reforcem organização de relatos em casa.
+        feedback:
+          success: Excelente! Organização de relatos ficou evidente nas suas escolhas.
+          encouragement: Caso erre, releia com calma e utilize marcadores sonoros ou visuais para apoiar a decisão.
+          retry: Experimente revisar as pistas destacadas antes de tentar novamente.
+          accessibility: Ofereça tempo extra, recursos táteis e apoio auditivo individual para quem precisar.
+        assets:
+          - slug: lp-silaba-ba
+            type: IMAGEM
+            title: Cartão da sílaba BA
+        alternatives:
+          - title: TEXTO EM CAIXA ALTA
+            description: OFEREÇA CARTÕES COM ORGANIZAÇÃO DE RELATOS DESTACADO PARA QUE TODES ACOMPANHEM.
+            steps:
+              - FORNEÇA LETRAS GRANDES E ESPAÇADAS.
+              - GRIFE RIMAS OU PALAVRAS-CHAVE EM COR VIVA.
+        audioCue:
+          title: SINAL SONORO
+          description: Utilize um chocalho ou palmas para marcar o momento de focar em organização de relatos.
+          steps:
+            - Avise que o som indica a troca de etapa ou turno de fala.
+            - Repita o som e a instrução de forma pausada.
+        motorSupport:
+          - title: APOIO MOTOR
+            description: Disponibilize apoios físicos para navegação e registro das respostas.
+            steps:
+              - Ofereça ponteiras, clipes ampliados ou teclado virtual.
+              - Permita que duplas se alternem no controle do dispositivo.
+  - partial: ../../_partials/acolhimento-base.yaml
+    slug: dialogo-em-equipe
+    title: Diálogo em Equipe
+    prompt: Selecione a fala que ajuda o grupo a continuar a conversa.
+    type: QUIZ
+    difficulty: DOMINAR
+    bncc:
+      code: EF01LP12
+      habilidades:
+        - EF01LP12
+        - EF01LP13
+    learningObjectives:
+      - Construir falas que conectam ideias de diferentes colegas.
+      - Fazer perguntas complementares para manter o diálogo em andamento.
+    description: Diálogo em Equipe desafia a turma a conectar falas anteriores, ampliando o assunto com respeito e curiosidade.
+    metadata:
+      categoria: Colaboração oral
+      duracaoMinutos: 10
+      habilidades:
+        - EF01LP12
+        - EF01LP13
+      assetSlug: lp-letra-e
+      assetUsage: Utilize Ilustração da letra E como apoio visual para destacar colaboração no diálogo ao longo da atividade.
+      familiaEngajamento: Convide as famílias a observar colaboração no diálogo em histórias, cantigas ou jogos em casa.
+      habilidadesSecundarias:
+        - EF01LP13
+      interactiveSlug: quiz-dialogo-em-equipe
+    accessibility:
+      hints:
+        - audience: ESTUDANTE
+          text: 'Passo 1: Observe o enunciado com atenção e sublinhe mentalmente colaboração no diálogo.'
+        - audience: ESTUDANTE
+          text: 'Passo 2: Compare cada opção, repetindo os sons em voz alta se ajudar.'
+        - audience: ESTUDANTE
+          text: 'Passo 3: Respire fundo e confirme a alternativa escolhida com segurança.'
+        - audience: EDUCADOR
+          text: Guie a turma passo a passo, reforçando colaboração no diálogo com gestos, pictogramas e pausas.
+        - audience: FAMILIA
+          text: Envie sugestões de jogos ou músicas que reforcem colaboração no diálogo em casa.
+      feedback:
+        success: Excelente! Colaboração no diálogo ficou evidente nas suas escolhas.
+        encouragement: Caso erre, releia com calma e utilize marcadores sonoros ou visuais para apoiar a decisão.
+        retry: Experimente revisar as pistas destacadas antes de tentar novamente.
+        accessibility: Ofereça tempo extra, recursos táteis e apoio auditivo individual para quem precisar.
+      assets:
+        - slug: lp-letra-e
+          type: IMAGEM
+          title: Ilustração da letra E
+      alternatives:
+        - title: TEXTO EM CAIXA ALTA
+          description: OFEREÇA CARTÕES COM COLABORAÇÃO NO DIÁLOGO DESTACADO PARA QUE TODES ACOMPANHEM.
+          steps:
+            - FORNEÇA LETRAS GRANDES E ESPAÇADAS.
+            - GRIFE RIMAS OU PALAVRAS-CHAVE EM COR VIVA.
+      audioCue:
+        title: SINAL SONORO
+        description: Utilize um chocalho ou palmas para marcar o momento de focar em colaboração no diálogo.
+        steps:
+          - Avise que o som indica a troca de etapa ou turno de fala.
+          - Repita o som e a instrução de forma pausada.
+      motorSupport:
+        - title: APOIO MOTOR
+          description: Disponibilize apoios físicos para navegação e registro das respostas.
+          steps:
+            - Ofereça ponteiras, clipes ampliados ou teclado virtual.
+            - Permita que duplas se alternem no controle do dispositivo.
+    prerequisites:
+      - type: ACTIVITY
+        reference: relato-bem-ordenado
+        description: Relembrar a sequência do relato antes de colaborar no diálogo.
+    interactive:
+      slug: quiz-dialogo-em-equipe
+      title: Diálogo em Equipe — Quiz
+      type: QUIZ
+      bnccDescription: Participar de conversas, respeitando turnos de fala, escutando com atenção e respondendo com pertinência.
+      estimatedTimeMinutes: 10
+      instructions:
+        - Leia ou escute cada questão antes de responder.
+        - Use as teclas numéricas ou toque nas alternativas para marcar sua escolha.
+        - Explique para a turma como identificou a resposta correta.
+      objectives:
+        - Construir falas que conectam ideias de diferentes colegas.
+        - Fazer perguntas complementares para manter o diálogo em andamento.
+      scoring:
+        correct: 10
+        incorrect: 0
+      adaptive:
+        increaseAfter: 2
+        decreaseAfter: 1
+      questions:
+        - id: dialogo-em-equipe-q1
+          type: multiple-choice
+          prompt: 'Colega: ''Gostei de visitar a horta da escola.'' Qual fala mantém o diálogo em equipe?'
+          hint: Pense em perguntar ou complementar a ideia.
+          options:
+            - id: dialogo-em-equipe-q1-1
+              text: Eu também! Qual planta você achou mais diferente?
+              isCorrect: true
+              feedback: Excelente! Você retomou a fala e fez uma pergunta.
+            - id: dialogo-em-equipe-q1-2
+              text: Vamos falar de outra coisa.
+              isCorrect: false
+              feedback: Tente manter o assunto por mais um turno.
+            - id: dialogo-em-equipe-q1-3
+              text: Não gostei da visita.
+              isCorrect: false
+              feedback: Compartilhe opinião, mas conecte com a fala do colega.
+        - id: dialogo-em-equipe-q2
+          type: true-false
+          prompt: Perguntas relacionadas mantêm a conversa viva?
+          hint: Lembre como manter o assunto girando.
+          statement: Fazer perguntas relacionadas mantém a conversa viva.
+          answer: true
+          feedback:
+            'true': Muito bem! Perguntar amplia o diálogo e inclui quem fala.
+            'false': Veja como perguntas relacionadas ajudam a aprofundar o tema.
+      accessibility:
+        hints:
+          - audience: ESTUDANTE
+            text: 'Passo 1: Leia ou escute cada instrução e identifique onde colaboração no diálogo aparece no interativo.'
+          - audience: ESTUDANTE
+            text: 'Passo 2: Use Tab ou toque na tela para revisar todas as opções antes de confirmar.'
+          - audience: ESTUDANTE
+            text: 'Passo 3: Compartilhe com um colega por que escolheu a resposta apresentada.'
+          - audience: EDUCADOR
+            text: Guie a turma passo a passo, reforçando colaboração no diálogo com gestos, pictogramas e pausas.
+          - audience: FAMILIA
+            text: Envie sugestões de jogos ou músicas que reforcem colaboração no diálogo em casa.
+        feedback:
+          success: Excelente! Colaboração no diálogo ficou evidente nas suas escolhas.
+          encouragement: Caso erre, releia com calma e utilize marcadores sonoros ou visuais para apoiar a decisão.
+          retry: Experimente revisar as pistas destacadas antes de tentar novamente.
+          accessibility: Ofereça tempo extra, recursos táteis e apoio auditivo individual para quem precisar.
+        assets:
+          - slug: lp-letra-e
+            type: IMAGEM
+            title: Ilustração da letra E
+        alternatives:
+          - title: TEXTO EM CAIXA ALTA
+            description: OFEREÇA CARTÕES COM COLABORAÇÃO NO DIÁLOGO DESTACADO PARA QUE TODES ACOMPANHEM.
+            steps:
+              - FORNEÇA LETRAS GRANDES E ESPAÇADAS.
+              - GRIFE RIMAS OU PALAVRAS-CHAVE EM COR VIVA.
+        audioCue:
+          title: SINAL SONORO
+          description: Utilize um chocalho ou palmas para marcar o momento de focar em colaboração no diálogo.
+          steps:
+            - Avise que o som indica a troca de etapa ou turno de fala.
+            - Repita o som e a instrução de forma pausada.
+        motorSupport:
+          - title: APOIO MOTOR
+            description: Disponibilize apoios físicos para navegação e registro das respostas.
+            steps:
+              - Ofereça ponteiras, clipes ampliados ou teclado virtual.
+              - Permita que duplas se alternem no controle do dispositivo.
+  - partial: ../../_partials/acolhimento-base.yaml
+    slug: memorias-na-rodinha
+    title: Memórias na Rodinha
+    prompt: Escolha a frase que completa o relato do colega com detalhes relevantes.
+    type: QUIZ
+    difficulty: DOMINAR
+    bncc:
+      code: EF01LP13
+      habilidades:
+        - EF01LP13
+        - EF01LP12
+    learningObjectives:
+      - Adicionar detalhes relevantes ao relatar vivências.
+      - Usar marcadores temporais simples para organizar o relato.
+    description: Memórias na Rodinha estimula a turma a complementar relatos com detalhes importantes sobre tempo, lugar e personagens.
+    metadata:
+      categoria: Relatos detalhados
+      duracaoMinutos: 11
+      habilidades:
+        - EF01LP13
+        - EF01LP12
+      assetSlug: lp-silaba-la
+      assetUsage: Utilize Cartão da sílaba LA como apoio visual para destacar relatos orais detalhados ao longo da atividade.
+      familiaEngajamento: Convide as famílias a observar relatos orais detalhados em histórias, cantigas ou jogos em casa.
+      habilidadesSecundarias:
+        - EF01LP12
+      interactiveSlug: quiz-memorias-na-rodinha
+    accessibility:
+      hints:
+        - audience: ESTUDANTE
+          text: 'Passo 1: Observe o enunciado com atenção e sublinhe mentalmente relatos orais detalhados.'
+        - audience: ESTUDANTE
+          text: 'Passo 2: Compare cada opção, repetindo os sons em voz alta se ajudar.'
+        - audience: ESTUDANTE
+          text: 'Passo 3: Respire fundo e confirme a alternativa escolhida com segurança.'
+        - audience: EDUCADOR
+          text: Guie a turma passo a passo, reforçando relatos orais detalhados com gestos, pictogramas e pausas.
+        - audience: FAMILIA
+          text: Envie sugestões de jogos ou músicas que reforcem relatos orais detalhados em casa.
+      feedback:
+        success: Excelente! Relatos orais detalhados ficou evidente nas suas escolhas.
+        encouragement: Caso erre, releia com calma e utilize marcadores sonoros ou visuais para apoiar a decisão.
+        retry: Experimente revisar as pistas destacadas antes de tentar novamente.
+        accessibility: Ofereça tempo extra, recursos táteis e apoio auditivo individual para quem precisar.
+      assets:
+        - slug: lp-silaba-la
+          type: IMAGEM
+          title: Cartão da sílaba LA
+      alternatives:
+        - title: TEXTO EM CAIXA ALTA
+          description: OFEREÇA CARTÕES COM RELATOS ORAIS DETALHADOS DESTACADO PARA QUE TODES ACOMPANHEM.
+          steps:
+            - FORNEÇA LETRAS GRANDES E ESPAÇADAS.
+            - GRIFE RIMAS OU PALAVRAS-CHAVE EM COR VIVA.
+      audioCue:
+        title: SINAL SONORO
+        description: Utilize um chocalho ou palmas para marcar o momento de focar em relatos orais detalhados.
+        steps:
+          - Avise que o som indica a troca de etapa ou turno de fala.
+          - Repita o som e a instrução de forma pausada.
+      motorSupport:
+        - title: APOIO MOTOR
+          description: Disponibilize apoios físicos para navegação e registro das respostas.
+          steps:
+            - Ofereça ponteiras, clipes ampliados ou teclado virtual.
+            - Permita que duplas se alternem no controle do dispositivo.
+    prerequisites:
+      - type: ACTIVITY
+        reference: dialogo-em-equipe
+        description: Retomar estratégias de conexão antes de aprofundar relatos.
+    interactive:
+      slug: quiz-memorias-na-rodinha
+      title: Memórias na Rodinha — Quiz
+      type: QUIZ
+      bnccDescription: Relatar oralmente vivências e histórias conhecidas, organizando-as em sequência lógica simples.
+      estimatedTimeMinutes: 11
+      instructions:
+        - Leia ou escute cada questão antes de responder.
+        - Use as teclas numéricas ou toque nas alternativas para marcar sua escolha.
+        - Explique para a turma como identificou a resposta correta.
+      objectives:
+        - Adicionar detalhes relevantes ao relatar vivências.
+        - Usar marcadores temporais simples para organizar o relato.
+      scoring:
+        correct: 10
+        incorrect: 0
+      adaptive:
+        increaseAfter: 2
+        decreaseAfter: 1
+      questions:
+        - id: memorias-na-rodinha-q1
+          type: multiple-choice
+          prompt: 'Relato: ''Ontem visitei minha avó e ajudamos a fazer bolo''. Qual frase encerra o relato com detalhe?'
+          hint: Pense no que aconteceu depois de preparar o bolo.
+          options:
+            - id: memorias-na-rodinha-q1-1
+              text: Depois comemos juntos na varanda contando piadas.
+              isCorrect: true
+              feedback: Ótimo! A frase fecha o relato com mais detalhes.
+            - id: memorias-na-rodinha-q1-2
+              text: Eu gosto de esportes ao ar livre.
+              isCorrect: false
+              feedback: Tente finalizar a mesma experiência contada.
+            - id: memorias-na-rodinha-q1-3
+              text: A varanda é muito bonita.
+              isCorrect: false
+              feedback: Falta explicar o que ocorreu no final da visita.
+        - id: memorias-na-rodinha-q2
+          type: true-false
+          prompt: Detalhes de onde e com quem enriquecem o relato?
+          hint: Pense nos relatos que você gosta de ouvir.
+          statement: Adicionar onde e com quem aconteceu deixa o relato mais interessante.
+          answer: true
+          feedback:
+            'true': Isso! Detalhes aproximam quem escuta da história vivida.
+            'false': Compare relatos com e sem detalhes para perceber a diferença.
+      accessibility:
+        hints:
+          - audience: ESTUDANTE
+            text: 'Passo 1: Leia ou escute cada instrução e identifique onde relatos orais detalhados aparece no interativo.'
+          - audience: ESTUDANTE
+            text: 'Passo 2: Use Tab ou toque na tela para revisar todas as opções antes de confirmar.'
+          - audience: ESTUDANTE
+            text: 'Passo 3: Compartilhe com um colega por que escolheu a resposta apresentada.'
+          - audience: EDUCADOR
+            text: Guie a turma passo a passo, reforçando relatos orais detalhados com gestos, pictogramas e pausas.
+          - audience: FAMILIA
+            text: Envie sugestões de jogos ou músicas que reforcem relatos orais detalhados em casa.
+        feedback:
+          success: Excelente! Relatos orais detalhados ficou evidente nas suas escolhas.
+          encouragement: Caso erre, releia com calma e utilize marcadores sonoros ou visuais para apoiar a decisão.
+          retry: Experimente revisar as pistas destacadas antes de tentar novamente.
+          accessibility: Ofereça tempo extra, recursos táteis e apoio auditivo individual para quem precisar.
+        assets:
+          - slug: lp-silaba-la
+            type: IMAGEM
+            title: Cartão da sílaba LA
+        alternatives:
+          - title: TEXTO EM CAIXA ALTA
+            description: OFEREÇA CARTÕES COM RELATOS ORAIS DETALHADOS DESTACADO PARA QUE TODES ACOMPANHEM.
+            steps:
+              - FORNEÇA LETRAS GRANDES E ESPAÇADAS.
+              - GRIFE RIMAS OU PALAVRAS-CHAVE EM COR VIVA.
+        audioCue:
+          title: SINAL SONORO
+          description: Utilize um chocalho ou palmas para marcar o momento de focar em relatos orais detalhados.
+          steps:
+            - Avise que o som indica a troca de etapa ou turno de fala.
+            - Repita o som e a instrução de forma pausada.
+        motorSupport:
+          - title: APOIO MOTOR
+            description: Disponibilize apoios físicos para navegação e registro das respostas.
+            steps:
+              - Ofereça ponteiras, clipes ampliados ou teclado virtual.
+              - Permita que duplas se alternem no controle do dispositivo.
+  - partial: ../../_partials/acolhimento-base.yaml
+    slug: puzzle-turnos
+    title: Sinais de Turno
+    prompt: Associe cada sinal à ação correspondente durante o diálogo.
+    type: PUZZLE
+    difficulty: INICIAR
+    bncc:
+      code: EF01LP12
+      habilidades:
+        - EF01LP12
+    learningObjectives:
+      - Explorar sinais de turnos em situações mediadas pelo educador.
+      - Compartilhar estratégias pessoais com colegas durante a atividade.
+    description: Sinais de Turno incentiva a turma a explorar sinais de turnos com apoios variados.
+    metadata:
+      categoria: Sinais de diálogo
+      duracaoMinutos: 9
+      habilidades:
+        - EF01LP12
+      assetSlug: lp-letra-a
+      assetUsage: Utilize Ilustração da letra A como apoio visual para destacar sinais de turnos ao longo da atividade.
+      familiaEngajamento: Convide as famílias a observar sinais de turnos em histórias, cantigas ou jogos em casa.
+      interactiveSlug: puzzle-puzzle-turnos
+    accessibility:
+      hints:
+        - audience: ESTUDANTE
+          text: 'Passo 1: Observe o enunciado com atenção e sublinhe mentalmente sinais de turnos.'
+        - audience: ESTUDANTE
+          text: 'Passo 2: Compare cada opção, repetindo os sons em voz alta se ajudar.'
+        - audience: ESTUDANTE
+          text: 'Passo 3: Respire fundo e confirme a alternativa escolhida com segurança.'
+        - audience: EDUCADOR
+          text: Guie a turma passo a passo, reforçando sinais de turnos com gestos, pictogramas e pausas.
+        - audience: FAMILIA
+          text: Envie sugestões de jogos ou músicas que reforcem sinais de turnos em casa.
+      feedback:
+        success: Excelente! Sinais de turnos ficou evidente nas suas escolhas.
+        encouragement: Caso erre, releia com calma e utilize marcadores sonoros ou visuais para apoiar a decisão.
+        retry: Experimente revisar as pistas destacadas antes de tentar novamente.
+        accessibility: Ofereça tempo extra, recursos táteis e apoio auditivo individual para quem precisar.
+      assets:
+        - slug: lp-letra-a
+          type: IMAGEM
+          title: Ilustração da letra A
+      alternatives:
+        - title: TEXTO EM CAIXA ALTA
+          description: OFEREÇA CARTÕES COM SINAIS DE TURNOS DESTACADO PARA QUE TODES ACOMPANHEM.
+          steps:
+            - FORNEÇA LETRAS GRANDES E ESPAÇADAS.
+            - GRIFE RIMAS OU PALAVRAS-CHAVE EM COR VIVA.
+      audioCue:
+        title: SINAL SONORO
+        description: Utilize um chocalho ou palmas para marcar o momento de focar em sinais de turnos.
+        steps:
+          - Avise que o som indica a troca de etapa ou turno de fala.
+          - Repita o som e a instrução de forma pausada.
+      motorSupport:
+        - title: APOIO MOTOR
+          description: Disponibilize apoios físicos para navegação e registro das respostas.
+          steps:
+            - Ofereça ponteiras, clipes ampliados ou teclado virtual.
+            - Permita que duplas se alternem no controle do dispositivo.
+    prerequisites:
+      - type: ACTIVITY
+        reference: turno-de-fala
+        description: Retomar sinais combinados antes de jogar.
+    interactive:
+      slug: puzzle-puzzle-turnos
+      title: Sinais de Turno — Quebra-cabeça
+      type: PUZZLE
+      bnccDescription: Participar de conversas, respeitando turnos de fala, escutando com atenção e respondendo com pertinência.
+      estimatedTimeMinutes: 9
+      instructions:
+        - Observe cada cartão e relacione arrastando ou usando Tab + Enter.
+        - Converse sobre o motivo da combinação antes de confirmar.
+        - Revise as duplas formadas e proponha novas associações.
+      objectives:
+        - Explorar sinais de turnos em situações mediadas pelo educador.
+        - Compartilhar estratégias pessoais com colegas durante a atividade.
+      puzzle:
+        mode: matching
+        successFeedback: Turnos organizados! A conversa ficou fluida.
+        errorFeedback: Revise os sinais combinados e reorganize as cartas.
+        pairs:
+          - id: puzzle-turnos-pair-1
+            prompt: Levantar a mão
+            match: Pedir a vez para falar
+            hint: Lembre do sinal combinado na roda.
+            feedback: O gesto mostra que você aguarda sua vez.
+          - id: puzzle-turnos-pair-2
+            prompt: Olhar para quem fala
+            match: Mostrar que está escutando
+            hint: Observe onde está a atenção.
+            feedback: O olhar atento indica escuta ativa.
+          - id: puzzle-turnos-pair-3
+            prompt: Aplaudir suavemente
+            match: Agradecer a fala do colega
+            hint: Qual sinal encerra uma participação?
+            feedback: O gesto avisa que a fala terminou e o grupo agradece.
+      accessibility:
+        hints:
+          - audience: ESTUDANTE
+            text: 'Passo 1: Leia ou escute cada instrução e identifique onde sinais de turnos aparece no interativo.'
+          - audience: ESTUDANTE
+            text: 'Passo 2: Use Tab ou toque na tela para revisar todas as opções antes de confirmar.'
+          - audience: ESTUDANTE
+            text: 'Passo 3: Compartilhe com um colega por que escolheu a resposta apresentada.'
+          - audience: EDUCADOR
+            text: Guie a turma passo a passo, reforçando sinais de turnos com gestos, pictogramas e pausas.
+          - audience: FAMILIA
+            text: Envie sugestões de jogos ou músicas que reforcem sinais de turnos em casa.
+        feedback:
+          success: Excelente! Sinais de turnos ficou evidente nas suas escolhas.
+          encouragement: Caso erre, releia com calma e utilize marcadores sonoros ou visuais para apoiar a decisão.
+          retry: Experimente revisar as pistas destacadas antes de tentar novamente.
+          accessibility: Ofereça tempo extra, recursos táteis e apoio auditivo individual para quem precisar.
+        assets:
+          - slug: lp-letra-a
+            type: IMAGEM
+            title: Ilustração da letra A
+        alternatives:
+          - title: TEXTO EM CAIXA ALTA
+            description: OFEREÇA CARTÕES COM SINAIS DE TURNOS DESTACADO PARA QUE TODES ACOMPANHEM.
+            steps:
+              - FORNEÇA LETRAS GRANDES E ESPAÇADAS.
+              - GRIFE RIMAS OU PALAVRAS-CHAVE EM COR VIVA.
+        audioCue:
+          title: SINAL SONORO
+          description: Utilize um chocalho ou palmas para marcar o momento de focar em sinais de turnos.
+          steps:
+            - Avise que o som indica a troca de etapa ou turno de fala.
+            - Repita o som e a instrução de forma pausada.
+        motorSupport:
+          - title: APOIO MOTOR
+            description: Disponibilize apoios físicos para navegação e registro das respostas.
+            steps:
+              - Ofereça ponteiras, clipes ampliados ou teclado virtual.
+              - Permita que duplas se alternem no controle do dispositivo.
+  - partial: ../../_partials/acolhimento-base.yaml
+    slug: puzzle-sinais-de-escuta
+    title: Sinais de Escuta
+    prompt: Combine atitudes de escuta com o efeito produzido no diálogo.
+    type: PUZZLE
+    difficulty: PRATICAR
+    bncc:
+      code: EF01LP12
+      habilidades:
+        - EF01LP12
+        - EF01LP13
+    learningObjectives:
+      - Explorar efeitos da escuta em situações mediadas pelo educador.
+      - Compartilhar estratégias pessoais com colegas durante a atividade.
+    description: Sinais de Escuta incentiva a turma a explorar efeitos da escuta com apoios variados.
+    metadata:
+      categoria: Escuta ativa
+      duracaoMinutos: 10
+      habilidades:
+        - EF01LP12
+        - EF01LP13
+      assetSlug: lp-material-caderno
+      assetUsage: Utilize Caderno colorido para escrita como apoio visual para destacar efeitos da escuta ao longo da atividade.
+      familiaEngajamento: Convide as famílias a observar efeitos da escuta em histórias, cantigas ou jogos em casa.
+      habilidadesSecundarias:
+        - EF01LP13
+      interactiveSlug: puzzle-puzzle-sinais-de-escuta
+    accessibility:
+      hints:
+        - audience: ESTUDANTE
+          text: 'Passo 1: Observe o enunciado com atenção e sublinhe mentalmente efeitos da escuta.'
+        - audience: ESTUDANTE
+          text: 'Passo 2: Compare cada opção, repetindo os sons em voz alta se ajudar.'
+        - audience: ESTUDANTE
+          text: 'Passo 3: Respire fundo e confirme a alternativa escolhida com segurança.'
+        - audience: EDUCADOR
+          text: Guie a turma passo a passo, reforçando efeitos da escuta com gestos, pictogramas e pausas.
+        - audience: FAMILIA
+          text: Envie sugestões de jogos ou músicas que reforcem efeitos da escuta em casa.
+      feedback:
+        success: Excelente! Efeitos da escuta ficou evidente nas suas escolhas.
+        encouragement: Caso erre, releia com calma e utilize marcadores sonoros ou visuais para apoiar a decisão.
+        retry: Experimente revisar as pistas destacadas antes de tentar novamente.
+        accessibility: Ofereça tempo extra, recursos táteis e apoio auditivo individual para quem precisar.
+      assets:
+        - slug: lp-material-caderno
+          type: IMAGEM
+          title: Caderno colorido para escrita
+      alternatives:
+        - title: TEXTO EM CAIXA ALTA
+          description: OFEREÇA CARTÕES COM EFEITOS DA ESCUTA DESTACADO PARA QUE TODES ACOMPANHEM.
+          steps:
+            - FORNEÇA LETRAS GRANDES E ESPAÇADAS.
+            - GRIFE RIMAS OU PALAVRAS-CHAVE EM COR VIVA.
+      audioCue:
+        title: SINAL SONORO
+        description: Utilize um chocalho ou palmas para marcar o momento de focar em efeitos da escuta.
+        steps:
+          - Avise que o som indica a troca de etapa ou turno de fala.
+          - Repita o som e a instrução de forma pausada.
+      motorSupport:
+        - title: APOIO MOTOR
+          description: Disponibilize apoios físicos para navegação e registro das respostas.
+          steps:
+            - Ofereça ponteiras, clipes ampliados ou teclado virtual.
+            - Permita que duplas se alternem no controle do dispositivo.
+    prerequisites:
+      - type: ACTIVITY
+        reference: escuta-atenta
+        description: Relembrar atitudes de escuta antes de combinar os cartões.
+    interactive:
+      slug: puzzle-puzzle-sinais-de-escuta
+      title: Sinais de Escuta — Quebra-cabeça
+      type: PUZZLE
+      bnccDescription: Participar de conversas, respeitando turnos de fala, escutando com atenção e respondendo com pertinência.
+      estimatedTimeMinutes: 10
+      instructions:
+        - Observe cada cartão e relacione arrastando ou usando Tab + Enter.
+        - Converse sobre o motivo da combinação antes de confirmar.
+        - Revise as duplas formadas e proponha novas associações.
+      objectives:
+        - Explorar efeitos da escuta em situações mediadas pelo educador.
+        - Compartilhar estratégias pessoais com colegas durante a atividade.
+      puzzle:
+        mode: matching
+        successFeedback: Escuta ativa confirmada! O diálogo ficou acolhedor.
+        errorFeedback: Relembre as atitudes de escuta e refaça as combinações.
+        pairs:
+          - id: puzzle-sinais-de-escuta-pair-1
+            prompt: Balançar a cabeça concordando
+            match: Mostra que compreendeu a ideia
+            hint: Pense nos sinais silenciosos.
+            feedback: O gesto confirma que você acompanhou a fala.
+          - id: puzzle-sinais-de-escuta-pair-2
+            prompt: Perguntar 'Entendi, você pode repetir o tempo?'
+            match: Verifica se compreendeu corretamente
+            hint: Perguntas mantêm a conversa.
+            feedback: A pergunta ajuda a revisar informações importantes.
+          - id: puzzle-sinais-de-escuta-pair-3
+            prompt: Dizer 'Obrigado por compartilhar'
+            match: Valoriza a fala do colega
+            hint: Qual atitude agradece a participação?
+            feedback: Agradecer incentiva novas participações.
+      accessibility:
+        hints:
+          - audience: ESTUDANTE
+            text: 'Passo 1: Leia ou escute cada instrução e identifique onde efeitos da escuta aparece no interativo.'
+          - audience: ESTUDANTE
+            text: 'Passo 2: Use Tab ou toque na tela para revisar todas as opções antes de confirmar.'
+          - audience: ESTUDANTE
+            text: 'Passo 3: Compartilhe com um colega por que escolheu a resposta apresentada.'
+          - audience: EDUCADOR
+            text: Guie a turma passo a passo, reforçando efeitos da escuta com gestos, pictogramas e pausas.
+          - audience: FAMILIA
+            text: Envie sugestões de jogos ou músicas que reforcem efeitos da escuta em casa.
+        feedback:
+          success: Excelente! Efeitos da escuta ficou evidente nas suas escolhas.
+          encouragement: Caso erre, releia com calma e utilize marcadores sonoros ou visuais para apoiar a decisão.
+          retry: Experimente revisar as pistas destacadas antes de tentar novamente.
+          accessibility: Ofereça tempo extra, recursos táteis e apoio auditivo individual para quem precisar.
+        assets:
+          - slug: lp-material-caderno
+            type: IMAGEM
+            title: Caderno colorido para escrita
+        alternatives:
+          - title: TEXTO EM CAIXA ALTA
+            description: OFEREÇA CARTÕES COM EFEITOS DA ESCUTA DESTACADO PARA QUE TODES ACOMPANHEM.
+            steps:
+              - FORNEÇA LETRAS GRANDES E ESPAÇADAS.
+              - GRIFE RIMAS OU PALAVRAS-CHAVE EM COR VIVA.
+        audioCue:
+          title: SINAL SONORO
+          description: Utilize um chocalho ou palmas para marcar o momento de focar em efeitos da escuta.
+          steps:
+            - Avise que o som indica a troca de etapa ou turno de fala.
+            - Repita o som e a instrução de forma pausada.
+        motorSupport:
+          - title: APOIO MOTOR
+            description: Disponibilize apoios físicos para navegação e registro das respostas.
+            steps:
+              - Ofereça ponteiras, clipes ampliados ou teclado virtual.
+              - Permita que duplas se alternem no controle do dispositivo.
+  - partial: ../../_partials/acolhimento-base.yaml
+    slug: puzzle-relato-sequencia
+    title: Sequência do Relato
+    prompt: Relacione partes do relato com marcadores temporais.
+    type: PUZZLE
+    difficulty: PRATICAR
+    bncc:
+      code: EF01LP13
+      habilidades:
+        - EF01LP13
+    learningObjectives:
+      - Explorar marcadores temporais em situações mediadas pelo educador.
+      - Compartilhar estratégias pessoais com colegas durante a atividade.
+    description: Sequência do Relato incentiva a turma a explorar marcadores temporais com apoios variados.
+    metadata:
+      categoria: Organização temporal
+      duracaoMinutos: 10
+      habilidades:
+        - EF01LP13
+      assetSlug: lp-letra-e
+      assetUsage: Utilize Ilustração da letra E como apoio visual para destacar marcadores temporais ao longo da atividade.
+      familiaEngajamento: Convide as famílias a observar marcadores temporais em histórias, cantigas ou jogos em casa.
+      interactiveSlug: puzzle-puzzle-relato-sequencia
+    accessibility:
+      hints:
+        - audience: ESTUDANTE
+          text: 'Passo 1: Observe o enunciado com atenção e sublinhe mentalmente marcadores temporais.'
+        - audience: ESTUDANTE
+          text: 'Passo 2: Compare cada opção, repetindo os sons em voz alta se ajudar.'
+        - audience: ESTUDANTE
+          text: 'Passo 3: Respire fundo e confirme a alternativa escolhida com segurança.'
+        - audience: EDUCADOR
+          text: Guie a turma passo a passo, reforçando marcadores temporais com gestos, pictogramas e pausas.
+        - audience: FAMILIA
+          text: Envie sugestões de jogos ou músicas que reforcem marcadores temporais em casa.
+      feedback:
+        success: Excelente! Marcadores temporais ficou evidente nas suas escolhas.
+        encouragement: Caso erre, releia com calma e utilize marcadores sonoros ou visuais para apoiar a decisão.
+        retry: Experimente revisar as pistas destacadas antes de tentar novamente.
+        accessibility: Ofereça tempo extra, recursos táteis e apoio auditivo individual para quem precisar.
+      assets:
+        - slug: lp-letra-e
+          type: IMAGEM
+          title: Ilustração da letra E
+      alternatives:
+        - title: TEXTO EM CAIXA ALTA
+          description: OFEREÇA CARTÕES COM MARCADORES TEMPORAIS DESTACADO PARA QUE TODES ACOMPANHEM.
+          steps:
+            - FORNEÇA LETRAS GRANDES E ESPAÇADAS.
+            - GRIFE RIMAS OU PALAVRAS-CHAVE EM COR VIVA.
+      audioCue:
+        title: SINAL SONORO
+        description: Utilize um chocalho ou palmas para marcar o momento de focar em marcadores temporais.
+        steps:
+          - Avise que o som indica a troca de etapa ou turno de fala.
+          - Repita o som e a instrução de forma pausada.
+      motorSupport:
+        - title: APOIO MOTOR
+          description: Disponibilize apoios físicos para navegação e registro das respostas.
+          steps:
+            - Ofereça ponteiras, clipes ampliados ou teclado virtual.
+            - Permita que duplas se alternem no controle do dispositivo.
+    prerequisites:
+      - type: ACTIVITY
+        reference: relato-bem-ordenado
+        description: Retomar marcadores antes de montar a sequência.
+    interactive:
+      slug: puzzle-puzzle-relato-sequencia
+      title: Sequência do Relato — Quebra-cabeça
+      type: PUZZLE
+      bnccDescription: Relatar oralmente vivências e histórias conhecidas, organizando-as em sequência lógica simples.
+      estimatedTimeMinutes: 10
+      instructions:
+        - Observe cada cartão e relacione arrastando ou usando Tab + Enter.
+        - Converse sobre o motivo da combinação antes de confirmar.
+        - Revise as duplas formadas e proponha novas associações.
+      objectives:
+        - Explorar marcadores temporais em situações mediadas pelo educador.
+        - Compartilhar estratégias pessoais com colegas durante a atividade.
+      puzzle:
+        mode: matching
+        successFeedback: Relatos organizados! Ficou fácil acompanhar.
+        errorFeedback: Revise a ordem cronológica e refaça as correspondências.
+        pairs:
+          - id: puzzle-relato-sequencia-pair-1
+            prompt: No começo
+            match: Saímos da sala e fomos ao pátio
+            hint: Qual parte inicia o relato?
+            feedback: Esse trecho mostra o que aconteceu primeiro.
+          - id: puzzle-relato-sequencia-pair-2
+            prompt: Depois
+            match: Jogamos bola em duplas
+            hint: Pense no meio da história.
+            feedback: O trecho apresenta a ação intermediária.
+          - id: puzzle-relato-sequencia-pair-3
+            prompt: Por fim
+            match: Voltamos felizes contando o que aprendemos
+            hint: Qual trecho encerra o relato?
+            feedback: Esse trecho finaliza o relato com um resumo.
+      accessibility:
+        hints:
+          - audience: ESTUDANTE
+            text: 'Passo 1: Leia ou escute cada instrução e identifique onde marcadores temporais aparece no interativo.'
+          - audience: ESTUDANTE
+            text: 'Passo 2: Use Tab ou toque na tela para revisar todas as opções antes de confirmar.'
+          - audience: ESTUDANTE
+            text: 'Passo 3: Compartilhe com um colega por que escolheu a resposta apresentada.'
+          - audience: EDUCADOR
+            text: Guie a turma passo a passo, reforçando marcadores temporais com gestos, pictogramas e pausas.
+          - audience: FAMILIA
+            text: Envie sugestões de jogos ou músicas que reforcem marcadores temporais em casa.
+        feedback:
+          success: Excelente! Marcadores temporais ficou evidente nas suas escolhas.
+          encouragement: Caso erre, releia com calma e utilize marcadores sonoros ou visuais para apoiar a decisão.
+          retry: Experimente revisar as pistas destacadas antes de tentar novamente.
+          accessibility: Ofereça tempo extra, recursos táteis e apoio auditivo individual para quem precisar.
+        assets:
+          - slug: lp-letra-e
+            type: IMAGEM
+            title: Ilustração da letra E
+        alternatives:
+          - title: TEXTO EM CAIXA ALTA
+            description: OFEREÇA CARTÕES COM MARCADORES TEMPORAIS DESTACADO PARA QUE TODES ACOMPANHEM.
+            steps:
+              - FORNEÇA LETRAS GRANDES E ESPAÇADAS.
+              - GRIFE RIMAS OU PALAVRAS-CHAVE EM COR VIVA.
+        audioCue:
+          title: SINAL SONORO
+          description: Utilize um chocalho ou palmas para marcar o momento de focar em marcadores temporais.
+          steps:
+            - Avise que o som indica a troca de etapa ou turno de fala.
+            - Repita o som e a instrução de forma pausada.
+        motorSupport:
+          - title: APOIO MOTOR
+            description: Disponibilize apoios físicos para navegação e registro das respostas.
+            steps:
+              - Ofereça ponteiras, clipes ampliados ou teclado virtual.
+              - Permita que duplas se alternem no controle do dispositivo.
+  - partial: ../../_partials/acolhimento-base.yaml
+    slug: puzzle-apoios-dialogo
+    title: Apoios do Diálogo
+    prompt: Associe cada recurso a como ele ajuda o diálogo coletivo.
+    type: PUZZLE
+    difficulty: DOMINAR
+    bncc:
+      code: EF01LP12
+      habilidades:
+        - EF01LP12
+        - EF01LP13
+    learningObjectives:
+      - Explorar estratégias de diálogo em situações mediadas pelo educador.
+      - Compartilhar estratégias pessoais com colegas durante a atividade.
+    description: Apoios do Diálogo incentiva a turma a explorar estratégias de diálogo com apoios variados.
+    metadata:
+      categoria: Estratégias orais
+      duracaoMinutos: 11
+      habilidades:
+        - EF01LP12
+        - EF01LP13
+      assetSlug: lp-silaba-la
+      assetUsage: Utilize Cartão da sílaba LA como apoio visual para destacar estratégias de diálogo ao longo da atividade.
+      familiaEngajamento: Convide as famílias a observar estratégias de diálogo em histórias, cantigas ou jogos em casa.
+      habilidadesSecundarias:
+        - EF01LP13
+      interactiveSlug: puzzle-puzzle-apoios-dialogo
+    accessibility:
+      hints:
+        - audience: ESTUDANTE
+          text: 'Passo 1: Observe o enunciado com atenção e sublinhe mentalmente estratégias de diálogo.'
+        - audience: ESTUDANTE
+          text: 'Passo 2: Compare cada opção, repetindo os sons em voz alta se ajudar.'
+        - audience: ESTUDANTE
+          text: 'Passo 3: Respire fundo e confirme a alternativa escolhida com segurança.'
+        - audience: EDUCADOR
+          text: Guie a turma passo a passo, reforçando estratégias de diálogo com gestos, pictogramas e pausas.
+        - audience: FAMILIA
+          text: Envie sugestões de jogos ou músicas que reforcem estratégias de diálogo em casa.
+      feedback:
+        success: Excelente! Estratégias de diálogo ficou evidente nas suas escolhas.
+        encouragement: Caso erre, releia com calma e utilize marcadores sonoros ou visuais para apoiar a decisão.
+        retry: Experimente revisar as pistas destacadas antes de tentar novamente.
+        accessibility: Ofereça tempo extra, recursos táteis e apoio auditivo individual para quem precisar.
+      assets:
+        - slug: lp-silaba-la
+          type: IMAGEM
+          title: Cartão da sílaba LA
+      alternatives:
+        - title: TEXTO EM CAIXA ALTA
+          description: OFEREÇA CARTÕES COM ESTRATÉGIAS DE DIÁLOGO DESTACADO PARA QUE TODES ACOMPANHEM.
+          steps:
+            - FORNEÇA LETRAS GRANDES E ESPAÇADAS.
+            - GRIFE RIMAS OU PALAVRAS-CHAVE EM COR VIVA.
+      audioCue:
+        title: SINAL SONORO
+        description: Utilize um chocalho ou palmas para marcar o momento de focar em estratégias de diálogo.
+        steps:
+          - Avise que o som indica a troca de etapa ou turno de fala.
+          - Repita o som e a instrução de forma pausada.
+      motorSupport:
+        - title: APOIO MOTOR
+          description: Disponibilize apoios físicos para navegação e registro das respostas.
+          steps:
+            - Ofereça ponteiras, clipes ampliados ou teclado virtual.
+            - Permita que duplas se alternem no controle do dispositivo.
+    prerequisites:
+      - type: ACTIVITY
+        reference: dialogo-em-equipe
+        description: Retomar estratégias colaborativas antes de relacionar os apoios.
+    interactive:
+      slug: puzzle-puzzle-apoios-dialogo
+      title: Apoios do Diálogo — Quebra-cabeça
+      type: PUZZLE
+      bnccDescription: Participar de conversas, respeitando turnos de fala, escutando com atenção e respondendo com pertinência.
+      estimatedTimeMinutes: 11
+      instructions:
+        - Observe cada cartão e relacione arrastando ou usando Tab + Enter.
+        - Converse sobre o motivo da combinação antes de confirmar.
+        - Revise as duplas formadas e proponha novas associações.
+      objectives:
+        - Explorar estratégias de diálogo em situações mediadas pelo educador.
+        - Compartilhar estratégias pessoais com colegas durante a atividade.
+      puzzle:
+        mode: matching
+        successFeedback: Estratégias conectadas! O diálogo ficou rico.
+        errorFeedback: Revise como cada recurso apoia a conversa.
+        pairs:
+          - id: puzzle-apoios-dialogo-pair-1
+            prompt: Cartões com perguntas
+            match: Ajudam a continuar a conversa
+            hint: Pense em como manter o assunto.
+            feedback: Perguntas prontas reforçam a continuidade do diálogo.
+          - id: puzzle-apoios-dialogo-pair-2
+            prompt: Gravação de áudio
+            match: Permite revisar o que já foi dito
+            hint: Como lembrar das falas anteriores?
+            feedback: Rever a gravação ajuda a organizar novas falas.
+          - id: puzzle-apoios-dialogo-pair-3
+            prompt: Painel de combinados
+            match: Lembra as regras de respeito
+            hint: Qual recurso mostra os combinados?
+            feedback: O painel reforça comportamentos acordados pelo grupo.
+      accessibility:
+        hints:
+          - audience: ESTUDANTE
+            text: 'Passo 1: Leia ou escute cada instrução e identifique onde estratégias de diálogo aparece no interativo.'
+          - audience: ESTUDANTE
+            text: 'Passo 2: Use Tab ou toque na tela para revisar todas as opções antes de confirmar.'
+          - audience: ESTUDANTE
+            text: 'Passo 3: Compartilhe com um colega por que escolheu a resposta apresentada.'
+          - audience: EDUCADOR
+            text: Guie a turma passo a passo, reforçando estratégias de diálogo com gestos, pictogramas e pausas.
+          - audience: FAMILIA
+            text: Envie sugestões de jogos ou músicas que reforcem estratégias de diálogo em casa.
+        feedback:
+          success: Excelente! Estratégias de diálogo ficou evidente nas suas escolhas.
+          encouragement: Caso erre, releia com calma e utilize marcadores sonoros ou visuais para apoiar a decisão.
+          retry: Experimente revisar as pistas destacadas antes de tentar novamente.
+          accessibility: Ofereça tempo extra, recursos táteis e apoio auditivo individual para quem precisar.
+        assets:
+          - slug: lp-silaba-la
+            type: IMAGEM
+            title: Cartão da sílaba LA
+        alternatives:
+          - title: TEXTO EM CAIXA ALTA
+            description: OFEREÇA CARTÕES COM ESTRATÉGIAS DE DIÁLOGO DESTACADO PARA QUE TODES ACOMPANHEM.
+            steps:
+              - FORNEÇA LETRAS GRANDES E ESPAÇADAS.
+              - GRIFE RIMAS OU PALAVRAS-CHAVE EM COR VIVA.
+        audioCue:
+          title: SINAL SONORO
+          description: Utilize um chocalho ou palmas para marcar o momento de focar em estratégias de diálogo.
+          steps:
+            - Avise que o som indica a troca de etapa ou turno de fala.
+            - Repita o som e a instrução de forma pausada.
+        motorSupport:
+          - title: APOIO MOTOR
+            description: Disponibilize apoios físicos para navegação e registro das respostas.
+            steps:
+              - Ofereça ponteiras, clipes ampliados ou teclado virtual.
+              - Permita que duplas se alternem no controle do dispositivo.
+  - partial: ../../_partials/acolhimento-base.yaml
+    slug: jogo-turno-luz
+    title: Sinal do Turno
+    prompt: Escolha quem deve falar em cada situação, respeitando os turnos.
+    type: GAME
+    difficulty: INICIAR
+    bncc:
+      code: EF01LP12
+      habilidades:
+        - EF01LP12
+    learningObjectives:
+      - Explorar respeito aos turnos em situações mediadas pelo educador.
+      - Compartilhar estratégias pessoais com colegas durante a atividade.
+    description: Sinal do Turno incentiva a turma a explorar respeito aos turnos com apoios variados.
+    metadata:
+      categoria: Turnos em jogo
+      duracaoMinutos: 12
+      habilidades:
+        - EF01LP12
+      assetSlug: lp-material-caderno
+      assetUsage: Utilize Caderno colorido para escrita como apoio visual para destacar respeito aos turnos ao longo da atividade.
+      familiaEngajamento: Convide as famílias a observar respeito aos turnos em histórias, cantigas ou jogos em casa.
+      interactiveSlug: game-jogo-turno-luz
+      audioPrompt: Reproduza o som do chocalho sempre que o turno muda para simular uma gravação coletiva.
+    accessibility:
+      hints:
+        - audience: ESTUDANTE
+          text: 'Passo 1: Observe o enunciado com atenção e sublinhe mentalmente respeito aos turnos.'
+        - audience: ESTUDANTE
+          text: 'Passo 2: Compare cada opção, repetindo os sons em voz alta se ajudar.'
+        - audience: ESTUDANTE
+          text: 'Passo 3: Respire fundo e confirme a alternativa escolhida com segurança.'
+        - audience: EDUCADOR
+          text: Guie a turma passo a passo, reforçando respeito aos turnos com gestos, pictogramas e pausas.
+        - audience: FAMILIA
+          text: Envie sugestões de jogos ou músicas que reforcem respeito aos turnos em casa.
+      feedback:
+        success: Excelente! Respeito aos turnos ficou evidente nas suas escolhas.
+        encouragement: Caso erre, releia com calma e utilize marcadores sonoros ou visuais para apoiar a decisão.
+        retry: Experimente revisar as pistas destacadas antes de tentar novamente.
+        accessibility: Ofereça tempo extra, recursos táteis e apoio auditivo individual para quem precisar.
+      assets:
+        - slug: lp-material-caderno
+          type: IMAGEM
+          title: Caderno colorido para escrita
+      alternatives:
+        - title: TEXTO EM CAIXA ALTA
+          description: OFEREÇA CARTÕES COM RESPEITO AOS TURNOS DESTACADO PARA QUE TODES ACOMPANHEM.
+          steps:
+            - FORNEÇA LETRAS GRANDES E ESPAÇADAS.
+            - GRIFE RIMAS OU PALAVRAS-CHAVE EM COR VIVA.
+      audioCue:
+        title: SINAL SONORO
+        description: Utilize um chocalho ou palmas para marcar o momento de focar em respeito aos turnos.
+        steps:
+          - Avise que o som indica a troca de etapa ou turno de fala.
+          - Repita o som e a instrução de forma pausada.
+      motorSupport:
+        - title: APOIO MOTOR
+          description: Disponibilize apoios físicos para navegação e registro das respostas.
+          steps:
+            - Ofereça ponteiras, clipes ampliados ou teclado virtual.
+            - Permita que duplas se alternem no controle do dispositivo.
+    prerequisites:
+      - type: ACTIVITY
+        reference: puzzle-turnos
+        description: Relembrar sinais de turno antes do jogo.
+    interactive:
+      slug: game-jogo-turno-luz
+      title: Sinal do Turno — Mini-jogo
+      type: GAME
+      bnccDescription: Participar de conversas, respeitando turnos de fala, escutando com atenção e respondendo com pertinência.
+      estimatedTimeMinutes: 12
+      instructions:
+        - Leia ou escute o desafio de cada fase com atenção.
+        - Digite ou selecione a resposta utilizando teclado, toque ou mouse.
+        - Ao final, compartilhe qual pista sonora ou visual ajudou a resolver a fase.
+      objectives:
+        - Explorar respeito aos turnos em situações mediadas pelo educador.
+        - Compartilhar estratégias pessoais com colegas durante a atividade.
+      game:
+        mode: math-challenge
+        timeLimitSeconds: 120
+        lives: 3
+        victoryMessage: Turnos organizados! O diálogo ficou harmonioso.
+        gameOverMessage: Revise os combinados de sinalização e tente novamente com calma.
+        levels:
+          - id: jogo-turno-luz-level-1
+            challenge: 'Quem deve falar quando a professora pergunta: ''Quem lembra da regra?'' (Quem levantou a mão, Quem está conversando, Quem está distraído)'
+            answer: Quem levantou a mão
+            hint: Observe quem sinalizou primeiro.
+            successFeedback: Muito bem! O turno passou para quem sinalizou.
+            failureFeedback: Veja quem seguiu o combinado antes de responder.
+          - id: jogo-turno-luz-level-2
+            challenge: Se dois colegas levantam a mão, quem fala primeiro? (Quem a professora olhar primeiro, Quem falar mais alto, Quem se levantar)
+            answer: Quem a professora olhar primeiro
+            hint: Lembre do combinado com o olhar do mediador.
+            successFeedback: Excelente! Respeitar o olhar do mediador organiza a vez.
+            failureFeedback: Perceba como o olhar indica de quem é a vez.
+          - id: jogo-turno-luz-level-3
+            challenge: Durante uma entrevista, quem fala depois da pergunta? (A pessoa entrevistada, O entrevistador novamente, Um aluno qualquer)
+            answer: A pessoa entrevistada
+            hint: Pense na ordem da entrevista.
+            successFeedback: Isso! O entrevistado responde após a pergunta.
+            failureFeedback: 'Relembre como funciona uma entrevista: pergunta e resposta.'
+      accessibility:
+        hints:
+          - audience: ESTUDANTE
+            text: 'Passo 1: Leia ou escute cada instrução e identifique onde respeito aos turnos aparece no interativo.'
+          - audience: ESTUDANTE
+            text: 'Passo 2: Use Tab ou toque na tela para revisar todas as opções antes de confirmar.'
+          - audience: ESTUDANTE
+            text: 'Passo 3: Compartilhe com um colega por que escolheu a resposta apresentada.'
+          - audience: EDUCADOR
+            text: Guie a turma passo a passo, reforçando respeito aos turnos com gestos, pictogramas e pausas.
+          - audience: FAMILIA
+            text: Envie sugestões de jogos ou músicas que reforcem respeito aos turnos em casa.
+        feedback:
+          success: Excelente! Respeito aos turnos ficou evidente nas suas escolhas.
+          encouragement: Caso erre, releia com calma e utilize marcadores sonoros ou visuais para apoiar a decisão.
+          retry: Experimente revisar as pistas destacadas antes de tentar novamente.
+          accessibility: Ofereça tempo extra, recursos táteis e apoio auditivo individual para quem precisar.
+        assets:
+          - slug: lp-material-caderno
+            type: IMAGEM
+            title: Caderno colorido para escrita
+        alternatives:
+          - title: TEXTO EM CAIXA ALTA
+            description: OFEREÇA CARTÕES COM RESPEITO AOS TURNOS DESTACADO PARA QUE TODES ACOMPANHEM.
+            steps:
+              - FORNEÇA LETRAS GRANDES E ESPAÇADAS.
+              - GRIFE RIMAS OU PALAVRAS-CHAVE EM COR VIVA.
+        audioCue:
+          title: SINAL SONORO
+          description: Utilize um chocalho ou palmas para marcar o momento de focar em respeito aos turnos.
+          steps:
+            - Avise que o som indica a troca de etapa ou turno de fala.
+            - Repita o som e a instrução de forma pausada.
+        motorSupport:
+          - title: APOIO MOTOR
+            description: Disponibilize apoios físicos para navegação e registro das respostas.
+            steps:
+              - Ofereça ponteiras, clipes ampliados ou teclado virtual.
+              - Permita que duplas se alternem no controle do dispositivo.
+  - partial: ../../_partials/acolhimento-base.yaml
+    slug: jogo-escuta-ativa
+    title: Escuta em Ação
+    prompt: Selecione a resposta que mostra escuta atenta ao colega.
+    type: GAME
+    difficulty: PRATICAR
+    bncc:
+      code: EF01LP12
+      habilidades:
+        - EF01LP12
+        - EF01LP13
+    learningObjectives:
+      - Explorar respostas de escuta em situações mediadas pelo educador.
+      - Compartilhar estratégias pessoais com colegas durante a atividade.
+    description: Escuta em Ação incentiva a turma a explorar respostas de escuta com apoios variados.
+    metadata:
+      categoria: Escuta ativa
+      duracaoMinutos: 12
+      habilidades:
+        - EF01LP12
+        - EF01LP13
+      assetSlug: lp-letra-a
+      assetUsage: Utilize Ilustração da letra A como apoio visual para destacar respostas de escuta ao longo da atividade.
+      familiaEngajamento: Convide as famílias a observar respostas de escuta em histórias, cantigas ou jogos em casa.
+      habilidadesSecundarias:
+        - EF01LP13
+      interactiveSlug: game-jogo-escuta-ativa
+    accessibility:
+      hints:
+        - audience: ESTUDANTE
+          text: 'Passo 1: Observe o enunciado com atenção e sublinhe mentalmente respostas de escuta.'
+        - audience: ESTUDANTE
+          text: 'Passo 2: Compare cada opção, repetindo os sons em voz alta se ajudar.'
+        - audience: ESTUDANTE
+          text: 'Passo 3: Respire fundo e confirme a alternativa escolhida com segurança.'
+        - audience: EDUCADOR
+          text: Guie a turma passo a passo, reforçando respostas de escuta com gestos, pictogramas e pausas.
+        - audience: FAMILIA
+          text: Envie sugestões de jogos ou músicas que reforcem respostas de escuta em casa.
+      feedback:
+        success: Excelente! Respostas de escuta ficou evidente nas suas escolhas.
+        encouragement: Caso erre, releia com calma e utilize marcadores sonoros ou visuais para apoiar a decisão.
+        retry: Experimente revisar as pistas destacadas antes de tentar novamente.
+        accessibility: Ofereça tempo extra, recursos táteis e apoio auditivo individual para quem precisar.
+      assets:
+        - slug: lp-letra-a
+          type: IMAGEM
+          title: Ilustração da letra A
+      alternatives:
+        - title: TEXTO EM CAIXA ALTA
+          description: OFEREÇA CARTÕES COM RESPOSTAS DE ESCUTA DESTACADO PARA QUE TODES ACOMPANHEM.
+          steps:
+            - FORNEÇA LETRAS GRANDES E ESPAÇADAS.
+            - GRIFE RIMAS OU PALAVRAS-CHAVE EM COR VIVA.
+      audioCue:
+        title: SINAL SONORO
+        description: Utilize um chocalho ou palmas para marcar o momento de focar em respostas de escuta.
+        steps:
+          - Avise que o som indica a troca de etapa ou turno de fala.
+          - Repita o som e a instrução de forma pausada.
+      motorSupport:
+        - title: APOIO MOTOR
+          description: Disponibilize apoios físicos para navegação e registro das respostas.
+          steps:
+            - Ofereça ponteiras, clipes ampliados ou teclado virtual.
+            - Permita que duplas se alternem no controle do dispositivo.
+    prerequisites:
+      - type: ACTIVITY
+        reference: puzzle-sinais-de-escuta
+        description: Recordar atitudes de escuta antes de jogar.
+    interactive:
+      slug: game-jogo-escuta-ativa
+      title: Escuta em Ação — Mini-jogo
+      type: GAME
+      bnccDescription: Participar de conversas, respeitando turnos de fala, escutando com atenção e respondendo com pertinência.
+      estimatedTimeMinutes: 12
+      instructions:
+        - Leia ou escute o desafio de cada fase com atenção.
+        - Digite ou selecione a resposta utilizando teclado, toque ou mouse.
+        - Ao final, compartilhe qual pista sonora ou visual ajudou a resolver a fase.
+      objectives:
+        - Explorar respostas de escuta em situações mediadas pelo educador.
+        - Compartilhar estratégias pessoais com colegas durante a atividade.
+      game:
+        mode: math-challenge
+        timeLimitSeconds: 120
+        lives: 3
+        victoryMessage: Escuta afinada! Suas respostas fortaleceram o diálogo.
+        gameOverMessage: Revise os sinais de escuta e tente novamente com atenção.
+        levels:
+          - id: jogo-escuta-ativa-level-1
+            challenge: 'Colega: ''Estou nervoso para apresentar.'' Qual resposta mostra escuta? (Entendo, quer ensaiar comigo?, Isso não é importante, Não fala isso)'
+            answer: Entendo, quer ensaiar comigo?
+            hint: Retome a fala e ofereça apoio.
+            successFeedback: Ótimo! Você acolheu e ofereceu ajuda.
+            failureFeedback: Tente retomar a fala do colega antes de responder.
+          - id: jogo-escuta-ativa-level-2
+            challenge: 'Colega: ''Esqueci a ordem das etapas.'' Qual fala mantém o diálogo? (Vamos revisar juntos?, Não presta atenção?, Eu também esqueci)'
+            answer: Vamos revisar juntos?
+            hint: Procure apoiar a necessidade do colega.
+            successFeedback: Excelente! Você sugeriu revisar em conjunto.
+            failureFeedback: Recorde que respostas solidárias mantêm o diálogo respeitoso.
+          - id: jogo-escuta-ativa-level-3
+            challenge: 'Colega: ''Fiquei feliz com o trabalho.'' Qual resposta amplia a conversa? (Que bom! O que você mais gostou?, Tá bom, próximo!, Não gostei)'
+            answer: Que bom! O que você mais gostou?
+            hint: Faça uma pergunta para saber mais.
+            successFeedback: Muito bem! Perguntar mantém a conversa acontecendo.
+            failureFeedback: Lembre de perguntar algo relacionado à fala do colega.
+      accessibility:
+        hints:
+          - audience: ESTUDANTE
+            text: 'Passo 1: Leia ou escute cada instrução e identifique onde respostas de escuta aparece no interativo.'
+          - audience: ESTUDANTE
+            text: 'Passo 2: Use Tab ou toque na tela para revisar todas as opções antes de confirmar.'
+          - audience: ESTUDANTE
+            text: 'Passo 3: Compartilhe com um colega por que escolheu a resposta apresentada.'
+          - audience: EDUCADOR
+            text: Guie a turma passo a passo, reforçando respostas de escuta com gestos, pictogramas e pausas.
+          - audience: FAMILIA
+            text: Envie sugestões de jogos ou músicas que reforcem respostas de escuta em casa.
+        feedback:
+          success: Excelente! Respostas de escuta ficou evidente nas suas escolhas.
+          encouragement: Caso erre, releia com calma e utilize marcadores sonoros ou visuais para apoiar a decisão.
+          retry: Experimente revisar as pistas destacadas antes de tentar novamente.
+          accessibility: Ofereça tempo extra, recursos táteis e apoio auditivo individual para quem precisar.
+        assets:
+          - slug: lp-letra-a
+            type: IMAGEM
+            title: Ilustração da letra A
+        alternatives:
+          - title: TEXTO EM CAIXA ALTA
+            description: OFEREÇA CARTÕES COM RESPOSTAS DE ESCUTA DESTACADO PARA QUE TODES ACOMPANHEM.
+            steps:
+              - FORNEÇA LETRAS GRANDES E ESPAÇADAS.
+              - GRIFE RIMAS OU PALAVRAS-CHAVE EM COR VIVA.
+        audioCue:
+          title: SINAL SONORO
+          description: Utilize um chocalho ou palmas para marcar o momento de focar em respostas de escuta.
+          steps:
+            - Avise que o som indica a troca de etapa ou turno de fala.
+            - Repita o som e a instrução de forma pausada.
+        motorSupport:
+          - title: APOIO MOTOR
+            description: Disponibilize apoios físicos para navegação e registro das respostas.
+            steps:
+              - Ofereça ponteiras, clipes ampliados ou teclado virtual.
+              - Permita que duplas se alternem no controle do dispositivo.
+  - partial: ../../_partials/acolhimento-base.yaml
+    slug: jogo-relato-rapido
+    title: Relato Relâmpago
+    prompt: Digite a palavra que falta para completar o relato.
+    type: GAME
+    difficulty: DOMINAR
+    bncc:
+      code: EF01LP13
+      habilidades:
+        - EF01LP13
+    learningObjectives:
+      - Explorar detalhamento do relato em situações mediadas pelo educador.
+      - Compartilhar estratégias pessoais com colegas durante a atividade.
+    description: Relato Relâmpago incentiva a turma a explorar detalhamento do relato com apoios variados.
+    metadata:
+      categoria: Relato oral
+      duracaoMinutos: 13
+      habilidades:
+        - EF01LP13
+      assetSlug: lp-silaba-ba
+      assetUsage: Utilize Cartão da sílaba BA como apoio visual para destacar detalhamento do relato ao longo da atividade.
+      familiaEngajamento: Convide as famílias a observar detalhamento do relato em histórias, cantigas ou jogos em casa.
+      interactiveSlug: game-jogo-relato-rapido
+    accessibility:
+      hints:
+        - audience: ESTUDANTE
+          text: 'Passo 1: Observe o enunciado com atenção e sublinhe mentalmente detalhamento do relato.'
+        - audience: ESTUDANTE
+          text: 'Passo 2: Compare cada opção, repetindo os sons em voz alta se ajudar.'
+        - audience: ESTUDANTE
+          text: 'Passo 3: Respire fundo e confirme a alternativa escolhida com segurança.'
+        - audience: EDUCADOR
+          text: Guie a turma passo a passo, reforçando detalhamento do relato com gestos, pictogramas e pausas.
+        - audience: FAMILIA
+          text: Envie sugestões de jogos ou músicas que reforcem detalhamento do relato em casa.
+      feedback:
+        success: Excelente! Detalhamento do relato ficou evidente nas suas escolhas.
+        encouragement: Caso erre, releia com calma e utilize marcadores sonoros ou visuais para apoiar a decisão.
+        retry: Experimente revisar as pistas destacadas antes de tentar novamente.
+        accessibility: Ofereça tempo extra, recursos táteis e apoio auditivo individual para quem precisar.
+      assets:
+        - slug: lp-silaba-ba
+          type: IMAGEM
+          title: Cartão da sílaba BA
+      alternatives:
+        - title: TEXTO EM CAIXA ALTA
+          description: OFEREÇA CARTÕES COM DETALHAMENTO DO RELATO DESTACADO PARA QUE TODES ACOMPANHEM.
+          steps:
+            - FORNEÇA LETRAS GRANDES E ESPAÇADAS.
+            - GRIFE RIMAS OU PALAVRAS-CHAVE EM COR VIVA.
+      audioCue:
+        title: SINAL SONORO
+        description: Utilize um chocalho ou palmas para marcar o momento de focar em detalhamento do relato.
+        steps:
+          - Avise que o som indica a troca de etapa ou turno de fala.
+          - Repita o som e a instrução de forma pausada.
+      motorSupport:
+        - title: APOIO MOTOR
+          description: Disponibilize apoios físicos para navegação e registro das respostas.
+          steps:
+            - Ofereça ponteiras, clipes ampliados ou teclado virtual.
+            - Permita que duplas se alternem no controle do dispositivo.
+    prerequisites:
+      - type: ACTIVITY
+        reference: puzzle-relato-sequencia
+        description: Retomar marcadores temporais antes do jogo digitado.
+    interactive:
+      slug: game-jogo-relato-rapido
+      title: Relato Relâmpago — Mini-jogo
+      type: GAME
+      bnccDescription: Relatar oralmente vivências e histórias conhecidas, organizando-as em sequência lógica simples.
+      estimatedTimeMinutes: 13
+      instructions:
+        - Leia ou escute o desafio de cada fase com atenção.
+        - Digite ou selecione a resposta utilizando teclado, toque ou mouse.
+        - Ao final, compartilhe qual pista sonora ou visual ajudou a resolver a fase.
+      objectives:
+        - Explorar detalhamento do relato em situações mediadas pelo educador.
+        - Compartilhar estratégias pessoais com colegas durante a atividade.
+      game:
+        mode: math-challenge
+        timeLimitSeconds: 120
+        lives: 3
+        victoryMessage: Relato completo! Você organizou todas as etapas.
+        gameOverMessage: Relembre a sequência do relato e tente novamente preenchendo com calma.
+        levels:
+          - id: jogo-relato-rapido-level-1
+            challenge: '''Primeiro chegamos à quadra, depois fizemos alongamento e por fim ____.'''
+            answer: jogamos
+            hint: Pense no que aconteceu depois do alongamento.
+            successFeedback: Ótimo! A ação final completou o relato.
+            failureFeedback: Relembre a sequência da aula de educação física.
+          - id: jogo-relato-rapido-level-2
+            challenge: '''No passeio vimos um lago, ouvimos as aves e então ____ fotos.'''
+            answer: tiramos
+            hint: Qual verbo indica o registro da lembrança?
+            successFeedback: Muito bem! 'Tiramos' completa o relato.
+            failureFeedback: Observe os verbos que relatam ações em sequência.
+          - id: jogo-relato-rapido-level-3
+            challenge: '''Comecei a tarefa copiando o título, depois colori e finalizei ____.'''
+            answer: recortando
+            hint: Pense na última ação manual realizada.
+            successFeedback: Perfeito! Você encerrou o relato com a ação correta.
+            failureFeedback: Releia o relato e imagine a ordem das ações.
+      accessibility:
+        hints:
+          - audience: ESTUDANTE
+            text: 'Passo 1: Leia ou escute cada instrução e identifique onde detalhamento do relato aparece no interativo.'
+          - audience: ESTUDANTE
+            text: 'Passo 2: Use Tab ou toque na tela para revisar todas as opções antes de confirmar.'
+          - audience: ESTUDANTE
+            text: 'Passo 3: Compartilhe com um colega por que escolheu a resposta apresentada.'
+          - audience: EDUCADOR
+            text: Guie a turma passo a passo, reforçando detalhamento do relato com gestos, pictogramas e pausas.
+          - audience: FAMILIA
+            text: Envie sugestões de jogos ou músicas que reforcem detalhamento do relato em casa.
+        feedback:
+          success: Excelente! Detalhamento do relato ficou evidente nas suas escolhas.
+          encouragement: Caso erre, releia com calma e utilize marcadores sonoros ou visuais para apoiar a decisão.
+          retry: Experimente revisar as pistas destacadas antes de tentar novamente.
+          accessibility: Ofereça tempo extra, recursos táteis e apoio auditivo individual para quem precisar.
+        assets:
+          - slug: lp-silaba-ba
+            type: IMAGEM
+            title: Cartão da sílaba BA
+        alternatives:
+          - title: TEXTO EM CAIXA ALTA
+            description: OFEREÇA CARTÕES COM DETALHAMENTO DO RELATO DESTACADO PARA QUE TODES ACOMPANHEM.
+            steps:
+              - FORNEÇA LETRAS GRANDES E ESPAÇADAS.
+              - GRIFE RIMAS OU PALAVRAS-CHAVE EM COR VIVA.
+        audioCue:
+          title: SINAL SONORO
+          description: Utilize um chocalho ou palmas para marcar o momento de focar em detalhamento do relato.
+          steps:
+            - Avise que o som indica a troca de etapa ou turno de fala.
+            - Repita o som e a instrução de forma pausada.
+        motorSupport:
+          - title: APOIO MOTOR
+            description: Disponibilize apoios físicos para navegação e registro das respostas.
+            steps:
+              - Ofereça ponteiras, clipes ampliados ou teclado virtual.
+              - Permita que duplas se alternem no controle do dispositivo.
+  - partial: ../../_partials/acolhimento-base.yaml
+    slug: jogo-planeja-dialogo
+    title: Planeja o Diálogo
+    prompt: Escolha o próximo passo para manter o diálogo coletivo.
+    type: GAME
+    difficulty: DOMINAR
+    bncc:
+      code: EF01LP12
+      habilidades:
+        - EF01LP12
+        - EF01LP13
+    learningObjectives:
+      - Explorar planejamento de fala em situações mediadas pelo educador.
+      - Compartilhar estratégias pessoais com colegas durante a atividade.
+    description: Planeja o Diálogo incentiva a turma a explorar planejamento de fala com apoios variados.
+    metadata:
+      categoria: Planejamento oral
+      duracaoMinutos: 13
+      habilidades:
+        - EF01LP12
+        - EF01LP13
+      assetSlug: lp-letra-e
+      assetUsage: Utilize Ilustração da letra E como apoio visual para destacar planejamento de fala ao longo da atividade.
+      familiaEngajamento: Convide as famílias a observar planejamento de fala em histórias, cantigas ou jogos em casa.
+      habilidadesSecundarias:
+        - EF01LP13
+      interactiveSlug: game-jogo-planeja-dialogo
+    accessibility:
+      hints:
+        - audience: ESTUDANTE
+          text: 'Passo 1: Observe o enunciado com atenção e sublinhe mentalmente planejamento de fala.'
+        - audience: ESTUDANTE
+          text: 'Passo 2: Compare cada opção, repetindo os sons em voz alta se ajudar.'
+        - audience: ESTUDANTE
+          text: 'Passo 3: Respire fundo e confirme a alternativa escolhida com segurança.'
+        - audience: EDUCADOR
+          text: Guie a turma passo a passo, reforçando planejamento de fala com gestos, pictogramas e pausas.
+        - audience: FAMILIA
+          text: Envie sugestões de jogos ou músicas que reforcem planejamento de fala em casa.
+      feedback:
+        success: Excelente! Planejamento de fala ficou evidente nas suas escolhas.
+        encouragement: Caso erre, releia com calma e utilize marcadores sonoros ou visuais para apoiar a decisão.
+        retry: Experimente revisar as pistas destacadas antes de tentar novamente.
+        accessibility: Ofereça tempo extra, recursos táteis e apoio auditivo individual para quem precisar.
+      assets:
+        - slug: lp-letra-e
+          type: IMAGEM
+          title: Ilustração da letra E
+      alternatives:
+        - title: TEXTO EM CAIXA ALTA
+          description: OFEREÇA CARTÕES COM PLANEJAMENTO DE FALA DESTACADO PARA QUE TODES ACOMPANHEM.
+          steps:
+            - FORNEÇA LETRAS GRANDES E ESPAÇADAS.
+            - GRIFE RIMAS OU PALAVRAS-CHAVE EM COR VIVA.
+      audioCue:
+        title: SINAL SONORO
+        description: Utilize um chocalho ou palmas para marcar o momento de focar em planejamento de fala.
+        steps:
+          - Avise que o som indica a troca de etapa ou turno de fala.
+          - Repita o som e a instrução de forma pausada.
+      motorSupport:
+        - title: APOIO MOTOR
+          description: Disponibilize apoios físicos para navegação e registro das respostas.
+          steps:
+            - Ofereça ponteiras, clipes ampliados ou teclado virtual.
+            - Permita que duplas se alternem no controle do dispositivo.
+    prerequisites:
+      - type: ACTIVITY
+        reference: puzzle-apoios-dialogo
+        description: Relembrar apoios antes de planejar o diálogo.
+    interactive:
+      slug: game-jogo-planeja-dialogo
+      title: Planeja o Diálogo — Mini-jogo
+      type: GAME
+      bnccDescription: Participar de conversas, respeitando turnos de fala, escutando com atenção e respondendo com pertinência.
+      estimatedTimeMinutes: 13
+      instructions:
+        - Leia ou escute o desafio de cada fase com atenção.
+        - Digite ou selecione a resposta utilizando teclado, toque ou mouse.
+        - Ao final, compartilhe qual pista sonora ou visual ajudou a resolver a fase.
+      objectives:
+        - Explorar planejamento de fala em situações mediadas pelo educador.
+        - Compartilhar estratégias pessoais com colegas durante a atividade.
+      game:
+        mode: math-challenge
+        timeLimitSeconds: 120
+        lives: 3
+        victoryMessage: Diálogo planejado! O grupo manteve a conversa viva.
+        gameOverMessage: Revise os passos planejados e tente novamente com atenção.
+        levels:
+          - id: jogo-planeja-dialogo-level-1
+            challenge: Depois de ouvir a opinião de um colega, qual passo mantém a conversa? (Fazer uma pergunta, Mudar de assunto, Ficar em silêncio)
+            answer: Fazer uma pergunta
+            hint: Pense em como aprofundar o tema.
+            successFeedback: Perfeito! Uma pergunta mantém o diálogo ativo.
+            failureFeedback: Tente manter o assunto com uma pergunta relacionada.
+          - id: jogo-planeja-dialogo-level-2
+            challenge: Se ninguém respondeu ainda, qual passo vem primeiro? (Reforçar o combinado, Contar outra história, Levantar e sair)
+            answer: Reforçar o combinado
+            hint: Lembre das regras combinadas.
+            successFeedback: Muito bem! Relembrar os combinados organiza o diálogo.
+            failureFeedback: Lembre que reforçar as regras ajuda o grupo a retomar.
+          - id: jogo-planeja-dialogo-level-3
+            challenge: Após ouvir todas as falas, qual ação encerra o diálogo? (Agradecer e resumir, Iniciar novo tema sem aviso, Fazer silêncio longo)
+            answer: Agradecer e resumir
+            hint: Pense em como finalizar coletivamente.
+            successFeedback: Excelente! Encerrar agradecendo fortalece a participação.
+            failureFeedback: Tente retomar as ideias principais antes de encerrar.
+      accessibility:
+        hints:
+          - audience: ESTUDANTE
+            text: 'Passo 1: Leia ou escute cada instrução e identifique onde planejamento de fala aparece no interativo.'
+          - audience: ESTUDANTE
+            text: 'Passo 2: Use Tab ou toque na tela para revisar todas as opções antes de confirmar.'
+          - audience: ESTUDANTE
+            text: 'Passo 3: Compartilhe com um colega por que escolheu a resposta apresentada.'
+          - audience: EDUCADOR
+            text: Guie a turma passo a passo, reforçando planejamento de fala com gestos, pictogramas e pausas.
+          - audience: FAMILIA
+            text: Envie sugestões de jogos ou músicas que reforcem planejamento de fala em casa.
+        feedback:
+          success: Excelente! Planejamento de fala ficou evidente nas suas escolhas.
+          encouragement: Caso erre, releia com calma e utilize marcadores sonoros ou visuais para apoiar a decisão.
+          retry: Experimente revisar as pistas destacadas antes de tentar novamente.
+          accessibility: Ofereça tempo extra, recursos táteis e apoio auditivo individual para quem precisar.
+        assets:
+          - slug: lp-letra-e
+            type: IMAGEM
+            title: Ilustração da letra E
+        alternatives:
+          - title: TEXTO EM CAIXA ALTA
+            description: OFEREÇA CARTÕES COM PLANEJAMENTO DE FALA DESTACADO PARA QUE TODES ACOMPANHEM.
+            steps:
+              - FORNEÇA LETRAS GRANDES E ESPAÇADAS.
+              - GRIFE RIMAS OU PALAVRAS-CHAVE EM COR VIVA.
+        audioCue:
+          title: SINAL SONORO
+          description: Utilize um chocalho ou palmas para marcar o momento de focar em planejamento de fala.
+          steps:
+            - Avise que o som indica a troca de etapa ou turno de fala.
+            - Repita o som e a instrução de forma pausada.
+        motorSupport:
+          - title: APOIO MOTOR
+            description: Disponibilize apoios físicos para navegação e registro das respostas.
+            steps:
+              - Ofereça ponteiras, clipes ampliados ou teclado virtual.
+              - Permita que duplas se alternem no controle do dispositivo.

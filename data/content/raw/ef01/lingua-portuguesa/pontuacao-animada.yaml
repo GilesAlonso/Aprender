@@ -1,0 +1,2100 @@
+module:
+  slug: pontuacao-animada
+  title: Pontuação Animada
+  subtitle: Ponto final, interrogação e exclamação
+  description: Sequência lúdica para reconhecer, usar e revisar sinais de pontuação básicos em frases curtas, diálogos e pequenos textos coletivos.
+  theme: Língua Portuguesa
+  discipline: Língua Portuguesa
+  ageGroupSlug: fundamental-anos-iniciais
+  learningPathSlug: descobertas-palavras
+  primaryBnccCode: EF01LP16
+  secondaryBnccCodes:
+    - EF01LP17
+  learningOutcomes:
+    - Identificar usos de ponto final, ponto de interrogação e ponto de exclamação em frases do cotidiano.
+    - Ajustar pontuação de frases simples para garantir clareza e entonação adequada.
+    - Experimentar leituras orais marcando entonação conforme cada sinal.
+  tags:
+    - pontuacao
+    - leitura
+    - escrita
+activities:
+  - partial: ../../_partials/acolhimento-base.yaml
+    slug: ponto-final-basico
+    title: Ponto Final Básico
+    prompt: Escolha a frase que termina corretamente com ponto final.
+    type: QUIZ
+    difficulty: INICIAR
+    bncc:
+      code: EF01LP16
+      habilidades:
+        - EF01LP16
+    learningObjectives:
+      - Reconhecer quando utilizar ponto final em frases declarativas.
+      - Diferenciar frases completas de frases que precisam de continuação.
+    description: Ponto Final Básico apresenta frases curtas para que a turma identifique o encerramento mais adequado.
+    metadata:
+      categoria: Finalização de frases
+      duracaoMinutos: 8
+      habilidades:
+        - EF01LP16
+      assetSlug: lp-material-caderno
+      assetUsage: Utilize Caderno colorido para escrita como apoio visual para destacar uso do ponto final ao longo da atividade.
+      familiaEngajamento: Convide as famílias a observar uso do ponto final em histórias, cantigas ou jogos em casa.
+      interactiveSlug: quiz-ponto-final-basico
+    accessibility:
+      hints:
+        - audience: ESTUDANTE
+          text: 'Passo 1: Observe o enunciado com atenção e sublinhe mentalmente uso do ponto final.'
+        - audience: ESTUDANTE
+          text: 'Passo 2: Compare cada opção, repetindo os sons em voz alta se ajudar.'
+        - audience: ESTUDANTE
+          text: 'Passo 3: Respire fundo e confirme a alternativa escolhida com segurança.'
+        - audience: EDUCADOR
+          text: Guie a turma passo a passo, reforçando uso do ponto final com gestos, pictogramas e pausas.
+        - audience: FAMILIA
+          text: Envie sugestões de jogos ou músicas que reforcem uso do ponto final em casa.
+      feedback:
+        success: Excelente! Uso do ponto final ficou evidente nas suas escolhas.
+        encouragement: Caso erre, releia com calma e utilize marcadores sonoros ou visuais para apoiar a decisão.
+        retry: Experimente revisar as pistas destacadas antes de tentar novamente.
+        accessibility: Ofereça tempo extra, recursos táteis e apoio auditivo individual para quem precisar.
+      assets:
+        - slug: lp-material-caderno
+          type: IMAGEM
+          title: Caderno colorido para escrita
+      alternatives:
+        - title: TEXTO EM CAIXA ALTA
+          description: OFEREÇA CARTÕES COM USO DO PONTO FINAL DESTACADO PARA QUE TODES ACOMPANHEM.
+          steps:
+            - FORNEÇA LETRAS GRANDES E ESPAÇADAS.
+            - GRIFE RIMAS OU PALAVRAS-CHAVE EM COR VIVA.
+      audioCue:
+        title: SINAL SONORO
+        description: Utilize um chocalho ou palmas para marcar o momento de focar em uso do ponto final.
+        steps:
+          - Avise que o som indica a troca de etapa ou turno de fala.
+          - Repita o som e a instrução de forma pausada.
+      motorSupport:
+        - title: APOIO MOTOR
+          description: Disponibilize apoios físicos para navegação e registro das respostas.
+          steps:
+            - Ofereça ponteiras, clipes ampliados ou teclado virtual.
+            - Permita que duplas se alternem no controle do dispositivo.
+    prerequisites:
+      - type: SKILL
+        reference: EF01LP16
+        description: Ler frases curtas produzidas coletivamente.
+    interactive:
+      slug: quiz-ponto-final-basico
+      title: Ponto Final Básico — Quiz
+      type: QUIZ
+      bnccDescription: Utilizar o ponto final para marcar o encerramento de frases, garantindo clareza na leitura.
+      estimatedTimeMinutes: 8
+      instructions:
+        - Leia ou escute cada questão antes de responder.
+        - Use as teclas numéricas ou toque nas alternativas para marcar sua escolha.
+        - Explique para a turma como identificou a resposta correta.
+      objectives:
+        - Reconhecer quando utilizar ponto final em frases declarativas.
+        - Diferenciar frases completas de frases que precisam de continuação.
+      scoring:
+        correct: 10
+        incorrect: 0
+      adaptive:
+        increaseAfter: 2
+        decreaseAfter: 1
+      questions:
+        - id: ponto-final-basico-q1
+          type: multiple-choice
+          prompt: Qual frase está corretamente finalizada com ponto final?
+          hint: Observe se a frase transmite uma ideia completa.
+          options:
+            - id: ponto-final-basico-q1-1
+              text: A turma organizou a biblioteca.
+              isCorrect: true
+              feedback: Muito bem! A frase encerra uma ideia completa.
+            - id: ponto-final-basico-q1-2
+              text: Gostaria de brincar
+              isCorrect: false
+              feedback: Falta indicar se é pergunta ou frase incompleta.
+            - id: ponto-final-basico-q1-3
+              text: Onde está o livro.
+              isCorrect: false
+              feedback: A frase é uma pergunta e precisa de outro sinal.
+        - id: ponto-final-basico-q2
+          type: true-false
+          prompt: Ponto final encerra frases que informam?
+          hint: Pense em frases que apenas comunicam uma ideia.
+          statement: Usamos ponto final para encerrar frases que informam algo.
+          answer: true
+          feedback:
+            'true': Correto! O ponto final marca o término da afirmação.
+            'false': Releia exemplos de frases informativas com ponto final.
+      accessibility:
+        hints:
+          - audience: ESTUDANTE
+            text: 'Passo 1: Leia ou escute cada instrução e identifique onde uso do ponto final aparece no interativo.'
+          - audience: ESTUDANTE
+            text: 'Passo 2: Use Tab ou toque na tela para revisar todas as opções antes de confirmar.'
+          - audience: ESTUDANTE
+            text: 'Passo 3: Compartilhe com um colega por que escolheu a resposta apresentada.'
+          - audience: EDUCADOR
+            text: Guie a turma passo a passo, reforçando uso do ponto final com gestos, pictogramas e pausas.
+          - audience: FAMILIA
+            text: Envie sugestões de jogos ou músicas que reforcem uso do ponto final em casa.
+        feedback:
+          success: Excelente! Uso do ponto final ficou evidente nas suas escolhas.
+          encouragement: Caso erre, releia com calma e utilize marcadores sonoros ou visuais para apoiar a decisão.
+          retry: Experimente revisar as pistas destacadas antes de tentar novamente.
+          accessibility: Ofereça tempo extra, recursos táteis e apoio auditivo individual para quem precisar.
+        assets:
+          - slug: lp-material-caderno
+            type: IMAGEM
+            title: Caderno colorido para escrita
+        alternatives:
+          - title: TEXTO EM CAIXA ALTA
+            description: OFEREÇA CARTÕES COM USO DO PONTO FINAL DESTACADO PARA QUE TODES ACOMPANHEM.
+            steps:
+              - FORNEÇA LETRAS GRANDES E ESPAÇADAS.
+              - GRIFE RIMAS OU PALAVRAS-CHAVE EM COR VIVA.
+        audioCue:
+          title: SINAL SONORO
+          description: Utilize um chocalho ou palmas para marcar o momento de focar em uso do ponto final.
+          steps:
+            - Avise que o som indica a troca de etapa ou turno de fala.
+            - Repita o som e a instrução de forma pausada.
+        motorSupport:
+          - title: APOIO MOTOR
+            description: Disponibilize apoios físicos para navegação e registro das respostas.
+            steps:
+              - Ofereça ponteiras, clipes ampliados ou teclado virtual.
+              - Permita que duplas se alternem no controle do dispositivo.
+  - partial: ../../_partials/acolhimento-base.yaml
+    slug: pergunta-ou-prossegue
+    title: Pergunta ou Prossegue
+    prompt: Identifique se a frase deve terminar com ponto de interrogação.
+    type: QUIZ
+    difficulty: INICIAR
+    bncc:
+      code: EF01LP17
+      habilidades:
+        - EF01LP17
+        - EF01LP16
+    learningObjectives:
+      - Diferenciar perguntas de afirmações em frases curtas.
+      - Utilizar ponto de interrogação ao final de perguntas simples.
+    description: Pergunta ou Prossegue apresenta frases para que a turma identifique entonação interrogativa e selecione o sinal adequado.
+    metadata:
+      categoria: Identificação de perguntas
+      duracaoMinutos: 9
+      habilidades:
+        - EF01LP17
+        - EF01LP16
+      assetSlug: lp-letra-a
+      assetUsage: Utilize Ilustração da letra A como apoio visual para destacar uso do ponto de interrogação ao longo da atividade.
+      familiaEngajamento: Convide as famílias a observar uso do ponto de interrogação em histórias, cantigas ou jogos em casa.
+      habilidadesSecundarias:
+        - EF01LP16
+      interactiveSlug: quiz-pergunta-ou-prossegue
+    accessibility:
+      hints:
+        - audience: ESTUDANTE
+          text: 'Passo 1: Observe o enunciado com atenção e sublinhe mentalmente uso do ponto de interrogação.'
+        - audience: ESTUDANTE
+          text: 'Passo 2: Compare cada opção, repetindo os sons em voz alta se ajudar.'
+        - audience: ESTUDANTE
+          text: 'Passo 3: Respire fundo e confirme a alternativa escolhida com segurança.'
+        - audience: EDUCADOR
+          text: Guie a turma passo a passo, reforçando uso do ponto de interrogação com gestos, pictogramas e pausas.
+        - audience: FAMILIA
+          text: Envie sugestões de jogos ou músicas que reforcem uso do ponto de interrogação em casa.
+      feedback:
+        success: Excelente! Uso do ponto de interrogação ficou evidente nas suas escolhas.
+        encouragement: Caso erre, releia com calma e utilize marcadores sonoros ou visuais para apoiar a decisão.
+        retry: Experimente revisar as pistas destacadas antes de tentar novamente.
+        accessibility: Ofereça tempo extra, recursos táteis e apoio auditivo individual para quem precisar.
+      assets:
+        - slug: lp-letra-a
+          type: IMAGEM
+          title: Ilustração da letra A
+      alternatives:
+        - title: TEXTO EM CAIXA ALTA
+          description: OFEREÇA CARTÕES COM USO DO PONTO DE INTERROGAÇÃO DESTACADO PARA QUE TODES ACOMPANHEM.
+          steps:
+            - FORNEÇA LETRAS GRANDES E ESPAÇADAS.
+            - GRIFE RIMAS OU PALAVRAS-CHAVE EM COR VIVA.
+      audioCue:
+        title: SINAL SONORO
+        description: Utilize um chocalho ou palmas para marcar o momento de focar em uso do ponto de interrogação.
+        steps:
+          - Avise que o som indica a troca de etapa ou turno de fala.
+          - Repita o som e a instrução de forma pausada.
+      motorSupport:
+        - title: APOIO MOTOR
+          description: Disponibilize apoios físicos para navegação e registro das respostas.
+          steps:
+            - Ofereça ponteiras, clipes ampliados ou teclado virtual.
+            - Permita que duplas se alternem no controle do dispositivo.
+    prerequisites:
+      - type: ACTIVITY
+        reference: ponto-final-basico
+        description: Relembrar frases declarativas antes de observar perguntas.
+    interactive:
+      slug: quiz-pergunta-ou-prossegue
+      title: Pergunta ou Prossegue — Quiz
+      type: QUIZ
+      bnccDescription: Reconhecer e utilizar ponto de interrogação e ponto de exclamação para marcar perguntas e exclamações.
+      estimatedTimeMinutes: 9
+      instructions:
+        - Leia ou escute cada questão antes de responder.
+        - Use as teclas numéricas ou toque nas alternativas para marcar sua escolha.
+        - Explique para a turma como identificou a resposta correta.
+      objectives:
+        - Diferenciar perguntas de afirmações em frases curtas.
+        - Utilizar ponto de interrogação ao final de perguntas simples.
+      scoring:
+        correct: 10
+        incorrect: 0
+      adaptive:
+        increaseAfter: 2
+        decreaseAfter: 1
+      questions:
+        - id: pergunta-ou-prossegue-q1
+          type: multiple-choice
+          prompt: A frase 'Você vai ao recreio agora' pede ponto de interrogação?
+          hint: Observe se a frase faz uma pergunta.
+          options:
+            - id: pergunta-ou-prossegue-q1-1
+              text: Sim, porque é uma pergunta direta.
+              isCorrect: true
+              feedback: Ótimo! A frase solicita resposta e precisa de interrogação.
+            - id: pergunta-ou-prossegue-q1-2
+              text: Não, porque é uma afirmação.
+              isCorrect: false
+              feedback: Perceba que há entonação de pergunta na frase.
+            - id: pergunta-ou-prossegue-q1-3
+              text: Talvez, depende do humor.
+              isCorrect: false
+              feedback: Analise se a frase pede informação do interlocutor.
+        - id: pergunta-ou-prossegue-q2
+          type: true-false
+          prompt: Perguntas diretas usam ponto de interrogação?
+          hint: Pense em como perguntamos algo a alguém.
+          statement: Perguntas diretas terminam com ponto de interrogação.
+          answer: true
+          feedback:
+            'true': Correto! Perguntas pedem o sinal de interrogação.
+            'false': Relembre exemplos de perguntas do cotidiano.
+      accessibility:
+        hints:
+          - audience: ESTUDANTE
+            text: 'Passo 1: Leia ou escute cada instrução e identifique onde uso do ponto de interrogação aparece no interativo.'
+          - audience: ESTUDANTE
+            text: 'Passo 2: Use Tab ou toque na tela para revisar todas as opções antes de confirmar.'
+          - audience: ESTUDANTE
+            text: 'Passo 3: Compartilhe com um colega por que escolheu a resposta apresentada.'
+          - audience: EDUCADOR
+            text: Guie a turma passo a passo, reforçando uso do ponto de interrogação com gestos, pictogramas e pausas.
+          - audience: FAMILIA
+            text: Envie sugestões de jogos ou músicas que reforcem uso do ponto de interrogação em casa.
+        feedback:
+          success: Excelente! Uso do ponto de interrogação ficou evidente nas suas escolhas.
+          encouragement: Caso erre, releia com calma e utilize marcadores sonoros ou visuais para apoiar a decisão.
+          retry: Experimente revisar as pistas destacadas antes de tentar novamente.
+          accessibility: Ofereça tempo extra, recursos táteis e apoio auditivo individual para quem precisar.
+        assets:
+          - slug: lp-letra-a
+            type: IMAGEM
+            title: Ilustração da letra A
+        alternatives:
+          - title: TEXTO EM CAIXA ALTA
+            description: OFEREÇA CARTÕES COM USO DO PONTO DE INTERROGAÇÃO DESTACADO PARA QUE TODES ACOMPANHEM.
+            steps:
+              - FORNEÇA LETRAS GRANDES E ESPAÇADAS.
+              - GRIFE RIMAS OU PALAVRAS-CHAVE EM COR VIVA.
+        audioCue:
+          title: SINAL SONORO
+          description: Utilize um chocalho ou palmas para marcar o momento de focar em uso do ponto de interrogação.
+          steps:
+            - Avise que o som indica a troca de etapa ou turno de fala.
+            - Repita o som e a instrução de forma pausada.
+        motorSupport:
+          - title: APOIO MOTOR
+            description: Disponibilize apoios físicos para navegação e registro das respostas.
+            steps:
+              - Ofereça ponteiras, clipes ampliados ou teclado virtual.
+              - Permita que duplas se alternem no controle do dispositivo.
+  - partial: ../../_partials/acolhimento-base.yaml
+    slug: emocao-na-frase
+    title: Emoção na Frase
+    prompt: Selecione a frase que precisa de ponto de exclamação.
+    type: QUIZ
+    difficulty: PRATICAR
+    bncc:
+      code: EF01LP17
+      habilidades:
+        - EF01LP17
+    learningObjectives:
+      - Identificar frases que expressam surpresa, alegria ou emoção.
+      - Utilizar ponto de exclamação para reforçar entonação emotiva.
+    description: Emoção na Frase apresenta diferentes intenções comunicativas para que a turma escolha quando usar exclamação.
+    metadata:
+      categoria: Expressão de emoção
+      duracaoMinutos: 9
+      habilidades:
+        - EF01LP17
+      assetSlug: lp-letra-e
+      assetUsage: Utilize Ilustração da letra E como apoio visual para destacar uso do ponto de exclamação ao longo da atividade.
+      familiaEngajamento: Convide as famílias a observar uso do ponto de exclamação em histórias, cantigas ou jogos em casa.
+      interactiveSlug: quiz-emocao-na-frase
+    accessibility:
+      hints:
+        - audience: ESTUDANTE
+          text: 'Passo 1: Observe o enunciado com atenção e sublinhe mentalmente uso do ponto de exclamação.'
+        - audience: ESTUDANTE
+          text: 'Passo 2: Compare cada opção, repetindo os sons em voz alta se ajudar.'
+        - audience: ESTUDANTE
+          text: 'Passo 3: Respire fundo e confirme a alternativa escolhida com segurança.'
+        - audience: EDUCADOR
+          text: Guie a turma passo a passo, reforçando uso do ponto de exclamação com gestos, pictogramas e pausas.
+        - audience: FAMILIA
+          text: Envie sugestões de jogos ou músicas que reforcem uso do ponto de exclamação em casa.
+      feedback:
+        success: Excelente! Uso do ponto de exclamação ficou evidente nas suas escolhas.
+        encouragement: Caso erre, releia com calma e utilize marcadores sonoros ou visuais para apoiar a decisão.
+        retry: Experimente revisar as pistas destacadas antes de tentar novamente.
+        accessibility: Ofereça tempo extra, recursos táteis e apoio auditivo individual para quem precisar.
+      assets:
+        - slug: lp-letra-e
+          type: IMAGEM
+          title: Ilustração da letra E
+      alternatives:
+        - title: TEXTO EM CAIXA ALTA
+          description: OFEREÇA CARTÕES COM USO DO PONTO DE EXCLAMAÇÃO DESTACADO PARA QUE TODES ACOMPANHEM.
+          steps:
+            - FORNEÇA LETRAS GRANDES E ESPAÇADAS.
+            - GRIFE RIMAS OU PALAVRAS-CHAVE EM COR VIVA.
+      audioCue:
+        title: SINAL SONORO
+        description: Utilize um chocalho ou palmas para marcar o momento de focar em uso do ponto de exclamação.
+        steps:
+          - Avise que o som indica a troca de etapa ou turno de fala.
+          - Repita o som e a instrução de forma pausada.
+      motorSupport:
+        - title: APOIO MOTOR
+          description: Disponibilize apoios físicos para navegação e registro das respostas.
+          steps:
+            - Ofereça ponteiras, clipes ampliados ou teclado virtual.
+            - Permita que duplas se alternem no controle do dispositivo.
+    prerequisites:
+      - type: ACTIVITY
+        reference: pergunta-ou-prossegue
+        description: Relembrar perguntas antes de observar frases exclamativas.
+    interactive:
+      slug: quiz-emocao-na-frase
+      title: Emoção na Frase — Quiz
+      type: QUIZ
+      bnccDescription: Reconhecer e utilizar ponto de interrogação e ponto de exclamação para marcar perguntas e exclamações.
+      estimatedTimeMinutes: 9
+      instructions:
+        - Leia ou escute cada questão antes de responder.
+        - Use as teclas numéricas ou toque nas alternativas para marcar sua escolha.
+        - Explique para a turma como identificou a resposta correta.
+      objectives:
+        - Identificar frases que expressam surpresa, alegria ou emoção.
+        - Utilizar ponto de exclamação para reforçar entonação emotiva.
+      scoring:
+        correct: 10
+        incorrect: 0
+      adaptive:
+        increaseAfter: 2
+        decreaseAfter: 1
+      questions:
+        - id: emocao-na-frase-q1
+          type: multiple-choice
+          prompt: Qual frase precisa de ponto de exclamação no final?
+          hint: Observe a emoção transmitida.
+          options:
+            - id: emocao-na-frase-q1-1
+              text: Que alegria rever vocês
+              isCorrect: true
+              feedback: Isso! A frase expressa emoção e pede exclamação.
+            - id: emocao-na-frase-q1-2
+              text: Vamos à biblioteca
+              isCorrect: false
+              feedback: Tente perceber se há intensidade na frase.
+            - id: emocao-na-frase-q1-3
+              text: A tarefa é para amanhã
+              isCorrect: false
+              feedback: A frase apenas informa algo.
+        - id: emocao-na-frase-q2
+          type: true-false
+          prompt: Surpresa pode usar exclamação?
+          hint: Lembre de expressões de alegria ou medo.
+          statement: Frases que expressam surpresa podem terminar com ponto de exclamação.
+          answer: true
+          feedback:
+            'true': Perfeito! O ponto de exclamação destaca a emoção.
+            'false': Relembre frases que mostram espanto e recebem exclamação.
+      accessibility:
+        hints:
+          - audience: ESTUDANTE
+            text: 'Passo 1: Leia ou escute cada instrução e identifique onde uso do ponto de exclamação aparece no interativo.'
+          - audience: ESTUDANTE
+            text: 'Passo 2: Use Tab ou toque na tela para revisar todas as opções antes de confirmar.'
+          - audience: ESTUDANTE
+            text: 'Passo 3: Compartilhe com um colega por que escolheu a resposta apresentada.'
+          - audience: EDUCADOR
+            text: Guie a turma passo a passo, reforçando uso do ponto de exclamação com gestos, pictogramas e pausas.
+          - audience: FAMILIA
+            text: Envie sugestões de jogos ou músicas que reforcem uso do ponto de exclamação em casa.
+        feedback:
+          success: Excelente! Uso do ponto de exclamação ficou evidente nas suas escolhas.
+          encouragement: Caso erre, releia com calma e utilize marcadores sonoros ou visuais para apoiar a decisão.
+          retry: Experimente revisar as pistas destacadas antes de tentar novamente.
+          accessibility: Ofereça tempo extra, recursos táteis e apoio auditivo individual para quem precisar.
+        assets:
+          - slug: lp-letra-e
+            type: IMAGEM
+            title: Ilustração da letra E
+        alternatives:
+          - title: TEXTO EM CAIXA ALTA
+            description: OFEREÇA CARTÕES COM USO DO PONTO DE EXCLAMAÇÃO DESTACADO PARA QUE TODES ACOMPANHEM.
+            steps:
+              - FORNEÇA LETRAS GRANDES E ESPAÇADAS.
+              - GRIFE RIMAS OU PALAVRAS-CHAVE EM COR VIVA.
+        audioCue:
+          title: SINAL SONORO
+          description: Utilize um chocalho ou palmas para marcar o momento de focar em uso do ponto de exclamação.
+          steps:
+            - Avise que o som indica a troca de etapa ou turno de fala.
+            - Repita o som e a instrução de forma pausada.
+        motorSupport:
+          - title: APOIO MOTOR
+            description: Disponibilize apoios físicos para navegação e registro das respostas.
+            steps:
+              - Ofereça ponteiras, clipes ampliados ou teclado virtual.
+              - Permita que duplas se alternem no controle do dispositivo.
+  - partial: ../../_partials/acolhimento-base.yaml
+    slug: escuta-da-pontuacao
+    title: Escuta da Pontuação
+    prompt: Analise a situação e identifique qual sinal mantém a clareza da frase.
+    type: QUIZ
+    difficulty: PRATICAR
+    bncc:
+      code: EF01LP16
+      habilidades:
+        - EF01LP16
+        - EF01LP17
+    learningObjectives:
+      - Comparar diferentes sinais para manter a clareza da frase.
+      - Discutir em grupo a melhor escolha de pontuação.
+    description: Escuta da Pontuação convida a turma a selecionar sinais que melhor representam a intenção comunicativa.
+    metadata:
+      categoria: Escolha de sinais
+      duracaoMinutos: 10
+      habilidades:
+        - EF01LP16
+        - EF01LP17
+      assetSlug: lp-silaba-ba
+      assetUsage: Utilize Cartão da sílaba BA como apoio visual para destacar seleção de sinais básicos ao longo da atividade.
+      familiaEngajamento: Convide as famílias a observar seleção de sinais básicos em histórias, cantigas ou jogos em casa.
+      habilidadesSecundarias:
+        - EF01LP17
+      interactiveSlug: quiz-escuta-da-pontuacao
+    accessibility:
+      hints:
+        - audience: ESTUDANTE
+          text: 'Passo 1: Observe o enunciado com atenção e sublinhe mentalmente seleção de sinais básicos.'
+        - audience: ESTUDANTE
+          text: 'Passo 2: Compare cada opção, repetindo os sons em voz alta se ajudar.'
+        - audience: ESTUDANTE
+          text: 'Passo 3: Respire fundo e confirme a alternativa escolhida com segurança.'
+        - audience: EDUCADOR
+          text: Guie a turma passo a passo, reforçando seleção de sinais básicos com gestos, pictogramas e pausas.
+        - audience: FAMILIA
+          text: Envie sugestões de jogos ou músicas que reforcem seleção de sinais básicos em casa.
+      feedback:
+        success: Excelente! Seleção de sinais básicos ficou evidente nas suas escolhas.
+        encouragement: Caso erre, releia com calma e utilize marcadores sonoros ou visuais para apoiar a decisão.
+        retry: Experimente revisar as pistas destacadas antes de tentar novamente.
+        accessibility: Ofereça tempo extra, recursos táteis e apoio auditivo individual para quem precisar.
+      assets:
+        - slug: lp-silaba-ba
+          type: IMAGEM
+          title: Cartão da sílaba BA
+      alternatives:
+        - title: TEXTO EM CAIXA ALTA
+          description: OFEREÇA CARTÕES COM SELEÇÃO DE SINAIS BÁSICOS DESTACADO PARA QUE TODES ACOMPANHEM.
+          steps:
+            - FORNEÇA LETRAS GRANDES E ESPAÇADAS.
+            - GRIFE RIMAS OU PALAVRAS-CHAVE EM COR VIVA.
+      audioCue:
+        title: SINAL SONORO
+        description: Utilize um chocalho ou palmas para marcar o momento de focar em seleção de sinais básicos.
+        steps:
+          - Avise que o som indica a troca de etapa ou turno de fala.
+          - Repita o som e a instrução de forma pausada.
+      motorSupport:
+        - title: APOIO MOTOR
+          description: Disponibilize apoios físicos para navegação e registro das respostas.
+          steps:
+            - Ofereça ponteiras, clipes ampliados ou teclado virtual.
+            - Permita que duplas se alternem no controle do dispositivo.
+    prerequisites:
+      - type: ACTIVITY
+        reference: emocao-na-frase
+        description: Relembre emoções antes de escolher o sinal adequado.
+    interactive:
+      slug: quiz-escuta-da-pontuacao
+      title: Escuta da Pontuação — Quiz
+      type: QUIZ
+      bnccDescription: Utilizar o ponto final para marcar o encerramento de frases, garantindo clareza na leitura.
+      estimatedTimeMinutes: 10
+      instructions:
+        - Leia ou escute cada questão antes de responder.
+        - Use as teclas numéricas ou toque nas alternativas para marcar sua escolha.
+        - Explique para a turma como identificou a resposta correta.
+      objectives:
+        - Comparar diferentes sinais para manter a clareza da frase.
+        - Discutir em grupo a melhor escolha de pontuação.
+      scoring:
+        correct: 10
+        incorrect: 0
+      adaptive:
+        increaseAfter: 2
+        decreaseAfter: 1
+      questions:
+        - id: escuta-da-pontuacao-q1
+          type: multiple-choice
+          prompt: 'Frase: ''Você terminou a atividade''. Qual sinal mantém a intenção de pergunta?'
+          hint: Pense na entonação pretendida.
+          options:
+            - id: escuta-da-pontuacao-q1-1
+              text: Ponto de interrogação
+              isCorrect: true
+              feedback: Ótimo! A frase passa a ser uma pergunta.
+            - id: escuta-da-pontuacao-q1-2
+              text: Ponto final
+              isCorrect: false
+              feedback: Assim a frase vira afirmação.
+            - id: escuta-da-pontuacao-q1-3
+              text: Ponto de exclamação
+              isCorrect: false
+              feedback: Observe se há emoção intensa na frase.
+        - id: escuta-da-pontuacao-q2
+          type: true-false
+          prompt: Pontuação diferente muda o sentido?
+          hint: Compare frases com ? e !
+          statement: O mesmo enunciado pode ganhar sentidos diferentes com sinais distintos.
+          answer: true
+          feedback:
+            'true': Correto! A escolha do sinal altera a intenção.
+            'false': Experimente ler a frase com sinais variados para perceber a diferença.
+      accessibility:
+        hints:
+          - audience: ESTUDANTE
+            text: 'Passo 1: Leia ou escute cada instrução e identifique onde seleção de sinais básicos aparece no interativo.'
+          - audience: ESTUDANTE
+            text: 'Passo 2: Use Tab ou toque na tela para revisar todas as opções antes de confirmar.'
+          - audience: ESTUDANTE
+            text: 'Passo 3: Compartilhe com um colega por que escolheu a resposta apresentada.'
+          - audience: EDUCADOR
+            text: Guie a turma passo a passo, reforçando seleção de sinais básicos com gestos, pictogramas e pausas.
+          - audience: FAMILIA
+            text: Envie sugestões de jogos ou músicas que reforcem seleção de sinais básicos em casa.
+        feedback:
+          success: Excelente! Seleção de sinais básicos ficou evidente nas suas escolhas.
+          encouragement: Caso erre, releia com calma e utilize marcadores sonoros ou visuais para apoiar a decisão.
+          retry: Experimente revisar as pistas destacadas antes de tentar novamente.
+          accessibility: Ofereça tempo extra, recursos táteis e apoio auditivo individual para quem precisar.
+        assets:
+          - slug: lp-silaba-ba
+            type: IMAGEM
+            title: Cartão da sílaba BA
+        alternatives:
+          - title: TEXTO EM CAIXA ALTA
+            description: OFEREÇA CARTÕES COM SELEÇÃO DE SINAIS BÁSICOS DESTACADO PARA QUE TODES ACOMPANHEM.
+            steps:
+              - FORNEÇA LETRAS GRANDES E ESPAÇADAS.
+              - GRIFE RIMAS OU PALAVRAS-CHAVE EM COR VIVA.
+        audioCue:
+          title: SINAL SONORO
+          description: Utilize um chocalho ou palmas para marcar o momento de focar em seleção de sinais básicos.
+          steps:
+            - Avise que o som indica a troca de etapa ou turno de fala.
+            - Repita o som e a instrução de forma pausada.
+        motorSupport:
+          - title: APOIO MOTOR
+            description: Disponibilize apoios físicos para navegação e registro das respostas.
+            steps:
+              - Ofereça ponteiras, clipes ampliados ou teclado virtual.
+              - Permita que duplas se alternem no controle do dispositivo.
+  - partial: ../../_partials/acolhimento-base.yaml
+    slug: corrige-a-pontuacao
+    title: Corrige a Pontuação
+    prompt: Selecione a versão pontuada corretamente da frase apresentada.
+    type: QUIZ
+    difficulty: DOMINAR
+    bncc:
+      code: EF01LP16
+      habilidades:
+        - EF01LP16
+        - EF01LP17
+    learningObjectives:
+      - Revisar frases curtas, ajustando pontuação quando necessário.
+      - Justificar oralmente a escolha do sinal correto.
+    description: Corrige a Pontuação desafia a turma a comparar opções e selecionar a frase revisada corretamente.
+    metadata:
+      categoria: Revisão de pontuação
+      duracaoMinutos: 10
+      habilidades:
+        - EF01LP16
+        - EF01LP17
+      assetSlug: lp-letra-e
+      assetUsage: Utilize Ilustração da letra E como apoio visual para destacar revisão de frases ao longo da atividade.
+      familiaEngajamento: Convide as famílias a observar revisão de frases em histórias, cantigas ou jogos em casa.
+      habilidadesSecundarias:
+        - EF01LP17
+      interactiveSlug: quiz-corrige-a-pontuacao
+    accessibility:
+      hints:
+        - audience: ESTUDANTE
+          text: 'Passo 1: Observe o enunciado com atenção e sublinhe mentalmente revisão de frases.'
+        - audience: ESTUDANTE
+          text: 'Passo 2: Compare cada opção, repetindo os sons em voz alta se ajudar.'
+        - audience: ESTUDANTE
+          text: 'Passo 3: Respire fundo e confirme a alternativa escolhida com segurança.'
+        - audience: EDUCADOR
+          text: Guie a turma passo a passo, reforçando revisão de frases com gestos, pictogramas e pausas.
+        - audience: FAMILIA
+          text: Envie sugestões de jogos ou músicas que reforcem revisão de frases em casa.
+      feedback:
+        success: Excelente! Revisão de frases ficou evidente nas suas escolhas.
+        encouragement: Caso erre, releia com calma e utilize marcadores sonoros ou visuais para apoiar a decisão.
+        retry: Experimente revisar as pistas destacadas antes de tentar novamente.
+        accessibility: Ofereça tempo extra, recursos táteis e apoio auditivo individual para quem precisar.
+      assets:
+        - slug: lp-letra-e
+          type: IMAGEM
+          title: Ilustração da letra E
+      alternatives:
+        - title: TEXTO EM CAIXA ALTA
+          description: OFEREÇA CARTÕES COM REVISÃO DE FRASES DESTACADO PARA QUE TODES ACOMPANHEM.
+          steps:
+            - FORNEÇA LETRAS GRANDES E ESPAÇADAS.
+            - GRIFE RIMAS OU PALAVRAS-CHAVE EM COR VIVA.
+      audioCue:
+        title: SINAL SONORO
+        description: Utilize um chocalho ou palmas para marcar o momento de focar em revisão de frases.
+        steps:
+          - Avise que o som indica a troca de etapa ou turno de fala.
+          - Repita o som e a instrução de forma pausada.
+      motorSupport:
+        - title: APOIO MOTOR
+          description: Disponibilize apoios físicos para navegação e registro das respostas.
+          steps:
+            - Ofereça ponteiras, clipes ampliados ou teclado virtual.
+            - Permita que duplas se alternem no controle do dispositivo.
+    prerequisites:
+      - type: ACTIVITY
+        reference: escuta-da-pontuacao
+        description: Usar a discussão sobre sinais antes de revisar frases.
+    interactive:
+      slug: quiz-corrige-a-pontuacao
+      title: Corrige a Pontuação — Quiz
+      type: QUIZ
+      bnccDescription: Utilizar o ponto final para marcar o encerramento de frases, garantindo clareza na leitura.
+      estimatedTimeMinutes: 10
+      instructions:
+        - Leia ou escute cada questão antes de responder.
+        - Use as teclas numéricas ou toque nas alternativas para marcar sua escolha.
+        - Explique para a turma como identificou a resposta correta.
+      objectives:
+        - Revisar frases curtas, ajustando pontuação quando necessário.
+        - Justificar oralmente a escolha do sinal correto.
+      scoring:
+        correct: 10
+        incorrect: 0
+      adaptive:
+        increaseAfter: 2
+        decreaseAfter: 1
+      questions:
+        - id: corrige-a-pontuacao-q1
+          type: multiple-choice
+          prompt: Qual versão está pontuada corretamente?
+          hint: Observe a intenção e escolha o sinal adequado.
+          options:
+            - id: corrige-a-pontuacao-q1-1
+              text: Você vem brincar comigo?
+              isCorrect: true
+              feedback: Excelente! A frase pergunta algo e usa interrogação.
+            - id: corrige-a-pontuacao-q1-2
+              text: Você vem brincar comigo!
+              isCorrect: false
+              feedback: Esse sinal indica emoção, não uma pergunta.
+            - id: corrige-a-pontuacao-q1-3
+              text: Você vem brincar comigo.
+              isCorrect: false
+              feedback: 'Cuidado: assim vira afirmação.'
+        - id: corrige-a-pontuacao-q2
+          type: true-false
+          prompt: Revisar pontuação deixa o texto mais claro?
+          hint: Pense em frases pontuadas de forma errada.
+          statement: Revisar a pontuação ajuda a tornar o texto mais claro.
+          answer: true
+          feedback:
+            'true': Isso! Revisar garante que a mensagem seja compreendida.
+            'false': Compare a frase antes e depois da revisão para notar a diferença.
+      accessibility:
+        hints:
+          - audience: ESTUDANTE
+            text: 'Passo 1: Leia ou escute cada instrução e identifique onde revisão de frases aparece no interativo.'
+          - audience: ESTUDANTE
+            text: 'Passo 2: Use Tab ou toque na tela para revisar todas as opções antes de confirmar.'
+          - audience: ESTUDANTE
+            text: 'Passo 3: Compartilhe com um colega por que escolheu a resposta apresentada.'
+          - audience: EDUCADOR
+            text: Guie a turma passo a passo, reforçando revisão de frases com gestos, pictogramas e pausas.
+          - audience: FAMILIA
+            text: Envie sugestões de jogos ou músicas que reforcem revisão de frases em casa.
+        feedback:
+          success: Excelente! Revisão de frases ficou evidente nas suas escolhas.
+          encouragement: Caso erre, releia com calma e utilize marcadores sonoros ou visuais para apoiar a decisão.
+          retry: Experimente revisar as pistas destacadas antes de tentar novamente.
+          accessibility: Ofereça tempo extra, recursos táteis e apoio auditivo individual para quem precisar.
+        assets:
+          - slug: lp-letra-e
+            type: IMAGEM
+            title: Ilustração da letra E
+        alternatives:
+          - title: TEXTO EM CAIXA ALTA
+            description: OFEREÇA CARTÕES COM REVISÃO DE FRASES DESTACADO PARA QUE TODES ACOMPANHEM.
+            steps:
+              - FORNEÇA LETRAS GRANDES E ESPAÇADAS.
+              - GRIFE RIMAS OU PALAVRAS-CHAVE EM COR VIVA.
+        audioCue:
+          title: SINAL SONORO
+          description: Utilize um chocalho ou palmas para marcar o momento de focar em revisão de frases.
+          steps:
+            - Avise que o som indica a troca de etapa ou turno de fala.
+            - Repita o som e a instrução de forma pausada.
+        motorSupport:
+          - title: APOIO MOTOR
+            description: Disponibilize apoios físicos para navegação e registro das respostas.
+            steps:
+              - Ofereça ponteiras, clipes ampliados ou teclado virtual.
+              - Permita que duplas se alternem no controle do dispositivo.
+  - partial: ../../_partials/acolhimento-base.yaml
+    slug: escolha-o-sinal
+    title: Escolha o Sinal
+    prompt: Determine qual sinal melhor completa a frase de acordo com a intenção.
+    type: QUIZ
+    difficulty: DOMINAR
+    bncc:
+      code: EF01LP17
+      habilidades:
+        - EF01LP17
+        - EF01LP16
+    learningObjectives:
+      - Selecionar sinais de pontuação considerando entonação e intenção.
+      - Argumentar sobre escolhas de pontuação em pequenos grupos.
+    description: Escolha o Sinal convida os estudantes a analisar intenções e selecionar o sinal mais coerente para cada frase.
+    metadata:
+      categoria: Uso flexível de sinais
+      duracaoMinutos: 11
+      habilidades:
+        - EF01LP17
+        - EF01LP16
+      assetSlug: lp-silaba-la
+      assetUsage: Utilize Cartão da sílaba LA como apoio visual para destacar flexibilidade no uso de sinais ao longo da atividade.
+      familiaEngajamento: Convide as famílias a observar flexibilidade no uso de sinais em histórias, cantigas ou jogos em casa.
+      habilidadesSecundarias:
+        - EF01LP16
+      interactiveSlug: quiz-escolha-o-sinal
+    accessibility:
+      hints:
+        - audience: ESTUDANTE
+          text: 'Passo 1: Observe o enunciado com atenção e sublinhe mentalmente flexibilidade no uso de sinais.'
+        - audience: ESTUDANTE
+          text: 'Passo 2: Compare cada opção, repetindo os sons em voz alta se ajudar.'
+        - audience: ESTUDANTE
+          text: 'Passo 3: Respire fundo e confirme a alternativa escolhida com segurança.'
+        - audience: EDUCADOR
+          text: Guie a turma passo a passo, reforçando flexibilidade no uso de sinais com gestos, pictogramas e pausas.
+        - audience: FAMILIA
+          text: Envie sugestões de jogos ou músicas que reforcem flexibilidade no uso de sinais em casa.
+      feedback:
+        success: Excelente! Flexibilidade no uso de sinais ficou evidente nas suas escolhas.
+        encouragement: Caso erre, releia com calma e utilize marcadores sonoros ou visuais para apoiar a decisão.
+        retry: Experimente revisar as pistas destacadas antes de tentar novamente.
+        accessibility: Ofereça tempo extra, recursos táteis e apoio auditivo individual para quem precisar.
+      assets:
+        - slug: lp-silaba-la
+          type: IMAGEM
+          title: Cartão da sílaba LA
+      alternatives:
+        - title: TEXTO EM CAIXA ALTA
+          description: OFEREÇA CARTÕES COM FLEXIBILIDADE NO USO DE SINAIS DESTACADO PARA QUE TODES ACOMPANHEM.
+          steps:
+            - FORNEÇA LETRAS GRANDES E ESPAÇADAS.
+            - GRIFE RIMAS OU PALAVRAS-CHAVE EM COR VIVA.
+      audioCue:
+        title: SINAL SONORO
+        description: Utilize um chocalho ou palmas para marcar o momento de focar em flexibilidade no uso de sinais.
+        steps:
+          - Avise que o som indica a troca de etapa ou turno de fala.
+          - Repita o som e a instrução de forma pausada.
+      motorSupport:
+        - title: APOIO MOTOR
+          description: Disponibilize apoios físicos para navegação e registro das respostas.
+          steps:
+            - Ofereça ponteiras, clipes ampliados ou teclado virtual.
+            - Permita que duplas se alternem no controle do dispositivo.
+    prerequisites:
+      - type: ACTIVITY
+        reference: corrige-a-pontuacao
+        description: Retomar revisão antes de tomar decisões flexíveis.
+    interactive:
+      slug: quiz-escolha-o-sinal
+      title: Escolha o Sinal — Quiz
+      type: QUIZ
+      bnccDescription: Reconhecer e utilizar ponto de interrogação e ponto de exclamação para marcar perguntas e exclamações.
+      estimatedTimeMinutes: 11
+      instructions:
+        - Leia ou escute cada questão antes de responder.
+        - Use as teclas numéricas ou toque nas alternativas para marcar sua escolha.
+        - Explique para a turma como identificou a resposta correta.
+      objectives:
+        - Selecionar sinais de pontuação considerando entonação e intenção.
+        - Argumentar sobre escolhas de pontuação em pequenos grupos.
+      scoring:
+        correct: 10
+        incorrect: 0
+      adaptive:
+        increaseAfter: 2
+        decreaseAfter: 1
+      questions:
+        - id: escolha-o-sinal-q1
+          type: multiple-choice
+          prompt: 'Frase: ''Que surpresa encontrar você aqui'' Qual sinal representa melhor a intenção?'
+          hint: Pense na emoção transmitida pelo falante.
+          options:
+            - id: escolha-o-sinal-q1-1
+              text: Ponto de exclamação
+              isCorrect: true
+              feedback: Perfeito! A frase demonstra surpresa.
+            - id: escolha-o-sinal-q1-2
+              text: Ponto final
+              isCorrect: false
+              feedback: Esse sinal não reforça a surpresa.
+            - id: escolha-o-sinal-q1-3
+              text: Ponto de interrogação
+              isCorrect: false
+              feedback: A frase não pede resposta.
+        - id: escolha-o-sinal-q2
+          type: true-false
+          prompt: Intenção ajuda a escolher o sinal?
+          hint: Pense na diferença entre contar algo e comemorar.
+          statement: Entender a intenção da fala ajuda a escolher a pontuação.
+          answer: true
+          feedback:
+            'true': Correto! A intenção orienta o uso dos sinais.
+            'false': Compare frases com diferentes intenções para confirmar.
+      accessibility:
+        hints:
+          - audience: ESTUDANTE
+            text: 'Passo 1: Leia ou escute cada instrução e identifique onde flexibilidade no uso de sinais aparece no interativo.'
+          - audience: ESTUDANTE
+            text: 'Passo 2: Use Tab ou toque na tela para revisar todas as opções antes de confirmar.'
+          - audience: ESTUDANTE
+            text: 'Passo 3: Compartilhe com um colega por que escolheu a resposta apresentada.'
+          - audience: EDUCADOR
+            text: Guie a turma passo a passo, reforçando flexibilidade no uso de sinais com gestos, pictogramas e pausas.
+          - audience: FAMILIA
+            text: Envie sugestões de jogos ou músicas que reforcem flexibilidade no uso de sinais em casa.
+        feedback:
+          success: Excelente! Flexibilidade no uso de sinais ficou evidente nas suas escolhas.
+          encouragement: Caso erre, releia com calma e utilize marcadores sonoros ou visuais para apoiar a decisão.
+          retry: Experimente revisar as pistas destacadas antes de tentar novamente.
+          accessibility: Ofereça tempo extra, recursos táteis e apoio auditivo individual para quem precisar.
+        assets:
+          - slug: lp-silaba-la
+            type: IMAGEM
+            title: Cartão da sílaba LA
+        alternatives:
+          - title: TEXTO EM CAIXA ALTA
+            description: OFEREÇA CARTÕES COM FLEXIBILIDADE NO USO DE SINAIS DESTACADO PARA QUE TODES ACOMPANHEM.
+            steps:
+              - FORNEÇA LETRAS GRANDES E ESPAÇADAS.
+              - GRIFE RIMAS OU PALAVRAS-CHAVE EM COR VIVA.
+        audioCue:
+          title: SINAL SONORO
+          description: Utilize um chocalho ou palmas para marcar o momento de focar em flexibilidade no uso de sinais.
+          steps:
+            - Avise que o som indica a troca de etapa ou turno de fala.
+            - Repita o som e a instrução de forma pausada.
+        motorSupport:
+          - title: APOIO MOTOR
+            description: Disponibilize apoios físicos para navegação e registro das respostas.
+            steps:
+              - Ofereça ponteiras, clipes ampliados ou teclado virtual.
+              - Permita que duplas se alternem no controle do dispositivo.
+  - partial: ../../_partials/acolhimento-base.yaml
+    slug: puzzle-sinais
+    title: Sinais e Frases
+    prompt: Associe a frase ao sinal de pontuação correspondente.
+    type: PUZZLE
+    difficulty: INICIAR
+    bncc:
+      code: EF01LP16
+      habilidades:
+        - EF01LP16
+        - EF01LP17
+    learningObjectives:
+      - Explorar reconhecimento de sinais em situações mediadas pelo educador.
+      - Compartilhar estratégias pessoais com colegas durante a atividade.
+    description: Sinais e Frases incentiva a turma a explorar reconhecimento de sinais com apoios variados.
+    metadata:
+      categoria: Associação básica
+      duracaoMinutos: 9
+      habilidades:
+        - EF01LP16
+        - EF01LP17
+      assetSlug: lp-letra-a
+      assetUsage: Utilize Ilustração da letra A como apoio visual para destacar reconhecimento de sinais ao longo da atividade.
+      familiaEngajamento: Convide as famílias a observar reconhecimento de sinais em histórias, cantigas ou jogos em casa.
+      habilidadesSecundarias:
+        - EF01LP17
+      interactiveSlug: puzzle-puzzle-sinais
+    accessibility:
+      hints:
+        - audience: ESTUDANTE
+          text: 'Passo 1: Observe o enunciado com atenção e sublinhe mentalmente reconhecimento de sinais.'
+        - audience: ESTUDANTE
+          text: 'Passo 2: Compare cada opção, repetindo os sons em voz alta se ajudar.'
+        - audience: ESTUDANTE
+          text: 'Passo 3: Respire fundo e confirme a alternativa escolhida com segurança.'
+        - audience: EDUCADOR
+          text: Guie a turma passo a passo, reforçando reconhecimento de sinais com gestos, pictogramas e pausas.
+        - audience: FAMILIA
+          text: Envie sugestões de jogos ou músicas que reforcem reconhecimento de sinais em casa.
+      feedback:
+        success: Excelente! Reconhecimento de sinais ficou evidente nas suas escolhas.
+        encouragement: Caso erre, releia com calma e utilize marcadores sonoros ou visuais para apoiar a decisão.
+        retry: Experimente revisar as pistas destacadas antes de tentar novamente.
+        accessibility: Ofereça tempo extra, recursos táteis e apoio auditivo individual para quem precisar.
+      assets:
+        - slug: lp-letra-a
+          type: IMAGEM
+          title: Ilustração da letra A
+      alternatives:
+        - title: TEXTO EM CAIXA ALTA
+          description: OFEREÇA CARTÕES COM RECONHECIMENTO DE SINAIS DESTACADO PARA QUE TODES ACOMPANHEM.
+          steps:
+            - FORNEÇA LETRAS GRANDES E ESPAÇADAS.
+            - GRIFE RIMAS OU PALAVRAS-CHAVE EM COR VIVA.
+      audioCue:
+        title: SINAL SONORO
+        description: Utilize um chocalho ou palmas para marcar o momento de focar em reconhecimento de sinais.
+        steps:
+          - Avise que o som indica a troca de etapa ou turno de fala.
+          - Repita o som e a instrução de forma pausada.
+      motorSupport:
+        - title: APOIO MOTOR
+          description: Disponibilize apoios físicos para navegação e registro das respostas.
+          steps:
+            - Ofereça ponteiras, clipes ampliados ou teclado virtual.
+            - Permita que duplas se alternem no controle do dispositivo.
+    prerequisites:
+      - type: ACTIVITY
+        reference: ponto-final-basico
+        description: Relembrar frases declarativas antes da associação.
+    interactive:
+      slug: puzzle-puzzle-sinais
+      title: Sinais e Frases — Quebra-cabeça
+      type: PUZZLE
+      bnccDescription: Utilizar o ponto final para marcar o encerramento de frases, garantindo clareza na leitura.
+      estimatedTimeMinutes: 9
+      instructions:
+        - Observe cada cartão e relacione arrastando ou usando Tab + Enter.
+        - Converse sobre o motivo da combinação antes de confirmar.
+        - Revise as duplas formadas e proponha novas associações.
+      objectives:
+        - Explorar reconhecimento de sinais em situações mediadas pelo educador.
+        - Compartilhar estratégias pessoais com colegas durante a atividade.
+      puzzle:
+        mode: matching
+        successFeedback: Associações perfeitas! Os sinais ganharam vida.
+        errorFeedback: Releia as frases e identifique a intenção antes de tentar de novo.
+        pairs:
+          - id: puzzle-sinais-pair-1
+            prompt: Vamos ao parque hoje
+            match: '?'
+            hint: É pergunta ou afirmação?
+            feedback: A frase solicita resposta, por isso combina com '?'.
+          - id: puzzle-sinais-pair-2
+            prompt: Que alegria ver vocês
+            match: '!'
+            hint: Identifique a emoção na frase.
+            feedback: O entusiasmo pede ponto de exclamação.
+          - id: puzzle-sinais-pair-3
+            prompt: O recreio começa às dez horas
+            match: .
+            hint: A frase apenas informa algo.
+            feedback: Perfeito! O ponto final encerra a informação.
+      accessibility:
+        hints:
+          - audience: ESTUDANTE
+            text: 'Passo 1: Leia ou escute cada instrução e identifique onde reconhecimento de sinais aparece no interativo.'
+          - audience: ESTUDANTE
+            text: 'Passo 2: Use Tab ou toque na tela para revisar todas as opções antes de confirmar.'
+          - audience: ESTUDANTE
+            text: 'Passo 3: Compartilhe com um colega por que escolheu a resposta apresentada.'
+          - audience: EDUCADOR
+            text: Guie a turma passo a passo, reforçando reconhecimento de sinais com gestos, pictogramas e pausas.
+          - audience: FAMILIA
+            text: Envie sugestões de jogos ou músicas que reforcem reconhecimento de sinais em casa.
+        feedback:
+          success: Excelente! Reconhecimento de sinais ficou evidente nas suas escolhas.
+          encouragement: Caso erre, releia com calma e utilize marcadores sonoros ou visuais para apoiar a decisão.
+          retry: Experimente revisar as pistas destacadas antes de tentar novamente.
+          accessibility: Ofereça tempo extra, recursos táteis e apoio auditivo individual para quem precisar.
+        assets:
+          - slug: lp-letra-a
+            type: IMAGEM
+            title: Ilustração da letra A
+        alternatives:
+          - title: TEXTO EM CAIXA ALTA
+            description: OFEREÇA CARTÕES COM RECONHECIMENTO DE SINAIS DESTACADO PARA QUE TODES ACOMPANHEM.
+            steps:
+              - FORNEÇA LETRAS GRANDES E ESPAÇADAS.
+              - GRIFE RIMAS OU PALAVRAS-CHAVE EM COR VIVA.
+        audioCue:
+          title: SINAL SONORO
+          description: Utilize um chocalho ou palmas para marcar o momento de focar em reconhecimento de sinais.
+          steps:
+            - Avise que o som indica a troca de etapa ou turno de fala.
+            - Repita o som e a instrução de forma pausada.
+        motorSupport:
+          - title: APOIO MOTOR
+            description: Disponibilize apoios físicos para navegação e registro das respostas.
+            steps:
+              - Ofereça ponteiras, clipes ampliados ou teclado virtual.
+              - Permita que duplas se alternem no controle do dispositivo.
+  - partial: ../../_partials/acolhimento-base.yaml
+    slug: puzzle-intencoes
+    title: Intenções e Sinais
+    prompt: Relacione cada intenção comunicativa ao sinal correspondente.
+    type: PUZZLE
+    difficulty: PRATICAR
+    bncc:
+      code: EF01LP17
+      habilidades:
+        - EF01LP17
+        - EF01LP16
+    learningObjectives:
+      - Explorar intenção e pontuação em situações mediadas pelo educador.
+      - Compartilhar estratégias pessoais com colegas durante a atividade.
+    description: Intenções e Sinais incentiva a turma a explorar intenção e pontuação com apoios variados.
+    metadata:
+      categoria: Intenção comunicativa
+      duracaoMinutos: 10
+      habilidades:
+        - EF01LP17
+        - EF01LP16
+      assetSlug: lp-material-caderno
+      assetUsage: Utilize Caderno colorido para escrita como apoio visual para destacar intenção e pontuação ao longo da atividade.
+      familiaEngajamento: Convide as famílias a observar intenção e pontuação em histórias, cantigas ou jogos em casa.
+      habilidadesSecundarias:
+        - EF01LP16
+      interactiveSlug: puzzle-puzzle-intencoes
+    accessibility:
+      hints:
+        - audience: ESTUDANTE
+          text: 'Passo 1: Observe o enunciado com atenção e sublinhe mentalmente intenção e pontuação.'
+        - audience: ESTUDANTE
+          text: 'Passo 2: Compare cada opção, repetindo os sons em voz alta se ajudar.'
+        - audience: ESTUDANTE
+          text: 'Passo 3: Respire fundo e confirme a alternativa escolhida com segurança.'
+        - audience: EDUCADOR
+          text: Guie a turma passo a passo, reforçando intenção e pontuação com gestos, pictogramas e pausas.
+        - audience: FAMILIA
+          text: Envie sugestões de jogos ou músicas que reforcem intenção e pontuação em casa.
+      feedback:
+        success: Excelente! Intenção e pontuação ficou evidente nas suas escolhas.
+        encouragement: Caso erre, releia com calma e utilize marcadores sonoros ou visuais para apoiar a decisão.
+        retry: Experimente revisar as pistas destacadas antes de tentar novamente.
+        accessibility: Ofereça tempo extra, recursos táteis e apoio auditivo individual para quem precisar.
+      assets:
+        - slug: lp-material-caderno
+          type: IMAGEM
+          title: Caderno colorido para escrita
+      alternatives:
+        - title: TEXTO EM CAIXA ALTA
+          description: OFEREÇA CARTÕES COM INTENÇÃO E PONTUAÇÃO DESTACADO PARA QUE TODES ACOMPANHEM.
+          steps:
+            - FORNEÇA LETRAS GRANDES E ESPAÇADAS.
+            - GRIFE RIMAS OU PALAVRAS-CHAVE EM COR VIVA.
+      audioCue:
+        title: SINAL SONORO
+        description: Utilize um chocalho ou palmas para marcar o momento de focar em intenção e pontuação.
+        steps:
+          - Avise que o som indica a troca de etapa ou turno de fala.
+          - Repita o som e a instrução de forma pausada.
+      motorSupport:
+        - title: APOIO MOTOR
+          description: Disponibilize apoios físicos para navegação e registro das respostas.
+          steps:
+            - Ofereça ponteiras, clipes ampliados ou teclado virtual.
+            - Permita que duplas se alternem no controle do dispositivo.
+    prerequisites:
+      - type: ACTIVITY
+        reference: pergunta-ou-prossegue
+        description: Recordar perguntas antes de associar intenções.
+    interactive:
+      slug: puzzle-puzzle-intencoes
+      title: Intenções e Sinais — Quebra-cabeça
+      type: PUZZLE
+      bnccDescription: Reconhecer e utilizar ponto de interrogação e ponto de exclamação para marcar perguntas e exclamações.
+      estimatedTimeMinutes: 10
+      instructions:
+        - Observe cada cartão e relacione arrastando ou usando Tab + Enter.
+        - Converse sobre o motivo da combinação antes de confirmar.
+        - Revise as duplas formadas e proponha novas associações.
+      objectives:
+        - Explorar intenção e pontuação em situações mediadas pelo educador.
+        - Compartilhar estratégias pessoais com colegas durante a atividade.
+      puzzle:
+        mode: matching
+        successFeedback: Intenções alinhadas! A leitura ganhou expressão.
+        errorFeedback: Reveja o que cada sinal comunica antes de reorganizar.
+        pairs:
+          - id: puzzle-intencoes-pair-1
+            prompt: Surpresa
+            match: '!'
+            hint: Pense em reações emocionadas.
+            feedback: Surpresa se expressa com exclamação.
+          - id: puzzle-intencoes-pair-2
+            prompt: Curiosidade
+            match: '?'
+            hint: Observe qual sinal pede resposta.
+            feedback: Curiosidade é marcada por perguntas.
+          - id: puzzle-intencoes-pair-3
+            prompt: Informação
+            match: .
+            hint: Qual sinal apenas encerra a frase?
+            feedback: Informações terminam com ponto final.
+      accessibility:
+        hints:
+          - audience: ESTUDANTE
+            text: 'Passo 1: Leia ou escute cada instrução e identifique onde intenção e pontuação aparece no interativo.'
+          - audience: ESTUDANTE
+            text: 'Passo 2: Use Tab ou toque na tela para revisar todas as opções antes de confirmar.'
+          - audience: ESTUDANTE
+            text: 'Passo 3: Compartilhe com um colega por que escolheu a resposta apresentada.'
+          - audience: EDUCADOR
+            text: Guie a turma passo a passo, reforçando intenção e pontuação com gestos, pictogramas e pausas.
+          - audience: FAMILIA
+            text: Envie sugestões de jogos ou músicas que reforcem intenção e pontuação em casa.
+        feedback:
+          success: Excelente! Intenção e pontuação ficou evidente nas suas escolhas.
+          encouragement: Caso erre, releia com calma e utilize marcadores sonoros ou visuais para apoiar a decisão.
+          retry: Experimente revisar as pistas destacadas antes de tentar novamente.
+          accessibility: Ofereça tempo extra, recursos táteis e apoio auditivo individual para quem precisar.
+        assets:
+          - slug: lp-material-caderno
+            type: IMAGEM
+            title: Caderno colorido para escrita
+        alternatives:
+          - title: TEXTO EM CAIXA ALTA
+            description: OFEREÇA CARTÕES COM INTENÇÃO E PONTUAÇÃO DESTACADO PARA QUE TODES ACOMPANHEM.
+            steps:
+              - FORNEÇA LETRAS GRANDES E ESPAÇADAS.
+              - GRIFE RIMAS OU PALAVRAS-CHAVE EM COR VIVA.
+        audioCue:
+          title: SINAL SONORO
+          description: Utilize um chocalho ou palmas para marcar o momento de focar em intenção e pontuação.
+          steps:
+            - Avise que o som indica a troca de etapa ou turno de fala.
+            - Repita o som e a instrução de forma pausada.
+        motorSupport:
+          - title: APOIO MOTOR
+            description: Disponibilize apoios físicos para navegação e registro das respostas.
+            steps:
+              - Ofereça ponteiras, clipes ampliados ou teclado virtual.
+              - Permita que duplas se alternem no controle do dispositivo.
+  - partial: ../../_partials/acolhimento-base.yaml
+    slug: puzzle-dialogo
+    title: Pontuação do Diálogo
+    prompt: Associe cada fala ao sinal que deve aparecer ao final na fala do personagem.
+    type: PUZZLE
+    difficulty: PRATICAR
+    bncc:
+      code: EF01LP16
+      habilidades:
+        - EF01LP16
+        - EF01LP17
+    learningObjectives:
+      - Explorar pontuação de diálogos em situações mediadas pelo educador.
+      - Compartilhar estratégias pessoais com colegas durante a atividade.
+    description: Pontuação do Diálogo incentiva a turma a explorar pontuação de diálogos com apoios variados.
+    metadata:
+      categoria: Pontuação de falas
+      duracaoMinutos: 10
+      habilidades:
+        - EF01LP16
+        - EF01LP17
+      assetSlug: lp-letra-e
+      assetUsage: Utilize Ilustração da letra E como apoio visual para destacar pontuação de diálogos ao longo da atividade.
+      familiaEngajamento: Convide as famílias a observar pontuação de diálogos em histórias, cantigas ou jogos em casa.
+      habilidadesSecundarias:
+        - EF01LP17
+      interactiveSlug: puzzle-puzzle-dialogo
+    accessibility:
+      hints:
+        - audience: ESTUDANTE
+          text: 'Passo 1: Observe o enunciado com atenção e sublinhe mentalmente pontuação de diálogos.'
+        - audience: ESTUDANTE
+          text: 'Passo 2: Compare cada opção, repetindo os sons em voz alta se ajudar.'
+        - audience: ESTUDANTE
+          text: 'Passo 3: Respire fundo e confirme a alternativa escolhida com segurança.'
+        - audience: EDUCADOR
+          text: Guie a turma passo a passo, reforçando pontuação de diálogos com gestos, pictogramas e pausas.
+        - audience: FAMILIA
+          text: Envie sugestões de jogos ou músicas que reforcem pontuação de diálogos em casa.
+      feedback:
+        success: Excelente! Pontuação de diálogos ficou evidente nas suas escolhas.
+        encouragement: Caso erre, releia com calma e utilize marcadores sonoros ou visuais para apoiar a decisão.
+        retry: Experimente revisar as pistas destacadas antes de tentar novamente.
+        accessibility: Ofereça tempo extra, recursos táteis e apoio auditivo individual para quem precisar.
+      assets:
+        - slug: lp-letra-e
+          type: IMAGEM
+          title: Ilustração da letra E
+      alternatives:
+        - title: TEXTO EM CAIXA ALTA
+          description: OFEREÇA CARTÕES COM PONTUAÇÃO DE DIÁLOGOS DESTACADO PARA QUE TODES ACOMPANHEM.
+          steps:
+            - FORNEÇA LETRAS GRANDES E ESPAÇADAS.
+            - GRIFE RIMAS OU PALAVRAS-CHAVE EM COR VIVA.
+      audioCue:
+        title: SINAL SONORO
+        description: Utilize um chocalho ou palmas para marcar o momento de focar em pontuação de diálogos.
+        steps:
+          - Avise que o som indica a troca de etapa ou turno de fala.
+          - Repita o som e a instrução de forma pausada.
+      motorSupport:
+        - title: APOIO MOTOR
+          description: Disponibilize apoios físicos para navegação e registro das respostas.
+          steps:
+            - Ofereça ponteiras, clipes ampliados ou teclado virtual.
+            - Permita que duplas se alternem no controle do dispositivo.
+    prerequisites:
+      - type: ACTIVITY
+        reference: escuta-da-pontuacao
+        description: Relembrar análise de intenção antes de pontuar diálogos.
+    interactive:
+      slug: puzzle-puzzle-dialogo
+      title: Pontuação do Diálogo — Quebra-cabeça
+      type: PUZZLE
+      bnccDescription: Utilizar o ponto final para marcar o encerramento de frases, garantindo clareza na leitura.
+      estimatedTimeMinutes: 10
+      instructions:
+        - Observe cada cartão e relacione arrastando ou usando Tab + Enter.
+        - Converse sobre o motivo da combinação antes de confirmar.
+        - Revise as duplas formadas e proponha novas associações.
+      objectives:
+        - Explorar pontuação de diálogos em situações mediadas pelo educador.
+        - Compartilhar estratégias pessoais com colegas durante a atividade.
+      puzzle:
+        mode: matching
+        successFeedback: Diálogo pontuado! Cada fala ficou clara.
+        errorFeedback: Analise a voz do personagem antes de refazer.
+        pairs:
+          - id: puzzle-dialogo-pair-1
+            prompt: Maria perguntou se o jogo já começou
+            match: '?'
+            hint: A fala pede resposta?
+            feedback: Sim! A fala termina com ponto de interrogação.
+          - id: puzzle-dialogo-pair-2
+            prompt: João gritou que adorou a apresentação
+            match: '!'
+            hint: Observe a emoção da fala.
+            feedback: O entusiasmo pede exclamação.
+          - id: puzzle-dialogo-pair-3
+            prompt: A professora avisou que amanhã haverá prova
+            match: .
+            hint: É um aviso informativo.
+            feedback: A frase encerra com ponto final.
+      accessibility:
+        hints:
+          - audience: ESTUDANTE
+            text: 'Passo 1: Leia ou escute cada instrução e identifique onde pontuação de diálogos aparece no interativo.'
+          - audience: ESTUDANTE
+            text: 'Passo 2: Use Tab ou toque na tela para revisar todas as opções antes de confirmar.'
+          - audience: ESTUDANTE
+            text: 'Passo 3: Compartilhe com um colega por que escolheu a resposta apresentada.'
+          - audience: EDUCADOR
+            text: Guie a turma passo a passo, reforçando pontuação de diálogos com gestos, pictogramas e pausas.
+          - audience: FAMILIA
+            text: Envie sugestões de jogos ou músicas que reforcem pontuação de diálogos em casa.
+        feedback:
+          success: Excelente! Pontuação de diálogos ficou evidente nas suas escolhas.
+          encouragement: Caso erre, releia com calma e utilize marcadores sonoros ou visuais para apoiar a decisão.
+          retry: Experimente revisar as pistas destacadas antes de tentar novamente.
+          accessibility: Ofereça tempo extra, recursos táteis e apoio auditivo individual para quem precisar.
+        assets:
+          - slug: lp-letra-e
+            type: IMAGEM
+            title: Ilustração da letra E
+        alternatives:
+          - title: TEXTO EM CAIXA ALTA
+            description: OFEREÇA CARTÕES COM PONTUAÇÃO DE DIÁLOGOS DESTACADO PARA QUE TODES ACOMPANHEM.
+            steps:
+              - FORNEÇA LETRAS GRANDES E ESPAÇADAS.
+              - GRIFE RIMAS OU PALAVRAS-CHAVE EM COR VIVA.
+        audioCue:
+          title: SINAL SONORO
+          description: Utilize um chocalho ou palmas para marcar o momento de focar em pontuação de diálogos.
+          steps:
+            - Avise que o som indica a troca de etapa ou turno de fala.
+            - Repita o som e a instrução de forma pausada.
+        motorSupport:
+          - title: APOIO MOTOR
+            description: Disponibilize apoios físicos para navegação e registro das respostas.
+            steps:
+              - Ofereça ponteiras, clipes ampliados ou teclado virtual.
+              - Permita que duplas se alternem no controle do dispositivo.
+  - partial: ../../_partials/acolhimento-base.yaml
+    slug: puzzle-remix
+    title: Remix da Pontuação
+    prompt: Combine frases reorganizadas aos sinais que corrigem sua entonação.
+    type: PUZZLE
+    difficulty: DOMINAR
+    bncc:
+      code: EF01LP16
+      habilidades:
+        - EF01LP16
+        - EF01LP17
+    learningObjectives:
+      - Explorar revisão de pontuação em situações mediadas pelo educador.
+      - Compartilhar estratégias pessoais com colegas durante a atividade.
+    description: Remix da Pontuação incentiva a turma a explorar revisão de pontuação com apoios variados.
+    metadata:
+      categoria: Revisão avançada
+      duracaoMinutos: 11
+      habilidades:
+        - EF01LP16
+        - EF01LP17
+      assetSlug: lp-silaba-ba
+      assetUsage: Utilize Cartão da sílaba BA como apoio visual para destacar revisão de pontuação ao longo da atividade.
+      familiaEngajamento: Convide as famílias a observar revisão de pontuação em histórias, cantigas ou jogos em casa.
+      habilidadesSecundarias:
+        - EF01LP17
+      interactiveSlug: puzzle-puzzle-remix
+    accessibility:
+      hints:
+        - audience: ESTUDANTE
+          text: 'Passo 1: Observe o enunciado com atenção e sublinhe mentalmente revisão de pontuação.'
+        - audience: ESTUDANTE
+          text: 'Passo 2: Compare cada opção, repetindo os sons em voz alta se ajudar.'
+        - audience: ESTUDANTE
+          text: 'Passo 3: Respire fundo e confirme a alternativa escolhida com segurança.'
+        - audience: EDUCADOR
+          text: Guie a turma passo a passo, reforçando revisão de pontuação com gestos, pictogramas e pausas.
+        - audience: FAMILIA
+          text: Envie sugestões de jogos ou músicas que reforcem revisão de pontuação em casa.
+      feedback:
+        success: Excelente! Revisão de pontuação ficou evidente nas suas escolhas.
+        encouragement: Caso erre, releia com calma e utilize marcadores sonoros ou visuais para apoiar a decisão.
+        retry: Experimente revisar as pistas destacadas antes de tentar novamente.
+        accessibility: Ofereça tempo extra, recursos táteis e apoio auditivo individual para quem precisar.
+      assets:
+        - slug: lp-silaba-ba
+          type: IMAGEM
+          title: Cartão da sílaba BA
+      alternatives:
+        - title: TEXTO EM CAIXA ALTA
+          description: OFEREÇA CARTÕES COM REVISÃO DE PONTUAÇÃO DESTACADO PARA QUE TODES ACOMPANHEM.
+          steps:
+            - FORNEÇA LETRAS GRANDES E ESPAÇADAS.
+            - GRIFE RIMAS OU PALAVRAS-CHAVE EM COR VIVA.
+      audioCue:
+        title: SINAL SONORO
+        description: Utilize um chocalho ou palmas para marcar o momento de focar em revisão de pontuação.
+        steps:
+          - Avise que o som indica a troca de etapa ou turno de fala.
+          - Repita o som e a instrução de forma pausada.
+      motorSupport:
+        - title: APOIO MOTOR
+          description: Disponibilize apoios físicos para navegação e registro das respostas.
+          steps:
+            - Ofereça ponteiras, clipes ampliados ou teclado virtual.
+            - Permita que duplas se alternem no controle do dispositivo.
+    prerequisites:
+      - type: ACTIVITY
+        reference: corrige-a-pontuacao
+        description: Retomar revisão antes do remix de sinais.
+    interactive:
+      slug: puzzle-puzzle-remix
+      title: Remix da Pontuação — Quebra-cabeça
+      type: PUZZLE
+      bnccDescription: Utilizar o ponto final para marcar o encerramento de frases, garantindo clareza na leitura.
+      estimatedTimeMinutes: 11
+      instructions:
+        - Observe cada cartão e relacione arrastando ou usando Tab + Enter.
+        - Converse sobre o motivo da combinação antes de confirmar.
+        - Revise as duplas formadas e proponha novas associações.
+      objectives:
+        - Explorar revisão de pontuação em situações mediadas pelo educador.
+        - Compartilhar estratégias pessoais com colegas durante a atividade.
+      puzzle:
+        mode: matching
+        successFeedback: Revisão concluída! Cada frase ganhou o sinal certo.
+        errorFeedback: Leia as frases em voz alta antes de tentar novamente.
+        pairs:
+          - id: puzzle-remix-pair-1
+            prompt: Cuidado ao atravessar a rua
+            match: '!'
+            hint: A frase alerta ou informa?
+            feedback: É um alerta e precisa de exclamação.
+          - id: puzzle-remix-pair-2
+            prompt: Você participou da festa
+            match: '?'
+            hint: Pense se a frase pede resposta.
+            feedback: Com o sinal de interrogação, vira uma pergunta.
+          - id: puzzle-remix-pair-3
+            prompt: A reunião terminou
+            match: .
+            hint: Apenas comunica algo?
+            feedback: Sim! É uma afirmação que termina com ponto final.
+      accessibility:
+        hints:
+          - audience: ESTUDANTE
+            text: 'Passo 1: Leia ou escute cada instrução e identifique onde revisão de pontuação aparece no interativo.'
+          - audience: ESTUDANTE
+            text: 'Passo 2: Use Tab ou toque na tela para revisar todas as opções antes de confirmar.'
+          - audience: ESTUDANTE
+            text: 'Passo 3: Compartilhe com um colega por que escolheu a resposta apresentada.'
+          - audience: EDUCADOR
+            text: Guie a turma passo a passo, reforçando revisão de pontuação com gestos, pictogramas e pausas.
+          - audience: FAMILIA
+            text: Envie sugestões de jogos ou músicas que reforcem revisão de pontuação em casa.
+        feedback:
+          success: Excelente! Revisão de pontuação ficou evidente nas suas escolhas.
+          encouragement: Caso erre, releia com calma e utilize marcadores sonoros ou visuais para apoiar a decisão.
+          retry: Experimente revisar as pistas destacadas antes de tentar novamente.
+          accessibility: Ofereça tempo extra, recursos táteis e apoio auditivo individual para quem precisar.
+        assets:
+          - slug: lp-silaba-ba
+            type: IMAGEM
+            title: Cartão da sílaba BA
+        alternatives:
+          - title: TEXTO EM CAIXA ALTA
+            description: OFEREÇA CARTÕES COM REVISÃO DE PONTUAÇÃO DESTACADO PARA QUE TODES ACOMPANHEM.
+            steps:
+              - FORNEÇA LETRAS GRANDES E ESPAÇADAS.
+              - GRIFE RIMAS OU PALAVRAS-CHAVE EM COR VIVA.
+        audioCue:
+          title: SINAL SONORO
+          description: Utilize um chocalho ou palmas para marcar o momento de focar em revisão de pontuação.
+          steps:
+            - Avise que o som indica a troca de etapa ou turno de fala.
+            - Repita o som e a instrução de forma pausada.
+        motorSupport:
+          - title: APOIO MOTOR
+            description: Disponibilize apoios físicos para navegação e registro das respostas.
+            steps:
+              - Ofereça ponteiras, clipes ampliados ou teclado virtual.
+              - Permita que duplas se alternem no controle do dispositivo.
+  - partial: ../../_partials/acolhimento-base.yaml
+    slug: jogo-busca-ponto
+    title: Busca Pontuada
+    prompt: Escolha o sinal correto para completar cada frase.
+    type: GAME
+    difficulty: INICIAR
+    bncc:
+      code: EF01LP16
+      habilidades:
+        - EF01LP16
+        - EF01LP17
+    learningObjectives:
+      - Explorar seleção rápida de pontuação em situações mediadas pelo educador.
+      - Compartilhar estratégias pessoais com colegas durante a atividade.
+    description: Busca Pontuada incentiva a turma a explorar seleção rápida de pontuação com apoios variados.
+    metadata:
+      categoria: Seleção de sinais
+      duracaoMinutos: 12
+      habilidades:
+        - EF01LP16
+        - EF01LP17
+      assetSlug: lp-material-caderno
+      assetUsage: Utilize Caderno colorido para escrita como apoio visual para destacar seleção rápida de pontuação ao longo da atividade.
+      familiaEngajamento: Convide as famílias a observar seleção rápida de pontuação em histórias, cantigas ou jogos em casa.
+      habilidadesSecundarias:
+        - EF01LP17
+      interactiveSlug: game-jogo-busca-ponto
+    accessibility:
+      hints:
+        - audience: ESTUDANTE
+          text: 'Passo 1: Observe o enunciado com atenção e sublinhe mentalmente seleção rápida de pontuação.'
+        - audience: ESTUDANTE
+          text: 'Passo 2: Compare cada opção, repetindo os sons em voz alta se ajudar.'
+        - audience: ESTUDANTE
+          text: 'Passo 3: Respire fundo e confirme a alternativa escolhida com segurança.'
+        - audience: EDUCADOR
+          text: Guie a turma passo a passo, reforçando seleção rápida de pontuação com gestos, pictogramas e pausas.
+        - audience: FAMILIA
+          text: Envie sugestões de jogos ou músicas que reforcem seleção rápida de pontuação em casa.
+      feedback:
+        success: Excelente! Seleção rápida de pontuação ficou evidente nas suas escolhas.
+        encouragement: Caso erre, releia com calma e utilize marcadores sonoros ou visuais para apoiar a decisão.
+        retry: Experimente revisar as pistas destacadas antes de tentar novamente.
+        accessibility: Ofereça tempo extra, recursos táteis e apoio auditivo individual para quem precisar.
+      assets:
+        - slug: lp-material-caderno
+          type: IMAGEM
+          title: Caderno colorido para escrita
+      alternatives:
+        - title: TEXTO EM CAIXA ALTA
+          description: OFEREÇA CARTÕES COM SELEÇÃO RÁPIDA DE PONTUAÇÃO DESTACADO PARA QUE TODES ACOMPANHEM.
+          steps:
+            - FORNEÇA LETRAS GRANDES E ESPAÇADAS.
+            - GRIFE RIMAS OU PALAVRAS-CHAVE EM COR VIVA.
+      audioCue:
+        title: SINAL SONORO
+        description: Utilize um chocalho ou palmas para marcar o momento de focar em seleção rápida de pontuação.
+        steps:
+          - Avise que o som indica a troca de etapa ou turno de fala.
+          - Repita o som e a instrução de forma pausada.
+      motorSupport:
+        - title: APOIO MOTOR
+          description: Disponibilize apoios físicos para navegação e registro das respostas.
+          steps:
+            - Ofereça ponteiras, clipes ampliados ou teclado virtual.
+            - Permita que duplas se alternem no controle do dispositivo.
+    prerequisites:
+      - type: ACTIVITY
+        reference: puzzle-sinais
+        description: Associar frases e sinais antes do jogo.
+    interactive:
+      slug: game-jogo-busca-ponto
+      title: Busca Pontuada — Mini-jogo
+      type: GAME
+      bnccDescription: Utilizar o ponto final para marcar o encerramento de frases, garantindo clareza na leitura.
+      estimatedTimeMinutes: 12
+      instructions:
+        - Leia ou escute o desafio de cada fase com atenção.
+        - Digite ou selecione a resposta utilizando teclado, toque ou mouse.
+        - Ao final, compartilhe qual pista sonora ou visual ajudou a resolver a fase.
+      objectives:
+        - Explorar seleção rápida de pontuação em situações mediadas pelo educador.
+        - Compartilhar estratégias pessoais com colegas durante a atividade.
+      game:
+        mode: math-challenge
+        timeLimitSeconds: 120
+        lives: 3
+        victoryMessage: Pontuação alinhada! Você finalizou todas as frases.
+        gameOverMessage: Releia as frases e tente novamente escolhendo com calma o sinal.
+        levels:
+          - id: jogo-busca-ponto-level-1
+            challenge: 'Complete: ''Vamos brincar depois do lanche'' (., ?, !)'
+            answer: .
+            hint: A frase apenas informa algo.
+            successFeedback: Muito bem! O ponto final encerra a afirmação.
+            failureFeedback: Veja se a frase faz pergunta ou expressa emoção.
+          - id: jogo-busca-ponto-level-2
+            challenge: 'Complete: ''Que lugar bonito'' (., ?, !)'
+            answer: '!'
+            hint: Perceba a emoção envolvida.
+            successFeedback: Ótimo! O sinal de exclamação demonstra entusiasmo.
+            failureFeedback: Avalie se há emoção forte na frase.
+          - id: jogo-busca-ponto-level-3
+            challenge: 'Complete: ''Você trouxe o caderno'' (., ?, !)'
+            answer: '?'
+            hint: A frase pede resposta?
+            successFeedback: Perfeito! A frase vira pergunta com interrogação.
+            failureFeedback: Repare na entonação interrogativa.
+      accessibility:
+        hints:
+          - audience: ESTUDANTE
+            text: 'Passo 1: Leia ou escute cada instrução e identifique onde seleção rápida de pontuação aparece no interativo.'
+          - audience: ESTUDANTE
+            text: 'Passo 2: Use Tab ou toque na tela para revisar todas as opções antes de confirmar.'
+          - audience: ESTUDANTE
+            text: 'Passo 3: Compartilhe com um colega por que escolheu a resposta apresentada.'
+          - audience: EDUCADOR
+            text: Guie a turma passo a passo, reforçando seleção rápida de pontuação com gestos, pictogramas e pausas.
+          - audience: FAMILIA
+            text: Envie sugestões de jogos ou músicas que reforcem seleção rápida de pontuação em casa.
+        feedback:
+          success: Excelente! Seleção rápida de pontuação ficou evidente nas suas escolhas.
+          encouragement: Caso erre, releia com calma e utilize marcadores sonoros ou visuais para apoiar a decisão.
+          retry: Experimente revisar as pistas destacadas antes de tentar novamente.
+          accessibility: Ofereça tempo extra, recursos táteis e apoio auditivo individual para quem precisar.
+        assets:
+          - slug: lp-material-caderno
+            type: IMAGEM
+            title: Caderno colorido para escrita
+        alternatives:
+          - title: TEXTO EM CAIXA ALTA
+            description: OFEREÇA CARTÕES COM SELEÇÃO RÁPIDA DE PONTUAÇÃO DESTACADO PARA QUE TODES ACOMPANHEM.
+            steps:
+              - FORNEÇA LETRAS GRANDES E ESPAÇADAS.
+              - GRIFE RIMAS OU PALAVRAS-CHAVE EM COR VIVA.
+        audioCue:
+          title: SINAL SONORO
+          description: Utilize um chocalho ou palmas para marcar o momento de focar em seleção rápida de pontuação.
+          steps:
+            - Avise que o som indica a troca de etapa ou turno de fala.
+            - Repita o som e a instrução de forma pausada.
+        motorSupport:
+          - title: APOIO MOTOR
+            description: Disponibilize apoios físicos para navegação e registro das respostas.
+            steps:
+              - Ofereça ponteiras, clipes ampliados ou teclado virtual.
+              - Permita que duplas se alternem no controle do dispositivo.
+  - partial: ../../_partials/acolhimento-base.yaml
+    slug: jogo-pergunta-surpresa
+    title: Pergunta Surpresa
+    prompt: Ouça a situação e selecione o sinal que representa a entonação apresentada.
+    type: GAME
+    difficulty: PRATICAR
+    bncc:
+      code: EF01LP17
+      habilidades:
+        - EF01LP17
+        - EF01LP16
+    learningObjectives:
+      - Explorar interpretação auditiva em situações mediadas pelo educador.
+      - Compartilhar estratégias pessoais com colegas durante a atividade.
+    description: Pergunta Surpresa incentiva a turma a explorar interpretação auditiva com apoios variados.
+    metadata:
+      categoria: Entonação interrogativa
+      duracaoMinutos: 12
+      habilidades:
+        - EF01LP17
+        - EF01LP16
+      assetSlug: lp-letra-a
+      assetUsage: Utilize Ilustração da letra A como apoio visual para destacar interpretação auditiva ao longo da atividade.
+      familiaEngajamento: Convide as famílias a observar interpretação auditiva em histórias, cantigas ou jogos em casa.
+      habilidadesSecundarias:
+        - EF01LP16
+      interactiveSlug: game-jogo-pergunta-surpresa
+      audioPrompt: Use a gravação de voz proposta no enunciado para simular uma entrevista com perguntas e respostas.
+    accessibility:
+      hints:
+        - audience: ESTUDANTE
+          text: 'Passo 1: Observe o enunciado com atenção e sublinhe mentalmente interpretação auditiva.'
+        - audience: ESTUDANTE
+          text: 'Passo 2: Compare cada opção, repetindo os sons em voz alta se ajudar.'
+        - audience: ESTUDANTE
+          text: 'Passo 3: Respire fundo e confirme a alternativa escolhida com segurança.'
+        - audience: EDUCADOR
+          text: Guie a turma passo a passo, reforçando interpretação auditiva com gestos, pictogramas e pausas.
+        - audience: FAMILIA
+          text: Envie sugestões de jogos ou músicas que reforcem interpretação auditiva em casa.
+      feedback:
+        success: Excelente! Interpretação auditiva ficou evidente nas suas escolhas.
+        encouragement: Caso erre, releia com calma e utilize marcadores sonoros ou visuais para apoiar a decisão.
+        retry: Experimente revisar as pistas destacadas antes de tentar novamente.
+        accessibility: Ofereça tempo extra, recursos táteis e apoio auditivo individual para quem precisar.
+      assets:
+        - slug: lp-letra-a
+          type: IMAGEM
+          title: Ilustração da letra A
+      alternatives:
+        - title: TEXTO EM CAIXA ALTA
+          description: OFEREÇA CARTÕES COM INTERPRETAÇÃO AUDITIVA DESTACADO PARA QUE TODES ACOMPANHEM.
+          steps:
+            - FORNEÇA LETRAS GRANDES E ESPAÇADAS.
+            - GRIFE RIMAS OU PALAVRAS-CHAVE EM COR VIVA.
+      audioCue:
+        title: SINAL SONORO
+        description: Utilize um chocalho ou palmas para marcar o momento de focar em interpretação auditiva.
+        steps:
+          - Avise que o som indica a troca de etapa ou turno de fala.
+          - Repita o som e a instrução de forma pausada.
+      motorSupport:
+        - title: APOIO MOTOR
+          description: Disponibilize apoios físicos para navegação e registro das respostas.
+          steps:
+            - Ofereça ponteiras, clipes ampliados ou teclado virtual.
+            - Permita que duplas se alternem no controle do dispositivo.
+    prerequisites:
+      - type: ACTIVITY
+        reference: puzzle-intencoes
+        description: Relembrar intenções comunicativas antes de ouvir as perguntas.
+    interactive:
+      slug: game-jogo-pergunta-surpresa
+      title: Pergunta Surpresa — Mini-jogo
+      type: GAME
+      bnccDescription: Reconhecer e utilizar ponto de interrogação e ponto de exclamação para marcar perguntas e exclamações.
+      estimatedTimeMinutes: 12
+      instructions:
+        - Leia ou escute o desafio de cada fase com atenção.
+        - Digite ou selecione a resposta utilizando teclado, toque ou mouse.
+        - Ao final, compartilhe qual pista sonora ou visual ajudou a resolver a fase.
+      objectives:
+        - Explorar interpretação auditiva em situações mediadas pelo educador.
+        - Compartilhar estratégias pessoais com colegas durante a atividade.
+      game:
+        mode: math-challenge
+        timeLimitSeconds: 120
+        lives: 3
+        victoryMessage: Você marcou cada pergunta corretamente!
+        gameOverMessage: Repita as pistas sonoras e tente novamente com atenção.
+        levels:
+          - id: jogo-pergunta-surpresa-level-1
+            challenge: 'Situação: a professora fala com voz curiosa. Qual sinal representa? (., ?, !)'
+            answer: '?'
+            hint: Perceba se a voz pede resposta.
+            successFeedback: Muito bem! A entonação curiosa indica pergunta.
+            failureFeedback: Ouça novamente a gravação destacando a entonação.
+          - id: jogo-pergunta-surpresa-level-2
+            challenge: 'Situação: um colega comemora uma conquista. (., ?, !)'
+            answer: '!'
+            hint: Há entusiasmo na voz?
+            successFeedback: Perfeito! O grito de alegria pede exclamação.
+            failureFeedback: Identifique a emoção transmitida pela voz.
+          - id: jogo-pergunta-surpresa-level-3
+            challenge: 'Situação: a diretora informa o horário do evento. (., ?, !)'
+            answer: .
+            hint: A voz apenas informa um fato.
+            successFeedback: Excelente! O ponto final encerra a informação.
+            failureFeedback: Diferença entre informar e perguntar é fundamental.
+      accessibility:
+        hints:
+          - audience: ESTUDANTE
+            text: 'Passo 1: Leia ou escute cada instrução e identifique onde interpretação auditiva aparece no interativo.'
+          - audience: ESTUDANTE
+            text: 'Passo 2: Use Tab ou toque na tela para revisar todas as opções antes de confirmar.'
+          - audience: ESTUDANTE
+            text: 'Passo 3: Compartilhe com um colega por que escolheu a resposta apresentada.'
+          - audience: EDUCADOR
+            text: Guie a turma passo a passo, reforçando interpretação auditiva com gestos, pictogramas e pausas.
+          - audience: FAMILIA
+            text: Envie sugestões de jogos ou músicas que reforcem interpretação auditiva em casa.
+        feedback:
+          success: Excelente! Interpretação auditiva ficou evidente nas suas escolhas.
+          encouragement: Caso erre, releia com calma e utilize marcadores sonoros ou visuais para apoiar a decisão.
+          retry: Experimente revisar as pistas destacadas antes de tentar novamente.
+          accessibility: Ofereça tempo extra, recursos táteis e apoio auditivo individual para quem precisar.
+        assets:
+          - slug: lp-letra-a
+            type: IMAGEM
+            title: Ilustração da letra A
+        alternatives:
+          - title: TEXTO EM CAIXA ALTA
+            description: OFEREÇA CARTÕES COM INTERPRETAÇÃO AUDITIVA DESTACADO PARA QUE TODES ACOMPANHEM.
+            steps:
+              - FORNEÇA LETRAS GRANDES E ESPAÇADAS.
+              - GRIFE RIMAS OU PALAVRAS-CHAVE EM COR VIVA.
+        audioCue:
+          title: SINAL SONORO
+          description: Utilize um chocalho ou palmas para marcar o momento de focar em interpretação auditiva.
+          steps:
+            - Avise que o som indica a troca de etapa ou turno de fala.
+            - Repita o som e a instrução de forma pausada.
+        motorSupport:
+          - title: APOIO MOTOR
+            description: Disponibilize apoios físicos para navegação e registro das respostas.
+            steps:
+              - Ofereça ponteiras, clipes ampliados ou teclado virtual.
+              - Permita que duplas se alternem no controle do dispositivo.
+  - partial: ../../_partials/acolhimento-base.yaml
+    slug: jogo-exclamacao-energia
+    title: Exclamação Energia
+    prompt: Escolha a frase que deve receber ponto de exclamação para reforçar a emoção.
+    type: GAME
+    difficulty: DOMINAR
+    bncc:
+      code: EF01LP17
+      habilidades:
+        - EF01LP17
+        - EF01LP16
+    learningObjectives:
+      - Explorar ênfase emocional em situações mediadas pelo educador.
+      - Compartilhar estratégias pessoais com colegas durante a atividade.
+    description: Exclamação Energia incentiva a turma a explorar ênfase emocional com apoios variados.
+    metadata:
+      categoria: Exclamações em jogo
+      duracaoMinutos: 13
+      habilidades:
+        - EF01LP17
+        - EF01LP16
+      assetSlug: lp-silaba-ba
+      assetUsage: Utilize Cartão da sílaba BA como apoio visual para destacar ênfase emocional ao longo da atividade.
+      familiaEngajamento: Convide as famílias a observar ênfase emocional em histórias, cantigas ou jogos em casa.
+      habilidadesSecundarias:
+        - EF01LP16
+      interactiveSlug: game-jogo-exclamacao-energia
+    accessibility:
+      hints:
+        - audience: ESTUDANTE
+          text: 'Passo 1: Observe o enunciado com atenção e sublinhe mentalmente ênfase emocional.'
+        - audience: ESTUDANTE
+          text: 'Passo 2: Compare cada opção, repetindo os sons em voz alta se ajudar.'
+        - audience: ESTUDANTE
+          text: 'Passo 3: Respire fundo e confirme a alternativa escolhida com segurança.'
+        - audience: EDUCADOR
+          text: Guie a turma passo a passo, reforçando ênfase emocional com gestos, pictogramas e pausas.
+        - audience: FAMILIA
+          text: Envie sugestões de jogos ou músicas que reforcem ênfase emocional em casa.
+      feedback:
+        success: Excelente! Ênfase emocional ficou evidente nas suas escolhas.
+        encouragement: Caso erre, releia com calma e utilize marcadores sonoros ou visuais para apoiar a decisão.
+        retry: Experimente revisar as pistas destacadas antes de tentar novamente.
+        accessibility: Ofereça tempo extra, recursos táteis e apoio auditivo individual para quem precisar.
+      assets:
+        - slug: lp-silaba-ba
+          type: IMAGEM
+          title: Cartão da sílaba BA
+      alternatives:
+        - title: TEXTO EM CAIXA ALTA
+          description: OFEREÇA CARTÕES COM ÊNFASE EMOCIONAL DESTACADO PARA QUE TODES ACOMPANHEM.
+          steps:
+            - FORNEÇA LETRAS GRANDES E ESPAÇADAS.
+            - GRIFE RIMAS OU PALAVRAS-CHAVE EM COR VIVA.
+      audioCue:
+        title: SINAL SONORO
+        description: Utilize um chocalho ou palmas para marcar o momento de focar em ênfase emocional.
+        steps:
+          - Avise que o som indica a troca de etapa ou turno de fala.
+          - Repita o som e a instrução de forma pausada.
+      motorSupport:
+        - title: APOIO MOTOR
+          description: Disponibilize apoios físicos para navegação e registro das respostas.
+          steps:
+            - Ofereça ponteiras, clipes ampliados ou teclado virtual.
+            - Permita que duplas se alternem no controle do dispositivo.
+    prerequisites:
+      - type: ACTIVITY
+        reference: emocao-na-frase
+        description: Relembrar frases emocionadas antes do jogo.
+    interactive:
+      slug: game-jogo-exclamacao-energia
+      title: Exclamação Energia — Mini-jogo
+      type: GAME
+      bnccDescription: Reconhecer e utilizar ponto de interrogação e ponto de exclamação para marcar perguntas e exclamações.
+      estimatedTimeMinutes: 13
+      instructions:
+        - Leia ou escute o desafio de cada fase com atenção.
+        - Digite ou selecione a resposta utilizando teclado, toque ou mouse.
+        - Ao final, compartilhe qual pista sonora ou visual ajudou a resolver a fase.
+      objectives:
+        - Explorar ênfase emocional em situações mediadas pelo educador.
+        - Compartilhar estratégias pessoais com colegas durante a atividade.
+      game:
+        mode: math-challenge
+        timeLimitSeconds: 120
+        lives: 3
+        victoryMessage: Energia pontuada! Você destacou cada emoção.
+        gameOverMessage: Releia as frases pensando na emoção e tente novamente.
+        levels:
+          - id: jogo-exclamacao-energia-level-1
+            challenge: Qual frase merece ponto de exclamação? (Ganhei o prêmio, O recreio acabou, Vamos estudar)
+            answer: Ganhei o prêmio
+            hint: Qual frase expressa alegria intensa?
+            successFeedback: Muito bem! A frase demonstra grande emoção.
+            failureFeedback: Observe o sentimento envolvido em cada frase.
+          - id: jogo-exclamacao-energia-level-2
+            challenge: Qual frase precisa de exclamação? (Que frio está hoje, Onde fica a sala, A turma chegou cedo)
+            answer: Que frio está hoje
+            hint: Veja qual frase expressa espanto.
+            successFeedback: Excelente! O espanto pede exclamação.
+            failureFeedback: Leia as frases com diferentes entonações para descobrir.
+          - id: jogo-exclamacao-energia-level-3
+            challenge: Qual frase fica melhor com exclamação? (Socorro alguém me ajuda, Você escreveu o texto, A aula começou)
+            answer: Socorro alguém me ajuda
+            hint: Qual frase demonstra urgência?
+            successFeedback: Ótimo! O pedido de socorro precisa de exclamação.
+            failureFeedback: Identifique quando a frase pede atenção imediata.
+      accessibility:
+        hints:
+          - audience: ESTUDANTE
+            text: 'Passo 1: Leia ou escute cada instrução e identifique onde ênfase emocional aparece no interativo.'
+          - audience: ESTUDANTE
+            text: 'Passo 2: Use Tab ou toque na tela para revisar todas as opções antes de confirmar.'
+          - audience: ESTUDANTE
+            text: 'Passo 3: Compartilhe com um colega por que escolheu a resposta apresentada.'
+          - audience: EDUCADOR
+            text: Guie a turma passo a passo, reforçando ênfase emocional com gestos, pictogramas e pausas.
+          - audience: FAMILIA
+            text: Envie sugestões de jogos ou músicas que reforcem ênfase emocional em casa.
+        feedback:
+          success: Excelente! Ênfase emocional ficou evidente nas suas escolhas.
+          encouragement: Caso erre, releia com calma e utilize marcadores sonoros ou visuais para apoiar a decisão.
+          retry: Experimente revisar as pistas destacadas antes de tentar novamente.
+          accessibility: Ofereça tempo extra, recursos táteis e apoio auditivo individual para quem precisar.
+        assets:
+          - slug: lp-silaba-ba
+            type: IMAGEM
+            title: Cartão da sílaba BA
+        alternatives:
+          - title: TEXTO EM CAIXA ALTA
+            description: OFEREÇA CARTÕES COM ÊNFASE EMOCIONAL DESTACADO PARA QUE TODES ACOMPANHEM.
+            steps:
+              - FORNEÇA LETRAS GRANDES E ESPAÇADAS.
+              - GRIFE RIMAS OU PALAVRAS-CHAVE EM COR VIVA.
+        audioCue:
+          title: SINAL SONORO
+          description: Utilize um chocalho ou palmas para marcar o momento de focar em ênfase emocional.
+          steps:
+            - Avise que o som indica a troca de etapa ou turno de fala.
+            - Repita o som e a instrução de forma pausada.
+        motorSupport:
+          - title: APOIO MOTOR
+            description: Disponibilize apoios físicos para navegação e registro das respostas.
+            steps:
+              - Ofereça ponteiras, clipes ampliados ou teclado virtual.
+              - Permita que duplas se alternem no controle do dispositivo.
+  - partial: ../../_partials/acolhimento-base.yaml
+    slug: jogo-pontua-texto
+    title: Pontua Texto
+    prompt: Digite o sinal de pontuação que falta no final da frase.
+    type: GAME
+    difficulty: DOMINAR
+    bncc:
+      code: EF01LP16
+      habilidades:
+        - EF01LP16
+        - EF01LP17
+    learningObjectives:
+      - Explorar produção de frases pontuadas em situações mediadas pelo educador.
+      - Compartilhar estratégias pessoais com colegas durante a atividade.
+    description: Pontua Texto incentiva a turma a explorar produção de frases pontuadas com apoios variados.
+    metadata:
+      categoria: Produção pontuada
+      duracaoMinutos: 13
+      habilidades:
+        - EF01LP16
+        - EF01LP17
+      assetSlug: lp-letra-e
+      assetUsage: Utilize Ilustração da letra E como apoio visual para destacar produção de frases pontuadas ao longo da atividade.
+      familiaEngajamento: Convide as famílias a observar produção de frases pontuadas em histórias, cantigas ou jogos em casa.
+      habilidadesSecundarias:
+        - EF01LP17
+      interactiveSlug: game-jogo-pontua-texto
+    accessibility:
+      hints:
+        - audience: ESTUDANTE
+          text: 'Passo 1: Observe o enunciado com atenção e sublinhe mentalmente produção de frases pontuadas.'
+        - audience: ESTUDANTE
+          text: 'Passo 2: Compare cada opção, repetindo os sons em voz alta se ajudar.'
+        - audience: ESTUDANTE
+          text: 'Passo 3: Respire fundo e confirme a alternativa escolhida com segurança.'
+        - audience: EDUCADOR
+          text: Guie a turma passo a passo, reforçando produção de frases pontuadas com gestos, pictogramas e pausas.
+        - audience: FAMILIA
+          text: Envie sugestões de jogos ou músicas que reforcem produção de frases pontuadas em casa.
+      feedback:
+        success: Excelente! Produção de frases pontuadas ficou evidente nas suas escolhas.
+        encouragement: Caso erre, releia com calma e utilize marcadores sonoros ou visuais para apoiar a decisão.
+        retry: Experimente revisar as pistas destacadas antes de tentar novamente.
+        accessibility: Ofereça tempo extra, recursos táteis e apoio auditivo individual para quem precisar.
+      assets:
+        - slug: lp-letra-e
+          type: IMAGEM
+          title: Ilustração da letra E
+      alternatives:
+        - title: TEXTO EM CAIXA ALTA
+          description: OFEREÇA CARTÕES COM PRODUÇÃO DE FRASES PONTUADAS DESTACADO PARA QUE TODES ACOMPANHEM.
+          steps:
+            - FORNEÇA LETRAS GRANDES E ESPAÇADAS.
+            - GRIFE RIMAS OU PALAVRAS-CHAVE EM COR VIVA.
+      audioCue:
+        title: SINAL SONORO
+        description: Utilize um chocalho ou palmas para marcar o momento de focar em produção de frases pontuadas.
+        steps:
+          - Avise que o som indica a troca de etapa ou turno de fala.
+          - Repita o som e a instrução de forma pausada.
+      motorSupport:
+        - title: APOIO MOTOR
+          description: Disponibilize apoios físicos para navegação e registro das respostas.
+          steps:
+            - Ofereça ponteiras, clipes ampliados ou teclado virtual.
+            - Permita que duplas se alternem no controle do dispositivo.
+    prerequisites:
+      - type: ACTIVITY
+        reference: puzzle-remix
+        description: Revisar frases antes de pontuá-las digitando.
+    interactive:
+      slug: game-jogo-pontua-texto
+      title: Pontua Texto — Mini-jogo
+      type: GAME
+      bnccDescription: Utilizar o ponto final para marcar o encerramento de frases, garantindo clareza na leitura.
+      estimatedTimeMinutes: 13
+      instructions:
+        - Leia ou escute o desafio de cada fase com atenção.
+        - Digite ou selecione a resposta utilizando teclado, toque ou mouse.
+        - Ao final, compartilhe qual pista sonora ou visual ajudou a resolver a fase.
+      objectives:
+        - Explorar produção de frases pontuadas em situações mediadas pelo educador.
+        - Compartilhar estratégias pessoais com colegas durante a atividade.
+      game:
+        mode: math-challenge
+        timeLimitSeconds: 120
+        lives: 3
+        victoryMessage: Texto pontuado! Sua revisão ficou excelente.
+        gameOverMessage: Revise o contexto da frase e tente novamente digitando o sinal correto.
+        levels:
+          - id: jogo-pontua-texto-level-1
+            challenge: 'Digite o sinal que falta: ''Você quer brincar comigo'''
+            answer: '?'
+            hint: A frase faz uma pergunta?
+            successFeedback: Perfeito! A frase virou pergunta com interrogação.
+            failureFeedback: Releia a frase pensando se pede resposta.
+          - id: jogo-pontua-texto-level-2
+            challenge: 'Digite o sinal que falta: ''Que bom que você veio'''
+            answer: '!'
+            hint: Perceba a emoção da frase.
+            successFeedback: Excelente! A exclamação mostra alegria.
+            failureFeedback: Identifique a emoção antes de digitar.
+          - id: jogo-pontua-texto-level-3
+            challenge: 'Digite o sinal que falta: ''Hoje temos aula de arte'''
+            answer: .
+            hint: A frase informa algo?
+            successFeedback: Muito bem! O ponto final encerra a informação.
+            failureFeedback: Releia e veja se a frase informa ou pergunta algo.
+      accessibility:
+        hints:
+          - audience: ESTUDANTE
+            text: 'Passo 1: Leia ou escute cada instrução e identifique onde produção de frases pontuadas aparece no interativo.'
+          - audience: ESTUDANTE
+            text: 'Passo 2: Use Tab ou toque na tela para revisar todas as opções antes de confirmar.'
+          - audience: ESTUDANTE
+            text: 'Passo 3: Compartilhe com um colega por que escolheu a resposta apresentada.'
+          - audience: EDUCADOR
+            text: Guie a turma passo a passo, reforçando produção de frases pontuadas com gestos, pictogramas e pausas.
+          - audience: FAMILIA
+            text: Envie sugestões de jogos ou músicas que reforcem produção de frases pontuadas em casa.
+        feedback:
+          success: Excelente! Produção de frases pontuadas ficou evidente nas suas escolhas.
+          encouragement: Caso erre, releia com calma e utilize marcadores sonoros ou visuais para apoiar a decisão.
+          retry: Experimente revisar as pistas destacadas antes de tentar novamente.
+          accessibility: Ofereça tempo extra, recursos táteis e apoio auditivo individual para quem precisar.
+        assets:
+          - slug: lp-letra-e
+            type: IMAGEM
+            title: Ilustração da letra E
+        alternatives:
+          - title: TEXTO EM CAIXA ALTA
+            description: OFEREÇA CARTÕES COM PRODUÇÃO DE FRASES PONTUADAS DESTACADO PARA QUE TODES ACOMPANHEM.
+            steps:
+              - FORNEÇA LETRAS GRANDES E ESPAÇADAS.
+              - GRIFE RIMAS OU PALAVRAS-CHAVE EM COR VIVA.
+        audioCue:
+          title: SINAL SONORO
+          description: Utilize um chocalho ou palmas para marcar o momento de focar em produção de frases pontuadas.
+          steps:
+            - Avise que o som indica a troca de etapa ou turno de fala.
+            - Repita o som e a instrução de forma pausada.
+        motorSupport:
+          - title: APOIO MOTOR
+            description: Disponibilize apoios físicos para navegação e registro das respostas.
+            steps:
+              - Ofereça ponteiras, clipes ampliados ou teclado virtual.
+              - Permita que duplas se alternem no controle do dispositivo.

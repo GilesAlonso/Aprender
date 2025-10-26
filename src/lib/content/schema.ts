@@ -50,6 +50,15 @@ const accessibilityAssetSchema = z
     message: "Assets de acessibilidade devem definir ao menos 'slug' ou 'uri'.",
   });
 
+const accessibilitySupportDetailSchema = z.union([
+  z.string().min(1),
+  z.object({
+    title: z.string().min(1).optional(),
+    description: z.string().min(1),
+    steps: z.array(z.string().min(1)).optional(),
+  }),
+]);
+
 const prerequisiteSchema = z.object({
   type: z.enum(["MODULE", "ACTIVITY", "SKILL", "CONTEXT"]).default("SKILL"),
   reference: z.string().min(1),
@@ -62,6 +71,9 @@ export const accessibilitySchema = z
     feedback: accessibilityFeedbackSchema.optional(),
     assets: z.array(accessibilityAssetSchema).optional(),
     prerequisites: z.array(prerequisiteSchema).optional(),
+    alternatives: z.array(accessibilitySupportDetailSchema).optional(),
+    audioCue: accessibilitySupportDetailSchema.optional(),
+    motorSupport: z.array(accessibilitySupportDetailSchema).optional(),
   })
   .optional();
 
