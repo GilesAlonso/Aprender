@@ -1,14 +1,29 @@
 {
-  "generatedAt": "2025-10-26T13:09:15.242Z",
-  "contentHash": "e1b7aceaab9799055977509d2e503eb74bc79b241b39a0003741e6b6a198bf03",
+  "generatedAt": "2025-10-26T21:06:15.271Z",
+  "contentHash": "76362e486a6bcdbfb651643fafc95c9c2975f542e99fccb8abe481ed4794827e",
   "modulesBySubject": {
     "ciencias": ["laboratorio-da-natureza"],
-    "lingua-portuguesa": ["clubinho-das-palavras", "trilhas-narrativas-digitais"],
+    "lingua-portuguesa": [
+      "bilhetes-e-recados",
+      "brincando-com-sons",
+      "clubinho-das-palavras",
+      "familia-das-vogais",
+      "frases-divertidas",
+      "palavras-em-acao",
+      "trilhas-narrativas-digitais"
+    ],
     "linguagens": ["historias-em-movimento"],
     "matematica": ["estudio-dados-solidarios", "oficina-modelagem-dados", "rota-das-operacoes"]
   },
   "modulesByStage": {
-    "ef01": ["clubinho-das-palavras"],
+    "ef01": [
+      "bilhetes-e-recados",
+      "brincando-com-sons",
+      "clubinho-das-palavras",
+      "familia-das-vogais",
+      "frases-divertidas",
+      "palavras-em-acao"
+    ],
     "ef05": ["rota-das-operacoes"],
     "ef07": ["laboratorio-da-natureza", "oficina-modelagem-dados"],
     "ef69": ["trilhas-narrativas-digitais"],
@@ -18,9 +33,89 @@
   "activitiesByDifficulty": {
     "INICIAR": [
       {
+        "moduleSlug": "bilhetes-e-recados",
+        "activitySlug": "elementos-do-bilhete",
+        "activityType": "QUIZ"
+      },
+      {
+        "moduleSlug": "bilhetes-e-recados",
+        "activitySlug": "planejar-bilhete",
+        "activityType": "GAME"
+      },
+      {
+        "moduleSlug": "bilhetes-e-recados",
+        "activitySlug": "puzzle-destinatario",
+        "activityType": "PUZZLE"
+      },
+      {
+        "moduleSlug": "bilhetes-e-recados",
+        "activitySlug": "revendo-o-texto",
+        "activityType": "QUIZ"
+      },
+      {
+        "moduleSlug": "brincando-com-sons",
+        "activitySlug": "caca-sons-iniciais",
+        "activityType": "GAME"
+      },
+      {
+        "moduleSlug": "brincando-com-sons",
+        "activitySlug": "puzzle-rimas-sonoras",
+        "activityType": "PUZZLE"
+      },
+      {
+        "moduleSlug": "brincando-com-sons",
+        "activitySlug": "som-inicial-surpresa",
+        "activityType": "QUIZ"
+      },
+      {
+        "moduleSlug": "brincando-com-sons",
+        "activitySlug": "trilho-das-silabas",
+        "activityType": "QUIZ"
+      },
+      {
         "moduleSlug": "clubinho-das-palavras",
         "activitySlug": "detectives-das-palavras",
         "activityType": "QUIZ"
+      },
+      {
+        "moduleSlug": "familia-das-vogais",
+        "activitySlug": "corrida-das-vogais",
+        "activityType": "GAME"
+      },
+      {
+        "moduleSlug": "familia-das-vogais",
+        "activitySlug": "puzzle-vogais-amigas",
+        "activityType": "PUZZLE"
+      },
+      {
+        "moduleSlug": "familia-das-vogais",
+        "activitySlug": "som-e-letra",
+        "activityType": "QUIZ"
+      },
+      {
+        "moduleSlug": "familia-das-vogais",
+        "activitySlug": "vogal-exploradora",
+        "activityType": "QUIZ"
+      },
+      {
+        "moduleSlug": "frases-divertidas",
+        "activitySlug": "frase-ilustrada",
+        "activityType": "QUIZ"
+      },
+      {
+        "moduleSlug": "frases-divertidas",
+        "activitySlug": "intencao-da-frase",
+        "activityType": "QUIZ"
+      },
+      {
+        "moduleSlug": "frases-divertidas",
+        "activitySlug": "montar-frase",
+        "activityType": "GAME"
+      },
+      {
+        "moduleSlug": "frases-divertidas",
+        "activitySlug": "puzzle-frase-imagem",
+        "activityType": "PUZZLE"
       },
       {
         "moduleSlug": "historias-em-movimento",
@@ -31,9 +126,79 @@
         "moduleSlug": "historias-em-movimento",
         "activitySlug": "teatro-das-emocoes",
         "activityType": "GAME"
+      },
+      {
+        "moduleSlug": "palavras-em-acao",
+        "activitySlug": "caixa-de-palavras",
+        "activityType": "GAME"
+      },
+      {
+        "moduleSlug": "palavras-em-acao",
+        "activitySlug": "duelo-de-palavras",
+        "activityType": "QUIZ"
+      },
+      {
+        "moduleSlug": "palavras-em-acao",
+        "activitySlug": "palavra-e-figura",
+        "activityType": "QUIZ"
+      },
+      {
+        "moduleSlug": "palavras-em-acao",
+        "activitySlug": "puzzle-palavra-imagem",
+        "activityType": "PUZZLE"
       }
     ],
     "PRATICAR": [
+      {
+        "moduleSlug": "bilhetes-e-recados",
+        "activitySlug": "corrige-a-frase",
+        "activityType": "QUIZ"
+      },
+      {
+        "moduleSlug": "bilhetes-e-recados",
+        "activitySlug": "puzzle-ordem-bilhete",
+        "activityType": "PUZZLE"
+      },
+      {
+        "moduleSlug": "bilhetes-e-recados",
+        "activitySlug": "puzzle-revisao",
+        "activityType": "PUZZLE"
+      },
+      {
+        "moduleSlug": "bilhetes-e-recados",
+        "activitySlug": "qual-o-destinatario",
+        "activityType": "QUIZ"
+      },
+      {
+        "moduleSlug": "bilhetes-e-recados",
+        "activitySlug": "revisao-rapida",
+        "activityType": "GAME"
+      },
+      {
+        "moduleSlug": "brincando-com-sons",
+        "activitySlug": "batalha-das-silabas",
+        "activityType": "GAME"
+      },
+      {
+        "moduleSlug": "brincando-com-sons",
+        "activitySlug": "detetive-dos-pedacinhos",
+        "activityType": "QUIZ"
+      },
+      {
+        "moduleSlug": "brincando-com-sons",
+        "activitySlug": "puzzle-silabas-dancarinas",
+        "activityType": "PUZZLE"
+      },
+      {
+        "moduleSlug": "brincando-com-sons",
+        "activitySlug": "puzzle-som-inicial",
+        "activityType": "PUZZLE"
+      },
+      {
+        "moduleSlug": "brincando-com-sons",
+        "activitySlug": "rimas-do-recreio",
+        "activityType": "QUIZ"
+      },
       {
         "moduleSlug": "clubinho-das-palavras",
         "activitySlug": "laboratorio-das-palavras",
@@ -45,6 +210,56 @@
         "activityType": "PROJECT"
       },
       {
+        "moduleSlug": "familia-das-vogais",
+        "activitySlug": "caixa-das-vogais",
+        "activityType": "QUIZ"
+      },
+      {
+        "moduleSlug": "familia-das-vogais",
+        "activitySlug": "laboratorio-das-vogais",
+        "activityType": "GAME"
+      },
+      {
+        "moduleSlug": "familia-das-vogais",
+        "activitySlug": "puzzle-completa-vogal",
+        "activityType": "PUZZLE"
+      },
+      {
+        "moduleSlug": "familia-das-vogais",
+        "activitySlug": "puzzle-vogal-e-imagem",
+        "activityType": "PUZZLE"
+      },
+      {
+        "moduleSlug": "familia-das-vogais",
+        "activitySlug": "vogal-misteriosa",
+        "activityType": "QUIZ"
+      },
+      {
+        "moduleSlug": "frases-divertidas",
+        "activitySlug": "descubra-o-humor",
+        "activityType": "QUIZ"
+      },
+      {
+        "moduleSlug": "frases-divertidas",
+        "activitySlug": "frase-surpresa",
+        "activityType": "GAME"
+      },
+      {
+        "moduleSlug": "frases-divertidas",
+        "activitySlug": "puzzle-intencao-frase",
+        "activityType": "PUZZLE"
+      },
+      {
+        "moduleSlug": "frases-divertidas",
+        "activitySlug": "puzzle-ordem-frase",
+        "activityType": "PUZZLE"
+      },
+      {
+        "moduleSlug": "frases-divertidas",
+        "activitySlug": "quem-faz-o-que",
+        "activityType": "QUIZ"
+      },
+      {
         "moduleSlug": "laboratorio-da-natureza",
         "activitySlug": "experimento-da-agua",
         "activityType": "PUZZLE"
@@ -52,6 +267,31 @@
       {
         "moduleSlug": "oficina-modelagem-dados",
         "activitySlug": "grafico-vivo-da-comunidade",
+        "activityType": "GAME"
+      },
+      {
+        "moduleSlug": "palavras-em-acao",
+        "activitySlug": "cantinho-das-palavras",
+        "activityType": "QUIZ"
+      },
+      {
+        "moduleSlug": "palavras-em-acao",
+        "activitySlug": "escolha-rapida",
+        "activityType": "QUIZ"
+      },
+      {
+        "moduleSlug": "palavras-em-acao",
+        "activitySlug": "puzzle-palavras-frase",
+        "activityType": "PUZZLE"
+      },
+      {
+        "moduleSlug": "palavras-em-acao",
+        "activitySlug": "puzzle-rima-palavra",
+        "activityType": "PUZZLE"
+      },
+      {
+        "moduleSlug": "palavras-em-acao",
+        "activitySlug": "roda-das-rimas",
         "activityType": "GAME"
       },
       {
@@ -72,9 +312,89 @@
     ],
     "DOMINAR": [
       {
+        "moduleSlug": "bilhetes-e-recados",
+        "activitySlug": "checar-claridade",
+        "activityType": "QUIZ"
+      },
+      {
+        "moduleSlug": "bilhetes-e-recados",
+        "activitySlug": "objetivo-do-recado",
+        "activityType": "QUIZ"
+      },
+      {
+        "moduleSlug": "bilhetes-e-recados",
+        "activitySlug": "puzzle-melhorias",
+        "activityType": "PUZZLE"
+      },
+      {
+        "moduleSlug": "bilhetes-e-recados",
+        "activitySlug": "roteiro-do-recado",
+        "activityType": "GAME"
+      },
+      {
+        "moduleSlug": "brincando-com-sons",
+        "activitySlug": "batida-do-nome",
+        "activityType": "QUIZ"
+      },
+      {
+        "moduleSlug": "brincando-com-sons",
+        "activitySlug": "eco-dos-sons",
+        "activityType": "QUIZ"
+      },
+      {
+        "moduleSlug": "brincando-com-sons",
+        "activitySlug": "orquestra-de-silabas",
+        "activityType": "GAME"
+      },
+      {
+        "moduleSlug": "brincando-com-sons",
+        "activitySlug": "puzzle-compasso-silabico",
+        "activityType": "PUZZLE"
+      },
+      {
         "moduleSlug": "estudio-dados-solidarios",
         "activitySlug": "investigacao-dados-bairro",
         "activityType": "GAME"
+      },
+      {
+        "moduleSlug": "familia-das-vogais",
+        "activitySlug": "coro-das-vogais",
+        "activityType": "QUIZ"
+      },
+      {
+        "moduleSlug": "familia-das-vogais",
+        "activitySlug": "memoria-das-vogais",
+        "activityType": "GAME"
+      },
+      {
+        "moduleSlug": "familia-das-vogais",
+        "activitySlug": "ordem-das-vogais",
+        "activityType": "QUIZ"
+      },
+      {
+        "moduleSlug": "familia-das-vogais",
+        "activitySlug": "puzzle-trilha-alfabeto",
+        "activityType": "PUZZLE"
+      },
+      {
+        "moduleSlug": "frases-divertidas",
+        "activitySlug": "completar-resposta",
+        "activityType": "QUIZ"
+      },
+      {
+        "moduleSlug": "frases-divertidas",
+        "activitySlug": "dialogo-rapido",
+        "activityType": "GAME"
+      },
+      {
+        "moduleSlug": "frases-divertidas",
+        "activitySlug": "onde-acontece",
+        "activityType": "QUIZ"
+      },
+      {
+        "moduleSlug": "frases-divertidas",
+        "activitySlug": "puzzle-humor-frase",
+        "activityType": "PUZZLE"
       },
       {
         "moduleSlug": "laboratorio-da-natureza",
@@ -87,6 +407,26 @@
         "activityType": "PROJECT"
       },
       {
+        "moduleSlug": "palavras-em-acao",
+        "activitySlug": "detective-leitor",
+        "activityType": "GAME"
+      },
+      {
+        "moduleSlug": "palavras-em-acao",
+        "activitySlug": "leitura-estrategica",
+        "activityType": "QUIZ"
+      },
+      {
+        "moduleSlug": "palavras-em-acao",
+        "activitySlug": "palavra-em-contexto",
+        "activityType": "QUIZ"
+      },
+      {
+        "moduleSlug": "palavras-em-acao",
+        "activitySlug": "puzzle-familia-palavras",
+        "activityType": "PUZZLE"
+      },
+      {
         "moduleSlug": "trilhas-narrativas-digitais",
         "activitySlug": "webdoc-historias-do-bairro",
         "activityType": "PROJECT"
@@ -94,9 +434,84 @@
     ]
   },
   "interactiveMap": {
+    "game-batalha-das-silabas": {
+      "moduleSlug": "brincando-com-sons",
+      "activitySlug": "batalha-das-silabas",
+      "activityType": "GAME"
+    },
+    "game-caca-sons-iniciais": {
+      "moduleSlug": "brincando-com-sons",
+      "activitySlug": "caca-sons-iniciais",
+      "activityType": "GAME"
+    },
+    "game-caixa-de-palavras": {
+      "moduleSlug": "palavras-em-acao",
+      "activitySlug": "caixa-de-palavras",
+      "activityType": "GAME"
+    },
+    "game-corrida-das-vogais": {
+      "moduleSlug": "familia-das-vogais",
+      "activitySlug": "corrida-das-vogais",
+      "activityType": "GAME"
+    },
+    "game-detective-leitor": {
+      "moduleSlug": "palavras-em-acao",
+      "activitySlug": "detective-leitor",
+      "activityType": "GAME"
+    },
+    "game-dialogo-rapido": {
+      "moduleSlug": "frases-divertidas",
+      "activitySlug": "dialogo-rapido",
+      "activityType": "GAME"
+    },
+    "game-frase-surpresa": {
+      "moduleSlug": "frases-divertidas",
+      "activitySlug": "frase-surpresa",
+      "activityType": "GAME"
+    },
+    "game-laboratorio-das-vogais": {
+      "moduleSlug": "familia-das-vogais",
+      "activitySlug": "laboratorio-das-vogais",
+      "activityType": "GAME"
+    },
+    "game-memoria-das-vogais": {
+      "moduleSlug": "familia-das-vogais",
+      "activitySlug": "memoria-das-vogais",
+      "activityType": "GAME"
+    },
     "game-missao-equipes-multiplicadoras": {
       "moduleSlug": "rota-das-operacoes",
       "activitySlug": "missao-equipes-multiplicadoras",
+      "activityType": "GAME"
+    },
+    "game-montar-frase": {
+      "moduleSlug": "frases-divertidas",
+      "activitySlug": "montar-frase",
+      "activityType": "GAME"
+    },
+    "game-orquestra-de-silabas": {
+      "moduleSlug": "brincando-com-sons",
+      "activitySlug": "orquestra-de-silabas",
+      "activityType": "GAME"
+    },
+    "game-planejar-bilhete": {
+      "moduleSlug": "bilhetes-e-recados",
+      "activitySlug": "planejar-bilhete",
+      "activityType": "GAME"
+    },
+    "game-revisao-rapida": {
+      "moduleSlug": "bilhetes-e-recados",
+      "activitySlug": "revisao-rapida",
+      "activityType": "GAME"
+    },
+    "game-roda-das-rimas": {
+      "moduleSlug": "palavras-em-acao",
+      "activitySlug": "roda-das-rimas",
+      "activityType": "GAME"
+    },
+    "game-roteiro-do-recado": {
+      "moduleSlug": "bilhetes-e-recados",
+      "activitySlug": "roteiro-do-recado",
       "activityType": "GAME"
     },
     "puzzle-danca-dos-sons": {
@@ -104,36 +519,356 @@
       "activitySlug": "danca-dos-sons",
       "activityType": "PUZZLE"
     },
+    "puzzle-puzzle-compasso-silabico": {
+      "moduleSlug": "brincando-com-sons",
+      "activitySlug": "puzzle-compasso-silabico",
+      "activityType": "PUZZLE"
+    },
+    "puzzle-puzzle-completa-vogal": {
+      "moduleSlug": "familia-das-vogais",
+      "activitySlug": "puzzle-completa-vogal",
+      "activityType": "PUZZLE"
+    },
+    "puzzle-puzzle-destinatario": {
+      "moduleSlug": "bilhetes-e-recados",
+      "activitySlug": "puzzle-destinatario",
+      "activityType": "PUZZLE"
+    },
+    "puzzle-puzzle-familia-palavras": {
+      "moduleSlug": "palavras-em-acao",
+      "activitySlug": "puzzle-familia-palavras",
+      "activityType": "PUZZLE"
+    },
+    "puzzle-puzzle-frase-imagem": {
+      "moduleSlug": "frases-divertidas",
+      "activitySlug": "puzzle-frase-imagem",
+      "activityType": "PUZZLE"
+    },
+    "puzzle-puzzle-humor-frase": {
+      "moduleSlug": "frases-divertidas",
+      "activitySlug": "puzzle-humor-frase",
+      "activityType": "PUZZLE"
+    },
+    "puzzle-puzzle-intencao-frase": {
+      "moduleSlug": "frases-divertidas",
+      "activitySlug": "puzzle-intencao-frase",
+      "activityType": "PUZZLE"
+    },
+    "puzzle-puzzle-melhorias": {
+      "moduleSlug": "bilhetes-e-recados",
+      "activitySlug": "puzzle-melhorias",
+      "activityType": "PUZZLE"
+    },
+    "puzzle-puzzle-ordem-bilhete": {
+      "moduleSlug": "bilhetes-e-recados",
+      "activitySlug": "puzzle-ordem-bilhete",
+      "activityType": "PUZZLE"
+    },
+    "puzzle-puzzle-ordem-frase": {
+      "moduleSlug": "frases-divertidas",
+      "activitySlug": "puzzle-ordem-frase",
+      "activityType": "PUZZLE"
+    },
+    "puzzle-puzzle-palavra-imagem": {
+      "moduleSlug": "palavras-em-acao",
+      "activitySlug": "puzzle-palavra-imagem",
+      "activityType": "PUZZLE"
+    },
+    "puzzle-puzzle-palavras-frase": {
+      "moduleSlug": "palavras-em-acao",
+      "activitySlug": "puzzle-palavras-frase",
+      "activityType": "PUZZLE"
+    },
+    "puzzle-puzzle-revisao": {
+      "moduleSlug": "bilhetes-e-recados",
+      "activitySlug": "puzzle-revisao",
+      "activityType": "PUZZLE"
+    },
+    "puzzle-puzzle-rima-palavra": {
+      "moduleSlug": "palavras-em-acao",
+      "activitySlug": "puzzle-rima-palavra",
+      "activityType": "PUZZLE"
+    },
+    "puzzle-puzzle-rimas-sonoras": {
+      "moduleSlug": "brincando-com-sons",
+      "activitySlug": "puzzle-rimas-sonoras",
+      "activityType": "PUZZLE"
+    },
+    "puzzle-puzzle-silabas-dancarinas": {
+      "moduleSlug": "brincando-com-sons",
+      "activitySlug": "puzzle-silabas-dancarinas",
+      "activityType": "PUZZLE"
+    },
+    "puzzle-puzzle-som-inicial": {
+      "moduleSlug": "brincando-com-sons",
+      "activitySlug": "puzzle-som-inicial",
+      "activityType": "PUZZLE"
+    },
+    "puzzle-puzzle-trilha-alfabeto": {
+      "moduleSlug": "familia-das-vogais",
+      "activitySlug": "puzzle-trilha-alfabeto",
+      "activityType": "PUZZLE"
+    },
+    "puzzle-puzzle-vogais-amigas": {
+      "moduleSlug": "familia-das-vogais",
+      "activitySlug": "puzzle-vogais-amigas",
+      "activityType": "PUZZLE"
+    },
+    "puzzle-puzzle-vogal-e-imagem": {
+      "moduleSlug": "familia-das-vogais",
+      "activitySlug": "puzzle-vogal-e-imagem",
+      "activityType": "PUZZLE"
+    },
+    "quiz-batida-do-nome": {
+      "moduleSlug": "brincando-com-sons",
+      "activitySlug": "batida-do-nome",
+      "activityType": "QUIZ"
+    },
+    "quiz-caixa-das-vogais": {
+      "moduleSlug": "familia-das-vogais",
+      "activitySlug": "caixa-das-vogais",
+      "activityType": "QUIZ"
+    },
+    "quiz-cantinho-das-palavras": {
+      "moduleSlug": "palavras-em-acao",
+      "activitySlug": "cantinho-das-palavras",
+      "activityType": "QUIZ"
+    },
+    "quiz-checar-claridade": {
+      "moduleSlug": "bilhetes-e-recados",
+      "activitySlug": "checar-claridade",
+      "activityType": "QUIZ"
+    },
+    "quiz-completar-resposta": {
+      "moduleSlug": "frases-divertidas",
+      "activitySlug": "completar-resposta",
+      "activityType": "QUIZ"
+    },
+    "quiz-coro-das-vogais": {
+      "moduleSlug": "familia-das-vogais",
+      "activitySlug": "coro-das-vogais",
+      "activityType": "QUIZ"
+    },
+    "quiz-corrige-a-frase": {
+      "moduleSlug": "bilhetes-e-recados",
+      "activitySlug": "corrige-a-frase",
+      "activityType": "QUIZ"
+    },
+    "quiz-descubra-o-humor": {
+      "moduleSlug": "frases-divertidas",
+      "activitySlug": "descubra-o-humor",
+      "activityType": "QUIZ"
+    },
     "quiz-detectives-das-palavras": {
       "moduleSlug": "clubinho-das-palavras",
       "activitySlug": "detectives-das-palavras",
+      "activityType": "QUIZ"
+    },
+    "quiz-detetive-dos-pedacinhos": {
+      "moduleSlug": "brincando-com-sons",
+      "activitySlug": "detetive-dos-pedacinhos",
+      "activityType": "QUIZ"
+    },
+    "quiz-duelo-de-palavras": {
+      "moduleSlug": "palavras-em-acao",
+      "activitySlug": "duelo-de-palavras",
+      "activityType": "QUIZ"
+    },
+    "quiz-eco-dos-sons": {
+      "moduleSlug": "brincando-com-sons",
+      "activitySlug": "eco-dos-sons",
+      "activityType": "QUIZ"
+    },
+    "quiz-elementos-do-bilhete": {
+      "moduleSlug": "bilhetes-e-recados",
+      "activitySlug": "elementos-do-bilhete",
+      "activityType": "QUIZ"
+    },
+    "quiz-escolha-rapida": {
+      "moduleSlug": "palavras-em-acao",
+      "activitySlug": "escolha-rapida",
+      "activityType": "QUIZ"
+    },
+    "quiz-frase-ilustrada": {
+      "moduleSlug": "frases-divertidas",
+      "activitySlug": "frase-ilustrada",
+      "activityType": "QUIZ"
+    },
+    "quiz-intencao-da-frase": {
+      "moduleSlug": "frases-divertidas",
+      "activitySlug": "intencao-da-frase",
+      "activityType": "QUIZ"
+    },
+    "quiz-leitura-estrategica": {
+      "moduleSlug": "palavras-em-acao",
+      "activitySlug": "leitura-estrategica",
+      "activityType": "QUIZ"
+    },
+    "quiz-objetivo-do-recado": {
+      "moduleSlug": "bilhetes-e-recados",
+      "activitySlug": "objetivo-do-recado",
+      "activityType": "QUIZ"
+    },
+    "quiz-onde-acontece": {
+      "moduleSlug": "frases-divertidas",
+      "activitySlug": "onde-acontece",
+      "activityType": "QUIZ"
+    },
+    "quiz-ordem-das-vogais": {
+      "moduleSlug": "familia-das-vogais",
+      "activitySlug": "ordem-das-vogais",
+      "activityType": "QUIZ"
+    },
+    "quiz-palavra-e-figura": {
+      "moduleSlug": "palavras-em-acao",
+      "activitySlug": "palavra-e-figura",
+      "activityType": "QUIZ"
+    },
+    "quiz-palavra-em-contexto": {
+      "moduleSlug": "palavras-em-acao",
+      "activitySlug": "palavra-em-contexto",
+      "activityType": "QUIZ"
+    },
+    "quiz-qual-o-destinatario": {
+      "moduleSlug": "bilhetes-e-recados",
+      "activitySlug": "qual-o-destinatario",
+      "activityType": "QUIZ"
+    },
+    "quiz-quem-faz-o-que": {
+      "moduleSlug": "frases-divertidas",
+      "activitySlug": "quem-faz-o-que",
+      "activityType": "QUIZ"
+    },
+    "quiz-revendo-o-texto": {
+      "moduleSlug": "bilhetes-e-recados",
+      "activitySlug": "revendo-o-texto",
+      "activityType": "QUIZ"
+    },
+    "quiz-rimas-do-recreio": {
+      "moduleSlug": "brincando-com-sons",
+      "activitySlug": "rimas-do-recreio",
+      "activityType": "QUIZ"
+    },
+    "quiz-som-e-letra": {
+      "moduleSlug": "familia-das-vogais",
+      "activitySlug": "som-e-letra",
+      "activityType": "QUIZ"
+    },
+    "quiz-som-inicial-surpresa": {
+      "moduleSlug": "brincando-com-sons",
+      "activitySlug": "som-inicial-surpresa",
+      "activityType": "QUIZ"
+    },
+    "quiz-trilho-das-silabas": {
+      "moduleSlug": "brincando-com-sons",
+      "activitySlug": "trilho-das-silabas",
+      "activityType": "QUIZ"
+    },
+    "quiz-vogal-exploradora": {
+      "moduleSlug": "familia-das-vogais",
+      "activitySlug": "vogal-exploradora",
+      "activityType": "QUIZ"
+    },
+    "quiz-vogal-misteriosa": {
+      "moduleSlug": "familia-das-vogais",
+      "activitySlug": "vogal-misteriosa",
       "activityType": "QUIZ"
     }
   },
   "bncc": {
     "modules": {
+      "bilhetes-e-recados": "EF01LP09",
+      "brincando-com-sons": "EF01LP01",
       "clubinho-das-palavras": "EF01LP06",
       "estudio-dados-solidarios": "EM13MAT305",
+      "familia-das-vogais": "EF01LP03",
+      "frases-divertidas": "EF01LP07",
       "historias-em-movimento": "EI03ET04",
       "laboratorio-da-natureza": "EF07CI02",
       "oficina-modelagem-dados": "EF07MA16",
+      "palavras-em-acao": "EF01LP05",
       "rota-das-operacoes": "EF05MA08",
       "trilhas-narrativas-digitais": "EF69LP28"
     },
     "activities": {
+      "batalha-das-silabas": "EF01LP02",
+      "batida-do-nome": "EF01LP02",
+      "caca-sons-iniciais": "EF01LP01",
+      "caixa-das-vogais": "EF01LP03",
+      "caixa-de-palavras": "EF01LP05",
+      "cantinho-das-palavras": "EF01LP05",
+      "checar-claridade": "EF01LP10",
+      "completar-resposta": "EF01LP08",
+      "coro-das-vogais": "EF01LP04",
+      "corrida-das-vogais": "EF01LP03",
+      "corrige-a-frase": "EF01LP10",
       "danca-dos-sons": "EI03ET04",
       "dash-impacto-escolar": "EF07MA16",
+      "descubra-o-humor": "EF01LP08",
+      "detective-leitor": "EF01LP06",
       "detectives-das-palavras": "EF01LP06",
+      "detetive-dos-pedacinhos": "EF01LP02",
+      "dialogo-rapido": "EF01LP08",
+      "duelo-de-palavras": "EF01LP06",
+      "eco-dos-sons": "EF01LP01",
+      "elementos-do-bilhete": "EF01LP09",
+      "escolha-rapida": "EF01LP06",
       "estacao-resto-inteligente": "EF05MA08",
       "experimento-da-agua": "EF07CI02",
+      "frase-ilustrada": "EF01LP07",
+      "frase-surpresa": "EF01LP08",
       "grafico-vivo-da-comunidade": "EF07MA16",
+      "intencao-da-frase": "EF01LP08",
       "investigacao-dados-bairro": "EM13MAT305",
       "laboratorio-das-palavras": "EF35LP20",
+      "laboratorio-das-vogais": "EF01LP04",
+      "leitura-estrategica": "EF01LP06",
+      "memoria-das-vogais": "EF01LP04",
       "missao-equipes-multiplicadoras": "EF05MA08",
+      "montar-frase": "EF01LP07",
+      "objetivo-do-recado": "EF01LP09",
+      "onde-acontece": "EF01LP07",
+      "ordem-das-vogais": "EF01LP03",
+      "orquestra-de-silabas": "EF01LP02",
+      "palavra-e-figura": "EF01LP05",
+      "palavra-em-contexto": "EF01LP05",
+      "planejar-bilhete": "EF01LP09",
       "podcast-projeto-vida": "EM13MAT305",
       "podcast-voz-da-comunidade": "EF69LP28",
+      "puzzle-compasso-silabico": "EF01LP02",
+      "puzzle-completa-vogal": "EF01LP04",
+      "puzzle-destinatario": "EF01LP09",
+      "puzzle-familia-palavras": "EF01LP06",
+      "puzzle-frase-imagem": "EF01LP07",
+      "puzzle-humor-frase": "EF01LP08",
+      "puzzle-intencao-frase": "EF01LP08",
+      "puzzle-melhorias": "EF01LP10",
+      "puzzle-ordem-bilhete": "EF01LP09",
+      "puzzle-ordem-frase": "EF01LP07",
+      "puzzle-palavra-imagem": "EF01LP05",
+      "puzzle-palavras-frase": "EF01LP05",
+      "puzzle-revisao": "EF01LP10",
+      "puzzle-rima-palavra": "EF01LP06",
+      "puzzle-rimas-sonoras": "EF01LP01",
+      "puzzle-silabas-dancarinas": "EF01LP02",
+      "puzzle-som-inicial": "EF01LP01",
+      "puzzle-trilha-alfabeto": "EF01LP03",
+      "puzzle-vogais-amigas": "EF01LP03",
+      "puzzle-vogal-e-imagem": "EF01LP04",
+      "qual-o-destinatario": "EF01LP09",
+      "quem-faz-o-que": "EF01LP07",
       "quiz-sustentabilidade": "EF07CI02",
+      "revendo-o-texto": "EF01LP10",
+      "revisao-rapida": "EF01LP10",
+      "rimas-do-recreio": "EF01LP01",
+      "roda-das-rimas": "EF01LP06",
+      "roteiro-do-recado": "EF01LP10",
+      "som-e-letra": "EF01LP04",
+      "som-inicial-surpresa": "EF01LP01",
       "teatro-das-emocoes": "EI03ET04",
+      "trilho-das-silabas": "EF01LP02",
+      "vogal-exploradora": "EF01LP03",
+      "vogal-misteriosa": "EF01LP04",
       "webdoc-historias-do-bairro": "EF69LP28"
     }
   }

@@ -1,0 +1,1271 @@
+module:
+  slug: frases-divertidas
+  title: Frases Divertidas
+  subtitle: Compreensão de textos curtinhos
+  description: Sequência para ler, interpretar e criar frases curtas com humor, cooperação e atenção aos detalhes explícitos e implícitos.
+  theme: Língua Portuguesa
+  discipline: Língua Portuguesa
+  ageGroupSlug: fundamental-anos-iniciais
+  learningPathSlug: descobertas-palavras
+  primaryBnccCode: EF01LP07
+  secondaryBnccCodes:
+    - EF01LP08
+  learningOutcomes:
+    - Ler frases curtas identificando informações explícitas.
+    - Inferir intenções e efeitos de sentido em frases do cotidiano escolar.
+    - Reorganizar palavras para formar frases coerentes e significativas.
+  tags:
+    - frases
+    - compreensao
+    - interpretacao
+activities:
+  - partial: ../../_partials/acolhimento-base.yaml
+    slug: frase-ilustrada
+    title: Frase Ilustrada
+    prompt: Leia a frase e responda à pergunta sobre ela.
+    type: QUIZ
+    difficulty: INICIAR
+    bncc:
+      code: EF01LP07
+      habilidades:
+        - EF01LP07
+    learningObjectives:
+      - Explorar compreensão literal de frases em situações guiadas pelo educador.
+      - Compartilhar estratégias pessoais com colegas durante a atividade.
+    description: Frase Ilustrada convida a turma a investigar compreensão literal de frases com apoio de recursos multimodais.
+    metadata:
+      categoria: Compreensão literal
+      duracaoMinutos: 8
+      habilidades:
+        - EF01LP07
+      assetSlug: lp-letra-a
+      interactiveSlug: quiz-frase-ilustrada
+    accessibility:
+      hints:
+        - audience: ESTUDANTE
+          text: Use as setas do teclado ou toque na tela para navegar enquanto destaca compreensão literal de frases com gestos ou palmas.
+        - audience: EDUCADOR
+          text: Projete imagens de apoio, ofereça repetição de áudio e verbalize os passos para favorecer a percepção de compreensão literal de frases.
+        - audience: FAMILIA
+          text: Envie sugestões de objetos ou cantigas que reforcem os sons trabalhados para continuidade em casa.
+      feedback:
+        success: Ótimo trabalho! Compreensão literal de frases ficou mais claro com sua atenção aos detalhes.
+        retry: Retome com calma, respirando fundo e usando as pistas visuais oferecidas.
+        encouragement: Valorize cada tentativa e compare sons ou letras com apoio dos colegas.
+        accessibility: Disponibilize fones acolchoados, letras ampliadas e manipuláveis táteis para quem precisar.
+      assets:
+        - slug: lp-letra-a
+          type: IMAGEM
+          title: Ilustração da letra A
+    prerequisites:
+      - type: SKILL
+        reference: EF01LP07
+        description: Participar de leituras compartilhadas de frases curtas.
+    interactive:
+      slug: quiz-frase-ilustrada
+      title: Frase Ilustrada — Quiz
+      type: QUIZ
+      bnccDescription: Compreender frases curtas identificando informações explícitas.
+      estimatedTimeMinutes: 8
+      instructions:
+        - Leia ou escute o desafio com atenção antes de registrar a resposta.
+        - Use as teclas numéricas ou clique nas alternativas para responder.
+        - Compartilhe com a turma novas palavras relacionadas após concluir o desafio.
+      objectives:
+        - Explorar compreensão literal de frases em situações guiadas pelo educador.
+        - Compartilhar estratégias pessoais com colegas durante a atividade.
+      scoring:
+        correct: 10
+        incorrect: 0
+      adaptive:
+        increaseAfter: 2
+        decreaseAfter: 1
+      questions:
+        - id: frase-ilustrada-q1
+          type: multiple-choice
+          prompt: 'A frase diz: ''O gato dorme no tapete.'' O que o gato está fazendo?'
+          hint: Procure o verbo que indica a ação.
+          options:
+            - id: frase-ilustrada-q1-1
+              text: Dormindo
+              isCorrect: true
+              feedback: Excelente! 'Dormindo' evidencia compreensão literal de frases.
+            - id: frase-ilustrada-q1-2
+              text: Pulando
+              isCorrect: false
+              feedback: Ainda não. 'Pulando' não representa compreensão literal de frases.
+            - id: frase-ilustrada-q1-3
+              text: Comendo
+              isCorrect: false
+              feedback: Ainda não. 'Comendo' não representa compreensão literal de frases.
+        - id: frase-ilustrada-q2
+          type: true-false
+          prompt: Na frase, o gato dorme no tapete?
+          hint: Releia a frase com atenção.
+          statement: Na frase, o gato dorme no tapete.
+          answer: true
+          feedback:
+            'true': Muito bem! A afirmação confirma compreensão literal de frases.
+            'false': 'Revise: compreensão literal de frases está presente na afirmação.'
+      accessibility:
+        hints:
+          - audience: ESTUDANTE
+            text: Use TAB e ENTER para navegar e confirmar sua escolha.
+          - audience: EDUCADOR
+            text: Projete legendas e permita repetição do áudio para quem precisar.
+        feedback:
+          success: Excelente! Compreensão literal de frases ficou evidente nas suas respostas.
+          encouragement: Caso erre, leia novamente com voz pausada e utilize marcadores visuais.
+          accessibility: Ofereça apoio auditivo individual e contraste elevado nos botões.
+        assets:
+          - slug: lp-letra-a
+            type: IMAGEM
+            title: Ilustração da letra A
+  - partial: ../../_partials/acolhimento-base.yaml
+    slug: quem-faz-o-que
+    title: Quem faz o quê?
+    prompt: Identifique o personagem responsável pela ação.
+    type: QUIZ
+    difficulty: PRATICAR
+    bncc:
+      code: EF01LP07
+      habilidades:
+        - EF01LP07
+    learningObjectives:
+      - Explorar identificação de sujeitos e ações em situações guiadas pelo educador.
+      - Compartilhar estratégias pessoais com colegas durante a atividade.
+    description: Quem faz o quê? convida a turma a investigar identificação de sujeitos e ações com apoio de recursos multimodais.
+    metadata:
+      categoria: Elementos da frase
+      duracaoMinutos: 8
+      habilidades:
+        - EF01LP07
+      assetSlug: lp-letra-e
+      interactiveSlug: quiz-quem-faz-o-que
+    accessibility:
+      hints:
+        - audience: ESTUDANTE
+          text: Use as setas do teclado ou toque na tela para navegar enquanto destaca identificação de sujeitos e ações com gestos ou palmas.
+        - audience: EDUCADOR
+          text: Projete imagens de apoio, ofereça repetição de áudio e verbalize os passos para favorecer a percepção de identificação de sujeitos e ações.
+        - audience: FAMILIA
+          text: Envie sugestões de objetos ou cantigas que reforcem os sons trabalhados para continuidade em casa.
+      feedback:
+        success: Ótimo trabalho! Identificação de sujeitos e ações ficou mais claro com sua atenção aos detalhes.
+        retry: Retome com calma, respirando fundo e usando as pistas visuais oferecidas.
+        encouragement: Valorize cada tentativa e compare sons ou letras com apoio dos colegas.
+        accessibility: Disponibilize fones acolchoados, letras ampliadas e manipuláveis táteis para quem precisar.
+      assets:
+        - slug: lp-letra-e
+          type: IMAGEM
+          title: Ilustração da letra E
+    prerequisites:
+      - type: ACTIVITY
+        reference: frase-ilustrada
+        description: Revisar frases lidas anteriormente.
+    interactive:
+      slug: quiz-quem-faz-o-que
+      title: Quem faz o quê? — Quiz
+      type: QUIZ
+      bnccDescription: Compreender frases curtas identificando informações explícitas.
+      estimatedTimeMinutes: 8
+      instructions:
+        - Leia ou escute o desafio com atenção antes de registrar a resposta.
+        - Use as teclas numéricas ou clique nas alternativas para responder.
+        - Compartilhe com a turma novas palavras relacionadas após concluir o desafio.
+      objectives:
+        - Explorar identificação de sujeitos e ações em situações guiadas pelo educador.
+        - Compartilhar estratégias pessoais com colegas durante a atividade.
+      scoring:
+        correct: 10
+        incorrect: 0
+      adaptive:
+        increaseAfter: 2
+        decreaseAfter: 1
+      questions:
+        - id: quem-faz-o-que-q1
+          type: multiple-choice
+          prompt: 'A frase diz: ''Ana leva o livro para a sala.'' Quem leva o livro?'
+          hint: Perceba o nome citado antes do verbo.
+          options:
+            - id: quem-faz-o-que-q1-1
+              text: Ana
+              isCorrect: true
+              feedback: Excelente! 'Ana' evidencia identificação de sujeitos e ações.
+            - id: quem-faz-o-que-q1-2
+              text: Pedro
+              isCorrect: false
+              feedback: Ainda não. 'Pedro' não representa identificação de sujeitos e ações.
+            - id: quem-faz-o-que-q1-3
+              text: Gato
+              isCorrect: false
+              feedback: Ainda não. 'Gato' não representa identificação de sujeitos e ações.
+        - id: quem-faz-o-que-q2
+          type: true-false
+          prompt: Na frase, Ana leva o livro para a sala?
+          hint: Leia novamente observando o sujeito.
+          statement: Na frase, Ana leva o livro para a sala.
+          answer: true
+          feedback:
+            'true': Muito bem! A afirmação confirma identificação de sujeitos e ações.
+            'false': 'Revise: identificação de sujeitos e ações está presente na afirmação.'
+      accessibility:
+        hints:
+          - audience: ESTUDANTE
+            text: Use TAB e ENTER para navegar e confirmar sua escolha.
+          - audience: EDUCADOR
+            text: Projete legendas e permita repetição do áudio para quem precisar.
+        feedback:
+          success: Excelente! Identificação de sujeitos e ações ficou evidente nas suas respostas.
+          encouragement: Caso erre, leia novamente com voz pausada e utilize marcadores visuais.
+          accessibility: Ofereça apoio auditivo individual e contraste elevado nos botões.
+        assets:
+          - slug: lp-letra-e
+            type: IMAGEM
+            title: Ilustração da letra E
+  - partial: ../../_partials/acolhimento-base.yaml
+    slug: onde-acontece
+    title: Onde acontece?
+    prompt: Descubra o local indicado pela frase.
+    type: QUIZ
+    difficulty: DOMINAR
+    bncc:
+      code: EF01LP07
+      habilidades:
+        - EF01LP07
+    learningObjectives:
+      - Explorar compreensão de informações explícitas em situações guiadas pelo educador.
+      - Compartilhar estratégias pessoais com colegas durante a atividade.
+    description: Onde acontece? convida a turma a investigar compreensão de informações explícitas com apoio de recursos multimodais.
+    metadata:
+      categoria: Localização
+      duracaoMinutos: 9
+      habilidades:
+        - EF01LP07
+      assetSlug: lp-material-caderno
+      interactiveSlug: quiz-onde-acontece
+    accessibility:
+      hints:
+        - audience: ESTUDANTE
+          text: Use as setas do teclado ou toque na tela para navegar enquanto destaca compreensão de informações explícitas com gestos ou palmas.
+        - audience: EDUCADOR
+          text: Projete imagens de apoio, ofereça repetição de áudio e verbalize os passos para favorecer a percepção de compreensão de informações explícitas.
+        - audience: FAMILIA
+          text: Envie sugestões de objetos ou cantigas que reforcem os sons trabalhados para continuidade em casa.
+      feedback:
+        success: Ótimo trabalho! Compreensão de informações explícitas ficou mais claro com sua atenção aos detalhes.
+        retry: Retome com calma, respirando fundo e usando as pistas visuais oferecidas.
+        encouragement: Valorize cada tentativa e compare sons ou letras com apoio dos colegas.
+        accessibility: Disponibilize fones acolchoados, letras ampliadas e manipuláveis táteis para quem precisar.
+      assets:
+        - slug: lp-material-caderno
+          type: IMAGEM
+          title: Caderno colorido para escrita
+    prerequisites:
+      - type: ACTIVITY
+        reference: quem-faz-o-que
+        description: Retomar frases para identificar elementos importantes.
+    interactive:
+      slug: quiz-onde-acontece
+      title: Onde acontece? — Quiz
+      type: QUIZ
+      bnccDescription: Compreender frases curtas identificando informações explícitas.
+      estimatedTimeMinutes: 9
+      instructions:
+        - Leia ou escute o desafio com atenção antes de registrar a resposta.
+        - Use as teclas numéricas ou clique nas alternativas para responder.
+        - Compartilhe com a turma novas palavras relacionadas após concluir o desafio.
+      objectives:
+        - Explorar compreensão de informações explícitas em situações guiadas pelo educador.
+        - Compartilhar estratégias pessoais com colegas durante a atividade.
+      scoring:
+        correct: 10
+        incorrect: 0
+      adaptive:
+        increaseAfter: 2
+        decreaseAfter: 1
+      questions:
+        - id: onde-acontece-q1
+          type: multiple-choice
+          prompt: 'A frase diz: ''O recreio acontece no pátio.'' Onde acontece o recreio?'
+          hint: Observe o lugar citado depois do verbo.
+          options:
+            - id: onde-acontece-q1-1
+              text: No pátio
+              isCorrect: true
+              feedback: Excelente! 'No pátio' evidencia compreensão de informações explícitas.
+            - id: onde-acontece-q1-2
+              text: Na biblioteca
+              isCorrect: false
+              feedback: Ainda não. 'Na biblioteca' não representa compreensão de informações explícitas.
+            - id: onde-acontece-q1-3
+              text: Na cozinha
+              isCorrect: false
+              feedback: Ainda não. 'Na cozinha' não representa compreensão de informações explícitas.
+        - id: onde-acontece-q2
+          type: true-false
+          prompt: O recreio acontece na biblioteca?
+          hint: Verifique o local indicado na frase.
+          statement: O recreio acontece na biblioteca.
+          answer: false
+          feedback:
+            'true': 'Repare: compreensão de informações explícitas não acontece como descrito.'
+            'false': Correto! compreensão de informações explícitas não aparece dessa forma.
+      accessibility:
+        hints:
+          - audience: ESTUDANTE
+            text: Use TAB e ENTER para navegar e confirmar sua escolha.
+          - audience: EDUCADOR
+            text: Projete legendas e permita repetição do áudio para quem precisar.
+        feedback:
+          success: Excelente! Compreensão de informações explícitas ficou evidente nas suas respostas.
+          encouragement: Caso erre, leia novamente com voz pausada e utilize marcadores visuais.
+          accessibility: Ofereça apoio auditivo individual e contraste elevado nos botões.
+        assets:
+          - slug: lp-material-caderno
+            type: IMAGEM
+            title: Caderno colorido para escrita
+  - partial: ../../_partials/acolhimento-base.yaml
+    slug: intencao-da-frase
+    title: Intenção da Frase
+    prompt: Identifique a intenção comunicativa da frase.
+    type: QUIZ
+    difficulty: INICIAR
+    bncc:
+      code: EF01LP08
+      habilidades:
+        - EF01LP08
+    learningObjectives:
+      - Explorar inferência de intenções em situações guiadas pelo educador.
+      - Compartilhar estratégias pessoais com colegas durante a atividade.
+    description: Intenção da Frase convida a turma a investigar inferência de intenções com apoio de recursos multimodais.
+    metadata:
+      categoria: Intenções comunicativas
+      duracaoMinutos: 8
+      habilidades:
+        - EF01LP08
+      assetSlug: lp-silaba-ba
+      interactiveSlug: quiz-intencao-da-frase
+    accessibility:
+      hints:
+        - audience: ESTUDANTE
+          text: Use as setas do teclado ou toque na tela para navegar enquanto destaca inferência de intenções com gestos ou palmas.
+        - audience: EDUCADOR
+          text: Projete imagens de apoio, ofereça repetição de áudio e verbalize os passos para favorecer a percepção de inferência de intenções.
+        - audience: FAMILIA
+          text: Envie sugestões de objetos ou cantigas que reforcem os sons trabalhados para continuidade em casa.
+      feedback:
+        success: Ótimo trabalho! Inferência de intenções ficou mais claro com sua atenção aos detalhes.
+        retry: Retome com calma, respirando fundo e usando as pistas visuais oferecidas.
+        encouragement: Valorize cada tentativa e compare sons ou letras com apoio dos colegas.
+        accessibility: Disponibilize fones acolchoados, letras ampliadas e manipuláveis táteis para quem precisar.
+      assets:
+        - slug: lp-silaba-ba
+          type: IMAGEM
+          title: Cartão da sílaba BA
+    prerequisites:
+      - type: SKILL
+        reference: EF01LP08
+        description: Discutir diferentes intenções em diálogos curtos.
+    interactive:
+      slug: quiz-intencao-da-frase
+      title: Intenção da Frase — Quiz
+      type: QUIZ
+      bnccDescription: Inferir sentidos e intenções em frases e textos curtos do cotidiano escolar.
+      estimatedTimeMinutes: 8
+      instructions:
+        - Leia ou escute o desafio com atenção antes de registrar a resposta.
+        - Use as teclas numéricas ou clique nas alternativas para responder.
+        - Compartilhe com a turma novas palavras relacionadas após concluir o desafio.
+      objectives:
+        - Explorar inferência de intenções em situações guiadas pelo educador.
+        - Compartilhar estratégias pessoais com colegas durante a atividade.
+      scoring:
+        correct: 10
+        incorrect: 0
+      adaptive:
+        increaseAfter: 2
+        decreaseAfter: 1
+      questions:
+        - id: intencao-da-frase-q1
+          type: multiple-choice
+          prompt: 'Frase: ''Por favor, feche a porta.'' Qual é a intenção da frase?'
+          hint: Perceba as palavras de gentileza e a ação proposta.
+          options:
+            - id: intencao-da-frase-q1-1
+              text: Fazer um pedido
+              isCorrect: true
+              feedback: Excelente! 'Fazer um pedido' evidencia inferência de intenções.
+            - id: intencao-da-frase-q1-2
+              text: Contar uma história
+              isCorrect: false
+              feedback: Ainda não. 'Contar uma história' não representa inferência de intenções.
+            - id: intencao-da-frase-q1-3
+              text: Dar uma opinião
+              isCorrect: false
+              feedback: Ainda não. 'Dar uma opinião' não representa inferência de intenções.
+        - id: intencao-da-frase-q2
+          type: true-false
+          prompt: A frase faz um pedido educado?
+          hint: Observe a expressão 'por favor'.
+          statement: A frase faz um pedido educado.
+          answer: true
+          feedback:
+            'true': Muito bem! A afirmação confirma inferência de intenções.
+            'false': 'Revise: inferência de intenções está presente na afirmação.'
+      accessibility:
+        hints:
+          - audience: ESTUDANTE
+            text: Use TAB e ENTER para navegar e confirmar sua escolha.
+          - audience: EDUCADOR
+            text: Projete legendas e permita repetição do áudio para quem precisar.
+        feedback:
+          success: Excelente! Inferência de intenções ficou evidente nas suas respostas.
+          encouragement: Caso erre, leia novamente com voz pausada e utilize marcadores visuais.
+          accessibility: Ofereça apoio auditivo individual e contraste elevado nos botões.
+        assets:
+          - slug: lp-silaba-ba
+            type: IMAGEM
+            title: Cartão da sílaba BA
+  - partial: ../../_partials/acolhimento-base.yaml
+    slug: descubra-o-humor
+    title: Descubra o Humor
+    prompt: Interprete o sentido figurado presente na frase.
+    type: QUIZ
+    difficulty: PRATICAR
+    bncc:
+      code: EF01LP08
+      habilidades:
+        - EF01LP08
+    learningObjectives:
+      - Explorar inferência de sentidos implícitos em situações guiadas pelo educador.
+      - Compartilhar estratégias pessoais com colegas durante a atividade.
+    description: Descubra o Humor convida a turma a investigar inferência de sentidos implícitos com apoio de recursos multimodais.
+    metadata:
+      categoria: Sentido figurado
+      duracaoMinutos: 9
+      habilidades:
+        - EF01LP08
+      assetSlug: lp-silaba-la
+      interactiveSlug: quiz-descubra-o-humor
+    accessibility:
+      hints:
+        - audience: ESTUDANTE
+          text: Use as setas do teclado ou toque na tela para navegar enquanto destaca inferência de sentidos implícitos com gestos ou palmas.
+        - audience: EDUCADOR
+          text: Projete imagens de apoio, ofereça repetição de áudio e verbalize os passos para favorecer a percepção de inferência de sentidos implícitos.
+        - audience: FAMILIA
+          text: Envie sugestões de objetos ou cantigas que reforcem os sons trabalhados para continuidade em casa.
+      feedback:
+        success: Ótimo trabalho! Inferência de sentidos implícitos ficou mais claro com sua atenção aos detalhes.
+        retry: Retome com calma, respirando fundo e usando as pistas visuais oferecidas.
+        encouragement: Valorize cada tentativa e compare sons ou letras com apoio dos colegas.
+        accessibility: Disponibilize fones acolchoados, letras ampliadas e manipuláveis táteis para quem precisar.
+      assets:
+        - slug: lp-silaba-la
+          type: IMAGEM
+          title: Cartão da sílaba LA
+    prerequisites:
+      - type: ACTIVITY
+        reference: intencao-da-frase
+        description: Revisar como identificar intenções antes de analisar o humor.
+    interactive:
+      slug: quiz-descubra-o-humor
+      title: Descubra o Humor — Quiz
+      type: QUIZ
+      bnccDescription: Inferir sentidos e intenções em frases e textos curtos do cotidiano escolar.
+      estimatedTimeMinutes: 9
+      instructions:
+        - Leia ou escute o desafio com atenção antes de registrar a resposta.
+        - Use as teclas numéricas ou clique nas alternativas para responder.
+        - Compartilhe com a turma novas palavras relacionadas após concluir o desafio.
+      objectives:
+        - Explorar inferência de sentidos implícitos em situações guiadas pelo educador.
+        - Compartilhar estratégias pessoais com colegas durante a atividade.
+      scoring:
+        correct: 10
+        incorrect: 0
+      adaptive:
+        increaseAfter: 2
+        decreaseAfter: 1
+      questions:
+        - id: descubra-o-humor-q1
+          type: multiple-choice
+          prompt: 'Frase: ''O lápis pediu férias depois de tantas provas!'' O que a frase quer dizer?'
+          hint: Pense se objetos podem realmente pedir férias.
+          options:
+            - id: descubra-o-humor-q1-1
+              text: Que as provas foram cansativas
+              isCorrect: true
+              feedback: Excelente! 'Que as provas foram cansativas' evidencia inferência de sentidos implícitos.
+            - id: descubra-o-humor-q1-2
+              text: Que o lápis vai viajar
+              isCorrect: false
+              feedback: Ainda não. 'Que o lápis vai viajar' não representa inferência de sentidos implícitos.
+            - id: descubra-o-humor-q1-3
+              text: Que não haverá mais provas
+              isCorrect: false
+              feedback: Ainda não. 'Que não haverá mais provas' não representa inferência de sentidos implícitos.
+        - id: descubra-o-humor-q2
+          type: true-false
+          prompt: A frase usa humor para mostrar cansaço?
+          hint: Observe o exagero da expressão.
+          statement: A frase usa humor para mostrar cansaço.
+          answer: true
+          feedback:
+            'true': Muito bem! A afirmação confirma inferência de sentidos implícitos.
+            'false': 'Revise: inferência de sentidos implícitos está presente na afirmação.'
+      accessibility:
+        hints:
+          - audience: ESTUDANTE
+            text: Use TAB e ENTER para navegar e confirmar sua escolha.
+          - audience: EDUCADOR
+            text: Projete legendas e permita repetição do áudio para quem precisar.
+        feedback:
+          success: Excelente! Inferência de sentidos implícitos ficou evidente nas suas respostas.
+          encouragement: Caso erre, leia novamente com voz pausada e utilize marcadores visuais.
+          accessibility: Ofereça apoio auditivo individual e contraste elevado nos botões.
+        assets:
+          - slug: lp-silaba-la
+            type: IMAGEM
+            title: Cartão da sílaba LA
+  - partial: ../../_partials/acolhimento-base.yaml
+    slug: completar-resposta
+    title: Completar Resposta
+    prompt: Escolha a resposta que combina com o diálogo apresentado.
+    type: QUIZ
+    difficulty: DOMINAR
+    bncc:
+      code: EF01LP08
+      habilidades:
+        - EF01LP08
+    learningObjectives:
+      - Explorar respostas adequadas em situações guiadas pelo educador.
+      - Compartilhar estratégias pessoais com colegas durante a atividade.
+    description: Completar Resposta convida a turma a investigar respostas adequadas com apoio de recursos multimodais.
+    metadata:
+      categoria: Diálogos
+      duracaoMinutos: 9
+      habilidades:
+        - EF01LP08
+      assetSlug: lp-material-caderno
+      interactiveSlug: quiz-completar-resposta
+    accessibility:
+      hints:
+        - audience: ESTUDANTE
+          text: Use as setas do teclado ou toque na tela para navegar enquanto destaca respostas adequadas com gestos ou palmas.
+        - audience: EDUCADOR
+          text: Projete imagens de apoio, ofereça repetição de áudio e verbalize os passos para favorecer a percepção de respostas adequadas.
+        - audience: FAMILIA
+          text: Envie sugestões de objetos ou cantigas que reforcem os sons trabalhados para continuidade em casa.
+      feedback:
+        success: Ótimo trabalho! Respostas adequadas ficou mais claro com sua atenção aos detalhes.
+        retry: Retome com calma, respirando fundo e usando as pistas visuais oferecidas.
+        encouragement: Valorize cada tentativa e compare sons ou letras com apoio dos colegas.
+        accessibility: Disponibilize fones acolchoados, letras ampliadas e manipuláveis táteis para quem precisar.
+      assets:
+        - slug: lp-material-caderno
+          type: IMAGEM
+          title: Caderno colorido para escrita
+    prerequisites:
+      - type: ACTIVITY
+        reference: descubra-o-humor
+        description: Analisar como frases podem mudar de sentido.
+    interactive:
+      slug: quiz-completar-resposta
+      title: Completar Resposta — Quiz
+      type: QUIZ
+      bnccDescription: Inferir sentidos e intenções em frases e textos curtos do cotidiano escolar.
+      estimatedTimeMinutes: 9
+      instructions:
+        - Leia ou escute o desafio com atenção antes de registrar a resposta.
+        - Use as teclas numéricas ou clique nas alternativas para responder.
+        - Compartilhe com a turma novas palavras relacionadas após concluir o desafio.
+      objectives:
+        - Explorar respostas adequadas em situações guiadas pelo educador.
+        - Compartilhar estratégias pessoais com colegas durante a atividade.
+      scoring:
+        correct: 10
+        incorrect: 0
+      adaptive:
+        increaseAfter: 2
+        decreaseAfter: 1
+      questions:
+        - id: completar-resposta-q1
+          type: multiple-choice
+          prompt: 'Diálogo: ''— Pode me emprestar o caderno? — ____'' Qual resposta combina com o pedido?'
+          hint: Repare se a resposta concorda com o pedido.
+          options:
+            - id: completar-resposta-q1-1
+              text: Claro, pegue aqui.
+              isCorrect: true
+              feedback: Excelente! 'Claro, pegue aqui.' evidencia respostas adequadas.
+            - id: completar-resposta-q1-2
+              text: Não tenho lápis.
+              isCorrect: false
+              feedback: Ainda não. 'Não tenho lápis.' não representa respostas adequadas.
+            - id: completar-resposta-q1-3
+              text: Vamos correr?
+              isCorrect: false
+              feedback: Ainda não. 'Vamos correr?' não representa respostas adequadas.
+        - id: completar-resposta-q2
+          type: true-false
+          prompt: A resposta 'Claro, pegue aqui.' concorda com o pedido?
+          hint: Verifique se a resposta atende ao pedido.
+          statement: A resposta 'Claro, pegue aqui.' concorda com o pedido.
+          answer: true
+          feedback:
+            'true': Muito bem! A afirmação confirma respostas adequadas.
+            'false': 'Revise: respostas adequadas está presente na afirmação.'
+      accessibility:
+        hints:
+          - audience: ESTUDANTE
+            text: Use TAB e ENTER para navegar e confirmar sua escolha.
+          - audience: EDUCADOR
+            text: Projete legendas e permita repetição do áudio para quem precisar.
+        feedback:
+          success: Excelente! Respostas adequadas ficou evidente nas suas respostas.
+          encouragement: Caso erre, leia novamente com voz pausada e utilize marcadores visuais.
+          accessibility: Ofereça apoio auditivo individual e contraste elevado nos botões.
+        assets:
+          - slug: lp-material-caderno
+            type: IMAGEM
+            title: Caderno colorido para escrita
+  - partial: ../../_partials/acolhimento-base.yaml
+    slug: puzzle-frase-imagem
+    title: Frase & Imagem
+    prompt: Combine frases a descrições de imagens.
+    type: PUZZLE
+    difficulty: INICIAR
+    bncc:
+      code: EF01LP07
+      habilidades:
+        - EF01LP07
+    learningObjectives:
+      - Explorar compreensão literal de frases em situações guiadas pelo educador.
+      - Compartilhar estratégias pessoais com colegas durante a atividade.
+    description: Frase & Imagem convida a turma a investigar compreensão literal de frases com apoio de recursos multimodais.
+    metadata:
+      categoria: Compreensão literal
+      duracaoMinutos: 10
+      habilidades:
+        - EF01LP07
+      assetSlug: lp-letra-a
+      interactiveSlug: puzzle-puzzle-frase-imagem
+    accessibility:
+      hints:
+        - audience: ESTUDANTE
+          text: Use as setas do teclado ou toque na tela para navegar enquanto destaca compreensão literal de frases com gestos ou palmas.
+        - audience: EDUCADOR
+          text: Projete imagens de apoio, ofereça repetição de áudio e verbalize os passos para favorecer a percepção de compreensão literal de frases.
+        - audience: FAMILIA
+          text: Envie sugestões de objetos ou cantigas que reforcem os sons trabalhados para continuidade em casa.
+      feedback:
+        success: Ótimo trabalho! Compreensão literal de frases ficou mais claro com sua atenção aos detalhes.
+        retry: Retome com calma, respirando fundo e usando as pistas visuais oferecidas.
+        encouragement: Valorize cada tentativa e compare sons ou letras com apoio dos colegas.
+        accessibility: Disponibilize fones acolchoados, letras ampliadas e manipuláveis táteis para quem precisar.
+      assets:
+        - slug: lp-letra-a
+          type: IMAGEM
+          title: Ilustração da letra A
+    prerequisites:
+      - type: ACTIVITY
+        reference: frase-ilustrada
+        description: Retomar frases trabalhadas para criar novas associações.
+    interactive:
+      slug: puzzle-puzzle-frase-imagem
+      title: Frase & Imagem — Quebra-cabeça
+      type: PUZZLE
+      bnccDescription: Compreender frases curtas identificando informações explícitas.
+      estimatedTimeMinutes: 10
+      instructions:
+        - Observe cada cartão e combine arrastando ou usando TAB + ENTER.
+        - Converse sobre o motivo da combinação antes de confirmar.
+        - Revise as duplas formadas e proponha novas associações.
+      objectives:
+        - Explorar compreensão literal de frases em situações guiadas pelo educador.
+        - Compartilhar estratégias pessoais com colegas durante a atividade.
+      puzzle:
+        mode: matching
+        successFeedback: Tudo combinado! Compreensão literal de frases ficou evidente nas associações.
+        errorFeedback: Observe novamente os sons, conte devagar e tente outra combinação.
+        pairs:
+          - id: puzzle-frase-imagem-pair-1
+            prompt: O cachorro bebe água.
+            match: Cachorro no bebedouro
+            hint: Observe compreensão literal de frases presente em 'O cachorro bebe água.'.
+            feedback: Perfeito! 'Cachorro no bebedouro' combina com 'O cachorro bebe água.' porque evidencia compreensão literal de frases.
+          - id: puzzle-frase-imagem-pair-2
+            prompt: A professora escreve no quadro.
+            match: Professora escrevendo no quadro
+            hint: Observe compreensão literal de frases presente em 'A professora escreve no quadro.'.
+            feedback: Perfeito! 'Professora escrevendo no quadro' combina com 'A professora escreve no quadro.' porque evidencia compreensão literal de frases.
+          - id: puzzle-frase-imagem-pair-3
+            prompt: As crianças brincam no parque.
+            match: Crianças no parque
+            hint: Observe compreensão literal de frases presente em 'As crianças brincam no parque.'.
+            feedback: Perfeito! 'Crianças no parque' combina com 'As crianças brincam no parque.' porque evidencia compreensão literal de frases.
+      accessibility:
+        hints:
+          - audience: ESTUDANTE
+            text: Use as setas para navegar entre os cartões e Enter para selecionar.
+          - audience: EDUCADOR
+            text: Disponibilize cartões físicos para manipulação simultânea.
+        feedback:
+          success: Tudo combinado! Compreensão literal de frases ficou evidente nas associações.
+          encouragement: Compare sons lentamente e utilize gestos amplos para apoiar a associação.
+          accessibility: Ofereça cartões com textura ou relevo para ampliar as pistas sensoriais.
+        assets:
+          - slug: lp-letra-a
+            type: IMAGEM
+            title: Ilustração da letra A
+  - partial: ../../_partials/acolhimento-base.yaml
+    slug: puzzle-ordem-frase
+    title: Ordem da Frase
+    prompt: Associe sequências embaralhadas à frase organizada.
+    type: PUZZLE
+    difficulty: PRATICAR
+    bncc:
+      code: EF01LP07
+      habilidades:
+        - EF01LP07
+    learningObjectives:
+      - Explorar organização sintática em situações guiadas pelo educador.
+      - Compartilhar estratégias pessoais com colegas durante a atividade.
+    description: Ordem da Frase convida a turma a investigar organização sintática com apoio de recursos multimodais.
+    metadata:
+      categoria: Organização de frases
+      duracaoMinutos: 10
+      habilidades:
+        - EF01LP07
+      assetSlug: lp-material-caderno
+      interactiveSlug: puzzle-puzzle-ordem-frase
+    accessibility:
+      hints:
+        - audience: ESTUDANTE
+          text: Use as setas do teclado ou toque na tela para navegar enquanto destaca organização sintática com gestos ou palmas.
+        - audience: EDUCADOR
+          text: Projete imagens de apoio, ofereça repetição de áudio e verbalize os passos para favorecer a percepção de organização sintática.
+        - audience: FAMILIA
+          text: Envie sugestões de objetos ou cantigas que reforcem os sons trabalhados para continuidade em casa.
+      feedback:
+        success: Ótimo trabalho! Organização sintática ficou mais claro com sua atenção aos detalhes.
+        retry: Retome com calma, respirando fundo e usando as pistas visuais oferecidas.
+        encouragement: Valorize cada tentativa e compare sons ou letras com apoio dos colegas.
+        accessibility: Disponibilize fones acolchoados, letras ampliadas e manipuláveis táteis para quem precisar.
+      assets:
+        - slug: lp-material-caderno
+          type: IMAGEM
+          title: Caderno colorido para escrita
+    prerequisites:
+      - type: ACTIVITY
+        reference: quem-faz-o-que
+        description: Revisar estrutura básica de frases.
+    interactive:
+      slug: puzzle-puzzle-ordem-frase
+      title: Ordem da Frase — Quebra-cabeça
+      type: PUZZLE
+      bnccDescription: Compreender frases curtas identificando informações explícitas.
+      estimatedTimeMinutes: 10
+      instructions:
+        - Observe cada cartão e combine arrastando ou usando TAB + ENTER.
+        - Converse sobre o motivo da combinação antes de confirmar.
+        - Revise as duplas formadas e proponha novas associações.
+      objectives:
+        - Explorar organização sintática em situações guiadas pelo educador.
+        - Compartilhar estratégias pessoais com colegas durante a atividade.
+      puzzle:
+        mode: matching
+        successFeedback: Tudo combinado! Organização sintática ficou evidente nas associações.
+        errorFeedback: Observe novamente os sons, conte devagar e tente outra combinação.
+        pairs:
+          - id: puzzle-ordem-frase-pair-1
+            prompt: Dormindo / gato / está
+            match: O gato está dormindo.
+            hint: Observe organização sintática presente em 'Dormindo / gato / está'.
+            feedback: Perfeito! 'O gato está dormindo.' combina com 'Dormindo / gato / está' porque evidencia organização sintática.
+          - id: puzzle-ordem-frase-pair-2
+            prompt: Livro / Ana / leva
+            match: Ana leva o livro.
+            hint: Observe organização sintática presente em 'Livro / Ana / leva'.
+            feedback: Perfeito! 'Ana leva o livro.' combina com 'Livro / Ana / leva' porque evidencia organização sintática.
+          - id: puzzle-ordem-frase-pair-3
+            prompt: Pátio / turma / corre
+            match: A turma corre no pátio.
+            hint: Observe organização sintática presente em 'Pátio / turma / corre'.
+            feedback: Perfeito! 'A turma corre no pátio.' combina com 'Pátio / turma / corre' porque evidencia organização sintática.
+      accessibility:
+        hints:
+          - audience: ESTUDANTE
+            text: Use as setas para navegar entre os cartões e Enter para selecionar.
+          - audience: EDUCADOR
+            text: Disponibilize cartões físicos para manipulação simultânea.
+        feedback:
+          success: Tudo combinado! Organização sintática ficou evidente nas associações.
+          encouragement: Compare sons lentamente e utilize gestos amplos para apoiar a associação.
+          accessibility: Ofereça cartões com textura ou relevo para ampliar as pistas sensoriais.
+        assets:
+          - slug: lp-material-caderno
+            type: IMAGEM
+            title: Caderno colorido para escrita
+  - partial: ../../_partials/acolhimento-base.yaml
+    slug: puzzle-intencao-frase
+    title: Intenção da Frase
+    prompt: Relacione frases a suas intenções.
+    type: PUZZLE
+    difficulty: PRATICAR
+    bncc:
+      code: EF01LP08
+      habilidades:
+        - EF01LP08
+    learningObjectives:
+      - Explorar inferência de intenções em situações guiadas pelo educador.
+      - Compartilhar estratégias pessoais com colegas durante a atividade.
+    description: Intenção da Frase convida a turma a investigar inferência de intenções com apoio de recursos multimodais.
+    metadata:
+      categoria: Intenções comunicativas
+      duracaoMinutos: 11
+      habilidades:
+        - EF01LP08
+      assetSlug: lp-silaba-ba
+      interactiveSlug: puzzle-puzzle-intencao-frase
+    accessibility:
+      hints:
+        - audience: ESTUDANTE
+          text: Use as setas do teclado ou toque na tela para navegar enquanto destaca inferência de intenções com gestos ou palmas.
+        - audience: EDUCADOR
+          text: Projete imagens de apoio, ofereça repetição de áudio e verbalize os passos para favorecer a percepção de inferência de intenções.
+        - audience: FAMILIA
+          text: Envie sugestões de objetos ou cantigas que reforcem os sons trabalhados para continuidade em casa.
+      feedback:
+        success: Ótimo trabalho! Inferência de intenções ficou mais claro com sua atenção aos detalhes.
+        retry: Retome com calma, respirando fundo e usando as pistas visuais oferecidas.
+        encouragement: Valorize cada tentativa e compare sons ou letras com apoio dos colegas.
+        accessibility: Disponibilize fones acolchoados, letras ampliadas e manipuláveis táteis para quem precisar.
+      assets:
+        - slug: lp-silaba-ba
+          type: IMAGEM
+          title: Cartão da sílaba BA
+    prerequisites:
+      - type: ACTIVITY
+        reference: intencao-da-frase
+        description: Revisar diferentes intenções comunicativas.
+    interactive:
+      slug: puzzle-puzzle-intencao-frase
+      title: Intenção da Frase — Quebra-cabeça
+      type: PUZZLE
+      bnccDescription: Inferir sentidos e intenções em frases e textos curtos do cotidiano escolar.
+      estimatedTimeMinutes: 11
+      instructions:
+        - Observe cada cartão e combine arrastando ou usando TAB + ENTER.
+        - Converse sobre o motivo da combinação antes de confirmar.
+        - Revise as duplas formadas e proponha novas associações.
+      objectives:
+        - Explorar inferência de intenções em situações guiadas pelo educador.
+        - Compartilhar estratégias pessoais com colegas durante a atividade.
+      puzzle:
+        mode: matching
+        successFeedback: Tudo combinado! Inferência de intenções ficou evidente nas associações.
+        errorFeedback: Observe novamente os sons, conte devagar e tente outra combinação.
+        pairs:
+          - id: puzzle-intencao-frase-pair-1
+            prompt: Você pode fechar a janela?
+            match: Pedido
+            hint: Observe inferência de intenções presente em 'Você pode fechar a janela?'.
+            feedback: Perfeito! 'Pedido' combina com 'Você pode fechar a janela?' porque evidencia inferência de intenções.
+          - id: puzzle-intencao-frase-pair-2
+            prompt: Que horas começa o filme?
+            match: Pergunta
+            hint: Observe inferência de intenções presente em 'Que horas começa o filme?'.
+            feedback: Perfeito! 'Pergunta' combina com 'Que horas começa o filme?' porque evidencia inferência de intenções.
+          - id: puzzle-intencao-frase-pair-3
+            prompt: Cuidado com o degrau!
+            match: Aviso
+            hint: Observe inferência de intenções presente em 'Cuidado com o degrau!'.
+            feedback: Perfeito! 'Aviso' combina com 'Cuidado com o degrau!' porque evidencia inferência de intenções.
+      accessibility:
+        hints:
+          - audience: ESTUDANTE
+            text: Use as setas para navegar entre os cartões e Enter para selecionar.
+          - audience: EDUCADOR
+            text: Disponibilize cartões físicos para manipulação simultânea.
+        feedback:
+          success: Tudo combinado! Inferência de intenções ficou evidente nas associações.
+          encouragement: Compare sons lentamente e utilize gestos amplos para apoiar a associação.
+          accessibility: Ofereça cartões com textura ou relevo para ampliar as pistas sensoriais.
+        assets:
+          - slug: lp-silaba-ba
+            type: IMAGEM
+            title: Cartão da sílaba BA
+  - partial: ../../_partials/acolhimento-base.yaml
+    slug: puzzle-humor-frase
+    title: Humor na Frase
+    prompt: Associe frases criativas a suas interpretações.
+    type: PUZZLE
+    difficulty: DOMINAR
+    bncc:
+      code: EF01LP08
+      habilidades:
+        - EF01LP08
+    learningObjectives:
+      - Explorar inferência de sentidos implícitos em situações guiadas pelo educador.
+      - Compartilhar estratégias pessoais com colegas durante a atividade.
+    description: Humor na Frase convida a turma a investigar inferência de sentidos implícitos com apoio de recursos multimodais.
+    metadata:
+      categoria: Sentido figurado
+      duracaoMinutos: 11
+      habilidades:
+        - EF01LP08
+      assetSlug: lp-silaba-la
+      interactiveSlug: puzzle-puzzle-humor-frase
+    accessibility:
+      hints:
+        - audience: ESTUDANTE
+          text: Use as setas do teclado ou toque na tela para navegar enquanto destaca inferência de sentidos implícitos com gestos ou palmas.
+        - audience: EDUCADOR
+          text: Projete imagens de apoio, ofereça repetição de áudio e verbalize os passos para favorecer a percepção de inferência de sentidos implícitos.
+        - audience: FAMILIA
+          text: Envie sugestões de objetos ou cantigas que reforcem os sons trabalhados para continuidade em casa.
+      feedback:
+        success: Ótimo trabalho! Inferência de sentidos implícitos ficou mais claro com sua atenção aos detalhes.
+        retry: Retome com calma, respirando fundo e usando as pistas visuais oferecidas.
+        encouragement: Valorize cada tentativa e compare sons ou letras com apoio dos colegas.
+        accessibility: Disponibilize fones acolchoados, letras ampliadas e manipuláveis táteis para quem precisar.
+      assets:
+        - slug: lp-silaba-la
+          type: IMAGEM
+          title: Cartão da sílaba LA
+    prerequisites:
+      - type: ACTIVITY
+        reference: descubra-o-humor
+        description: Reaproveitar exemplos de humor para novas interpretações.
+    interactive:
+      slug: puzzle-puzzle-humor-frase
+      title: Humor na Frase — Quebra-cabeça
+      type: PUZZLE
+      bnccDescription: Inferir sentidos e intenções em frases e textos curtos do cotidiano escolar.
+      estimatedTimeMinutes: 11
+      instructions:
+        - Observe cada cartão e combine arrastando ou usando TAB + ENTER.
+        - Converse sobre o motivo da combinação antes de confirmar.
+        - Revise as duplas formadas e proponha novas associações.
+      objectives:
+        - Explorar inferência de sentidos implícitos em situações guiadas pelo educador.
+        - Compartilhar estratégias pessoais com colegas durante a atividade.
+      puzzle:
+        mode: matching
+        successFeedback: Tudo combinado! Inferência de sentidos implícitos ficou evidente nas associações.
+        errorFeedback: Observe novamente os sons, conte devagar e tente outra combinação.
+        pairs:
+          - id: puzzle-humor-frase-pair-1
+            prompt: O lápis pediu férias.
+            match: Expressa cansaço com humor
+            hint: Observe inferência de sentidos implícitos presente em 'O lápis pediu férias.'.
+            feedback: Perfeito! 'Expressa cansaço com humor' combina com 'O lápis pediu férias.' porque evidencia inferência de sentidos implícitos.
+          - id: puzzle-humor-frase-pair-2
+            prompt: O relógio decidiu cochilar.
+            match: Indica atraso com brincadeira
+            hint: Observe inferência de sentidos implícitos presente em 'O relógio decidiu cochilar.'.
+            feedback: Perfeito! 'Indica atraso com brincadeira' combina com 'O relógio decidiu cochilar.' porque evidencia inferência de sentidos implícitos.
+          - id: puzzle-humor-frase-pair-3
+            prompt: A mochila virou foguete.
+            match: Imagina algo muito rápido
+            hint: Observe inferência de sentidos implícitos presente em 'A mochila virou foguete.'.
+            feedback: Perfeito! 'Imagina algo muito rápido' combina com 'A mochila virou foguete.' porque evidencia inferência de sentidos implícitos.
+      accessibility:
+        hints:
+          - audience: ESTUDANTE
+            text: Use as setas para navegar entre os cartões e Enter para selecionar.
+          - audience: EDUCADOR
+            text: Disponibilize cartões físicos para manipulação simultânea.
+        feedback:
+          success: Tudo combinado! Inferência de sentidos implícitos ficou evidente nas associações.
+          encouragement: Compare sons lentamente e utilize gestos amplos para apoiar a associação.
+          accessibility: Ofereça cartões com textura ou relevo para ampliar as pistas sensoriais.
+        assets:
+          - slug: lp-silaba-la
+            type: IMAGEM
+            title: Cartão da sílaba LA
+  - partial: ../../_partials/acolhimento-base.yaml
+    slug: montar-frase
+    title: Montar Frase
+    prompt: Complete frases curtas escolhendo palavras adequadas.
+    type: GAME
+    difficulty: INICIAR
+    bncc:
+      code: EF01LP07
+      habilidades:
+        - EF01LP07
+    learningObjectives:
+      - Explorar organização de frases em situações guiadas pelo educador.
+      - Compartilhar estratégias pessoais com colegas durante a atividade.
+    description: Montar Frase convida a turma a investigar organização de frases com apoio de recursos multimodais.
+    metadata:
+      categoria: Construção de frases
+      duracaoMinutos: 12
+      habilidades:
+        - EF01LP07
+      assetSlug: lp-material-caderno
+      interactiveSlug: game-montar-frase
+    accessibility:
+      hints:
+        - audience: ESTUDANTE
+          text: Use as setas do teclado ou toque na tela para navegar enquanto destaca organização de frases com gestos ou palmas.
+        - audience: EDUCADOR
+          text: Projete imagens de apoio, ofereça repetição de áudio e verbalize os passos para favorecer a percepção de organização de frases.
+        - audience: FAMILIA
+          text: Envie sugestões de objetos ou cantigas que reforcem os sons trabalhados para continuidade em casa.
+      feedback:
+        success: Ótimo trabalho! Organização de frases ficou mais claro com sua atenção aos detalhes.
+        retry: Retome com calma, respirando fundo e usando as pistas visuais oferecidas.
+        encouragement: Valorize cada tentativa e compare sons ou letras com apoio dos colegas.
+        accessibility: Disponibilize fones acolchoados, letras ampliadas e manipuláveis táteis para quem precisar.
+      assets:
+        - slug: lp-material-caderno
+          type: IMAGEM
+          title: Caderno colorido para escrita
+    prerequisites:
+      - type: ACTIVITY
+        reference: puzzle-ordem-frase
+        description: Relembrar como ordenar palavras antes de jogar.
+    interactive:
+      slug: game-montar-frase
+      title: Montar Frase — Mini-jogo
+      type: GAME
+      bnccDescription: Compreender frases curtas identificando informações explícitas.
+      estimatedTimeMinutes: 12
+      instructions:
+        - Leia o desafio de cada fase e verbalize suas hipóteses em voz alta.
+        - Digite a resposta usando o teclado ou selecione com o mouse.
+        - No final, explique qual pista ajudou a encontrar a solução.
+      objectives:
+        - Explorar organização de frases em situações guiadas pelo educador.
+        - Compartilhar estratégias pessoais com colegas durante a atividade.
+      game:
+        mode: math-challenge
+        timeLimitSeconds: 120
+        lives: 3
+        victoryMessage: Frases prontas! Você organizou cada ideia com cuidado.
+        gameOverMessage: Releia as frases e tente novamente escolhendo com calma.
+        levels:
+          - id: montar-frase-level-1
+            challenge: 'Complete: ''O ____ toca o sino.'' (diretor, cachorro, lápis)'
+            answer: diretor
+            hint: Use organização de frases para encontrar a resposta.
+            successFeedback: Muito bem! Organização de frases ajudou a resolver a fase.
+            failureFeedback: Retome organização de frases e ajuste sua estratégia.
+          - id: montar-frase-level-2
+            challenge: 'Complete: ''A turma lê ____ histórias.'' (novas, salgada, pesada)'
+            answer: novas
+            hint: Use organização de frases para encontrar a resposta.
+            successFeedback: Muito bem! Organização de frases ajudou a resolver a fase.
+            failureFeedback: Retome organização de frases e ajuste sua estratégia.
+          - id: montar-frase-level-3
+            challenge: 'Complete: ''O ônibus chega às ____ horas.'' (sete, flor, doce)'
+            answer: sete
+            hint: Use organização de frases para encontrar a resposta.
+            successFeedback: Muito bem! Organização de frases ajudou a resolver a fase.
+            failureFeedback: Retome organização de frases e ajuste sua estratégia.
+      accessibility:
+        hints:
+          - audience: ESTUDANTE
+            text: Use a tecla TAB para navegar pelos botões e Enter para confirmar.
+          - audience: EDUCADOR
+            text: Ofereça marcadores visuais ou tapetes de som para cada fase.
+        feedback:
+          success: Frases prontas! Você organizou cada ideia com cuidado.
+          encouragement: Revise as pistas sonoras e tente novamente sem pressa.
+          accessibility: Disponibilize apoios auditivos individuais e sinalize o tempo visualmente.
+        assets:
+          - slug: lp-material-caderno
+            type: IMAGEM
+            title: Caderno colorido para escrita
+  - partial: ../../_partials/acolhimento-base.yaml
+    slug: frase-surpresa
+    title: Frase Surpresa
+    prompt: Interpretar frases para descobrir intenções e sentidos.
+    type: GAME
+    difficulty: PRATICAR
+    bncc:
+      code: EF01LP08
+      habilidades:
+        - EF01LP08
+    learningObjectives:
+      - Explorar inferência de sentidos em situações guiadas pelo educador.
+      - Compartilhar estratégias pessoais com colegas durante a atividade.
+    description: Frase Surpresa convida a turma a investigar inferência de sentidos com apoio de recursos multimodais.
+    metadata:
+      categoria: Interpretação
+      duracaoMinutos: 12
+      habilidades:
+        - EF01LP08
+      assetSlug: lp-silaba-ba
+      interactiveSlug: game-frase-surpresa
+    accessibility:
+      hints:
+        - audience: ESTUDANTE
+          text: Use as setas do teclado ou toque na tela para navegar enquanto destaca inferência de sentidos com gestos ou palmas.
+        - audience: EDUCADOR
+          text: Projete imagens de apoio, ofereça repetição de áudio e verbalize os passos para favorecer a percepção de inferência de sentidos.
+        - audience: FAMILIA
+          text: Envie sugestões de objetos ou cantigas que reforcem os sons trabalhados para continuidade em casa.
+      feedback:
+        success: Ótimo trabalho! Inferência de sentidos ficou mais claro com sua atenção aos detalhes.
+        retry: Retome com calma, respirando fundo e usando as pistas visuais oferecidas.
+        encouragement: Valorize cada tentativa e compare sons ou letras com apoio dos colegas.
+        accessibility: Disponibilize fones acolchoados, letras ampliadas e manipuláveis táteis para quem precisar.
+      assets:
+        - slug: lp-silaba-ba
+          type: IMAGEM
+          title: Cartão da sílaba BA
+    prerequisites:
+      - type: ACTIVITY
+        reference: intencao-da-frase
+        description: Reforçar a leitura de intenções antes do jogo.
+    interactive:
+      slug: game-frase-surpresa
+      title: Frase Surpresa — Mini-jogo
+      type: GAME
+      bnccDescription: Inferir sentidos e intenções em frases e textos curtos do cotidiano escolar.
+      estimatedTimeMinutes: 12
+      instructions:
+        - Leia o desafio de cada fase e verbalize suas hipóteses em voz alta.
+        - Digite a resposta usando o teclado ou selecione com o mouse.
+        - No final, explique qual pista ajudou a encontrar a solução.
+      objectives:
+        - Explorar inferência de sentidos em situações guiadas pelo educador.
+        - Compartilhar estratégias pessoais com colegas durante a atividade.
+      game:
+        mode: math-challenge
+        timeLimitSeconds: 120
+        lives: 3
+        victoryMessage: Você decifrou cada frase com sensibilidade!
+        gameOverMessage: Converse sobre cada frase com um colega e tente novamente.
+        levels:
+          - id: frase-surpresa-level-1
+            challenge: 'Frase: ''Guarde os brinquedos, por favor.'' Qual é a intenção? (pedido, piada, pergunta)'
+            answer: pedido
+            hint: Use inferência de sentidos para encontrar a resposta.
+            successFeedback: Muito bem! Inferência de sentidos ajudou a resolver a fase.
+            failureFeedback: Retome inferência de sentidos e ajuste sua estratégia.
+          - id: frase-surpresa-level-2
+            challenge: 'Frase: ''Essa mochila pesa uma tonelada!'' O que quer dizer? (está muito pesada, vai voar, está vazia)'
+            answer: está muito pesada
+            hint: Use inferência de sentidos para encontrar a resposta.
+            successFeedback: Muito bem! Inferência de sentidos ajudou a resolver a fase.
+            failureFeedback: Retome inferência de sentidos e ajuste sua estratégia.
+          - id: frase-surpresa-level-3
+            challenge: 'Frase: ''A sala virou um mar de papel.'' Significa que... (há papéis espalhados, todos estão desenhando, a sala encheu água)'
+            answer: há papéis espalhados
+            hint: Use inferência de sentidos para encontrar a resposta.
+            successFeedback: Muito bem! Inferência de sentidos ajudou a resolver a fase.
+            failureFeedback: Retome inferência de sentidos e ajuste sua estratégia.
+      accessibility:
+        hints:
+          - audience: ESTUDANTE
+            text: Use a tecla TAB para navegar pelos botões e Enter para confirmar.
+          - audience: EDUCADOR
+            text: Ofereça marcadores visuais ou tapetes de som para cada fase.
+        feedback:
+          success: Você decifrou cada frase com sensibilidade!
+          encouragement: Revise as pistas sonoras e tente novamente sem pressa.
+          accessibility: Disponibilize apoios auditivos individuais e sinalize o tempo visualmente.
+        assets:
+          - slug: lp-silaba-ba
+            type: IMAGEM
+            title: Cartão da sílaba BA
+  - partial: ../../_partials/acolhimento-base.yaml
+    slug: dialogo-rapido
+    title: Diálogo Rápido
+    prompt: Digite respostas que combinam com pedidos e convites.
+    type: GAME
+    difficulty: DOMINAR
+    bncc:
+      code: EF01LP08
+      habilidades:
+        - EF01LP08
+    learningObjectives:
+      - Explorar respostas adequadas em situações guiadas pelo educador.
+      - Compartilhar estratégias pessoais com colegas durante a atividade.
+    description: Diálogo Rápido convida a turma a investigar respostas adequadas com apoio de recursos multimodais.
+    metadata:
+      categoria: Diálogos
+      duracaoMinutos: 13
+      habilidades:
+        - EF01LP08
+      assetSlug: lp-letra-e
+      interactiveSlug: game-dialogo-rapido
+    accessibility:
+      hints:
+        - audience: ESTUDANTE
+          text: Use as setas do teclado ou toque na tela para navegar enquanto destaca respostas adequadas com gestos ou palmas.
+        - audience: EDUCADOR
+          text: Projete imagens de apoio, ofereça repetição de áudio e verbalize os passos para favorecer a percepção de respostas adequadas.
+        - audience: FAMILIA
+          text: Envie sugestões de objetos ou cantigas que reforcem os sons trabalhados para continuidade em casa.
+      feedback:
+        success: Ótimo trabalho! Respostas adequadas ficou mais claro com sua atenção aos detalhes.
+        retry: Retome com calma, respirando fundo e usando as pistas visuais oferecidas.
+        encouragement: Valorize cada tentativa e compare sons ou letras com apoio dos colegas.
+        accessibility: Disponibilize fones acolchoados, letras ampliadas e manipuláveis táteis para quem precisar.
+      assets:
+        - slug: lp-letra-e
+          type: IMAGEM
+          title: Ilustração da letra E
+    prerequisites:
+      - type: ACTIVITY
+        reference: completar-resposta
+        description: Retomar respostas adequadas em diálogos curtos.
+    interactive:
+      slug: game-dialogo-rapido
+      title: Diálogo Rápido — Mini-jogo
+      type: GAME
+      bnccDescription: Inferir sentidos e intenções em frases e textos curtos do cotidiano escolar.
+      estimatedTimeMinutes: 13
+      instructions:
+        - Leia o desafio de cada fase e verbalize suas hipóteses em voz alta.
+        - Digite a resposta usando o teclado ou selecione com o mouse.
+        - No final, explique qual pista ajudou a encontrar a solução.
+      objectives:
+        - Explorar respostas adequadas em situações guiadas pelo educador.
+        - Compartilhar estratégias pessoais com colegas durante a atividade.
+      game:
+        mode: math-challenge
+        timeLimitSeconds: 120
+        lives: 3
+        victoryMessage: Diálogo alinhado! Você respondeu com gentileza.
+        gameOverMessage: Revise as expressões de cortesia e tente novamente.
+        levels:
+          - id: dialogo-rapido-level-1
+            challenge: 'Complete o diálogo: ''— Obrigado pela ajuda! — ____'''
+            answer: De nada!
+            hint: Use respostas adequadas para encontrar a resposta.
+            successFeedback: Muito bem! Respostas adequadas ajudou a resolver a fase.
+            failureFeedback: Retome respostas adequadas e ajuste sua estratégia.
+          - id: dialogo-rapido-level-2
+            challenge: 'Complete: ''— Você pode me ouvir? — ____'''
+            answer: Posso sim.
+            hint: Use respostas adequadas para encontrar a resposta.
+            successFeedback: Muito bem! Respostas adequadas ajudou a resolver a fase.
+            failureFeedback: Retome respostas adequadas e ajuste sua estratégia.
+          - id: dialogo-rapido-level-3
+            challenge: 'Complete: ''— Vamos revisar a tarefa juntos? — ____'''
+            answer: Vamos!
+            hint: Use respostas adequadas para encontrar a resposta.
+            successFeedback: Muito bem! Respostas adequadas ajudou a resolver a fase.
+            failureFeedback: Retome respostas adequadas e ajuste sua estratégia.
+      accessibility:
+        hints:
+          - audience: ESTUDANTE
+            text: Use a tecla TAB para navegar pelos botões e Enter para confirmar.
+          - audience: EDUCADOR
+            text: Ofereça marcadores visuais ou tapetes de som para cada fase.
+        feedback:
+          success: Diálogo alinhado! Você respondeu com gentileza.
+          encouragement: Revise as pistas sonoras e tente novamente sem pressa.
+          accessibility: Disponibilize apoios auditivos individuais e sinalize o tempo visualmente.
+        assets:
+          - slug: lp-letra-e
+            type: IMAGEM
+            title: Ilustração da letra E

@@ -1,0 +1,1271 @@
+module:
+  slug: familia-das-vogais
+  title: Família das Vogais
+  subtitle: Letras que cantam
+  description: Sequência para reconhecer vogais, comparar grafias e relacionar letras aos sons em palavras do cotidiano.
+  theme: Língua Portuguesa
+  discipline: Língua Portuguesa
+  ageGroupSlug: fundamental-anos-iniciais
+  learningPathSlug: descobertas-palavras
+  primaryBnccCode: EF01LP03
+  secondaryBnccCodes:
+    - EF01LP04
+  learningOutcomes:
+    - Reconhecer vogais em diferentes suportes e formatos.
+    - Relacionar vogais a sons iniciais, médios e finais de palavras.
+    - Utilizar vogais para completar palavras e criar novas combinações sonoras.
+  tags:
+    - vogais
+    - alfabeto
+    - letramento-inicial
+activities:
+  - partial: ../../_partials/acolhimento-base.yaml
+    slug: vogal-exploradora
+    title: Vogal Exploradora
+    prompt: Identifique a vogal que representa o som apresentado.
+    type: QUIZ
+    difficulty: INICIAR
+    bncc:
+      code: EF01LP03
+      habilidades:
+        - EF01LP03
+    learningObjectives:
+      - Explorar reconhecimento de vogais em situações guiadas pelo educador.
+      - Compartilhar estratégias pessoais com colegas durante a atividade.
+    description: Vogal Exploradora convida a turma a investigar reconhecimento de vogais com apoio de recursos multimodais.
+    metadata:
+      categoria: Vogais iniciais
+      duracaoMinutos: 8
+      habilidades:
+        - EF01LP03
+      assetSlug: lp-letra-a
+      interactiveSlug: quiz-vogal-exploradora
+    accessibility:
+      hints:
+        - audience: ESTUDANTE
+          text: Use as setas do teclado ou toque na tela para navegar enquanto destaca reconhecimento de vogais com gestos ou palmas.
+        - audience: EDUCADOR
+          text: Projete imagens de apoio, ofereça repetição de áudio e verbalize os passos para favorecer a percepção de reconhecimento de vogais.
+        - audience: FAMILIA
+          text: Envie sugestões de objetos ou cantigas que reforcem os sons trabalhados para continuidade em casa.
+      feedback:
+        success: Ótimo trabalho! Reconhecimento de vogais ficou mais claro com sua atenção aos detalhes.
+        retry: Retome com calma, respirando fundo e usando as pistas visuais oferecidas.
+        encouragement: Valorize cada tentativa e compare sons ou letras com apoio dos colegas.
+        accessibility: Disponibilize fones acolchoados, letras ampliadas e manipuláveis táteis para quem precisar.
+      assets:
+        - slug: lp-letra-a
+          type: IMAGEM
+          title: Ilustração da letra A
+    prerequisites:
+      - type: SKILL
+        reference: EF01LP03
+        description: Explorar músicas e parlendas destacando vogais.
+    interactive:
+      slug: quiz-vogal-exploradora
+      title: Vogal Exploradora — Quiz
+      type: QUIZ
+      bnccDescription: Reconhecer letras do alfabeto em diferentes suportes e formatos.
+      estimatedTimeMinutes: 8
+      instructions:
+        - Leia ou escute o desafio com atenção antes de registrar a resposta.
+        - Use as teclas numéricas ou clique nas alternativas para responder.
+        - Compartilhe com a turma novas palavras relacionadas após concluir o desafio.
+      objectives:
+        - Explorar reconhecimento de vogais em situações guiadas pelo educador.
+        - Compartilhar estratégias pessoais com colegas durante a atividade.
+      scoring:
+        correct: 10
+        incorrect: 0
+      adaptive:
+        increaseAfter: 2
+        decreaseAfter: 1
+      questions:
+        - id: vogal-exploradora-q1
+          type: multiple-choice
+          prompt: Qual letra corresponde ao som inicial de 'elefante'?
+          hint: Repita 'elefante' e destaque o primeiro som.
+          options:
+            - id: vogal-exploradora-q1-1
+              text: E
+              isCorrect: true
+              feedback: Excelente! 'E' evidencia reconhecimento de vogais.
+            - id: vogal-exploradora-q1-2
+              text: I
+              isCorrect: false
+              feedback: Ainda não. 'I' não representa reconhecimento de vogais.
+            - id: vogal-exploradora-q1-3
+              text: O
+              isCorrect: false
+              feedback: Ainda não. 'O' não representa reconhecimento de vogais.
+        - id: vogal-exploradora-q2
+          type: true-false
+          prompt: As letras 'A' e 'a' representam a mesma vogal?
+          hint: Observe a forma maiúscula e minúscula.
+          statement: As letras 'A' e 'a' representam a mesma vogal.
+          answer: true
+          feedback:
+            'true': Muito bem! A afirmação confirma reconhecimento de vogais.
+            'false': 'Revise: reconhecimento de vogais está presente na afirmação.'
+      accessibility:
+        hints:
+          - audience: ESTUDANTE
+            text: Use TAB e ENTER para navegar e confirmar sua escolha.
+          - audience: EDUCADOR
+            text: Projete legendas e permita repetição do áudio para quem precisar.
+        feedback:
+          success: Excelente! Reconhecimento de vogais ficou evidente nas suas respostas.
+          encouragement: Caso erre, leia novamente com voz pausada e utilize marcadores visuais.
+          accessibility: Ofereça apoio auditivo individual e contraste elevado nos botões.
+        assets:
+          - slug: lp-letra-a
+            type: IMAGEM
+            title: Ilustração da letra A
+  - partial: ../../_partials/acolhimento-base.yaml
+    slug: caixa-das-vogais
+    title: Caixa das Vogais
+    prompt: Escolha a vogal que completa a palavra apresentada.
+    type: QUIZ
+    difficulty: PRATICAR
+    bncc:
+      code: EF01LP03
+      habilidades:
+        - EF01LP03
+    learningObjectives:
+      - Explorar identificação de vogais em palavras em situações guiadas pelo educador.
+      - Compartilhar estratégias pessoais com colegas durante a atividade.
+    description: Caixa das Vogais convida a turma a investigar identificação de vogais em palavras com apoio de recursos multimodais.
+    metadata:
+      categoria: Completar palavras
+      duracaoMinutos: 8
+      habilidades:
+        - EF01LP03
+      assetSlug: lp-letra-e
+      interactiveSlug: quiz-caixa-das-vogais
+    accessibility:
+      hints:
+        - audience: ESTUDANTE
+          text: Use as setas do teclado ou toque na tela para navegar enquanto destaca identificação de vogais em palavras com gestos ou palmas.
+        - audience: EDUCADOR
+          text: Projete imagens de apoio, ofereça repetição de áudio e verbalize os passos para favorecer a percepção de identificação de vogais em palavras.
+        - audience: FAMILIA
+          text: Envie sugestões de objetos ou cantigas que reforcem os sons trabalhados para continuidade em casa.
+      feedback:
+        success: Ótimo trabalho! Identificação de vogais em palavras ficou mais claro com sua atenção aos detalhes.
+        retry: Retome com calma, respirando fundo e usando as pistas visuais oferecidas.
+        encouragement: Valorize cada tentativa e compare sons ou letras com apoio dos colegas.
+        accessibility: Disponibilize fones acolchoados, letras ampliadas e manipuláveis táteis para quem precisar.
+      assets:
+        - slug: lp-letra-e
+          type: IMAGEM
+          title: Ilustração da letra E
+    prerequisites:
+      - type: ACTIVITY
+        reference: vogal-exploradora
+        description: Retomar a identificação de vogais em palavras simples.
+    interactive:
+      slug: quiz-caixa-das-vogais
+      title: Caixa das Vogais — Quiz
+      type: QUIZ
+      bnccDescription: Reconhecer letras do alfabeto em diferentes suportes e formatos.
+      estimatedTimeMinutes: 8
+      instructions:
+        - Leia ou escute o desafio com atenção antes de registrar a resposta.
+        - Use as teclas numéricas ou clique nas alternativas para responder.
+        - Compartilhe com a turma novas palavras relacionadas após concluir o desafio.
+      objectives:
+        - Explorar identificação de vogais em palavras em situações guiadas pelo educador.
+        - Compartilhar estratégias pessoais com colegas durante a atividade.
+      scoring:
+        correct: 10
+        incorrect: 0
+      adaptive:
+        increaseAfter: 2
+        decreaseAfter: 1
+      questions:
+        - id: caixa-das-vogais-q1
+          type: multiple-choice
+          prompt: Qual vogal completa a palavra 'c_sa' para formar 'casa'?
+          hint: Perceba o som que falta ao pronunciar a palavra.
+          options:
+            - id: caixa-das-vogais-q1-1
+              text: A
+              isCorrect: true
+              feedback: Excelente! 'A' evidencia identificação de vogais em palavras.
+            - id: caixa-das-vogais-q1-2
+              text: E
+              isCorrect: false
+              feedback: Ainda não. 'E' não representa identificação de vogais em palavras.
+            - id: caixa-das-vogais-q1-3
+              text: O
+              isCorrect: false
+              feedback: Ainda não. 'O' não representa identificação de vogais em palavras.
+        - id: caixa-das-vogais-q2
+          type: true-false
+          prompt: A palavra 'uva' começa com a vogal U?
+          hint: Repita a palavra devagar.
+          statement: A palavra 'uva' começa com a vogal U.
+          answer: true
+          feedback:
+            'true': Muito bem! A afirmação confirma identificação de vogais em palavras.
+            'false': 'Revise: identificação de vogais em palavras está presente na afirmação.'
+      accessibility:
+        hints:
+          - audience: ESTUDANTE
+            text: Use TAB e ENTER para navegar e confirmar sua escolha.
+          - audience: EDUCADOR
+            text: Projete legendas e permita repetição do áudio para quem precisar.
+        feedback:
+          success: Excelente! Identificação de vogais em palavras ficou evidente nas suas respostas.
+          encouragement: Caso erre, leia novamente com voz pausada e utilize marcadores visuais.
+          accessibility: Ofereça apoio auditivo individual e contraste elevado nos botões.
+        assets:
+          - slug: lp-letra-e
+            type: IMAGEM
+            title: Ilustração da letra E
+  - partial: ../../_partials/acolhimento-base.yaml
+    slug: ordem-das-vogais
+    title: Ordem das Vogais
+    prompt: Pense na sequência do alfabeto e identifique a próxima vogal.
+    type: QUIZ
+    difficulty: DOMINAR
+    bncc:
+      code: EF01LP03
+      habilidades:
+        - EF01LP03
+    learningObjectives:
+      - Explorar ordem das vogais em situações guiadas pelo educador.
+      - Compartilhar estratégias pessoais com colegas durante a atividade.
+    description: Ordem das Vogais convida a turma a investigar ordem das vogais com apoio de recursos multimodais.
+    metadata:
+      categoria: Sequência alfabética
+      duracaoMinutos: 9
+      habilidades:
+        - EF01LP03
+      assetSlug: lp-material-caderno
+      interactiveSlug: quiz-ordem-das-vogais
+    accessibility:
+      hints:
+        - audience: ESTUDANTE
+          text: Use as setas do teclado ou toque na tela para navegar enquanto destaca ordem das vogais com gestos ou palmas.
+        - audience: EDUCADOR
+          text: Projete imagens de apoio, ofereça repetição de áudio e verbalize os passos para favorecer a percepção de ordem das vogais.
+        - audience: FAMILIA
+          text: Envie sugestões de objetos ou cantigas que reforcem os sons trabalhados para continuidade em casa.
+      feedback:
+        success: Ótimo trabalho! Ordem das vogais ficou mais claro com sua atenção aos detalhes.
+        retry: Retome com calma, respirando fundo e usando as pistas visuais oferecidas.
+        encouragement: Valorize cada tentativa e compare sons ou letras com apoio dos colegas.
+        accessibility: Disponibilize fones acolchoados, letras ampliadas e manipuláveis táteis para quem precisar.
+      assets:
+        - slug: lp-material-caderno
+          type: IMAGEM
+          title: Caderno colorido para escrita
+    prerequisites:
+      - type: ACTIVITY
+        reference: caixa-das-vogais
+        description: Revisar a identificação de vogais em palavras antes de ordenar.
+    interactive:
+      slug: quiz-ordem-das-vogais
+      title: Ordem das Vogais — Quiz
+      type: QUIZ
+      bnccDescription: Reconhecer letras do alfabeto em diferentes suportes e formatos.
+      estimatedTimeMinutes: 9
+      instructions:
+        - Leia ou escute o desafio com atenção antes de registrar a resposta.
+        - Use as teclas numéricas ou clique nas alternativas para responder.
+        - Compartilhe com a turma novas palavras relacionadas após concluir o desafio.
+      objectives:
+        - Explorar ordem das vogais em situações guiadas pelo educador.
+        - Compartilhar estratégias pessoais com colegas durante a atividade.
+      scoring:
+        correct: 10
+        incorrect: 0
+      adaptive:
+        increaseAfter: 2
+        decreaseAfter: 1
+      questions:
+        - id: ordem-das-vogais-q1
+          type: multiple-choice
+          prompt: Qual vogal vem depois de 'E' na sequência alfabética?
+          hint: Recite as vogais em voz alta.
+          options:
+            - id: ordem-das-vogais-q1-1
+              text: I
+              isCorrect: true
+              feedback: Excelente! 'I' evidencia ordem das vogais.
+            - id: ordem-das-vogais-q1-2
+              text: A
+              isCorrect: false
+              feedback: Ainda não. 'A' não representa ordem das vogais.
+            - id: ordem-das-vogais-q1-3
+              text: O
+              isCorrect: false
+              feedback: Ainda não. 'O' não representa ordem das vogais.
+        - id: ordem-das-vogais-q2
+          type: true-false
+          prompt: A vogal 'O' aparece na palavra 'sol'?
+          hint: Leia a palavra em voz alta destacando as vogais.
+          statement: A palavra 'sol' contém a vogal 'O'.
+          answer: true
+          feedback:
+            'true': Muito bem! A afirmação confirma ordem das vogais.
+            'false': 'Revise: ordem das vogais está presente na afirmação.'
+      accessibility:
+        hints:
+          - audience: ESTUDANTE
+            text: Use TAB e ENTER para navegar e confirmar sua escolha.
+          - audience: EDUCADOR
+            text: Projete legendas e permita repetição do áudio para quem precisar.
+        feedback:
+          success: Excelente! Ordem das vogais ficou evidente nas suas respostas.
+          encouragement: Caso erre, leia novamente com voz pausada e utilize marcadores visuais.
+          accessibility: Ofereça apoio auditivo individual e contraste elevado nos botões.
+        assets:
+          - slug: lp-material-caderno
+            type: IMAGEM
+            title: Caderno colorido para escrita
+  - partial: ../../_partials/acolhimento-base.yaml
+    slug: som-e-letra
+    title: Som e Letra
+    prompt: Relacione a vogal ao som final da palavra indicada.
+    type: QUIZ
+    difficulty: INICIAR
+    bncc:
+      code: EF01LP04
+      habilidades:
+        - EF01LP04
+    learningObjectives:
+      - Explorar correspondência som-vogal em situações guiadas pelo educador.
+      - Compartilhar estratégias pessoais com colegas durante a atividade.
+    description: Som e Letra convida a turma a investigar correspondência som-vogal com apoio de recursos multimodais.
+    metadata:
+      categoria: Som e grafia
+      duracaoMinutos: 8
+      habilidades:
+        - EF01LP04
+      assetSlug: lp-silaba-ba
+      interactiveSlug: quiz-som-e-letra
+    accessibility:
+      hints:
+        - audience: ESTUDANTE
+          text: Use as setas do teclado ou toque na tela para navegar enquanto destaca correspondência som-vogal com gestos ou palmas.
+        - audience: EDUCADOR
+          text: Projete imagens de apoio, ofereça repetição de áudio e verbalize os passos para favorecer a percepção de correspondência som-vogal.
+        - audience: FAMILIA
+          text: Envie sugestões de objetos ou cantigas que reforcem os sons trabalhados para continuidade em casa.
+      feedback:
+        success: Ótimo trabalho! Correspondência som-vogal ficou mais claro com sua atenção aos detalhes.
+        retry: Retome com calma, respirando fundo e usando as pistas visuais oferecidas.
+        encouragement: Valorize cada tentativa e compare sons ou letras com apoio dos colegas.
+        accessibility: Disponibilize fones acolchoados, letras ampliadas e manipuláveis táteis para quem precisar.
+      assets:
+        - slug: lp-silaba-ba
+          type: IMAGEM
+          title: Cartão da sílaba BA
+    prerequisites:
+      - type: SKILL
+        reference: EF01LP04
+        description: Escutar palavras destacando os sons das vogais.
+    interactive:
+      slug: quiz-som-e-letra
+      title: Som e Letra — Quiz
+      type: QUIZ
+      bnccDescription: Relacionar letras e sons, avaliando variações na posição dentro das palavras.
+      estimatedTimeMinutes: 8
+      instructions:
+        - Leia ou escute o desafio com atenção antes de registrar a resposta.
+        - Use as teclas numéricas ou clique nas alternativas para responder.
+        - Compartilhe com a turma novas palavras relacionadas após concluir o desafio.
+      objectives:
+        - Explorar correspondência som-vogal em situações guiadas pelo educador.
+        - Compartilhar estratégias pessoais com colegas durante a atividade.
+      scoring:
+        correct: 10
+        incorrect: 0
+      adaptive:
+        increaseAfter: 2
+        decreaseAfter: 1
+      questions:
+        - id: som-e-letra-q1
+          type: multiple-choice
+          prompt: Qual vogal representa o som final de 'cafe'?
+          hint: Repita a palavra e observe o som final.
+          options:
+            - id: som-e-letra-q1-1
+              text: E
+              isCorrect: true
+              feedback: Excelente! 'E' evidencia correspondência som-vogal.
+            - id: som-e-letra-q1-2
+              text: A
+              isCorrect: false
+              feedback: Ainda não. 'A' não representa correspondência som-vogal.
+            - id: som-e-letra-q1-3
+              text: I
+              isCorrect: false
+              feedback: Ainda não. 'I' não representa correspondência som-vogal.
+        - id: som-e-letra-q2
+          type: true-false
+          prompt: Na palavra 'mala', a vogal 'a' aparece no início e no fim?
+          hint: Leia a palavra destacando cada vogal.
+          statement: A palavra 'mala' começa e termina com a vogal 'a'.
+          answer: true
+          feedback:
+            'true': Muito bem! A afirmação confirma correspondência som-vogal.
+            'false': 'Revise: correspondência som-vogal está presente na afirmação.'
+      accessibility:
+        hints:
+          - audience: ESTUDANTE
+            text: Use TAB e ENTER para navegar e confirmar sua escolha.
+          - audience: EDUCADOR
+            text: Projete legendas e permita repetição do áudio para quem precisar.
+        feedback:
+          success: Excelente! Correspondência som-vogal ficou evidente nas suas respostas.
+          encouragement: Caso erre, leia novamente com voz pausada e utilize marcadores visuais.
+          accessibility: Ofereça apoio auditivo individual e contraste elevado nos botões.
+        assets:
+          - slug: lp-silaba-ba
+            type: IMAGEM
+            title: Cartão da sílaba BA
+  - partial: ../../_partials/acolhimento-base.yaml
+    slug: vogal-misteriosa
+    title: Vogal Misteriosa
+    prompt: Descubra qual vogal produz o som indicado na palavra.
+    type: QUIZ
+    difficulty: PRATICAR
+    bncc:
+      code: EF01LP04
+      habilidades:
+        - EF01LP04
+    learningObjectives:
+      - Explorar associação som-vogal em situações guiadas pelo educador.
+      - Compartilhar estratégias pessoais com colegas durante a atividade.
+    description: Vogal Misteriosa convida a turma a investigar associação som-vogal com apoio de recursos multimodais.
+    metadata:
+      categoria: Sons e vogais
+      duracaoMinutos: 9
+      habilidades:
+        - EF01LP04
+      assetSlug: lp-silaba-la
+      interactiveSlug: quiz-vogal-misteriosa
+    accessibility:
+      hints:
+        - audience: ESTUDANTE
+          text: Use as setas do teclado ou toque na tela para navegar enquanto destaca associação som-vogal com gestos ou palmas.
+        - audience: EDUCADOR
+          text: Projete imagens de apoio, ofereça repetição de áudio e verbalize os passos para favorecer a percepção de associação som-vogal.
+        - audience: FAMILIA
+          text: Envie sugestões de objetos ou cantigas que reforcem os sons trabalhados para continuidade em casa.
+      feedback:
+        success: Ótimo trabalho! Associação som-vogal ficou mais claro com sua atenção aos detalhes.
+        retry: Retome com calma, respirando fundo e usando as pistas visuais oferecidas.
+        encouragement: Valorize cada tentativa e compare sons ou letras com apoio dos colegas.
+        accessibility: Disponibilize fones acolchoados, letras ampliadas e manipuláveis táteis para quem precisar.
+      assets:
+        - slug: lp-silaba-la
+          type: IMAGEM
+          title: Cartão da sílaba LA
+    prerequisites:
+      - type: ACTIVITY
+        reference: som-e-letra
+        description: Retomar os sons finais antes de completar com novas vogais.
+    interactive:
+      slug: quiz-vogal-misteriosa
+      title: Vogal Misteriosa — Quiz
+      type: QUIZ
+      bnccDescription: Relacionar letras e sons, avaliando variações na posição dentro das palavras.
+      estimatedTimeMinutes: 9
+      instructions:
+        - Leia ou escute o desafio com atenção antes de registrar a resposta.
+        - Use as teclas numéricas ou clique nas alternativas para responder.
+        - Compartilhe com a turma novas palavras relacionadas após concluir o desafio.
+      objectives:
+        - Explorar associação som-vogal em situações guiadas pelo educador.
+        - Compartilhar estratégias pessoais com colegas durante a atividade.
+      scoring:
+        correct: 10
+        incorrect: 0
+      adaptive:
+        increaseAfter: 2
+        decreaseAfter: 1
+      questions:
+        - id: vogal-misteriosa-q1
+          type: multiple-choice
+          prompt: Qual vogal deve ser usada para escrever o som /i/ na palavra 'p_pa'?
+          hint: Repita 'pipa' e perceba qual vogal produz o som /i/.
+          options:
+            - id: vogal-misteriosa-q1-1
+              text: I
+              isCorrect: true
+              feedback: Excelente! 'I' evidencia associação som-vogal.
+            - id: vogal-misteriosa-q1-2
+              text: A
+              isCorrect: false
+              feedback: Ainda não. 'A' não representa associação som-vogal.
+            - id: vogal-misteriosa-q1-3
+              text: O
+              isCorrect: false
+              feedback: Ainda não. 'O' não representa associação som-vogal.
+        - id: vogal-misteriosa-q2
+          type: true-false
+          prompt: A vogal 'E' representa o som /e/ em 'pente'?
+          hint: Escute o som das vogais em 'pente'.
+          statement: Na palavra 'pente', a vogal 'E' representa o som /e/.
+          answer: true
+          feedback:
+            'true': Muito bem! A afirmação confirma associação som-vogal.
+            'false': 'Revise: associação som-vogal está presente na afirmação.'
+      accessibility:
+        hints:
+          - audience: ESTUDANTE
+            text: Use TAB e ENTER para navegar e confirmar sua escolha.
+          - audience: EDUCADOR
+            text: Projete legendas e permita repetição do áudio para quem precisar.
+        feedback:
+          success: Excelente! Associação som-vogal ficou evidente nas suas respostas.
+          encouragement: Caso erre, leia novamente com voz pausada e utilize marcadores visuais.
+          accessibility: Ofereça apoio auditivo individual e contraste elevado nos botões.
+        assets:
+          - slug: lp-silaba-la
+            type: IMAGEM
+            title: Cartão da sílaba LA
+  - partial: ../../_partials/acolhimento-base.yaml
+    slug: coro-das-vogais
+    title: Coro das Vogais
+    prompt: Selecione a vogal que completa a palavra cantada.
+    type: QUIZ
+    difficulty: DOMINAR
+    bncc:
+      code: EF01LP04
+      habilidades:
+        - EF01LP04
+    learningObjectives:
+      - Explorar uso das vogais em contextos musicais em situações guiadas pelo educador.
+      - Compartilhar estratégias pessoais com colegas durante a atividade.
+    description: Coro das Vogais convida a turma a investigar uso das vogais em contextos musicais com apoio de recursos multimodais.
+    metadata:
+      categoria: Vogais em canções
+      duracaoMinutos: 9
+      habilidades:
+        - EF01LP04
+      assetSlug: lp-letra-e
+      interactiveSlug: quiz-coro-das-vogais
+    accessibility:
+      hints:
+        - audience: ESTUDANTE
+          text: Use as setas do teclado ou toque na tela para navegar enquanto destaca uso das vogais em contextos musicais com gestos ou palmas.
+        - audience: EDUCADOR
+          text: Projete imagens de apoio, ofereça repetição de áudio e verbalize os passos para favorecer a percepção de uso das vogais em contextos musicais.
+        - audience: FAMILIA
+          text: Envie sugestões de objetos ou cantigas que reforcem os sons trabalhados para continuidade em casa.
+      feedback:
+        success: Ótimo trabalho! Uso das vogais em contextos musicais ficou mais claro com sua atenção aos detalhes.
+        retry: Retome com calma, respirando fundo e usando as pistas visuais oferecidas.
+        encouragement: Valorize cada tentativa e compare sons ou letras com apoio dos colegas.
+        accessibility: Disponibilize fones acolchoados, letras ampliadas e manipuláveis táteis para quem precisar.
+      assets:
+        - slug: lp-letra-e
+          type: IMAGEM
+          title: Ilustração da letra E
+    prerequisites:
+      - type: ACTIVITY
+        reference: vogal-misteriosa
+        description: Utilizar as descobertas anteriores para completar canções.
+    interactive:
+      slug: quiz-coro-das-vogais
+      title: Coro das Vogais — Quiz
+      type: QUIZ
+      bnccDescription: Relacionar letras e sons, avaliando variações na posição dentro das palavras.
+      estimatedTimeMinutes: 9
+      instructions:
+        - Leia ou escute o desafio com atenção antes de registrar a resposta.
+        - Use as teclas numéricas ou clique nas alternativas para responder.
+        - Compartilhe com a turma novas palavras relacionadas após concluir o desafio.
+      objectives:
+        - Explorar uso das vogais em contextos musicais em situações guiadas pelo educador.
+        - Compartilhar estratégias pessoais com colegas durante a atividade.
+      scoring:
+        correct: 10
+        incorrect: 0
+      adaptive:
+        increaseAfter: 2
+        decreaseAfter: 1
+      questions:
+        - id: coro-das-vogais-q1
+          type: multiple-choice
+          prompt: Qual vogal completa a palavra 'l__a' para formar 'lua'?
+          hint: Cante a palavra 'lua' enfatizando a vogal central.
+          options:
+            - id: coro-das-vogais-q1-1
+              text: U
+              isCorrect: true
+              feedback: Excelente! 'U' evidencia uso das vogais em contextos musicais.
+            - id: coro-das-vogais-q1-2
+              text: A
+              isCorrect: false
+              feedback: Ainda não. 'A' não representa uso das vogais em contextos musicais.
+            - id: coro-das-vogais-q1-3
+              text: E
+              isCorrect: false
+              feedback: Ainda não. 'E' não representa uso das vogais em contextos musicais.
+        - id: coro-das-vogais-q2
+          type: true-false
+          prompt: A vogal 'u' representa o som /u/ em 'lupa'?
+          hint: Pronuncie 'lupa' destacando a vogal.
+          statement: Na palavra 'lupa', a vogal 'u' representa o som /u/.
+          answer: true
+          feedback:
+            'true': Muito bem! A afirmação confirma uso das vogais em contextos musicais.
+            'false': 'Revise: uso das vogais em contextos musicais está presente na afirmação.'
+      accessibility:
+        hints:
+          - audience: ESTUDANTE
+            text: Use TAB e ENTER para navegar e confirmar sua escolha.
+          - audience: EDUCADOR
+            text: Projete legendas e permita repetição do áudio para quem precisar.
+        feedback:
+          success: Excelente! Uso das vogais em contextos musicais ficou evidente nas suas respostas.
+          encouragement: Caso erre, leia novamente com voz pausada e utilize marcadores visuais.
+          accessibility: Ofereça apoio auditivo individual e contraste elevado nos botões.
+        assets:
+          - slug: lp-letra-e
+            type: IMAGEM
+            title: Ilustração da letra E
+  - partial: ../../_partials/acolhimento-base.yaml
+    slug: puzzle-vogais-amigas
+    title: Vogais Amigas
+    prompt: Combine vogais maiúsculas e minúsculas que representam o mesmo som.
+    type: PUZZLE
+    difficulty: INICIAR
+    bncc:
+      code: EF01LP03
+      habilidades:
+        - EF01LP03
+    learningObjectives:
+      - Explorar reconhecimento de vogais em situações guiadas pelo educador.
+      - Compartilhar estratégias pessoais com colegas durante a atividade.
+    description: Vogais Amigas convida a turma a investigar reconhecimento de vogais com apoio de recursos multimodais.
+    metadata:
+      categoria: Maiúsculas e minúsculas
+      duracaoMinutos: 9
+      habilidades:
+        - EF01LP03
+      assetSlug: lp-letra-a
+      interactiveSlug: puzzle-puzzle-vogais-amigas
+    accessibility:
+      hints:
+        - audience: ESTUDANTE
+          text: Use as setas do teclado ou toque na tela para navegar enquanto destaca reconhecimento de vogais com gestos ou palmas.
+        - audience: EDUCADOR
+          text: Projete imagens de apoio, ofereça repetição de áudio e verbalize os passos para favorecer a percepção de reconhecimento de vogais.
+        - audience: FAMILIA
+          text: Envie sugestões de objetos ou cantigas que reforcem os sons trabalhados para continuidade em casa.
+      feedback:
+        success: Ótimo trabalho! Reconhecimento de vogais ficou mais claro com sua atenção aos detalhes.
+        retry: Retome com calma, respirando fundo e usando as pistas visuais oferecidas.
+        encouragement: Valorize cada tentativa e compare sons ou letras com apoio dos colegas.
+        accessibility: Disponibilize fones acolchoados, letras ampliadas e manipuláveis táteis para quem precisar.
+      assets:
+        - slug: lp-letra-a
+          type: IMAGEM
+          title: Ilustração da letra A
+    prerequisites:
+      - type: ACTIVITY
+        reference: vogal-exploradora
+        description: Relembrar as vogais apresentadas anteriormente.
+    interactive:
+      slug: puzzle-puzzle-vogais-amigas
+      title: Vogais Amigas — Quebra-cabeça
+      type: PUZZLE
+      bnccDescription: Reconhecer letras do alfabeto em diferentes suportes e formatos.
+      estimatedTimeMinutes: 9
+      instructions:
+        - Observe cada cartão e combine arrastando ou usando TAB + ENTER.
+        - Converse sobre o motivo da combinação antes de confirmar.
+        - Revise as duplas formadas e proponha novas associações.
+      objectives:
+        - Explorar reconhecimento de vogais em situações guiadas pelo educador.
+        - Compartilhar estratégias pessoais com colegas durante a atividade.
+      puzzle:
+        mode: matching
+        successFeedback: Tudo combinado! Reconhecimento de vogais ficou evidente nas associações.
+        errorFeedback: Observe novamente os sons, conte devagar e tente outra combinação.
+        pairs:
+          - id: puzzle-vogais-amigas-pair-1
+            prompt: A
+            match: a
+            hint: Observe reconhecimento de vogais presente em 'A'.
+            feedback: Perfeito! 'a' combina com 'A' porque evidencia reconhecimento de vogais.
+          - id: puzzle-vogais-amigas-pair-2
+            prompt: E
+            match: e
+            hint: Observe reconhecimento de vogais presente em 'E'.
+            feedback: Perfeito! 'e' combina com 'E' porque evidencia reconhecimento de vogais.
+          - id: puzzle-vogais-amigas-pair-3
+            prompt: I
+            match: i
+            hint: Observe reconhecimento de vogais presente em 'I'.
+            feedback: Perfeito! 'i' combina com 'I' porque evidencia reconhecimento de vogais.
+      accessibility:
+        hints:
+          - audience: ESTUDANTE
+            text: Use as setas para navegar entre os cartões e Enter para selecionar.
+          - audience: EDUCADOR
+            text: Disponibilize cartões físicos para manipulação simultânea.
+        feedback:
+          success: Tudo combinado! Reconhecimento de vogais ficou evidente nas associações.
+          encouragement: Compare sons lentamente e utilize gestos amplos para apoiar a associação.
+          accessibility: Ofereça cartões com textura ou relevo para ampliar as pistas sensoriais.
+        assets:
+          - slug: lp-letra-a
+            type: IMAGEM
+            title: Ilustração da letra A
+  - partial: ../../_partials/acolhimento-base.yaml
+    slug: puzzle-vogal-e-imagem
+    title: Vogal e Imagem
+    prompt: Associe cada vogal a uma imagem que começa com o mesmo som.
+    type: PUZZLE
+    difficulty: PRATICAR
+    bncc:
+      code: EF01LP04
+      habilidades:
+        - EF01LP04
+    learningObjectives:
+      - Explorar associação vogal e imagem em situações guiadas pelo educador.
+      - Compartilhar estratégias pessoais com colegas durante a atividade.
+    description: Vogal e Imagem convida a turma a investigar associação vogal e imagem com apoio de recursos multimodais.
+    metadata:
+      categoria: Associação vogal-imagem
+      duracaoMinutos: 10
+      habilidades:
+        - EF01LP04
+      assetSlug: lp-letra-e
+      interactiveSlug: puzzle-puzzle-vogal-e-imagem
+    accessibility:
+      hints:
+        - audience: ESTUDANTE
+          text: Use as setas do teclado ou toque na tela para navegar enquanto destaca associação vogal e imagem com gestos ou palmas.
+        - audience: EDUCADOR
+          text: Projete imagens de apoio, ofereça repetição de áudio e verbalize os passos para favorecer a percepção de associação vogal e imagem.
+        - audience: FAMILIA
+          text: Envie sugestões de objetos ou cantigas que reforcem os sons trabalhados para continuidade em casa.
+      feedback:
+        success: Ótimo trabalho! Associação vogal e imagem ficou mais claro com sua atenção aos detalhes.
+        retry: Retome com calma, respirando fundo e usando as pistas visuais oferecidas.
+        encouragement: Valorize cada tentativa e compare sons ou letras com apoio dos colegas.
+        accessibility: Disponibilize fones acolchoados, letras ampliadas e manipuláveis táteis para quem precisar.
+      assets:
+        - slug: lp-letra-e
+          type: IMAGEM
+          title: Ilustração da letra E
+    prerequisites:
+      - type: ACTIVITY
+        reference: caixa-das-vogais
+        description: Retomar a escuta de palavras com diferentes vogais.
+    interactive:
+      slug: puzzle-puzzle-vogal-e-imagem
+      title: Vogal e Imagem — Quebra-cabeça
+      type: PUZZLE
+      bnccDescription: Relacionar letras e sons, avaliando variações na posição dentro das palavras.
+      estimatedTimeMinutes: 10
+      instructions:
+        - Observe cada cartão e combine arrastando ou usando TAB + ENTER.
+        - Converse sobre o motivo da combinação antes de confirmar.
+        - Revise as duplas formadas e proponha novas associações.
+      objectives:
+        - Explorar associação vogal e imagem em situações guiadas pelo educador.
+        - Compartilhar estratégias pessoais com colegas durante a atividade.
+      puzzle:
+        mode: matching
+        successFeedback: Tudo combinado! Associação vogal e imagem ficou evidente nas associações.
+        errorFeedback: Observe novamente os sons, conte devagar e tente outra combinação.
+        pairs:
+          - id: puzzle-vogal-e-imagem-pair-1
+            prompt: A
+            match: Abacate
+            hint: Observe associação vogal e imagem presente em 'A'.
+            feedback: Perfeito! 'Abacate' combina com 'A' porque evidencia associação vogal e imagem.
+          - id: puzzle-vogal-e-imagem-pair-2
+            prompt: E
+            match: Elefante
+            hint: Observe associação vogal e imagem presente em 'E'.
+            feedback: Perfeito! 'Elefante' combina com 'E' porque evidencia associação vogal e imagem.
+          - id: puzzle-vogal-e-imagem-pair-3
+            prompt: I
+            match: Igreja
+            hint: Observe associação vogal e imagem presente em 'I'.
+            feedback: Perfeito! 'Igreja' combina com 'I' porque evidencia associação vogal e imagem.
+      accessibility:
+        hints:
+          - audience: ESTUDANTE
+            text: Use as setas para navegar entre os cartões e Enter para selecionar.
+          - audience: EDUCADOR
+            text: Disponibilize cartões físicos para manipulação simultânea.
+        feedback:
+          success: Tudo combinado! Associação vogal e imagem ficou evidente nas associações.
+          encouragement: Compare sons lentamente e utilize gestos amplos para apoiar a associação.
+          accessibility: Ofereça cartões com textura ou relevo para ampliar as pistas sensoriais.
+        assets:
+          - slug: lp-letra-e
+            type: IMAGEM
+            title: Ilustração da letra E
+  - partial: ../../_partials/acolhimento-base.yaml
+    slug: puzzle-completa-vogal
+    title: Completa Vogal
+    prompt: Escolha a vogal que falta em cada palavra.
+    type: PUZZLE
+    difficulty: PRATICAR
+    bncc:
+      code: EF01LP04
+      habilidades:
+        - EF01LP04
+    learningObjectives:
+      - Explorar uso de vogais em palavras em situações guiadas pelo educador.
+      - Compartilhar estratégias pessoais com colegas durante a atividade.
+    description: Completa Vogal convida a turma a investigar uso de vogais em palavras com apoio de recursos multimodais.
+    metadata:
+      categoria: Vogais em palavras
+      duracaoMinutos: 10
+      habilidades:
+        - EF01LP04
+      assetSlug: lp-silaba-ba
+      interactiveSlug: puzzle-puzzle-completa-vogal
+    accessibility:
+      hints:
+        - audience: ESTUDANTE
+          text: Use as setas do teclado ou toque na tela para navegar enquanto destaca uso de vogais em palavras com gestos ou palmas.
+        - audience: EDUCADOR
+          text: Projete imagens de apoio, ofereça repetição de áudio e verbalize os passos para favorecer a percepção de uso de vogais em palavras.
+        - audience: FAMILIA
+          text: Envie sugestões de objetos ou cantigas que reforcem os sons trabalhados para continuidade em casa.
+      feedback:
+        success: Ótimo trabalho! Uso de vogais em palavras ficou mais claro com sua atenção aos detalhes.
+        retry: Retome com calma, respirando fundo e usando as pistas visuais oferecidas.
+        encouragement: Valorize cada tentativa e compare sons ou letras com apoio dos colegas.
+        accessibility: Disponibilize fones acolchoados, letras ampliadas e manipuláveis táteis para quem precisar.
+      assets:
+        - slug: lp-silaba-ba
+          type: IMAGEM
+          title: Cartão da sílaba BA
+    prerequisites:
+      - type: ACTIVITY
+        reference: vogal-misteriosa
+        description: Reutilizar as vogais descobertas em novas palavras.
+    interactive:
+      slug: puzzle-puzzle-completa-vogal
+      title: Completa Vogal — Quebra-cabeça
+      type: PUZZLE
+      bnccDescription: Relacionar letras e sons, avaliando variações na posição dentro das palavras.
+      estimatedTimeMinutes: 10
+      instructions:
+        - Observe cada cartão e combine arrastando ou usando TAB + ENTER.
+        - Converse sobre o motivo da combinação antes de confirmar.
+        - Revise as duplas formadas e proponha novas associações.
+      objectives:
+        - Explorar uso de vogais em palavras em situações guiadas pelo educador.
+        - Compartilhar estratégias pessoais com colegas durante a atividade.
+      puzzle:
+        mode: matching
+        successFeedback: Tudo combinado! Uso de vogais em palavras ficou evidente nas associações.
+        errorFeedback: Observe novamente os sons, conte devagar e tente outra combinação.
+        pairs:
+          - id: puzzle-completa-vogal-pair-1
+            prompt: C_SA
+            match: A
+            hint: Observe uso de vogais em palavras presente em 'C_SA'.
+            feedback: Perfeito! 'A' combina com 'C_SA' porque evidencia uso de vogais em palavras.
+          - id: puzzle-completa-vogal-pair-2
+            prompt: P_PA
+            match: I
+            hint: Observe uso de vogais em palavras presente em 'P_PA'.
+            feedback: Perfeito! 'I' combina com 'P_PA' porque evidencia uso de vogais em palavras.
+          - id: puzzle-completa-vogal-pair-3
+            prompt: L_PA
+            match: U
+            hint: Observe uso de vogais em palavras presente em 'L_PA'.
+            feedback: Perfeito! 'U' combina com 'L_PA' porque evidencia uso de vogais em palavras.
+      accessibility:
+        hints:
+          - audience: ESTUDANTE
+            text: Use as setas para navegar entre os cartões e Enter para selecionar.
+          - audience: EDUCADOR
+            text: Disponibilize cartões físicos para manipulação simultânea.
+        feedback:
+          success: Tudo combinado! Uso de vogais em palavras ficou evidente nas associações.
+          encouragement: Compare sons lentamente e utilize gestos amplos para apoiar a associação.
+          accessibility: Ofereça cartões com textura ou relevo para ampliar as pistas sensoriais.
+        assets:
+          - slug: lp-silaba-ba
+            type: IMAGEM
+            title: Cartão da sílaba BA
+  - partial: ../../_partials/acolhimento-base.yaml
+    slug: puzzle-trilha-alfabeto
+    title: Trilha do Alfabeto
+    prompt: Relacione a posição ordinal à vogal correspondente.
+    type: PUZZLE
+    difficulty: DOMINAR
+    bncc:
+      code: EF01LP03
+      habilidades:
+        - EF01LP03
+    learningObjectives:
+      - Explorar ordem das vogais em situações guiadas pelo educador.
+      - Compartilhar estratégias pessoais com colegas durante a atividade.
+    description: Trilha do Alfabeto convida a turma a investigar ordem das vogais com apoio de recursos multimodais.
+    metadata:
+      categoria: Sequência alfabética
+      duracaoMinutos: 10
+      habilidades:
+        - EF01LP03
+      assetSlug: lp-material-caderno
+      interactiveSlug: puzzle-puzzle-trilha-alfabeto
+    accessibility:
+      hints:
+        - audience: ESTUDANTE
+          text: Use as setas do teclado ou toque na tela para navegar enquanto destaca ordem das vogais com gestos ou palmas.
+        - audience: EDUCADOR
+          text: Projete imagens de apoio, ofereça repetição de áudio e verbalize os passos para favorecer a percepção de ordem das vogais.
+        - audience: FAMILIA
+          text: Envie sugestões de objetos ou cantigas que reforcem os sons trabalhados para continuidade em casa.
+      feedback:
+        success: Ótimo trabalho! Ordem das vogais ficou mais claro com sua atenção aos detalhes.
+        retry: Retome com calma, respirando fundo e usando as pistas visuais oferecidas.
+        encouragement: Valorize cada tentativa e compare sons ou letras com apoio dos colegas.
+        accessibility: Disponibilize fones acolchoados, letras ampliadas e manipuláveis táteis para quem precisar.
+      assets:
+        - slug: lp-material-caderno
+          type: IMAGEM
+          title: Caderno colorido para escrita
+    prerequisites:
+      - type: ACTIVITY
+        reference: ordem-das-vogais
+        description: Retomar a sequência antes de jogar o puzzle.
+    interactive:
+      slug: puzzle-puzzle-trilha-alfabeto
+      title: Trilha do Alfabeto — Quebra-cabeça
+      type: PUZZLE
+      bnccDescription: Reconhecer letras do alfabeto em diferentes suportes e formatos.
+      estimatedTimeMinutes: 10
+      instructions:
+        - Observe cada cartão e combine arrastando ou usando TAB + ENTER.
+        - Converse sobre o motivo da combinação antes de confirmar.
+        - Revise as duplas formadas e proponha novas associações.
+      objectives:
+        - Explorar ordem das vogais em situações guiadas pelo educador.
+        - Compartilhar estratégias pessoais com colegas durante a atividade.
+      puzzle:
+        mode: matching
+        successFeedback: Tudo combinado! Ordem das vogais ficou evidente nas associações.
+        errorFeedback: Observe novamente os sons, conte devagar e tente outra combinação.
+        pairs:
+          - id: puzzle-trilha-alfabeto-pair-1
+            prompt: 1ª vogal
+            match: A
+            hint: Observe ordem das vogais presente em '1ª vogal'.
+            feedback: Perfeito! 'A' combina com '1ª vogal' porque evidencia ordem das vogais.
+          - id: puzzle-trilha-alfabeto-pair-2
+            prompt: 2ª vogal
+            match: E
+            hint: Observe ordem das vogais presente em '2ª vogal'.
+            feedback: Perfeito! 'E' combina com '2ª vogal' porque evidencia ordem das vogais.
+          - id: puzzle-trilha-alfabeto-pair-3
+            prompt: 3ª vogal
+            match: I
+            hint: Observe ordem das vogais presente em '3ª vogal'.
+            feedback: Perfeito! 'I' combina com '3ª vogal' porque evidencia ordem das vogais.
+      accessibility:
+        hints:
+          - audience: ESTUDANTE
+            text: Use as setas para navegar entre os cartões e Enter para selecionar.
+          - audience: EDUCADOR
+            text: Disponibilize cartões físicos para manipulação simultânea.
+        feedback:
+          success: Tudo combinado! Ordem das vogais ficou evidente nas associações.
+          encouragement: Compare sons lentamente e utilize gestos amplos para apoiar a associação.
+          accessibility: Ofereça cartões com textura ou relevo para ampliar as pistas sensoriais.
+        assets:
+          - slug: lp-material-caderno
+            type: IMAGEM
+            title: Caderno colorido para escrita
+  - partial: ../../_partials/acolhimento-base.yaml
+    slug: corrida-das-vogais
+    title: Corrida das Vogais
+    prompt: Escolha rapidamente a vogal que atende ao desafio de cada fase.
+    type: GAME
+    difficulty: INICIAR
+    bncc:
+      code: EF01LP03
+      habilidades:
+        - EF01LP03
+    learningObjectives:
+      - Explorar identificação de vogais em situações guiadas pelo educador.
+      - Compartilhar estratégias pessoais com colegas durante a atividade.
+    description: Corrida das Vogais convida a turma a investigar identificação de vogais com apoio de recursos multimodais.
+    metadata:
+      categoria: Identificação de vogais
+      duracaoMinutos: 12
+      habilidades:
+        - EF01LP03
+      assetSlug: lp-letra-a
+      interactiveSlug: game-corrida-das-vogais
+    accessibility:
+      hints:
+        - audience: ESTUDANTE
+          text: Use as setas do teclado ou toque na tela para navegar enquanto destaca identificação de vogais com gestos ou palmas.
+        - audience: EDUCADOR
+          text: Projete imagens de apoio, ofereça repetição de áudio e verbalize os passos para favorecer a percepção de identificação de vogais.
+        - audience: FAMILIA
+          text: Envie sugestões de objetos ou cantigas que reforcem os sons trabalhados para continuidade em casa.
+      feedback:
+        success: Ótimo trabalho! Identificação de vogais ficou mais claro com sua atenção aos detalhes.
+        retry: Retome com calma, respirando fundo e usando as pistas visuais oferecidas.
+        encouragement: Valorize cada tentativa e compare sons ou letras com apoio dos colegas.
+        accessibility: Disponibilize fones acolchoados, letras ampliadas e manipuláveis táteis para quem precisar.
+      assets:
+        - slug: lp-letra-a
+          type: IMAGEM
+          title: Ilustração da letra A
+    prerequisites:
+      - type: ACTIVITY
+        reference: caixa-das-vogais
+        description: Relembrar as vogais que completam palavras.
+    interactive:
+      slug: game-corrida-das-vogais
+      title: Corrida das Vogais — Mini-jogo
+      type: GAME
+      bnccDescription: Reconhecer letras do alfabeto em diferentes suportes e formatos.
+      estimatedTimeMinutes: 12
+      instructions:
+        - Leia o desafio de cada fase e verbalize suas hipóteses em voz alta.
+        - Digite a resposta usando o teclado ou selecione com o mouse.
+        - No final, explique qual pista ajudou a encontrar a solução.
+      objectives:
+        - Explorar identificação de vogais em situações guiadas pelo educador.
+        - Compartilhar estratégias pessoais com colegas durante a atividade.
+      game:
+        mode: math-challenge
+        timeLimitSeconds: 120
+        lives: 3
+        victoryMessage: Você acelerou com as vogais na ponta da língua!
+        gameOverMessage: Revise as vogais com calma e tente a corrida novamente.
+        levels:
+          - id: corrida-das-vogais-level-1
+            challenge: Qual vogal inicia a palavra 'igreja'? (i, o, a)
+            answer: i
+            hint: Use identificação de vogais para encontrar a resposta.
+            successFeedback: Muito bem! Identificação de vogais ajudou a resolver a fase.
+            failureFeedback: Retome identificação de vogais e ajuste sua estratégia.
+          - id: corrida-das-vogais-level-2
+            challenge: Qual vogal completa 'c_sa' para formar 'casa'? (a, u, o)
+            answer: a
+            hint: Use identificação de vogais para encontrar a resposta.
+            successFeedback: Muito bem! Identificação de vogais ajudou a resolver a fase.
+            failureFeedback: Retome identificação de vogais e ajuste sua estratégia.
+          - id: corrida-das-vogais-level-3
+            challenge: Qual vogal aparece duas vezes em 'uva'? (u, e, i)
+            answer: u
+            hint: Use identificação de vogais para encontrar a resposta.
+            successFeedback: Muito bem! Identificação de vogais ajudou a resolver a fase.
+            failureFeedback: Retome identificação de vogais e ajuste sua estratégia.
+      accessibility:
+        hints:
+          - audience: ESTUDANTE
+            text: Use a tecla TAB para navegar pelos botões e Enter para confirmar.
+          - audience: EDUCADOR
+            text: Ofereça marcadores visuais ou tapetes de som para cada fase.
+        feedback:
+          success: Você acelerou com as vogais na ponta da língua!
+          encouragement: Revise as pistas sonoras e tente novamente sem pressa.
+          accessibility: Disponibilize apoios auditivos individuais e sinalize o tempo visualmente.
+        assets:
+          - slug: lp-letra-a
+            type: IMAGEM
+            title: Ilustração da letra A
+  - partial: ../../_partials/acolhimento-base.yaml
+    slug: laboratorio-das-vogais
+    title: Laboratório das Vogais
+    prompt: Relacione sons e letras para resolver cada desafio.
+    type: GAME
+    difficulty: PRATICAR
+    bncc:
+      code: EF01LP04
+      habilidades:
+        - EF01LP04
+    learningObjectives:
+      - Explorar correspondência som-vogal em situações guiadas pelo educador.
+      - Compartilhar estratégias pessoais com colegas durante a atividade.
+    description: Laboratório das Vogais convida a turma a investigar correspondência som-vogal com apoio de recursos multimodais.
+    metadata:
+      categoria: Som e grafia
+      duracaoMinutos: 12
+      habilidades:
+        - EF01LP04
+      assetSlug: lp-silaba-la
+      interactiveSlug: game-laboratorio-das-vogais
+    accessibility:
+      hints:
+        - audience: ESTUDANTE
+          text: Use as setas do teclado ou toque na tela para navegar enquanto destaca correspondência som-vogal com gestos ou palmas.
+        - audience: EDUCADOR
+          text: Projete imagens de apoio, ofereça repetição de áudio e verbalize os passos para favorecer a percepção de correspondência som-vogal.
+        - audience: FAMILIA
+          text: Envie sugestões de objetos ou cantigas que reforcem os sons trabalhados para continuidade em casa.
+      feedback:
+        success: Ótimo trabalho! Correspondência som-vogal ficou mais claro com sua atenção aos detalhes.
+        retry: Retome com calma, respirando fundo e usando as pistas visuais oferecidas.
+        encouragement: Valorize cada tentativa e compare sons ou letras com apoio dos colegas.
+        accessibility: Disponibilize fones acolchoados, letras ampliadas e manipuláveis táteis para quem precisar.
+      assets:
+        - slug: lp-silaba-la
+          type: IMAGEM
+          title: Cartão da sílaba LA
+    prerequisites:
+      - type: ACTIVITY
+        reference: som-e-letra
+        description: Retomar o reconhecimento de sons finais antes de jogar.
+    interactive:
+      slug: game-laboratorio-das-vogais
+      title: Laboratório das Vogais — Mini-jogo
+      type: GAME
+      bnccDescription: Relacionar letras e sons, avaliando variações na posição dentro das palavras.
+      estimatedTimeMinutes: 12
+      instructions:
+        - Leia o desafio de cada fase e verbalize suas hipóteses em voz alta.
+        - Digite a resposta usando o teclado ou selecione com o mouse.
+        - No final, explique qual pista ajudou a encontrar a solução.
+      objectives:
+        - Explorar correspondência som-vogal em situações guiadas pelo educador.
+        - Compartilhar estratégias pessoais com colegas durante a atividade.
+      game:
+        mode: math-challenge
+        timeLimitSeconds: 120
+        lives: 3
+        victoryMessage: Experimentos concluídos! As vogais ganharam vida.
+        gameOverMessage: Revise os sons das vogais e tente novamente quando estiver pronto.
+        levels:
+          - id: laboratorio-das-vogais-level-1
+            challenge: Qual vogal representa o som /e/ na palavra 'mesa'?
+            answer: e
+            hint: Use correspondência som-vogal para encontrar a resposta.
+            successFeedback: Muito bem! Correspondência som-vogal ajudou a resolver a fase.
+            failureFeedback: Retome correspondência som-vogal e ajuste sua estratégia.
+          - id: laboratorio-das-vogais-level-2
+            challenge: Qual vogal completa 'b_lo' para formar 'bolo'?
+            answer: o
+            hint: Use correspondência som-vogal para encontrar a resposta.
+            successFeedback: Muito bem! Correspondência som-vogal ajudou a resolver a fase.
+            failureFeedback: Retome correspondência som-vogal e ajuste sua estratégia.
+          - id: laboratorio-das-vogais-level-3
+            challenge: Qual vogal finaliza a palavra 'banana'?
+            answer: a
+            hint: Use correspondência som-vogal para encontrar a resposta.
+            successFeedback: Muito bem! Correspondência som-vogal ajudou a resolver a fase.
+            failureFeedback: Retome correspondência som-vogal e ajuste sua estratégia.
+      accessibility:
+        hints:
+          - audience: ESTUDANTE
+            text: Use a tecla TAB para navegar pelos botões e Enter para confirmar.
+          - audience: EDUCADOR
+            text: Ofereça marcadores visuais ou tapetes de som para cada fase.
+        feedback:
+          success: Experimentos concluídos! As vogais ganharam vida.
+          encouragement: Revise as pistas sonoras e tente novamente sem pressa.
+          accessibility: Disponibilize apoios auditivos individuais e sinalize o tempo visualmente.
+        assets:
+          - slug: lp-silaba-la
+            type: IMAGEM
+            title: Cartão da sílaba LA
+  - partial: ../../_partials/acolhimento-base.yaml
+    slug: memoria-das-vogais
+    title: Memória das Vogais
+    prompt: Complete sílabas com a vogal correta e leia em voz alta.
+    type: GAME
+    difficulty: DOMINAR
+    bncc:
+      code: EF01LP04
+      habilidades:
+        - EF01LP04
+    learningObjectives:
+      - Explorar formação de sílabas com vogais em situações guiadas pelo educador.
+      - Compartilhar estratégias pessoais com colegas durante a atividade.
+    description: Memória das Vogais convida a turma a investigar formação de sílabas com vogais com apoio de recursos multimodais.
+    metadata:
+      categoria: Formação de sílabas
+      duracaoMinutos: 13
+      habilidades:
+        - EF01LP04
+      assetSlug: lp-material-caderno
+      interactiveSlug: game-memoria-das-vogais
+    accessibility:
+      hints:
+        - audience: ESTUDANTE
+          text: Use as setas do teclado ou toque na tela para navegar enquanto destaca formação de sílabas com vogais com gestos ou palmas.
+        - audience: EDUCADOR
+          text: Projete imagens de apoio, ofereça repetição de áudio e verbalize os passos para favorecer a percepção de formação de sílabas com vogais.
+        - audience: FAMILIA
+          text: Envie sugestões de objetos ou cantigas que reforcem os sons trabalhados para continuidade em casa.
+      feedback:
+        success: Ótimo trabalho! Formação de sílabas com vogais ficou mais claro com sua atenção aos detalhes.
+        retry: Retome com calma, respirando fundo e usando as pistas visuais oferecidas.
+        encouragement: Valorize cada tentativa e compare sons ou letras com apoio dos colegas.
+        accessibility: Disponibilize fones acolchoados, letras ampliadas e manipuláveis táteis para quem precisar.
+      assets:
+        - slug: lp-material-caderno
+          type: IMAGEM
+          title: Caderno colorido para escrita
+    prerequisites:
+      - type: ACTIVITY
+        reference: puzzle-completa-vogal
+        description: Reutilizar as vogais completando novas sílabas.
+    interactive:
+      slug: game-memoria-das-vogais
+      title: Memória das Vogais — Mini-jogo
+      type: GAME
+      bnccDescription: Relacionar letras e sons, avaliando variações na posição dentro das palavras.
+      estimatedTimeMinutes: 13
+      instructions:
+        - Leia o desafio de cada fase e verbalize suas hipóteses em voz alta.
+        - Digite a resposta usando o teclado ou selecione com o mouse.
+        - No final, explique qual pista ajudou a encontrar a solução.
+      objectives:
+        - Explorar formação de sílabas com vogais em situações guiadas pelo educador.
+        - Compartilhar estratégias pessoais com colegas durante a atividade.
+      game:
+        mode: math-challenge
+        timeLimitSeconds: 120
+        lives: 3
+        victoryMessage: Memória afiada! As sílabas cantaram em harmonia.
+        gameOverMessage: Volte às pistas, repita as sílabas e tente outra vez.
+        levels:
+          - id: memoria-das-vogais-level-1
+            challenge: Qual vogal completa a sílaba L_ para formar 'LA'?
+            answer: a
+            hint: Use formação de sílabas com vogais para encontrar a resposta.
+            successFeedback: Muito bem! Formação de sílabas com vogais ajudou a resolver a fase.
+            failureFeedback: Retome formação de sílabas com vogais e ajuste sua estratégia.
+          - id: memoria-das-vogais-level-2
+            challenge: Qual vogal completa a sílaba L_ para formar 'LE'?
+            answer: e
+            hint: Use formação de sílabas com vogais para encontrar a resposta.
+            successFeedback: Muito bem! Formação de sílabas com vogais ajudou a resolver a fase.
+            failureFeedback: Retome formação de sílabas com vogais e ajuste sua estratégia.
+          - id: memoria-das-vogais-level-3
+            challenge: Qual vogal completa a sílaba L_ para formar 'LU'?
+            answer: u
+            hint: Use formação de sílabas com vogais para encontrar a resposta.
+            successFeedback: Muito bem! Formação de sílabas com vogais ajudou a resolver a fase.
+            failureFeedback: Retome formação de sílabas com vogais e ajuste sua estratégia.
+      accessibility:
+        hints:
+          - audience: ESTUDANTE
+            text: Use a tecla TAB para navegar pelos botões e Enter para confirmar.
+          - audience: EDUCADOR
+            text: Ofereça marcadores visuais ou tapetes de som para cada fase.
+        feedback:
+          success: Memória afiada! As sílabas cantaram em harmonia.
+          encouragement: Revise as pistas sonoras e tente novamente sem pressa.
+          accessibility: Disponibilize apoios auditivos individuais e sinalize o tempo visualmente.
+        assets:
+          - slug: lp-material-caderno
+            type: IMAGEM
+            title: Caderno colorido para escrita

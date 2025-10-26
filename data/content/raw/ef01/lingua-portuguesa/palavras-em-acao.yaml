@@ -1,0 +1,1271 @@
+module:
+  slug: palavras-em-acao
+  title: Palavras em Ação
+  subtitle: Leitura de uso cotidiano
+  description: Sequência para ampliar repertório lexical, ler palavras frequentes e aplicar estratégias de decodificação em situações reais.
+  theme: Língua Portuguesa
+  discipline: Língua Portuguesa
+  ageGroupSlug: fundamental-anos-iniciais
+  learningPathSlug: descobertas-palavras
+  primaryBnccCode: EF01LP05
+  secondaryBnccCodes:
+    - EF01LP06
+  learningOutcomes:
+    - Ler palavras familiares presentes no cotidiano escolar e comunitário.
+    - Relacionar palavras a imagens, objetos e contextos de uso.
+    - Comparar palavras que compartilham sons, letras e sentidos próximos.
+  tags:
+    - leitura
+    - palavras-frequentes
+    - alfabetizacao
+activities:
+  - partial: ../../_partials/acolhimento-base.yaml
+    slug: palavra-e-figura
+    title: Palavra e Figura
+    prompt: Leia a palavra e associe à imagem correspondente.
+    type: QUIZ
+    difficulty: INICIAR
+    bncc:
+      code: EF01LP05
+      habilidades:
+        - EF01LP05
+    learningObjectives:
+      - Explorar leitura de palavras usuais em situações guiadas pelo educador.
+      - Compartilhar estratégias pessoais com colegas durante a atividade.
+    description: Palavra e Figura convida a turma a investigar leitura de palavras usuais com apoio de recursos multimodais.
+    metadata:
+      categoria: Leitura de palavras
+      duracaoMinutos: 8
+      habilidades:
+        - EF01LP05
+      assetSlug: lp-material-caderno
+      interactiveSlug: quiz-palavra-e-figura
+    accessibility:
+      hints:
+        - audience: ESTUDANTE
+          text: Use as setas do teclado ou toque na tela para navegar enquanto destaca leitura de palavras usuais com gestos ou palmas.
+        - audience: EDUCADOR
+          text: Projete imagens de apoio, ofereça repetição de áudio e verbalize os passos para favorecer a percepção de leitura de palavras usuais.
+        - audience: FAMILIA
+          text: Envie sugestões de objetos ou cantigas que reforcem os sons trabalhados para continuidade em casa.
+      feedback:
+        success: Ótimo trabalho! Leitura de palavras usuais ficou mais claro com sua atenção aos detalhes.
+        retry: Retome com calma, respirando fundo e usando as pistas visuais oferecidas.
+        encouragement: Valorize cada tentativa e compare sons ou letras com apoio dos colegas.
+        accessibility: Disponibilize fones acolchoados, letras ampliadas e manipuláveis táteis para quem precisar.
+      assets:
+        - slug: lp-material-caderno
+          type: IMAGEM
+          title: Caderno colorido para escrita
+    prerequisites:
+      - type: SKILL
+        reference: EF01LP05
+        description: Explorar cartazes e cantigas com palavras familiares.
+    interactive:
+      slug: quiz-palavra-e-figura
+      title: Palavra e Figura — Quiz
+      type: QUIZ
+      bnccDescription: Ler palavras e expressões familiares apoiando-se em pistas gráficas e contextuais.
+      estimatedTimeMinutes: 8
+      instructions:
+        - Leia ou escute o desafio com atenção antes de registrar a resposta.
+        - Use as teclas numéricas ou clique nas alternativas para responder.
+        - Compartilhe com a turma novas palavras relacionadas após concluir o desafio.
+      objectives:
+        - Explorar leitura de palavras usuais em situações guiadas pelo educador.
+        - Compartilhar estratégias pessoais com colegas durante a atividade.
+      scoring:
+        correct: 10
+        incorrect: 0
+      adaptive:
+        increaseAfter: 2
+        decreaseAfter: 1
+      questions:
+        - id: palavra-e-figura-q1
+          type: multiple-choice
+          prompt: Qual palavra nomeia a figura de uma bola?
+          hint: Observe a imagem e leia cada opção com atenção.
+          options:
+            - id: palavra-e-figura-q1-1
+              text: Bola
+              isCorrect: true
+              feedback: Excelente! 'Bola' evidencia leitura de palavras usuais.
+            - id: palavra-e-figura-q1-2
+              text: Gato
+              isCorrect: false
+              feedback: Ainda não. 'Gato' não representa leitura de palavras usuais.
+            - id: palavra-e-figura-q1-3
+              text: Pipa
+              isCorrect: false
+              feedback: Ainda não. 'Pipa' não representa leitura de palavras usuais.
+        - id: palavra-e-figura-q2
+          type: true-false
+          prompt: A palavra 'bola' representa a imagem de uma bola?
+          hint: Compare a palavra escrita com a figura mostrada.
+          statement: A palavra 'bola' representa a imagem de uma bola.
+          answer: true
+          feedback:
+            'true': Muito bem! A afirmação confirma leitura de palavras usuais.
+            'false': 'Revise: leitura de palavras usuais está presente na afirmação.'
+      accessibility:
+        hints:
+          - audience: ESTUDANTE
+            text: Use TAB e ENTER para navegar e confirmar sua escolha.
+          - audience: EDUCADOR
+            text: Projete legendas e permita repetição do áudio para quem precisar.
+        feedback:
+          success: Excelente! Leitura de palavras usuais ficou evidente nas suas respostas.
+          encouragement: Caso erre, leia novamente com voz pausada e utilize marcadores visuais.
+          accessibility: Ofereça apoio auditivo individual e contraste elevado nos botões.
+        assets:
+          - slug: lp-material-caderno
+            type: IMAGEM
+            title: Caderno colorido para escrita
+  - partial: ../../_partials/acolhimento-base.yaml
+    slug: cantinho-das-palavras
+    title: Cantinho das Palavras
+    prompt: Escolha a palavra que completa a frase apresentada.
+    type: QUIZ
+    difficulty: PRATICAR
+    bncc:
+      code: EF01LP05
+      habilidades:
+        - EF01LP05
+    learningObjectives:
+      - Explorar compreensão de palavras em contexto em situações guiadas pelo educador.
+      - Compartilhar estratégias pessoais com colegas durante a atividade.
+    description: Cantinho das Palavras convida a turma a investigar compreensão de palavras em contexto com apoio de recursos multimodais.
+    metadata:
+      categoria: Palavras em contexto
+      duracaoMinutos: 8
+      habilidades:
+        - EF01LP05
+      assetSlug: lp-letra-a
+      interactiveSlug: quiz-cantinho-das-palavras
+    accessibility:
+      hints:
+        - audience: ESTUDANTE
+          text: Use as setas do teclado ou toque na tela para navegar enquanto destaca compreensão de palavras em contexto com gestos ou palmas.
+        - audience: EDUCADOR
+          text: Projete imagens de apoio, ofereça repetição de áudio e verbalize os passos para favorecer a percepção de compreensão de palavras em contexto.
+        - audience: FAMILIA
+          text: Envie sugestões de objetos ou cantigas que reforcem os sons trabalhados para continuidade em casa.
+      feedback:
+        success: Ótimo trabalho! Compreensão de palavras em contexto ficou mais claro com sua atenção aos detalhes.
+        retry: Retome com calma, respirando fundo e usando as pistas visuais oferecidas.
+        encouragement: Valorize cada tentativa e compare sons ou letras com apoio dos colegas.
+        accessibility: Disponibilize fones acolchoados, letras ampliadas e manipuláveis táteis para quem precisar.
+      assets:
+        - slug: lp-letra-a
+          type: IMAGEM
+          title: Ilustração da letra A
+    prerequisites:
+      - type: ACTIVITY
+        reference: palavra-e-figura
+        description: Retomar a identificação de palavras antes de usá-las em frases.
+    interactive:
+      slug: quiz-cantinho-das-palavras
+      title: Cantinho das Palavras — Quiz
+      type: QUIZ
+      bnccDescription: Ler palavras e expressões familiares apoiando-se em pistas gráficas e contextuais.
+      estimatedTimeMinutes: 8
+      instructions:
+        - Leia ou escute o desafio com atenção antes de registrar a resposta.
+        - Use as teclas numéricas ou clique nas alternativas para responder.
+        - Compartilhe com a turma novas palavras relacionadas após concluir o desafio.
+      objectives:
+        - Explorar compreensão de palavras em contexto em situações guiadas pelo educador.
+        - Compartilhar estratégias pessoais com colegas durante a atividade.
+      scoring:
+        correct: 10
+        incorrect: 0
+      adaptive:
+        increaseAfter: 2
+        decreaseAfter: 1
+      questions:
+        - id: cantinho-das-palavras-q1
+          type: multiple-choice
+          prompt: Qual palavra completa a frase 'Eu guardo meus lápis no ____'?
+          hint: Pense no objeto usado para guardar materiais.
+          options:
+            - id: cantinho-das-palavras-q1-1
+              text: Estojo
+              isCorrect: true
+              feedback: Excelente! 'Estojo' evidencia compreensão de palavras em contexto.
+            - id: cantinho-das-palavras-q1-2
+              text: Sapato
+              isCorrect: false
+              feedback: Ainda não. 'Sapato' não representa compreensão de palavras em contexto.
+            - id: cantinho-das-palavras-q1-3
+              text: Copo
+              isCorrect: false
+              feedback: Ainda não. 'Copo' não representa compreensão de palavras em contexto.
+        - id: cantinho-das-palavras-q2
+          type: true-false
+          prompt: A palavra 'livro' é usada para ler histórias?
+          hint: Lembre dos objetos presentes na sala de leitura.
+          statement: A palavra 'livro' é usada para ler histórias.
+          answer: true
+          feedback:
+            'true': Muito bem! A afirmação confirma compreensão de palavras em contexto.
+            'false': 'Revise: compreensão de palavras em contexto está presente na afirmação.'
+      accessibility:
+        hints:
+          - audience: ESTUDANTE
+            text: Use TAB e ENTER para navegar e confirmar sua escolha.
+          - audience: EDUCADOR
+            text: Projete legendas e permita repetição do áudio para quem precisar.
+        feedback:
+          success: Excelente! Compreensão de palavras em contexto ficou evidente nas suas respostas.
+          encouragement: Caso erre, leia novamente com voz pausada e utilize marcadores visuais.
+          accessibility: Ofereça apoio auditivo individual e contraste elevado nos botões.
+        assets:
+          - slug: lp-letra-a
+            type: IMAGEM
+            title: Ilustração da letra A
+  - partial: ../../_partials/acolhimento-base.yaml
+    slug: palavra-em-contexto
+    title: Palavra em Contexto
+    prompt: Relacione palavras a espaços e objetos da escola.
+    type: QUIZ
+    difficulty: DOMINAR
+    bncc:
+      code: EF01LP05
+      habilidades:
+        - EF01LP05
+    learningObjectives:
+      - Explorar leitura contextualizada em situações guiadas pelo educador.
+      - Compartilhar estratégias pessoais com colegas durante a atividade.
+    description: Palavra em Contexto convida a turma a investigar leitura contextualizada com apoio de recursos multimodais.
+    metadata:
+      categoria: Ambientes escolares
+      duracaoMinutos: 9
+      habilidades:
+        - EF01LP05
+      assetSlug: lp-letra-e
+      interactiveSlug: quiz-palavra-em-contexto
+    accessibility:
+      hints:
+        - audience: ESTUDANTE
+          text: Use as setas do teclado ou toque na tela para navegar enquanto destaca leitura contextualizada com gestos ou palmas.
+        - audience: EDUCADOR
+          text: Projete imagens de apoio, ofereça repetição de áudio e verbalize os passos para favorecer a percepção de leitura contextualizada.
+        - audience: FAMILIA
+          text: Envie sugestões de objetos ou cantigas que reforcem os sons trabalhados para continuidade em casa.
+      feedback:
+        success: Ótimo trabalho! Leitura contextualizada ficou mais claro com sua atenção aos detalhes.
+        retry: Retome com calma, respirando fundo e usando as pistas visuais oferecidas.
+        encouragement: Valorize cada tentativa e compare sons ou letras com apoio dos colegas.
+        accessibility: Disponibilize fones acolchoados, letras ampliadas e manipuláveis táteis para quem precisar.
+      assets:
+        - slug: lp-letra-e
+          type: IMAGEM
+          title: Ilustração da letra E
+    prerequisites:
+      - type: ACTIVITY
+        reference: cantinho-das-palavras
+        description: Revisar palavras usadas em frases antes de mapear os ambientes.
+    interactive:
+      slug: quiz-palavra-em-contexto
+      title: Palavra em Contexto — Quiz
+      type: QUIZ
+      bnccDescription: Ler palavras e expressões familiares apoiando-se em pistas gráficas e contextuais.
+      estimatedTimeMinutes: 9
+      instructions:
+        - Leia ou escute o desafio com atenção antes de registrar a resposta.
+        - Use as teclas numéricas ou clique nas alternativas para responder.
+        - Compartilhe com a turma novas palavras relacionadas após concluir o desafio.
+      objectives:
+        - Explorar leitura contextualizada em situações guiadas pelo educador.
+        - Compartilhar estratégias pessoais com colegas durante a atividade.
+      scoring:
+        correct: 10
+        incorrect: 0
+      adaptive:
+        increaseAfter: 2
+        decreaseAfter: 1
+      questions:
+        - id: palavra-em-contexto-q1
+          type: multiple-choice
+          prompt: Qual palavra indica um lugar da escola?
+          hint: Pense em onde guardamos ou pegamos livros.
+          options:
+            - id: palavra-em-contexto-q1-1
+              text: Biblioteca
+              isCorrect: true
+              feedback: Excelente! 'Biblioteca' evidencia leitura contextualizada.
+            - id: palavra-em-contexto-q1-2
+              text: Janela
+              isCorrect: false
+              feedback: Ainda não. 'Janela' não representa leitura contextualizada.
+            - id: palavra-em-contexto-q1-3
+              text: Sapato
+              isCorrect: false
+              feedback: Ainda não. 'Sapato' não representa leitura contextualizada.
+        - id: palavra-em-contexto-q2
+          type: true-false
+          prompt: A palavra 'cantina' refere-se a um espaço da escola?
+          hint: Lembre dos locais visitados no recreio.
+          statement: A palavra 'cantina' refere-se a um espaço da escola.
+          answer: true
+          feedback:
+            'true': Muito bem! A afirmação confirma leitura contextualizada.
+            'false': 'Revise: leitura contextualizada está presente na afirmação.'
+      accessibility:
+        hints:
+          - audience: ESTUDANTE
+            text: Use TAB e ENTER para navegar e confirmar sua escolha.
+          - audience: EDUCADOR
+            text: Projete legendas e permita repetição do áudio para quem precisar.
+        feedback:
+          success: Excelente! Leitura contextualizada ficou evidente nas suas respostas.
+          encouragement: Caso erre, leia novamente com voz pausada e utilize marcadores visuais.
+          accessibility: Ofereça apoio auditivo individual e contraste elevado nos botões.
+        assets:
+          - slug: lp-letra-e
+            type: IMAGEM
+            title: Ilustração da letra E
+  - partial: ../../_partials/acolhimento-base.yaml
+    slug: duelo-de-palavras
+    title: Duelo de Palavras
+    prompt: Compare sons iniciais e identifique palavras que se aproximam.
+    type: QUIZ
+    difficulty: INICIAR
+    bncc:
+      code: EF01LP06
+      habilidades:
+        - EF01LP06
+    learningObjectives:
+      - Explorar reconhecimento de padrões sonoros em situações guiadas pelo educador.
+      - Compartilhar estratégias pessoais com colegas durante a atividade.
+    description: Duelo de Palavras convida a turma a investigar reconhecimento de padrões sonoros com apoio de recursos multimodais.
+    metadata:
+      categoria: Sons iniciais
+      duracaoMinutos: 8
+      habilidades:
+        - EF01LP06
+      assetSlug: lp-silaba-ba
+      interactiveSlug: quiz-duelo-de-palavras
+    accessibility:
+      hints:
+        - audience: ESTUDANTE
+          text: Use as setas do teclado ou toque na tela para navegar enquanto destaca reconhecimento de padrões sonoros com gestos ou palmas.
+        - audience: EDUCADOR
+          text: Projete imagens de apoio, ofereça repetição de áudio e verbalize os passos para favorecer a percepção de reconhecimento de padrões sonoros.
+        - audience: FAMILIA
+          text: Envie sugestões de objetos ou cantigas que reforcem os sons trabalhados para continuidade em casa.
+      feedback:
+        success: Ótimo trabalho! Reconhecimento de padrões sonoros ficou mais claro com sua atenção aos detalhes.
+        retry: Retome com calma, respirando fundo e usando as pistas visuais oferecidas.
+        encouragement: Valorize cada tentativa e compare sons ou letras com apoio dos colegas.
+        accessibility: Disponibilize fones acolchoados, letras ampliadas e manipuláveis táteis para quem precisar.
+      assets:
+        - slug: lp-silaba-ba
+          type: IMAGEM
+          title: Cartão da sílaba BA
+    prerequisites:
+      - type: SKILL
+        reference: EF01LP06
+        description: Explorar palavras que compartilham sons iniciais.
+    interactive:
+      slug: quiz-duelo-de-palavras
+      title: Duelo de Palavras — Quiz
+      type: QUIZ
+      bnccDescription: Ler e comparar palavras de uso cotidiano articulando decodificação e compreensão.
+      estimatedTimeMinutes: 8
+      instructions:
+        - Leia ou escute o desafio com atenção antes de registrar a resposta.
+        - Use as teclas numéricas ou clique nas alternativas para responder.
+        - Compartilhe com a turma novas palavras relacionadas após concluir o desafio.
+      objectives:
+        - Explorar reconhecimento de padrões sonoros em situações guiadas pelo educador.
+        - Compartilhar estratégias pessoais com colegas durante a atividade.
+      scoring:
+        correct: 10
+        incorrect: 0
+      adaptive:
+        increaseAfter: 2
+        decreaseAfter: 1
+      questions:
+        - id: duelo-de-palavras-q1
+          type: multiple-choice
+          prompt: Qual palavra tem o mesmo som inicial de 'banana'?
+          hint: Diga as palavras em voz alta e compare o primeiro som.
+          options:
+            - id: duelo-de-palavras-q1-1
+              text: Bala
+              isCorrect: true
+              feedback: Excelente! 'Bala' evidencia reconhecimento de padrões sonoros.
+            - id: duelo-de-palavras-q1-2
+              text: Caneta
+              isCorrect: false
+              feedback: Ainda não. 'Caneta' não representa reconhecimento de padrões sonoros.
+            - id: duelo-de-palavras-q1-3
+              text: Fone
+              isCorrect: false
+              feedback: Ainda não. 'Fone' não representa reconhecimento de padrões sonoros.
+        - id: duelo-de-palavras-q2
+          type: true-false
+          prompt: As palavras 'bala' e 'bola' começam com o mesmo som?
+          hint: 'Pronuncie devagar: ba-la, bo-la.'
+          statement: As palavras 'bala' e 'bola' começam com o mesmo som.
+          answer: true
+          feedback:
+            'true': Muito bem! A afirmação confirma reconhecimento de padrões sonoros.
+            'false': 'Revise: reconhecimento de padrões sonoros está presente na afirmação.'
+      accessibility:
+        hints:
+          - audience: ESTUDANTE
+            text: Use TAB e ENTER para navegar e confirmar sua escolha.
+          - audience: EDUCADOR
+            text: Projete legendas e permita repetição do áudio para quem precisar.
+        feedback:
+          success: Excelente! Reconhecimento de padrões sonoros ficou evidente nas suas respostas.
+          encouragement: Caso erre, leia novamente com voz pausada e utilize marcadores visuais.
+          accessibility: Ofereça apoio auditivo individual e contraste elevado nos botões.
+        assets:
+          - slug: lp-silaba-ba
+            type: IMAGEM
+            title: Cartão da sílaba BA
+  - partial: ../../_partials/acolhimento-base.yaml
+    slug: escolha-rapida
+    title: Escolha Rápida
+    prompt: Encontre palavras que rimam com as apresentadas.
+    type: QUIZ
+    difficulty: PRATICAR
+    bncc:
+      code: EF01LP06
+      habilidades:
+        - EF01LP06
+    learningObjectives:
+      - Explorar comparação de palavras em situações guiadas pelo educador.
+      - Compartilhar estratégias pessoais com colegas durante a atividade.
+    description: Escolha Rápida convida a turma a investigar comparação de palavras com apoio de recursos multimodais.
+    metadata:
+      categoria: Rimas
+      duracaoMinutos: 9
+      habilidades:
+        - EF01LP06
+      assetSlug: lp-silaba-la
+      interactiveSlug: quiz-escolha-rapida
+    accessibility:
+      hints:
+        - audience: ESTUDANTE
+          text: Use as setas do teclado ou toque na tela para navegar enquanto destaca comparação de palavras com gestos ou palmas.
+        - audience: EDUCADOR
+          text: Projete imagens de apoio, ofereça repetição de áudio e verbalize os passos para favorecer a percepção de comparação de palavras.
+        - audience: FAMILIA
+          text: Envie sugestões de objetos ou cantigas que reforcem os sons trabalhados para continuidade em casa.
+      feedback:
+        success: Ótimo trabalho! Comparação de palavras ficou mais claro com sua atenção aos detalhes.
+        retry: Retome com calma, respirando fundo e usando as pistas visuais oferecidas.
+        encouragement: Valorize cada tentativa e compare sons ou letras com apoio dos colegas.
+        accessibility: Disponibilize fones acolchoados, letras ampliadas e manipuláveis táteis para quem precisar.
+      assets:
+        - slug: lp-silaba-la
+          type: IMAGEM
+          title: Cartão da sílaba LA
+    prerequisites:
+      - type: ACTIVITY
+        reference: duelo-de-palavras
+        description: Retomar sons iniciais antes de comparar rimas.
+    interactive:
+      slug: quiz-escolha-rapida
+      title: Escolha Rápida — Quiz
+      type: QUIZ
+      bnccDescription: Ler e comparar palavras de uso cotidiano articulando decodificação e compreensão.
+      estimatedTimeMinutes: 9
+      instructions:
+        - Leia ou escute o desafio com atenção antes de registrar a resposta.
+        - Use as teclas numéricas ou clique nas alternativas para responder.
+        - Compartilhe com a turma novas palavras relacionadas após concluir o desafio.
+      objectives:
+        - Explorar comparação de palavras em situações guiadas pelo educador.
+        - Compartilhar estratégias pessoais com colegas durante a atividade.
+      scoring:
+        correct: 10
+        incorrect: 0
+      adaptive:
+        increaseAfter: 2
+        decreaseAfter: 1
+      questions:
+        - id: escolha-rapida-q1
+          type: multiple-choice
+          prompt: Qual palavra rima com 'casa'?
+          hint: Foque no som final das palavras.
+          options:
+            - id: escolha-rapida-q1-1
+              text: Asa
+              isCorrect: true
+              feedback: Excelente! 'Asa' evidencia comparação de palavras.
+            - id: escolha-rapida-q1-2
+              text: Copo
+              isCorrect: false
+              feedback: Ainda não. 'Copo' não representa comparação de palavras.
+            - id: escolha-rapida-q1-3
+              text: Livro
+              isCorrect: false
+              feedback: Ainda não. 'Livro' não representa comparação de palavras.
+        - id: escolha-rapida-q2
+          type: true-false
+          prompt: As palavras 'faca' e 'saca' rimam?
+          hint: Repita as palavras percebendo o final.
+          statement: As palavras 'faca' e 'saca' rimam.
+          answer: true
+          feedback:
+            'true': Muito bem! A afirmação confirma comparação de palavras.
+            'false': 'Revise: comparação de palavras está presente na afirmação.'
+      accessibility:
+        hints:
+          - audience: ESTUDANTE
+            text: Use TAB e ENTER para navegar e confirmar sua escolha.
+          - audience: EDUCADOR
+            text: Projete legendas e permita repetição do áudio para quem precisar.
+        feedback:
+          success: Excelente! Comparação de palavras ficou evidente nas suas respostas.
+          encouragement: Caso erre, leia novamente com voz pausada e utilize marcadores visuais.
+          accessibility: Ofereça apoio auditivo individual e contraste elevado nos botões.
+        assets:
+          - slug: lp-silaba-la
+            type: IMAGEM
+            title: Cartão da sílaba LA
+  - partial: ../../_partials/acolhimento-base.yaml
+    slug: leitura-estrategica
+    title: Leitura Estratégica
+    prompt: Observe palavras com sons finais semelhantes e faça associações.
+    type: QUIZ
+    difficulty: DOMINAR
+    bncc:
+      code: EF01LP06
+      habilidades:
+        - EF01LP06
+    learningObjectives:
+      - Explorar comparação de sons finais em situações guiadas pelo educador.
+      - Compartilhar estratégias pessoais com colegas durante a atividade.
+    description: Leitura Estratégica convida a turma a investigar comparação de sons finais com apoio de recursos multimodais.
+    metadata:
+      categoria: Sons finais
+      duracaoMinutos: 9
+      habilidades:
+        - EF01LP06
+      assetSlug: lp-material-caderno
+      interactiveSlug: quiz-leitura-estrategica
+    accessibility:
+      hints:
+        - audience: ESTUDANTE
+          text: Use as setas do teclado ou toque na tela para navegar enquanto destaca comparação de sons finais com gestos ou palmas.
+        - audience: EDUCADOR
+          text: Projete imagens de apoio, ofereça repetição de áudio e verbalize os passos para favorecer a percepção de comparação de sons finais.
+        - audience: FAMILIA
+          text: Envie sugestões de objetos ou cantigas que reforcem os sons trabalhados para continuidade em casa.
+      feedback:
+        success: Ótimo trabalho! Comparação de sons finais ficou mais claro com sua atenção aos detalhes.
+        retry: Retome com calma, respirando fundo e usando as pistas visuais oferecidas.
+        encouragement: Valorize cada tentativa e compare sons ou letras com apoio dos colegas.
+        accessibility: Disponibilize fones acolchoados, letras ampliadas e manipuláveis táteis para quem precisar.
+      assets:
+        - slug: lp-material-caderno
+          type: IMAGEM
+          title: Caderno colorido para escrita
+    prerequisites:
+      - type: ACTIVITY
+        reference: escolha-rapida
+        description: Retomar exemplos de rimas antes de avançar para novos sons finais.
+    interactive:
+      slug: quiz-leitura-estrategica
+      title: Leitura Estratégica — Quiz
+      type: QUIZ
+      bnccDescription: Ler e comparar palavras de uso cotidiano articulando decodificação e compreensão.
+      estimatedTimeMinutes: 9
+      instructions:
+        - Leia ou escute o desafio com atenção antes de registrar a resposta.
+        - Use as teclas numéricas ou clique nas alternativas para responder.
+        - Compartilhe com a turma novas palavras relacionadas após concluir o desafio.
+      objectives:
+        - Explorar comparação de sons finais em situações guiadas pelo educador.
+        - Compartilhar estratégias pessoais com colegas durante a atividade.
+      scoring:
+        correct: 10
+        incorrect: 0
+      adaptive:
+        increaseAfter: 2
+        decreaseAfter: 1
+      questions:
+        - id: leitura-estrategica-q1
+          type: multiple-choice
+          prompt: Qual palavra tem o som final igual ao de 'papel'?
+          hint: Pense em palavras que terminam com /el/.
+          options:
+            - id: leitura-estrategica-q1-1
+              text: Anel
+              isCorrect: true
+              feedback: Excelente! 'Anel' evidencia comparação de sons finais.
+            - id: leitura-estrategica-q1-2
+              text: Mesa
+              isCorrect: false
+              feedback: Ainda não. 'Mesa' não representa comparação de sons finais.
+            - id: leitura-estrategica-q1-3
+              text: Tigre
+              isCorrect: false
+              feedback: Ainda não. 'Tigre' não representa comparação de sons finais.
+        - id: leitura-estrategica-q2
+          type: true-false
+          prompt: As palavras 'anel' e 'mel' terminam com o mesmo som?
+          hint: 'Pronuncie devagar: a-nel, mel.'
+          statement: As palavras 'anel' e 'mel' terminam com o mesmo som.
+          answer: true
+          feedback:
+            'true': Muito bem! A afirmação confirma comparação de sons finais.
+            'false': 'Revise: comparação de sons finais está presente na afirmação.'
+      accessibility:
+        hints:
+          - audience: ESTUDANTE
+            text: Use TAB e ENTER para navegar e confirmar sua escolha.
+          - audience: EDUCADOR
+            text: Projete legendas e permita repetição do áudio para quem precisar.
+        feedback:
+          success: Excelente! Comparação de sons finais ficou evidente nas suas respostas.
+          encouragement: Caso erre, leia novamente com voz pausada e utilize marcadores visuais.
+          accessibility: Ofereça apoio auditivo individual e contraste elevado nos botões.
+        assets:
+          - slug: lp-material-caderno
+            type: IMAGEM
+            title: Caderno colorido para escrita
+  - partial: ../../_partials/acolhimento-base.yaml
+    slug: puzzle-palavra-imagem
+    title: Palavra & Imagem
+    prompt: Relacione palavras a descrições de imagens.
+    type: PUZZLE
+    difficulty: INICIAR
+    bncc:
+      code: EF01LP05
+      habilidades:
+        - EF01LP05
+    learningObjectives:
+      - Explorar leitura de palavras usuais em situações guiadas pelo educador.
+      - Compartilhar estratégias pessoais com colegas durante a atividade.
+    description: Palavra & Imagem convida a turma a investigar leitura de palavras usuais com apoio de recursos multimodais.
+    metadata:
+      categoria: Associação palavra-imagem
+      duracaoMinutos: 10
+      habilidades:
+        - EF01LP05
+      assetSlug: lp-material-caderno
+      interactiveSlug: puzzle-puzzle-palavra-imagem
+    accessibility:
+      hints:
+        - audience: ESTUDANTE
+          text: Use as setas do teclado ou toque na tela para navegar enquanto destaca leitura de palavras usuais com gestos ou palmas.
+        - audience: EDUCADOR
+          text: Projete imagens de apoio, ofereça repetição de áudio e verbalize os passos para favorecer a percepção de leitura de palavras usuais.
+        - audience: FAMILIA
+          text: Envie sugestões de objetos ou cantigas que reforcem os sons trabalhados para continuidade em casa.
+      feedback:
+        success: Ótimo trabalho! Leitura de palavras usuais ficou mais claro com sua atenção aos detalhes.
+        retry: Retome com calma, respirando fundo e usando as pistas visuais oferecidas.
+        encouragement: Valorize cada tentativa e compare sons ou letras com apoio dos colegas.
+        accessibility: Disponibilize fones acolchoados, letras ampliadas e manipuláveis táteis para quem precisar.
+      assets:
+        - slug: lp-material-caderno
+          type: IMAGEM
+          title: Caderno colorido para escrita
+    prerequisites:
+      - type: ACTIVITY
+        reference: palavra-e-figura
+        description: Retomar as palavras apresentadas nas imagens do quiz.
+    interactive:
+      slug: puzzle-puzzle-palavra-imagem
+      title: Palavra & Imagem — Quebra-cabeça
+      type: PUZZLE
+      bnccDescription: Ler palavras e expressões familiares apoiando-se em pistas gráficas e contextuais.
+      estimatedTimeMinutes: 10
+      instructions:
+        - Observe cada cartão e combine arrastando ou usando TAB + ENTER.
+        - Converse sobre o motivo da combinação antes de confirmar.
+        - Revise as duplas formadas e proponha novas associações.
+      objectives:
+        - Explorar leitura de palavras usuais em situações guiadas pelo educador.
+        - Compartilhar estratégias pessoais com colegas durante a atividade.
+      puzzle:
+        mode: matching
+        successFeedback: Tudo combinado! Leitura de palavras usuais ficou evidente nas associações.
+        errorFeedback: Observe novamente os sons, conte devagar e tente outra combinação.
+        pairs:
+          - id: puzzle-palavra-imagem-pair-1
+            prompt: Bola
+            match: Imagem de bola
+            hint: Observe leitura de palavras usuais presente em 'Bola'.
+            feedback: Perfeito! 'Imagem de bola' combina com 'Bola' porque evidencia leitura de palavras usuais.
+          - id: puzzle-palavra-imagem-pair-2
+            prompt: Livro
+            match: Imagem de livro
+            hint: Observe leitura de palavras usuais presente em 'Livro'.
+            feedback: Perfeito! 'Imagem de livro' combina com 'Livro' porque evidencia leitura de palavras usuais.
+          - id: puzzle-palavra-imagem-pair-3
+            prompt: Pipa
+            match: Imagem de pipa
+            hint: Observe leitura de palavras usuais presente em 'Pipa'.
+            feedback: Perfeito! 'Imagem de pipa' combina com 'Pipa' porque evidencia leitura de palavras usuais.
+      accessibility:
+        hints:
+          - audience: ESTUDANTE
+            text: Use as setas para navegar entre os cartões e Enter para selecionar.
+          - audience: EDUCADOR
+            text: Disponibilize cartões físicos para manipulação simultânea.
+        feedback:
+          success: Tudo combinado! Leitura de palavras usuais ficou evidente nas associações.
+          encouragement: Compare sons lentamente e utilize gestos amplos para apoiar a associação.
+          accessibility: Ofereça cartões com textura ou relevo para ampliar as pistas sensoriais.
+        assets:
+          - slug: lp-material-caderno
+            type: IMAGEM
+            title: Caderno colorido para escrita
+  - partial: ../../_partials/acolhimento-base.yaml
+    slug: puzzle-palavras-frase
+    title: Palavras na Frase
+    prompt: Combine palavras a frases que fazem sentido.
+    type: PUZZLE
+    difficulty: PRATICAR
+    bncc:
+      code: EF01LP05
+      habilidades:
+        - EF01LP05
+    learningObjectives:
+      - Explorar uso de palavras em frases em situações guiadas pelo educador.
+      - Compartilhar estratégias pessoais com colegas durante a atividade.
+    description: Palavras na Frase convida a turma a investigar uso de palavras em frases com apoio de recursos multimodais.
+    metadata:
+      categoria: Frases do cotidiano
+      duracaoMinutos: 10
+      habilidades:
+        - EF01LP05
+      assetSlug: lp-letra-e
+      interactiveSlug: puzzle-puzzle-palavras-frase
+    accessibility:
+      hints:
+        - audience: ESTUDANTE
+          text: Use as setas do teclado ou toque na tela para navegar enquanto destaca uso de palavras em frases com gestos ou palmas.
+        - audience: EDUCADOR
+          text: Projete imagens de apoio, ofereça repetição de áudio e verbalize os passos para favorecer a percepção de uso de palavras em frases.
+        - audience: FAMILIA
+          text: Envie sugestões de objetos ou cantigas que reforcem os sons trabalhados para continuidade em casa.
+      feedback:
+        success: Ótimo trabalho! Uso de palavras em frases ficou mais claro com sua atenção aos detalhes.
+        retry: Retome com calma, respirando fundo e usando as pistas visuais oferecidas.
+        encouragement: Valorize cada tentativa e compare sons ou letras com apoio dos colegas.
+        accessibility: Disponibilize fones acolchoados, letras ampliadas e manipuláveis táteis para quem precisar.
+      assets:
+        - slug: lp-letra-e
+          type: IMAGEM
+          title: Ilustração da letra E
+    prerequisites:
+      - type: ACTIVITY
+        reference: cantinho-das-palavras
+        description: Reaproveitar as frases construídas anteriormente.
+    interactive:
+      slug: puzzle-puzzle-palavras-frase
+      title: Palavras na Frase — Quebra-cabeça
+      type: PUZZLE
+      bnccDescription: Ler palavras e expressões familiares apoiando-se em pistas gráficas e contextuais.
+      estimatedTimeMinutes: 10
+      instructions:
+        - Observe cada cartão e combine arrastando ou usando TAB + ENTER.
+        - Converse sobre o motivo da combinação antes de confirmar.
+        - Revise as duplas formadas e proponha novas associações.
+      objectives:
+        - Explorar uso de palavras em frases em situações guiadas pelo educador.
+        - Compartilhar estratégias pessoais com colegas durante a atividade.
+      puzzle:
+        mode: matching
+        successFeedback: Tudo combinado! Uso de palavras em frases ficou evidente nas associações.
+        errorFeedback: Observe novamente os sons, conte devagar e tente outra combinação.
+        pairs:
+          - id: puzzle-palavras-frase-pair-1
+            prompt: ___ da escola
+            match: Biblioteca
+            hint: Observe uso de palavras em frases presente em '___ da escola'.
+            feedback: Perfeito! 'Biblioteca' combina com '___ da escola' porque evidencia uso de palavras em frases.
+          - id: puzzle-palavras-frase-pair-2
+            prompt: Hora do ___
+            match: Recreio
+            hint: Observe uso de palavras em frases presente em 'Hora do ___'.
+            feedback: Perfeito! 'Recreio' combina com 'Hora do ___' porque evidencia uso de palavras em frases.
+          - id: puzzle-palavras-frase-pair-3
+            prompt: Cartaz de ___
+            match: Leitura
+            hint: Observe uso de palavras em frases presente em 'Cartaz de ___'.
+            feedback: Perfeito! 'Leitura' combina com 'Cartaz de ___' porque evidencia uso de palavras em frases.
+      accessibility:
+        hints:
+          - audience: ESTUDANTE
+            text: Use as setas para navegar entre os cartões e Enter para selecionar.
+          - audience: EDUCADOR
+            text: Disponibilize cartões físicos para manipulação simultânea.
+        feedback:
+          success: Tudo combinado! Uso de palavras em frases ficou evidente nas associações.
+          encouragement: Compare sons lentamente e utilize gestos amplos para apoiar a associação.
+          accessibility: Ofereça cartões com textura ou relevo para ampliar as pistas sensoriais.
+        assets:
+          - slug: lp-letra-e
+            type: IMAGEM
+            title: Ilustração da letra E
+  - partial: ../../_partials/acolhimento-base.yaml
+    slug: puzzle-rima-palavra
+    title: Rima Palavra
+    prompt: Associe palavras que rimam.
+    type: PUZZLE
+    difficulty: PRATICAR
+    bncc:
+      code: EF01LP06
+      habilidades:
+        - EF01LP06
+    learningObjectives:
+      - Explorar comparação de palavras em situações guiadas pelo educador.
+      - Compartilhar estratégias pessoais com colegas durante a atividade.
+    description: Rima Palavra convida a turma a investigar comparação de palavras com apoio de recursos multimodais.
+    metadata:
+      categoria: Rimas
+      duracaoMinutos: 11
+      habilidades:
+        - EF01LP06
+      assetSlug: lp-silaba-ba
+      interactiveSlug: puzzle-puzzle-rima-palavra
+    accessibility:
+      hints:
+        - audience: ESTUDANTE
+          text: Use as setas do teclado ou toque na tela para navegar enquanto destaca comparação de palavras com gestos ou palmas.
+        - audience: EDUCADOR
+          text: Projete imagens de apoio, ofereça repetição de áudio e verbalize os passos para favorecer a percepção de comparação de palavras.
+        - audience: FAMILIA
+          text: Envie sugestões de objetos ou cantigas que reforcem os sons trabalhados para continuidade em casa.
+      feedback:
+        success: Ótimo trabalho! Comparação de palavras ficou mais claro com sua atenção aos detalhes.
+        retry: Retome com calma, respirando fundo e usando as pistas visuais oferecidas.
+        encouragement: Valorize cada tentativa e compare sons ou letras com apoio dos colegas.
+        accessibility: Disponibilize fones acolchoados, letras ampliadas e manipuláveis táteis para quem precisar.
+      assets:
+        - slug: lp-silaba-ba
+          type: IMAGEM
+          title: Cartão da sílaba BA
+    prerequisites:
+      - type: ACTIVITY
+        reference: escolha-rapida
+        description: Relembrar rimas trabalhadas no quiz.
+    interactive:
+      slug: puzzle-puzzle-rima-palavra
+      title: Rima Palavra — Quebra-cabeça
+      type: PUZZLE
+      bnccDescription: Ler e comparar palavras de uso cotidiano articulando decodificação e compreensão.
+      estimatedTimeMinutes: 11
+      instructions:
+        - Observe cada cartão e combine arrastando ou usando TAB + ENTER.
+        - Converse sobre o motivo da combinação antes de confirmar.
+        - Revise as duplas formadas e proponha novas associações.
+      objectives:
+        - Explorar comparação de palavras em situações guiadas pelo educador.
+        - Compartilhar estratégias pessoais com colegas durante a atividade.
+      puzzle:
+        mode: matching
+        successFeedback: Tudo combinado! Comparação de palavras ficou evidente nas associações.
+        errorFeedback: Observe novamente os sons, conte devagar e tente outra combinação.
+        pairs:
+          - id: puzzle-rima-palavra-pair-1
+            prompt: Casa
+            match: Asa
+            hint: Observe comparação de palavras presente em 'Casa'.
+            feedback: Perfeito! 'Asa' combina com 'Casa' porque evidencia comparação de palavras.
+          - id: puzzle-rima-palavra-pair-2
+            prompt: Bola
+            match: Escola
+            hint: Observe comparação de palavras presente em 'Bola'.
+            feedback: Perfeito! 'Escola' combina com 'Bola' porque evidencia comparação de palavras.
+          - id: puzzle-rima-palavra-pair-3
+            prompt: Pente
+            match: Dente
+            hint: Observe comparação de palavras presente em 'Pente'.
+            feedback: Perfeito! 'Dente' combina com 'Pente' porque evidencia comparação de palavras.
+      accessibility:
+        hints:
+          - audience: ESTUDANTE
+            text: Use as setas para navegar entre os cartões e Enter para selecionar.
+          - audience: EDUCADOR
+            text: Disponibilize cartões físicos para manipulação simultânea.
+        feedback:
+          success: Tudo combinado! Comparação de palavras ficou evidente nas associações.
+          encouragement: Compare sons lentamente e utilize gestos amplos para apoiar a associação.
+          accessibility: Ofereça cartões com textura ou relevo para ampliar as pistas sensoriais.
+        assets:
+          - slug: lp-silaba-ba
+            type: IMAGEM
+            title: Cartão da sílaba BA
+  - partial: ../../_partials/acolhimento-base.yaml
+    slug: puzzle-familia-palavras
+    title: Família de Palavras
+    prompt: Relacione pistas com palavras que compartilham a mesma letra inicial.
+    type: PUZZLE
+    difficulty: DOMINAR
+    bncc:
+      code: EF01LP06
+      habilidades:
+        - EF01LP06
+    learningObjectives:
+      - Explorar reconhecimento de padrões sonoros em situações guiadas pelo educador.
+      - Compartilhar estratégias pessoais com colegas durante a atividade.
+    description: Família de Palavras convida a turma a investigar reconhecimento de padrões sonoros com apoio de recursos multimodais.
+    metadata:
+      categoria: Sons iniciais
+      duracaoMinutos: 11
+      habilidades:
+        - EF01LP06
+      assetSlug: lp-silaba-la
+      interactiveSlug: puzzle-puzzle-familia-palavras
+    accessibility:
+      hints:
+        - audience: ESTUDANTE
+          text: Use as setas do teclado ou toque na tela para navegar enquanto destaca reconhecimento de padrões sonoros com gestos ou palmas.
+        - audience: EDUCADOR
+          text: Projete imagens de apoio, ofereça repetição de áudio e verbalize os passos para favorecer a percepção de reconhecimento de padrões sonoros.
+        - audience: FAMILIA
+          text: Envie sugestões de objetos ou cantigas que reforcem os sons trabalhados para continuidade em casa.
+      feedback:
+        success: Ótimo trabalho! Reconhecimento de padrões sonoros ficou mais claro com sua atenção aos detalhes.
+        retry: Retome com calma, respirando fundo e usando as pistas visuais oferecidas.
+        encouragement: Valorize cada tentativa e compare sons ou letras com apoio dos colegas.
+        accessibility: Disponibilize fones acolchoados, letras ampliadas e manipuláveis táteis para quem precisar.
+      assets:
+        - slug: lp-silaba-la
+          type: IMAGEM
+          title: Cartão da sílaba LA
+    prerequisites:
+      - type: ACTIVITY
+        reference: duelo-de-palavras
+        description: Reusar palavras com sons iniciais parecidos.
+    interactive:
+      slug: puzzle-puzzle-familia-palavras
+      title: Família de Palavras — Quebra-cabeça
+      type: PUZZLE
+      bnccDescription: Ler e comparar palavras de uso cotidiano articulando decodificação e compreensão.
+      estimatedTimeMinutes: 11
+      instructions:
+        - Observe cada cartão e combine arrastando ou usando TAB + ENTER.
+        - Converse sobre o motivo da combinação antes de confirmar.
+        - Revise as duplas formadas e proponha novas associações.
+      objectives:
+        - Explorar reconhecimento de padrões sonoros em situações guiadas pelo educador.
+        - Compartilhar estratégias pessoais com colegas durante a atividade.
+      puzzle:
+        mode: matching
+        successFeedback: Tudo combinado! Reconhecimento de padrões sonoros ficou evidente nas associações.
+        errorFeedback: Observe novamente os sons, conte devagar e tente outra combinação.
+        pairs:
+          - id: puzzle-familia-palavras-pair-1
+            prompt: B_
+            match: Bola
+            hint: Observe reconhecimento de padrões sonoros presente em 'B_'.
+            feedback: Perfeito! 'Bola' combina com 'B_' porque evidencia reconhecimento de padrões sonoros.
+          - id: puzzle-familia-palavras-pair-2
+            prompt: C_
+            match: Casa
+            hint: Observe reconhecimento de padrões sonoros presente em 'C_'.
+            feedback: Perfeito! 'Casa' combina com 'C_' porque evidencia reconhecimento de padrões sonoros.
+          - id: puzzle-familia-palavras-pair-3
+            prompt: P_
+            match: Pato
+            hint: Observe reconhecimento de padrões sonoros presente em 'P_'.
+            feedback: Perfeito! 'Pato' combina com 'P_' porque evidencia reconhecimento de padrões sonoros.
+      accessibility:
+        hints:
+          - audience: ESTUDANTE
+            text: Use as setas para navegar entre os cartões e Enter para selecionar.
+          - audience: EDUCADOR
+            text: Disponibilize cartões físicos para manipulação simultânea.
+        feedback:
+          success: Tudo combinado! Reconhecimento de padrões sonoros ficou evidente nas associações.
+          encouragement: Compare sons lentamente e utilize gestos amplos para apoiar a associação.
+          accessibility: Ofereça cartões com textura ou relevo para ampliar as pistas sensoriais.
+        assets:
+          - slug: lp-silaba-la
+            type: IMAGEM
+            title: Cartão da sílaba LA
+  - partial: ../../_partials/acolhimento-base.yaml
+    slug: caixa-de-palavras
+    title: Caixa de Palavras
+    prompt: Escolha palavras que resolvem desafios do cotidiano.
+    type: GAME
+    difficulty: INICIAR
+    bncc:
+      code: EF01LP05
+      habilidades:
+        - EF01LP05
+    learningObjectives:
+      - Explorar leitura de palavras usuais em situações guiadas pelo educador.
+      - Compartilhar estratégias pessoais com colegas durante a atividade.
+    description: Caixa de Palavras convida a turma a investigar leitura de palavras usuais com apoio de recursos multimodais.
+    metadata:
+      categoria: Leitura funcional
+      duracaoMinutos: 12
+      habilidades:
+        - EF01LP05
+      assetSlug: lp-material-caderno
+      interactiveSlug: game-caixa-de-palavras
+    accessibility:
+      hints:
+        - audience: ESTUDANTE
+          text: Use as setas do teclado ou toque na tela para navegar enquanto destaca leitura de palavras usuais com gestos ou palmas.
+        - audience: EDUCADOR
+          text: Projete imagens de apoio, ofereça repetição de áudio e verbalize os passos para favorecer a percepção de leitura de palavras usuais.
+        - audience: FAMILIA
+          text: Envie sugestões de objetos ou cantigas que reforcem os sons trabalhados para continuidade em casa.
+      feedback:
+        success: Ótimo trabalho! Leitura de palavras usuais ficou mais claro com sua atenção aos detalhes.
+        retry: Retome com calma, respirando fundo e usando as pistas visuais oferecidas.
+        encouragement: Valorize cada tentativa e compare sons ou letras com apoio dos colegas.
+        accessibility: Disponibilize fones acolchoados, letras ampliadas e manipuláveis táteis para quem precisar.
+      assets:
+        - slug: lp-material-caderno
+          type: IMAGEM
+          title: Caderno colorido para escrita
+    prerequisites:
+      - type: ACTIVITY
+        reference: palavra-em-contexto
+        description: Revisar palavras ligadas a espaços e objetos antes de jogar.
+    interactive:
+      slug: game-caixa-de-palavras
+      title: Caixa de Palavras — Mini-jogo
+      type: GAME
+      bnccDescription: Ler palavras e expressões familiares apoiando-se em pistas gráficas e contextuais.
+      estimatedTimeMinutes: 12
+      instructions:
+        - Leia o desafio de cada fase e verbalize suas hipóteses em voz alta.
+        - Digite a resposta usando o teclado ou selecione com o mouse.
+        - No final, explique qual pista ajudou a encontrar a solução.
+      objectives:
+        - Explorar leitura de palavras usuais em situações guiadas pelo educador.
+        - Compartilhar estratégias pessoais com colegas durante a atividade.
+      game:
+        mode: math-challenge
+        timeLimitSeconds: 120
+        lives: 3
+        victoryMessage: Você escolheu as palavras certas para cada situação!
+        gameOverMessage: Repasse as palavras do mural e tente novamente.
+        levels:
+          - id: caixa-de-palavras-level-1
+            challenge: Escolha a palavra que nomeia a imagem de uma bola. (bola, casa, gato)
+            answer: bola
+            hint: Use leitura de palavras usuais para encontrar a resposta.
+            successFeedback: Muito bem! Leitura de palavras usuais ajudou a resolver a fase.
+            failureFeedback: Retome leitura de palavras usuais e ajuste sua estratégia.
+          - id: caixa-de-palavras-level-2
+            challenge: Escolha a palavra que usamos para guardar lápis. (estojo, janela, sapato)
+            answer: estojo
+            hint: Use leitura de palavras usuais para encontrar a resposta.
+            successFeedback: Muito bem! Leitura de palavras usuais ajudou a resolver a fase.
+            failureFeedback: Retome leitura de palavras usuais e ajuste sua estratégia.
+          - id: caixa-de-palavras-level-3
+            challenge: Qual palavra indica o local de livros na escola? (biblioteca, prato, sapo)
+            answer: biblioteca
+            hint: Use leitura de palavras usuais para encontrar a resposta.
+            successFeedback: Muito bem! Leitura de palavras usuais ajudou a resolver a fase.
+            failureFeedback: Retome leitura de palavras usuais e ajuste sua estratégia.
+      accessibility:
+        hints:
+          - audience: ESTUDANTE
+            text: Use a tecla TAB para navegar pelos botões e Enter para confirmar.
+          - audience: EDUCADOR
+            text: Ofereça marcadores visuais ou tapetes de som para cada fase.
+        feedback:
+          success: Você escolheu as palavras certas para cada situação!
+          encouragement: Revise as pistas sonoras e tente novamente sem pressa.
+          accessibility: Disponibilize apoios auditivos individuais e sinalize o tempo visualmente.
+        assets:
+          - slug: lp-material-caderno
+            type: IMAGEM
+            title: Caderno colorido para escrita
+  - partial: ../../_partials/acolhimento-base.yaml
+    slug: roda-das-rimas
+    title: Roda das Rimas
+    prompt: Encontre palavras que combinam nos sons finais.
+    type: GAME
+    difficulty: PRATICAR
+    bncc:
+      code: EF01LP06
+      habilidades:
+        - EF01LP06
+    learningObjectives:
+      - Explorar comparação de palavras em situações guiadas pelo educador.
+      - Compartilhar estratégias pessoais com colegas durante a atividade.
+    description: Roda das Rimas convida a turma a investigar comparação de palavras com apoio de recursos multimodais.
+    metadata:
+      categoria: Rimas
+      duracaoMinutos: 12
+      habilidades:
+        - EF01LP06
+      assetSlug: lp-silaba-ba
+      interactiveSlug: game-roda-das-rimas
+    accessibility:
+      hints:
+        - audience: ESTUDANTE
+          text: Use as setas do teclado ou toque na tela para navegar enquanto destaca comparação de palavras com gestos ou palmas.
+        - audience: EDUCADOR
+          text: Projete imagens de apoio, ofereça repetição de áudio e verbalize os passos para favorecer a percepção de comparação de palavras.
+        - audience: FAMILIA
+          text: Envie sugestões de objetos ou cantigas que reforcem os sons trabalhados para continuidade em casa.
+      feedback:
+        success: Ótimo trabalho! Comparação de palavras ficou mais claro com sua atenção aos detalhes.
+        retry: Retome com calma, respirando fundo e usando as pistas visuais oferecidas.
+        encouragement: Valorize cada tentativa e compare sons ou letras com apoio dos colegas.
+        accessibility: Disponibilize fones acolchoados, letras ampliadas e manipuláveis táteis para quem precisar.
+      assets:
+        - slug: lp-silaba-ba
+          type: IMAGEM
+          title: Cartão da sílaba BA
+    prerequisites:
+      - type: ACTIVITY
+        reference: escolha-rapida
+        description: Retomar as rimas favoritas antes do jogo.
+    interactive:
+      slug: game-roda-das-rimas
+      title: Roda das Rimas — Mini-jogo
+      type: GAME
+      bnccDescription: Ler e comparar palavras de uso cotidiano articulando decodificação e compreensão.
+      estimatedTimeMinutes: 12
+      instructions:
+        - Leia o desafio de cada fase e verbalize suas hipóteses em voz alta.
+        - Digite a resposta usando o teclado ou selecione com o mouse.
+        - No final, explique qual pista ajudou a encontrar a solução.
+      objectives:
+        - Explorar comparação de palavras em situações guiadas pelo educador.
+        - Compartilhar estratégias pessoais com colegas durante a atividade.
+      game:
+        mode: math-challenge
+        timeLimitSeconds: 120
+        lives: 3
+        victoryMessage: As rimas giraram certinho! Excelente percepção sonora.
+        gameOverMessage: Volte a cantar as rimas e tente novamente com calma.
+        levels:
+          - id: roda-das-rimas-level-1
+            challenge: Qual palavra rima com 'casa'? (asa, cama, roupa)
+            answer: asa
+            hint: Use comparação de palavras para encontrar a resposta.
+            successFeedback: Muito bem! Comparação de palavras ajudou a resolver a fase.
+            failureFeedback: Retome comparação de palavras e ajuste sua estratégia.
+          - id: roda-das-rimas-level-2
+            challenge: Qual palavra rima com 'papel'? (anel, colher, mesa)
+            answer: anel
+            hint: Use comparação de palavras para encontrar a resposta.
+            successFeedback: Muito bem! Comparação de palavras ajudou a resolver a fase.
+            failureFeedback: Retome comparação de palavras e ajuste sua estratégia.
+          - id: roda-das-rimas-level-3
+            challenge: Qual palavra rima com 'chapeu'? (ceu, copo, escola)
+            answer: ceu
+            hint: Use comparação de palavras para encontrar a resposta.
+            successFeedback: Muito bem! Comparação de palavras ajudou a resolver a fase.
+            failureFeedback: Retome comparação de palavras e ajuste sua estratégia.
+      accessibility:
+        hints:
+          - audience: ESTUDANTE
+            text: Use a tecla TAB para navegar pelos botões e Enter para confirmar.
+          - audience: EDUCADOR
+            text: Ofereça marcadores visuais ou tapetes de som para cada fase.
+        feedback:
+          success: As rimas giraram certinho! Excelente percepção sonora.
+          encouragement: Revise as pistas sonoras e tente novamente sem pressa.
+          accessibility: Disponibilize apoios auditivos individuais e sinalize o tempo visualmente.
+        assets:
+          - slug: lp-silaba-ba
+            type: IMAGEM
+            title: Cartão da sílaba BA
+  - partial: ../../_partials/acolhimento-base.yaml
+    slug: detective-leitor
+    title: Detetive Leitor
+    prompt: Digite palavras que combinam com as pistas apresentadas.
+    type: GAME
+    difficulty: DOMINAR
+    bncc:
+      code: EF01LP06
+      habilidades:
+        - EF01LP06
+    learningObjectives:
+      - Explorar uso estratégico de palavras em situações guiadas pelo educador.
+      - Compartilhar estratégias pessoais com colegas durante a atividade.
+    description: Detetive Leitor convida a turma a investigar uso estratégico de palavras com apoio de recursos multimodais.
+    metadata:
+      categoria: Leitura ativa
+      duracaoMinutos: 13
+      habilidades:
+        - EF01LP06
+      assetSlug: lp-letra-a
+      interactiveSlug: game-detective-leitor
+    accessibility:
+      hints:
+        - audience: ESTUDANTE
+          text: Use as setas do teclado ou toque na tela para navegar enquanto destaca uso estratégico de palavras com gestos ou palmas.
+        - audience: EDUCADOR
+          text: Projete imagens de apoio, ofereça repetição de áudio e verbalize os passos para favorecer a percepção de uso estratégico de palavras.
+        - audience: FAMILIA
+          text: Envie sugestões de objetos ou cantigas que reforcem os sons trabalhados para continuidade em casa.
+      feedback:
+        success: Ótimo trabalho! Uso estratégico de palavras ficou mais claro com sua atenção aos detalhes.
+        retry: Retome com calma, respirando fundo e usando as pistas visuais oferecidas.
+        encouragement: Valorize cada tentativa e compare sons ou letras com apoio dos colegas.
+        accessibility: Disponibilize fones acolchoados, letras ampliadas e manipuláveis táteis para quem precisar.
+      assets:
+        - slug: lp-letra-a
+          type: IMAGEM
+          title: Ilustração da letra A
+    prerequisites:
+      - type: ACTIVITY
+        reference: puzzle-palavra-imagem
+        description: Retomar as palavras associadas às imagens antes do desafio.
+    interactive:
+      slug: game-detective-leitor
+      title: Detetive Leitor — Mini-jogo
+      type: GAME
+      bnccDescription: Ler e comparar palavras de uso cotidiano articulando decodificação e compreensão.
+      estimatedTimeMinutes: 13
+      instructions:
+        - Leia o desafio de cada fase e verbalize suas hipóteses em voz alta.
+        - Digite a resposta usando o teclado ou selecione com o mouse.
+        - No final, explique qual pista ajudou a encontrar a solução.
+      objectives:
+        - Explorar uso estratégico de palavras em situações guiadas pelo educador.
+        - Compartilhar estratégias pessoais com colegas durante a atividade.
+      game:
+        mode: math-challenge
+        timeLimitSeconds: 120
+        lives: 3
+        victoryMessage: Detetive aprovado! Todas as pistas foram decifradas.
+        gameOverMessage: Revise o glossário da turma e tente novamente.
+        levels:
+          - id: detective-leitor-level-1
+            challenge: Digite a palavra que combina com o desenho de uma pipa.
+            answer: pipa
+            hint: Use uso estratégico de palavras para encontrar a resposta.
+            successFeedback: Muito bem! Uso estratégico de palavras ajudou a resolver a fase.
+            failureFeedback: Retome uso estratégico de palavras e ajuste sua estratégia.
+          - id: detective-leitor-level-2
+            challenge: Digite a palavra que nomeia o objeto usado para ler histórias.
+            answer: livro
+            hint: Use uso estratégico de palavras para encontrar a resposta.
+            successFeedback: Muito bem! Uso estratégico de palavras ajudou a resolver a fase.
+            failureFeedback: Retome uso estratégico de palavras e ajuste sua estratégia.
+          - id: detective-leitor-level-3
+            challenge: Digite a palavra que indica o lugar onde estudamos.
+            answer: escola
+            hint: Use uso estratégico de palavras para encontrar a resposta.
+            successFeedback: Muito bem! Uso estratégico de palavras ajudou a resolver a fase.
+            failureFeedback: Retome uso estratégico de palavras e ajuste sua estratégia.
+      accessibility:
+        hints:
+          - audience: ESTUDANTE
+            text: Use a tecla TAB para navegar pelos botões e Enter para confirmar.
+          - audience: EDUCADOR
+            text: Ofereça marcadores visuais ou tapetes de som para cada fase.
+        feedback:
+          success: Detetive aprovado! Todas as pistas foram decifradas.
+          encouragement: Revise as pistas sonoras e tente novamente sem pressa.
+          accessibility: Disponibilize apoios auditivos individuais e sinalize o tempo visualmente.
+        assets:
+          - slug: lp-letra-a
+            type: IMAGEM
+            title: Ilustração da letra A
