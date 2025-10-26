@@ -1,0 +1,1271 @@
+module:
+  slug: bilhetes-e-recados
+  title: Bilhetes e Recados
+  subtitle: Produção de textos breves
+  description: Sequência para planejar, escrever e revisar bilhetes e recados com destinatário definido e linguagem clara.
+  theme: Língua Portuguesa
+  discipline: Língua Portuguesa
+  ageGroupSlug: fundamental-anos-iniciais
+  learningPathSlug: descobertas-palavras
+  primaryBnccCode: EF01LP09
+  secondaryBnccCodes:
+    - EF01LP10
+  learningOutcomes:
+    - Planejar bilhetes identificando destinatário, objetivo e assinatura.
+    - Selecionar vocabulário adequado para mensagens curtas e diretas.
+    - Revisar bilhetes considerando clareza, cortesia e convenções básicas.
+  tags:
+    - bilhetes
+    - producao-textual
+    - revisao
+activities:
+  - partial: ../../_partials/acolhimento-base.yaml
+    slug: elementos-do-bilhete
+    title: Elementos do Bilhete
+    prompt: Reconheça informações essenciais em um bilhete.
+    type: QUIZ
+    difficulty: INICIAR
+    bncc:
+      code: EF01LP09
+      habilidades:
+        - EF01LP09
+    learningObjectives:
+      - Explorar planejamento de bilhetes em situações guiadas pelo educador.
+      - Compartilhar estratégias pessoais com colegas durante a atividade.
+    description: Elementos do Bilhete convida a turma a investigar planejamento de bilhetes com apoio de recursos multimodais.
+    metadata:
+      categoria: Planejamento
+      duracaoMinutos: 8
+      habilidades:
+        - EF01LP09
+      assetSlug: lp-material-caderno
+      interactiveSlug: quiz-elementos-do-bilhete
+    accessibility:
+      hints:
+        - audience: ESTUDANTE
+          text: Use as setas do teclado ou toque na tela para navegar enquanto destaca planejamento de bilhetes com gestos ou palmas.
+        - audience: EDUCADOR
+          text: Projete imagens de apoio, ofereça repetição de áudio e verbalize os passos para favorecer a percepção de planejamento de bilhetes.
+        - audience: FAMILIA
+          text: Envie sugestões de objetos ou cantigas que reforcem os sons trabalhados para continuidade em casa.
+      feedback:
+        success: Ótimo trabalho! Planejamento de bilhetes ficou mais claro com sua atenção aos detalhes.
+        retry: Retome com calma, respirando fundo e usando as pistas visuais oferecidas.
+        encouragement: Valorize cada tentativa e compare sons ou letras com apoio dos colegas.
+        accessibility: Disponibilize fones acolchoados, letras ampliadas e manipuláveis táteis para quem precisar.
+      assets:
+        - slug: lp-material-caderno
+          type: IMAGEM
+          title: Caderno colorido para escrita
+    prerequisites:
+      - type: SKILL
+        reference: EF01LP09
+        description: Conversar sobre elementos que compõem um bilhete.
+    interactive:
+      slug: quiz-elementos-do-bilhete
+      title: Elementos do Bilhete — Quiz
+      type: QUIZ
+      bnccDescription: Planejar e produzir bilhetes, recados e legendas para situações reais da turma.
+      estimatedTimeMinutes: 8
+      instructions:
+        - Leia ou escute o desafio com atenção antes de registrar a resposta.
+        - Use as teclas numéricas ou clique nas alternativas para responder.
+        - Compartilhe com a turma novas palavras relacionadas após concluir o desafio.
+      objectives:
+        - Explorar planejamento de bilhetes em situações guiadas pelo educador.
+        - Compartilhar estratégias pessoais com colegas durante a atividade.
+      scoring:
+        correct: 10
+        incorrect: 0
+      adaptive:
+        increaseAfter: 2
+        decreaseAfter: 1
+      questions:
+        - id: elementos-do-bilhete-q1
+          type: multiple-choice
+          prompt: Qual item não pode faltar em um bilhete para indicar quem escreveu?
+          hint: Pense em como o destinatário saberá quem deixou o recado.
+          options:
+            - id: elementos-do-bilhete-q1-1
+              text: Assinatura
+              isCorrect: true
+              feedback: Excelente! 'Assinatura' evidencia planejamento de bilhetes.
+            - id: elementos-do-bilhete-q1-2
+              text: Desenho
+              isCorrect: false
+              feedback: Ainda não. 'Desenho' não representa planejamento de bilhetes.
+            - id: elementos-do-bilhete-q1-3
+              text: Hashtag
+              isCorrect: false
+              feedback: Ainda não. 'Hashtag' não representa planejamento de bilhetes.
+        - id: elementos-do-bilhete-q2
+          type: true-false
+          prompt: Todo bilhete precisa indicar quem escreve?
+          hint: Verifique se a pessoa destinatária sabe quem enviou.
+          statement: Todo bilhete precisa indicar quem escreve.
+          answer: true
+          feedback:
+            'true': Muito bem! A afirmação confirma planejamento de bilhetes.
+            'false': 'Revise: planejamento de bilhetes está presente na afirmação.'
+      accessibility:
+        hints:
+          - audience: ESTUDANTE
+            text: Use TAB e ENTER para navegar e confirmar sua escolha.
+          - audience: EDUCADOR
+            text: Projete legendas e permita repetição do áudio para quem precisar.
+        feedback:
+          success: Excelente! Planejamento de bilhetes ficou evidente nas suas respostas.
+          encouragement: Caso erre, leia novamente com voz pausada e utilize marcadores visuais.
+          accessibility: Ofereça apoio auditivo individual e contraste elevado nos botões.
+        assets:
+          - slug: lp-material-caderno
+            type: IMAGEM
+            title: Caderno colorido para escrita
+  - partial: ../../_partials/acolhimento-base.yaml
+    slug: qual-o-destinatario
+    title: Qual o Destinatário?
+    prompt: Identifique para quem o bilhete foi escrito.
+    type: QUIZ
+    difficulty: PRATICAR
+    bncc:
+      code: EF01LP09
+      habilidades:
+        - EF01LP09
+    learningObjectives:
+      - Explorar definição de destinatário em situações guiadas pelo educador.
+      - Compartilhar estratégias pessoais com colegas durante a atividade.
+    description: Qual o Destinatário? convida a turma a investigar definição de destinatário com apoio de recursos multimodais.
+    metadata:
+      categoria: Destinatário
+      duracaoMinutos: 8
+      habilidades:
+        - EF01LP09
+      assetSlug: lp-letra-a
+      interactiveSlug: quiz-qual-o-destinatario
+    accessibility:
+      hints:
+        - audience: ESTUDANTE
+          text: Use as setas do teclado ou toque na tela para navegar enquanto destaca definição de destinatário com gestos ou palmas.
+        - audience: EDUCADOR
+          text: Projete imagens de apoio, ofereça repetição de áudio e verbalize os passos para favorecer a percepção de definição de destinatário.
+        - audience: FAMILIA
+          text: Envie sugestões de objetos ou cantigas que reforcem os sons trabalhados para continuidade em casa.
+      feedback:
+        success: Ótimo trabalho! Definição de destinatário ficou mais claro com sua atenção aos detalhes.
+        retry: Retome com calma, respirando fundo e usando as pistas visuais oferecidas.
+        encouragement: Valorize cada tentativa e compare sons ou letras com apoio dos colegas.
+        accessibility: Disponibilize fones acolchoados, letras ampliadas e manipuláveis táteis para quem precisar.
+      assets:
+        - slug: lp-letra-a
+          type: IMAGEM
+          title: Ilustração da letra A
+    prerequisites:
+      - type: ACTIVITY
+        reference: elementos-do-bilhete
+        description: Retomar a importância de destinatário e assinatura.
+    interactive:
+      slug: quiz-qual-o-destinatario
+      title: Qual o Destinatário? — Quiz
+      type: QUIZ
+      bnccDescription: Planejar e produzir bilhetes, recados e legendas para situações reais da turma.
+      estimatedTimeMinutes: 8
+      instructions:
+        - Leia ou escute o desafio com atenção antes de registrar a resposta.
+        - Use as teclas numéricas ou clique nas alternativas para responder.
+        - Compartilhe com a turma novas palavras relacionadas após concluir o desafio.
+      objectives:
+        - Explorar definição de destinatário em situações guiadas pelo educador.
+        - Compartilhar estratégias pessoais com colegas durante a atividade.
+      scoring:
+        correct: 10
+        incorrect: 0
+      adaptive:
+        increaseAfter: 2
+        decreaseAfter: 1
+      questions:
+        - id: qual-o-destinatario-q1
+          type: multiple-choice
+          prompt: 'Bilhete: ''Turma, lembrem-se de trazer a planta amanhã. — Professora Joana.'' Para quem é o bilhete?'
+          hint: Observe a primeira palavra do bilhete.
+          options:
+            - id: qual-o-destinatario-q1-1
+              text: Para a turma
+              isCorrect: true
+              feedback: Excelente! 'Para a turma' evidencia definição de destinatário.
+            - id: qual-o-destinatario-q1-2
+              text: Para a diretora
+              isCorrect: false
+              feedback: Ainda não. 'Para a diretora' não representa definição de destinatário.
+            - id: qual-o-destinatario-q1-3
+              text: Para a família
+              isCorrect: false
+              feedback: Ainda não. 'Para a família' não representa definição de destinatário.
+        - id: qual-o-destinatario-q2
+          type: true-false
+          prompt: O bilhete é destinado à turma?
+          hint: Leia novamente a saudação.
+          statement: O bilhete é destinado à turma.
+          answer: true
+          feedback:
+            'true': Muito bem! A afirmação confirma definição de destinatário.
+            'false': 'Revise: definição de destinatário está presente na afirmação.'
+      accessibility:
+        hints:
+          - audience: ESTUDANTE
+            text: Use TAB e ENTER para navegar e confirmar sua escolha.
+          - audience: EDUCADOR
+            text: Projete legendas e permita repetição do áudio para quem precisar.
+        feedback:
+          success: Excelente! Definição de destinatário ficou evidente nas suas respostas.
+          encouragement: Caso erre, leia novamente com voz pausada e utilize marcadores visuais.
+          accessibility: Ofereça apoio auditivo individual e contraste elevado nos botões.
+        assets:
+          - slug: lp-letra-a
+            type: IMAGEM
+            title: Ilustração da letra A
+  - partial: ../../_partials/acolhimento-base.yaml
+    slug: objetivo-do-recado
+    title: Objetivo do Recado
+    prompt: Entenda qual é o propósito da mensagem.
+    type: QUIZ
+    difficulty: DOMINAR
+    bncc:
+      code: EF01LP09
+      habilidades:
+        - EF01LP09
+    learningObjectives:
+      - Explorar objetivo do recado em situações guiadas pelo educador.
+      - Compartilhar estratégias pessoais com colegas durante a atividade.
+    description: Objetivo do Recado convida a turma a investigar objetivo do recado com apoio de recursos multimodais.
+    metadata:
+      categoria: Objetivo
+      duracaoMinutos: 9
+      habilidades:
+        - EF01LP09
+      assetSlug: lp-letra-e
+      interactiveSlug: quiz-objetivo-do-recado
+    accessibility:
+      hints:
+        - audience: ESTUDANTE
+          text: Use as setas do teclado ou toque na tela para navegar enquanto destaca objetivo do recado com gestos ou palmas.
+        - audience: EDUCADOR
+          text: Projete imagens de apoio, ofereça repetição de áudio e verbalize os passos para favorecer a percepção de objetivo do recado.
+        - audience: FAMILIA
+          text: Envie sugestões de objetos ou cantigas que reforcem os sons trabalhados para continuidade em casa.
+      feedback:
+        success: Ótimo trabalho! Objetivo do recado ficou mais claro com sua atenção aos detalhes.
+        retry: Retome com calma, respirando fundo e usando as pistas visuais oferecidas.
+        encouragement: Valorize cada tentativa e compare sons ou letras com apoio dos colegas.
+        accessibility: Disponibilize fones acolchoados, letras ampliadas e manipuláveis táteis para quem precisar.
+      assets:
+        - slug: lp-letra-e
+          type: IMAGEM
+          title: Ilustração da letra E
+    prerequisites:
+      - type: ACTIVITY
+        reference: qual-o-destinatario
+        description: Relembrar que cada bilhete tem um objetivo claro.
+    interactive:
+      slug: quiz-objetivo-do-recado
+      title: Objetivo do Recado — Quiz
+      type: QUIZ
+      bnccDescription: Planejar e produzir bilhetes, recados e legendas para situações reais da turma.
+      estimatedTimeMinutes: 9
+      instructions:
+        - Leia ou escute o desafio com atenção antes de registrar a resposta.
+        - Use as teclas numéricas ou clique nas alternativas para responder.
+        - Compartilhe com a turma novas palavras relacionadas após concluir o desafio.
+      objectives:
+        - Explorar objetivo do recado em situações guiadas pelo educador.
+        - Compartilhar estratégias pessoais com colegas durante a atividade.
+      scoring:
+        correct: 10
+        incorrect: 0
+      adaptive:
+        increaseAfter: 2
+        decreaseAfter: 1
+      questions:
+        - id: objetivo-do-recado-q1
+          type: multiple-choice
+          prompt: 'Bilhete: ''Mamãe, fui à biblioteca. Volto às 16h. Beijos, Ana.'' Qual é o objetivo do recado?'
+          hint: Perceba a informação principal compartilhada.
+          options:
+            - id: objetivo-do-recado-q1-1
+              text: Avisar onde está
+              isCorrect: true
+              feedback: Excelente! 'Avisar onde está' evidencia objetivo do recado.
+            - id: objetivo-do-recado-q1-2
+              text: Convidar para brincar
+              isCorrect: false
+              feedback: Ainda não. 'Convidar para brincar' não representa objetivo do recado.
+            - id: objetivo-do-recado-q1-3
+              text: Contar uma piada
+              isCorrect: false
+              feedback: Ainda não. 'Contar uma piada' não representa objetivo do recado.
+        - id: objetivo-do-recado-q2
+          type: true-false
+          prompt: O recado explica onde Ana está?
+          hint: Observe a primeira frase do bilhete.
+          statement: O recado explica onde Ana está.
+          answer: true
+          feedback:
+            'true': Muito bem! A afirmação confirma objetivo do recado.
+            'false': 'Revise: objetivo do recado está presente na afirmação.'
+      accessibility:
+        hints:
+          - audience: ESTUDANTE
+            text: Use TAB e ENTER para navegar e confirmar sua escolha.
+          - audience: EDUCADOR
+            text: Projete legendas e permita repetição do áudio para quem precisar.
+        feedback:
+          success: Excelente! Objetivo do recado ficou evidente nas suas respostas.
+          encouragement: Caso erre, leia novamente com voz pausada e utilize marcadores visuais.
+          accessibility: Ofereça apoio auditivo individual e contraste elevado nos botões.
+        assets:
+          - slug: lp-letra-e
+            type: IMAGEM
+            title: Ilustração da letra E
+  - partial: ../../_partials/acolhimento-base.yaml
+    slug: revendo-o-texto
+    title: Revendo o Texto
+    prompt: Identifique ajustes necessários em um bilhete.
+    type: QUIZ
+    difficulty: INICIAR
+    bncc:
+      code: EF01LP10
+      habilidades:
+        - EF01LP10
+    learningObjectives:
+      - Explorar revisão de bilhetes em situações guiadas pelo educador.
+      - Compartilhar estratégias pessoais com colegas durante a atividade.
+    description: Revendo o Texto convida a turma a investigar revisão de bilhetes com apoio de recursos multimodais.
+    metadata:
+      categoria: Revisão básica
+      duracaoMinutos: 8
+      habilidades:
+        - EF01LP10
+      assetSlug: lp-silaba-ba
+      interactiveSlug: quiz-revendo-o-texto
+    accessibility:
+      hints:
+        - audience: ESTUDANTE
+          text: Use as setas do teclado ou toque na tela para navegar enquanto destaca revisão de bilhetes com gestos ou palmas.
+        - audience: EDUCADOR
+          text: Projete imagens de apoio, ofereça repetição de áudio e verbalize os passos para favorecer a percepção de revisão de bilhetes.
+        - audience: FAMILIA
+          text: Envie sugestões de objetos ou cantigas que reforcem os sons trabalhados para continuidade em casa.
+      feedback:
+        success: Ótimo trabalho! Revisão de bilhetes ficou mais claro com sua atenção aos detalhes.
+        retry: Retome com calma, respirando fundo e usando as pistas visuais oferecidas.
+        encouragement: Valorize cada tentativa e compare sons ou letras com apoio dos colegas.
+        accessibility: Disponibilize fones acolchoados, letras ampliadas e manipuláveis táteis para quem precisar.
+      assets:
+        - slug: lp-silaba-ba
+          type: IMAGEM
+          title: Cartão da sílaba BA
+    prerequisites:
+      - type: SKILL
+        reference: EF01LP10
+        description: Conversar sobre revisar textos antes de enviar.
+    interactive:
+      slug: quiz-revendo-o-texto
+      title: Revendo o Texto — Quiz
+      type: QUIZ
+      bnccDescription: Revisar textos curtos considerando destinatários, suportes e convenções do gênero.
+      estimatedTimeMinutes: 8
+      instructions:
+        - Leia ou escute o desafio com atenção antes de registrar a resposta.
+        - Use as teclas numéricas ou clique nas alternativas para responder.
+        - Compartilhe com a turma novas palavras relacionadas após concluir o desafio.
+      objectives:
+        - Explorar revisão de bilhetes em situações guiadas pelo educador.
+        - Compartilhar estratégias pessoais com colegas durante a atividade.
+      scoring:
+        correct: 10
+        incorrect: 0
+      adaptive:
+        increaseAfter: 2
+        decreaseAfter: 1
+      questions:
+        - id: revendo-o-texto-q1
+          type: multiple-choice
+          prompt: 'Bilhete: ''Pedro, leve o guarda-chuva.'' O que falta para completar esse bilhete?'
+          hint: Pense em como Pedro saberá quem enviou a mensagem.
+          options:
+            - id: revendo-o-texto-q1-1
+              text: Assinatura de quem escreveu
+              isCorrect: true
+              feedback: Excelente! 'Assinatura de quem escreveu' evidencia revisão de bilhetes.
+            - id: revendo-o-texto-q1-2
+              text: Um desenho colorido
+              isCorrect: false
+              feedback: Ainda não. 'Um desenho colorido' não representa revisão de bilhetes.
+            - id: revendo-o-texto-q1-3
+              text: Uma receita
+              isCorrect: false
+              feedback: Ainda não. 'Uma receita' não representa revisão de bilhetes.
+        - id: revendo-o-texto-q2
+          type: true-false
+          prompt: Adicionar a assinatura deixa o bilhete mais completo?
+          hint: Veja se falta a identificação de quem escreve.
+          statement: Adicionar a assinatura deixa o bilhete mais completo.
+          answer: true
+          feedback:
+            'true': Muito bem! A afirmação confirma revisão de bilhetes.
+            'false': 'Revise: revisão de bilhetes está presente na afirmação.'
+      accessibility:
+        hints:
+          - audience: ESTUDANTE
+            text: Use TAB e ENTER para navegar e confirmar sua escolha.
+          - audience: EDUCADOR
+            text: Projete legendas e permita repetição do áudio para quem precisar.
+        feedback:
+          success: Excelente! Revisão de bilhetes ficou evidente nas suas respostas.
+          encouragement: Caso erre, leia novamente com voz pausada e utilize marcadores visuais.
+          accessibility: Ofereça apoio auditivo individual e contraste elevado nos botões.
+        assets:
+          - slug: lp-silaba-ba
+            type: IMAGEM
+            title: Cartão da sílaba BA
+  - partial: ../../_partials/acolhimento-base.yaml
+    slug: corrige-a-frase
+    title: Corrige a Frase
+    prompt: Escolha a versão revisada de uma frase de recado.
+    type: QUIZ
+    difficulty: PRATICAR
+    bncc:
+      code: EF01LP10
+      habilidades:
+        - EF01LP10
+    learningObjectives:
+      - Explorar correção de bilhetes em situações guiadas pelo educador.
+      - Compartilhar estratégias pessoais com colegas durante a atividade.
+    description: Corrige a Frase convida a turma a investigar correção de bilhetes com apoio de recursos multimodais.
+    metadata:
+      categoria: Pontuação
+      duracaoMinutos: 9
+      habilidades:
+        - EF01LP10
+      assetSlug: lp-silaba-la
+      interactiveSlug: quiz-corrige-a-frase
+    accessibility:
+      hints:
+        - audience: ESTUDANTE
+          text: Use as setas do teclado ou toque na tela para navegar enquanto destaca correção de bilhetes com gestos ou palmas.
+        - audience: EDUCADOR
+          text: Projete imagens de apoio, ofereça repetição de áudio e verbalize os passos para favorecer a percepção de correção de bilhetes.
+        - audience: FAMILIA
+          text: Envie sugestões de objetos ou cantigas que reforcem os sons trabalhados para continuidade em casa.
+      feedback:
+        success: Ótimo trabalho! Correção de bilhetes ficou mais claro com sua atenção aos detalhes.
+        retry: Retome com calma, respirando fundo e usando as pistas visuais oferecidas.
+        encouragement: Valorize cada tentativa e compare sons ou letras com apoio dos colegas.
+        accessibility: Disponibilize fones acolchoados, letras ampliadas e manipuláveis táteis para quem precisar.
+      assets:
+        - slug: lp-silaba-la
+          type: IMAGEM
+          title: Cartão da sílaba LA
+    prerequisites:
+      - type: ACTIVITY
+        reference: revendo-o-texto
+        description: Aplicar a revisão em frases específicas.
+    interactive:
+      slug: quiz-corrige-a-frase
+      title: Corrige a Frase — Quiz
+      type: QUIZ
+      bnccDescription: Revisar textos curtos considerando destinatários, suportes e convenções do gênero.
+      estimatedTimeMinutes: 9
+      instructions:
+        - Leia ou escute o desafio com atenção antes de registrar a resposta.
+        - Use as teclas numéricas ou clique nas alternativas para responder.
+        - Compartilhe com a turma novas palavras relacionadas após concluir o desafio.
+      objectives:
+        - Explorar correção de bilhetes em situações guiadas pelo educador.
+        - Compartilhar estratégias pessoais com colegas durante a atividade.
+      scoring:
+        correct: 10
+        incorrect: 0
+      adaptive:
+        increaseAfter: 2
+        decreaseAfter: 1
+      questions:
+        - id: corrige-a-frase-q1
+          type: multiple-choice
+          prompt: Qual opção revisa corretamente a frase 'Por favor entregar os livros amanhã'?
+          hint: Observe pontuação e conjugação do verbo.
+          options:
+            - id: corrige-a-frase-q1-1
+              text: Por favor, entregue os livros amanhã.
+              isCorrect: true
+              feedback: Excelente! 'Por favor, entregue os livros amanhã.' evidencia correção de bilhetes.
+            - id: corrige-a-frase-q1-2
+              text: Por favor entrega os livros amanhã
+              isCorrect: false
+              feedback: Ainda não. 'Por favor entrega os livros amanhã' não representa correção de bilhetes.
+            - id: corrige-a-frase-q1-3
+              text: Por favor entregue os livros amanha
+              isCorrect: false
+              feedback: Ainda não. 'Por favor entregue os livros amanha' não representa correção de bilhetes.
+        - id: corrige-a-frase-q2
+          type: true-false
+          prompt: A frase revisada usa vírgula para organizar o pedido?
+          hint: Note os sinais de pontuação adicionados.
+          statement: A frase revisada usa vírgula para organizar o pedido.
+          answer: true
+          feedback:
+            'true': Muito bem! A afirmação confirma correção de bilhetes.
+            'false': 'Revise: correção de bilhetes está presente na afirmação.'
+      accessibility:
+        hints:
+          - audience: ESTUDANTE
+            text: Use TAB e ENTER para navegar e confirmar sua escolha.
+          - audience: EDUCADOR
+            text: Projete legendas e permita repetição do áudio para quem precisar.
+        feedback:
+          success: Excelente! Correção de bilhetes ficou evidente nas suas respostas.
+          encouragement: Caso erre, leia novamente com voz pausada e utilize marcadores visuais.
+          accessibility: Ofereça apoio auditivo individual e contraste elevado nos botões.
+        assets:
+          - slug: lp-silaba-la
+            type: IMAGEM
+            title: Cartão da sílaba LA
+  - partial: ../../_partials/acolhimento-base.yaml
+    slug: checar-claridade
+    title: Checar Claridade
+    prompt: Analise se a mensagem transmite todas as informações necessárias.
+    type: QUIZ
+    difficulty: DOMINAR
+    bncc:
+      code: EF01LP10
+      habilidades:
+        - EF01LP10
+    learningObjectives:
+      - Explorar clareza e completude em situações guiadas pelo educador.
+      - Compartilhar estratégias pessoais com colegas durante a atividade.
+    description: Checar Claridade convida a turma a investigar clareza e completude com apoio de recursos multimodais.
+    metadata:
+      categoria: Clareza de mensagem
+      duracaoMinutos: 9
+      habilidades:
+        - EF01LP10
+      assetSlug: lp-material-caderno
+      interactiveSlug: quiz-checar-claridade
+    accessibility:
+      hints:
+        - audience: ESTUDANTE
+          text: Use as setas do teclado ou toque na tela para navegar enquanto destaca clareza e completude com gestos ou palmas.
+        - audience: EDUCADOR
+          text: Projete imagens de apoio, ofereça repetição de áudio e verbalize os passos para favorecer a percepção de clareza e completude.
+        - audience: FAMILIA
+          text: Envie sugestões de objetos ou cantigas que reforcem os sons trabalhados para continuidade em casa.
+      feedback:
+        success: Ótimo trabalho! Clareza e completude ficou mais claro com sua atenção aos detalhes.
+        retry: Retome com calma, respirando fundo e usando as pistas visuais oferecidas.
+        encouragement: Valorize cada tentativa e compare sons ou letras com apoio dos colegas.
+        accessibility: Disponibilize fones acolchoados, letras ampliadas e manipuláveis táteis para quem precisar.
+      assets:
+        - slug: lp-material-caderno
+          type: IMAGEM
+          title: Caderno colorido para escrita
+    prerequisites:
+      - type: ACTIVITY
+        reference: corrige-a-frase
+        description: Reforçar a importância de detalhes na revisão.
+    interactive:
+      slug: quiz-checar-claridade
+      title: Checar Claridade — Quiz
+      type: QUIZ
+      bnccDescription: Revisar textos curtos considerando destinatários, suportes e convenções do gênero.
+      estimatedTimeMinutes: 9
+      instructions:
+        - Leia ou escute o desafio com atenção antes de registrar a resposta.
+        - Use as teclas numéricas ou clique nas alternativas para responder.
+        - Compartilhe com a turma novas palavras relacionadas após concluir o desafio.
+      objectives:
+        - Explorar clareza e completude em situações guiadas pelo educador.
+        - Compartilhar estratégias pessoais com colegas durante a atividade.
+      scoring:
+        correct: 10
+        incorrect: 0
+      adaptive:
+        increaseAfter: 2
+        decreaseAfter: 1
+      questions:
+        - id: checar-claridade-q1
+          type: multiple-choice
+          prompt: 'Bilhete: ''Oi, traz o livro? — Leo''. O que falta para ficar claro?'
+          hint: Pense no momento em que o pedido deve acontecer.
+          options:
+            - id: checar-claridade-q1-1
+              text: Dizer quando levar o livro
+              isCorrect: true
+              feedback: Excelente! 'Dizer quando levar o livro' evidencia clareza e completude.
+            - id: checar-claridade-q1-2
+              text: Adicionar adesivos coloridos
+              isCorrect: false
+              feedback: Ainda não. 'Adicionar adesivos coloridos' não representa clareza e completude.
+            - id: checar-claridade-q1-3
+              text: Colocar emojis
+              isCorrect: false
+              feedback: Ainda não. 'Colocar emojis' não representa clareza e completude.
+        - id: checar-claridade-q2
+          type: true-false
+          prompt: Informar o horário deixa o bilhete mais claro?
+          hint: Considere se o destinatário saberá quando agir.
+          statement: Informar o horário deixa o bilhete mais claro.
+          answer: true
+          feedback:
+            'true': Muito bem! A afirmação confirma clareza e completude.
+            'false': 'Revise: clareza e completude está presente na afirmação.'
+      accessibility:
+        hints:
+          - audience: ESTUDANTE
+            text: Use TAB e ENTER para navegar e confirmar sua escolha.
+          - audience: EDUCADOR
+            text: Projete legendas e permita repetição do áudio para quem precisar.
+        feedback:
+          success: Excelente! Clareza e completude ficou evidente nas suas respostas.
+          encouragement: Caso erre, leia novamente com voz pausada e utilize marcadores visuais.
+          accessibility: Ofereça apoio auditivo individual e contraste elevado nos botões.
+        assets:
+          - slug: lp-material-caderno
+            type: IMAGEM
+            title: Caderno colorido para escrita
+  - partial: ../../_partials/acolhimento-base.yaml
+    slug: puzzle-destinatario
+    title: Destinatário Certo
+    prompt: Associe o início do bilhete ao destinatário correspondente.
+    type: PUZZLE
+    difficulty: INICIAR
+    bncc:
+      code: EF01LP09
+      habilidades:
+        - EF01LP09
+    learningObjectives:
+      - Explorar planejamento de bilhetes em situações guiadas pelo educador.
+      - Compartilhar estratégias pessoais com colegas durante a atividade.
+    description: Destinatário Certo convida a turma a investigar planejamento de bilhetes com apoio de recursos multimodais.
+    metadata:
+      categoria: Planejamento
+      duracaoMinutos: 10
+      habilidades:
+        - EF01LP09
+      assetSlug: lp-letra-a
+      interactiveSlug: puzzle-puzzle-destinatario
+    accessibility:
+      hints:
+        - audience: ESTUDANTE
+          text: Use as setas do teclado ou toque na tela para navegar enquanto destaca planejamento de bilhetes com gestos ou palmas.
+        - audience: EDUCADOR
+          text: Projete imagens de apoio, ofereça repetição de áudio e verbalize os passos para favorecer a percepção de planejamento de bilhetes.
+        - audience: FAMILIA
+          text: Envie sugestões de objetos ou cantigas que reforcem os sons trabalhados para continuidade em casa.
+      feedback:
+        success: Ótimo trabalho! Planejamento de bilhetes ficou mais claro com sua atenção aos detalhes.
+        retry: Retome com calma, respirando fundo e usando as pistas visuais oferecidas.
+        encouragement: Valorize cada tentativa e compare sons ou letras com apoio dos colegas.
+        accessibility: Disponibilize fones acolchoados, letras ampliadas e manipuláveis táteis para quem precisar.
+      assets:
+        - slug: lp-letra-a
+          type: IMAGEM
+          title: Ilustração da letra A
+    prerequisites:
+      - type: ACTIVITY
+        reference: qual-o-destinatario
+        description: Retomar diferentes destinatários discutidos em sala.
+    interactive:
+      slug: puzzle-puzzle-destinatario
+      title: Destinatário Certo — Quebra-cabeça
+      type: PUZZLE
+      bnccDescription: Planejar e produzir bilhetes, recados e legendas para situações reais da turma.
+      estimatedTimeMinutes: 10
+      instructions:
+        - Observe cada cartão e combine arrastando ou usando TAB + ENTER.
+        - Converse sobre o motivo da combinação antes de confirmar.
+        - Revise as duplas formadas e proponha novas associações.
+      objectives:
+        - Explorar planejamento de bilhetes em situações guiadas pelo educador.
+        - Compartilhar estratégias pessoais com colegas durante a atividade.
+      puzzle:
+        mode: matching
+        successFeedback: Tudo combinado! Planejamento de bilhetes ficou evidente nas associações.
+        errorFeedback: Observe novamente os sons, conte devagar e tente outra combinação.
+        pairs:
+          - id: puzzle-destinatario-pair-1
+            prompt: Querida turma,
+            match: Destinatário coletivo
+            hint: Observe planejamento de bilhetes presente em 'Querida turma,'.
+            feedback: Perfeito! 'Destinatário coletivo' combina com 'Querida turma,' porque evidencia planejamento de bilhetes.
+          - id: puzzle-destinatario-pair-2
+            prompt: Mamãe,
+            match: Destinatário da família
+            hint: Observe planejamento de bilhetes presente em 'Mamãe,'.
+            feedback: Perfeito! 'Destinatário da família' combina com 'Mamãe,' porque evidencia planejamento de bilhetes.
+          - id: puzzle-destinatario-pair-3
+            prompt: Equipe da biblioteca,
+            match: Destinatário da escola
+            hint: Observe planejamento de bilhetes presente em 'Equipe da biblioteca,'.
+            feedback: Perfeito! 'Destinatário da escola' combina com 'Equipe da biblioteca,' porque evidencia planejamento de bilhetes.
+      accessibility:
+        hints:
+          - audience: ESTUDANTE
+            text: Use as setas para navegar entre os cartões e Enter para selecionar.
+          - audience: EDUCADOR
+            text: Disponibilize cartões físicos para manipulação simultânea.
+        feedback:
+          success: Tudo combinado! Planejamento de bilhetes ficou evidente nas associações.
+          encouragement: Compare sons lentamente e utilize gestos amplos para apoiar a associação.
+          accessibility: Ofereça cartões com textura ou relevo para ampliar as pistas sensoriais.
+        assets:
+          - slug: lp-letra-a
+            type: IMAGEM
+            title: Ilustração da letra A
+  - partial: ../../_partials/acolhimento-base.yaml
+    slug: puzzle-ordem-bilhete
+    title: Ordem do Bilhete
+    prompt: Relacione partes do bilhete com exemplos.
+    type: PUZZLE
+    difficulty: PRATICAR
+    bncc:
+      code: EF01LP09
+      habilidades:
+        - EF01LP09
+    learningObjectives:
+      - Explorar organização de bilhetes em situações guiadas pelo educador.
+      - Compartilhar estratégias pessoais com colegas durante a atividade.
+    description: Ordem do Bilhete convida a turma a investigar organização de bilhetes com apoio de recursos multimodais.
+    metadata:
+      categoria: Estrutura
+      duracaoMinutos: 10
+      habilidades:
+        - EF01LP09
+      assetSlug: lp-material-caderno
+      interactiveSlug: puzzle-puzzle-ordem-bilhete
+    accessibility:
+      hints:
+        - audience: ESTUDANTE
+          text: Use as setas do teclado ou toque na tela para navegar enquanto destaca organização de bilhetes com gestos ou palmas.
+        - audience: EDUCADOR
+          text: Projete imagens de apoio, ofereça repetição de áudio e verbalize os passos para favorecer a percepção de organização de bilhetes.
+        - audience: FAMILIA
+          text: Envie sugestões de objetos ou cantigas que reforcem os sons trabalhados para continuidade em casa.
+      feedback:
+        success: Ótimo trabalho! Organização de bilhetes ficou mais claro com sua atenção aos detalhes.
+        retry: Retome com calma, respirando fundo e usando as pistas visuais oferecidas.
+        encouragement: Valorize cada tentativa e compare sons ou letras com apoio dos colegas.
+        accessibility: Disponibilize fones acolchoados, letras ampliadas e manipuláveis táteis para quem precisar.
+      assets:
+        - slug: lp-material-caderno
+          type: IMAGEM
+          title: Caderno colorido para escrita
+    prerequisites:
+      - type: ACTIVITY
+        reference: elementos-do-bilhete
+        description: Retomar cada parte do bilhete antes de montar.
+    interactive:
+      slug: puzzle-puzzle-ordem-bilhete
+      title: Ordem do Bilhete — Quebra-cabeça
+      type: PUZZLE
+      bnccDescription: Planejar e produzir bilhetes, recados e legendas para situações reais da turma.
+      estimatedTimeMinutes: 10
+      instructions:
+        - Observe cada cartão e combine arrastando ou usando TAB + ENTER.
+        - Converse sobre o motivo da combinação antes de confirmar.
+        - Revise as duplas formadas e proponha novas associações.
+      objectives:
+        - Explorar organização de bilhetes em situações guiadas pelo educador.
+        - Compartilhar estratégias pessoais com colegas durante a atividade.
+      puzzle:
+        mode: matching
+        successFeedback: Tudo combinado! Organização de bilhetes ficou evidente nas associações.
+        errorFeedback: Observe novamente os sons, conte devagar e tente outra combinação.
+        pairs:
+          - id: puzzle-ordem-bilhete-pair-1
+            prompt: Saudação
+            match: Olá, Ana,
+            hint: Observe organização de bilhetes presente em 'Saudação'.
+            feedback: Perfeito! 'Olá, Ana,' combina com 'Saudação' porque evidencia organização de bilhetes.
+          - id: puzzle-ordem-bilhete-pair-2
+            prompt: Mensagem
+            match: Volto às 16h.
+            hint: Observe organização de bilhetes presente em 'Mensagem'.
+            feedback: Perfeito! 'Volto às 16h.' combina com 'Mensagem' porque evidencia organização de bilhetes.
+          - id: puzzle-ordem-bilhete-pair-3
+            prompt: Assinatura
+            match: Beijos, Luiza
+            hint: Observe organização de bilhetes presente em 'Assinatura'.
+            feedback: Perfeito! 'Beijos, Luiza' combina com 'Assinatura' porque evidencia organização de bilhetes.
+      accessibility:
+        hints:
+          - audience: ESTUDANTE
+            text: Use as setas para navegar entre os cartões e Enter para selecionar.
+          - audience: EDUCADOR
+            text: Disponibilize cartões físicos para manipulação simultânea.
+        feedback:
+          success: Tudo combinado! Organização de bilhetes ficou evidente nas associações.
+          encouragement: Compare sons lentamente e utilize gestos amplos para apoiar a associação.
+          accessibility: Ofereça cartões com textura ou relevo para ampliar as pistas sensoriais.
+        assets:
+          - slug: lp-material-caderno
+            type: IMAGEM
+            title: Caderno colorido para escrita
+  - partial: ../../_partials/acolhimento-base.yaml
+    slug: puzzle-revisao
+    title: Revisão Necessária
+    prompt: Combine problemas de escrita com as revisões sugeridas.
+    type: PUZZLE
+    difficulty: PRATICAR
+    bncc:
+      code: EF01LP10
+      habilidades:
+        - EF01LP10
+    learningObjectives:
+      - Explorar revisão de bilhetes em situações guiadas pelo educador.
+      - Compartilhar estratégias pessoais com colegas durante a atividade.
+    description: Revisão Necessária convida a turma a investigar revisão de bilhetes com apoio de recursos multimodais.
+    metadata:
+      categoria: Revisão
+      duracaoMinutos: 11
+      habilidades:
+        - EF01LP10
+      assetSlug: lp-silaba-ba
+      interactiveSlug: puzzle-puzzle-revisao
+    accessibility:
+      hints:
+        - audience: ESTUDANTE
+          text: Use as setas do teclado ou toque na tela para navegar enquanto destaca revisão de bilhetes com gestos ou palmas.
+        - audience: EDUCADOR
+          text: Projete imagens de apoio, ofereça repetição de áudio e verbalize os passos para favorecer a percepção de revisão de bilhetes.
+        - audience: FAMILIA
+          text: Envie sugestões de objetos ou cantigas que reforcem os sons trabalhados para continuidade em casa.
+      feedback:
+        success: Ótimo trabalho! Revisão de bilhetes ficou mais claro com sua atenção aos detalhes.
+        retry: Retome com calma, respirando fundo e usando as pistas visuais oferecidas.
+        encouragement: Valorize cada tentativa e compare sons ou letras com apoio dos colegas.
+        accessibility: Disponibilize fones acolchoados, letras ampliadas e manipuláveis táteis para quem precisar.
+      assets:
+        - slug: lp-silaba-ba
+          type: IMAGEM
+          title: Cartão da sílaba BA
+    prerequisites:
+      - type: ACTIVITY
+        reference: revendo-o-texto
+        description: Refletir sobre ajustes comuns em bilhetes.
+    interactive:
+      slug: puzzle-puzzle-revisao
+      title: Revisão Necessária — Quebra-cabeça
+      type: PUZZLE
+      bnccDescription: Revisar textos curtos considerando destinatários, suportes e convenções do gênero.
+      estimatedTimeMinutes: 11
+      instructions:
+        - Observe cada cartão e combine arrastando ou usando TAB + ENTER.
+        - Converse sobre o motivo da combinação antes de confirmar.
+        - Revise as duplas formadas e proponha novas associações.
+      objectives:
+        - Explorar revisão de bilhetes em situações guiadas pelo educador.
+        - Compartilhar estratégias pessoais com colegas durante a atividade.
+      puzzle:
+        mode: matching
+        successFeedback: Tudo combinado! Revisão de bilhetes ficou evidente nas associações.
+        errorFeedback: Observe novamente os sons, conte devagar e tente outra combinação.
+        pairs:
+          - id: puzzle-revisao-pair-1
+            prompt: Sem pontuação
+            match: Adicionar vírgula e ponto final
+            hint: Observe revisão de bilhetes presente em 'Sem pontuação'.
+            feedback: Perfeito! 'Adicionar vírgula e ponto final' combina com 'Sem pontuação' porque evidencia revisão de bilhetes.
+          - id: puzzle-revisao-pair-2
+            prompt: Falta assinatura
+            match: Escrever quem enviou
+            hint: Observe revisão de bilhetes presente em 'Falta assinatura'.
+            feedback: Perfeito! 'Escrever quem enviou' combina com 'Falta assinatura' porque evidencia revisão de bilhetes.
+          - id: puzzle-revisao-pair-3
+            prompt: Pedido confuso
+            match: Explicar o horário
+            hint: Observe revisão de bilhetes presente em 'Pedido confuso'.
+            feedback: Perfeito! 'Explicar o horário' combina com 'Pedido confuso' porque evidencia revisão de bilhetes.
+      accessibility:
+        hints:
+          - audience: ESTUDANTE
+            text: Use as setas para navegar entre os cartões e Enter para selecionar.
+          - audience: EDUCADOR
+            text: Disponibilize cartões físicos para manipulação simultânea.
+        feedback:
+          success: Tudo combinado! Revisão de bilhetes ficou evidente nas associações.
+          encouragement: Compare sons lentamente e utilize gestos amplos para apoiar a associação.
+          accessibility: Ofereça cartões com textura ou relevo para ampliar as pistas sensoriais.
+        assets:
+          - slug: lp-silaba-ba
+            type: IMAGEM
+            title: Cartão da sílaba BA
+  - partial: ../../_partials/acolhimento-base.yaml
+    slug: puzzle-melhorias
+    title: Melhorias no Recado
+    prompt: Associe situações de revisão às soluções adequadas.
+    type: PUZZLE
+    difficulty: DOMINAR
+    bncc:
+      code: EF01LP10
+      habilidades:
+        - EF01LP10
+    learningObjectives:
+      - Explorar clareza e cortesia em situações guiadas pelo educador.
+      - Compartilhar estratégias pessoais com colegas durante a atividade.
+    description: Melhorias no Recado convida a turma a investigar clareza e cortesia com apoio de recursos multimodais.
+    metadata:
+      categoria: Aprimoramento
+      duracaoMinutos: 11
+      habilidades:
+        - EF01LP10
+      assetSlug: lp-silaba-la
+      interactiveSlug: puzzle-puzzle-melhorias
+    accessibility:
+      hints:
+        - audience: ESTUDANTE
+          text: Use as setas do teclado ou toque na tela para navegar enquanto destaca clareza e cortesia com gestos ou palmas.
+        - audience: EDUCADOR
+          text: Projete imagens de apoio, ofereça repetição de áudio e verbalize os passos para favorecer a percepção de clareza e cortesia.
+        - audience: FAMILIA
+          text: Envie sugestões de objetos ou cantigas que reforcem os sons trabalhados para continuidade em casa.
+      feedback:
+        success: Ótimo trabalho! Clareza e cortesia ficou mais claro com sua atenção aos detalhes.
+        retry: Retome com calma, respirando fundo e usando as pistas visuais oferecidas.
+        encouragement: Valorize cada tentativa e compare sons ou letras com apoio dos colegas.
+        accessibility: Disponibilize fones acolchoados, letras ampliadas e manipuláveis táteis para quem precisar.
+      assets:
+        - slug: lp-silaba-la
+          type: IMAGEM
+          title: Cartão da sílaba LA
+    prerequisites:
+      - type: ACTIVITY
+        reference: checar-claridade
+        description: Reforçar como deixar a mensagem clara e gentil.
+    interactive:
+      slug: puzzle-puzzle-melhorias
+      title: Melhorias no Recado — Quebra-cabeça
+      type: PUZZLE
+      bnccDescription: Revisar textos curtos considerando destinatários, suportes e convenções do gênero.
+      estimatedTimeMinutes: 11
+      instructions:
+        - Observe cada cartão e combine arrastando ou usando TAB + ENTER.
+        - Converse sobre o motivo da combinação antes de confirmar.
+        - Revise as duplas formadas e proponha novas associações.
+      objectives:
+        - Explorar clareza e cortesia em situações guiadas pelo educador.
+        - Compartilhar estratégias pessoais com colegas durante a atividade.
+      puzzle:
+        mode: matching
+        successFeedback: Tudo combinado! Clareza e cortesia ficou evidente nas associações.
+        errorFeedback: Observe novamente os sons, conte devagar e tente outra combinação.
+        pairs:
+          - id: puzzle-melhorias-pair-1
+            prompt: Mensagem longa demais
+            match: Resumir e ir direto ao ponto
+            hint: Observe clareza e cortesia presente em 'Mensagem longa demais'.
+            feedback: Perfeito! 'Resumir e ir direto ao ponto' combina com 'Mensagem longa demais' porque evidencia clareza e cortesia.
+          - id: puzzle-melhorias-pair-2
+            prompt: Letra difícil de ler
+            match: Reescrever com calma
+            hint: Observe clareza e cortesia presente em 'Letra difícil de ler'.
+            feedback: Perfeito! 'Reescrever com calma' combina com 'Letra difícil de ler' porque evidencia clareza e cortesia.
+          - id: puzzle-melhorias-pair-3
+            prompt: Falta agradecimento
+            match: Adicionar 'obrigado' ou 'por favor'
+            hint: Observe clareza e cortesia presente em 'Falta agradecimento'.
+            feedback: Perfeito! 'Adicionar 'obrigado' ou 'por favor'' combina com 'Falta agradecimento' porque evidencia clareza e cortesia.
+      accessibility:
+        hints:
+          - audience: ESTUDANTE
+            text: Use as setas para navegar entre os cartões e Enter para selecionar.
+          - audience: EDUCADOR
+            text: Disponibilize cartões físicos para manipulação simultânea.
+        feedback:
+          success: Tudo combinado! Clareza e cortesia ficou evidente nas associações.
+          encouragement: Compare sons lentamente e utilize gestos amplos para apoiar a associação.
+          accessibility: Ofereça cartões com textura ou relevo para ampliar as pistas sensoriais.
+        assets:
+          - slug: lp-silaba-la
+            type: IMAGEM
+            title: Cartão da sílaba LA
+  - partial: ../../_partials/acolhimento-base.yaml
+    slug: planejar-bilhete
+    title: Planejar Bilhete
+    prompt: Escolha elementos para planejar um bilhete completo.
+    type: GAME
+    difficulty: INICIAR
+    bncc:
+      code: EF01LP09
+      habilidades:
+        - EF01LP09
+    learningObjectives:
+      - Explorar planejamento de bilhetes em situações guiadas pelo educador.
+      - Compartilhar estratégias pessoais com colegas durante a atividade.
+    description: Planejar Bilhete convida a turma a investigar planejamento de bilhetes com apoio de recursos multimodais.
+    metadata:
+      categoria: Planejamento
+      duracaoMinutos: 12
+      habilidades:
+        - EF01LP09
+      assetSlug: lp-material-caderno
+      interactiveSlug: game-planejar-bilhete
+    accessibility:
+      hints:
+        - audience: ESTUDANTE
+          text: Use as setas do teclado ou toque na tela para navegar enquanto destaca planejamento de bilhetes com gestos ou palmas.
+        - audience: EDUCADOR
+          text: Projete imagens de apoio, ofereça repetição de áudio e verbalize os passos para favorecer a percepção de planejamento de bilhetes.
+        - audience: FAMILIA
+          text: Envie sugestões de objetos ou cantigas que reforcem os sons trabalhados para continuidade em casa.
+      feedback:
+        success: Ótimo trabalho! Planejamento de bilhetes ficou mais claro com sua atenção aos detalhes.
+        retry: Retome com calma, respirando fundo e usando as pistas visuais oferecidas.
+        encouragement: Valorize cada tentativa e compare sons ou letras com apoio dos colegas.
+        accessibility: Disponibilize fones acolchoados, letras ampliadas e manipuláveis táteis para quem precisar.
+      assets:
+        - slug: lp-material-caderno
+          type: IMAGEM
+          title: Caderno colorido para escrita
+    prerequisites:
+      - type: ACTIVITY
+        reference: puzzle-ordem-bilhete
+        description: Relembrar a estrutura do bilhete antes de jogar.
+    interactive:
+      slug: game-planejar-bilhete
+      title: Planejar Bilhete — Mini-jogo
+      type: GAME
+      bnccDescription: Planejar e produzir bilhetes, recados e legendas para situações reais da turma.
+      estimatedTimeMinutes: 12
+      instructions:
+        - Leia o desafio de cada fase e verbalize suas hipóteses em voz alta.
+        - Digite a resposta usando o teclado ou selecione com o mouse.
+        - No final, explique qual pista ajudou a encontrar a solução.
+      objectives:
+        - Explorar planejamento de bilhetes em situações guiadas pelo educador.
+        - Compartilhar estratégias pessoais com colegas durante a atividade.
+      game:
+        mode: math-challenge
+        timeLimitSeconds: 120
+        lives: 3
+        victoryMessage: Bilhete planejado! Todos os elementos estão no lugar.
+        gameOverMessage: Revise os elementos essenciais e tente novamente.
+        levels:
+          - id: planejar-bilhete-level-1
+            challenge: Escolha a saudação ideal para um bilhete à professora. (Querida professora, Oi amigo, Caro vizinho)
+            answer: Querida professora
+            hint: Use planejamento de bilhetes para encontrar a resposta.
+            successFeedback: Muito bem! Planejamento de bilhetes ajudou a resolver a fase.
+            failureFeedback: Retome planejamento de bilhetes e ajuste sua estratégia.
+          - id: planejar-bilhete-level-2
+            challenge: Escolha o melhor motivo para avisar sobre a tarefa. (Lembrar da pesquisa, Contar uma piada, Mostrar um desenho)
+            answer: Lembrar da pesquisa
+            hint: Use planejamento de bilhetes para encontrar a resposta.
+            successFeedback: Muito bem! Planejamento de bilhetes ajudou a resolver a fase.
+            failureFeedback: Retome planejamento de bilhetes e ajuste sua estratégia.
+          - id: planejar-bilhete-level-3
+            challenge: Selecione como assinar o bilhete enviado pela turma. (Turma do 1º ano, Seu fã secreto, Tio Marcos)
+            answer: Turma do 1º ano
+            hint: Use planejamento de bilhetes para encontrar a resposta.
+            successFeedback: Muito bem! Planejamento de bilhetes ajudou a resolver a fase.
+            failureFeedback: Retome planejamento de bilhetes e ajuste sua estratégia.
+      accessibility:
+        hints:
+          - audience: ESTUDANTE
+            text: Use a tecla TAB para navegar pelos botões e Enter para confirmar.
+          - audience: EDUCADOR
+            text: Ofereça marcadores visuais ou tapetes de som para cada fase.
+        feedback:
+          success: Bilhete planejado! Todos os elementos estão no lugar.
+          encouragement: Revise as pistas sonoras e tente novamente sem pressa.
+          accessibility: Disponibilize apoios auditivos individuais e sinalize o tempo visualmente.
+        assets:
+          - slug: lp-material-caderno
+            type: IMAGEM
+            title: Caderno colorido para escrita
+  - partial: ../../_partials/acolhimento-base.yaml
+    slug: revisao-rapida
+    title: Revisão Rápida
+    prompt: Escolha as melhores correções para bilhetes curtos.
+    type: GAME
+    difficulty: PRATICAR
+    bncc:
+      code: EF01LP10
+      habilidades:
+        - EF01LP10
+    learningObjectives:
+      - Explorar revisão de bilhetes em situações guiadas pelo educador.
+      - Compartilhar estratégias pessoais com colegas durante a atividade.
+    description: Revisão Rápida convida a turma a investigar revisão de bilhetes com apoio de recursos multimodais.
+    metadata:
+      categoria: Revisão
+      duracaoMinutos: 12
+      habilidades:
+        - EF01LP10
+      assetSlug: lp-silaba-ba
+      interactiveSlug: game-revisao-rapida
+    accessibility:
+      hints:
+        - audience: ESTUDANTE
+          text: Use as setas do teclado ou toque na tela para navegar enquanto destaca revisão de bilhetes com gestos ou palmas.
+        - audience: EDUCADOR
+          text: Projete imagens de apoio, ofereça repetição de áudio e verbalize os passos para favorecer a percepção de revisão de bilhetes.
+        - audience: FAMILIA
+          text: Envie sugestões de objetos ou cantigas que reforcem os sons trabalhados para continuidade em casa.
+      feedback:
+        success: Ótimo trabalho! Revisão de bilhetes ficou mais claro com sua atenção aos detalhes.
+        retry: Retome com calma, respirando fundo e usando as pistas visuais oferecidas.
+        encouragement: Valorize cada tentativa e compare sons ou letras com apoio dos colegas.
+        accessibility: Disponibilize fones acolchoados, letras ampliadas e manipuláveis táteis para quem precisar.
+      assets:
+        - slug: lp-silaba-ba
+          type: IMAGEM
+          title: Cartão da sílaba BA
+    prerequisites:
+      - type: ACTIVITY
+        reference: puzzle-revisao
+        description: Retomar problemas comuns antes de revisar rapidamente.
+    interactive:
+      slug: game-revisao-rapida
+      title: Revisão Rápida — Mini-jogo
+      type: GAME
+      bnccDescription: Revisar textos curtos considerando destinatários, suportes e convenções do gênero.
+      estimatedTimeMinutes: 12
+      instructions:
+        - Leia o desafio de cada fase e verbalize suas hipóteses em voz alta.
+        - Digite a resposta usando o teclado ou selecione com o mouse.
+        - No final, explique qual pista ajudou a encontrar a solução.
+      objectives:
+        - Explorar revisão de bilhetes em situações guiadas pelo educador.
+        - Compartilhar estratégias pessoais com colegas durante a atividade.
+      game:
+        mode: math-challenge
+        timeLimitSeconds: 120
+        lives: 3
+        victoryMessage: Correções feitas! Os bilhetes estão prontos para envio.
+        gameOverMessage: Lembre dos critérios de revisão e tente novamente.
+        levels:
+          - id: revisao-rapida-level-1
+            challenge: 'Bilhete: ''Pai, vou chegar tarde'' Qual ajuste deixa mais claro? (incluir horário, trocar destinatário, apagar mensagem)'
+            answer: incluir horário
+            hint: Use revisão de bilhetes para encontrar a resposta.
+            successFeedback: Muito bem! Revisão de bilhetes ajudou a resolver a fase.
+            failureFeedback: Retome revisão de bilhetes e ajuste sua estratégia.
+          - id: revisao-rapida-level-2
+            challenge: 'Bilhete: ''Amiga, trouxe o livro'' Como revisar? (colocar ponto final, remover saudação, trocar livro por caderno)'
+            answer: colocar ponto final
+            hint: Use revisão de bilhetes para encontrar a resposta.
+            successFeedback: Muito bem! Revisão de bilhetes ajudou a resolver a fase.
+            failureFeedback: Retome revisão de bilhetes e ajuste sua estratégia.
+          - id: revisao-rapida-level-3
+            challenge: 'Bilhete: ''Equipe, reunião sala 2.'' Como melhorar? (acrescentar horário, tirar destinatário, usar letra cursiva)'
+            answer: acrescentar horário
+            hint: Use revisão de bilhetes para encontrar a resposta.
+            successFeedback: Muito bem! Revisão de bilhetes ajudou a resolver a fase.
+            failureFeedback: Retome revisão de bilhetes e ajuste sua estratégia.
+      accessibility:
+        hints:
+          - audience: ESTUDANTE
+            text: Use a tecla TAB para navegar pelos botões e Enter para confirmar.
+          - audience: EDUCADOR
+            text: Ofereça marcadores visuais ou tapetes de som para cada fase.
+        feedback:
+          success: Correções feitas! Os bilhetes estão prontos para envio.
+          encouragement: Revise as pistas sonoras e tente novamente sem pressa.
+          accessibility: Disponibilize apoios auditivos individuais e sinalize o tempo visualmente.
+        assets:
+          - slug: lp-silaba-ba
+            type: IMAGEM
+            title: Cartão da sílaba BA
+  - partial: ../../_partials/acolhimento-base.yaml
+    slug: roteiro-do-recado
+    title: Roteiro do Recado
+    prompt: Digite palavras-chave que deixam o bilhete completo.
+    type: GAME
+    difficulty: DOMINAR
+    bncc:
+      code: EF01LP10
+      habilidades:
+        - EF01LP10
+    learningObjectives:
+      - Explorar clareza e cortesia em situações guiadas pelo educador.
+      - Compartilhar estratégias pessoais com colegas durante a atividade.
+    description: Roteiro do Recado convida a turma a investigar clareza e cortesia com apoio de recursos multimodais.
+    metadata:
+      categoria: Clareza e cortesia
+      duracaoMinutos: 13
+      habilidades:
+        - EF01LP10
+      assetSlug: lp-letra-e
+      interactiveSlug: game-roteiro-do-recado
+    accessibility:
+      hints:
+        - audience: ESTUDANTE
+          text: Use as setas do teclado ou toque na tela para navegar enquanto destaca clareza e cortesia com gestos ou palmas.
+        - audience: EDUCADOR
+          text: Projete imagens de apoio, ofereça repetição de áudio e verbalize os passos para favorecer a percepção de clareza e cortesia.
+        - audience: FAMILIA
+          text: Envie sugestões de objetos ou cantigas que reforcem os sons trabalhados para continuidade em casa.
+      feedback:
+        success: Ótimo trabalho! Clareza e cortesia ficou mais claro com sua atenção aos detalhes.
+        retry: Retome com calma, respirando fundo e usando as pistas visuais oferecidas.
+        encouragement: Valorize cada tentativa e compare sons ou letras com apoio dos colegas.
+        accessibility: Disponibilize fones acolchoados, letras ampliadas e manipuláveis táteis para quem precisar.
+      assets:
+        - slug: lp-letra-e
+          type: IMAGEM
+          title: Ilustração da letra E
+    prerequisites:
+      - type: ACTIVITY
+        reference: checar-claridade
+        description: Refletir sobre detalhes que completam o recado.
+    interactive:
+      slug: game-roteiro-do-recado
+      title: Roteiro do Recado — Mini-jogo
+      type: GAME
+      bnccDescription: Revisar textos curtos considerando destinatários, suportes e convenções do gênero.
+      estimatedTimeMinutes: 13
+      instructions:
+        - Leia o desafio de cada fase e verbalize suas hipóteses em voz alta.
+        - Digite a resposta usando o teclado ou selecione com o mouse.
+        - No final, explique qual pista ajudou a encontrar a solução.
+      objectives:
+        - Explorar clareza e cortesia em situações guiadas pelo educador.
+        - Compartilhar estratégias pessoais com colegas durante a atividade.
+      game:
+        mode: math-challenge
+        timeLimitSeconds: 120
+        lives: 3
+        victoryMessage: Recado completo! Suas palavras tornaram a mensagem gentil e clara.
+        gameOverMessage: Revise o roteiro do bilhete com a turma e tente novamente.
+        levels:
+          - id: roteiro-do-recado-level-1
+            challenge: Digite uma palavra que indique cortesia no bilhete.
+            answer: por favor
+            hint: Use clareza e cortesia para encontrar a resposta.
+            successFeedback: Muito bem! Clareza e cortesia ajudou a resolver a fase.
+            failureFeedback: Retome clareza e cortesia e ajuste sua estratégia.
+          - id: roteiro-do-recado-level-2
+            challenge: Digite a palavra que mostra quem escreveu o bilhete.
+            answer: assinatura
+            hint: Use clareza e cortesia para encontrar a resposta.
+            successFeedback: Muito bem! Clareza e cortesia ajudou a resolver a fase.
+            failureFeedback: Retome clareza e cortesia e ajuste sua estratégia.
+          - id: roteiro-do-recado-level-3
+            challenge: Digite a palavra que informa a hora do recado.
+            answer: horário
+            hint: Use clareza e cortesia para encontrar a resposta.
+            successFeedback: Muito bem! Clareza e cortesia ajudou a resolver a fase.
+            failureFeedback: Retome clareza e cortesia e ajuste sua estratégia.
+      accessibility:
+        hints:
+          - audience: ESTUDANTE
+            text: Use a tecla TAB para navegar pelos botões e Enter para confirmar.
+          - audience: EDUCADOR
+            text: Ofereça marcadores visuais ou tapetes de som para cada fase.
+        feedback:
+          success: Recado completo! Suas palavras tornaram a mensagem gentil e clara.
+          encouragement: Revise as pistas sonoras e tente novamente sem pressa.
+          accessibility: Disponibilize apoios auditivos individuais e sinalize o tempo visualmente.
+        assets:
+          - slug: lp-letra-e
+            type: IMAGEM
+            title: Ilustração da letra E

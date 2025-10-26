@@ -1,0 +1,1271 @@
+module:
+  slug: brincando-com-sons
+  title: Brincando com Sons
+  subtitle: Consciência Fonológica em Movimento
+  description: Sequência lúdica para investigar sons iniciais, rimas e sílabas com apoio de gestos, cantigas e jogos sonoros.
+  theme: Língua Portuguesa
+  discipline: Língua Portuguesa
+  ageGroupSlug: fundamental-anos-iniciais
+  learningPathSlug: descobertas-palavras
+  primaryBnccCode: EF01LP01
+  secondaryBnccCodes:
+    - EF01LP02
+  learningOutcomes:
+    - Reconhecer sons iniciais e finais em palavras do cotidiano.
+    - Identificar rimas e padrões sonoros em cantigas e parlendas.
+    - Segmentar palavras em sílabas utilizando marcadores rítmicos e visuais.
+  tags:
+    - consciencia-fonologica
+    - rimas
+    - silabas
+activities:
+  - partial: ../../_partials/acolhimento-base.yaml
+    slug: som-inicial-surpresa
+    title: Som Inicial Surpresa
+    prompt: Descubra qual imagem começa com o mesmo som apresentado no áudio.
+    type: QUIZ
+    difficulty: INICIAR
+    bncc:
+      code: EF01LP01
+      habilidades:
+        - EF01LP01
+    learningObjectives:
+      - Explorar sons iniciais em situações guiadas pelo educador.
+      - Compartilhar estratégias pessoais com colegas durante a atividade.
+    description: Som Inicial Surpresa convida a turma a investigar sons iniciais com apoio de recursos multimodais.
+    metadata:
+      categoria: Som inicial
+      duracaoMinutos: 8
+      habilidades:
+        - EF01LP01
+      assetSlug: lp-letra-a
+      interactiveSlug: quiz-som-inicial-surpresa
+    accessibility:
+      hints:
+        - audience: ESTUDANTE
+          text: Use as setas do teclado ou toque na tela para navegar enquanto destaca sons iniciais com gestos ou palmas.
+        - audience: EDUCADOR
+          text: Projete imagens de apoio, ofereça repetição de áudio e verbalize os passos para favorecer a percepção de sons iniciais.
+        - audience: FAMILIA
+          text: Envie sugestões de objetos ou cantigas que reforcem os sons trabalhados para continuidade em casa.
+      feedback:
+        success: Ótimo trabalho! Sons iniciais ficou mais claro com sua atenção aos detalhes.
+        retry: Retome com calma, respirando fundo e usando as pistas visuais oferecidas.
+        encouragement: Valorize cada tentativa e compare sons ou letras com apoio dos colegas.
+        accessibility: Disponibilize fones acolchoados, letras ampliadas e manipuláveis táteis para quem precisar.
+      assets:
+        - slug: lp-letra-a
+          type: IMAGEM
+          title: Ilustração da letra A
+    prerequisites:
+      - type: SKILL
+        reference: EF01LP01
+        description: Participar de jogos orais com repetição de sons iniciais.
+    interactive:
+      slug: quiz-som-inicial-surpresa
+      title: Som Inicial Surpresa — Quiz
+      type: QUIZ
+      bnccDescription: Perceber rimas, aliterações e sons iniciais em textos orais e jogos de linguagem.
+      estimatedTimeMinutes: 8
+      instructions:
+        - Leia ou escute o desafio com atenção antes de registrar a resposta.
+        - Use as teclas numéricas ou clique nas alternativas para responder.
+        - Compartilhe com a turma novas palavras relacionadas após concluir o desafio.
+      objectives:
+        - Explorar sons iniciais em situações guiadas pelo educador.
+        - Compartilhar estratégias pessoais com colegas durante a atividade.
+      scoring:
+        correct: 10
+        incorrect: 0
+      adaptive:
+        increaseAfter: 2
+        decreaseAfter: 1
+      questions:
+        - id: som-inicial-surpresa-q1
+          type: multiple-choice
+          prompt: Qual palavra começa com o som /m/?
+          hint: Repita cada palavra em voz alta e sinta a vibração inicial.
+          options:
+            - id: som-inicial-surpresa-q1-1
+              text: Macaco
+              isCorrect: true
+              feedback: Excelente! 'Macaco' evidencia sons iniciais.
+            - id: som-inicial-surpresa-q1-2
+              text: Bola
+              isCorrect: false
+              feedback: Ainda não. 'Bola' não representa sons iniciais.
+            - id: som-inicial-surpresa-q1-3
+              text: Uva
+              isCorrect: false
+              feedback: Ainda não. 'Uva' não representa sons iniciais.
+        - id: som-inicial-surpresa-q2
+          type: true-false
+          prompt: A palavra 'mesa' começa com o mesmo som de 'mel'?
+          hint: 'Fale devagar: me-sa, mel.'
+          statement: As palavras 'mesa' e 'mel' começam com o som /m/.
+          answer: true
+          feedback:
+            'true': Muito bem! A afirmação confirma sons iniciais.
+            'false': 'Revise: sons iniciais está presente na afirmação.'
+      accessibility:
+        hints:
+          - audience: ESTUDANTE
+            text: Use TAB e ENTER para navegar e confirmar sua escolha.
+          - audience: EDUCADOR
+            text: Projete legendas e permita repetição do áudio para quem precisar.
+        feedback:
+          success: Excelente! Sons iniciais ficou evidente nas suas respostas.
+          encouragement: Caso erre, leia novamente com voz pausada e utilize marcadores visuais.
+          accessibility: Ofereça apoio auditivo individual e contraste elevado nos botões.
+        assets:
+          - slug: lp-letra-a
+            type: IMAGEM
+            title: Ilustração da letra A
+  - partial: ../../_partials/acolhimento-base.yaml
+    slug: rimas-do-recreio
+    title: Rimas do Recreio
+    prompt: Escute a parlenda e escolha a palavra que rima com a palavra destacada.
+    type: QUIZ
+    difficulty: PRATICAR
+    bncc:
+      code: EF01LP01
+      habilidades:
+        - EF01LP01
+    learningObjectives:
+      - Explorar rimas em situações guiadas pelo educador.
+      - Compartilhar estratégias pessoais com colegas durante a atividade.
+    description: Rimas do Recreio convida a turma a investigar rimas com apoio de recursos multimodais.
+    metadata:
+      categoria: Rimas
+      duracaoMinutos: 8
+      habilidades:
+        - EF01LP01
+      assetSlug: lp-letra-e
+      interactiveSlug: quiz-rimas-do-recreio
+    accessibility:
+      hints:
+        - audience: ESTUDANTE
+          text: Use as setas do teclado ou toque na tela para navegar enquanto destaca rimas com gestos ou palmas.
+        - audience: EDUCADOR
+          text: Projete imagens de apoio, ofereça repetição de áudio e verbalize os passos para favorecer a percepção de rimas.
+        - audience: FAMILIA
+          text: Envie sugestões de objetos ou cantigas que reforcem os sons trabalhados para continuidade em casa.
+      feedback:
+        success: Ótimo trabalho! Rimas ficou mais claro com sua atenção aos detalhes.
+        retry: Retome com calma, respirando fundo e usando as pistas visuais oferecidas.
+        encouragement: Valorize cada tentativa e compare sons ou letras com apoio dos colegas.
+        accessibility: Disponibilize fones acolchoados, letras ampliadas e manipuláveis táteis para quem precisar.
+      assets:
+        - slug: lp-letra-e
+          type: IMAGEM
+          title: Ilustração da letra E
+    prerequisites:
+      - type: ACTIVITY
+        reference: som-inicial-surpresa
+        description: Retomar a escuta atenta antes de buscar rimas.
+    interactive:
+      slug: quiz-rimas-do-recreio
+      title: Rimas do Recreio — Quiz
+      type: QUIZ
+      bnccDescription: Perceber rimas, aliterações e sons iniciais em textos orais e jogos de linguagem.
+      estimatedTimeMinutes: 8
+      instructions:
+        - Leia ou escute o desafio com atenção antes de registrar a resposta.
+        - Use as teclas numéricas ou clique nas alternativas para responder.
+        - Compartilhe com a turma novas palavras relacionadas após concluir o desafio.
+      objectives:
+        - Explorar rimas em situações guiadas pelo educador.
+        - Compartilhar estratégias pessoais com colegas durante a atividade.
+      scoring:
+        correct: 10
+        incorrect: 0
+      adaptive:
+        increaseAfter: 2
+        decreaseAfter: 1
+      questions:
+        - id: rimas-do-recreio-q1
+          type: multiple-choice
+          prompt: Qual palavra rima com 'pato'?
+          hint: Perceba o som final das palavras.
+          options:
+            - id: rimas-do-recreio-q1-1
+              text: Gato
+              isCorrect: true
+              feedback: Excelente! 'Gato' evidencia rimas.
+            - id: rimas-do-recreio-q1-2
+              text: Pente
+              isCorrect: false
+              feedback: Ainda não. 'Pente' não representa rimas.
+            - id: rimas-do-recreio-q1-3
+              text: Caneca
+              isCorrect: false
+              feedback: Ainda não. 'Caneca' não representa rimas.
+        - id: rimas-do-recreio-q2
+          type: true-false
+          prompt: A palavra 'bola' rima com 'escola'?
+          hint: Compare o final das duas palavras.
+          statement: As palavras 'bola' e 'escola' rimam.
+          answer: true
+          feedback:
+            'true': Muito bem! A afirmação confirma rimas.
+            'false': 'Revise: rimas está presente na afirmação.'
+      accessibility:
+        hints:
+          - audience: ESTUDANTE
+            text: Use TAB e ENTER para navegar e confirmar sua escolha.
+          - audience: EDUCADOR
+            text: Projete legendas e permita repetição do áudio para quem precisar.
+        feedback:
+          success: Excelente! Rimas ficou evidente nas suas respostas.
+          encouragement: Caso erre, leia novamente com voz pausada e utilize marcadores visuais.
+          accessibility: Ofereça apoio auditivo individual e contraste elevado nos botões.
+        assets:
+          - slug: lp-letra-e
+            type: IMAGEM
+            title: Ilustração da letra E
+  - partial: ../../_partials/acolhimento-base.yaml
+    slug: eco-dos-sons
+    title: Eco dos Sons
+    prompt: Identifique palavras que terminam com sons parecidos.
+    type: QUIZ
+    difficulty: DOMINAR
+    bncc:
+      code: EF01LP01
+      habilidades:
+        - EF01LP01
+    learningObjectives:
+      - Explorar sons finais em situações guiadas pelo educador.
+      - Compartilhar estratégias pessoais com colegas durante a atividade.
+    description: Eco dos Sons convida a turma a investigar sons finais com apoio de recursos multimodais.
+    metadata:
+      categoria: Sons finais
+      duracaoMinutos: 9
+      habilidades:
+        - EF01LP01
+      assetSlug: lp-silaba-ba
+      interactiveSlug: quiz-eco-dos-sons
+    accessibility:
+      hints:
+        - audience: ESTUDANTE
+          text: Use as setas do teclado ou toque na tela para navegar enquanto destaca sons finais com gestos ou palmas.
+        - audience: EDUCADOR
+          text: Projete imagens de apoio, ofereça repetição de áudio e verbalize os passos para favorecer a percepção de sons finais.
+        - audience: FAMILIA
+          text: Envie sugestões de objetos ou cantigas que reforcem os sons trabalhados para continuidade em casa.
+      feedback:
+        success: Ótimo trabalho! Sons finais ficou mais claro com sua atenção aos detalhes.
+        retry: Retome com calma, respirando fundo e usando as pistas visuais oferecidas.
+        encouragement: Valorize cada tentativa e compare sons ou letras com apoio dos colegas.
+        accessibility: Disponibilize fones acolchoados, letras ampliadas e manipuláveis táteis para quem precisar.
+      assets:
+        - slug: lp-silaba-ba
+          type: IMAGEM
+          title: Cartão da sílaba BA
+    prerequisites:
+      - type: ACTIVITY
+        reference: rimas-do-recreio
+        description: Relembrar como identificar sons que se repetem no final.
+    interactive:
+      slug: quiz-eco-dos-sons
+      title: Eco dos Sons — Quiz
+      type: QUIZ
+      bnccDescription: Perceber rimas, aliterações e sons iniciais em textos orais e jogos de linguagem.
+      estimatedTimeMinutes: 9
+      instructions:
+        - Leia ou escute o desafio com atenção antes de registrar a resposta.
+        - Use as teclas numéricas ou clique nas alternativas para responder.
+        - Compartilhe com a turma novas palavras relacionadas após concluir o desafio.
+      objectives:
+        - Explorar sons finais em situações guiadas pelo educador.
+        - Compartilhar estratégias pessoais com colegas durante a atividade.
+      scoring:
+        correct: 10
+        incorrect: 0
+      adaptive:
+        increaseAfter: 2
+        decreaseAfter: 1
+      questions:
+        - id: eco-dos-sons-q1
+          type: multiple-choice
+          prompt: Qual palavra termina com o mesmo som de 'sol'?
+          hint: Perceba o som final de cada palavra.
+          options:
+            - id: eco-dos-sons-q1-1
+              text: Farol
+              isCorrect: true
+              feedback: Excelente! 'Farol' evidencia sons finais.
+            - id: eco-dos-sons-q1-2
+              text: Pato
+              isCorrect: false
+              feedback: Ainda não. 'Pato' não representa sons finais.
+            - id: eco-dos-sons-q1-3
+              text: Cola
+              isCorrect: false
+              feedback: Ainda não. 'Cola' não representa sons finais.
+        - id: eco-dos-sons-q2
+          type: true-false
+          prompt: As palavras 'pente' e 'gente' terminam com sons parecidos?
+          hint: Fale lentamente e compare o final das palavras.
+          statement: As palavras 'pente' e 'gente' terminam com o som /te/.
+          answer: true
+          feedback:
+            'true': Muito bem! A afirmação confirma sons finais.
+            'false': 'Revise: sons finais está presente na afirmação.'
+      accessibility:
+        hints:
+          - audience: ESTUDANTE
+            text: Use TAB e ENTER para navegar e confirmar sua escolha.
+          - audience: EDUCADOR
+            text: Projete legendas e permita repetição do áudio para quem precisar.
+        feedback:
+          success: Excelente! Sons finais ficou evidente nas suas respostas.
+          encouragement: Caso erre, leia novamente com voz pausada e utilize marcadores visuais.
+          accessibility: Ofereça apoio auditivo individual e contraste elevado nos botões.
+        assets:
+          - slug: lp-silaba-ba
+            type: IMAGEM
+            title: Cartão da sílaba BA
+  - partial: ../../_partials/acolhimento-base.yaml
+    slug: trilho-das-silabas
+    title: Trilho das Sílabas
+    prompt: Conte quantas partes sonoras cada palavra possui.
+    type: QUIZ
+    difficulty: INICIAR
+    bncc:
+      code: EF01LP02
+      habilidades:
+        - EF01LP02
+    learningObjectives:
+      - Explorar segmentação silábica em situações guiadas pelo educador.
+      - Compartilhar estratégias pessoais com colegas durante a atividade.
+    description: Trilho das Sílabas convida a turma a investigar segmentação silábica com apoio de recursos multimodais.
+    metadata:
+      categoria: Segmentação silábica
+      duracaoMinutos: 8
+      habilidades:
+        - EF01LP02
+      assetSlug: lp-silaba-la
+      interactiveSlug: quiz-trilho-das-silabas
+    accessibility:
+      hints:
+        - audience: ESTUDANTE
+          text: Use as setas do teclado ou toque na tela para navegar enquanto destaca segmentação silábica com gestos ou palmas.
+        - audience: EDUCADOR
+          text: Projete imagens de apoio, ofereça repetição de áudio e verbalize os passos para favorecer a percepção de segmentação silábica.
+        - audience: FAMILIA
+          text: Envie sugestões de objetos ou cantigas que reforcem os sons trabalhados para continuidade em casa.
+      feedback:
+        success: Ótimo trabalho! Segmentação silábica ficou mais claro com sua atenção aos detalhes.
+        retry: Retome com calma, respirando fundo e usando as pistas visuais oferecidas.
+        encouragement: Valorize cada tentativa e compare sons ou letras com apoio dos colegas.
+        accessibility: Disponibilize fones acolchoados, letras ampliadas e manipuláveis táteis para quem precisar.
+      assets:
+        - slug: lp-silaba-la
+          type: IMAGEM
+          title: Cartão da sílaba LA
+    prerequisites:
+      - type: SKILL
+        reference: EF01LP02
+        description: Experimentar bater palmas para cada sílaba em palavras do cotidiano.
+    interactive:
+      slug: quiz-trilho-das-silabas
+      title: Trilho das Sílabas — Quiz
+      type: QUIZ
+      bnccDescription: Segmentar e manipular sílabas em palavras orais com apoio de gestos e recursos sonoros.
+      estimatedTimeMinutes: 8
+      instructions:
+        - Leia ou escute o desafio com atenção antes de registrar a resposta.
+        - Use as teclas numéricas ou clique nas alternativas para responder.
+        - Compartilhe com a turma novas palavras relacionadas após concluir o desafio.
+      objectives:
+        - Explorar segmentação silábica em situações guiadas pelo educador.
+        - Compartilhar estratégias pessoais com colegas durante a atividade.
+      scoring:
+        correct: 10
+        incorrect: 0
+      adaptive:
+        increaseAfter: 2
+        decreaseAfter: 1
+      questions:
+        - id: trilho-das-silabas-q1
+          type: multiple-choice
+          prompt: Qual palavra tem três sílabas?
+          hint: Bata palmas para cada parte da palavra.
+          options:
+            - id: trilho-das-silabas-q1-1
+              text: Palito
+              isCorrect: true
+              feedback: Excelente! 'Palito' evidencia segmentação silábica.
+            - id: trilho-das-silabas-q1-2
+              text: Bola
+              isCorrect: false
+              feedback: Ainda não. 'Bola' não representa segmentação silábica.
+            - id: trilho-das-silabas-q1-3
+              text: Sol
+              isCorrect: false
+              feedback: Ainda não. 'Sol' não representa segmentação silábica.
+        - id: trilho-das-silabas-q2
+          type: true-false
+          prompt: A palavra 'banana' tem três sílabas?
+          hint: 'Separe devagar: ba-na-na.'
+          statement: A palavra 'banana' possui três sílabas.
+          answer: true
+          feedback:
+            'true': Muito bem! A afirmação confirma segmentação silábica.
+            'false': 'Revise: segmentação silábica está presente na afirmação.'
+      accessibility:
+        hints:
+          - audience: ESTUDANTE
+            text: Use TAB e ENTER para navegar e confirmar sua escolha.
+          - audience: EDUCADOR
+            text: Projete legendas e permita repetição do áudio para quem precisar.
+        feedback:
+          success: Excelente! Segmentação silábica ficou evidente nas suas respostas.
+          encouragement: Caso erre, leia novamente com voz pausada e utilize marcadores visuais.
+          accessibility: Ofereça apoio auditivo individual e contraste elevado nos botões.
+        assets:
+          - slug: lp-silaba-la
+            type: IMAGEM
+            title: Cartão da sílaba LA
+  - partial: ../../_partials/acolhimento-base.yaml
+    slug: detetive-dos-pedacinhos
+    title: Detetive dos Pedacinhos
+    prompt: Escolha a opção que mostra a divisão correta das sílabas.
+    type: QUIZ
+    difficulty: PRATICAR
+    bncc:
+      code: EF01LP02
+      habilidades:
+        - EF01LP02
+    learningObjectives:
+      - Explorar divisão silábica em situações guiadas pelo educador.
+      - Compartilhar estratégias pessoais com colegas durante a atividade.
+    description: Detetive dos Pedacinhos convida a turma a investigar divisão silábica com apoio de recursos multimodais.
+    metadata:
+      categoria: Sílabas
+      duracaoMinutos: 9
+      habilidades:
+        - EF01LP02
+      assetSlug: lp-material-caderno
+      interactiveSlug: quiz-detetive-dos-pedacinhos
+    accessibility:
+      hints:
+        - audience: ESTUDANTE
+          text: Use as setas do teclado ou toque na tela para navegar enquanto destaca divisão silábica com gestos ou palmas.
+        - audience: EDUCADOR
+          text: Projete imagens de apoio, ofereça repetição de áudio e verbalize os passos para favorecer a percepção de divisão silábica.
+        - audience: FAMILIA
+          text: Envie sugestões de objetos ou cantigas que reforcem os sons trabalhados para continuidade em casa.
+      feedback:
+        success: Ótimo trabalho! Divisão silábica ficou mais claro com sua atenção aos detalhes.
+        retry: Retome com calma, respirando fundo e usando as pistas visuais oferecidas.
+        encouragement: Valorize cada tentativa e compare sons ou letras com apoio dos colegas.
+        accessibility: Disponibilize fones acolchoados, letras ampliadas e manipuláveis táteis para quem precisar.
+      assets:
+        - slug: lp-material-caderno
+          type: IMAGEM
+          title: Caderno colorido para escrita
+    prerequisites:
+      - type: ACTIVITY
+        reference: trilho-das-silabas
+        description: Retomar a contagem de sílabas antes de analisar a escrita.
+    interactive:
+      slug: quiz-detetive-dos-pedacinhos
+      title: Detetive dos Pedacinhos — Quiz
+      type: QUIZ
+      bnccDescription: Segmentar e manipular sílabas em palavras orais com apoio de gestos e recursos sonoros.
+      estimatedTimeMinutes: 9
+      instructions:
+        - Leia ou escute o desafio com atenção antes de registrar a resposta.
+        - Use as teclas numéricas ou clique nas alternativas para responder.
+        - Compartilhe com a turma novas palavras relacionadas após concluir o desafio.
+      objectives:
+        - Explorar divisão silábica em situações guiadas pelo educador.
+        - Compartilhar estratégias pessoais com colegas durante a atividade.
+      scoring:
+        correct: 10
+        incorrect: 0
+      adaptive:
+        increaseAfter: 2
+        decreaseAfter: 1
+      questions:
+        - id: detetive-dos-pedacinhos-q1
+          type: multiple-choice
+          prompt: Qual opção mostra a divisão correta da palavra 'caderno'?
+          hint: 'Pronuncie lentamente: ca-der-no.'
+          options:
+            - id: detetive-dos-pedacinhos-q1-1
+              text: CA-DER-NO
+              isCorrect: true
+              feedback: Excelente! 'CA-DER-NO' evidencia divisão silábica.
+            - id: detetive-dos-pedacinhos-q1-2
+              text: CAD-ER-NO
+              isCorrect: false
+              feedback: Ainda não. 'CAD-ER-NO' não representa divisão silábica.
+            - id: detetive-dos-pedacinhos-q1-3
+              text: CA-DR-NO
+              isCorrect: false
+              feedback: Ainda não. 'CA-DR-NO' não representa divisão silábica.
+        - id: detetive-dos-pedacinhos-q2
+          type: true-false
+          prompt: As sílabas de 'janela' são JA-NE-LA?
+          hint: 'Repita: ja-ne-la.'
+          statement: A palavra 'janela' pode ser segmentada em JA-NE-LA.
+          answer: true
+          feedback:
+            'true': Muito bem! A afirmação confirma divisão silábica.
+            'false': 'Revise: divisão silábica está presente na afirmação.'
+      accessibility:
+        hints:
+          - audience: ESTUDANTE
+            text: Use TAB e ENTER para navegar e confirmar sua escolha.
+          - audience: EDUCADOR
+            text: Projete legendas e permita repetição do áudio para quem precisar.
+        feedback:
+          success: Excelente! Divisão silábica ficou evidente nas suas respostas.
+          encouragement: Caso erre, leia novamente com voz pausada e utilize marcadores visuais.
+          accessibility: Ofereça apoio auditivo individual e contraste elevado nos botões.
+        assets:
+          - slug: lp-material-caderno
+            type: IMAGEM
+            title: Caderno colorido para escrita
+  - partial: ../../_partials/acolhimento-base.yaml
+    slug: batida-do-nome
+    title: Batida do Nome
+    prompt: Relacione batidas de palmas à quantidade de sílabas.
+    type: QUIZ
+    difficulty: DOMINAR
+    bncc:
+      code: EF01LP02
+      habilidades:
+        - EF01LP02
+    learningObjectives:
+      - Explorar contagem de sílabas em situações guiadas pelo educador.
+      - Compartilhar estratégias pessoais com colegas durante a atividade.
+    description: Batida do Nome convida a turma a investigar contagem de sílabas com apoio de recursos multimodais.
+    metadata:
+      categoria: Ritmo das sílabas
+      duracaoMinutos: 9
+      habilidades:
+        - EF01LP02
+      assetSlug: lp-letra-e
+      interactiveSlug: quiz-batida-do-nome
+    accessibility:
+      hints:
+        - audience: ESTUDANTE
+          text: Use as setas do teclado ou toque na tela para navegar enquanto destaca contagem de sílabas com gestos ou palmas.
+        - audience: EDUCADOR
+          text: Projete imagens de apoio, ofereça repetição de áudio e verbalize os passos para favorecer a percepção de contagem de sílabas.
+        - audience: FAMILIA
+          text: Envie sugestões de objetos ou cantigas que reforcem os sons trabalhados para continuidade em casa.
+      feedback:
+        success: Ótimo trabalho! Contagem de sílabas ficou mais claro com sua atenção aos detalhes.
+        retry: Retome com calma, respirando fundo e usando as pistas visuais oferecidas.
+        encouragement: Valorize cada tentativa e compare sons ou letras com apoio dos colegas.
+        accessibility: Disponibilize fones acolchoados, letras ampliadas e manipuláveis táteis para quem precisar.
+      assets:
+        - slug: lp-letra-e
+          type: IMAGEM
+          title: Ilustração da letra E
+    prerequisites:
+      - type: ACTIVITY
+        reference: detetive-dos-pedacinhos
+        description: Usar a divisão anterior para reforçar a contagem de sílabas.
+    interactive:
+      slug: quiz-batida-do-nome
+      title: Batida do Nome — Quiz
+      type: QUIZ
+      bnccDescription: Segmentar e manipular sílabas em palavras orais com apoio de gestos e recursos sonoros.
+      estimatedTimeMinutes: 9
+      instructions:
+        - Leia ou escute o desafio com atenção antes de registrar a resposta.
+        - Use as teclas numéricas ou clique nas alternativas para responder.
+        - Compartilhe com a turma novas palavras relacionadas após concluir o desafio.
+      objectives:
+        - Explorar contagem de sílabas em situações guiadas pelo educador.
+        - Compartilhar estratégias pessoais com colegas durante a atividade.
+      scoring:
+        correct: 10
+        incorrect: 0
+      adaptive:
+        increaseAfter: 2
+        decreaseAfter: 1
+      questions:
+        - id: batida-do-nome-q1
+          type: multiple-choice
+          prompt: Quantas palmas você bate para a palavra 'caderno'?
+          hint: 'Conte as sílabas: ca-der-no.'
+          options:
+            - id: batida-do-nome-q1-1
+              text: 3 palmas
+              isCorrect: true
+              feedback: Excelente! '3 palmas' evidencia contagem de sílabas.
+            - id: batida-do-nome-q1-2
+              text: 2 palmas
+              isCorrect: false
+              feedback: Ainda não. '2 palmas' não representa contagem de sílabas.
+            - id: batida-do-nome-q1-3
+              text: 4 palmas
+              isCorrect: false
+              feedback: Ainda não. '4 palmas' não representa contagem de sílabas.
+        - id: batida-do-nome-q2
+          type: true-false
+          prompt: A palavra 'fada' tem duas palmas?
+          hint: Diga FA-DA e conte.
+          statement: A palavra 'fada' possui duas sílabas.
+          answer: true
+          feedback:
+            'true': Muito bem! A afirmação confirma contagem de sílabas.
+            'false': 'Revise: contagem de sílabas está presente na afirmação.'
+      accessibility:
+        hints:
+          - audience: ESTUDANTE
+            text: Use TAB e ENTER para navegar e confirmar sua escolha.
+          - audience: EDUCADOR
+            text: Projete legendas e permita repetição do áudio para quem precisar.
+        feedback:
+          success: Excelente! Contagem de sílabas ficou evidente nas suas respostas.
+          encouragement: Caso erre, leia novamente com voz pausada e utilize marcadores visuais.
+          accessibility: Ofereça apoio auditivo individual e contraste elevado nos botões.
+        assets:
+          - slug: lp-letra-e
+            type: IMAGEM
+            title: Ilustração da letra E
+  - partial: ../../_partials/acolhimento-base.yaml
+    slug: puzzle-rimas-sonoras
+    title: Puzzle Rimas Sonoras
+    prompt: Combine palavras que rimam para formar duplas divertidas.
+    type: PUZZLE
+    difficulty: INICIAR
+    bncc:
+      code: EF01LP01
+      habilidades:
+        - EF01LP01
+    learningObjectives:
+      - Explorar rimas em situações guiadas pelo educador.
+      - Compartilhar estratégias pessoais com colegas durante a atividade.
+    description: Puzzle Rimas Sonoras convida a turma a investigar rimas com apoio de recursos multimodais.
+    metadata:
+      categoria: Rimas
+      duracaoMinutos: 10
+      habilidades:
+        - EF01LP01
+      assetSlug: lp-silaba-ba
+      interactiveSlug: puzzle-puzzle-rimas-sonoras
+    accessibility:
+      hints:
+        - audience: ESTUDANTE
+          text: Use as setas do teclado ou toque na tela para navegar enquanto destaca rimas com gestos ou palmas.
+        - audience: EDUCADOR
+          text: Projete imagens de apoio, ofereça repetição de áudio e verbalize os passos para favorecer a percepção de rimas.
+        - audience: FAMILIA
+          text: Envie sugestões de objetos ou cantigas que reforcem os sons trabalhados para continuidade em casa.
+      feedback:
+        success: Ótimo trabalho! Rimas ficou mais claro com sua atenção aos detalhes.
+        retry: Retome com calma, respirando fundo e usando as pistas visuais oferecidas.
+        encouragement: Valorize cada tentativa e compare sons ou letras com apoio dos colegas.
+        accessibility: Disponibilize fones acolchoados, letras ampliadas e manipuláveis táteis para quem precisar.
+      assets:
+        - slug: lp-silaba-ba
+          type: IMAGEM
+          title: Cartão da sílaba BA
+    prerequisites:
+      - type: ACTIVITY
+        reference: rimas-do-recreio
+        description: Retomar exemplos de rimas antes de montar o quebra-cabeça.
+    interactive:
+      slug: puzzle-puzzle-rimas-sonoras
+      title: Puzzle Rimas Sonoras — Quebra-cabeça
+      type: PUZZLE
+      bnccDescription: Perceber rimas, aliterações e sons iniciais em textos orais e jogos de linguagem.
+      estimatedTimeMinutes: 10
+      instructions:
+        - Observe cada cartão e combine arrastando ou usando TAB + ENTER.
+        - Converse sobre o motivo da combinação antes de confirmar.
+        - Revise as duplas formadas e proponha novas associações.
+      objectives:
+        - Explorar rimas em situações guiadas pelo educador.
+        - Compartilhar estratégias pessoais com colegas durante a atividade.
+      puzzle:
+        mode: matching
+        successFeedback: Tudo combinado! Rimas ficou evidente nas associações.
+        errorFeedback: Observe novamente os sons, conte devagar e tente outra combinação.
+        pairs:
+          - id: puzzle-rimas-sonoras-pair-1
+            prompt: Pato
+            match: Gato
+            hint: Observe rimas presente em 'Pato'.
+            feedback: Perfeito! 'Gato' combina com 'Pato' porque evidencia rimas.
+          - id: puzzle-rimas-sonoras-pair-2
+            prompt: Pente
+            match: Dente
+            hint: Observe rimas presente em 'Pente'.
+            feedback: Perfeito! 'Dente' combina com 'Pente' porque evidencia rimas.
+          - id: puzzle-rimas-sonoras-pair-3
+            prompt: Chuva
+            match: Uva
+            hint: Observe rimas presente em 'Chuva'.
+            feedback: Perfeito! 'Uva' combina com 'Chuva' porque evidencia rimas.
+      accessibility:
+        hints:
+          - audience: ESTUDANTE
+            text: Use as setas para navegar entre os cartões e Enter para selecionar.
+          - audience: EDUCADOR
+            text: Disponibilize cartões físicos para manipulação simultânea.
+        feedback:
+          success: Tudo combinado! Rimas ficou evidente nas associações.
+          encouragement: Compare sons lentamente e utilize gestos amplos para apoiar a associação.
+          accessibility: Ofereça cartões com textura ou relevo para ampliar as pistas sensoriais.
+        assets:
+          - slug: lp-silaba-ba
+            type: IMAGEM
+            title: Cartão da sílaba BA
+  - partial: ../../_partials/acolhimento-base.yaml
+    slug: puzzle-som-inicial
+    title: Caixa dos Sons Iniciais
+    prompt: Associe palavras que compartilham o mesmo som inicial.
+    type: PUZZLE
+    difficulty: PRATICAR
+    bncc:
+      code: EF01LP01
+      habilidades:
+        - EF01LP01
+    learningObjectives:
+      - Explorar sons iniciais em situações guiadas pelo educador.
+      - Compartilhar estratégias pessoais com colegas durante a atividade.
+    description: Caixa dos Sons Iniciais convida a turma a investigar sons iniciais com apoio de recursos multimodais.
+    metadata:
+      categoria: Som inicial
+      duracaoMinutos: 10
+      habilidades:
+        - EF01LP01
+      assetSlug: lp-letra-a
+      interactiveSlug: puzzle-puzzle-som-inicial
+    accessibility:
+      hints:
+        - audience: ESTUDANTE
+          text: Use as setas do teclado ou toque na tela para navegar enquanto destaca sons iniciais com gestos ou palmas.
+        - audience: EDUCADOR
+          text: Projete imagens de apoio, ofereça repetição de áudio e verbalize os passos para favorecer a percepção de sons iniciais.
+        - audience: FAMILIA
+          text: Envie sugestões de objetos ou cantigas que reforcem os sons trabalhados para continuidade em casa.
+      feedback:
+        success: Ótimo trabalho! Sons iniciais ficou mais claro com sua atenção aos detalhes.
+        retry: Retome com calma, respirando fundo e usando as pistas visuais oferecidas.
+        encouragement: Valorize cada tentativa e compare sons ou letras com apoio dos colegas.
+        accessibility: Disponibilize fones acolchoados, letras ampliadas e manipuláveis táteis para quem precisar.
+      assets:
+        - slug: lp-letra-a
+          type: IMAGEM
+          title: Ilustração da letra A
+    prerequisites:
+      - type: ACTIVITY
+        reference: eco-dos-sons
+        description: Comparar sons finais antes de revisar os sons iniciais.
+    interactive:
+      slug: puzzle-puzzle-som-inicial
+      title: Caixa dos Sons Iniciais — Quebra-cabeça
+      type: PUZZLE
+      bnccDescription: Perceber rimas, aliterações e sons iniciais em textos orais e jogos de linguagem.
+      estimatedTimeMinutes: 10
+      instructions:
+        - Observe cada cartão e combine arrastando ou usando TAB + ENTER.
+        - Converse sobre o motivo da combinação antes de confirmar.
+        - Revise as duplas formadas e proponha novas associações.
+      objectives:
+        - Explorar sons iniciais em situações guiadas pelo educador.
+        - Compartilhar estratégias pessoais com colegas durante a atividade.
+      puzzle:
+        mode: matching
+        successFeedback: Tudo combinado! Sons iniciais ficou evidente nas associações.
+        errorFeedback: Observe novamente os sons, conte devagar e tente outra combinação.
+        pairs:
+          - id: puzzle-som-inicial-pair-1
+            prompt: Bola
+            match: Bolo
+            hint: Observe sons iniciais presente em 'Bola'.
+            feedback: Perfeito! 'Bolo' combina com 'Bola' porque evidencia sons iniciais.
+          - id: puzzle-som-inicial-pair-2
+            prompt: Sapo
+            match: Sapato
+            hint: Observe sons iniciais presente em 'Sapo'.
+            feedback: Perfeito! 'Sapato' combina com 'Sapo' porque evidencia sons iniciais.
+          - id: puzzle-som-inicial-pair-3
+            prompt: Mala
+            match: Macaco
+            hint: Observe sons iniciais presente em 'Mala'.
+            feedback: Perfeito! 'Macaco' combina com 'Mala' porque evidencia sons iniciais.
+      accessibility:
+        hints:
+          - audience: ESTUDANTE
+            text: Use as setas para navegar entre os cartões e Enter para selecionar.
+          - audience: EDUCADOR
+            text: Disponibilize cartões físicos para manipulação simultânea.
+        feedback:
+          success: Tudo combinado! Sons iniciais ficou evidente nas associações.
+          encouragement: Compare sons lentamente e utilize gestos amplos para apoiar a associação.
+          accessibility: Ofereça cartões com textura ou relevo para ampliar as pistas sensoriais.
+        assets:
+          - slug: lp-letra-a
+            type: IMAGEM
+            title: Ilustração da letra A
+  - partial: ../../_partials/acolhimento-base.yaml
+    slug: puzzle-silabas-dancarinas
+    title: Sílabas Dançarinas
+    prompt: Junte sílabas para revelar palavras escondidas.
+    type: PUZZLE
+    difficulty: PRATICAR
+    bncc:
+      code: EF01LP02
+      habilidades:
+        - EF01LP02
+    learningObjectives:
+      - Explorar composição de sílabas em situações guiadas pelo educador.
+      - Compartilhar estratégias pessoais com colegas durante a atividade.
+    description: Sílabas Dançarinas convida a turma a investigar composição de sílabas com apoio de recursos multimodais.
+    metadata:
+      categoria: Montagem de sílabas
+      duracaoMinutos: 11
+      habilidades:
+        - EF01LP02
+      assetSlug: lp-silaba-la
+      interactiveSlug: puzzle-puzzle-silabas-dancarinas
+    accessibility:
+      hints:
+        - audience: ESTUDANTE
+          text: Use as setas do teclado ou toque na tela para navegar enquanto destaca composição de sílabas com gestos ou palmas.
+        - audience: EDUCADOR
+          text: Projete imagens de apoio, ofereça repetição de áudio e verbalize os passos para favorecer a percepção de composição de sílabas.
+        - audience: FAMILIA
+          text: Envie sugestões de objetos ou cantigas que reforcem os sons trabalhados para continuidade em casa.
+      feedback:
+        success: Ótimo trabalho! Composição de sílabas ficou mais claro com sua atenção aos detalhes.
+        retry: Retome com calma, respirando fundo e usando as pistas visuais oferecidas.
+        encouragement: Valorize cada tentativa e compare sons ou letras com apoio dos colegas.
+        accessibility: Disponibilize fones acolchoados, letras ampliadas e manipuláveis táteis para quem precisar.
+      assets:
+        - slug: lp-silaba-la
+          type: IMAGEM
+          title: Cartão da sílaba LA
+    prerequisites:
+      - type: ACTIVITY
+        reference: detetive-dos-pedacinhos
+        description: Utilizar a divisão realizada anteriormente para formar novas palavras.
+    interactive:
+      slug: puzzle-puzzle-silabas-dancarinas
+      title: Sílabas Dançarinas — Quebra-cabeça
+      type: PUZZLE
+      bnccDescription: Segmentar e manipular sílabas em palavras orais com apoio de gestos e recursos sonoros.
+      estimatedTimeMinutes: 11
+      instructions:
+        - Observe cada cartão e combine arrastando ou usando TAB + ENTER.
+        - Converse sobre o motivo da combinação antes de confirmar.
+        - Revise as duplas formadas e proponha novas associações.
+      objectives:
+        - Explorar composição de sílabas em situações guiadas pelo educador.
+        - Compartilhar estratégias pessoais com colegas durante a atividade.
+      puzzle:
+        mode: matching
+        successFeedback: Tudo combinado! Composição de sílabas ficou evidente nas associações.
+        errorFeedback: Observe novamente os sons, conte devagar e tente outra combinação.
+        pairs:
+          - id: puzzle-silabas-dancarinas-pair-1
+            prompt: CA
+            match: DER-NO
+            hint: Observe composição de sílabas presente em 'CA'.
+            feedback: Perfeito! 'DER-NO' combina com 'CA' porque evidencia composição de sílabas.
+          - id: puzzle-silabas-dancarinas-pair-2
+            prompt: PA
+            match: LA-ÇO
+            hint: Observe composição de sílabas presente em 'PA'.
+            feedback: Perfeito! 'LA-ÇO' combina com 'PA' porque evidencia composição de sílabas.
+          - id: puzzle-silabas-dancarinas-pair-3
+            prompt: FE
+            match: RI-A
+            hint: Observe composição de sílabas presente em 'FE'.
+            feedback: Perfeito! 'RI-A' combina com 'FE' porque evidencia composição de sílabas.
+      accessibility:
+        hints:
+          - audience: ESTUDANTE
+            text: Use as setas para navegar entre os cartões e Enter para selecionar.
+          - audience: EDUCADOR
+            text: Disponibilize cartões físicos para manipulação simultânea.
+        feedback:
+          success: Tudo combinado! Composição de sílabas ficou evidente nas associações.
+          encouragement: Compare sons lentamente e utilize gestos amplos para apoiar a associação.
+          accessibility: Ofereça cartões com textura ou relevo para ampliar as pistas sensoriais.
+        assets:
+          - slug: lp-silaba-la
+            type: IMAGEM
+            title: Cartão da sílaba LA
+  - partial: ../../_partials/acolhimento-base.yaml
+    slug: puzzle-compasso-silabico
+    title: Compasso Silábico
+    prompt: Relacione palavras à quantidade correta de sílabas.
+    type: PUZZLE
+    difficulty: DOMINAR
+    bncc:
+      code: EF01LP02
+      habilidades:
+        - EF01LP02
+    learningObjectives:
+      - Explorar contagem de sílabas em situações guiadas pelo educador.
+      - Compartilhar estratégias pessoais com colegas durante a atividade.
+    description: Compasso Silábico convida a turma a investigar contagem de sílabas com apoio de recursos multimodais.
+    metadata:
+      categoria: Contagem de sílabas
+      duracaoMinutos: 11
+      habilidades:
+        - EF01LP02
+      assetSlug: lp-material-caderno
+      interactiveSlug: puzzle-puzzle-compasso-silabico
+    accessibility:
+      hints:
+        - audience: ESTUDANTE
+          text: Use as setas do teclado ou toque na tela para navegar enquanto destaca contagem de sílabas com gestos ou palmas.
+        - audience: EDUCADOR
+          text: Projete imagens de apoio, ofereça repetição de áudio e verbalize os passos para favorecer a percepção de contagem de sílabas.
+        - audience: FAMILIA
+          text: Envie sugestões de objetos ou cantigas que reforcem os sons trabalhados para continuidade em casa.
+      feedback:
+        success: Ótimo trabalho! Contagem de sílabas ficou mais claro com sua atenção aos detalhes.
+        retry: Retome com calma, respirando fundo e usando as pistas visuais oferecidas.
+        encouragement: Valorize cada tentativa e compare sons ou letras com apoio dos colegas.
+        accessibility: Disponibilize fones acolchoados, letras ampliadas e manipuláveis táteis para quem precisar.
+      assets:
+        - slug: lp-material-caderno
+          type: IMAGEM
+          title: Caderno colorido para escrita
+    prerequisites:
+      - type: ACTIVITY
+        reference: batida-do-nome
+        description: Aplicar a contagem com palmas para validar o número de sílabas.
+    interactive:
+      slug: puzzle-puzzle-compasso-silabico
+      title: Compasso Silábico — Quebra-cabeça
+      type: PUZZLE
+      bnccDescription: Segmentar e manipular sílabas em palavras orais com apoio de gestos e recursos sonoros.
+      estimatedTimeMinutes: 11
+      instructions:
+        - Observe cada cartão e combine arrastando ou usando TAB + ENTER.
+        - Converse sobre o motivo da combinação antes de confirmar.
+        - Revise as duplas formadas e proponha novas associações.
+      objectives:
+        - Explorar contagem de sílabas em situações guiadas pelo educador.
+        - Compartilhar estratégias pessoais com colegas durante a atividade.
+      puzzle:
+        mode: matching
+        successFeedback: Tudo combinado! Contagem de sílabas ficou evidente nas associações.
+        errorFeedback: Observe novamente os sons, conte devagar e tente outra combinação.
+        pairs:
+          - id: puzzle-compasso-silabico-pair-1
+            prompt: 2 sílabas
+            match: Fada
+            hint: Observe contagem de sílabas presente em '2 sílabas'.
+            feedback: Perfeito! 'Fada' combina com '2 sílabas' porque evidencia contagem de sílabas.
+          - id: puzzle-compasso-silabico-pair-2
+            prompt: 3 sílabas
+            match: Janela
+            hint: Observe contagem de sílabas presente em '3 sílabas'.
+            feedback: Perfeito! 'Janela' combina com '3 sílabas' porque evidencia contagem de sílabas.
+          - id: puzzle-compasso-silabico-pair-3
+            prompt: 4 sílabas
+            match: Maracuja
+            hint: Observe contagem de sílabas presente em '4 sílabas'.
+            feedback: Perfeito! 'Maracuja' combina com '4 sílabas' porque evidencia contagem de sílabas.
+      accessibility:
+        hints:
+          - audience: ESTUDANTE
+            text: Use as setas para navegar entre os cartões e Enter para selecionar.
+          - audience: EDUCADOR
+            text: Disponibilize cartões físicos para manipulação simultânea.
+        feedback:
+          success: Tudo combinado! Contagem de sílabas ficou evidente nas associações.
+          encouragement: Compare sons lentamente e utilize gestos amplos para apoiar a associação.
+          accessibility: Ofereça cartões com textura ou relevo para ampliar as pistas sensoriais.
+        assets:
+          - slug: lp-material-caderno
+            type: IMAGEM
+            title: Caderno colorido para escrita
+  - partial: ../../_partials/acolhimento-base.yaml
+    slug: caca-sons-iniciais
+    title: Caça aos Sons Iniciais
+    prompt: Descubra palavras que começam com o som proposto em cada fase.
+    type: GAME
+    difficulty: INICIAR
+    bncc:
+      code: EF01LP01
+      habilidades:
+        - EF01LP01
+    learningObjectives:
+      - Explorar sons iniciais em situações guiadas pelo educador.
+      - Compartilhar estratégias pessoais com colegas durante a atividade.
+    description: Caça aos Sons Iniciais convida a turma a investigar sons iniciais com apoio de recursos multimodais.
+    metadata:
+      categoria: Som inicial
+      duracaoMinutos: 12
+      habilidades:
+        - EF01LP01
+      assetSlug: lp-letra-e
+      interactiveSlug: game-caca-sons-iniciais
+    accessibility:
+      hints:
+        - audience: ESTUDANTE
+          text: Use as setas do teclado ou toque na tela para navegar enquanto destaca sons iniciais com gestos ou palmas.
+        - audience: EDUCADOR
+          text: Projete imagens de apoio, ofereça repetição de áudio e verbalize os passos para favorecer a percepção de sons iniciais.
+        - audience: FAMILIA
+          text: Envie sugestões de objetos ou cantigas que reforcem os sons trabalhados para continuidade em casa.
+      feedback:
+        success: Ótimo trabalho! Sons iniciais ficou mais claro com sua atenção aos detalhes.
+        retry: Retome com calma, respirando fundo e usando as pistas visuais oferecidas.
+        encouragement: Valorize cada tentativa e compare sons ou letras com apoio dos colegas.
+        accessibility: Disponibilize fones acolchoados, letras ampliadas e manipuláveis táteis para quem precisar.
+      assets:
+        - slug: lp-letra-e
+          type: IMAGEM
+          title: Ilustração da letra E
+    prerequisites:
+      - type: ACTIVITY
+        reference: som-inicial-surpresa
+        description: Retomar a escuta dos sons iniciais antes de jogar.
+    interactive:
+      slug: game-caca-sons-iniciais
+      title: Caça aos Sons Iniciais — Mini-jogo
+      type: GAME
+      bnccDescription: Perceber rimas, aliterações e sons iniciais em textos orais e jogos de linguagem.
+      estimatedTimeMinutes: 12
+      instructions:
+        - Leia o desafio de cada fase e verbalize suas hipóteses em voz alta.
+        - Digite a resposta usando o teclado ou selecione com o mouse.
+        - No final, explique qual pista ajudou a encontrar a solução.
+      objectives:
+        - Explorar sons iniciais em situações guiadas pelo educador.
+        - Compartilhar estratégias pessoais com colegas durante a atividade.
+      game:
+        mode: math-challenge
+        timeLimitSeconds: 120
+        lives: 3
+        victoryMessage: Show! Os sons iniciais foram encontrados com atenção.
+        gameOverMessage: Tudo bem! Revise cada som e tente novamente.
+        levels:
+          - id: caca-sons-iniciais-level-1
+            challenge: Qual palavra começa com o som /s/? (sol, gato, bolo)
+            answer: sol
+            hint: Use sons iniciais para encontrar a resposta.
+            successFeedback: Muito bem! Sons iniciais ajudou a resolver a fase.
+            failureFeedback: Retome sons iniciais e ajuste sua estratégia.
+          - id: caca-sons-iniciais-level-2
+            challenge: 'Escolha a palavra com som inicial /p/: (pipoca, gato, uva)'
+            answer: pipoca
+            hint: Use sons iniciais para encontrar a resposta.
+            successFeedback: Muito bem! Sons iniciais ajudou a resolver a fase.
+            failureFeedback: Retome sons iniciais e ajuste sua estratégia.
+          - id: caca-sons-iniciais-level-3
+            challenge: 'Aponte a palavra que começa com /l/: (lapis, sapo, bola)'
+            answer: lapis
+            hint: Use sons iniciais para encontrar a resposta.
+            successFeedback: Muito bem! Sons iniciais ajudou a resolver a fase.
+            failureFeedback: Retome sons iniciais e ajuste sua estratégia.
+      accessibility:
+        hints:
+          - audience: ESTUDANTE
+            text: Use a tecla TAB para navegar pelos botões e Enter para confirmar.
+          - audience: EDUCADOR
+            text: Ofereça marcadores visuais ou tapetes de som para cada fase.
+        feedback:
+          success: Show! Os sons iniciais foram encontrados com atenção.
+          encouragement: Revise as pistas sonoras e tente novamente sem pressa.
+          accessibility: Disponibilize apoios auditivos individuais e sinalize o tempo visualmente.
+        assets:
+          - slug: lp-letra-e
+            type: IMAGEM
+            title: Ilustração da letra E
+  - partial: ../../_partials/acolhimento-base.yaml
+    slug: batalha-das-silabas
+    title: Batalha das Sílabas
+    prompt: Conte quantas sílabas cada palavra possui e digite o número correto.
+    type: GAME
+    difficulty: PRATICAR
+    bncc:
+      code: EF01LP02
+      habilidades:
+        - EF01LP02
+    learningObjectives:
+      - Explorar contagem de sílabas em situações guiadas pelo educador.
+      - Compartilhar estratégias pessoais com colegas durante a atividade.
+    description: Batalha das Sílabas convida a turma a investigar contagem de sílabas com apoio de recursos multimodais.
+    metadata:
+      categoria: Contagem de sílabas
+      duracaoMinutos: 12
+      habilidades:
+        - EF01LP02
+      assetSlug: lp-silaba-ba
+      interactiveSlug: game-batalha-das-silabas
+    accessibility:
+      hints:
+        - audience: ESTUDANTE
+          text: Use as setas do teclado ou toque na tela para navegar enquanto destaca contagem de sílabas com gestos ou palmas.
+        - audience: EDUCADOR
+          text: Projete imagens de apoio, ofereça repetição de áudio e verbalize os passos para favorecer a percepção de contagem de sílabas.
+        - audience: FAMILIA
+          text: Envie sugestões de objetos ou cantigas que reforcem os sons trabalhados para continuidade em casa.
+      feedback:
+        success: Ótimo trabalho! Contagem de sílabas ficou mais claro com sua atenção aos detalhes.
+        retry: Retome com calma, respirando fundo e usando as pistas visuais oferecidas.
+        encouragement: Valorize cada tentativa e compare sons ou letras com apoio dos colegas.
+        accessibility: Disponibilize fones acolchoados, letras ampliadas e manipuláveis táteis para quem precisar.
+      assets:
+        - slug: lp-silaba-ba
+          type: IMAGEM
+          title: Cartão da sílaba BA
+    prerequisites:
+      - type: ACTIVITY
+        reference: detetive-dos-pedacinhos
+        description: Usar a divisão em sílabas registrada na atividade anterior.
+    interactive:
+      slug: game-batalha-das-silabas
+      title: Batalha das Sílabas — Mini-jogo
+      type: GAME
+      bnccDescription: Segmentar e manipular sílabas em palavras orais com apoio de gestos e recursos sonoros.
+      estimatedTimeMinutes: 12
+      instructions:
+        - Leia o desafio de cada fase e verbalize suas hipóteses em voz alta.
+        - Digite a resposta usando o teclado ou selecione com o mouse.
+        - No final, explique qual pista ajudou a encontrar a solução.
+      objectives:
+        - Explorar contagem de sílabas em situações guiadas pelo educador.
+        - Compartilhar estratégias pessoais com colegas durante a atividade.
+      game:
+        mode: math-challenge
+        timeLimitSeconds: 120
+        lives: 3
+        victoryMessage: Todas as sílabas foram contadas com ritmo certeiro!
+        gameOverMessage: Respire, bata palmas novamente e tente de novo.
+        levels:
+          - id: batalha-das-silabas-level-1
+            challenge: Quantas sílabas tem 'janela'?
+            answer: 3
+            hint: Use contagem de sílabas para encontrar a resposta.
+            successFeedback: Muito bem! Contagem de sílabas ajudou a resolver a fase.
+            failureFeedback: Retome contagem de sílabas e ajuste sua estratégia.
+          - id: batalha-das-silabas-level-2
+            challenge: Quantas sílabas tem 'borboleta'?
+            answer: 4
+            hint: Use contagem de sílabas para encontrar a resposta.
+            successFeedback: Muito bem! Contagem de sílabas ajudou a resolver a fase.
+            failureFeedback: Retome contagem de sílabas e ajuste sua estratégia.
+          - id: batalha-das-silabas-level-3
+            challenge: Quantas sílabas tem 'dado'?
+            answer: 2
+            hint: Use contagem de sílabas para encontrar a resposta.
+            successFeedback: Muito bem! Contagem de sílabas ajudou a resolver a fase.
+            failureFeedback: Retome contagem de sílabas e ajuste sua estratégia.
+      accessibility:
+        hints:
+          - audience: ESTUDANTE
+            text: Use a tecla TAB para navegar pelos botões e Enter para confirmar.
+          - audience: EDUCADOR
+            text: Ofereça marcadores visuais ou tapetes de som para cada fase.
+        feedback:
+          success: Todas as sílabas foram contadas com ritmo certeiro!
+          encouragement: Revise as pistas sonoras e tente novamente sem pressa.
+          accessibility: Disponibilize apoios auditivos individuais e sinalize o tempo visualmente.
+        assets:
+          - slug: lp-silaba-ba
+            type: IMAGEM
+            title: Cartão da sílaba BA
+  - partial: ../../_partials/acolhimento-base.yaml
+    slug: orquestra-de-silabas
+    title: Orquestra de Sílabas
+    prompt: Combine sílabas para formar palavras e leia em voz alta.
+    type: GAME
+    difficulty: DOMINAR
+    bncc:
+      code: EF01LP02
+      habilidades:
+        - EF01LP02
+    learningObjectives:
+      - Explorar composição de sílabas em situações guiadas pelo educador.
+      - Compartilhar estratégias pessoais com colegas durante a atividade.
+    description: Orquestra de Sílabas convida a turma a investigar composição de sílabas com apoio de recursos multimodais.
+    metadata:
+      categoria: Formação de palavras
+      duracaoMinutos: 13
+      habilidades:
+        - EF01LP02
+      assetSlug: lp-material-caderno
+      interactiveSlug: game-orquestra-de-silabas
+    accessibility:
+      hints:
+        - audience: ESTUDANTE
+          text: Use as setas do teclado ou toque na tela para navegar enquanto destaca composição de sílabas com gestos ou palmas.
+        - audience: EDUCADOR
+          text: Projete imagens de apoio, ofereça repetição de áudio e verbalize os passos para favorecer a percepção de composição de sílabas.
+        - audience: FAMILIA
+          text: Envie sugestões de objetos ou cantigas que reforcem os sons trabalhados para continuidade em casa.
+      feedback:
+        success: Ótimo trabalho! Composição de sílabas ficou mais claro com sua atenção aos detalhes.
+        retry: Retome com calma, respirando fundo e usando as pistas visuais oferecidas.
+        encouragement: Valorize cada tentativa e compare sons ou letras com apoio dos colegas.
+        accessibility: Disponibilize fones acolchoados, letras ampliadas e manipuláveis táteis para quem precisar.
+      assets:
+        - slug: lp-material-caderno
+          type: IMAGEM
+          title: Caderno colorido para escrita
+    prerequisites:
+      - type: ACTIVITY
+        reference: puzzle-silabas-dancarinas
+        description: Revisar as combinações de sílabas feitas no puzzle.
+    interactive:
+      slug: game-orquestra-de-silabas
+      title: Orquestra de Sílabas — Mini-jogo
+      type: GAME
+      bnccDescription: Segmentar e manipular sílabas em palavras orais com apoio de gestos e recursos sonoros.
+      estimatedTimeMinutes: 13
+      instructions:
+        - Leia o desafio de cada fase e verbalize suas hipóteses em voz alta.
+        - Digite a resposta usando o teclado ou selecione com o mouse.
+        - No final, explique qual pista ajudou a encontrar a solução.
+      objectives:
+        - Explorar composição de sílabas em situações guiadas pelo educador.
+        - Compartilhar estratégias pessoais com colegas durante a atividade.
+      game:
+        mode: math-challenge
+        timeLimitSeconds: 120
+        lives: 3
+        victoryMessage: Palavras formadas! As sílabas tocaram em harmonia.
+        gameOverMessage: Experimente reorganizar as sílabas com calma e tente novamente.
+        levels:
+          - id: orquestra-de-silabas-level-1
+            challenge: Una as sílabas BA + LA para formar uma palavra.
+            answer: bala
+            hint: Use composição de sílabas para encontrar a resposta.
+            successFeedback: Muito bem! Composição de sílabas ajudou a resolver a fase.
+            failureFeedback: Retome composição de sílabas e ajuste sua estratégia.
+          - id: orquestra-de-silabas-level-2
+            challenge: Una as sílabas CA + SA para formar uma palavra.
+            answer: casa
+            hint: Use composição de sílabas para encontrar a resposta.
+            successFeedback: Muito bem! Composição de sílabas ajudou a resolver a fase.
+            failureFeedback: Retome composição de sílabas e ajuste sua estratégia.
+          - id: orquestra-de-silabas-level-3
+            challenge: Una as sílabas PA + TO para formar uma palavra.
+            answer: pato
+            hint: Use composição de sílabas para encontrar a resposta.
+            successFeedback: Muito bem! Composição de sílabas ajudou a resolver a fase.
+            failureFeedback: Retome composição de sílabas e ajuste sua estratégia.
+      accessibility:
+        hints:
+          - audience: ESTUDANTE
+            text: Use a tecla TAB para navegar pelos botões e Enter para confirmar.
+          - audience: EDUCADOR
+            text: Ofereça marcadores visuais ou tapetes de som para cada fase.
+        feedback:
+          success: Palavras formadas! As sílabas tocaram em harmonia.
+          encouragement: Revise as pistas sonoras e tente novamente sem pressa.
+          accessibility: Disponibilize apoios auditivos individuais e sinalize o tempo visualmente.
+        assets:
+          - slug: lp-material-caderno
+            type: IMAGEM
+            title: Caderno colorido para escrita
