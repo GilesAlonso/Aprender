@@ -38,18 +38,20 @@ A aplicação ficará disponível em `http://localhost:3000`.
 
 ## Scripts disponíveis
 
-| Comando           | Descrição                                                           |
-| ----------------- | ------------------------------------------------------------------- |
-| `pnpm dev`        | Inicializa o servidor de desenvolvimento com Turbopack.             |
-| `pnpm build`      | Gera o build de produção.                                           |
-| `pnpm start`      | Executa o build produzido em modo de produção.                      |
-| `pnpm lint`       | Roda o ESLint (`--max-warnings 0`).                                 |
-| `pnpm lint:fix`   | Aplica correções automáticas do ESLint.                             |
-| `pnpm format`     | Formata o repositório com Prettier.                                 |
-| `pnpm type-check` | Garante que o TypeScript esteja saudável (sem emissão de arquivos). |
-| `pnpm test`       | Executa a suíte de testes com Vitest (modo `--run`).                |
-| `pnpm test:watch` | Executa os testes em modo observador.                               |
-| `pnpm check`      | Executa `lint`, `type-check` e `test` em sequência.                 |
+| Comando              | Descrição                                                                          |
+| -------------------- | ---------------------------------------------------------------------------------- |
+| `pnpm dev`           | Inicializa o servidor de desenvolvimento com Turbopack.                            |
+| `pnpm build`         | Gera o build de produção.                                                          |
+| `pnpm start`         | Executa o build produzido em modo de produção.                                     |
+| `pnpm lint`          | Roda o ESLint (`--max-warnings 0`).                                                |
+| `pnpm lint:fix`      | Aplica correções automáticas do ESLint.                                            |
+| `pnpm format`        | Formata o repositório com Prettier.                                                |
+| `pnpm type-check`    | Garante que o TypeScript esteja saudável (sem emissão de arquivos).                |
+| `pnpm content:lint`  | Valida o conteúdo bruto em `data/content/raw` (schema + BNCC).                     |
+| `pnpm content:build` | Gera `modules.json`, `interactive-activities.json` e `index.json`.                 |
+| `pnpm test`          | Executa a suíte de testes com Vitest (modo `--run`).                               |
+| `pnpm test:watch`    | Executa os testes em modo observador.                                              |
+| `pnpm check`         | Executa `content:lint`, `lint`, `content:build --no-write`, `type-check` e `test`. |
 
 ## Estrutura de pastas
 
@@ -65,6 +67,10 @@ A aplicação ficará disponível em `http://localhost:3000`.
 ├─ vitest.config.ts     # Configuração de testes
 └─ pnpm-workspace.yaml  # Habilita workspace pnpm
 ```
+
+## Conteúdo EF01 e bundles
+
+O fluxo de autoria e validação dos módulos EF01 (incluindo partials, interativos e build determinístico) está descrito em [`docs/conteudo-ef01.md`](./docs/conteudo-ef01.md).
 
 ## Estilos e design system
 

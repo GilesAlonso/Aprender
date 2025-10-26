@@ -1,0 +1,118 @@
+module:
+  slug: rota-das-operacoes
+  title: "Rota das Operações"
+  subtitle: "Missões com multiplicação e divisão"
+  description: "Sequência gamificada para aplicar estratégias de multiplicação e divisão em desafios da comunidade escolar."
+  theme: "Matemática"
+  discipline: "Matemática"
+  ageGroupSlug: fundamental-anos-iniciais
+  learningPathSlug: trilhas-numeros-vivos
+  primaryBnccCode: EF05MA08
+  learningOutcomes:
+    - "Resolver problemas de multiplicação e divisão com apoio de representações visuais."
+    - "Comparar diferentes estratégias de cálculo e justificar escolhas."
+    - "Aplicar conceitos de igualdade e resto em situações contextualizadas."
+  tags:
+    - multiplicacao
+    - divisao
+activities:
+  - partial: ../../_partials/acolhimento-base.yaml
+    slug: missao-equipes-multiplicadoras
+    title: "Missão Equipes Multiplicadoras"
+    prompt: "Organize os materiais da feira solidária distribuindo em partes iguais entre os grupos."
+    type: GAME
+    difficulty: PRATICAR
+    bncc:
+      code: EF05MA08
+      habilidades:
+        - EF05MA08
+    learningObjectives:
+      - "Resolver problemas de distribuição proporcional utilizando multiplicação e divisão."
+      - "Registrar estratégias pessoais em quadros ou esquemas."
+    description: "Desafio colaborativo para calcular quantidades equivalentes em diferentes formações."
+    metadata:
+      duracaoMinutos: 20
+      materiais:
+        - "Cartões numerados"
+        - "Cestos"
+      contexto: "Feira solidária da escola"
+      interactiveSlug: game-missao-equipes-multiplicadoras
+    accessibility:
+      hints:
+        - text: "Ofereça manipuláveis (tampinhas ou blocos) para apoiar a visualização das distribuições."
+      feedback:
+        encouragement: "Valorize explicações diversas e compare estratégias com o grupo."
+    prerequisites:
+      - type: SKILL
+        reference: EF04MA07
+        description: "Interpretar multiplicações como adições repetidas e divisões como repartição equitativa."
+    interactive:
+      slug: game-missao-equipes-multiplicadoras
+      title: "Missão Equipes Multiplicadoras — Jogo cooperativo"
+      type: GAME
+      bnccDescription: "Resolver problemas de multiplicação e divisão em contextos significativos."
+      estimatedTimeMinutes: 10
+      instructions:
+        - "Leia o desafio de cada fase e compartilhe suas estratégias com o grupo."
+        - "Utilize o quadro para registrar cálculos ou desenhos que ajudem a visualizar a situação."
+        - "Ao finalizar, reflita sobre outras maneiras de distribuir os materiais."
+      objectives:
+        - "Resolver problemas de distribuição proporcional utilizando multiplicação e divisão."
+        - "Registrar estratégias pessoais em quadros ou esquemas."
+        - "Justificar escolhas com representações visuais ou esquemas."
+        - "Identificar padrões que facilitem cálculos mentais."
+      game:
+        mode: math-challenge
+        timeLimitSeconds: 120
+        lives: 3
+        victoryMessage: "Missão cumprida! A feira solidária está pronta para começar."
+        gameOverMessage: "A missão pode ser retomada. Converse sobre novas estratégias e tente novamente."
+        levels:
+          - id: nivel-1
+            challenge: "Há 24 cadernos para 3 grupos. Quantos cadernos cada grupo recebe?"
+            answer: 8
+            hint: "Experimente representar com desenhos ou tabelas."
+            successFeedback: "Perfeito! 24 ÷ 3 = 8 cadernos por grupo."
+            failureFeedback: "Repense: se cada grupo tivesse 8 cadernos, quantos usaríamos ao todo?"
+          - id: nivel-2
+            challenge: "São 5 mesas com 6 kits de sementes cada. Quantos kits existem no total?"
+            answer: 30
+            hint: "Multiplique a quantidade de kits por mesa."
+            successFeedback: "Ótimo cálculo! 5 × 6 = 30 kits."
+            failureFeedback: "Quase! Conte de 6 em 6 cinco vezes para conferir."
+          - id: nivel-3
+            challenge: "48 marcadores devem ser distribuídos igualmente em 8 caixas. Quantos marcadores vão em cada caixa?"
+            answer: 6
+            hint: "Use a divisão ou pense em multiplicação inversa."
+            successFeedback: "Resultado certo! 48 ÷ 8 = 6 marcadores por caixa."
+            failureFeedback: "Tente relacionar divisão e multiplicação para encontrar o valor."
+  - partial: ../../_partials/acolhimento-base.yaml
+    slug: estacao-resto-inteligente
+    title: "Estação do Resto Inteligente"
+    prompt: "Descubra quantos kits completos podem ser montados com os materiais disponíveis e o que fazer com as sobras."
+    type: PUZZLE
+    difficulty: PRATICAR
+    bncc:
+      code: EF05MA08
+      habilidades:
+        - EF05MA08
+    learningObjectives:
+      - "Interpretar o significado do resto em problemas de divisão."
+      - "Aplicar estratégias de cálculo mental e decomposição de números."
+    description: "Investigação orientada para analisar restos e possibilidades de reagrupamento."
+    metadata:
+      duracaoMinutos: 15
+      ferramentas:
+        - "Tabela coletiva"
+        - "Marcadores"
+      produtoFinal: "Plano de distribuição"
+    accessibility:
+      hints:
+        - audience: EDUCADOR
+          text: "Registre em um quadro coletivo as hipóteses de resto para facilitar comparações."
+      feedback:
+        success: "Explique diferentes propostas de uso para as sobras e escolha a mais justa com a turma."
+    prerequisites:
+      - type: ACTIVITY
+        reference: missao-equipes-multiplicadoras
+        description: "Retomar estratégias registradas durante a missão para interpretar o resto."

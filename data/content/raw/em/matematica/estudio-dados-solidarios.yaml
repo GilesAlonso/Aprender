@@ -1,0 +1,74 @@
+module:
+  slug: estudio-dados-solidarios
+  title: "Estúdio de Dados Solidários"
+  subtitle: "Projeto de vida e impacto"
+  description: "Projeto interdisciplinar para investigar dados da comunidade, gerar protótipos e comunicar soluções."
+  theme: "Projeto de Vida"
+  discipline: "Matemática e Projeto de Vida"
+  ageGroupSlug: ensino-medio
+  learningPathSlug: trajetos-projeto-vida
+  primaryBnccCode: EM13MAT305
+  learningOutcomes:
+    - "Aplicar conceitos estatísticos para interpretar indicadores sociais."
+    - "Propor soluções viáveis articuladas com projeto de vida coletivo."
+    - "Comunicar resultados em narrativas multimodais convincentes."
+  tags:
+    - projeto-de-vida
+    - dados-abertos
+activities:
+  - partial: ../../_partials/acolhimento-base.yaml
+    slug: investigacao-dados-bairro
+    title: "Diagnóstico do Bairro"
+    prompt: "Investigue dados públicos da sua cidade e proponha indicadores para acompanhar mudanças."
+    type: GAME
+    difficulty: DOMINAR
+    bncc:
+      code: EM13MAT305
+      habilidades:
+        - EM13MAT305
+    learningObjectives:
+      - "Selecionar fontes de dados abertas com critérios de confiabilidade."
+      - "Construir modelos estatísticos simples para comunicar achados."
+    description: "Desafio investigativo para analisar dados, formular hipóteses e comunicar resultados com infográficos."
+    metadata:
+      ferramentas:
+        - "Planilha colaborativa"
+        - "Mapa digital"
+      entregavel: "Relatório visual"
+    accessibility:
+      hints:
+        - text: "Ofereça datasets curados de diferentes tamanhos para flexibilizar o volume de análise."
+      feedback:
+        success: "Relacionem dados analisados com possíveis ações de impacto comunitário."
+    prerequisites:
+      - type: SKILL
+        reference: EM13MAT103
+        description: "Explorar indicadores estatísticos e interpretar variações."
+  - partial: ../../_partials/acolhimento-base.yaml
+    slug: podcast-projeto-vida
+    title: "Podcast Projeto de Vida"
+    prompt: "Crie um roteiro de podcast entrevistando pessoas sobre sonhos e desafios da comunidade."
+    type: PROJECT
+    difficulty: PRATICAR
+    bncc:
+      code: EM13MAT305
+      habilidades:
+        - EM13MAT305
+    learningObjectives:
+      - "Relacionar dados analisados a narrativas pessoais e coletivas."
+      - "Produzir roteiro multimodal integrando diferentes linguagens."
+    description: "Atividade multimídia para exercitar comunicação, empatia e planejamento de ações coletivas."
+    metadata:
+      formato: "Podcast colaborativo"
+      duracaoMinutos: 15
+    accessibility:
+      hints:
+        - text: "Crie roteiros compartilhados onde cada integrante registra falas-chave com antecedência."
+      assets:
+        - type: DOCUMENTO
+          uri: "/apoio/modelos/roteiro-podcast-em.pdf"
+          title: "Modelo de roteiro breve"
+    prerequisites:
+      - type: ACTIVITY
+        reference: investigacao-dados-bairro
+        description: "Utilizar indicadores levantados no diagnóstico para embasar falas e perguntas."

@@ -4,7 +4,7 @@
   "private": true,
   "scripts": {
     "dev": "next dev",
-    "build": "prisma generate && next build",
+    "build": "pnpm content:build && prisma generate && next build",
     "postinstall": "prisma generate",
     "start": "next start",
     "lint": "eslint . --max-warnings 0",
@@ -20,8 +20,10 @@
     "db:migrate": "prisma migrate dev",
     "db:generate": "prisma generate",
     "db:seed": "prisma db seed",
+    "content:lint": "tsx scripts/content.ts lint",
+    "content:build": "tsx scripts/content.ts build",
     "bncc:validate": "tsx scripts/validate-content.ts",
-    "check": "pnpm lint && pnpm type-check && pnpm test"
+    "check": "pnpm content:lint && pnpm lint && pnpm content:build -- --no-write && pnpm type-check && pnpm test"
   },
   "lint-staged": {
     "*.{js,jsx,ts,tsx}": [
@@ -63,7 +65,10 @@
     "eslint-config-prettier": "^9.1.0",
     "eslint-plugin-testing-library": "^6.3.0",
     "eslint-plugin-vitest-globals": "^1.5.0",
+    "fast-glob": "^3.3.3",
+    "gray-matter": "^4.0.3",
     "husky": "^9.1.6",
+    "js-yaml": "^4.1.0",
     "jsdom": "^25.0.0",
     "lint-staged": "^15.2.9",
     "postcss": "^8.4.39",

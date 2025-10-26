@@ -53,6 +53,7 @@ type ModuleActivityDefinition = {
   bnccCode: string;
   learningObjectives: string[];
   description?: string;
+  summary?: string;
   metadata?: ActivityMetadata;
 };
 
@@ -63,16 +64,35 @@ type ModuleDefinition = {
   description?: string;
   theme?: string;
   discipline?: string;
+  stage?: string;
+  subjectSlug?: string;
+  subject?: string;
   ageGroupSlug: string;
   learningPathSlug?: string | null;
   primaryBnccCode: string;
+  secondaryBnccCodes?: string[];
   learningOutcomes?: string[];
+  tags?: string[];
+  estimatedDurationMinutes?: number;
+  summary?: string;
+  notes?: string[];
   activities: ModuleActivityDefinition[];
 };
 
 type ContentModuleDataset = {
   updatedAt: string;
   modules: ModuleDefinition[];
+};
+
+type CompiledInteractiveActivity = {
+  slug: string;
+  contentModuleSlug: string;
+  activitySlug: string;
+};
+
+type CompiledInteractiveDataset = {
+  updatedAt: string;
+  activities: CompiledInteractiveActivity[];
 };
 
 type RewardSeed = {
@@ -195,6 +215,13 @@ const curriculumStandardsData = bnccDataset.standards;
 
 const contentDataset = loadJson<ContentModuleDataset>("data/content/modules.json");
 const contentModulesDataset = contentDataset.modules;
+
+const interactiveDataset = loadJson<CompiledInteractiveDataset>(
+  "data/content/interactive-activities.json"
+);
+const interactiveActivityBySlug = new Map(
+  interactiveDataset.activities.map((activity) => [activity.slug, activity])
+);
 
 const normalizeToArray = <T>(value: T | T[]): T[] => (Array.isArray(value) ? value : [value]);
 
@@ -587,8 +614,28 @@ async function main() {
         );
       }
 
+      const metadataRecord: ActivityMetadata = activityDefinition.metadata ?? {};
+      const interactiveSlugRaw = metadataRecord["interactiveSlug"];
+      if (typeof interactiveSlugRaw === "string") {
+        const interactiveActivity = interactiveActivityBySlug.get(interactiveSlugRaw);
+        if (!interactiveActivity) {
+          throw new Error(
+            `Atividade '${activityDefinition.slug}' do módulo '${moduleDefinition.slug}' referencia interativo '${interactiveSlugRaw}' inexistente. Execute 'pnpm content:build' antes de rodar o seed.`
+          );
+        }
+
+        if (
+          interactiveActivity.contentModuleSlug !== moduleDefinition.slug ||
+          interactiveActivity.activitySlug !== activityDefinition.slug
+        ) {
+          console.warn(
+            `Interativo '${interactiveSlugRaw}' aponta para '${interactiveActivity.contentModuleSlug}/${interactiveActivity.activitySlug}', mas foi referenciado em '${moduleDefinition.slug}/${activityDefinition.slug}'.`
+          );
+        }
+      }
+
       const metadataPayload = toJsonString({
-        ...(activityDefinition.metadata ?? {}),
+        ...metadataRecord,
         learningObjectives: activityDefinition.learningObjectives,
         bnccCode: activityDefinition.bnccCode,
       });

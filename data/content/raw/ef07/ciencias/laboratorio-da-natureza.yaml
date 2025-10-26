@@ -1,0 +1,72 @@
+module:
+  slug: laboratorio-da-natureza
+  title: "Laboratório da Natureza"
+  subtitle: "Investigação científica"
+  description: "Experimentos guiados sobre recursos naturais, registro de evidências e comunicação multimodal."
+  theme: "Ciências"
+  discipline: "Ciências"
+  ageGroupSlug: fundamental-anos-finais
+  learningPathSlug: inventores-projetos
+  primaryBnccCode: EF07CI02
+  learningOutcomes:
+    - "Planejar experimentos seguros para investigar fenômenos ambientais."
+    - "Registrar dados e evidências utilizando diferentes linguagens."
+    - "Argumentar com base em observações e fontes confiáveis."
+  tags:
+    - investigacao-cientifica
+    - sustentabilidade
+activities:
+  - partial: ../../_partials/acolhimento-base.yaml
+    slug: experimento-da-agua
+    title: "Laboratório dos Recursos Naturais"
+    prompt: "Analise diferentes amostras de água e registre evidências sobre consumo consciente."
+    type: PUZZLE
+    difficulty: PRATICAR
+    bncc:
+      code: EF07CI02
+      habilidades:
+        - EF07CI02
+    learningObjectives:
+      - "Planejar etapas do experimento com definição de variáveis."
+      - "Comunicar resultados parciais em linguagem científica acessível."
+    description: "Experimento investigativo para observar transformações e discutir impacto ambiental."
+    metadata:
+      seguranca: "Orientação docente"
+      registro: "Relato multimodal"
+    accessibility:
+      hints:
+        - text: "Combine duplas com diferentes responsabilidades (medições, registros e fotografia)."
+      assets:
+        - type: DOCUMENTO
+          uri: "/apoio/fichas/registro-experimento.pdf"
+          title: "Ficha de observação"
+    prerequisites:
+      - type: SKILL
+        reference: EF07CI01
+        description: "Interpretar resultados de pesquisas sobre recursos naturais."
+  - partial: ../../_partials/acolhimento-base.yaml
+    slug: quiz-sustentabilidade
+    title: "Quiz da Sustentabilidade"
+    prompt: "Responda desafios sobre uso consciente da água, energia e consumo."
+    type: QUIZ
+    difficulty: DOMINAR
+    bncc:
+      code: EF07CI02
+      habilidades:
+        - EF07CI02
+    learningObjectives:
+      - "Avaliar conhecimentos construídos ao longo da sequência investigativa."
+      - "Relacionar conceitos científicos ao cotidiano da comunidade."
+    description: "Perguntas de múltipla escolha com feedback imediato e links para pesquisa."
+    metadata:
+      numeroQuestoes: 6
+      tipo: "Multipla escolha"
+    accessibility:
+      hints:
+        - text: "Permita tempo para consulta às anotações do experimento antes das respostas."
+      feedback:
+        success: "Reúnam novas perguntas para orientar investigações futuras."
+    prerequisites:
+      - type: ACTIVITY
+        reference: experimento-da-agua
+        description: "Utilizar registros produzidos durante o experimento para justificar respostas."
