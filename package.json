@@ -23,6 +23,7 @@
     "content:lint": "tsx scripts/content.ts lint",
     "content:build": "tsx scripts/content.ts build",
     "bncc:validate": "tsx scripts/validate-content.ts",
+    "bncc:build": "tsx scripts/bncc.ts",
     "check": "pnpm content:lint && pnpm lint && pnpm content:build -- --no-write && pnpm type-check && pnpm test"
   },
   "lint-staged": {

@@ -1,0 +1,678 @@
+[
+  {
+    "bnccCode": "EF01LP01",
+    "componenteCurricular": "Língua Portuguesa",
+    "etapa": "Ensino Fundamental - Anos Iniciais",
+    "ageGroupSlug": "fundamental-anos-iniciais",
+    "unidadeTematica": "Todos os campos de atuação",
+    "objetoConhecimento": [
+      "Protocolos de leitura"
+    ],
+    "competency": "Reconhecer que textos são lidos e escritos da esquerda para a direita e de cima para baixo da página",
+    "habilidades": [
+      {
+        "codigo": "EF01LP01",
+        "descricao": "Reconhecer que textos são lidos e escritos da esquerda para a direita e de cima para baixo da página"
+      }
+    ],
+    "descricao": "Orientação inicial sobre a direção convencional da leitura e da escrita.",
+    "referencias": [
+      {
+        "documento": "BNCC - Língua Portuguesa",
+        "secao": "Ensino Fundamental Anos Iniciais",
+        "paginaInicial": 98,
+        "paginaFinal": 98
+      }
+    ]
+  },
+  {
+    "bnccCode": "EF01LP02",
+    "componenteCurricular": "Língua Portuguesa",
+    "etapa": "Ensino Fundamental - Anos Iniciais",
+    "ageGroupSlug": "fundamental-anos-iniciais",
+    "unidadeTematica": "Todos os campos de atuação",
+    "objetoConhecimento": [
+      "Correspondência fonema-grafema"
+    ],
+    "competency": "Escrever, espontaneamente ou por ditado, palavras e frases de forma alfabética – usando letras/grafemas que representem fonemas",
+    "habilidades": [
+      {
+        "codigo": "EF01LP02",
+        "descricao": "Escrever, espontaneamente ou por ditado, palavras e frases de forma alfabética – usando letras/grafemas que representem fonemas"
+      }
+    ],
+    "descricao": "Estimula a escrita alfabética relacionando sons e grafemas nas primeiras produções.",
+    "referencias": [
+      {
+        "documento": "BNCC - Língua Portuguesa",
+        "secao": "Ensino Fundamental Anos Iniciais",
+        "paginaInicial": 98,
+        "paginaFinal": 98
+      }
+    ]
+  },
+  {
+    "bnccCode": "EF01LP03",
+    "componenteCurricular": "Língua Portuguesa",
+    "etapa": "Ensino Fundamental - Anos Iniciais",
+    "ageGroupSlug": "fundamental-anos-iniciais",
+    "unidadeTematica": "Todos os campos de atuação",
+    "objetoConhecimento": [
+      "Construção do sistema alfabético/Convenções da escrita"
+    ],
+    "competency": "Observar escritas convencionais, comparando-as às suas produções escritas, percebendo semelhanças e diferenças",
+    "habilidades": [
+      {
+        "codigo": "EF01LP03",
+        "descricao": "Observar escritas convencionais, comparando-as às suas produções escritas, percebendo semelhanças e diferenças"
+      }
+    ],
+    "descricao": "Promove comparação entre escritas autorais e modelos convencionais para ajustar convenções.",
+    "referencias": [
+      {
+        "documento": "BNCC - Língua Portuguesa",
+        "secao": "Ensino Fundamental Anos Iniciais",
+        "paginaInicial": 98,
+        "paginaFinal": 98
+      }
+    ]
+  },
+  {
+    "bnccCode": "EF01LP04",
+    "componenteCurricular": "Língua Portuguesa",
+    "etapa": "Ensino Fundamental - Anos Iniciais",
+    "ageGroupSlug": "fundamental-anos-iniciais",
+    "unidadeTematica": "Todos os campos de atuação",
+    "objetoConhecimento": [
+      "Conhecimento do alfabeto do português do Brasil"
+    ],
+    "competency": "Distinguir as letras do alfabeto de outros sinais gráficos",
+    "habilidades": [
+      {
+        "codigo": "EF01LP04",
+        "descricao": "Distinguir as letras do alfabeto de outros sinais gráficos"
+      }
+    ],
+    "descricao": "Ajuda a distinguir letras de outros símbolos presentes em textos e materiais escolares.",
+    "referencias": [
+      {
+        "documento": "BNCC - Língua Portuguesa",
+        "secao": "Ensino Fundamental Anos Iniciais",
+        "paginaInicial": 98,
+        "paginaFinal": 99
+      }
+    ]
+  },
+  {
+    "bnccCode": "EF01LP05",
+    "componenteCurricular": "Língua Portuguesa",
+    "etapa": "Ensino Fundamental - Anos Iniciais",
+    "ageGroupSlug": "fundamental-anos-iniciais",
+    "unidadeTematica": "Todos os campos de atuação",
+    "objetoConhecimento": [
+      "Construção do sistema alfabético"
+    ],
+    "competency": "Reconhecer o sistema de escrita alfabética como representação dos sons da fala",
+    "habilidades": [
+      {
+        "codigo": "EF01LP05",
+        "descricao": "Reconhecer o sistema de escrita alfabética como representação dos sons da fala"
+      }
+    ],
+    "descricao": "Consolida a compreensão de que letras representam sons no sistema alfabético.",
+    "referencias": [
+      {
+        "documento": "BNCC - Língua Portuguesa",
+        "secao": "Ensino Fundamental Anos Iniciais",
+        "paginaInicial": 98,
+        "paginaFinal": 99
+      }
+    ]
+  },
+  {
+    "bnccCode": "EF01LP06",
+    "componenteCurricular": "Língua Portuguesa",
+    "etapa": "Ensino Fundamental - Anos Iniciais",
+    "ageGroupSlug": "fundamental-anos-iniciais",
+    "unidadeTematica": "Todos os campos de atuação",
+    "objetoConhecimento": [
+      "Construção do sistema alfabético e da ortografia"
+    ],
+    "competency": "Segmentar oralmente palavras em sílabas",
+    "habilidades": [
+      {
+        "codigo": "EF01LP06",
+        "descricao": "Segmentar oralmente palavras em sílabas"
+      }
+    ],
+    "descricao": "Favorece a percepção das sílabas que compõem palavras faladas.",
+    "referencias": [
+      {
+        "documento": "BNCC - Língua Portuguesa",
+        "secao": "Ensino Fundamental Anos Iniciais",
+        "paginaInicial": 98,
+        "paginaFinal": 99
+      }
+    ]
+  },
+  {
+    "bnccCode": "EF01LP07",
+    "componenteCurricular": "Língua Portuguesa",
+    "etapa": "Ensino Fundamental - Anos Iniciais",
+    "ageGroupSlug": "fundamental-anos-iniciais",
+    "unidadeTematica": "Todos os campos de atuação",
+    "objetoConhecimento": [
+      "Construção do sistema alfabético e da ortografia"
+    ],
+    "competency": "Identificar fonemas e sua representação por letras",
+    "habilidades": [
+      {
+        "codigo": "EF01LP07",
+        "descricao": "Identificar fonemas e sua representação por letras"
+      }
+    ],
+    "descricao": "Relaciona fonemas a letras para fortalecer decodificação inicial.",
+    "referencias": [
+      {
+        "documento": "BNCC - Língua Portuguesa",
+        "secao": "Ensino Fundamental Anos Iniciais",
+        "paginaInicial": 98,
+        "paginaFinal": 99
+      }
+    ]
+  },
+  {
+    "bnccCode": "EF01LP08",
+    "componenteCurricular": "Língua Portuguesa",
+    "etapa": "Ensino Fundamental - Anos Iniciais",
+    "ageGroupSlug": "fundamental-anos-iniciais",
+    "unidadeTematica": "Todos os campos de atuação",
+    "objetoConhecimento": [
+      "Construção do sistema alfabético e da ortografia"
+    ],
+    "competency": "Relacionar elementos sonoros (sílabas, fonemas, partes de palavras) com sua representação escrita",
+    "habilidades": [
+      {
+        "codigo": "EF01LP08",
+        "descricao": "Relacionar elementos sonoros (sílabas, fonemas, partes de palavras) com sua representação escrita"
+      }
+    ],
+    "descricao": "Conecta sons, sílabas e grafias para ampliar consciência fonológica.",
+    "referencias": [
+      {
+        "documento": "BNCC - Língua Portuguesa",
+        "secao": "Ensino Fundamental Anos Iniciais",
+        "paginaInicial": 99,
+        "paginaFinal": 100
+      }
+    ]
+  },
+  {
+    "bnccCode": "EF01LP09",
+    "componenteCurricular": "Língua Portuguesa",
+    "etapa": "Ensino Fundamental - Anos Iniciais",
+    "ageGroupSlug": "fundamental-anos-iniciais",
+    "unidadeTematica": "Todos os campos de atuação",
+    "objetoConhecimento": [
+      "Construção do sistema alfabético e da ortografia"
+    ],
+    "competency": "Comparar palavras, identificando semelhanças e diferenças entre sons de sílabas iniciais",
+    "habilidades": [
+      {
+        "codigo": "EF01LP09",
+        "descricao": "Comparar palavras, identificando semelhanças e diferenças entre sons de sílabas iniciais"
+      }
+    ],
+    "descricao": "Explora comparação de sílabas iniciais para notar diferenças sonoras.",
+    "referencias": [
+      {
+        "documento": "BNCC - Língua Portuguesa",
+        "secao": "Ensino Fundamental Anos Iniciais",
+        "paginaInicial": 99,
+        "paginaFinal": 100
+      }
+    ]
+  },
+  {
+    "bnccCode": "EF01LP10",
+    "componenteCurricular": "Língua Portuguesa",
+    "etapa": "Ensino Fundamental - Anos Iniciais",
+    "ageGroupSlug": "fundamental-anos-iniciais",
+    "unidadeTematica": "Todos os campos de atuação",
+    "objetoConhecimento": [
+      "Conhecimento do alfabeto do português do Brasil"
+    ],
+    "competency": "Nomear as letras do alfabeto e recitá-lo na ordem das letras",
+    "habilidades": [
+      {
+        "codigo": "EF01LP10",
+        "descricao": "Nomear as letras do alfabeto e recitá-lo na ordem das letras"
+      }
+    ],
+    "descricao": "Garante memorização e sequência do alfabeto em nomeação oral.",
+    "referencias": [
+      {
+        "documento": "BNCC - Língua Portuguesa",
+        "secao": "Ensino Fundamental Anos Iniciais",
+        "paginaInicial": 99,
+        "paginaFinal": 100
+      }
+    ]
+  },
+  {
+    "bnccCode": "EF01LP11",
+    "componenteCurricular": "Língua Portuguesa",
+    "etapa": "Ensino Fundamental - Anos Iniciais",
+    "ageGroupSlug": "fundamental-anos-iniciais",
+    "unidadeTematica": "Todos os campos de atuação",
+    "objetoConhecimento": [
+      "Conhecimento das diversas grafias do alfabeto/Acentuação"
+    ],
+    "competency": "Conhecer, diferenciar e relacionar letras em formato imprensa e cursiva, maiúsculas e minúsculas",
+    "habilidades": [
+      {
+        "codigo": "EF01LP11",
+        "descricao": "Conhecer, diferenciar e relacionar letras em formato imprensa e cursiva, maiúsculas e minúsculas"
+      }
+    ],
+    "descricao": "Reconhece variações de grafia em letras maiúsculas, minúsculas, imprensa e cursiva.",
+    "referencias": [
+      {
+        "documento": "BNCC - Língua Portuguesa",
+        "secao": "Ensino Fundamental Anos Iniciais",
+        "paginaInicial": 99,
+        "paginaFinal": 100
+      }
+    ]
+  },
+  {
+    "bnccCode": "EF01LP12",
+    "componenteCurricular": "Língua Portuguesa",
+    "etapa": "Ensino Fundamental - Anos Iniciais",
+    "ageGroupSlug": "fundamental-anos-iniciais",
+    "unidadeTematica": "Todos os campos de atuação",
+    "objetoConhecimento": [
+      "Segmentação de palavras/Classificação de palavras por número de sílabas"
+    ],
+    "competency": "Reconhecer a separação das palavras, na escrita, por espaços em branco",
+    "habilidades": [
+      {
+        "codigo": "EF01LP12",
+        "descricao": "Reconhecer a separação das palavras, na escrita, por espaços em branco"
+      }
+    ],
+    "descricao": "Reforça o uso de espaços em branco como separadores de palavras.",
+    "referencias": [
+      {
+        "documento": "BNCC - Língua Portuguesa",
+        "secao": "Ensino Fundamental Anos Iniciais",
+        "paginaInicial": 99,
+        "paginaFinal": 100
+      }
+    ]
+  },
+  {
+    "bnccCode": "EF01LP13",
+    "componenteCurricular": "Língua Portuguesa",
+    "etapa": "Ensino Fundamental - Anos Iniciais",
+    "ageGroupSlug": "fundamental-anos-iniciais",
+    "unidadeTematica": "Todos os campos de atuação",
+    "objetoConhecimento": [
+      "Construção do sistema alfabético"
+    ],
+    "competency": "Comparar palavras, identificando semelhanças e diferenças entre sons de sílabas mediais e finais",
+    "habilidades": [
+      {
+        "codigo": "EF01LP13",
+        "descricao": "Comparar palavras, identificando semelhanças e diferenças entre sons de sílabas mediais e finais"
+      }
+    ],
+    "descricao": "Analisa semelhanças sonoras em sílabas mediais e finais para refinar escuta.",
+    "referencias": [
+      {
+        "documento": "BNCC - Língua Portuguesa",
+        "secao": "Ensino Fundamental Anos Iniciais",
+        "paginaInicial": 99,
+        "paginaFinal": 100
+      }
+    ]
+  },
+  {
+    "bnccCode": "EF01LP14",
+    "componenteCurricular": "Língua Portuguesa",
+    "etapa": "Ensino Fundamental - Anos Iniciais",
+    "ageGroupSlug": "fundamental-anos-iniciais",
+    "unidadeTematica": "Todos os campos de atuação",
+    "objetoConhecimento": [
+      "Pontuação"
+    ],
+    "competency": "Identificar outros sinais no texto além das letras, como pontos finais, de interrogação e exclamação e seus efeitos na entonação",
+    "habilidades": [
+      {
+        "codigo": "EF01LP14",
+        "descricao": "Identificar outros sinais no texto além das letras, como pontos finais, de interrogação e exclamação e seus efeitos na entonação"
+      }
+    ],
+    "descricao": "Apresenta sinais de pontuação básicos e seus efeitos na oralidade.",
+    "referencias": [
+      {
+        "documento": "BNCC - Língua Portuguesa",
+        "secao": "Ensino Fundamental Anos Iniciais",
+        "paginaInicial": 100,
+        "paginaFinal": 100
+      }
+    ]
+  },
+  {
+    "bnccCode": "EF01LP15",
+    "componenteCurricular": "Língua Portuguesa",
+    "etapa": "Ensino Fundamental - Anos Iniciais",
+    "ageGroupSlug": "fundamental-anos-iniciais",
+    "unidadeTematica": "Todos os campos de atuação",
+    "objetoConhecimento": [
+      "Sinonímia e antonímia/Morfologia/Pontuação"
+    ],
+    "competency": "Agrupar palavras pelo critério de aproximação de significado (sinonímia) e separar palavras pelo critério de oposição de significado (antonímia)",
+    "habilidades": [
+      {
+        "codigo": "EF01LP15",
+        "descricao": "Agrupar palavras pelo critério de aproximação de significado (sinonímia) e separar palavras pelo critério de oposição de significado (antonímia)"
+      }
+    ],
+    "descricao": "Amplia vocabulário por agrupamento de sinônimos e antônimos simples.",
+    "referencias": [
+      {
+        "documento": "BNCC - Língua Portuguesa",
+        "secao": "Ensino Fundamental Anos Iniciais",
+        "paginaInicial": 100,
+        "paginaFinal": 100
+      }
+    ]
+  },
+  {
+    "bnccCode": "EF01LP16",
+    "componenteCurricular": "Língua Portuguesa",
+    "etapa": "Ensino Fundamental - Anos Iniciais",
+    "ageGroupSlug": "fundamental-anos-iniciais",
+    "unidadeTematica": "Campo da vida cotidiana",
+    "objetoConhecimento": [
+      "Compreensão em leitura"
+    ],
+    "competency": "Ler e compreender, em colaboração com os colegas e com a ajuda do professor, quadras, quadrinhas, parlendas, trava-línguas, dentre outros gêneros do campo da vida cotidiana, considerando a situação comunicativa e o tema/assunto do texto e relacionando sua forma de organização à sua finalidade",
+    "habilidades": [
+      {
+        "codigo": "EF01LP16",
+        "descricao": "Ler e compreender, em colaboração com os colegas e com a ajuda do professor, quadras, quadrinhas, parlendas, trava-línguas, dentre outros gêneros do campo da vida cotidiana, considerando a situação comunicativa e o tema/assunto do texto e relacionando sua forma de organização à sua finalidade"
+      }
+    ],
+    "descricao": "Desenvolve compreensão de parlendas e quadras com apoio docente e coletivo.",
+    "referencias": [
+      {
+        "documento": "BNCC - Língua Portuguesa",
+        "secao": "Ensino Fundamental Anos Iniciais",
+        "paginaInicial": 102,
+        "paginaFinal": 103
+      }
+    ]
+  },
+  {
+    "bnccCode": "EF01LP17",
+    "componenteCurricular": "Língua Portuguesa",
+    "etapa": "Ensino Fundamental - Anos Iniciais",
+    "ageGroupSlug": "fundamental-anos-iniciais",
+    "unidadeTematica": "Campo da vida cotidiana",
+    "objetoConhecimento": [
+      "Escrita autônoma e compartilhada"
+    ],
+    "competency": "Planejar e produzir, em colaboração com os colegas e com a ajuda do professor, listas, agendas, calendários, avisos, convites, receitas, instruções de montagem e legendas para álbuns, fotos ou ilustrações (digitais ou impressos), dentre outros gêneros do campo da vida cotidiana, considerando a situação comunicativa e o tema/assunto/ finalidade do texto",
+    "habilidades": [
+      {
+        "codigo": "EF01LP17",
+        "descricao": "Planejar e produzir, em colaboração com os colegas e com a ajuda do professor, listas, agendas, calendários, avisos, convites, receitas, instruções de montagem e legendas para álbuns, fotos ou ilustrações (digitais ou impressos), dentre outros gêneros do campo da vida cotidiana, considerando a situação comunicativa e o tema/assunto/ finalidade do texto"
+      }
+    ],
+    "descricao": "Planeja produções cotidianas como listas e convites com foco colaborativo.",
+    "referencias": [
+      {
+        "documento": "BNCC - Língua Portuguesa",
+        "secao": "Ensino Fundamental Anos Iniciais",
+        "paginaInicial": 102,
+        "paginaFinal": 103
+      }
+    ]
+  },
+  {
+    "bnccCode": "EF01LP18",
+    "componenteCurricular": "Língua Portuguesa",
+    "etapa": "Ensino Fundamental - Anos Iniciais",
+    "ageGroupSlug": "fundamental-anos-iniciais",
+    "unidadeTematica": "Campo da vida cotidiana",
+    "objetoConhecimento": [
+      "Escrita compartilhada"
+    ],
+    "competency": "Registrar, em colaboração com os colegas e com a ajuda do professor, cantigas, quadras, quadrinhas, parlendas, trava-línguas, dentre outros gêneros do campo da vida cotidiana, considerando a situação comunicativa e o tema/assunto/finalidade do texto",
+    "habilidades": [
+      {
+        "codigo": "EF01LP18",
+        "descricao": "Registrar, em colaboração com os colegas e com a ajuda do professor, cantigas, quadras, quadrinhas, parlendas, trava-línguas, dentre outros gêneros do campo da vida cotidiana, considerando a situação comunicativa e o tema/assunto/finalidade do texto"
+      }
+    ],
+    "descricao": "Registra cantigas e parlendas coletivamente, preservando gênero e finalidade.",
+    "referencias": [
+      {
+        "documento": "BNCC - Língua Portuguesa",
+        "secao": "Ensino Fundamental Anos Iniciais",
+        "paginaInicial": 102,
+        "paginaFinal": 103
+      }
+    ]
+  },
+  {
+    "bnccCode": "EF01LP19",
+    "componenteCurricular": "Língua Portuguesa",
+    "etapa": "Ensino Fundamental - Anos Iniciais",
+    "ageGroupSlug": "fundamental-anos-iniciais",
+    "unidadeTematica": "Campo da vida cotidiana",
+    "objetoConhecimento": [
+      "Produção de texto oral"
+    ],
+    "competency": "Recitar parlendas, quadras, quadrinhas, trava-línguas, com entonação adequada e observando as rimas",
+    "habilidades": [
+      {
+        "codigo": "EF01LP19",
+        "descricao": "Recitar parlendas, quadras, quadrinhas, trava-línguas, com entonação adequada e observando as rimas"
+      }
+    ],
+    "descricao": "Estimula recitação expressiva de parlendas com atenção ao ritmo e às rimas.",
+    "referencias": [
+      {
+        "documento": "BNCC - Língua Portuguesa",
+        "secao": "Ensino Fundamental Anos Iniciais",
+        "paginaInicial": 103,
+        "paginaFinal": 103
+      }
+    ]
+  },
+  {
+    "bnccCode": "EF01LP20",
+    "componenteCurricular": "Língua Portuguesa",
+    "etapa": "Ensino Fundamental - Anos Iniciais",
+    "ageGroupSlug": "fundamental-anos-iniciais",
+    "unidadeTematica": "Campo da vida cotidiana",
+    "objetoConhecimento": [
+      "Forma de composição do texto"
+    ],
+    "competency": "Identificar e reproduzir, em listas, agendas, calendários, regras, avisos, convites, receitas, instruções de montagem e legendas para álbuns, fotos ou ilustrações (digitais ou impressos), a formatação e diagramação específica de cada um desses gêneros",
+    "habilidades": [
+      {
+        "codigo": "EF01LP20",
+        "descricao": "Identificar e reproduzir, em listas, agendas, calendários, regras, avisos, convites, receitas, instruções de montagem e legendas para álbuns, fotos ou ilustrações (digitais ou impressos), a formatação e diagramação específica de cada um desses gêneros"
+      }
+    ],
+    "descricao": "Observa o leiaute de gêneros cotidianos para reproduzir sua organização gráfica.",
+    "referencias": [
+      {
+        "documento": "BNCC - Língua Portuguesa",
+        "secao": "Ensino Fundamental Anos Iniciais",
+        "paginaInicial": 104,
+        "paginaFinal": 104
+      }
+    ]
+  },
+  {
+    "bnccCode": "EF01LP21",
+    "componenteCurricular": "Língua Portuguesa",
+    "etapa": "Ensino Fundamental - Anos Iniciais",
+    "ageGroupSlug": "fundamental-anos-iniciais",
+    "unidadeTematica": "Campo da vida pública",
+    "objetoConhecimento": [
+      "Escrita compartilhada"
+    ],
+    "competency": "Escrever, em colaboração com os colegas e com a ajuda do professor, listas de regras e regulamentos que organizam a vida na comunidade escolar, dentre outros gêneros do campo da atuação cidadã, considerando a situação comunicativa e o tema/assunto do texto",
+    "habilidades": [
+      {
+        "codigo": "EF01LP21",
+        "descricao": "Escrever, em colaboração com os colegas e com a ajuda do professor, listas de regras e regulamentos que organizam a vida na comunidade escolar, dentre outros gêneros do campo da atuação cidadã, considerando a situação comunicativa e o tema/assunto do texto"
+      }
+    ],
+    "descricao": "Produz regras coletivas da comunidade escolar alinhadas aos gêneros da vida pública.",
+    "referencias": [
+      {
+        "documento": "BNCC - Língua Portuguesa",
+        "secao": "Ensino Fundamental Anos Iniciais",
+        "paginaInicial": 106,
+        "paginaFinal": 106
+      }
+    ]
+  },
+  {
+    "bnccCode": "EF01LP22",
+    "componenteCurricular": "Língua Portuguesa",
+    "etapa": "Ensino Fundamental - Anos Iniciais",
+    "ageGroupSlug": "fundamental-anos-iniciais",
+    "unidadeTematica": "Campo das práticas de estudo e pesquisa",
+    "objetoConhecimento": [
+      "Produção de textos"
+    ],
+    "competency": "Planejar e produzir, em colaboração com os colegas e com a ajuda do professor, diagramas, entrevistas, curiosidades, dentre outros gêneros do campo investigativo, digitais ou impressos, considerando a situação comunicativa e o tema/assunto/finalidade do texto",
+    "habilidades": [
+      {
+        "codigo": "EF01LP22",
+        "descricao": "Planejar e produzir, em colaboração com os colegas e com a ajuda do professor, diagramas, entrevistas, curiosidades, dentre outros gêneros do campo investigativo, digitais ou impressos, considerando a situação comunicativa e o tema/assunto/finalidade do texto"
+      }
+    ],
+    "descricao": "Organiza registros investigativos em diagramas ou entrevistas com suporte docente.",
+    "referencias": [
+      {
+        "documento": "BNCC - Língua Portuguesa",
+        "secao": "Ensino Fundamental Anos Iniciais",
+        "paginaInicial": 108,
+        "paginaFinal": 109
+      }
+    ]
+  },
+  {
+    "bnccCode": "EF01LP23",
+    "componenteCurricular": "Língua Portuguesa",
+    "etapa": "Ensino Fundamental - Anos Iniciais",
+    "ageGroupSlug": "fundamental-anos-iniciais",
+    "unidadeTematica": "Campo das práticas de estudo e pesquisa",
+    "objetoConhecimento": [
+      "Planejamento de texto oral"
+    ],
+    "competency": "Planejar e produzir, em colaboração com os colegas e com a ajuda do professor, entrevistas, curiosidades, dentre outros gêneros do campo investigativo, que possam ser repassados oralmente por meio de ferramentas digitais, em áudio ou vídeo, considerando a situação comunicativa e o tema/assunto/finalidade do texto",
+    "habilidades": [
+      {
+        "codigo": "EF01LP23",
+        "descricao": "Planejar e produzir, em colaboração com os colegas e com a ajuda do professor, entrevistas, curiosidades, dentre outros gêneros do campo investigativo, que possam ser repassados oralmente por meio de ferramentas digitais, em áudio ou vídeo, considerando a situação comunicativa e o tema/assunto/finalidade do texto"
+      }
+    ],
+    "descricao": "Planeja entrevistas e curiosidades para compartilhamento oral ou digital.",
+    "referencias": [
+      {
+        "documento": "BNCC - Língua Portuguesa",
+        "secao": "Ensino Fundamental Anos Iniciais",
+        "paginaInicial": 108,
+        "paginaFinal": 109
+      }
+    ]
+  },
+  {
+    "bnccCode": "EF01LP24",
+    "componenteCurricular": "Língua Portuguesa",
+    "etapa": "Ensino Fundamental - Anos Iniciais",
+    "ageGroupSlug": "fundamental-anos-iniciais",
+    "unidadeTematica": "Campo das práticas de estudo e pesquisa",
+    "objetoConhecimento": [
+      "Forma de composição dos textos/Adequação do texto às normas de escrita"
+    ],
+    "competency": "Identificar e reproduzir, em enunciados de tarefas escolares, diagramas, entrevistas, curiosidades, digitais ou impressos, a formatação e diagramação específica de cada um desses gêneros, inclusive em suas versões orais",
+    "habilidades": [
+      {
+        "codigo": "EF01LP24",
+        "descricao": "Identificar e reproduzir, em enunciados de tarefas escolares, diagramas, entrevistas, curiosidades, digitais ou impressos, a formatação e diagramação específica de cada um desses gêneros, inclusive em suas versões orais"
+      }
+    ],
+    "descricao": "Identifica formatação típica de enunciados, diagramas e entrevistas escolares.",
+    "referencias": [
+      {
+        "documento": "BNCC - Língua Portuguesa",
+        "secao": "Ensino Fundamental Anos Iniciais",
+        "paginaInicial": 110,
+        "paginaFinal": 110
+      }
+    ]
+  },
+  {
+    "bnccCode": "EF01LP25",
+    "componenteCurricular": "Língua Portuguesa",
+    "etapa": "Ensino Fundamental - Anos Iniciais",
+    "ageGroupSlug": "fundamental-anos-iniciais",
+    "unidadeTematica": "Campo artístico-literário",
+    "objetoConhecimento": [
+      "Escrita autônoma e compartilhada"
+    ],
+    "competency": "Produzir, tendo o professor como escriba, recontagens de histórias lidas pelo professor, histórias imaginadas ou baseadas em livros de imagens, observando a forma de composição de textos narrativos (personagens, enredo, tempo e espaço)",
+    "habilidades": [
+      {
+        "codigo": "EF01LP25",
+        "descricao": "Produzir, tendo o professor como escriba, recontagens de histórias lidas pelo professor, histórias imaginadas ou baseadas em livros de imagens, observando a forma de composição de textos narrativos (personagens, enredo, tempo e espaço)"
+      }
+    ],
+    "descricao": "Cria recontagens com apoio do professor a partir de narrativas vivenciadas.",
+    "referencias": [
+      {
+        "documento": "BNCC - Língua Portuguesa",
+        "secao": "Ensino Fundamental Anos Iniciais",
+        "paginaInicial": 110,
+        "paginaFinal": 110
+      }
+    ]
+  },
+  {
+    "bnccCode": "EF01LP26",
+    "componenteCurricular": "Língua Portuguesa",
+    "etapa": "Ensino Fundamental - Anos Iniciais",
+    "ageGroupSlug": "fundamental-anos-iniciais",
+    "unidadeTematica": "Campo artístico-literário",
+    "objetoConhecimento": [
+      "Formas de composição de narrativas"
+    ],
+    "competency": "Identificar elementos de uma narrativa lida ou escutada, incluindo personagens, enredo, tempo e espaço",
+    "habilidades": [
+      {
+        "codigo": "EF01LP26",
+        "descricao": "Identificar elementos de uma narrativa lida ou escutada, incluindo personagens, enredo, tempo e espaço"
+      }
+    ],
+    "descricao": "Reconhece elementos narrativos fundamentais em histórias lidas ou escutadas.",
+    "referencias": [
+      {
+        "documento": "BNCC - Língua Portuguesa",
+        "secao": "Ensino Fundamental Anos Iniciais",
+        "paginaInicial": 110,
+        "paginaFinal": 110
+      }
+    ]
+  }
+]
