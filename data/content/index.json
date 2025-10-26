@@ -1,0 +1,140 @@
+{
+  "generatedAt": "2025-10-26T13:09:15.242Z",
+  "contentHash": "e1b7aceaab9799055977509d2e503eb74bc79b241b39a0003741e6b6a198bf03",
+  "modulesBySubject": {
+    "ciencias": ["laboratorio-da-natureza"],
+    "lingua-portuguesa": ["clubinho-das-palavras", "trilhas-narrativas-digitais"],
+    "linguagens": ["historias-em-movimento"],
+    "matematica": ["estudio-dados-solidarios", "oficina-modelagem-dados", "rota-das-operacoes"]
+  },
+  "modulesByStage": {
+    "ef01": ["clubinho-das-palavras"],
+    "ef05": ["rota-das-operacoes"],
+    "ef07": ["laboratorio-da-natureza", "oficina-modelagem-dados"],
+    "ef69": ["trilhas-narrativas-digitais"],
+    "ei": ["historias-em-movimento"],
+    "em": ["estudio-dados-solidarios"]
+  },
+  "activitiesByDifficulty": {
+    "INICIAR": [
+      {
+        "moduleSlug": "clubinho-das-palavras",
+        "activitySlug": "detectives-das-palavras",
+        "activityType": "QUIZ"
+      },
+      {
+        "moduleSlug": "historias-em-movimento",
+        "activitySlug": "danca-dos-sons",
+        "activityType": "PUZZLE"
+      },
+      {
+        "moduleSlug": "historias-em-movimento",
+        "activitySlug": "teatro-das-emocoes",
+        "activityType": "GAME"
+      }
+    ],
+    "PRATICAR": [
+      {
+        "moduleSlug": "clubinho-das-palavras",
+        "activitySlug": "laboratorio-das-palavras",
+        "activityType": "GAME"
+      },
+      {
+        "moduleSlug": "estudio-dados-solidarios",
+        "activitySlug": "podcast-projeto-vida",
+        "activityType": "PROJECT"
+      },
+      {
+        "moduleSlug": "laboratorio-da-natureza",
+        "activitySlug": "experimento-da-agua",
+        "activityType": "PUZZLE"
+      },
+      {
+        "moduleSlug": "oficina-modelagem-dados",
+        "activitySlug": "grafico-vivo-da-comunidade",
+        "activityType": "GAME"
+      },
+      {
+        "moduleSlug": "rota-das-operacoes",
+        "activitySlug": "estacao-resto-inteligente",
+        "activityType": "PUZZLE"
+      },
+      {
+        "moduleSlug": "rota-das-operacoes",
+        "activitySlug": "missao-equipes-multiplicadoras",
+        "activityType": "GAME"
+      },
+      {
+        "moduleSlug": "trilhas-narrativas-digitais",
+        "activitySlug": "podcast-voz-da-comunidade",
+        "activityType": "PROJECT"
+      }
+    ],
+    "DOMINAR": [
+      {
+        "moduleSlug": "estudio-dados-solidarios",
+        "activitySlug": "investigacao-dados-bairro",
+        "activityType": "GAME"
+      },
+      {
+        "moduleSlug": "laboratorio-da-natureza",
+        "activitySlug": "quiz-sustentabilidade",
+        "activityType": "QUIZ"
+      },
+      {
+        "moduleSlug": "oficina-modelagem-dados",
+        "activitySlug": "dash-impacto-escolar",
+        "activityType": "PROJECT"
+      },
+      {
+        "moduleSlug": "trilhas-narrativas-digitais",
+        "activitySlug": "webdoc-historias-do-bairro",
+        "activityType": "PROJECT"
+      }
+    ]
+  },
+  "interactiveMap": {
+    "game-missao-equipes-multiplicadoras": {
+      "moduleSlug": "rota-das-operacoes",
+      "activitySlug": "missao-equipes-multiplicadoras",
+      "activityType": "GAME"
+    },
+    "puzzle-danca-dos-sons": {
+      "moduleSlug": "historias-em-movimento",
+      "activitySlug": "danca-dos-sons",
+      "activityType": "PUZZLE"
+    },
+    "quiz-detectives-das-palavras": {
+      "moduleSlug": "clubinho-das-palavras",
+      "activitySlug": "detectives-das-palavras",
+      "activityType": "QUIZ"
+    }
+  },
+  "bncc": {
+    "modules": {
+      "clubinho-das-palavras": "EF01LP06",
+      "estudio-dados-solidarios": "EM13MAT305",
+      "historias-em-movimento": "EI03ET04",
+      "laboratorio-da-natureza": "EF07CI02",
+      "oficina-modelagem-dados": "EF07MA16",
+      "rota-das-operacoes": "EF05MA08",
+      "trilhas-narrativas-digitais": "EF69LP28"
+    },
+    "activities": {
+      "danca-dos-sons": "EI03ET04",
+      "dash-impacto-escolar": "EF07MA16",
+      "detectives-das-palavras": "EF01LP06",
+      "estacao-resto-inteligente": "EF05MA08",
+      "experimento-da-agua": "EF07CI02",
+      "grafico-vivo-da-comunidade": "EF07MA16",
+      "investigacao-dados-bairro": "EM13MAT305",
+      "laboratorio-das-palavras": "EF35LP20",
+      "missao-equipes-multiplicadoras": "EF05MA08",
+      "podcast-projeto-vida": "EM13MAT305",
+      "podcast-voz-da-comunidade": "EF69LP28",
+      "quiz-sustentabilidade": "EF07CI02",
+      "teatro-das-emocoes": "EI03ET04",
+      "webdoc-historias-do-bairro": "EF69LP28"
+    }
+  }
+}

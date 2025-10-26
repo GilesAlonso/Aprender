@@ -1,0 +1,7 @@
+accessibility:
+  hints:
+    - audience: EDUCADOR
+      text: "Convide educadores a oferecer apoio individual quando necessário."
+    - text: "Combine gestos e linguagem simples para garantir compreensão coletiva."
+  feedback:
+    encouragement: "Reconheça as contribuições de cada estudante e dê tempo extra para quem precisar."

@@ -1,0 +1,144 @@
+module:
+  slug: clubinho-das-palavras
+  title: "Clubinho das Palavras"
+  subtitle: "Leituras compartilhadas"
+  description: "Módulo para construir repertório de leitura e produção de bilhetes e convites."
+  theme: "Língua Portuguesa"
+  discipline: "Língua Portuguesa"
+  ageGroupSlug: fundamental-anos-iniciais
+  learningPathSlug: descobertas-palavras
+  primaryBnccCode: EF01LP06
+  secondaryBnccCodes:
+    - EF35LP20
+  learningOutcomes:
+    - "Identificar informações principais em textos curtos do cotidiano escolar."
+    - "Relacionar sons e letras em palavras familiares."
+    - "Produzir mensagens curtas para situações reais da turma."
+  tags:
+    - alfabetizacao
+    - leitura-compartilhada
+activities:
+  - partial: ../../_partials/acolhimento-base.yaml
+    slug: detectives-das-palavras
+    title: "Detetives das Palavras"
+    prompt: "Encontre em pequenos textos palavras com o som da letra inicial do seu nome."
+    type: QUIZ
+    difficulty: INICIAR
+    bncc:
+      code: EF01LP06
+      habilidades:
+        - EF01LP06
+    learningObjectives:
+      - "Identificar palavras com sons iniciais semelhantes."
+      - "Compartilhar estratégias de leitura com os colegas."
+    description: "Leitura compartilhada para identificar palavras e sons iniciais."
+    metadata:
+      generoTextual: Bilhete
+      estrategia: "Leitura guiada"
+      interactiveSlug: quiz-detectives-das-palavras
+    accessibility:
+      assets:
+        - type: DOCUMENTO
+          uri: "/apoio/fichas/letra-inicial.pdf"
+          title: "Ficha de rastreamento de letras"
+      hints:
+        - audience: EDUCADOR
+          text: "Projete o texto em fonte ampliada e leia em voz alta modelando a segmentação."
+        - text: "Ofereça lupas de brinquedo para tornar a busca mais lúdica."
+    prerequisites:
+      - type: SKILL
+        reference: EF01LP02
+        description: "Perceber a segmentação de palavras orais em frases curtas."
+    interactive:
+      slug: quiz-detectives-das-palavras
+      title: "Detetives das Palavras — Quiz"
+      type: QUIZ
+      bnccDescription: "Relacionar sons e letras em palavras familiares e textos curtos."
+      estimatedTimeMinutes: 8
+      instructions:
+        - "Leia cada desafio com atenção e pense no som inicial das palavras."
+        - "Converse com a turma sobre suas hipóteses antes de confirmar a resposta."
+        - "Use a dica sempre que precisar de uma pista extra."
+      objectives:
+        - "Identificar palavras com sons iniciais semelhantes."
+        - "Compartilhar estratégias de leitura com os colegas."
+        - "Ampliar repertório de vocabulário cotidiano."
+      scoring:
+        correct: 10
+        incorrect: 0
+      adaptive:
+        increaseAfter: 2
+        decreaseAfter: 1
+      questions:
+        - id: det-q1
+          type: multiple-choice
+          prompt: "Qual destas palavras começa com o mesmo som de 'bola'?"
+          hint: "Escute mentalmente o som inicial de cada palavra."
+          options:
+            - id: det-q1-a
+              text: "Bicicleta"
+              isCorrect: true
+              feedback: "Muito bem! 'Bicicleta' inicia com o som /b/, assim como 'bola'."
+            - id: det-q1-b
+              text: "Tesoura"
+              isCorrect: false
+              feedback: "Quase! 'Tesoura' começa com /t/. Procure outra palavra com o som /b/."
+            - id: det-q1-c
+              text: "Geladeira"
+              isCorrect: false
+              feedback: "Ainda não. 'Geladeira' começa com /g/."
+        - id: det-q2
+          type: true-false
+          prompt: "A palavra 'balão' começa com o mesmo som de 'bola'."
+          hint: "Repita devagar: ba-lão."
+          statement: "balão e bola começam com o som /b/."
+          answer: true
+          feedback:
+            true: "Isso mesmo! As duas palavras começam com /b/."
+            false: "Ops! Ambas têm o som inicial /b/."
+        - id: det-q3
+          type: ordering
+          prompt: "Organize as sílabas para formar a palavra 'BORBOLETA'."
+          hint: "Pronuncie devagar: BOR-BO-LE-TA."
+          items:
+            - id: bor
+              text: BOR
+            - id: bo
+              text: BO
+            - id: le
+              text: LE
+            - id: ta
+              text: TA
+          correctOrder:
+            - bor
+            - bo
+            - le
+            - ta
+          successFeedback: "Excelente! Você organizou a palavra certinha."
+          failureFeedback: "Revise a ordem pronunciando devagar cada sílaba."
+  - partial: ../../_partials/acolhimento-base.yaml
+    slug: laboratorio-das-palavras
+    title: "Laboratório das Palavras"
+    prompt: "Monte um convite para a turma usando as palavras investigadas na atividade anterior."
+    type: GAME
+    difficulty: PRATICAR
+    bncc:
+      code: EF35LP20
+      habilidades:
+        - EF35LP20
+    learningObjectives:
+      - "Planejar coletivamente um texto com destinatário definido."
+      - "Revisar palavras-chave para garantir clareza do convite."
+    description: "Produção de texto coletivo com apoio de repertórios e modelos."
+    metadata:
+      suporte: Cartolina
+      colaborativo: true
+    accessibility:
+      hints:
+        - text: "Proponha um quadro de ideias com imagens para apoiar estudantes em processo de alfabetização."
+      feedback:
+        success: "Convite pronto! Combine com a turma quais próximas mensagens produzir."
+    prerequisites:
+      - type: ACTIVITY
+        reference: detectives-das-palavras
+        description: "Revisar palavras coletadas durante o quiz para reutilizá-las na produção."

@@ -1,0 +1,892 @@
+// Vitest Snapshot v1, https://vitest.dev/guide/snapshot.html
+
+exports[`content build > gera artefatos determinísticos a partir do workspace 1`] = `
+{
+  "index": {
+    "activitiesByDifficulty": {
+      "DOMINAR": [
+        {
+          "activitySlug": "investigacao-dados-bairro",
+          "activityType": "GAME",
+          "moduleSlug": "estudio-dados-solidarios",
+        },
+        {
+          "activitySlug": "quiz-sustentabilidade",
+          "activityType": "QUIZ",
+          "moduleSlug": "laboratorio-da-natureza",
+        },
+        {
+          "activitySlug": "dash-impacto-escolar",
+          "activityType": "PROJECT",
+          "moduleSlug": "oficina-modelagem-dados",
+        },
+        {
+          "activitySlug": "webdoc-historias-do-bairro",
+          "activityType": "PROJECT",
+          "moduleSlug": "trilhas-narrativas-digitais",
+        },
+      ],
+      "INICIAR": [
+        {
+          "activitySlug": "detectives-das-palavras",
+          "activityType": "QUIZ",
+          "moduleSlug": "clubinho-das-palavras",
+        },
+        {
+          "activitySlug": "danca-dos-sons",
+          "activityType": "PUZZLE",
+          "moduleSlug": "historias-em-movimento",
+        },
+        {
+          "activitySlug": "teatro-das-emocoes",
+          "activityType": "GAME",
+          "moduleSlug": "historias-em-movimento",
+        },
+      ],
+      "PRATICAR": [
+        {
+          "activitySlug": "laboratorio-das-palavras",
+          "activityType": "GAME",
+          "moduleSlug": "clubinho-das-palavras",
+        },
+        {
+          "activitySlug": "podcast-projeto-vida",
+          "activityType": "PROJECT",
+          "moduleSlug": "estudio-dados-solidarios",
+        },
+        {
+          "activitySlug": "experimento-da-agua",
+          "activityType": "PUZZLE",
+          "moduleSlug": "laboratorio-da-natureza",
+        },
+        {
+          "activitySlug": "grafico-vivo-da-comunidade",
+          "activityType": "GAME",
+          "moduleSlug": "oficina-modelagem-dados",
+        },
+        {
+          "activitySlug": "estacao-resto-inteligente",
+          "activityType": "PUZZLE",
+          "moduleSlug": "rota-das-operacoes",
+        },
+        {
+          "activitySlug": "missao-equipes-multiplicadoras",
+          "activityType": "GAME",
+          "moduleSlug": "rota-das-operacoes",
+        },
+        {
+          "activitySlug": "podcast-voz-da-comunidade",
+          "activityType": "PROJECT",
+          "moduleSlug": "trilhas-narrativas-digitais",
+        },
+      ],
+    },
+    "contentHash": "af17bf6a59e6ed20d68c3ba9793423b336a7de084a206d50f1cd5c10d3f7f0f2",
+    "generatedAt": "2024-01-01T12:00:00.000Z",
+    "modulesBySubject": {
+      "ciencias": [
+        "laboratorio-da-natureza",
+      ],
+      "lingua-portuguesa": [
+        "clubinho-das-palavras",
+        "trilhas-narrativas-digitais",
+      ],
+      "linguagens": [
+        "historias-em-movimento",
+      ],
+      "matematica": [
+        "estudio-dados-solidarios",
+        "oficina-modelagem-dados",
+        "rota-das-operacoes",
+      ],
+    },
+  },
+  "interactive": {
+    "activities": [
+      {
+        "activitySlug": "missao-equipes-multiplicadoras",
+        "contentModuleSlug": "rota-das-operacoes",
+        "difficulty": "INTERMEDIATE",
+        "slug": "game-missao-equipes-multiplicadoras",
+        "type": "GAME",
+      },
+      {
+        "activitySlug": "danca-dos-sons",
+        "contentModuleSlug": "historias-em-movimento",
+        "difficulty": "BEGINNER",
+        "slug": "puzzle-danca-dos-sons",
+        "type": "PUZZLE",
+      },
+      {
+        "activitySlug": "detectives-das-palavras",
+        "contentModuleSlug": "clubinho-das-palavras",
+        "difficulty": "BEGINNER",
+        "slug": "quiz-detectives-das-palavras",
+        "type": "QUIZ",
+      },
+    ],
+    "hash": "3626c00a0603b17894e61118b334a81515559dbab15cc9f379147c6c9164302a",
+    "updatedAt": "2024-01-01T12:00:00.000Z",
+  },
+  "modules": {
+    "hash": "e81fce6964a11d20ce364e921e4d2e06863169fb991f402916bf330a1f2931ef",
+    "modules": [
+      {
+        "activities": [
+          {
+            "activityType": "QUIZ",
+            "bnccCode": "EF01LP06",
+            "difficulty": "BEGINNER",
+            "metadata": {
+              "accessibility": {
+                "assets": [
+                  {
+                    "title": "Ficha de rastreamento de letras",
+                    "type": "DOCUMENTO",
+                    "uri": "/apoio/fichas/letra-inicial.pdf",
+                  },
+                ],
+                "feedback": {
+                  "encouragement": "Reconheça as contribuições de cada estudante e dê tempo extra para quem precisar.",
+                },
+                "hints": [
+                  {
+                    "audience": "EDUCADOR",
+                    "text": "Convide educadores a oferecer apoio individual quando necessário.",
+                  },
+                  {
+                    "audience": "EDUCADOR",
+                    "text": "Combine gestos e linguagem simples para garantir compreensão coletiva.",
+                  },
+                  {
+                    "audience": "EDUCADOR",
+                    "text": "Projete o texto em fonte ampliada e leia em voz alta modelando a segmentação.",
+                  },
+                  {
+                    "audience": "EDUCADOR",
+                    "text": "Ofereça lupas de brinquedo para tornar a busca mais lúdica.",
+                  },
+                ],
+              },
+              "bncc": {
+                "code": "EF01LP06",
+                "habilidades": [
+                  "EF01LP06",
+                ],
+              },
+              "difficultyTier": "INICIAR",
+              "estrategia": "Leitura guiada",
+              "generoTextual": "Bilhete",
+              "interactiveSlug": "quiz-detectives-das-palavras",
+              "interactiveType": "QUIZ",
+              "prerequisites": [
+                {
+                  "description": "Perceber a segmentação de palavras orais em frases curtas.",
+                  "reference": "EF01LP02",
+                  "type": "SKILL",
+                },
+              ],
+            },
+            "slug": "detectives-das-palavras",
+          },
+          {
+            "activityType": "GAME",
+            "bnccCode": "EF35LP20",
+            "difficulty": "INTERMEDIATE",
+            "metadata": {
+              "accessibility": {
+                "feedback": {
+                  "encouragement": "Reconheça as contribuições de cada estudante e dê tempo extra para quem precisar.",
+                  "success": "Convite pronto! Combine com a turma quais próximas mensagens produzir.",
+                },
+                "hints": [
+                  {
+                    "audience": "EDUCADOR",
+                    "text": "Convide educadores a oferecer apoio individual quando necessário.",
+                  },
+                  {
+                    "audience": "EDUCADOR",
+                    "text": "Combine gestos e linguagem simples para garantir compreensão coletiva.",
+                  },
+                  {
+                    "audience": "EDUCADOR",
+                    "text": "Proponha um quadro de ideias com imagens para apoiar estudantes em processo de alfabetização.",
+                  },
+                ],
+              },
+              "bncc": {
+                "code": "EF35LP20",
+                "habilidades": [
+                  "EF35LP20",
+                ],
+              },
+              "colaborativo": true,
+              "difficultyTier": "PRATICAR",
+              "prerequisites": [
+                {
+                  "description": "Revisar palavras coletadas durante o quiz para reutilizá-las na produção.",
+                  "reference": "detectives-das-palavras",
+                  "type": "ACTIVITY",
+                },
+              ],
+              "suporte": "Cartolina",
+            },
+            "slug": "laboratorio-das-palavras",
+          },
+        ],
+        "activityCount": 2,
+        "primaryBnccCode": "EF01LP06",
+        "slug": "clubinho-das-palavras",
+        "stage": "ef01",
+        "subjectSlug": "lingua-portuguesa",
+      },
+      {
+        "activities": [
+          {
+            "activityType": "GAME",
+            "bnccCode": "EM13MAT305",
+            "difficulty": "ADVANCED",
+            "metadata": {
+              "accessibility": {
+                "feedback": {
+                  "encouragement": "Reconheça as contribuições de cada estudante e dê tempo extra para quem precisar.",
+                  "success": "Relacionem dados analisados com possíveis ações de impacto comunitário.",
+                },
+                "hints": [
+                  {
+                    "audience": "EDUCADOR",
+                    "text": "Convide educadores a oferecer apoio individual quando necessário.",
+                  },
+                  {
+                    "audience": "EDUCADOR",
+                    "text": "Combine gestos e linguagem simples para garantir compreensão coletiva.",
+                  },
+                  {
+                    "audience": "EDUCADOR",
+                    "text": "Ofereça datasets curados de diferentes tamanhos para flexibilizar o volume de análise.",
+                  },
+                ],
+              },
+              "bncc": {
+                "code": "EM13MAT305",
+                "habilidades": [
+                  "EM13MAT305",
+                ],
+              },
+              "difficultyTier": "DOMINAR",
+              "entregavel": "Relatório visual",
+              "ferramentas": [
+                "Planilha colaborativa",
+                "Mapa digital",
+              ],
+              "prerequisites": [
+                {
+                  "description": "Explorar indicadores estatísticos e interpretar variações.",
+                  "reference": "EM13MAT103",
+                  "type": "SKILL",
+                },
+              ],
+            },
+            "slug": "investigacao-dados-bairro",
+          },
+          {
+            "activityType": "PROJECT",
+            "bnccCode": "EM13MAT305",
+            "difficulty": "INTERMEDIATE",
+            "metadata": {
+              "accessibility": {
+                "assets": [
+                  {
+                    "title": "Modelo de roteiro breve",
+                    "type": "DOCUMENTO",
+                    "uri": "/apoio/modelos/roteiro-podcast-em.pdf",
+                  },
+                ],
+                "feedback": {
+                  "encouragement": "Reconheça as contribuições de cada estudante e dê tempo extra para quem precisar.",
+                },
+                "hints": [
+                  {
+                    "audience": "EDUCADOR",
+                    "text": "Convide educadores a oferecer apoio individual quando necessário.",
+                  },
+                  {
+                    "audience": "EDUCADOR",
+                    "text": "Combine gestos e linguagem simples para garantir compreensão coletiva.",
+                  },
+                  {
+                    "audience": "EDUCADOR",
+                    "text": "Crie roteiros compartilhados onde cada integrante registra falas-chave com antecedência.",
+                  },
+                ],
+              },
+              "bncc": {
+                "code": "EM13MAT305",
+                "habilidades": [
+                  "EM13MAT305",
+                ],
+              },
+              "difficultyTier": "PRATICAR",
+              "duracaoMinutos": 15,
+              "formato": "Podcast colaborativo",
+              "prerequisites": [
+                {
+                  "description": "Utilizar indicadores levantados no diagnóstico para embasar falas e perguntas.",
+                  "reference": "investigacao-dados-bairro",
+                  "type": "ACTIVITY",
+                },
+              ],
+            },
+            "slug": "podcast-projeto-vida",
+          },
+        ],
+        "activityCount": 2,
+        "primaryBnccCode": "EM13MAT305",
+        "slug": "estudio-dados-solidarios",
+        "stage": "em",
+        "subjectSlug": "matematica",
+      },
+      {
+        "activities": [
+          {
+            "activityType": "GAME",
+            "bnccCode": "EI03ET04",
+            "difficulty": "BEGINNER",
+            "metadata": {
+              "accessibility": {
+                "assets": [
+                  {
+                    "title": "Roteiro de gestos sugeridos",
+                    "type": "DOCUMENTO",
+                    "uri": "/apoio/planejamentos/historias-em-movimento.pdf",
+                  },
+                ],
+                "feedback": {
+                  "encouragement": "Reconheça as contribuições de cada estudante e dê tempo extra para quem precisar.",
+                  "success": "Celebrem as descobertas e registrem gestos favoritos para novas histórias.",
+                },
+                "hints": [
+                  {
+                    "audience": "EDUCADOR",
+                    "text": "Convide educadores a oferecer apoio individual quando necessário.",
+                  },
+                  {
+                    "audience": "EDUCADOR",
+                    "text": "Combine gestos e linguagem simples para garantir compreensão coletiva.",
+                  },
+                  {
+                    "audience": "FAMILIA",
+                    "text": "Convide famílias a enviarem músicas preferidas para ampliar repertórios.",
+                  },
+                ],
+              },
+              "bncc": {
+                "code": "EI03ET04",
+                "habilidades": [
+                  "EI03ET04",
+                ],
+              },
+              "difficultyTier": "INICIAR",
+              "duracaoMinutos": 10,
+              "formato": "Roda",
+              "materiais": [
+                "Fitas coloridas",
+                "Instrumentos sonoros",
+              ],
+              "prerequisites": [
+                {
+                  "description": "Participar de brincadeiras cantadas com coordenação simples.",
+                  "reference": "EI03ET03",
+                  "type": "SKILL",
+                },
+              ],
+            },
+            "slug": "teatro-das-emocoes",
+          },
+          {
+            "activityType": "PUZZLE",
+            "bnccCode": "EI03ET04",
+            "difficulty": "BEGINNER",
+            "metadata": {
+              "accessibility": {
+                "assets": [
+                  {
+                    "title": "Movimentos inspiradores",
+                    "type": "VIDEO",
+                    "uri": "/apoio/videos/combinar-ritmos.mp4",
+                  },
+                ],
+                "feedback": {
+                  "encouragement": "Destacar como cada ritmo ganhou movimentos únicos da turma.",
+                },
+                "hints": [
+                  {
+                    "audience": "EDUCADOR",
+                    "text": "Convide educadores a oferecer apoio individual quando necessário.",
+                  },
+                  {
+                    "audience": "EDUCADOR",
+                    "text": "Combine gestos e linguagem simples para garantir compreensão coletiva.",
+                  },
+                  {
+                    "audience": "EDUCADOR",
+                    "text": "Organize grupos pequenos para facilitar observação mútua.",
+                  },
+                ],
+              },
+              "bncc": {
+                "code": "EI03ET04",
+                "habilidades": [
+                  "EI03ET04",
+                ],
+              },
+              "difficultyTier": "INICIAR",
+              "duracaoMinutos": 8,
+              "foco": "Ritmo e coordenação",
+              "interactiveSlug": "puzzle-danca-dos-sons",
+              "interactiveType": "PUZZLE",
+              "prerequisites": [
+                {
+                  "description": "Escutar e reproduzir padrões sonoros simples.",
+                  "reference": "EI03CG01",
+                  "type": "SKILL",
+                },
+              ],
+            },
+            "slug": "danca-dos-sons",
+          },
+        ],
+        "activityCount": 2,
+        "primaryBnccCode": "EI03ET04",
+        "slug": "historias-em-movimento",
+        "stage": "ei",
+        "subjectSlug": "linguagens",
+      },
+      {
+        "activities": [
+          {
+            "activityType": "PUZZLE",
+            "bnccCode": "EF07CI02",
+            "difficulty": "INTERMEDIATE",
+            "metadata": {
+              "accessibility": {
+                "assets": [
+                  {
+                    "title": "Ficha de observação",
+                    "type": "DOCUMENTO",
+                    "uri": "/apoio/fichas/registro-experimento.pdf",
+                  },
+                ],
+                "feedback": {
+                  "encouragement": "Reconheça as contribuições de cada estudante e dê tempo extra para quem precisar.",
+                },
+                "hints": [
+                  {
+                    "audience": "EDUCADOR",
+                    "text": "Convide educadores a oferecer apoio individual quando necessário.",
+                  },
+                  {
+                    "audience": "EDUCADOR",
+                    "text": "Combine gestos e linguagem simples para garantir compreensão coletiva.",
+                  },
+                  {
+                    "audience": "EDUCADOR",
+                    "text": "Combine duplas com diferentes responsabilidades (medições, registros e fotografia).",
+                  },
+                ],
+              },
+              "bncc": {
+                "code": "EF07CI02",
+                "habilidades": [
+                  "EF07CI02",
+                ],
+              },
+              "difficultyTier": "PRATICAR",
+              "prerequisites": [
+                {
+                  "description": "Interpretar resultados de pesquisas sobre recursos naturais.",
+                  "reference": "EF07CI01",
+                  "type": "SKILL",
+                },
+              ],
+              "registro": "Relato multimodal",
+              "seguranca": "Orientação docente",
+            },
+            "slug": "experimento-da-agua",
+          },
+          {
+            "activityType": "QUIZ",
+            "bnccCode": "EF07CI02",
+            "difficulty": "ADVANCED",
+            "metadata": {
+              "accessibility": {
+                "feedback": {
+                  "encouragement": "Reconheça as contribuições de cada estudante e dê tempo extra para quem precisar.",
+                  "success": "Reúnam novas perguntas para orientar investigações futuras.",
+                },
+                "hints": [
+                  {
+                    "audience": "EDUCADOR",
+                    "text": "Convide educadores a oferecer apoio individual quando necessário.",
+                  },
+                  {
+                    "audience": "EDUCADOR",
+                    "text": "Combine gestos e linguagem simples para garantir compreensão coletiva.",
+                  },
+                  {
+                    "audience": "EDUCADOR",
+                    "text": "Permita tempo para consulta às anotações do experimento antes das respostas.",
+                  },
+                ],
+              },
+              "bncc": {
+                "code": "EF07CI02",
+                "habilidades": [
+                  "EF07CI02",
+                ],
+              },
+              "difficultyTier": "DOMINAR",
+              "numeroQuestoes": 6,
+              "prerequisites": [
+                {
+                  "description": "Utilizar registros produzidos durante o experimento para justificar respostas.",
+                  "reference": "experimento-da-agua",
+                  "type": "ACTIVITY",
+                },
+              ],
+              "tipo": "Multipla escolha",
+            },
+            "slug": "quiz-sustentabilidade",
+          },
+        ],
+        "activityCount": 2,
+        "primaryBnccCode": "EF07CI02",
+        "slug": "laboratorio-da-natureza",
+        "stage": "ef07",
+        "subjectSlug": "ciencias",
+      },
+      {
+        "activities": [
+          {
+            "activityType": "GAME",
+            "bnccCode": "EF07MA16",
+            "difficulty": "INTERMEDIATE",
+            "metadata": {
+              "accessibility": {
+                "feedback": {
+                  "encouragement": "Incentive comparações entre diferentes representações do mesmo conjunto de dados.",
+                },
+                "hints": [
+                  {
+                    "audience": "EDUCADOR",
+                    "text": "Convide educadores a oferecer apoio individual quando necessário.",
+                  },
+                  {
+                    "audience": "EDUCADOR",
+                    "text": "Combine gestos e linguagem simples para garantir compreensão coletiva.",
+                  },
+                  {
+                    "audience": "EDUCADOR",
+                    "text": "Ofereça modelos de gráficos parcialmente preenchidos para estudantes que preferirem apoio visual.",
+                  },
+                ],
+              },
+              "bncc": {
+                "code": "EF07MA16",
+                "habilidades": [
+                  "EF07MA16",
+                ],
+              },
+              "difficultyTier": "PRATICAR",
+              "duracaoMinutos": 25,
+              "ferramentas": [
+                "Planilha colaborativa",
+                "Cartazes",
+              ],
+              "prerequisites": [
+                {
+                  "description": "Ler gráficos de colunas simples e identificar informações principais.",
+                  "reference": "EF06MA17",
+                  "type": "SKILL",
+                },
+              ],
+              "produtoFinal": "Painel de gráficos",
+            },
+            "slug": "grafico-vivo-da-comunidade",
+          },
+          {
+            "activityType": "PROJECT",
+            "bnccCode": "EF07MA16",
+            "difficulty": "ADVANCED",
+            "metadata": {
+              "accessibility": {
+                "assets": [
+                  {
+                    "title": "Rubrica simplificada",
+                    "type": "DOCUMENTO",
+                    "uri": "/apoio/rubricas/painel-dados.pdf",
+                  },
+                ],
+                "feedback": {
+                  "encouragement": "Reconheça as contribuições de cada estudante e dê tempo extra para quem precisar.",
+                },
+                "hints": [
+                  {
+                    "audience": "EDUCADOR",
+                    "text": "Convide educadores a oferecer apoio individual quando necessário.",
+                  },
+                  {
+                    "audience": "EDUCADOR",
+                    "text": "Combine gestos e linguagem simples para garantir compreensão coletiva.",
+                  },
+                  {
+                    "audience": "EDUCADOR",
+                    "text": "Negocie diferentes formatos de apresentação (slide, cartaz, vídeo) para ampliar participação.",
+                  },
+                ],
+              },
+              "avaliacao": "Rubrica diagnóstica",
+              "bncc": {
+                "code": "EF07MA16",
+                "habilidades": [
+                  "EF07MA16",
+                ],
+              },
+              "colaborativo": true,
+              "difficultyTier": "DOMINAR",
+              "duracaoMinutos": 35,
+              "prerequisites": [
+                {
+                  "description": "Revisar gráficos e conclusões criadas durante o ateliê para alimentar o dashboard.",
+                  "reference": "grafico-vivo-da-comunidade",
+                  "type": "ACTIVITY",
+                },
+              ],
+            },
+            "slug": "dash-impacto-escolar",
+          },
+        ],
+        "activityCount": 2,
+        "primaryBnccCode": "EF07MA16",
+        "slug": "oficina-modelagem-dados",
+        "stage": "ef07",
+        "subjectSlug": "matematica",
+      },
+      {
+        "activities": [
+          {
+            "activityType": "GAME",
+            "bnccCode": "EF05MA08",
+            "difficulty": "INTERMEDIATE",
+            "metadata": {
+              "accessibility": {
+                "feedback": {
+                  "encouragement": "Valorize explicações diversas e compare estratégias com o grupo.",
+                },
+                "hints": [
+                  {
+                    "audience": "EDUCADOR",
+                    "text": "Convide educadores a oferecer apoio individual quando necessário.",
+                  },
+                  {
+                    "audience": "EDUCADOR",
+                    "text": "Combine gestos e linguagem simples para garantir compreensão coletiva.",
+                  },
+                  {
+                    "audience": "EDUCADOR",
+                    "text": "Ofereça manipuláveis (tampinhas ou blocos) para apoiar a visualização das distribuições.",
+                  },
+                ],
+              },
+              "bncc": {
+                "code": "EF05MA08",
+                "habilidades": [
+                  "EF05MA08",
+                ],
+              },
+              "contexto": "Feira solidária da escola",
+              "difficultyTier": "PRATICAR",
+              "duracaoMinutos": 20,
+              "interactiveSlug": "game-missao-equipes-multiplicadoras",
+              "interactiveType": "GAME",
+              "materiais": [
+                "Cartões numerados",
+                "Cestos",
+              ],
+              "prerequisites": [
+                {
+                  "description": "Interpretar multiplicações como adições repetidas e divisões como repartição equitativa.",
+                  "reference": "EF04MA07",
+                  "type": "SKILL",
+                },
+              ],
+            },
+            "slug": "missao-equipes-multiplicadoras",
+          },
+          {
+            "activityType": "PUZZLE",
+            "bnccCode": "EF05MA08",
+            "difficulty": "INTERMEDIATE",
+            "metadata": {
+              "accessibility": {
+                "feedback": {
+                  "encouragement": "Reconheça as contribuições de cada estudante e dê tempo extra para quem precisar.",
+                  "success": "Explique diferentes propostas de uso para as sobras e escolha a mais justa com a turma.",
+                },
+                "hints": [
+                  {
+                    "audience": "EDUCADOR",
+                    "text": "Convide educadores a oferecer apoio individual quando necessário.",
+                  },
+                  {
+                    "audience": "EDUCADOR",
+                    "text": "Combine gestos e linguagem simples para garantir compreensão coletiva.",
+                  },
+                  {
+                    "audience": "EDUCADOR",
+                    "text": "Registre em um quadro coletivo as hipóteses de resto para facilitar comparações.",
+                  },
+                ],
+              },
+              "bncc": {
+                "code": "EF05MA08",
+                "habilidades": [
+                  "EF05MA08",
+                ],
+              },
+              "difficultyTier": "PRATICAR",
+              "duracaoMinutos": 15,
+              "ferramentas": [
+                "Tabela coletiva",
+                "Marcadores",
+              ],
+              "prerequisites": [
+                {
+                  "description": "Retomar estratégias registradas durante a missão para interpretar o resto.",
+                  "reference": "missao-equipes-multiplicadoras",
+                  "type": "ACTIVITY",
+                },
+              ],
+              "produtoFinal": "Plano de distribuição",
+            },
+            "slug": "estacao-resto-inteligente",
+          },
+        ],
+        "activityCount": 2,
+        "primaryBnccCode": "EF05MA08",
+        "slug": "rota-das-operacoes",
+        "stage": "ef05",
+        "subjectSlug": "matematica",
+      },
+      {
+        "activities": [
+          {
+            "activityType": "PROJECT",
+            "bnccCode": "EF69LP28",
+            "difficulty": "INTERMEDIATE",
+            "metadata": {
+              "accessibility": {
+                "assets": [
+                  {
+                    "title": "Guia rápido para entrevistas",
+                    "type": "DOCUMENTO",
+                    "uri": "/apoio/guias/entrevista-colaborativa.pdf",
+                  },
+                ],
+                "feedback": {
+                  "encouragement": "Reconheça as contribuições de cada estudante e dê tempo extra para quem precisar.",
+                },
+                "hints": [
+                  {
+                    "audience": "EDUCADOR",
+                    "text": "Convide educadores a oferecer apoio individual quando necessário.",
+                  },
+                  {
+                    "audience": "EDUCADOR",
+                    "text": "Combine gestos e linguagem simples para garantir compreensão coletiva.",
+                  },
+                  {
+                    "audience": "EDUCADOR",
+                    "text": "Garanta roteiros com tempo marcado para cada voz para evitar interrupções.",
+                  },
+                ],
+              },
+              "bncc": {
+                "code": "EF69LP28",
+                "habilidades": [
+                  "EF69LP28",
+                ],
+              },
+              "difficultyTier": "PRATICAR",
+              "duracaoMinutos": 30,
+              "formato": "Podcast colaborativo",
+              "prerequisites": [
+                {
+                  "description": "Organizar informações de entrevistas em roteiros coerentes.",
+                  "reference": "EF67LP21",
+                  "type": "SKILL",
+                },
+              ],
+              "publicacao": "Canal da escola",
+            },
+            "slug": "podcast-voz-da-comunidade",
+          },
+          {
+            "activityType": "PROJECT",
+            "bnccCode": "EF69LP28",
+            "difficulty": "ADVANCED",
+            "metadata": {
+              "accessibility": {
+                "feedback": {
+                  "encouragement": "Discutam estratégias para garantir acessibilidade na publicação (legendas, descrição em áudio).",
+                },
+                "hints": [
+                  {
+                    "audience": "EDUCADOR",
+                    "text": "Convide educadores a oferecer apoio individual quando necessário.",
+                  },
+                  {
+                    "audience": "EDUCADOR",
+                    "text": "Combine gestos e linguagem simples para garantir compreensão coletiva.",
+                  },
+                  {
+                    "audience": "EDUCADOR",
+                    "text": "Planeje checkpoints para feedback de pares antes da edição final.",
+                  },
+                ],
+              },
+              "bncc": {
+                "code": "EF69LP28",
+                "habilidades": [
+                  "EF69LP28",
+                ],
+              },
+              "difficultyTier": "DOMINAR",
+              "duracaoMinutos": 40,
+              "ferramentas": [
+                "Editor de vídeo",
+                "Padlet",
+              ],
+              "prerequisites": [
+                {
+                  "description": "Utilizar entrevistas e relatos coletados no podcast para compor o webdoc.",
+                  "reference": "podcast-voz-da-comunidade",
+                  "type": "ACTIVITY",
+                },
+              ],
+              "produtoFinal": "Link público compartilhado",
+            },
+            "slug": "webdoc-historias-do-bairro",
+          },
+        ],
+        "activityCount": 2,
+        "primaryBnccCode": "EF69LP28",
+        "slug": "trilhas-narrativas-digitais",
+        "stage": "ef69",
+        "subjectSlug": "lingua-portuguesa",
+      },
+    ],
+    "updatedAt": "2024-01-01T12:00:00.000Z",
+  },
+}
+`;

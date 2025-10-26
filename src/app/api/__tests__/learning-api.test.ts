@@ -8,8 +8,8 @@ import { prisma } from "@/lib/prisma";
 
 describe("Learning API", () => {
   it("retorna módulos com contexto de faixa etária e acesso liberado", async () => {
-    const request = NextRequest.from(
-      new Request("http://localhost:3000/api/modules?ageGroupSlug=educacao-infantil&age=5")
+    const request = new NextRequest(
+      "http://localhost:3000/api/modules?ageGroupSlug=educacao-infantil&age=5"
     );
 
     const response = await getModules(request);
@@ -35,7 +35,7 @@ describe("Learning API", () => {
     expect(body.context.studentAgeGroup.slug).toBe("educacao-infantil");
     expect(body.context.requestedAgeGroup.slug).toBe("educacao-infantil");
     expect(body.context.isLocked).toBe(false);
-    expect(body.context.message).toMatch(/Conteúdos adaptados/i);
+    expect(body.context.message).toMatch(/Conteúdo adaptado/i);
     expect(Array.isArray(body.modules)).toBe(true);
     expect(body.modules.length).toBeGreaterThan(0);
     expect(body.modules.every((module) => module.ageGroup.slug === "educacao-infantil")).toBe(true);
@@ -48,8 +48,8 @@ describe("Learning API", () => {
   it("informa quando a etapa solicitada está bloqueada e sugere alternativas", async () => {
     const user = await prisma.user.findUniqueOrThrow({ where: { email: "bruno@aprender.dev" } });
 
-    const request = NextRequest.from(
-      new Request(`http://localhost:3000/api/modules?userId=${user.id}&ageGroupSlug=ensino-medio`)
+    const request = new NextRequest(
+      `http://localhost:3000/api/modules?userId=${user.id}&ageGroupSlug=ensino-medio`
     );
 
     const response = await getModules(request);
@@ -117,15 +117,13 @@ describe("Learning API", () => {
       },
     };
 
-    const request = NextRequest.from(
-      new Request("http://localhost:3000/api/attempts", {
-        method: "POST",
-        headers: {
-          "Content-Type": "application/json",
-        },
-        body: JSON.stringify(payload),
-      })
-    );
+    const request = new NextRequest("http://localhost:3000/api/attempts", {
+      method: "POST",
+      headers: {
+        "Content-Type": "application/json",
+      },
+      body: JSON.stringify(payload),
+    });
 
     const response = await postAttempt(request);
     expect(response.status).toBe(201);

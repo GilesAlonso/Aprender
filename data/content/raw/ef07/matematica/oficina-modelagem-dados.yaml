@@ -1,0 +1,76 @@
+module:
+  slug: oficina-modelagem-dados
+  title: "Oficina Modelagem de Dados"
+  subtitle: "Estatística para decisões"
+  description: "Sequência colaborativa para interpretar gráficos, modelar dados da escola e propor ações baseadas em evidências."
+  theme: "Matemática"
+  discipline: "Matemática"
+  ageGroupSlug: fundamental-anos-finais
+  learningPathSlug: inventores-projetos
+  primaryBnccCode: EF07MA16
+  learningOutcomes:
+    - "Interpretar gráficos e tabelas relacionando dados a contextos próximos."
+    - "Selecionar indicadores relevantes para acompanhar um problema real."
+    - "Argumentar a partir de evidências numéricas em relatórios e apresentações."
+  tags:
+    - estatistica
+    - tomada-de-decisao
+activities:
+  - partial: ../../_partials/acolhimento-base.yaml
+    slug: grafico-vivo-da-comunidade
+    title: "Gráfico Vivo da Comunidade"
+    prompt: "Transforme dados da cantina em gráficos de barras e discuta mudanças possíveis."
+    type: GAME
+    difficulty: PRATICAR
+    bncc:
+      code: EF07MA16
+      habilidades:
+        - EF07MA16
+    learningObjectives:
+      - "Ler e interpretar dados organizados em tabelas simples."
+      - "Construir gráficos adequados ao tipo de informação coletada."
+    description: "Ateliê de visualização de dados com debate guiado sobre consumo consciente."
+    metadata:
+      duracaoMinutos: 25
+      ferramentas:
+        - "Planilha colaborativa"
+        - "Cartazes"
+      produtoFinal: "Painel de gráficos"
+    accessibility:
+      hints:
+        - text: "Ofereça modelos de gráficos parcialmente preenchidos para estudantes que preferirem apoio visual."
+      feedback:
+        encouragement: "Incentive comparações entre diferentes representações do mesmo conjunto de dados."
+    prerequisites:
+      - type: SKILL
+        reference: EF06MA17
+        description: "Ler gráficos de colunas simples e identificar informações principais."
+  - partial: ../../_partials/acolhimento-base.yaml
+    slug: dash-impacto-escolar
+    title: "Dashboard de Impacto Escolar"
+    prompt: "Escolha indicadores prioritários, monte um painel e apresente recomendações para o grêmio estudantil."
+    type: PROJECT
+    difficulty: DOMINAR
+    bncc:
+      code: EF07MA16
+      habilidades:
+        - EF07MA16
+    learningObjectives:
+      - "Selecionar variáveis relevantes para monitorar desafios locais."
+      - "Comunicar conclusões com argumentos embasados em dados."
+    description: "Projeto final para modelar dados e comunicar propostas em formato multimodal."
+    metadata:
+      duracaoMinutos: 35
+      colaborativo: true
+      avaliacao: "Rubrica diagnóstica"
+    accessibility:
+      hints:
+        - text: "Negocie diferentes formatos de apresentação (slide, cartaz, vídeo) para ampliar participação."
+      assets:
+        - type: DOCUMENTO
+          uri: "/apoio/rubricas/painel-dados.pdf"
+          title: "Rubrica simplificada"
+    prerequisites:
+      - type: ACTIVITY
+        reference: grafico-vivo-da-comunidade
+        description: "Revisar gráficos e conclusões criadas durante o ateliê para alimentar o dashboard."

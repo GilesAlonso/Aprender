@@ -1,0 +1,117 @@
+module:
+  slug: historias-em-movimento
+  title: "Histórias em Movimento"
+  subtitle: "Corpo e expressão"
+  description: "Sequência de atividades corporais e musicais para contar histórias coletivas e acolhedoras."
+  theme: "Linguagens"
+  discipline: "Linguagens"
+  ageGroupSlug: educacao-infantil
+  learningPathSlug: aventuras-letrinhas
+  primaryBnccCode: EI03ET04
+  learningOutcomes:
+    - "Experimentar gestos, ritmos e movimentos para comunicar emoções."
+    - "Ampliar repertórios de brincadeiras dramáticas em grupo."
+    - "Reconhecer a diversidade de expressões corporais na turma."
+  tags:
+    - expressao-corporal
+    - contacao-de-historias
+activities:
+  - partial: ../../_partials/acolhimento-base.yaml
+    slug: teatro-das-emocoes
+    title: "Teatro das Emoções"
+    prompt: "Imite com o corpo um personagem da história e convide colegas para adivinhar!"
+    type: GAME
+    difficulty: INICIAR
+    bncc:
+      code: EI03ET04
+      habilidades:
+        - EI03ET04
+    learningObjectives:
+      - "Explorar gestos e expressões faciais para representar sentimentos."
+      - "Ampliar o vocabulário corporal nas brincadeiras coletivas."
+    description: "Brincadeira coletiva de dramatização para reconhecer emoções e movimentos."
+    metadata:
+      duracaoMinutos: 10
+      materiais:
+        - "Fitas coloridas"
+        - "Instrumentos sonoros"
+      formato: Roda
+    accessibility:
+      assets:
+        - type: DOCUMENTO
+          uri: "/apoio/planejamentos/historias-em-movimento.pdf"
+          title: "Roteiro de gestos sugeridos"
+      hints:
+        - audience: FAMILIA
+          text: "Convide famílias a enviarem músicas preferidas para ampliar repertórios."
+      feedback:
+        success: "Celebrem as descobertas e registrem gestos favoritos para novas histórias."
+    prerequisites:
+      - type: SKILL
+        reference: EI03ET03
+        description: "Participar de brincadeiras cantadas com coordenação simples."
+  - partial: ../../_partials/acolhimento-base.yaml
+    slug: danca-dos-sons
+    title: "Dança dos Sons"
+    prompt: "Crie passos para uma música usando objetos da sala como instrumentos."
+    type: PUZZLE
+    difficulty: INICIAR
+    bncc:
+      code: EI03ET04
+      habilidades:
+        - EI03ET04
+    learningObjectives:
+      - "Perceber diferentes ritmos e sons a partir de objetos cotidianos."
+      - "Criar sequências corporais com acompanhamento musical."
+    description: "Atividade musical com exploração de ritmos e sequências."
+    metadata:
+      duracaoMinutos: 8
+      foco: "Ritmo e coordenação"
+      interactiveSlug: puzzle-danca-dos-sons
+    accessibility:
+      assets:
+        - type: VIDEO
+          uri: "/apoio/videos/combinar-ritmos.mp4"
+          title: "Movimentos inspiradores"
+      hints:
+        - text: "Organize grupos pequenos para facilitar observação mútua."
+      feedback:
+        encouragement: "Destacar como cada ritmo ganhou movimentos únicos da turma."
+    prerequisites:
+      - type: SKILL
+        reference: EI03CG01
+        description: "Escutar e reproduzir padrões sonoros simples."
+    interactive:
+      slug: puzzle-danca-dos-sons
+      title: "Dança dos Sons — Quebra-cabeça corporal"
+      type: PUZZLE
+      bnccDescription: "Experimentar gestos, ritmos e movimentos para comunicar emoções."
+      estimatedTimeMinutes: 6
+      instructions:
+        - "Arraste ou selecione com o teclado cada ritmo para combinar com a proposta de movimento."
+        - "Converse com a turma sobre como o corpo responde a cada som."
+        - "No final, criem uma sequência com as combinações favoritas."
+      objectives:
+        - "Perceber diferentes ritmos e sons a partir de objetos cotidianos."
+        - "Criar sequências corporais com acompanhamento musical."
+        - "Sugerir adaptações para incluir todos na roda."
+      puzzle:
+        mode: matching
+        successFeedback: "Brilhante! Os ritmos ganharam movimentos cheios de imaginação."
+        errorFeedback: "Ainda não combinou? Ouça novamente o som e experimente outro movimento."
+        pairs:
+          - id: ritmo-lento
+            prompt: "Ritmo suave com chocalho"
+            match: "Balance o corpo como se ninasse um bebê."
+            hint: "Escolha movimentos com passos tranquilos."
+            feedback: "Os ritmos suaves convidam a movimentos delicados."
+          - id: ritmo-rapido
+            prompt: "Batidas rápidas na caixa"
+            match: "Pule em pequenos passos como pipoca estourando."
+            hint: "Pense em energia e rapidez."
+            feedback: "Excelente! Sons acelerados combinam com saltos animados."
+          - id: ritmo-eco
+            prompt: "Palmas com eco"
+            match: "Forme duplas e alterne quem lidera a batida."
+            hint: "Que tal brincar de imitar?"
+            feedback: "Par perfeito! A brincadeira em eco combina bem com duplas."

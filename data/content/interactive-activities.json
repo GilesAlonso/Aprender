@@ -1,6 +1,110 @@
 {
-  "updatedAt": "2024-11-09",
+  "updatedAt": "2025-10-26T13:09:15.242Z",
   "activities": [
+    {
+      "slug": "game-missao-equipes-multiplicadoras",
+      "title": "Missão Equipes Multiplicadoras — Jogo cooperativo",
+      "type": "GAME",
+      "bnccCode": "EF05MA08",
+      "bnccDescription": "Resolver problemas de multiplicação e divisão em contextos significativos.",
+      "contentModuleSlug": "rota-das-operacoes",
+      "activitySlug": "missao-equipes-multiplicadoras",
+      "difficulty": "INTERMEDIATE",
+      "estimatedTimeMinutes": 10,
+      "instructions": [
+        "Leia o desafio de cada fase e compartilhe suas estratégias com o grupo.",
+        "Utilize o quadro para registrar cálculos ou desenhos que ajudem a visualizar a situação.",
+        "Ao finalizar, reflita sobre outras maneiras de distribuir os materiais."
+      ],
+      "objectives": [
+        "Resolver problemas de distribuição proporcional utilizando multiplicação e divisão.",
+        "Registrar estratégias pessoais em quadros ou esquemas.",
+        "Justificar escolhas com representações visuais ou esquemas.",
+        "Identificar padrões que facilitem cálculos mentais."
+      ],
+      "game": {
+        "mode": "math-challenge",
+        "timeLimitSeconds": 120,
+        "lives": 3,
+        "victoryMessage": "Missão cumprida! A feira solidária está pronta para começar.",
+        "gameOverMessage": "A missão pode ser retomada. Converse sobre novas estratégias e tente novamente.",
+        "levels": [
+          {
+            "id": "nivel-1",
+            "challenge": "Há 24 cadernos para 3 grupos. Quantos cadernos cada grupo recebe?",
+            "answer": 8,
+            "hint": "Experimente representar com desenhos ou tabelas.",
+            "successFeedback": "Perfeito! 24 ÷ 3 = 8 cadernos por grupo.",
+            "failureFeedback": "Repense: se cada grupo tivesse 8 cadernos, quantos usaríamos ao todo?"
+          },
+          {
+            "id": "nivel-2",
+            "challenge": "São 5 mesas com 6 kits de sementes cada. Quantos kits existem no total?",
+            "answer": 30,
+            "hint": "Multiplique a quantidade de kits por mesa.",
+            "successFeedback": "Ótimo cálculo! 5 × 6 = 30 kits.",
+            "failureFeedback": "Quase! Conte de 6 em 6 cinco vezes para conferir."
+          },
+          {
+            "id": "nivel-3",
+            "challenge": "48 marcadores devem ser distribuídos igualmente em 8 caixas. Quantos marcadores vão em cada caixa?",
+            "answer": 6,
+            "hint": "Use a divisão ou pense em multiplicação inversa.",
+            "successFeedback": "Resultado certo! 48 ÷ 8 = 6 marcadores por caixa.",
+            "failureFeedback": "Tente relacionar divisão e multiplicação para encontrar o valor."
+          }
+        ]
+      }
+    },
+    {
+      "slug": "puzzle-danca-dos-sons",
+      "title": "Dança dos Sons — Quebra-cabeça corporal",
+      "type": "PUZZLE",
+      "bnccCode": "EI03ET04",
+      "bnccDescription": "Experimentar gestos, ritmos e movimentos para comunicar emoções.",
+      "contentModuleSlug": "historias-em-movimento",
+      "activitySlug": "danca-dos-sons",
+      "difficulty": "BEGINNER",
+      "estimatedTimeMinutes": 6,
+      "instructions": [
+        "Arraste ou selecione com o teclado cada ritmo para combinar com a proposta de movimento.",
+        "Converse com a turma sobre como o corpo responde a cada som.",
+        "No final, criem uma sequência com as combinações favoritas."
+      ],
+      "objectives": [
+        "Perceber diferentes ritmos e sons a partir de objetos cotidianos.",
+        "Criar sequências corporais com acompanhamento musical.",
+        "Sugerir adaptações para incluir todos na roda."
+      ],
+      "puzzle": {
+        "mode": "matching",
+        "successFeedback": "Brilhante! Os ritmos ganharam movimentos cheios de imaginação.",
+        "errorFeedback": "Ainda não combinou? Ouça novamente o som e experimente outro movimento.",
+        "pairs": [
+          {
+            "id": "ritmo-lento",
+            "prompt": "Ritmo suave com chocalho",
+            "match": "Balance o corpo como se ninasse um bebê.",
+            "hint": "Escolha movimentos com passos tranquilos.",
+            "feedback": "Os ritmos suaves convidam a movimentos delicados."
+          },
+          {
+            "id": "ritmo-rapido",
+            "prompt": "Batidas rápidas na caixa",
+            "match": "Pule em pequenos passos como pipoca estourando.",
+            "hint": "Pense em energia e rapidez.",
+            "feedback": "Excelente! Sons acelerados combinam com saltos animados."
+          },
+          {
+            "id": "ritmo-eco",
+            "prompt": "Palmas com eco",
+            "match": "Forme duplas e alterne quem lidera a batida.",
+            "hint": "Que tal brincar de imitar?",
+            "feedback": "Par perfeito! A brincadeira em eco combina bem com duplas."
+          }
+        ]
+      }
+    },
     {
       "slug": "quiz-detectives-das-palavras",
       "title": "Detetives das Palavras — Quiz",
@@ -63,11 +167,11 @@
             "prompt": "A palavra 'balão' começa com o mesmo som de 'bola'.",
             "hint": "Repita devagar: ba-lão.",
             "statement": "balão e bola começam com o som /b/.",
+            "answer": true,
             "feedback": {
               "true": "Isso mesmo! As duas palavras começam com /b/.",
               "false": "Ops! Ambas têm o som inicial /b/."
-            },
-            "answer": true
+            }
           },
           {
             "id": "det-q3",
@@ -75,120 +179,30 @@
             "prompt": "Organize as sílabas para formar a palavra 'BORBOLETA'.",
             "hint": "Pronuncie devagar: BOR-BO-LE-TA.",
             "items": [
-              { "id": "bor", "text": "BOR" },
-              { "id": "bo", "text": "BO" },
-              { "id": "le", "text": "LE" },
-              { "id": "ta", "text": "TA" }
+              {
+                "id": "bor",
+                "text": "BOR"
+              },
+              {
+                "id": "bo",
+                "text": "BO"
+              },
+              {
+                "id": "le",
+                "text": "LE"
+              },
+              {
+                "id": "ta",
+                "text": "TA"
+              }
             ],
             "correctOrder": ["bor", "bo", "le", "ta"],
             "successFeedback": "Excelente! Você organizou a palavra certinha.",
-            "failureFeedback": "Revise a ordem pronunciando devagar cada sílaba." 
-          }
-        ]
-      }
-    },
-    {
-      "slug": "puzzle-danca-dos-sons",
-      "title": "Dança dos Sons — Quebra-cabeça corporal",
-      "type": "PUZZLE",
-      "bnccCode": "EI03ET04",
-      "bnccDescription": "Experimentar gestos, ritmos e movimentos para comunicar emoções.",
-      "contentModuleSlug": "historias-em-movimento",
-      "activitySlug": "danca-dos-sons",
-      "difficulty": "BEGINNER",
-      "estimatedTimeMinutes": 6,
-      "instructions": [
-        "Arraste ou selecione com o teclado cada ritmo para combinar com a proposta de movimento.",
-        "Converse com a turma sobre como o corpo responde a cada som.",
-        "No final, criem uma sequência com as combinações favoritas."
-      ],
-      "objectives": [
-        "Perceber diferentes ritmos a partir de objetos cotidianos.",
-        "Criar sequências corporais com acompanhamento musical.",
-        "Sugerir adaptações para incluir todos na roda."
-      ],
-      "puzzle": {
-        "mode": "matching",
-        "successFeedback": "Brilhante! Os ritmos ganharam movimentos cheios de imaginação.",
-        "errorFeedback": "Ainda não combinou? Ouça novamente o som e experimente outro movimento.",
-        "pairs": [
-          {
-            "id": "ritmo-lento",
-            "prompt": "Ritmo suave com chocalho",
-            "match": "Balance o corpo como se ninasse um bebê.",
-            "hint": "Escolha movimentos com passos tranquilos.",
-            "feedback": "Os ritmos suaves convidam a movimentos delicados."
-          },
-          {
-            "id": "ritmo-rapido",
-            "prompt": "Batidas rápidas na caixa",
-            "match": "Pule em pequenos passos como pipoca estourando.",
-            "hint": "Pense em energia e rapidez.",
-            "feedback": "Excelente! Sons acelerados combinam com saltos animados."
-          },
-          {
-            "id": "ritmo-eco",
-            "prompt": "Palmas com eco",
-            "match": "Forme duplas e alterne quem lidera a batida.",
-            "hint": "Que tal brincar de imitar?",
-            "feedback": "Par perfeito! A brincadeira em eco combina bem com duplas."
-          }
-        ]
-      }
-    },
-    {
-      "slug": "game-missao-equipes-multiplicadoras",
-      "title": "Missão Equipes Multiplicadoras — Jogo cooperativo",
-      "type": "GAME",
-      "bnccCode": "EF05MA08",
-      "bnccDescription": "Resolver problemas de multiplicação e divisão em contextos significativos.",
-      "contentModuleSlug": "rota-das-operacoes",
-      "activitySlug": "missao-equipes-multiplicadoras",
-      "difficulty": "INTERMEDIATE",
-      "estimatedTimeMinutes": 10,
-      "instructions": [
-        "Leia o desafio de cada fase e compartilhe suas estratégias com o grupo.",
-        "Utilize o quadro para registrar cálculos ou desenhos que ajudem a visualizar a situação.",
-        "Ao finalizar, reflita sobre outras maneiras de distribuir os materiais." 
-      ],
-      "objectives": [
-        "Resolver problemas de distribuição proporcional utilizando multiplicação e divisão.",
-        "Justificar escolhas com representações visuais ou esquemas.",
-        "Identificar padrões que facilitem cálculos mentais."
-      ],
-      "game": {
-        "mode": "math-challenge",
-        "timeLimitSeconds": 120,
-        "lives": 3,
-        "victoryMessage": "Missão cumprida! A feira solidária está pronta para começar.",
-        "gameOverMessage": "A missão pode ser retomada. Converse sobre novas estratégias e tente novamente.",
-        "levels": [
-          {
-            "id": "nivel-1",
-            "challenge": "Há 24 cadernos para 3 grupos. Quantos cadernos cada grupo recebe?",
-            "answer": 8,
-            "hint": "Experimente representar com desenhos ou tabelas.",
-            "successFeedback": "Perfeito! 24 ÷ 3 = 8 cadernos por grupo.",
-            "failureFeedback": "Repense: se cada grupo tivesse 8 cadernos, quantos usaríamos ao todo?"
-          },
-          {
-            "id": "nivel-2",
-            "challenge": "São 5 mesas com 6 kits de sementes cada. Quantos kits existem no total?",
-            "answer": 30,
-            "hint": "Multiplique a quantidade de kits por mesa.",
-            "successFeedback": "Ótimo cálculo! 5 × 6 = 30 kits.",
-            "failureFeedback": "Quase! Conte de 6 em 6 cinco vezes para conferir."
-          },
-          {
-            "id": "nivel-3",
-            "challenge": "48 marcadores devem ser distribuídos igualmente em 8 caixas. Quantos marcadores vão em cada caixa?",
-            "answer": 6,
-            "hint": "Use a divisão ou pense em multiplicação inversa.",
-            "successFeedback": "Resultado certo! 48 ÷ 8 = 6 marcadores por caixa.",
-            "failureFeedback": "Tente relacionar divisão e multiplicação para encontrar o valor."
+            "failureFeedback": "Revise a ordem pronunciando devagar cada sílaba."
           }
         ]
       }
     }
-  ]
+  ],
+  "hash": "f2c45852a7ab8a8942b2f2d26a37704fa5dc3296d531ee9143487fe13aa6bc15"
 }

@@ -1,0 +1,76 @@
+module:
+  slug: trilhas-narrativas-digitais
+  title: "Trilhas Narrativas Digitais"
+  subtitle: "Autorias Multimídia"
+  description: "Construção de narrativas multimodais para dar visibilidade às vozes da comunidade escolar."
+  theme: "Língua Portuguesa"
+  discipline: "Língua Portuguesa"
+  ageGroupSlug: fundamental-anos-finais
+  learningPathSlug: narrativas-conectadas
+  primaryBnccCode: EF69LP28
+  learningOutcomes:
+    - "Planejar roteiros e pautas com intencionalidade comunicativa."
+    - "Utilizar recursos multimodais para produzir narrativas digitais."
+    - "Revisar e editar produções considerando feedback do grupo."
+  tags:
+    - narrativa-digital
+    - producao-colaborativa
+activities:
+  - partial: ../../_partials/acolhimento-base.yaml
+    slug: podcast-voz-da-comunidade
+    title: "Podcast Voz da Comunidade"
+    prompt: "Crie um roteiro de podcast entrevistando pessoas sobre sonhos e desafios do bairro."
+    type: PROJECT
+    difficulty: PRATICAR
+    bncc:
+      code: EF69LP28
+      habilidades:
+        - EF69LP28
+    learningObjectives:
+      - "Planejar entrevistas considerando público e finalidade."
+      - "Utilizar recursos de áudio e edição para tornar a mensagem clara."
+    description: "Produção colaborativa de podcast para socializar pontos de vista da comunidade."
+    metadata:
+      formato: "Podcast colaborativo"
+      duracaoMinutos: 30
+      publicacao: "Canal da escola"
+    accessibility:
+      hints:
+        - text: "Garanta roteiros com tempo marcado para cada voz para evitar interrupções."
+      assets:
+        - type: DOCUMENTO
+          uri: "/apoio/guias/entrevista-colaborativa.pdf"
+          title: "Guia rápido para entrevistas"
+    prerequisites:
+      - type: SKILL
+        reference: EF67LP21
+        description: "Organizar informações de entrevistas em roteiros coerentes."
+  - partial: ../../_partials/acolhimento-base.yaml
+    slug: webdoc-historias-do-bairro
+    title: "Webdoc Histórias do Bairro"
+    prompt: "Combine vídeos, fotos e textos para narrar transformações da escola nos últimos anos."
+    type: PROJECT
+    difficulty: DOMINAR
+    bncc:
+      code: EF69LP28
+      habilidades:
+        - EF69LP28
+    learningObjectives:
+      - "Selecionar linguagens adequadas para construir narrativas digitais complexas."
+      - "Revisar e editar materiais multimidiáticos para publicação segura."
+    description: "Criação de webdocumentário colaborativo com curadoria de mídias diversas."
+    metadata:
+      duracaoMinutos: 40
+      ferramentas:
+        - "Editor de vídeo"
+        - "Padlet"
+      produtoFinal: "Link público compartilhado"
+    accessibility:
+      hints:
+        - text: "Planeje checkpoints para feedback de pares antes da edição final."
+      feedback:
+        encouragement: "Discutam estratégias para garantir acessibilidade na publicação (legendas, descrição em áudio)."
+    prerequisites:
+      - type: ACTIVITY
+        reference: podcast-voz-da-comunidade
+        description: "Utilizar entrevistas e relatos coletados no podcast para compor o webdoc."
