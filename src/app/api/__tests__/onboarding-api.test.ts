@@ -21,15 +21,13 @@ describe("Onboarding API", () => {
       overrideAgeGroupSlug: undefined,
     };
 
-    const request = NextRequest.from(
-      new Request("http://localhost:3000/api/onboarding", {
-        method: "POST",
-        headers: {
-          "Content-Type": "application/json",
-        },
-        body: JSON.stringify(payload),
-      })
-    );
+    const request = new NextRequest("http://localhost:3000/api/onboarding", {
+      method: "POST",
+      headers: {
+        "Content-Type": "application/json",
+      },
+      body: JSON.stringify(payload),
+    });
 
     const response = await postOnboarding(request);
     expect(response.status).toBe(200);
