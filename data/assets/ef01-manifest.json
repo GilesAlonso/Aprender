@@ -1,0 +1,222 @@
+{
+  "version": "36be7f61f0459535",
+  "generatedBy": "scripts/generate-ef01-assets.ts",
+  "assets": [
+    {
+      "slug": "cn-animal-boto",
+      "subject": "ciencias",
+      "theme": "animais-brasileiros",
+      "recommendedUsage": "Atividades sobre ecossistemas aquáticos da Amazônia.",
+      "altText": "Boto cor-de-rosa saltando sobre ondas brilhantes.",
+      "colorProfile": ["calm-200", "accent-300", "calm-500", "accent-100"],
+      "license": {
+        "name": "CC BY 4.0",
+        "url": "https://creativecommons.org/licenses/by/4.0/",
+        "document": "/assets/ef01/LICENSE.md"
+      },
+      "files": {
+        "svg": "/assets/ef01/ciencias/cn-animal-boto.svg?v=d46d3a653726",
+        "png": "/assets/ef01/ciencias/cn-animal-boto.png?v=d46d3a653726"
+      },
+      "hash": "d46d3a653726"
+    },
+    {
+      "slug": "cn-animal-tucano",
+      "subject": "ciencias",
+      "theme": "animais-brasileiros",
+      "recommendedUsage": "Estudos sobre aves da fauna brasileira e biodiversidade.",
+      "altText": "Tucano estilizado de corpo azul escuro e bico alaranjado pousado em galho.",
+      "colorProfile": ["primary-200", "primary-800", "warning-400", "success-400"],
+      "license": {
+        "name": "CC BY 4.0",
+        "url": "https://creativecommons.org/licenses/by/4.0/",
+        "document": "/assets/ef01/LICENSE.md"
+      },
+      "files": {
+        "svg": "/assets/ef01/ciencias/cn-animal-tucano.svg?v=219c1229ae3f",
+        "png": "/assets/ef01/ciencias/cn-animal-tucano.png?v=219c1229ae3f"
+      },
+      "hash": "219c1229ae3f"
+    },
+    {
+      "slug": "cn-higiene-escovar-dentes",
+      "subject": "ciencias",
+      "theme": "rotinas-de-higiene",
+      "recommendedUsage": "Materiais de educação em saúde sobre cuidados com os dentes.",
+      "altText": "Escova azul com espuma limpando um dente branco.",
+      "colorProfile": ["surface-100", "primary-500", "accent-200", "surface-50"],
+      "license": {
+        "name": "CC BY 4.0",
+        "url": "https://creativecommons.org/licenses/by/4.0/",
+        "document": "/assets/ef01/LICENSE.md"
+      },
+      "files": {
+        "svg": "/assets/ef01/ciencias/cn-higiene-escovar-dentes.svg?v=a243e5efc5e5",
+        "png": "/assets/ef01/ciencias/cn-higiene-escovar-dentes.png?v=a243e5efc5e5"
+      },
+      "hash": "a243e5efc5e5"
+    },
+    {
+      "slug": "cn-higiene-lavar-maos",
+      "subject": "ciencias",
+      "theme": "rotinas-de-higiene",
+      "recommendedUsage": "Rotinas de prevenção e lavagem correta das mãos.",
+      "altText": "Mãos rosadas ensaboadas sob gotas de água.",
+      "colorProfile": ["surface-200", "accent-200", "calm-400", "neutral-200"],
+      "license": {
+        "name": "CC BY 4.0",
+        "url": "https://creativecommons.org/licenses/by/4.0/",
+        "document": "/assets/ef01/LICENSE.md"
+      },
+      "files": {
+        "svg": "/assets/ef01/ciencias/cn-higiene-lavar-maos.svg?v=b26289161590",
+        "png": "/assets/ef01/ciencias/cn-higiene-lavar-maos.png?v=b26289161590"
+      },
+      "hash": "b26289161590"
+    },
+    {
+      "slug": "cn-material-lupa",
+      "subject": "ciencias",
+      "theme": "materiais-escolares",
+      "recommendedUsage": "Explorações científicas e observação de pequenos objetos.",
+      "altText": "Lupa azul com reflexos verdes e detalhes em amarelo.",
+      "colorProfile": ["calm-200", "primary-600", "surface-50", "accent-300"],
+      "license": {
+        "name": "CC BY 4.0",
+        "url": "https://creativecommons.org/licenses/by/4.0/",
+        "document": "/assets/ef01/LICENSE.md"
+      },
+      "files": {
+        "svg": "/assets/ef01/ciencias/cn-material-lupa.svg?v=fd5948721091",
+        "png": "/assets/ef01/ciencias/cn-material-lupa.png?v=fd5948721091"
+      },
+      "hash": "fd5948721091"
+    },
+    {
+      "slug": "cn-natureza-floresta",
+      "subject": "ciencias",
+      "theme": "elementos-naturais",
+      "recommendedUsage": "Mapas visuais de biomas brasileiros e ciclos da natureza.",
+      "altText": "Dois ipês coloridos com sol ao fundo representando a floresta brasileira.",
+      "colorProfile": ["success-200", "success-500", "warning-600", "warning-200"],
+      "license": {
+        "name": "CC BY 4.0",
+        "url": "https://creativecommons.org/licenses/by/4.0/",
+        "document": "/assets/ef01/LICENSE.md"
+      },
+      "files": {
+        "svg": "/assets/ef01/ciencias/cn-natureza-floresta.svg?v=896038531fce",
+        "png": "/assets/ef01/ciencias/cn-natureza-floresta.png?v=896038531fce"
+      },
+      "hash": "896038531fce"
+    },
+    {
+      "slug": "cn-natureza-rio",
+      "subject": "ciencias",
+      "theme": "elementos-naturais",
+      "recommendedUsage": "Discussões sobre ciclos da água e paisagens naturais.",
+      "altText": "Rio sinuoso em tons azuis com montanhas ao fundo.",
+      "colorProfile": ["calm-300", "calm-500", "neutral-200", "neutral-500"],
+      "license": {
+        "name": "CC BY 4.0",
+        "url": "https://creativecommons.org/licenses/by/4.0/",
+        "document": "/assets/ef01/LICENSE.md"
+      },
+      "files": {
+        "svg": "/assets/ef01/ciencias/cn-natureza-rio.svg?v=3de54348a0ab",
+        "png": "/assets/ef01/ciencias/cn-natureza-rio.png?v=3de54348a0ab"
+      },
+      "hash": "3de54348a0ab"
+    },
+    {
+      "slug": "lp-letra-a",
+      "subject": "lingua-portuguesa",
+      "theme": "letters",
+      "recommendedUsage": "Atividades de reconhecimento de letras iniciais e jogos de alfabeto.",
+      "altText": "Letra A maiúscula estilizada sobre círculos coloridos.",
+      "colorProfile": ["primary-500", "accent-200", "surface-200"],
+      "license": {
+        "name": "CC BY 4.0",
+        "url": "https://creativecommons.org/licenses/by/4.0/",
+        "document": "/assets/ef01/LICENSE.md"
+      },
+      "files": {
+        "svg": "/assets/ef01/lingua-portuguesa/lp-letra-a.svg?v=220318d0b2a3",
+        "png": "/assets/ef01/lingua-portuguesa/lp-letra-a.png?v=220318d0b2a3"
+      },
+      "hash": "220318d0b2a3"
+    },
+    {
+      "slug": "lp-letra-e",
+      "subject": "lingua-portuguesa",
+      "theme": "letters",
+      "recommendedUsage": "Sequências alfabéticas e murais de sons vocálicos.",
+      "altText": "Letra E maiúscula com toque lúdico e esfera brilhante.",
+      "colorProfile": ["primary-400", "calm-200", "surface-100"],
+      "license": {
+        "name": "CC BY 4.0",
+        "url": "https://creativecommons.org/licenses/by/4.0/",
+        "document": "/assets/ef01/LICENSE.md"
+      },
+      "files": {
+        "svg": "/assets/ef01/lingua-portuguesa/lp-letra-e.svg?v=b0d126115c98",
+        "png": "/assets/ef01/lingua-portuguesa/lp-letra-e.png?v=b0d126115c98"
+      },
+      "hash": "b0d126115c98"
+    },
+    {
+      "slug": "lp-material-caderno",
+      "subject": "lingua-portuguesa",
+      "theme": "materiais-escolares",
+      "recommendedUsage": "Cartazes de rotinas de escrita e produção de textos.",
+      "altText": "Caderno espiral colorido com lápis apoiado na capa.",
+      "colorProfile": ["surface-200", "primary-400", "surface-50", "secondary-400"],
+      "license": {
+        "name": "CC BY 4.0",
+        "url": "https://creativecommons.org/licenses/by/4.0/",
+        "document": "/assets/ef01/LICENSE.md"
+      },
+      "files": {
+        "svg": "/assets/ef01/lingua-portuguesa/lp-material-caderno.svg?v=f2112bacd495",
+        "png": "/assets/ef01/lingua-portuguesa/lp-material-caderno.png?v=f2112bacd495"
+      },
+      "hash": "f2112bacd495"
+    },
+    {
+      "slug": "lp-silaba-ba",
+      "subject": "lingua-portuguesa",
+      "theme": "silabas",
+      "recommendedUsage": "Jogos de montar palavras simples com sílabas diretas.",
+      "altText": "Cartão com a sílaba BA em destaque sobre faixa colorida.",
+      "colorProfile": ["secondary-400", "surface-200", "primary-700"],
+      "license": {
+        "name": "CC BY 4.0",
+        "url": "https://creativecommons.org/licenses/by/4.0/",
+        "document": "/assets/ef01/LICENSE.md"
+      },
+      "files": {
+        "svg": "/assets/ef01/lingua-portuguesa/lp-silaba-ba.svg?v=a20f732ac9c4",
+        "png": "/assets/ef01/lingua-portuguesa/lp-silaba-ba.png?v=a20f732ac9c4"
+      },
+      "hash": "a20f732ac9c4"
+    },
+    {
+      "slug": "lp-silaba-la",
+      "subject": "lingua-portuguesa",
+      "theme": "silabas",
+      "recommendedUsage": "Painéis de leitura compartilhada com sílabas da família do L.",
+      "altText": "Símbolo da sílaba LA com barra superior decorada.",
+      "colorProfile": ["accent-400", "surface-100", "primary-800"],
+      "license": {
+        "name": "CC BY 4.0",
+        "url": "https://creativecommons.org/licenses/by/4.0/",
+        "document": "/assets/ef01/LICENSE.md"
+      },
+      "files": {
+        "svg": "/assets/ef01/lingua-portuguesa/lp-silaba-la.svg?v=07ecfb243335",
+        "png": "/assets/ef01/lingua-portuguesa/lp-silaba-la.png?v=07ecfb243335"
+      },
+      "hash": "07ecfb243335"
+    }
+  ]
+}
