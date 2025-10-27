@@ -651,6 +651,108 @@
       ]
     },
     {
+      "bnccCode": "EF01CI01",
+      "ageGroupSlug": "fundamental-anos-iniciais",
+      "etapa": "Ensino Fundamental - Anos Iniciais",
+      "componenteCurricular": "Ciências",
+      "unidadeTematica": "Vida e Evolução",
+      "objetoConhecimento": ["Corpo humano e autocuidado", "Órgãos dos sentidos e suas funções"],
+      "competency": "Reconhecer partes do corpo e os órgãos dos sentidos, relacionando-os às percepções e aos cuidados necessários no cotidiano.",
+      "habilidades": [
+        {
+          "codigo": "EF01CI01",
+          "descricao": "Identificar órgãos dos sentidos, associando-os às sensações percebidas e a cuidados básicos de proteção e higiene."
+        }
+      ],
+      "descricao": "Promove a observação do corpo humano e amplia o vocabulário sobre sensações, proteção e autocuidado.",
+      "referencias": [
+        {
+          "documento": "BNCC - Ciências",
+          "secao": "Ensino Fundamental Anos Iniciais",
+          "paginaInicial": 320,
+          "paginaFinal": 322
+        }
+      ]
+    },
+    {
+      "bnccCode": "EF01CI02",
+      "ageGroupSlug": "fundamental-anos-iniciais",
+      "etapa": "Ensino Fundamental - Anos Iniciais",
+      "componenteCurricular": "Ciências",
+      "unidadeTematica": "Vida e Evolução",
+      "objetoConhecimento": [
+        "Rotinas de higiene e saúde",
+        "Hábitos de alimentação, repouso e prevenção de doenças"
+      ],
+      "competency": "Reconhecer hábitos de higiene, alimentação e descanso relacionados à manutenção da saúde individual e coletiva.",
+      "habilidades": [
+        {
+          "codigo": "EF01CI02",
+          "descricao": "Relacionar práticas de higiene, alimentação e repouso à prevenção de doenças, propondo cuidados cotidianos."
+        }
+      ],
+      "descricao": "Mobiliza conhecimentos sobre autocuidado e prevenção, articulando família e escola na construção de rotinas saudáveis.",
+      "referencias": [
+        {
+          "documento": "BNCC - Ciências",
+          "secao": "Ensino Fundamental Anos Iniciais",
+          "paginaInicial": 322,
+          "paginaFinal": 323
+        }
+      ]
+    },
+    {
+      "bnccCode": "EF01CI03",
+      "ageGroupSlug": "fundamental-anos-iniciais",
+      "etapa": "Ensino Fundamental - Anos Iniciais",
+      "componenteCurricular": "Ciências",
+      "unidadeTematica": "Vida e Evolução",
+      "objetoConhecimento": ["Seres vivos do entorno", "Necessidades de animais e plantas"],
+      "competency": "Observar seres vivos do ambiente próximo, reconhecendo características, necessidades e formas de cuidado compartilhadas.",
+      "habilidades": [
+        {
+          "codigo": "EF01CI03",
+          "descricao": "Identificar características de animais e plantas do entorno, comparando necessidades de alimentação, abrigo e interação com o meio."
+        }
+      ],
+      "descricao": "Estimula investigações sobre seres vivos do território, destacando semelhanças, diferenças e cuidados ambientais.",
+      "referencias": [
+        {
+          "documento": "BNCC - Ciências",
+          "secao": "Ensino Fundamental Anos Iniciais",
+          "paginaInicial": 323,
+          "paginaFinal": 324
+        }
+      ]
+    },
+    {
+      "bnccCode": "EF01CI04",
+      "ageGroupSlug": "fundamental-anos-iniciais",
+      "etapa": "Ensino Fundamental - Anos Iniciais",
+      "componenteCurricular": "Ciências",
+      "unidadeTematica": "Ambiente",
+      "objetoConhecimento": [
+        "Ambientes de convivência e cuidados coletivos",
+        "Participação e responsabilidade nos espaços escolares"
+      ],
+      "competency": "Reconhecer ambientes da escola e do entorno, propondo ações de cuidado, preservação e convivência respeitosa.",
+      "habilidades": [
+        {
+          "codigo": "EF01CI04",
+          "descricao": "Descrever ambientes familiares, identificando condições de conservação, convivência e práticas de cuidado compartilhadas."
+        }
+      ],
+      "descricao": "Valoriza o olhar investigativo sobre espaços coletivos, incentivando atitudes responsáveis e colaborativas de preservação.",
+      "referencias": [
+        {
+          "documento": "BNCC - Ciências",
+          "secao": "Ensino Fundamental Anos Iniciais",
+          "paginaInicial": 324,
+          "paginaFinal": 325
+        }
+      ]
+    },
+    {
       "bnccCode": "EF05MA08",
       "ageGroupSlug": "fundamental-anos-iniciais",
       "etapa": "Ensino Fundamental - Anos Iniciais",

@@ -37,12 +37,12 @@ describe("Catálogo de atividades interativas", () => {
     const dataset = loadInteractiveDataset();
 
     expect(() => new Date(dataset.updatedAt)).not.toThrow();
-    expect(dataset.activities).toHaveLength(3);
+    expect(dataset.activities.length).toBeGreaterThanOrEqual(3);
 
-    const types = dataset.activities.map((activity) => activity.type);
-    expect(types).toContain("QUIZ");
-    expect(types).toContain("PUZZLE");
-    expect(types).toContain("GAME");
+    const types = new Set(dataset.activities.map((activity) => activity.type));
+    expect(types.has("QUIZ")).toBe(true);
+    expect(types.has("PUZZLE")).toBe(true);
+    expect(types.has("GAME")).toBe(true);
   });
 });
 

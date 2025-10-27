@@ -1,0 +1,1958 @@
+module:
+  stage: ef01
+  subjectSlug: ciencias
+  subject: Ciências
+  slug: plantas-que-cuidamos
+  title: Plantas que Cuidamos
+  subtitle: Cultivar, observar e preservar o verde da escola
+  description: >-
+    Sequência que aproxima a turma dos cuidados com plantas, explorando ciclos de vida, necessidades
+    ambientais e ações coletivas de preservação.
+  theme: Ciências
+  discipline: Ciências
+  ageGroupSlug: fundamental-anos-iniciais
+  learningPathSlug: exploradores-da-natureza
+  primaryBnccCode: EF01CI03
+  secondaryBnccCodes:
+    - EF01CI04
+  learningOutcomes:
+    - Investigar ciclos de vida das plantas relacionando etapas a cuidados concretos.
+    - Planejar experiências simples de plantio e registrar observações colaborativas.
+    - Articular ações coletivas que preservam canteiros e jardins da comunidade escolar.
+  tags:
+    - plantas
+    - horta
+    - sustentabilidade
+    - cuidado-coletivo
+  estimatedDurationMinutes: 185
+  summary: >-
+    Doze atividades que combinam plantio, monitoramento e celebração das plantas com jogos
+    cooperativos e puzzles investigativos.
+activities:
+  - partial: ../../_partials/acolhimento-base.yaml
+    slug: partes-da-planta
+    title: Partes da Planta
+    prompt: Observe a ilustração e escolha a parte correta da planta descrita.
+    summary: Quiz introdutório sobre raízes, caules, folhas e flores.
+    type: QUIZ
+    difficulty: INICIAR
+    bncc:
+      code: EF01CI03
+      habilidades:
+        - EF01CI03
+    learningObjectives:
+      - Reconhecer as principais partes das plantas e suas funções básicas.
+      - Registrar observações simples em linguagem oral e visual.
+    description: >-
+      Partes da Planta apresenta imagens ampliadas que ajudam a diferenciar estruturas vegetais e
+      suas funções.
+    metadata:
+      categoria: Anatomia vegetal
+      duracaoMinutos: 8
+      tempoEstimadoMinutos: 8
+      habilidades:
+        - EF01CI03
+      assetSlug: cn-material-lupa
+      assetUsage: Use a lupa para destacar detalhes das folhas, flores e raízes em plantas reais.
+      familiaEngajamento: >-
+        Convide as famílias a observar plantas domésticas identificando raiz, caule, folhas e flores
+        com etiquetas coloridas.
+      focoInvestigativo: identificação de partes das plantas
+      modoCooperativo: false
+      tagsInterdisciplinares:
+        - Língua Portuguesa
+        - Arte
+      interactiveSlug: quiz-partes-da-planta
+      habilidadesSecundarias:
+        - EF01CI04
+      recursoVisual: Cartaz com partes da planta destacadas.
+    accessibility:
+      hints:
+        - audience: ESTUDANTE
+          text: >-
+            Passo 1: Observe o desafio com calma e use a leitura em voz alta para investigar
+            identificação de partes das plantas.
+        - audience: ESTUDANTE
+          text: >-
+            Passo 2: Faça pequenas pausas para perceber os detalhes e compartilhe o que notou sobre
+            identificação de partes das plantas.
+        - audience: EDUCADOR
+          text: >-
+            Ofereça materiais táteis, áudio descrição e tempo extra para apoiar a exploração de
+            identificação de partes das plantas.
+        - audience: FAMILIA
+          text: >-
+            Convide as famílias a observar plantas domésticas identificando raiz, caule, folhas e
+            flores com etiquetas coloridas.
+      feedback:
+        success: >-
+          Excelente investigação! Você analisou identificação de partes das plantas com olhar
+          científico.
+        encouragement: >-
+          Tudo bem errar no caminho. Use recursos visuais, gestos e sons para revisar as pistas
+          antes de tentar novamente.
+        retry: >-
+          Faça uma pausa, respire fundo e retome observando novos detalhes sobre identificação de
+          partes das plantas.
+        accessibility: >-
+          Garanta apoios multimodais: contraste de cores, narração em voz alta, audiodescrição e
+          tempo estendido para quem precisar.
+      assets:
+        - slug: cn-material-lupa
+          type: IMAGEM
+          title: Lupa azul para observação
+          description: Use a lupa para destacar detalhes das folhas, flores e raízes em plantas reais.
+      alternatives:
+        - title: MATERIAIS CONCRETOS
+          description: Monte estações com objetos reais para reforçar identificação de partes das plantas.
+          steps:
+            - Disponibilize cartões com pictogramas e legendas em caixa alta.
+            - Use texturas, aromas ou sons reais como apoio sensorial.
+      audioCue:
+        title: SINAL DE PAUSA
+        description: Utilize um sino suave ou chocalho para avisar a troca de etapa ou necessidade de pausa.
+        steps:
+          - Combine com a turma o significado do sinal antes de iniciar.
+          - Ofereça tempo suficiente após o sinal para reorganização corporal.
+      motorSupport:
+        - title: APOIO MOTOR
+          description: >-
+            Disponibilize apoios para toque, ponteiras, suportes de tablet e mesas acessíveis
+            durante a interação.
+          steps:
+            - Permita que duplas se alternem no controle do dispositivo.
+            - Ofereça apoio postural e ajustes de altura quando necessário.
+    prerequisites:
+      - type: SKILL
+        reference: EF01CI03
+        description: Compartilhar observações já feitas sobre animais e plantas próximos da escola.
+    interactive:
+      slug: quiz-partes-da-planta
+      title: Partes da Planta — Quiz
+      type: QUIZ
+      bnccDescription: Observar características de animais e plantas, relacionando-as aos ambientes em que vivem.
+      estimatedTimeMinutes: 8
+      instructions:
+        - Leia ou escute cada pergunta com atenção.
+        - Use as setas ou toque nas alternativas antes de confirmar.
+        - Compartilhe como chegou à resposta com a turma.
+      objectives:
+        - Reconhecer as principais partes das plantas e suas funções básicas.
+        - Registrar observações simples em linguagem oral e visual.
+      scoring:
+        correct: 10
+        incorrect: 0
+      adaptive:
+        increaseAfter: 2
+        decreaseAfter: 1
+      questions:
+        - id: partes-da-planta-q1
+          type: multiple-choice
+          prompt: Qual parte da planta transporta água e nutrientes para as folhas?
+          hint: Observe o que liga as raízes às folhas.
+          options:
+            - id: partes-da-planta-q1-1
+              text: Caule
+              isCorrect: true
+              feedback: Muito bem! O caule leva água e nutrientes até as folhas.
+            - id: partes-da-planta-q1-2
+              text: Flor
+              isCorrect: false
+              feedback: A flor ajuda na reprodução, não transporta nutrientes.
+            - id: partes-da-planta-q1-3
+              text: Fruto
+              isCorrect: false
+              feedback: O fruto protege a semente, não faz transporte.
+        - id: partes-da-planta-q2
+          type: true-false
+          prompt: As raízes ajudam a fixar a planta no solo e a absorver água?
+          hint: Lembre-se de onde a planta fica presa.
+          statement: Raízes fixam a planta e absorvem água do solo.
+          answer: true
+          feedback:
+            'true': Perfeito! As raízes garantem firmeza e absorvem água.
+            'false': 'Reflita: raízes são responsáveis por garantir água e sustentação.'
+      accessibility:
+        hints:
+          - audience: ESTUDANTE
+            text: >-
+              Use TAB, setas ou toques para navegar pelas ações digitais ligadas a identificação de
+              partes das plantas.
+          - audience: EDUCADOR
+            text: Ative a leitura em voz alta e mantenha instruções visuais em contraste elevado.
+        feedback:
+          success: >-
+            Ótimo trabalho! As escolhas mostram entendimento sobre identificação de partes das
+            plantas.
+          encouragement: >-
+            Caso se confunda, revise com a equipe, utilize o botão de repetir instruções e retome
+            com calma.
+          accessibility: >-
+            Disponibilize controle adaptado, tempo flexível e apoio auditivo individual sempre que
+            necessário.
+        assets:
+          - slug: cn-material-lupa
+            type: IMAGEM
+            title: Lupa azul para observação
+  - partial: ../../_partials/acolhimento-base.yaml
+    slug: ciclo-da-plantinha
+    title: Ciclo da Plantinha
+    prompt: Acompanhe a sequência e escolha o que acontece em cada etapa do crescimento.
+    summary: Quiz narrativo sobre germinação, crescimento e florescimento.
+    type: QUIZ
+    difficulty: INICIAR
+    bncc:
+      code: EF01CI03
+      habilidades:
+        - EF01CI03
+    learningObjectives:
+      - Ordenar etapas do ciclo de vida de uma planta de forma simples.
+      - Descrever fatores que ajudam a planta a crescer saudável.
+    description: >-
+      Ciclo da Plantinha reforça a observação das fases de crescimento e os cuidados necessários em
+      cada uma.
+    metadata:
+      categoria: Ciclo de vida
+      duracaoMinutos: 9
+      tempoEstimadoMinutos: 9
+      habilidades:
+        - EF01CI03
+      assetSlug: cn-natureza-rio
+      assetUsage: Mostre a paisagem do rio para falar sobre ambientes que favorecem o crescimento das plantas.
+      familiaEngajamento: Peça às famílias que fotografem uma planta ao longo da semana registrando mudanças.
+      focoInvestigativo: sequência de desenvolvimento das plantas
+      modoCooperativo: true
+      tagsInterdisciplinares:
+        - Matemática
+        - Arte
+      interactiveSlug: quiz-ciclo-da-plantinha
+      habilidadesSecundarias:
+        - EF01CI04
+      linhaDoTempo: Linha do tempo com cartões de germinação.
+    accessibility:
+      hints:
+        - audience: ESTUDANTE
+          text: >-
+            Passo 1: Observe o desafio com calma e use a leitura em voz alta para investigar
+            sequência de desenvolvimento das plantas.
+        - audience: ESTUDANTE
+          text: >-
+            Passo 2: Faça pequenas pausas para perceber os detalhes e compartilhe o que notou sobre
+            sequência de desenvolvimento das plantas.
+        - audience: EDUCADOR
+          text: >-
+            Ofereça materiais táteis, áudio descrição e tempo extra para apoiar a exploração de
+            sequência de desenvolvimento das plantas.
+        - audience: FAMILIA
+          text: Peça às famílias que fotografem uma planta ao longo da semana registrando mudanças.
+      feedback:
+        success: >-
+          Excelente investigação! Você analisou sequência de desenvolvimento das plantas com olhar
+          científico.
+        encouragement: >-
+          Tudo bem errar no caminho. Use recursos visuais, gestos e sons para revisar as pistas
+          antes de tentar novamente.
+        retry: >-
+          Faça uma pausa, respire fundo e retome observando novos detalhes sobre sequência de
+          desenvolvimento das plantas.
+        accessibility: >-
+          Garanta apoios multimodais: contraste de cores, narração em voz alta, audiodescrição e
+          tempo estendido para quem precisar.
+      assets:
+        - slug: cn-natureza-rio
+          type: IMAGEM
+          title: Rio sinuoso e calmo
+          description: >-
+            Mostre a paisagem do rio para falar sobre ambientes que favorecem o crescimento das
+            plantas.
+      alternatives:
+        - title: MATERIAIS CONCRETOS
+          description: Monte estações com objetos reais para reforçar sequência de desenvolvimento das plantas.
+          steps:
+            - Disponibilize cartões com pictogramas e legendas em caixa alta.
+            - Use texturas, aromas ou sons reais como apoio sensorial.
+      audioCue:
+        title: SINAL DE PAUSA
+        description: Utilize um sino suave ou chocalho para avisar a troca de etapa ou necessidade de pausa.
+        steps:
+          - Combine com a turma o significado do sinal antes de iniciar.
+          - Ofereça tempo suficiente após o sinal para reorganização corporal.
+      motorSupport:
+        - title: APOIO MOTOR
+          description: >-
+            Disponibilize apoios para toque, ponteiras, suportes de tablet e mesas acessíveis
+            durante a interação.
+          steps:
+            - Permita que duplas se alternem no controle do dispositivo.
+            - Ofereça apoio postural e ajustes de altura quando necessário.
+    prerequisites:
+      - type: SKILL
+        reference: EF01CI03
+        description: Compartilhar observações já feitas sobre animais e plantas próximos da escola.
+    interactive:
+      slug: quiz-ciclo-da-plantinha
+      title: Ciclo da Plantinha — Quiz
+      type: QUIZ
+      bnccDescription: Observar características de animais e plantas, relacionando-as aos ambientes em que vivem.
+      estimatedTimeMinutes: 9
+      instructions:
+        - Leia ou escute cada pergunta com atenção.
+        - Use as setas ou toque nas alternativas antes de confirmar.
+        - Compartilhe como chegou à resposta com a turma.
+      objectives:
+        - Ordenar etapas do ciclo de vida de uma planta de forma simples.
+        - Descrever fatores que ajudam a planta a crescer saudável.
+      scoring:
+        correct: 10
+        incorrect: 0
+      adaptive:
+        increaseAfter: 2
+        decreaseAfter: 1
+      questions:
+        - id: ciclo-da-plantinha-q1
+          type: multiple-choice
+          prompt: Depois que a semente rompe a casca, o que costuma aparecer primeiro?
+          hint: Observe o que surge para procurar água no solo.
+          options:
+            - id: ciclo-da-plantinha-q1-1
+              text: Uma raiz fininha em direção ao solo
+              isCorrect: true
+              feedback: Isso mesmo! A raiz cresce primeiro para buscar água e nutrientes.
+            - id: ciclo-da-plantinha-q1-2
+              text: Flores coloridas
+              isCorrect: false
+              feedback: As flores aparecem apenas em etapas avançadas.
+            - id: ciclo-da-plantinha-q1-3
+              text: Frutos maduros
+              isCorrect: false
+              feedback: Os frutos nascem somente depois das flores.
+        - id: ciclo-da-plantinha-q2
+          type: true-false
+          prompt: As folhas surgem para produzir alimento com ajuda do sol e da água?
+          hint: Lembre-se da fotossíntese.
+          statement: Folhas produzem alimento usando sol, água e ar.
+          answer: true
+          feedback:
+            'true': Correto! As folhas fazem fotossíntese para alimentar a planta.
+            'false': 'Reflita: folhas transformam luz em alimento para a planta.'
+      accessibility:
+        hints:
+          - audience: ESTUDANTE
+            text: >-
+              Use TAB, setas ou toques para navegar pelas ações digitais ligadas a sequência de
+              desenvolvimento das plantas.
+          - audience: EDUCADOR
+            text: Ative a leitura em voz alta e mantenha instruções visuais em contraste elevado.
+        feedback:
+          success: >-
+            Ótimo trabalho! As escolhas mostram entendimento sobre sequência de desenvolvimento das
+            plantas.
+          encouragement: >-
+            Caso se confunda, revise com a equipe, utilize o botão de repetir instruções e retome
+            com calma.
+          accessibility: >-
+            Disponibilize controle adaptado, tempo flexível e apoio auditivo individual sempre que
+            necessário.
+        assets:
+          - slug: cn-natureza-rio
+            type: IMAGEM
+            title: Rio sinuoso e calmo
+  - partial: ../../_partials/acolhimento-base.yaml
+    slug: agua-e-luz
+    title: Água e Luz
+    prompt: Analise os cenários e escolha o melhor cuidado para cada planta.
+    summary: Quiz sobre necessidades de água, luz e solo.
+    type: QUIZ
+    difficulty: PRATICAR
+    bncc:
+      code: EF01CI03
+      habilidades:
+        - EF01CI03
+        - EF01CI04
+    learningObjectives:
+      - Identificar necessidades de água e luz para diferentes tipos de plantas.
+      - Justificar escolhas de cuidado a partir de observações do ambiente.
+    description: Água e Luz apresenta situações reais para decidir como cuidar das plantas da escola.
+    metadata:
+      categoria: Cuidados essenciais
+      duracaoMinutos: 10
+      tempoEstimadoMinutos: 10
+      habilidades:
+        - EF01CI03
+        - EF01CI04
+      assetSlug: cn-natureza-floresta
+      assetUsage: Utilize a floresta para comparar áreas de sol, sombra e umidade.
+      familiaEngajamento: >-
+        Convide as famílias a observar horários de sol nas janelas e ajustar a posição das plantas
+        em casa.
+      focoInvestigativo: condições para o cuidado das plantas
+      modoCooperativo: true
+      tagsInterdisciplinares:
+        - Matemática
+        - Língua Portuguesa
+      interactiveSlug: quiz-agua-e-luz
+      habilidadesSecundarias:
+        - EF01CI02
+      registroCuidados: Planilha com frequência de rega e exposição ao sol.
+    accessibility:
+      hints:
+        - audience: ESTUDANTE
+          text: >-
+            Passo 1: Observe o desafio com calma e use a leitura em voz alta para investigar
+            condições para o cuidado das plantas.
+        - audience: ESTUDANTE
+          text: >-
+            Passo 2: Faça pequenas pausas para perceber os detalhes e compartilhe o que notou sobre
+            condições para o cuidado das plantas.
+        - audience: EDUCADOR
+          text: >-
+            Ofereça materiais táteis, áudio descrição e tempo extra para apoiar a exploração de
+            condições para o cuidado das plantas.
+        - audience: FAMILIA
+          text: >-
+            Convide as famílias a observar horários de sol nas janelas e ajustar a posição das
+            plantas em casa.
+      feedback:
+        success: >-
+          Excelente investigação! Você analisou condições para o cuidado das plantas com olhar
+          científico.
+        encouragement: >-
+          Tudo bem errar no caminho. Use recursos visuais, gestos e sons para revisar as pistas
+          antes de tentar novamente.
+        retry: >-
+          Faça uma pausa, respire fundo e retome observando novos detalhes sobre condições para o
+          cuidado das plantas.
+        accessibility: >-
+          Garanta apoios multimodais: contraste de cores, narração em voz alta, audiodescrição e
+          tempo estendido para quem precisar.
+      assets:
+        - slug: cn-natureza-floresta
+          type: IMAGEM
+          title: Floresta ensolarada
+          description: Utilize a floresta para comparar áreas de sol, sombra e umidade.
+      alternatives:
+        - title: MATERIAIS CONCRETOS
+          description: Monte estações com objetos reais para reforçar condições para o cuidado das plantas.
+          steps:
+            - Disponibilize cartões com pictogramas e legendas em caixa alta.
+            - Use texturas, aromas ou sons reais como apoio sensorial.
+      audioCue:
+        title: SINAL DE PAUSA
+        description: Utilize um sino suave ou chocalho para avisar a troca de etapa ou necessidade de pausa.
+        steps:
+          - Combine com a turma o significado do sinal antes de iniciar.
+          - Ofereça tempo suficiente após o sinal para reorganização corporal.
+      motorSupport:
+        - title: APOIO MOTOR
+          description: >-
+            Disponibilize apoios para toque, ponteiras, suportes de tablet e mesas acessíveis
+            durante a interação.
+          steps:
+            - Permita que duplas se alternem no controle do dispositivo.
+            - Ofereça apoio postural e ajustes de altura quando necessário.
+    prerequisites:
+      - type: SKILL
+        reference: EF01CI03
+        description: Compartilhar observações já feitas sobre animais e plantas próximos da escola.
+    interactive:
+      slug: quiz-agua-e-luz
+      title: Água e Luz — Quiz
+      type: QUIZ
+      bnccDescription: Observar características de animais e plantas, relacionando-as aos ambientes em que vivem.
+      estimatedTimeMinutes: 10
+      instructions:
+        - Leia ou escute cada pergunta com atenção.
+        - Use as setas ou toque nas alternativas antes de confirmar.
+        - Compartilhe como chegou à resposta com a turma.
+      objectives:
+        - Identificar necessidades de água e luz para diferentes tipos de plantas.
+        - Justificar escolhas de cuidado a partir de observações do ambiente.
+      scoring:
+        correct: 10
+        incorrect: 0
+      adaptive:
+        increaseAfter: 2
+        decreaseAfter: 1
+      questions:
+        - id: agua-e-luz-q1
+          type: multiple-choice
+          prompt: A horta da escola recebeu muito sol e o solo está seco. O que devemos fazer?
+          hint: Observe que a planta precisa repor água.
+          options:
+            - id: agua-e-luz-q1-1
+              text: Regar no final da tarde com água suficiente
+              isCorrect: true
+              feedback: Excelente! Regar ao final do dia evita choque térmico e hidrata o solo.
+            - id: agua-e-luz-q1-2
+              text: Cobrir as folhas com plástico
+              isCorrect: false
+              feedback: Cobrir as folhas impede a respiração da planta.
+            - id: agua-e-luz-q1-3
+              text: Adicionar sal para reter água
+              isCorrect: false
+              feedback: Sal pode prejudicar as raízes e secar o solo.
+        - id: agua-e-luz-q2
+          type: true-false
+          prompt: Algumas plantas gostam de sombra e precisam ficar longe do sol direto?
+          hint: Pense em samambaias e plantas de folhas delicadas.
+          statement: Existem plantas que preferem ambientes sombreados para crescer bem.
+          answer: true
+          feedback:
+            'true': Isso mesmo! Plantas de sombra precisam de luz indireta.
+            'false': 'Reflita: nem todas as plantas suportam sol direto; algumas preferem sombra.'
+      accessibility:
+        hints:
+          - audience: ESTUDANTE
+            text: >-
+              Use TAB, setas ou toques para navegar pelas ações digitais ligadas a condições para o
+              cuidado das plantas.
+          - audience: EDUCADOR
+            text: Ative a leitura em voz alta e mantenha instruções visuais em contraste elevado.
+        feedback:
+          success: >-
+            Ótimo trabalho! As escolhas mostram entendimento sobre condições para o cuidado das
+            plantas.
+          encouragement: >-
+            Caso se confunda, revise com a equipe, utilize o botão de repetir instruções e retome
+            com calma.
+          accessibility: >-
+            Disponibilize controle adaptado, tempo flexível e apoio auditivo individual sempre que
+            necessário.
+        assets:
+          - slug: cn-natureza-floresta
+            type: IMAGEM
+            title: Floresta ensolarada
+  - partial: ../../_partials/acolhimento-base.yaml
+    slug: amizades-ecologicas
+    title: Amizades Ecológicas
+    prompt: Descubra como plantas e outros seres vivos colaboram na natureza.
+    summary: Quiz sobre relações entre plantas, animais e pessoas.
+    type: QUIZ
+    difficulty: PRATICAR
+    bncc:
+      code: EF01CI04
+      habilidades:
+        - EF01CI04
+        - EF01CI03
+    learningObjectives:
+      - Identificar parcerias entre plantas, animais e humanos no ambiente escolar.
+      - Explicar como essas relações favorecem a convivência e a preservação.
+    description: >-
+      Amizades Ecológicas destaca como diferentes seres vivos dependem uns dos outros para viver
+      bem.
+    metadata:
+      categoria: Cooperação na natureza
+      duracaoMinutos: 10
+      tempoEstimadoMinutos: 10
+      habilidades:
+        - EF01CI04
+        - EF01CI03
+      assetSlug: cn-animal-tucano
+      assetUsage: O tucano ajuda a ilustrar a dispersão de sementes e a convivência com plantas.
+      familiaEngajamento: >-
+        Sugira às famílias conversar sobre como pássaros, insetos e pessoas ajudam a cuidar das
+        plantas.
+      focoInvestigativo: relações de convivência em ambientes compartilhados
+      modoCooperativo: true
+      tagsInterdisciplinares:
+        - Língua Portuguesa
+        - Geografia
+      interactiveSlug: quiz-amizades-ecologicas
+      habilidadesSecundarias:
+        - EF01CI02
+      muralColaborativo: Mural com fotos de plantas e parceiros da escola.
+    accessibility:
+      hints:
+        - audience: ESTUDANTE
+          text: >-
+            Passo 1: Observe o desafio com calma e use a leitura em voz alta para investigar
+            relações de convivência em ambientes compartilhados.
+        - audience: ESTUDANTE
+          text: >-
+            Passo 2: Faça pequenas pausas para perceber os detalhes e compartilhe o que notou sobre
+            relações de convivência em ambientes compartilhados.
+        - audience: EDUCADOR
+          text: >-
+            Ofereça materiais táteis, áudio descrição e tempo extra para apoiar a exploração de
+            relações de convivência em ambientes compartilhados.
+        - audience: FAMILIA
+          text: >-
+            Sugira às famílias conversar sobre como pássaros, insetos e pessoas ajudam a cuidar das
+            plantas.
+      feedback:
+        success: >-
+          Excelente investigação! Você analisou relações de convivência em ambientes compartilhados
+          com olhar científico.
+        encouragement: >-
+          Tudo bem errar no caminho. Use recursos visuais, gestos e sons para revisar as pistas
+          antes de tentar novamente.
+        retry: >-
+          Faça uma pausa, respire fundo e retome observando novos detalhes sobre relações de
+          convivência em ambientes compartilhados.
+        accessibility: >-
+          Garanta apoios multimodais: contraste de cores, narração em voz alta, audiodescrição e
+          tempo estendido para quem precisar.
+      assets:
+        - slug: cn-animal-tucano
+          type: IMAGEM
+          title: Tucano atento na mata
+          description: O tucano ajuda a ilustrar a dispersão de sementes e a convivência com plantas.
+      alternatives:
+        - title: MATERIAIS CONCRETOS
+          description: >-
+            Monte estações com objetos reais para reforçar relações de convivência em ambientes
+            compartilhados.
+          steps:
+            - Disponibilize cartões com pictogramas e legendas em caixa alta.
+            - Use texturas, aromas ou sons reais como apoio sensorial.
+      audioCue:
+        title: SINAL DE PAUSA
+        description: Utilize um sino suave ou chocalho para avisar a troca de etapa ou necessidade de pausa.
+        steps:
+          - Combine com a turma o significado do sinal antes de iniciar.
+          - Ofereça tempo suficiente após o sinal para reorganização corporal.
+      motorSupport:
+        - title: APOIO MOTOR
+          description: >-
+            Disponibilize apoios para toque, ponteiras, suportes de tablet e mesas acessíveis
+            durante a interação.
+          steps:
+            - Permita que duplas se alternem no controle do dispositivo.
+            - Ofereça apoio postural e ajustes de altura quando necessário.
+    prerequisites:
+      - type: SKILL
+        reference: EF01CI04
+        description: Relembrar passeios pela escola destacando cuidados com os ambientes compartilhados.
+    interactive:
+      slug: quiz-amizades-ecologicas
+      title: Amizades Ecológicas — Quiz
+      type: QUIZ
+      bnccDescription: >-
+        Comparar diferentes ambientes, modos de convivência e cuidados com a natureza na comunidade
+        escolar.
+      estimatedTimeMinutes: 10
+      instructions:
+        - Leia ou escute cada pergunta com atenção.
+        - Use as setas ou toque nas alternativas antes de confirmar.
+        - Compartilhe como chegou à resposta com a turma.
+      objectives:
+        - Identificar parcerias entre plantas, animais e humanos no ambiente escolar.
+        - Explicar como essas relações favorecem a convivência e a preservação.
+      scoring:
+        correct: 10
+        incorrect: 0
+      adaptive:
+        increaseAfter: 2
+        decreaseAfter: 1
+      questions:
+        - id: amizades-ecologicas-q1
+          type: multiple-choice
+          prompt: Quando o tucano come frutas e deixa as sementes cair, o que acontece?
+          hint: Pense em como as sementes chegam a novos lugares.
+          options:
+            - id: amizades-ecologicas-q1-1
+              text: As sementes podem germinar em outro local
+              isCorrect: true
+              feedback: Correto! O tucano espalha sementes, ajudando novas plantas a nascer.
+            - id: amizades-ecologicas-q1-2
+              text: As sementes desaparecem para sempre
+              isCorrect: false
+              feedback: As sementes continuam vivas e podem germinar.
+            - id: amizades-ecologicas-q1-3
+              text: As sementes viram pedras
+              isCorrect: false
+              feedback: Sementes não se transformam em pedras; elas germinam.
+        - id: amizades-ecologicas-q2
+          type: true-false
+          prompt: Quando regamos as plantas da escola, ajudamos a comunidade a ficar mais fresca?
+          hint: Observe como plantas oferecem sombra e umidade.
+          statement: Cuidar das plantas refresca o ambiente e melhora a convivência.
+          answer: true
+          feedback:
+            'true': Isso mesmo! Plantas bem cuidadas deixam o espaço mais fresco e agradável.
+            'false': 'Reflita: plantas hidratadas e saudáveis ajudam a refrescar o ambiente.'
+      accessibility:
+        hints:
+          - audience: ESTUDANTE
+            text: >-
+              Use TAB, setas ou toques para navegar pelas ações digitais ligadas a relações de
+              convivência em ambientes compartilhados.
+          - audience: EDUCADOR
+            text: Ative a leitura em voz alta e mantenha instruções visuais em contraste elevado.
+        feedback:
+          success: >-
+            Ótimo trabalho! As escolhas mostram entendimento sobre relações de convivência em
+            ambientes compartilhados.
+          encouragement: >-
+            Caso se confunda, revise com a equipe, utilize o botão de repetir instruções e retome
+            com calma.
+          accessibility: >-
+            Disponibilize controle adaptado, tempo flexível e apoio auditivo individual sempre que
+            necessário.
+        assets:
+          - slug: cn-animal-tucano
+            type: IMAGEM
+            title: Tucano atento na mata
+  - partial: ../../_partials/acolhimento-base.yaml
+    slug: sequencia-do-plantio
+    title: Sequência do Plantio
+    prompt: Organize os cuidados na ordem correta para plantar sementes.
+    summary: Quebra-cabeça sobre etapas de plantio e preparo do solo.
+    type: PUZZLE
+    difficulty: INICIAR
+    bncc:
+      code: EF01CI03
+      habilidades:
+        - EF01CI03
+    learningObjectives:
+      - Ordenar etapas de plantio considerando preparo do solo, semeadura e rega.
+      - Explicar por que cada passo é importante para o crescimento.
+    description: >-
+      Sequência do Plantio reforça a importância de seguir passos para que sementes germinem com
+      sucesso.
+    metadata:
+      categoria: Planejamento do plantio
+      duracaoMinutos: 11
+      tempoEstimadoMinutos: 11
+      habilidades:
+        - EF01CI03
+      assetSlug: cn-higiene-lavar-maos
+      assetUsage: Mostre a lavagem das mãos para lembrar da higiene antes e depois de manusear o solo.
+      familiaEngajamento: Convide as famílias a plantar sementes em copos recicláveis registrando cada etapa.
+      focoInvestigativo: sequenciamento de ações de plantio
+      modoCooperativo: true
+      tagsInterdisciplinares:
+        - Matemática
+        - Língua Portuguesa
+      interactiveSlug: puzzle-sequencia-do-plantio
+      habilidadesSecundarias:
+        - EF01CI04
+      guiaImpresso: Guia com ilustrações das etapas do plantio.
+    accessibility:
+      hints:
+        - audience: ESTUDANTE
+          text: >-
+            Passo 1: Observe o desafio com calma e use a leitura em voz alta para investigar
+            sequenciamento de ações de plantio.
+        - audience: ESTUDANTE
+          text: >-
+            Passo 2: Faça pequenas pausas para perceber os detalhes e compartilhe o que notou sobre
+            sequenciamento de ações de plantio.
+        - audience: EDUCADOR
+          text: >-
+            Ofereça materiais táteis, áudio descrição e tempo extra para apoiar a exploração de
+            sequenciamento de ações de plantio.
+        - audience: FAMILIA
+          text: Convide as famílias a plantar sementes em copos recicláveis registrando cada etapa.
+      feedback:
+        success: >-
+          Excelente investigação! Você analisou sequenciamento de ações de plantio com olhar
+          científico.
+        encouragement: >-
+          Tudo bem errar no caminho. Use recursos visuais, gestos e sons para revisar as pistas
+          antes de tentar novamente.
+        retry: >-
+          Faça uma pausa, respire fundo e retome observando novos detalhes sobre sequenciamento de
+          ações de plantio.
+        accessibility: >-
+          Garanta apoios multimodais: contraste de cores, narração em voz alta, audiodescrição e
+          tempo estendido para quem precisar.
+      assets:
+        - slug: cn-higiene-lavar-maos
+          type: IMAGEM
+          title: Lavagem cuidadosa das mãos
+          description: Mostre a lavagem das mãos para lembrar da higiene antes e depois de manusear o solo.
+      alternatives:
+        - title: MATERIAIS CONCRETOS
+          description: Monte estações com objetos reais para reforçar sequenciamento de ações de plantio.
+          steps:
+            - Disponibilize cartões com pictogramas e legendas em caixa alta.
+            - Use texturas, aromas ou sons reais como apoio sensorial.
+      audioCue:
+        title: SINAL DE PAUSA
+        description: Utilize um sino suave ou chocalho para avisar a troca de etapa ou necessidade de pausa.
+        steps:
+          - Combine com a turma o significado do sinal antes de iniciar.
+          - Ofereça tempo suficiente após o sinal para reorganização corporal.
+      motorSupport:
+        - title: APOIO MOTOR
+          description: >-
+            Disponibilize apoios para toque, ponteiras, suportes de tablet e mesas acessíveis
+            durante a interação.
+          steps:
+            - Permita que duplas se alternem no controle do dispositivo.
+            - Ofereça apoio postural e ajustes de altura quando necessário.
+    prerequisites:
+      - type: SKILL
+        reference: EF01CI03
+        description: Compartilhar observações já feitas sobre animais e plantas próximos da escola.
+    interactive:
+      slug: puzzle-sequencia-do-plantio
+      title: Sequência do Plantio — Quebra-cabeça
+      type: PUZZLE
+      bnccDescription: Observar características de animais e plantas, relacionando-as aos ambientes em que vivem.
+      estimatedTimeMinutes: 11
+      instructions:
+        - Observe cada cartão do quebra-cabeça.
+        - Arraste ou selecione a combinação que faça sentido.
+        - Explique para o grupo qual pista levou à associação.
+      objectives:
+        - Ordenar etapas de plantio considerando preparo do solo, semeadura e rega.
+        - Explicar por que cada passo é importante para o crescimento.
+      puzzle:
+        mode: matching
+        successFeedback: Muito bem! As sementes foram plantadas na ordem correta.
+        errorFeedback: Voltem às pistas e reorganizem a ordem das ações.
+        pairs:
+          - id: sequencia-do-plantio-pair-1
+            prompt: Preparar o vaso com solo fofo
+            match: Primeiro passo antes de colocar a semente
+            hint: Pense no que vem antes da semeadura.
+            feedback: O solo pronto recebe melhor a semente.
+          - id: sequencia-do-plantio-pair-2
+            prompt: Colocar a semente na profundidade certa
+            match: Etapa após preparar o solo
+            hint: O que fazemos logo após o vaso estar pronto?
+            feedback: Semear na profundidade correta favorece a germinação.
+          - id: sequencia-do-plantio-pair-3
+            prompt: Cobrir levemente com terra
+            match: Protege a semente e mantém umidade
+            hint: Pense no cuidado logo depois de semear.
+            feedback: Cobrir a semente ajuda a reter umidade.
+          - id: sequencia-do-plantio-pair-4
+            prompt: Regar com delicadeza
+            match: Finaliza o plantio e ativa a germinação
+            hint: Qual passo finaliza o plantio?
+            feedback: Regar suavemente acorda a semente.
+      accessibility:
+        hints:
+          - audience: ESTUDANTE
+            text: >-
+              Use TAB, setas ou toques para navegar pelas ações digitais ligadas a sequenciamento de
+              ações de plantio.
+          - audience: EDUCADOR
+            text: Ative a leitura em voz alta e mantenha instruções visuais em contraste elevado.
+        feedback:
+          success: >-
+            Ótimo trabalho! As escolhas mostram entendimento sobre sequenciamento de ações de
+            plantio.
+          encouragement: >-
+            Caso se confunda, revise com a equipe, utilize o botão de repetir instruções e retome
+            com calma.
+          accessibility: >-
+            Disponibilize controle adaptado, tempo flexível e apoio auditivo individual sempre que
+            necessário.
+        assets:
+          - slug: cn-higiene-lavar-maos
+            type: IMAGEM
+            title: Lavagem cuidadosa das mãos
+  - partial: ../../_partials/acolhimento-base.yaml
+    slug: mapa-das-raizes
+    title: Mapa das Raízes
+    prompt: Associe cada tipo de raiz ao ambiente onde se desenvolve melhor.
+    summary: Quebra-cabeça sobre diferentes tipos de raiz e suas funções.
+    type: PUZZLE
+    difficulty: PRATICAR
+    bncc:
+      code: EF01CI03
+      habilidades:
+        - EF01CI03
+    learningObjectives:
+      - Comparar diferentes formatos de raízes e suas funções.
+      - Relacionar ambientes a tipos de raiz que se adaptam melhor.
+    description: >-
+      Mapa das Raízes apresenta exemplos de raízes superficiais, profundas e aéreas para ampliar o
+      repertório da turma.
+    metadata:
+      categoria: Exploração do solo
+      duracaoMinutos: 10
+      tempoEstimadoMinutos: 10
+      habilidades:
+        - EF01CI03
+      assetSlug: cn-natureza-rio
+      assetUsage: Use a imagem do rio para falar sobre solos úmidos e margens.
+      familiaEngajamento: Peça às famílias que pesquisem raízes de plantas alimentícias e compartilhem exemplos.
+      focoInvestigativo: adaptação das raízes aos ambientes
+      modoCooperativo: true
+      tagsInterdisciplinares:
+        - Geografia
+        - Arte
+      interactiveSlug: puzzle-mapa-das-raizes
+      habilidadesSecundarias:
+        - EF01CI04
+      maqueteSolo: Camadas do solo representadas com materiais recicláveis.
+    accessibility:
+      hints:
+        - audience: ESTUDANTE
+          text: >-
+            Passo 1: Observe o desafio com calma e use a leitura em voz alta para investigar
+            adaptação das raízes aos ambientes.
+        - audience: ESTUDANTE
+          text: >-
+            Passo 2: Faça pequenas pausas para perceber os detalhes e compartilhe o que notou sobre
+            adaptação das raízes aos ambientes.
+        - audience: EDUCADOR
+          text: >-
+            Ofereça materiais táteis, áudio descrição e tempo extra para apoiar a exploração de
+            adaptação das raízes aos ambientes.
+        - audience: FAMILIA
+          text: Peça às famílias que pesquisem raízes de plantas alimentícias e compartilhem exemplos.
+      feedback:
+        success: >-
+          Excelente investigação! Você analisou adaptação das raízes aos ambientes com olhar
+          científico.
+        encouragement: >-
+          Tudo bem errar no caminho. Use recursos visuais, gestos e sons para revisar as pistas
+          antes de tentar novamente.
+        retry: >-
+          Faça uma pausa, respire fundo e retome observando novos detalhes sobre adaptação das
+          raízes aos ambientes.
+        accessibility: >-
+          Garanta apoios multimodais: contraste de cores, narração em voz alta, audiodescrição e
+          tempo estendido para quem precisar.
+      assets:
+        - slug: cn-natureza-rio
+          type: IMAGEM
+          title: Rio sinuoso e calmo
+          description: Use a imagem do rio para falar sobre solos úmidos e margens.
+      alternatives:
+        - title: MATERIAIS CONCRETOS
+          description: Monte estações com objetos reais para reforçar adaptação das raízes aos ambientes.
+          steps:
+            - Disponibilize cartões com pictogramas e legendas em caixa alta.
+            - Use texturas, aromas ou sons reais como apoio sensorial.
+      audioCue:
+        title: SINAL DE PAUSA
+        description: Utilize um sino suave ou chocalho para avisar a troca de etapa ou necessidade de pausa.
+        steps:
+          - Combine com a turma o significado do sinal antes de iniciar.
+          - Ofereça tempo suficiente após o sinal para reorganização corporal.
+      motorSupport:
+        - title: APOIO MOTOR
+          description: >-
+            Disponibilize apoios para toque, ponteiras, suportes de tablet e mesas acessíveis
+            durante a interação.
+          steps:
+            - Permita que duplas se alternem no controle do dispositivo.
+            - Ofereça apoio postural e ajustes de altura quando necessário.
+    prerequisites:
+      - type: SKILL
+        reference: EF01CI03
+        description: Compartilhar observações já feitas sobre animais e plantas próximos da escola.
+    interactive:
+      slug: puzzle-mapa-das-raizes
+      title: Mapa das Raízes — Quebra-cabeça
+      type: PUZZLE
+      bnccDescription: Observar características de animais e plantas, relacionando-as aos ambientes em que vivem.
+      estimatedTimeMinutes: 10
+      instructions:
+        - Observe cada cartão do quebra-cabeça.
+        - Arraste ou selecione a combinação que faça sentido.
+        - Explique para o grupo qual pista levou à associação.
+      objectives:
+        - Comparar diferentes formatos de raízes e suas funções.
+        - Relacionar ambientes a tipos de raiz que se adaptam melhor.
+      puzzle:
+        mode: matching
+        successFeedback: Ótimo! Vocês ligaram as raízes aos ambientes corretos.
+        errorFeedback: Reobservem cada pista e pensem onde cada raiz se fixa melhor.
+        pairs:
+          - id: mapa-das-raizes-pair-1
+            prompt: Raiz superficial de gramínea
+            match: Jardins e gramados com solo raso
+            hint: Onde a raiz fica pertinho da superfície?
+            feedback: Gramíneas espalham raízes rasas pelo solo.
+          - id: mapa-das-raizes-pair-2
+            prompt: Raiz profunda de árvore alta
+            match: Áreas com solo firme e profundo
+            hint: Qual ambiente precisa de raízes fortes para sustentar?
+            feedback: Árvores grandes usam raízes profundas para se firmar.
+          - id: mapa-das-raizes-pair-3
+            prompt: Raiz aérea de planta trepadeira
+            match: Muros e troncos úmidos
+            hint: Pense em raízes que se prendem no ar.
+            feedback: Raízes aéreas aderem a muros e troncos úmidos.
+          - id: mapa-das-raizes-pair-4
+            prompt: Raiz em forma de tubérculo
+            match: Horta com solo rico em nutrientes
+            hint: Qual raiz armazena energia para a planta?
+            feedback: Tubérculos acumulam nutrientes em solos férteis.
+      accessibility:
+        hints:
+          - audience: ESTUDANTE
+            text: >-
+              Use TAB, setas ou toques para navegar pelas ações digitais ligadas a adaptação das
+              raízes aos ambientes.
+          - audience: EDUCADOR
+            text: Ative a leitura em voz alta e mantenha instruções visuais em contraste elevado.
+        feedback:
+          success: >-
+            Ótimo trabalho! As escolhas mostram entendimento sobre adaptação das raízes aos
+            ambientes.
+          encouragement: >-
+            Caso se confunda, revise com a equipe, utilize o botão de repetir instruções e retome
+            com calma.
+          accessibility: >-
+            Disponibilize controle adaptado, tempo flexível e apoio auditivo individual sempre que
+            necessário.
+        assets:
+          - slug: cn-natureza-rio
+            type: IMAGEM
+            title: Rio sinuoso e calmo
+  - partial: ../../_partials/acolhimento-base.yaml
+    slug: usos-das-plantas
+    title: Usos das Plantas
+    prompt: Relacione cada planta ao uso cotidiano correspondente.
+    summary: Quebra-cabeça sobre plantas alimentares, medicinais e ornamentais.
+    type: PUZZLE
+    difficulty: PRATICAR
+    bncc:
+      code: EF01CI03
+      habilidades:
+        - EF01CI03
+    learningObjectives:
+      - Reconhecer diferentes usos das plantas no dia a dia.
+      - Valorizar a diversidade vegetal presente na comunidade.
+    description: >-
+      Usos das Plantas evidencia como diferentes espécies contribuem para alimentação, saúde e
+      embelezamento.
+    metadata:
+      categoria: Plantas e cotidiano
+      duracaoMinutos: 10
+      tempoEstimadoMinutos: 10
+      habilidades:
+        - EF01CI03
+      assetSlug: cn-natureza-floresta
+      assetUsage: A floresta ilustra a diversidade de plantas úteis.
+      familiaEngajamento: Peça às famílias que listem plantas usadas em casa para alimentação ou cuidados.
+      focoInvestigativo: utilidades das plantas na comunidade
+      modoCooperativo: true
+      tagsInterdisciplinares:
+        - Língua Portuguesa
+        - Arte
+      interactiveSlug: puzzle-usos-das-plantas
+      habilidadesSecundarias:
+        - EF01CI04
+      feiraEscolar: Organizar uma feira com produtos de origem vegetal.
+    accessibility:
+      hints:
+        - audience: ESTUDANTE
+          text: >-
+            Passo 1: Observe o desafio com calma e use a leitura em voz alta para investigar
+            utilidades das plantas na comunidade.
+        - audience: ESTUDANTE
+          text: >-
+            Passo 2: Faça pequenas pausas para perceber os detalhes e compartilhe o que notou sobre
+            utilidades das plantas na comunidade.
+        - audience: EDUCADOR
+          text: >-
+            Ofereça materiais táteis, áudio descrição e tempo extra para apoiar a exploração de
+            utilidades das plantas na comunidade.
+        - audience: FAMILIA
+          text: Peça às famílias que listem plantas usadas em casa para alimentação ou cuidados.
+      feedback:
+        success: >-
+          Excelente investigação! Você analisou utilidades das plantas na comunidade com olhar
+          científico.
+        encouragement: >-
+          Tudo bem errar no caminho. Use recursos visuais, gestos e sons para revisar as pistas
+          antes de tentar novamente.
+        retry: >-
+          Faça uma pausa, respire fundo e retome observando novos detalhes sobre utilidades das
+          plantas na comunidade.
+        accessibility: >-
+          Garanta apoios multimodais: contraste de cores, narração em voz alta, audiodescrição e
+          tempo estendido para quem precisar.
+      assets:
+        - slug: cn-natureza-floresta
+          type: IMAGEM
+          title: Floresta ensolarada
+          description: A floresta ilustra a diversidade de plantas úteis.
+      alternatives:
+        - title: MATERIAIS CONCRETOS
+          description: Monte estações com objetos reais para reforçar utilidades das plantas na comunidade.
+          steps:
+            - Disponibilize cartões com pictogramas e legendas em caixa alta.
+            - Use texturas, aromas ou sons reais como apoio sensorial.
+      audioCue:
+        title: SINAL DE PAUSA
+        description: Utilize um sino suave ou chocalho para avisar a troca de etapa ou necessidade de pausa.
+        steps:
+          - Combine com a turma o significado do sinal antes de iniciar.
+          - Ofereça tempo suficiente após o sinal para reorganização corporal.
+      motorSupport:
+        - title: APOIO MOTOR
+          description: >-
+            Disponibilize apoios para toque, ponteiras, suportes de tablet e mesas acessíveis
+            durante a interação.
+          steps:
+            - Permita que duplas se alternem no controle do dispositivo.
+            - Ofereça apoio postural e ajustes de altura quando necessário.
+    prerequisites:
+      - type: SKILL
+        reference: EF01CI03
+        description: Compartilhar observações já feitas sobre animais e plantas próximos da escola.
+    interactive:
+      slug: puzzle-usos-das-plantas
+      title: Usos das Plantas — Quebra-cabeça
+      type: PUZZLE
+      bnccDescription: Observar características de animais e plantas, relacionando-as aos ambientes em que vivem.
+      estimatedTimeMinutes: 10
+      instructions:
+        - Observe cada cartão do quebra-cabeça.
+        - Arraste ou selecione a combinação que faça sentido.
+        - Explique para o grupo qual pista levou à associação.
+      objectives:
+        - Reconhecer diferentes usos das plantas no dia a dia.
+        - Valorizar a diversidade vegetal presente na comunidade.
+      puzzle:
+        mode: matching
+        successFeedback: Muito bom! Vocês conectaram as plantas aos seus usos.
+        errorFeedback: Releiam os usos e pensem qual planta os oferece.
+        pairs:
+          - id: usos-das-plantas-pair-1
+            prompt: Babosa
+            match: Alivia pequenas queimaduras na pele
+            hint: Qual planta tem gel refrescante?
+            feedback: A babosa tem gel calmante para a pele.
+          - id: usos-das-plantas-pair-2
+            prompt: Manjericão
+            match: Tempero fresco para refeições
+            hint: Qual planta perfuma o molho?
+            feedback: Manjericão deixa os pratos mais saborosos.
+          - id: usos-das-plantas-pair-3
+            prompt: Girassol
+            match: Enfeita jardins e acompanha a luz do sol
+            hint: Qual planta é conhecida por seguir o sol?
+            feedback: Girassóis deixam o ambiente colorido e acompanham o sol.
+          - id: usos-das-plantas-pair-4
+            prompt: Mandioca
+            match: Fornece tubérculos para farinhas e pães
+            hint: Qual planta vira farinha quando cozida?
+            feedback: A mandioca dá origem a diferentes alimentos.
+      accessibility:
+        hints:
+          - audience: ESTUDANTE
+            text: >-
+              Use TAB, setas ou toques para navegar pelas ações digitais ligadas a utilidades das
+              plantas na comunidade.
+          - audience: EDUCADOR
+            text: Ative a leitura em voz alta e mantenha instruções visuais em contraste elevado.
+        feedback:
+          success: >-
+            Ótimo trabalho! As escolhas mostram entendimento sobre utilidades das plantas na
+            comunidade.
+          encouragement: >-
+            Caso se confunda, revise com a equipe, utilize o botão de repetir instruções e retome
+            com calma.
+          accessibility: >-
+            Disponibilize controle adaptado, tempo flexível e apoio auditivo individual sempre que
+            necessário.
+        assets:
+          - slug: cn-natureza-floresta
+            type: IMAGEM
+            title: Floresta ensolarada
+  - partial: ../../_partials/acolhimento-base.yaml
+    slug: alertas-do-jardim
+    title: Alertas do Jardim
+    prompt: Associe o sinal observado ao cuidado que precisa ser realizado.
+    summary: Quebra-cabeça sobre sinais de plantas saudáveis ou com problemas.
+    type: PUZZLE
+    difficulty: DOMINAR
+    bncc:
+      code: EF01CI04
+      habilidades:
+        - EF01CI04
+        - EF01CI03
+    learningObjectives:
+      - Identificar sinais que indicam necessidade de cuidado nas plantas.
+      - Planejar ações de manutenção para manter o jardim saudável.
+    description: Alertas do Jardim desenvolve a capacidade de interpretar sinais e propor soluções coletivas.
+    metadata:
+      categoria: Diagnóstico do jardim
+      duracaoMinutos: 12
+      tempoEstimadoMinutos: 12
+      habilidades:
+        - EF01CI04
+        - EF01CI03
+      assetSlug: cn-material-lupa
+      assetUsage: Use a lupa para observar manchas e texturas das folhas.
+      familiaEngajamento: >-
+        Oriente as famílias a observar plantas de casa em busca de manchas, pragas ou falta de água
+        e registrar como resolveram.
+      focoInvestigativo: monitoramento e manutenção das plantas
+      modoCooperativo: true
+      tagsInterdisciplinares:
+        - Matemática
+        - Língua Portuguesa
+      interactiveSlug: puzzle-alertas-do-jardim
+      habilidadesSecundarias:
+        - EF01CI02
+      agendaDeCuidado: Agenda semanal com responsáveis pelos cuidados.
+    accessibility:
+      hints:
+        - audience: ESTUDANTE
+          text: >-
+            Passo 1: Observe o desafio com calma e use a leitura em voz alta para investigar
+            monitoramento e manutenção das plantas.
+        - audience: ESTUDANTE
+          text: >-
+            Passo 2: Faça pequenas pausas para perceber os detalhes e compartilhe o que notou sobre
+            monitoramento e manutenção das plantas.
+        - audience: EDUCADOR
+          text: >-
+            Ofereça materiais táteis, áudio descrição e tempo extra para apoiar a exploração de
+            monitoramento e manutenção das plantas.
+        - audience: FAMILIA
+          text: >-
+            Oriente as famílias a observar plantas de casa em busca de manchas, pragas ou falta de
+            água e registrar como resolveram.
+      feedback:
+        success: >-
+          Excelente investigação! Você analisou monitoramento e manutenção das plantas com olhar
+          científico.
+        encouragement: >-
+          Tudo bem errar no caminho. Use recursos visuais, gestos e sons para revisar as pistas
+          antes de tentar novamente.
+        retry: >-
+          Faça uma pausa, respire fundo e retome observando novos detalhes sobre monitoramento e
+          manutenção das plantas.
+        accessibility: >-
+          Garanta apoios multimodais: contraste de cores, narração em voz alta, audiodescrição e
+          tempo estendido para quem precisar.
+      assets:
+        - slug: cn-material-lupa
+          type: IMAGEM
+          title: Lupa azul para observação
+          description: Use a lupa para observar manchas e texturas das folhas.
+      alternatives:
+        - title: MATERIAIS CONCRETOS
+          description: Monte estações com objetos reais para reforçar monitoramento e manutenção das plantas.
+          steps:
+            - Disponibilize cartões com pictogramas e legendas em caixa alta.
+            - Use texturas, aromas ou sons reais como apoio sensorial.
+      audioCue:
+        title: SINAL DE PAUSA
+        description: Utilize um sino suave ou chocalho para avisar a troca de etapa ou necessidade de pausa.
+        steps:
+          - Combine com a turma o significado do sinal antes de iniciar.
+          - Ofereça tempo suficiente após o sinal para reorganização corporal.
+      motorSupport:
+        - title: APOIO MOTOR
+          description: >-
+            Disponibilize apoios para toque, ponteiras, suportes de tablet e mesas acessíveis
+            durante a interação.
+          steps:
+            - Permita que duplas se alternem no controle do dispositivo.
+            - Ofereça apoio postural e ajustes de altura quando necessário.
+    prerequisites:
+      - type: SKILL
+        reference: EF01CI04
+        description: Relembrar passeios pela escola destacando cuidados com os ambientes compartilhados.
+    interactive:
+      slug: puzzle-alertas-do-jardim
+      title: Alertas do Jardim — Quebra-cabeça
+      type: PUZZLE
+      bnccDescription: >-
+        Comparar diferentes ambientes, modos de convivência e cuidados com a natureza na comunidade
+        escolar.
+      estimatedTimeMinutes: 12
+      instructions:
+        - Observe cada cartão do quebra-cabeça.
+        - Arraste ou selecione a combinação que faça sentido.
+        - Explique para o grupo qual pista levou à associação.
+      objectives:
+        - Identificar sinais que indicam necessidade de cuidado nas plantas.
+        - Planejar ações de manutenção para manter o jardim saudável.
+      puzzle:
+        mode: matching
+        successFeedback: Excelente! As plantas receberam os cuidados necessários.
+        errorFeedback: Releiam cada alerta e discutam qual ação resolve o problema.
+        pairs:
+          - id: alertas-do-jardim-pair-1
+            prompt: Folhas amareladas e solo encharcado
+            match: Diminuir a rega e garantir drenagem
+            hint: Talvez tenha água demais.
+            feedback: Menos água e solo drenado evitam raízes sufocadas.
+          - id: alertas-do-jardim-pair-2
+            prompt: Planta murchando com solo seco
+            match: Regar lentamente até umedecer todo o vaso
+            hint: Pode faltar água.
+            feedback: Rega cuidadosamente restaura a energia da planta.
+          - id: alertas-do-jardim-pair-3
+            prompt: Folhas com furos pequenos
+            match: Verificar presença de insetos e remover manualmente
+            hint: Observe possíveis visitantes mastigando folhas.
+            feedback: Investigar insetos evita que se espalhem.
+          - id: alertas-do-jardim-pair-4
+            prompt: Planta com pouca luz e caule fino
+            match: Mover para local com mais claridade
+            hint: Talvez precise de mais sol.
+            feedback: Mais luz fortalece o crescimento da planta.
+      accessibility:
+        hints:
+          - audience: ESTUDANTE
+            text: >-
+              Use TAB, setas ou toques para navegar pelas ações digitais ligadas a monitoramento e
+              manutenção das plantas.
+          - audience: EDUCADOR
+            text: Ative a leitura em voz alta e mantenha instruções visuais em contraste elevado.
+        feedback:
+          success: >-
+            Ótimo trabalho! As escolhas mostram entendimento sobre monitoramento e manutenção das
+            plantas.
+          encouragement: >-
+            Caso se confunda, revise com a equipe, utilize o botão de repetir instruções e retome
+            com calma.
+          accessibility: >-
+            Disponibilize controle adaptado, tempo flexível e apoio auditivo individual sempre que
+            necessário.
+        assets:
+          - slug: cn-material-lupa
+            type: IMAGEM
+            title: Lupa azul para observação
+  - partial: ../../_partials/acolhimento-base.yaml
+    slug: laboratorio-do-plantio
+    title: Laboratório do Plantio
+    prompt: Escolha os materiais e as ações corretas para montar um experimento de germinação.
+    summary: Mini-jogo sobre planejamento de experimentos simples com plantas.
+    type: GAME
+    difficulty: INICIAR
+    bncc:
+      code: EF01CI03
+      habilidades:
+        - EF01CI03
+        - EF01CI04
+    learningObjectives:
+      - Selecionar materiais e passos necessários para germinar sementes.
+      - Registrar observações diárias em formato colaborativo.
+    description: >-
+      Laboratório do Plantio apoia a turma na organização de experimentos acessíveis com sementes e
+      luz natural.
+    metadata:
+      categoria: Experimentação guiada
+      duracaoMinutos: 12
+      tempoEstimadoMinutos: 12
+      habilidades:
+        - EF01CI03
+        - EF01CI04
+      assetSlug: cn-material-lupa
+      assetUsage: A lupa inspira registro detalhado das mudanças durante a germinação.
+      familiaEngajamento: Peça às famílias que acompanhem o crescimento de uma semente em algodão anotando mudanças.
+      focoInvestigativo: planejamento e execução de experimento de germinação
+      modoCooperativo: true
+      tagsInterdisciplinares:
+        - Matemática
+        - Língua Portuguesa
+      interactiveSlug: game-laboratorio-do-plantio
+      habilidadesSecundarias:
+        - EF01CI01
+      cadernoExperimento: Tabela para anotar dia, hora e mudanças observadas.
+    accessibility:
+      hints:
+        - audience: ESTUDANTE
+          text: >-
+            Passo 1: Observe o desafio com calma e use a leitura em voz alta para investigar
+            planejamento e execução de experimento de germinação.
+        - audience: ESTUDANTE
+          text: >-
+            Passo 2: Faça pequenas pausas para perceber os detalhes e compartilhe o que notou sobre
+            planejamento e execução de experimento de germinação.
+        - audience: EDUCADOR
+          text: >-
+            Ofereça materiais táteis, áudio descrição e tempo extra para apoiar a exploração de
+            planejamento e execução de experimento de germinação.
+        - audience: FAMILIA
+          text: >-
+            Peça às famílias que acompanhem o crescimento de uma semente em algodão anotando
+            mudanças.
+      feedback:
+        success: >-
+          Excelente investigação! Você analisou planejamento e execução de experimento de germinação
+          com olhar científico.
+        encouragement: >-
+          Tudo bem errar no caminho. Use recursos visuais, gestos e sons para revisar as pistas
+          antes de tentar novamente.
+        retry: >-
+          Faça uma pausa, respire fundo e retome observando novos detalhes sobre planejamento e
+          execução de experimento de germinação.
+        accessibility: >-
+          Garanta apoios multimodais: contraste de cores, narração em voz alta, audiodescrição e
+          tempo estendido para quem precisar.
+      assets:
+        - slug: cn-material-lupa
+          type: IMAGEM
+          title: Lupa azul para observação
+          description: A lupa inspira registro detalhado das mudanças durante a germinação.
+      alternatives:
+        - title: MATERIAIS CONCRETOS
+          description: >-
+            Monte estações com objetos reais para reforçar planejamento e execução de experimento de
+            germinação.
+          steps:
+            - Disponibilize cartões com pictogramas e legendas em caixa alta.
+            - Use texturas, aromas ou sons reais como apoio sensorial.
+      audioCue:
+        title: SINAL DE PAUSA
+        description: Utilize um sino suave ou chocalho para avisar a troca de etapa ou necessidade de pausa.
+        steps:
+          - Combine com a turma o significado do sinal antes de iniciar.
+          - Ofereça tempo suficiente após o sinal para reorganização corporal.
+      motorSupport:
+        - title: APOIO MOTOR
+          description: >-
+            Disponibilize apoios para toque, ponteiras, suportes de tablet e mesas acessíveis
+            durante a interação.
+          steps:
+            - Permita que duplas se alternem no controle do dispositivo.
+            - Ofereça apoio postural e ajustes de altura quando necessário.
+    prerequisites:
+      - type: SKILL
+        reference: EF01CI03
+        description: Compartilhar observações já feitas sobre animais e plantas próximos da escola.
+    interactive:
+      slug: game-laboratorio-do-plantio
+      title: Laboratório do Plantio — Mini-jogo
+      type: GAME
+      bnccDescription: Observar características de animais e plantas, relacionando-as aos ambientes em que vivem.
+      estimatedTimeMinutes: 12
+      instructions:
+        - Leia ou escute a missão de cada fase.
+        - Use as setas, toques ou cliques para registrar a resposta.
+        - Converse com o grupo sobre outras estratégias possíveis.
+      objectives:
+        - Selecionar materiais e passos necessários para germinar sementes.
+        - Registrar observações diárias em formato colaborativo.
+      game:
+        mode: math-challenge
+        timeLimitSeconds: 80
+        lives: 3
+        victoryMessage: Experimento concluído! As sementes começaram a germinar.
+        gameOverMessage: Ajustem materiais e horários para repetir o experimento com sucesso.
+        levels:
+          - id: laboratorio-do-plantio-level-1
+            challenge: Qual material precisamos usar para manter a semente úmida sem encharcar?
+            answer: Algodão ou papel toalha úmido
+            hint: Pense em algo que absorve água sem exagero.
+            successFeedback: Certo! Algodão mantém a umidade ideal.
+            failureFeedback: Reflita sobre materiais que seguram água sem afogar a semente.
+          - id: laboratorio-do-plantio-level-2
+            challenge: Onde posicionar o pote para a semente receber luz suficiente?
+            answer: Perto de uma janela com luz indireta
+            hint: Lembre-se de controlar a intensidade da luz.
+            successFeedback: Muito bem! Luz indireta aquece sem queimar a semente.
+            failureFeedback: Considere um local com claridade suave.
+          - id: laboratorio-do-plantio-level-3
+            challenge: Qual registro devemos fazer durante o experimento?
+            answer: Anotar diariamente a data e as mudanças observadas
+            hint: Pense no que ajuda a comparar resultados.
+            successFeedback: Excelente! Registros diários mostram como a semente evolui.
+            failureFeedback: 'Reflita: registrar diariamente facilita comparar mudanças.'
+      accessibility:
+        hints:
+          - audience: ESTUDANTE
+            text: >-
+              Use TAB, setas ou toques para navegar pelas ações digitais ligadas a planejamento e
+              execução de experimento de germinação.
+          - audience: EDUCADOR
+            text: Ative a leitura em voz alta e mantenha instruções visuais em contraste elevado.
+        feedback:
+          success: >-
+            Ótimo trabalho! As escolhas mostram entendimento sobre planejamento e execução de
+            experimento de germinação.
+          encouragement: >-
+            Caso se confunda, revise com a equipe, utilize o botão de repetir instruções e retome
+            com calma.
+          accessibility: >-
+            Disponibilize controle adaptado, tempo flexível e apoio auditivo individual sempre que
+            necessário.
+        assets:
+          - slug: cn-material-lupa
+            type: IMAGEM
+            title: Lupa azul para observação
+  - partial: ../../_partials/acolhimento-base.yaml
+    slug: guardioes-do-jardim
+    title: Guardiões do Jardim
+    prompt: Trabalhe em equipe para decidir ações que mantêm o jardim saudável.
+    summary: Mini-jogo cooperativo com missões de manutenção do jardim escolar.
+    type: GAME
+    difficulty: PRATICAR
+    bncc:
+      code: EF01CI04
+      habilidades:
+        - EF01CI04
+        - EF01CI03
+    learningObjectives:
+      - Planejar e distribuir tarefas de cuidado do jardim entre os colegas.
+      - Avaliar impactos das ações realizadas nos ambientes da escola.
+    description: Guardiões do Jardim propõe desafios reais para manter o jardim vivo e acolhedor.
+    metadata:
+      categoria: Missões colaborativas
+      duracaoMinutos: 13
+      tempoEstimadoMinutos: 13
+      habilidades:
+        - EF01CI04
+        - EF01CI03
+      assetSlug: cn-natureza-floresta
+      assetUsage: A floresta lembra que jardins saudáveis acolhem biodiversidade.
+      familiaEngajamento: >-
+        Pergunte às famílias como colaboram com hortas ou vasos em casa e compartilhem boas
+        práticas.
+      focoInvestigativo: cuidado coletivo com o jardim da escola
+      modoCooperativo: true
+      tagsInterdisciplinares:
+        - Língua Portuguesa
+        - Matemática
+      interactiveSlug: game-guardioes-do-jardim
+      habilidadesSecundarias:
+        - EF01CI02
+      quadroDeTurnos: Escala semanal de cuidados compartilhados.
+    accessibility:
+      hints:
+        - audience: ESTUDANTE
+          text: >-
+            Passo 1: Observe o desafio com calma e use a leitura em voz alta para investigar cuidado
+            coletivo com o jardim da escola.
+        - audience: ESTUDANTE
+          text: >-
+            Passo 2: Faça pequenas pausas para perceber os detalhes e compartilhe o que notou sobre
+            cuidado coletivo com o jardim da escola.
+        - audience: EDUCADOR
+          text: >-
+            Ofereça materiais táteis, áudio descrição e tempo extra para apoiar a exploração de
+            cuidado coletivo com o jardim da escola.
+        - audience: FAMILIA
+          text: >-
+            Pergunte às famílias como colaboram com hortas ou vasos em casa e compartilhem boas
+            práticas.
+      feedback:
+        success: >-
+          Excelente investigação! Você analisou cuidado coletivo com o jardim da escola com olhar
+          científico.
+        encouragement: >-
+          Tudo bem errar no caminho. Use recursos visuais, gestos e sons para revisar as pistas
+          antes de tentar novamente.
+        retry: >-
+          Faça uma pausa, respire fundo e retome observando novos detalhes sobre cuidado coletivo
+          com o jardim da escola.
+        accessibility: >-
+          Garanta apoios multimodais: contraste de cores, narração em voz alta, audiodescrição e
+          tempo estendido para quem precisar.
+      assets:
+        - slug: cn-natureza-floresta
+          type: IMAGEM
+          title: Floresta ensolarada
+          description: A floresta lembra que jardins saudáveis acolhem biodiversidade.
+      alternatives:
+        - title: MATERIAIS CONCRETOS
+          description: Monte estações com objetos reais para reforçar cuidado coletivo com o jardim da escola.
+          steps:
+            - Disponibilize cartões com pictogramas e legendas em caixa alta.
+            - Use texturas, aromas ou sons reais como apoio sensorial.
+      audioCue:
+        title: SINAL DE PAUSA
+        description: Utilize um sino suave ou chocalho para avisar a troca de etapa ou necessidade de pausa.
+        steps:
+          - Combine com a turma o significado do sinal antes de iniciar.
+          - Ofereça tempo suficiente após o sinal para reorganização corporal.
+      motorSupport:
+        - title: APOIO MOTOR
+          description: >-
+            Disponibilize apoios para toque, ponteiras, suportes de tablet e mesas acessíveis
+            durante a interação.
+          steps:
+            - Permita que duplas se alternem no controle do dispositivo.
+            - Ofereça apoio postural e ajustes de altura quando necessário.
+    prerequisites:
+      - type: SKILL
+        reference: EF01CI04
+        description: Relembrar passeios pela escola destacando cuidados com os ambientes compartilhados.
+    interactive:
+      slug: game-guardioes-do-jardim
+      title: Guardiões do Jardim — Mini-jogo
+      type: GAME
+      bnccDescription: >-
+        Comparar diferentes ambientes, modos de convivência e cuidados com a natureza na comunidade
+        escolar.
+      estimatedTimeMinutes: 13
+      instructions:
+        - Leia ou escute a missão de cada fase.
+        - Use as setas, toques ou cliques para registrar a resposta.
+        - Converse com o grupo sobre outras estratégias possíveis.
+      objectives:
+        - Planejar e distribuir tarefas de cuidado do jardim entre os colegas.
+        - Avaliar impactos das ações realizadas nos ambientes da escola.
+      game:
+        mode: math-challenge
+        timeLimitSeconds: 90
+        lives: 3
+        victoryMessage: Jardim protegido! Cada planta recebeu os cuidados necessários.
+        gameOverMessage: Reorganizem a escala de tarefas e voltem a cuidar do jardim.
+        levels:
+          - id: guardioes-do-jardim-level-1
+            challenge: Após um final de semana sem cuidados, algumas plantas estão secas.
+            answer: Organizar mutirão para regar e aparar folhas secas
+            hint: Pense em atitudes coletivas de recuperação.
+            successFeedback: Ótima decisão! Mutirão revitaliza as plantas rapidamente.
+            failureFeedback: 'Reflita: trabalhar em equipe acelera a recuperação.'
+          - id: guardioes-do-jardim-level-2
+            challenge: Alunos jogaram papel perto da horta por descuido.
+            answer: Recolher o lixo e reforçar combinados de cuidado
+            hint: Escolha ação que limpa e educa.
+            successFeedback: Muito bem! Limpeza e diálogo preservam o espaço.
+            failureFeedback: Considere limpar e conversar sobre os combinados.
+          - id: guardioes-do-jardim-level-3
+            challenge: Uma semana chuvosa deixou o solo encharcado.
+            answer: Verificar drenagem e deixar vasos em local protegido
+            hint: Evite excesso de água nas raízes.
+            successFeedback: Excelente! Cuidar da drenagem protege as plantas.
+            failureFeedback: Reflita sobre como evitar que a raiz fique afogada.
+      accessibility:
+        hints:
+          - audience: ESTUDANTE
+            text: >-
+              Use TAB, setas ou toques para navegar pelas ações digitais ligadas a cuidado coletivo
+              com o jardim da escola.
+          - audience: EDUCADOR
+            text: Ative a leitura em voz alta e mantenha instruções visuais em contraste elevado.
+        feedback:
+          success: >-
+            Ótimo trabalho! As escolhas mostram entendimento sobre cuidado coletivo com o jardim da
+            escola.
+          encouragement: >-
+            Caso se confunda, revise com a equipe, utilize o botão de repetir instruções e retome
+            com calma.
+          accessibility: >-
+            Disponibilize controle adaptado, tempo flexível e apoio auditivo individual sempre que
+            necessário.
+        assets:
+          - slug: cn-natureza-floresta
+            type: IMAGEM
+            title: Floresta ensolarada
+  - partial: ../../_partials/acolhimento-base.yaml
+    slug: rota-das-sementes
+    title: Rota das Sementes
+    prompt: Planeje o caminho das sementes até encontrarem um lugar seguro para brotar.
+    summary: Mini-jogo estratégico sobre dispersão e plantio em novos espaços.
+    type: GAME
+    difficulty: PRATICAR
+    bncc:
+      code: EF01CI04
+      habilidades:
+        - EF01CI04
+        - EF01CI03
+    learningObjectives:
+      - Identificar diferentes formas de dispersão das sementes.
+      - Planejar percursos que respeitem o equilíbrio entre plantas e pessoas.
+    description: >-
+      Rota das Sementes convida a turma a distribuir sementes por caminhos seguros, considerando
+      vento, água e animais.
+    metadata:
+      categoria: Exploração territorial
+      duracaoMinutos: 12
+      tempoEstimadoMinutos: 12
+      habilidades:
+        - EF01CI04
+        - EF01CI03
+      assetSlug: cn-natureza-rio
+      assetUsage: A paisagem do rio mostra como a água pode levar sementes a outros lugares.
+      familiaEngajamento: Sugira que as famílias fabriquem cataventos ou aviõezinhos para simular sementes ao vento.
+      focoInvestigativo: dispersão de sementes e ocupação dos espaços
+      modoCooperativo: true
+      tagsInterdisciplinares:
+        - Matemática
+        - Geografia
+      interactiveSlug: game-rota-das-sementes
+      habilidadesSecundarias:
+        - EF01CI01
+      mapaInterativo: Mapa da escola com áreas reservadas para novos canteiros.
+    accessibility:
+      hints:
+        - audience: ESTUDANTE
+          text: >-
+            Passo 1: Observe o desafio com calma e use a leitura em voz alta para investigar
+            dispersão de sementes e ocupação dos espaços.
+        - audience: ESTUDANTE
+          text: >-
+            Passo 2: Faça pequenas pausas para perceber os detalhes e compartilhe o que notou sobre
+            dispersão de sementes e ocupação dos espaços.
+        - audience: EDUCADOR
+          text: >-
+            Ofereça materiais táteis, áudio descrição e tempo extra para apoiar a exploração de
+            dispersão de sementes e ocupação dos espaços.
+        - audience: FAMILIA
+          text: >-
+            Sugira que as famílias fabriquem cataventos ou aviõezinhos para simular sementes ao
+            vento.
+      feedback:
+        success: >-
+          Excelente investigação! Você analisou dispersão de sementes e ocupação dos espaços com
+          olhar científico.
+        encouragement: >-
+          Tudo bem errar no caminho. Use recursos visuais, gestos e sons para revisar as pistas
+          antes de tentar novamente.
+        retry: >-
+          Faça uma pausa, respire fundo e retome observando novos detalhes sobre dispersão de
+          sementes e ocupação dos espaços.
+        accessibility: >-
+          Garanta apoios multimodais: contraste de cores, narração em voz alta, audiodescrição e
+          tempo estendido para quem precisar.
+      assets:
+        - slug: cn-natureza-rio
+          type: IMAGEM
+          title: Rio sinuoso e calmo
+          description: A paisagem do rio mostra como a água pode levar sementes a outros lugares.
+      alternatives:
+        - title: MATERIAIS CONCRETOS
+          description: >-
+            Monte estações com objetos reais para reforçar dispersão de sementes e ocupação dos
+            espaços.
+          steps:
+            - Disponibilize cartões com pictogramas e legendas em caixa alta.
+            - Use texturas, aromas ou sons reais como apoio sensorial.
+      audioCue:
+        title: SINAL DE PAUSA
+        description: Utilize um sino suave ou chocalho para avisar a troca de etapa ou necessidade de pausa.
+        steps:
+          - Combine com a turma o significado do sinal antes de iniciar.
+          - Ofereça tempo suficiente após o sinal para reorganização corporal.
+      motorSupport:
+        - title: APOIO MOTOR
+          description: >-
+            Disponibilize apoios para toque, ponteiras, suportes de tablet e mesas acessíveis
+            durante a interação.
+          steps:
+            - Permita que duplas se alternem no controle do dispositivo.
+            - Ofereça apoio postural e ajustes de altura quando necessário.
+    prerequisites:
+      - type: SKILL
+        reference: EF01CI04
+        description: Relembrar passeios pela escola destacando cuidados com os ambientes compartilhados.
+    interactive:
+      slug: game-rota-das-sementes
+      title: Rota das Sementes — Mini-jogo
+      type: GAME
+      bnccDescription: >-
+        Comparar diferentes ambientes, modos de convivência e cuidados com a natureza na comunidade
+        escolar.
+      estimatedTimeMinutes: 12
+      instructions:
+        - Leia ou escute a missão de cada fase.
+        - Use as setas, toques ou cliques para registrar a resposta.
+        - Converse com o grupo sobre outras estratégias possíveis.
+      objectives:
+        - Identificar diferentes formas de dispersão das sementes.
+        - Planejar percursos que respeitem o equilíbrio entre plantas e pessoas.
+      game:
+        mode: math-challenge
+        timeLimitSeconds: 85
+        lives: 3
+        victoryMessage: Sementes distribuídas! Novos canteiros estão prontos para nascer.
+        gameOverMessage: Revejam os caminhos e tentem novamente levando em conta vento e água.
+        levels:
+          - id: rota-das-sementes-level-1
+            challenge: Como levar sementes leves para um canteiro distante?
+            answer: Usar o vento controlado com aeradores ou cataventos
+            hint: Pense em dispersão pelo ar.
+            successFeedback: Certo! O vento leva sementes leves com cuidado.
+            failureFeedback: Considere usar o vento a favor para sementes leves.
+          - id: rota-das-sementes-level-2
+            challenge: Sementes pesadas precisam chegar a uma área próxima ao rio.
+            answer: Transportar com apoio de recipientes e plantar perto das margens
+            hint: Pense em transporte manual e seguro.
+            successFeedback: Ótimo! Levar manualmente evita que a corrente leve as sementes.
+            failureFeedback: 'Reflita: sementes pesadas precisam de transporte direto.'
+          - id: rota-das-sementes-level-3
+            challenge: Queremos atrair pássaros para ajudar na dispersão.
+            answer: Criar pontos com frutos e água para os pássaros visitarem
+            hint: Pense em oferecer alimento para visitantes.
+            successFeedback: Excelente! Pássaros levam sementes ao se alimentarem.
+            failureFeedback: Considere oferecer recursos para atrair pássaros.
+      accessibility:
+        hints:
+          - audience: ESTUDANTE
+            text: >-
+              Use TAB, setas ou toques para navegar pelas ações digitais ligadas a dispersão de
+              sementes e ocupação dos espaços.
+          - audience: EDUCADOR
+            text: Ative a leitura em voz alta e mantenha instruções visuais em contraste elevado.
+        feedback:
+          success: >-
+            Ótimo trabalho! As escolhas mostram entendimento sobre dispersão de sementes e ocupação
+            dos espaços.
+          encouragement: >-
+            Caso se confunda, revise com a equipe, utilize o botão de repetir instruções e retome
+            com calma.
+          accessibility: >-
+            Disponibilize controle adaptado, tempo flexível e apoio auditivo individual sempre que
+            necessário.
+        assets:
+          - slug: cn-natureza-rio
+            type: IMAGEM
+            title: Rio sinuoso e calmo
+  - partial: ../../_partials/acolhimento-base.yaml
+    slug: festival-das-plantas
+    title: Festival das Plantas
+    prompt: Organize uma exposição cooperativa mostrando como cuidar das plantas da escola.
+    summary: Mini-jogo de planejamento de evento educativo sobre plantas.
+    type: GAME
+    difficulty: DOMINAR
+    bncc:
+      code: EF01CI04
+      habilidades:
+        - EF01CI04
+        - EF01CI03
+    learningObjectives:
+      - Organizar coletivamente ações de cuidado e divulgação sobre plantas.
+      - Comunicar descobertas para a comunidade escolar com diferentes linguagens.
+    description: >-
+      Festival das Plantas integra planejamento, comunicação e cuidado coletivo para celebrar a
+      natureza na escola.
+    metadata:
+      categoria: Produção colaborativa
+      duracaoMinutos: 14
+      tempoEstimadoMinutos: 14
+      habilidades:
+        - EF01CI04
+        - EF01CI03
+      assetSlug: cn-natureza-floresta
+      assetUsage: A floresta inspira a diversidade que pode ser apresentada no festival.
+      familiaEngajamento: >-
+        Convide as famílias para visitar o festival trazendo receitas, histórias ou mudas para
+        troca.
+      focoInvestigativo: planejamento coletivo e comunicação sobre cuidados com plantas
+      modoCooperativo: true
+      tagsInterdisciplinares:
+        - Língua Portuguesa
+        - Arte
+      interactiveSlug: game-festival-das-plantas
+      habilidadesSecundarias:
+        - EF01CI02
+      produtosFinais:
+        - Painel de cuidados
+        - Exposição de mudas
+        - Oficina de compostagem
+    accessibility:
+      hints:
+        - audience: ESTUDANTE
+          text: >-
+            Passo 1: Observe o desafio com calma e use a leitura em voz alta para investigar
+            planejamento coletivo e comunicação sobre cuidados com plantas.
+        - audience: ESTUDANTE
+          text: >-
+            Passo 2: Faça pequenas pausas para perceber os detalhes e compartilhe o que notou sobre
+            planejamento coletivo e comunicação sobre cuidados com plantas.
+        - audience: EDUCADOR
+          text: >-
+            Ofereça materiais táteis, áudio descrição e tempo extra para apoiar a exploração de
+            planejamento coletivo e comunicação sobre cuidados com plantas.
+        - audience: FAMILIA
+          text: >-
+            Convide as famílias para visitar o festival trazendo receitas, histórias ou mudas para
+            troca.
+      feedback:
+        success: >-
+          Excelente investigação! Você analisou planejamento coletivo e comunicação sobre cuidados
+          com plantas com olhar científico.
+        encouragement: >-
+          Tudo bem errar no caminho. Use recursos visuais, gestos e sons para revisar as pistas
+          antes de tentar novamente.
+        retry: >-
+          Faça uma pausa, respire fundo e retome observando novos detalhes sobre planejamento
+          coletivo e comunicação sobre cuidados com plantas.
+        accessibility: >-
+          Garanta apoios multimodais: contraste de cores, narração em voz alta, audiodescrição e
+          tempo estendido para quem precisar.
+      assets:
+        - slug: cn-natureza-floresta
+          type: IMAGEM
+          title: Floresta ensolarada
+          description: A floresta inspira a diversidade que pode ser apresentada no festival.
+      alternatives:
+        - title: MATERIAIS CONCRETOS
+          description: >-
+            Monte estações com objetos reais para reforçar planejamento coletivo e comunicação sobre
+            cuidados com plantas.
+          steps:
+            - Disponibilize cartões com pictogramas e legendas em caixa alta.
+            - Use texturas, aromas ou sons reais como apoio sensorial.
+      audioCue:
+        title: SINAL DE PAUSA
+        description: Utilize um sino suave ou chocalho para avisar a troca de etapa ou necessidade de pausa.
+        steps:
+          - Combine com a turma o significado do sinal antes de iniciar.
+          - Ofereça tempo suficiente após o sinal para reorganização corporal.
+      motorSupport:
+        - title: APOIO MOTOR
+          description: >-
+            Disponibilize apoios para toque, ponteiras, suportes de tablet e mesas acessíveis
+            durante a interação.
+          steps:
+            - Permita que duplas se alternem no controle do dispositivo.
+            - Ofereça apoio postural e ajustes de altura quando necessário.
+    prerequisites:
+      - type: SKILL
+        reference: EF01CI04
+        description: Relembrar passeios pela escola destacando cuidados com os ambientes compartilhados.
+    interactive:
+      slug: game-festival-das-plantas
+      title: Festival das Plantas — Mini-jogo
+      type: GAME
+      bnccDescription: >-
+        Comparar diferentes ambientes, modos de convivência e cuidados com a natureza na comunidade
+        escolar.
+      estimatedTimeMinutes: 14
+      instructions:
+        - Leia ou escute a missão de cada fase.
+        - Use as setas, toques ou cliques para registrar a resposta.
+        - Converse com o grupo sobre outras estratégias possíveis.
+      objectives:
+        - Organizar coletivamente ações de cuidado e divulgação sobre plantas.
+        - Comunicar descobertas para a comunidade escolar com diferentes linguagens.
+      game:
+        mode: math-challenge
+        timeLimitSeconds: 95
+        lives: 4
+        victoryMessage: Festival realizado! A comunidade aprendeu novas formas de cuidar das plantas.
+        gameOverMessage: Reorganizem tarefas e recursos para tentar novamente com mais calma.
+        levels:
+          - id: festival-das-plantas-level-1
+            challenge: Precisamos explicar como cada turma cuidou da horta.
+            answer: Preparar cartazes com fotos e relatos curtos
+            hint: Escolha um formato acessível para o público.
+            successFeedback: Ótimo! Cartazes contam a história dos cuidados.
+            failureFeedback: Considere usar imagens e textos curtos para explicar.
+          - id: festival-das-plantas-level-2
+            challenge: Queremos incluir a família no festival.
+            answer: Organizar uma roda de conversa com partilhas de cuidados
+            hint: Pense em atividades participativas.
+            successFeedback: Excelente! Roda de conversa aproxima a comunidade.
+            failureFeedback: Reflita sobre abrir espaço para relatos das famílias.
+          - id: festival-das-plantas-level-3
+            challenge: Faltam mudas para presentear os visitantes.
+            answer: Produzir novos vasos reutilizando materiais da escola
+            hint: Busque solução sustentável.
+            successFeedback: Muito bem! Reutilizar materiais gera mais mudas para compartilhar.
+            failureFeedback: Considere reutilizar materiais para multiplicar as mudas.
+      accessibility:
+        hints:
+          - audience: ESTUDANTE
+            text: >-
+              Use TAB, setas ou toques para navegar pelas ações digitais ligadas a planejamento
+              coletivo e comunicação sobre cuidados com plantas.
+          - audience: EDUCADOR
+            text: Ative a leitura em voz alta e mantenha instruções visuais em contraste elevado.
+        feedback:
+          success: >-
+            Ótimo trabalho! As escolhas mostram entendimento sobre planejamento coletivo e
+            comunicação sobre cuidados com plantas.
+          encouragement: >-
+            Caso se confunda, revise com a equipe, utilize o botão de repetir instruções e retome
+            com calma.
+          accessibility: >-
+            Disponibilize controle adaptado, tempo flexível e apoio auditivo individual sempre que
+            necessário.
+        assets:
+          - slug: cn-natureza-floresta
+            type: IMAGEM
+            title: Floresta ensolarada
