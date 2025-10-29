@@ -7,14 +7,14 @@ describe("content metrics", () => {
     const documents = loadWorkspace({ stage: "ef01", subjectSlug: "lingua-portuguesa" });
     const metrics = computeContentMetrics(documents);
 
-    expect(metrics.totals.modules).toBe(11);
-    expect(metrics.totals.activities).toBe(137);
+    expect(metrics.totals.modules).toBe(13);
+    expect(metrics.totals.activities).toBe(161);
 
     const stageMetrics = metrics.stages["ef01"];
     expect(stageMetrics).toBeDefined();
     expect(stageMetrics?.subjects["lingua-portuguesa"]).toEqual({
-      modules: 11,
-      activities: 137,
+      modules: 13,
+      activities: 161,
     });
 
     const difficultyTotal = Object.values(metrics.difficulty).reduce(

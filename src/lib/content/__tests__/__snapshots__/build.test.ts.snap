@@ -76,6 +76,26 @@ exports[`content build > gera artefatos determinísticos a partir do workspace 1
           "moduleSlug": "cuidados-do-corpo",
         },
         {
+          "activitySlug": "mediacao-do-colega",
+          "activityType": "QUIZ",
+          "moduleSlug": "escuta-em-roda",
+        },
+        {
+          "activitySlug": "pontos-de-vista",
+          "activityType": "QUIZ",
+          "moduleSlug": "escuta-em-roda",
+        },
+        {
+          "activitySlug": "retomar-ideia",
+          "activityType": "QUIZ",
+          "moduleSlug": "escuta-em-roda",
+        },
+        {
+          "activitySlug": "turnos-coreografados",
+          "activityType": "QUIZ",
+          "moduleSlug": "escuta-em-roda",
+        },
+        {
           "activitySlug": "investigacao-dados-bairro",
           "activityType": "GAME",
           "moduleSlug": "estudio-dados-solidarios",
@@ -119,6 +139,26 @@ exports[`content build > gera artefatos determinísticos a partir do workspace 1
           "activitySlug": "puzzle-humor-frase",
           "activityType": "PUZZLE",
           "moduleSlug": "frases-divertidas",
+        },
+        {
+          "activitySlug": "cena-imprevisto",
+          "activityType": "QUIZ",
+          "moduleSlug": "historia-em-cenas",
+        },
+        {
+          "activitySlug": "cronista-da-roda",
+          "activityType": "QUIZ",
+          "moduleSlug": "historia-em-cenas",
+        },
+        {
+          "activitySlug": "guia-do-narrador",
+          "activityType": "QUIZ",
+          "moduleSlug": "historia-em-cenas",
+        },
+        {
+          "activitySlug": "vivencia-em-duplas",
+          "activityType": "QUIZ",
+          "moduleSlug": "historia-em-cenas",
         },
         {
           "activitySlug": "cria-rima-rapida",
@@ -408,6 +448,26 @@ exports[`content build > gera artefatos determinísticos a partir do workspace 1
           "moduleSlug": "cuidados-do-corpo",
         },
         {
+          "activitySlug": "escuta-com-anotacoes",
+          "activityType": "QUIZ",
+          "moduleSlug": "escuta-em-roda",
+        },
+        {
+          "activitySlug": "gestos-de-escuta",
+          "activityType": "QUIZ",
+          "moduleSlug": "escuta-em-roda",
+        },
+        {
+          "activitySlug": "palavra-sinal",
+          "activityType": "QUIZ",
+          "moduleSlug": "escuta-em-roda",
+        },
+        {
+          "activitySlug": "sinal-da-roda",
+          "activityType": "QUIZ",
+          "moduleSlug": "escuta-em-roda",
+        },
+        {
           "activitySlug": "corrida-das-vogais",
           "activityType": "GAME",
           "moduleSlug": "familia-das-vogais",
@@ -446,6 +506,26 @@ exports[`content build > gera artefatos determinísticos a partir do workspace 1
           "activitySlug": "puzzle-frase-imagem",
           "activityType": "PUZZLE",
           "moduleSlug": "frases-divertidas",
+        },
+        {
+          "activitySlug": "cena-de-abertura",
+          "activityType": "QUIZ",
+          "moduleSlug": "historia-em-cenas",
+        },
+        {
+          "activitySlug": "perguntas-para-voz",
+          "activityType": "QUIZ",
+          "moduleSlug": "historia-em-cenas",
+        },
+        {
+          "activitySlug": "sequencia-de-imagens",
+          "activityType": "QUIZ",
+          "moduleSlug": "historia-em-cenas",
+        },
+        {
+          "activitySlug": "voz-de-personagem",
+          "activityType": "QUIZ",
+          "moduleSlug": "historia-em-cenas",
         },
         {
           "activitySlug": "danca-dos-sons",
@@ -765,6 +845,26 @@ exports[`content build > gera artefatos determinísticos a partir do workspace 1
           "moduleSlug": "cuidados-do-corpo",
         },
         {
+          "activitySlug": "eco-da-historia",
+          "activityType": "QUIZ",
+          "moduleSlug": "escuta-em-roda",
+        },
+        {
+          "activitySlug": "memoria-coletiva",
+          "activityType": "QUIZ",
+          "moduleSlug": "escuta-em-roda",
+        },
+        {
+          "activitySlug": "perguntas-curiosas",
+          "activityType": "QUIZ",
+          "moduleSlug": "escuta-em-roda",
+        },
+        {
+          "activitySlug": "relato-simples",
+          "activityType": "QUIZ",
+          "moduleSlug": "escuta-em-roda",
+        },
+        {
           "activitySlug": "podcast-projeto-vida",
           "activityType": "PROJECT",
           "moduleSlug": "estudio-dados-solidarios",
@@ -818,6 +918,26 @@ exports[`content build > gera artefatos determinísticos a partir do workspace 1
           "activitySlug": "quem-faz-o-que",
           "activityType": "QUIZ",
           "moduleSlug": "frases-divertidas",
+        },
+        {
+          "activitySlug": "feedback-da-plateia",
+          "activityType": "QUIZ",
+          "moduleSlug": "historia-em-cenas",
+        },
+        {
+          "activitySlug": "marcadores-de-tempo",
+          "activityType": "QUIZ",
+          "moduleSlug": "historia-em-cenas",
+        },
+        {
+          "activitySlug": "reconto-colaborativo",
+          "activityType": "QUIZ",
+          "moduleSlug": "historia-em-cenas",
+        },
+        {
+          "activitySlug": "ritmo-da-narrativa",
+          "activityType": "QUIZ",
+          "moduleSlug": "historia-em-cenas",
         },
         {
           "activitySlug": "aliteracao-na-trilha",
@@ -1056,7 +1176,7 @@ exports[`content build > gera artefatos determinísticos a partir do workspace 1
         },
       ],
     },
-    "contentHash": "81df7fbc758834db94d8f600dbb57d2a8c0a2332034d73a16066dccaed3fb560",
+    "contentHash": "51dd5a53fc6932dee1fb991063fc1f2713394ad98211a035b65fb93adf5c3dfc",
     "generatedAt": "2024-01-01T12:00:00.000Z",
     "modulesBySubject": {
       "ciencias": [
@@ -1071,8 +1191,10 @@ exports[`content build > gera artefatos determinísticos a partir do workspace 1
         "bilhetes-e-recados",
         "brincando-com-sons",
         "clubinho-das-palavras",
+        "escuta-em-roda",
         "familia-das-vogais",
         "frases-divertidas",
+        "historia-em-cenas",
         "historias-rimadas",
         "hora-do-dialogo",
         "jornal-da-turma",
@@ -1976,6 +2098,20 @@ exports[`content build > gera artefatos determinísticos a partir do workspace 1
         "type": "QUIZ",
       },
       {
+        "activitySlug": "cena-de-abertura",
+        "contentModuleSlug": "historia-em-cenas",
+        "difficulty": "BEGINNER",
+        "slug": "quiz-cena-de-abertura",
+        "type": "QUIZ",
+      },
+      {
+        "activitySlug": "cena-imprevisto",
+        "contentModuleSlug": "historia-em-cenas",
+        "difficulty": "ADVANCED",
+        "slug": "quiz-cena-imprevisto",
+        "type": "QUIZ",
+      },
+      {
         "activitySlug": "checar-claridade",
         "contentModuleSlug": "bilhetes-e-recados",
         "difficulty": "ADVANCED",
@@ -2043,6 +2179,13 @@ exports[`content build > gera artefatos determinísticos a partir do workspace 1
         "contentModuleSlug": "pontuacao-animada",
         "difficulty": "ADVANCED",
         "slug": "quiz-corrige-a-pontuacao",
+        "type": "QUIZ",
+      },
+      {
+        "activitySlug": "cronista-da-roda",
+        "contentModuleSlug": "historia-em-cenas",
+        "difficulty": "ADVANCED",
+        "slug": "quiz-cronista-da-roda",
         "type": "QUIZ",
       },
       {
@@ -2116,6 +2259,13 @@ exports[`content build > gera artefatos determinísticos a partir do workspace 1
         "type": "QUIZ",
       },
       {
+        "activitySlug": "eco-da-historia",
+        "contentModuleSlug": "escuta-em-roda",
+        "difficulty": "INTERMEDIATE",
+        "slug": "quiz-eco-da-historia",
+        "type": "QUIZ",
+      },
+      {
         "activitySlug": "eco-das-rimas",
         "contentModuleSlug": "historias-rimadas",
         "difficulty": "BEGINNER",
@@ -2172,6 +2322,13 @@ exports[`content build > gera artefatos determinísticos a partir do workspace 1
         "type": "QUIZ",
       },
       {
+        "activitySlug": "escuta-com-anotacoes",
+        "contentModuleSlug": "escuta-em-roda",
+        "difficulty": "BEGINNER",
+        "slug": "quiz-escuta-com-anotacoes",
+        "type": "QUIZ",
+      },
+      {
         "activitySlug": "escuta-da-pontuacao",
         "contentModuleSlug": "pontuacao-animada",
         "difficulty": "INTERMEDIATE",
@@ -2179,10 +2336,31 @@ exports[`content build > gera artefatos determinísticos a partir do workspace 1
         "type": "QUIZ",
       },
       {
+        "activitySlug": "feedback-da-plateia",
+        "contentModuleSlug": "historia-em-cenas",
+        "difficulty": "INTERMEDIATE",
+        "slug": "quiz-feedback-da-plateia",
+        "type": "QUIZ",
+      },
+      {
         "activitySlug": "frase-ilustrada",
         "contentModuleSlug": "frases-divertidas",
         "difficulty": "BEGINNER",
         "slug": "quiz-frase-ilustrada",
+        "type": "QUIZ",
+      },
+      {
+        "activitySlug": "gestos-de-escuta",
+        "contentModuleSlug": "escuta-em-roda",
+        "difficulty": "BEGINNER",
+        "slug": "quiz-gestos-de-escuta",
+        "type": "QUIZ",
+      },
+      {
+        "activitySlug": "guia-do-narrador",
+        "contentModuleSlug": "historia-em-cenas",
+        "difficulty": "ADVANCED",
+        "slug": "quiz-guia-do-narrador",
         "type": "QUIZ",
       },
       {
@@ -2218,6 +2396,27 @@ exports[`content build > gera artefatos determinísticos a partir do workspace 1
         "contentModuleSlug": "ambientes-da-escola",
         "difficulty": "BEGINNER",
         "slug": "quiz-mapa-da-escola",
+        "type": "QUIZ",
+      },
+      {
+        "activitySlug": "marcadores-de-tempo",
+        "contentModuleSlug": "historia-em-cenas",
+        "difficulty": "INTERMEDIATE",
+        "slug": "quiz-marcadores-de-tempo",
+        "type": "QUIZ",
+      },
+      {
+        "activitySlug": "mediacao-do-colega",
+        "contentModuleSlug": "escuta-em-roda",
+        "difficulty": "ADVANCED",
+        "slug": "quiz-mediacao-do-colega",
+        "type": "QUIZ",
+      },
+      {
+        "activitySlug": "memoria-coletiva",
+        "contentModuleSlug": "escuta-em-roda",
+        "difficulty": "INTERMEDIATE",
+        "slug": "quiz-memoria-coletiva",
         "type": "QUIZ",
       },
       {
@@ -2291,6 +2490,13 @@ exports[`content build > gera artefatos determinísticos a partir do workspace 1
         "type": "QUIZ",
       },
       {
+        "activitySlug": "palavra-sinal",
+        "contentModuleSlug": "escuta-em-roda",
+        "difficulty": "BEGINNER",
+        "slug": "quiz-palavra-sinal",
+        "type": "QUIZ",
+      },
+      {
         "activitySlug": "palavra-surpresa",
         "contentModuleSlug": "palavras-compostas",
         "difficulty": "ADVANCED",
@@ -2312,6 +2518,20 @@ exports[`content build > gera artefatos determinísticos a partir do workspace 1
         "type": "QUIZ",
       },
       {
+        "activitySlug": "perguntas-curiosas",
+        "contentModuleSlug": "escuta-em-roda",
+        "difficulty": "INTERMEDIATE",
+        "slug": "quiz-perguntas-curiosas",
+        "type": "QUIZ",
+      },
+      {
+        "activitySlug": "perguntas-para-voz",
+        "contentModuleSlug": "historia-em-cenas",
+        "difficulty": "BEGINNER",
+        "slug": "quiz-perguntas-para-voz",
+        "type": "QUIZ",
+      },
+      {
         "activitySlug": "planeja-reportagem",
         "contentModuleSlug": "jornal-da-turma",
         "difficulty": "BEGINNER",
@@ -2323,6 +2543,13 @@ exports[`content build > gera artefatos determinísticos a partir do workspace 1
         "contentModuleSlug": "pontuacao-animada",
         "difficulty": "BEGINNER",
         "slug": "quiz-ponto-final-basico",
+        "type": "QUIZ",
+      },
+      {
+        "activitySlug": "pontos-de-vista",
+        "contentModuleSlug": "escuta-em-roda",
+        "difficulty": "ADVANCED",
+        "slug": "quiz-pontos-de-vista",
         "type": "QUIZ",
       },
       {
@@ -2340,6 +2567,13 @@ exports[`content build > gera artefatos determinísticos a partir do workspace 1
         "type": "QUIZ",
       },
       {
+        "activitySlug": "reconto-colaborativo",
+        "contentModuleSlug": "historia-em-cenas",
+        "difficulty": "INTERMEDIATE",
+        "slug": "quiz-reconto-colaborativo",
+        "type": "QUIZ",
+      },
+      {
         "activitySlug": "relato-bem-ordenado",
         "contentModuleSlug": "hora-do-dialogo",
         "difficulty": "INTERMEDIATE",
@@ -2347,10 +2581,24 @@ exports[`content build > gera artefatos determinísticos a partir do workspace 1
         "type": "QUIZ",
       },
       {
+        "activitySlug": "relato-simples",
+        "contentModuleSlug": "escuta-em-roda",
+        "difficulty": "INTERMEDIATE",
+        "slug": "quiz-relato-simples",
+        "type": "QUIZ",
+      },
+      {
         "activitySlug": "resposta-educada",
         "contentModuleSlug": "hora-do-dialogo",
         "difficulty": "INTERMEDIATE",
         "slug": "quiz-resposta-educada",
+        "type": "QUIZ",
+      },
+      {
+        "activitySlug": "retomar-ideia",
+        "contentModuleSlug": "escuta-em-roda",
+        "difficulty": "ADVANCED",
+        "slug": "quiz-retomar-ideia",
         "type": "QUIZ",
       },
       {
@@ -2382,6 +2630,13 @@ exports[`content build > gera artefatos determinísticos a partir do workspace 1
         "type": "QUIZ",
       },
       {
+        "activitySlug": "ritmo-da-narrativa",
+        "contentModuleSlug": "historia-em-cenas",
+        "difficulty": "INTERMEDIATE",
+        "slug": "quiz-ritmo-da-narrativa",
+        "type": "QUIZ",
+      },
+      {
         "activitySlug": "ritmo-na-historia",
         "contentModuleSlug": "historias-rimadas",
         "difficulty": "INTERMEDIATE",
@@ -2407,6 +2662,20 @@ exports[`content build > gera artefatos determinísticos a partir do workspace 1
         "contentModuleSlug": "jornal-da-turma",
         "difficulty": "INTERMEDIATE",
         "slug": "quiz-seleciona-informacao",
+        "type": "QUIZ",
+      },
+      {
+        "activitySlug": "sequencia-de-imagens",
+        "contentModuleSlug": "historia-em-cenas",
+        "difficulty": "BEGINNER",
+        "slug": "quiz-sequencia-de-imagens",
+        "type": "QUIZ",
+      },
+      {
+        "activitySlug": "sinal-da-roda",
+        "contentModuleSlug": "escuta-em-roda",
+        "difficulty": "BEGINNER",
+        "slug": "quiz-sinal-da-roda",
         "type": "QUIZ",
       },
       {
@@ -2452,6 +2721,13 @@ exports[`content build > gera artefatos determinísticos a partir do workspace 1
         "type": "QUIZ",
       },
       {
+        "activitySlug": "turnos-coreografados",
+        "contentModuleSlug": "escuta-em-roda",
+        "difficulty": "ADVANCED",
+        "slug": "quiz-turnos-coreografados",
+        "type": "QUIZ",
+      },
+      {
         "activitySlug": "verso-surpresa",
         "contentModuleSlug": "historias-rimadas",
         "difficulty": "ADVANCED",
@@ -2463,6 +2739,13 @@ exports[`content build > gera artefatos determinísticos a partir do workspace 1
         "contentModuleSlug": "sentidos-curiosos",
         "difficulty": "INTERMEDIATE",
         "slug": "quiz-visao-detalhista",
+        "type": "QUIZ",
+      },
+      {
+        "activitySlug": "vivencia-em-duplas",
+        "contentModuleSlug": "historia-em-cenas",
+        "difficulty": "ADVANCED",
+        "slug": "quiz-vivencia-em-duplas",
         "type": "QUIZ",
       },
       {
@@ -2479,12 +2762,19 @@ exports[`content build > gera artefatos determinísticos a partir do workspace 1
         "slug": "quiz-vogal-misteriosa",
         "type": "QUIZ",
       },
+      {
+        "activitySlug": "voz-de-personagem",
+        "contentModuleSlug": "historia-em-cenas",
+        "difficulty": "BEGINNER",
+        "slug": "quiz-voz-de-personagem",
+        "type": "QUIZ",
+      },
     ],
-    "hash": "c8733aca55e71ccb0745de70244fa2a29abb2099cf71373951573fe83f58c779",
+    "hash": "83fbad174d18b6c89f4f2fef239262d13c71ea1e076157095c1640a3fd0b7534",
     "updatedAt": "2024-01-01T12:00:00.000Z",
   },
   "modules": {
-    "hash": "1eb0233188bb269254d66d37051752f1727d3ec13eddbd3b9ab0b65691cab6b4",
+    "hash": "71833047cb6b71ad3201d53f36d48a4ae8307ac9377d6005b4c020329f9ed46c",
     "modules": [
       {
         "activities": [
@@ -9572,6 +9862,1534 @@ exports[`content build > gera artefatos determinísticos a partir do workspace 1
       {
         "activities": [
           {
+            "activityType": "QUIZ",
+            "bnccCode": "EF01LP18",
+            "difficulty": "BEGINNER",
+            "metadata": {
+              "accessibility": {
+                "alternatives": [
+                  {
+                    "description": "Ofereça cartões com o gesto de ouvir e falar em contraste alto.",
+                    "steps": [
+                      "Disponibilize pictogramas ampliados em cores vibrantes.",
+                      "Reforce o significado com dramatizações rápidas antes de cada pergunta.",
+                    ],
+                    "title": "CARTÕES GIGANTES",
+                  },
+                ],
+                "assets": [
+                  {
+                    "altText": "Tapete circular com livro aberto, cartões e almofadas coloridas ao redor prontos para contação.",
+                    "colorProfile": [
+                      "surface-200",
+                      "primary-500",
+                      "secondary-400",
+                      "accent-300",
+                    ],
+                    "hash": "8b45c8f1d5f2",
+                    "license": {
+                      "document": "/assets/ef01/LICENSE.md",
+                      "name": "CC BY 4.0",
+                      "url": "https://creativecommons.org/licenses/by/4.0/",
+                    },
+                    "png": "/assets/ef01/lingua-portuguesa/lp-roda-contacao.png?v=8b45c8f1d5f2",
+                    "recommendedUsage": "Rodas de conversa, contação de histórias e mediação de diálogo.",
+                    "slug": "lp-roda-contacao",
+                    "subject": "lingua-portuguesa",
+                    "theme": "oralidade",
+                    "title": "Tapete de histórias em roda",
+                    "type": "IMAGEM",
+                    "uri": "/assets/ef01/lingua-portuguesa/lp-roda-contacao.svg?v=8b45c8f1d5f2",
+                  },
+                ],
+                "audioCue": {
+                  "description": "Use um chocalho suave para indicar o turno de resposta.",
+                  "steps": [
+                    "Combine o significado do som antes de iniciar a atividade.",
+                    "Reproduza o som sempre que uma nova pergunta começar.",
+                  ],
+                  "title": "SINAL SONORO",
+                },
+                "feedback": {
+                  "accessibility": "Ofereça tempo extra, legendas em caixa alta e apoio auditivo para quem precisar.",
+                  "encouragement": "Sem problemas! Revise as pistas visuais e sonoras antes de tentar novamente.",
+                  "retry": "Experimente repetir o combinado em voz alta e volte para a pergunta.",
+                  "success": "Excelente! Você reconheceu o sinal que mantém a roda organizada.",
+                },
+                "hints": [
+                  {
+                    "audience": "EDUCADOR",
+                    "text": "Convide educadores a oferecer apoio individual quando necessário.",
+                  },
+                  {
+                    "audience": "EDUCADOR",
+                    "text": "Combine gestos e linguagem simples para garantir compreensão coletiva.",
+                  },
+                  {
+                    "audience": "ESTUDANTE",
+                    "text": "Passo 1: Respire fundo e escute o enunciado percebendo qual sinal organiza a vez de falar.",
+                  },
+                  {
+                    "audience": "ESTUDANTE",
+                    "text": "Passo 2: Observe cada alternativa e imagine como ela aparece na roda.",
+                  },
+                  {
+                    "audience": "ESTUDANTE",
+                    "text": "Passo 3: Conte para um colega por que a opção escolhida favorece a escuta do grupo.",
+                  },
+                  {
+                    "audience": "EDUCADOR",
+                    "text": "Modele os gestos combinados e deixe cartões com símbolos de escuta ao alcance da turma.",
+                  },
+                  {
+                    "audience": "FAMILIA",
+                    "text": "Envie um bilhete sugerindo que a família crie um sinal para indicar a vez de falar em casa.",
+                  },
+                ],
+                "motorSupport": [
+                  {
+                    "description": "Ofereça suportes para toque, ponteiras e apoio postural durante a interação.",
+                    "steps": [
+                      "Permita que duplas revejam a pergunta sem pressa.",
+                      "Ajuste a altura do dispositivo ou material conforme necessário.",
+                    ],
+                    "title": "APOIO MOTOR",
+                  },
+                ],
+              },
+              "assetSlug": "lp-roda-contacao",
+              "assetUsage": "Utilize a ilustração da roda de contação para manter os sinais visuais à vista da turma.",
+              "bncc": {
+                "code": "EF01LP18",
+                "habilidades": [
+                  "EF01LP18",
+                ],
+              },
+              "categoria": "Roda de conversa",
+              "difficultyTier": "INICIAR",
+              "duracaoMinutos": 8,
+              "familiaEngajamento": "Oriente as famílias a definir um gesto para sinalizar vez de falar nos encontros em casa.",
+              "habilidades": [
+                "EF01LP18",
+              ],
+              "interactiveSlug": "quiz-sinal-da-roda",
+              "interactiveType": "QUIZ",
+              "prerequisites": [
+                {
+                  "description": "Retomar com a turma os sinais combinados para iniciar e finalizar falas na roda.",
+                  "reference": "EF01LP18",
+                  "type": "SKILL",
+                },
+              ],
+            },
+            "slug": "sinal-da-roda",
+          },
+          {
+            "activityType": "QUIZ",
+            "bnccCode": "EF01LP18",
+            "difficulty": "BEGINNER",
+            "metadata": {
+              "accessibility": {
+                "alternatives": [
+                  {
+                    "description": "Modele as posturas em frente à turma com apoio de espelhos portáteis.",
+                    "steps": [
+                      "Convide um estudante a reproduzir o gesto enquanto os demais observam.",
+                      "Use cartões em caixa alta com as palavras ouvir, esperar e responder.",
+                    ],
+                    "title": "DRAMATIZAÇÃO GUIADA",
+                  },
+                ],
+                "assets": [
+                  {
+                    "altText": "Fone acolchoado com arco azul, microfone lateral e ondas sonoras coloridas.",
+                    "colorProfile": [
+                      "calm-200",
+                      "primary-600",
+                      "surface-200",
+                      "accent-400",
+                    ],
+                    "hash": "f3b995aa9152",
+                    "license": {
+                      "document": "/assets/ef01/LICENSE.md",
+                      "name": "CC BY 4.0",
+                      "url": "https://creativecommons.org/licenses/by/4.0/",
+                    },
+                    "png": "/assets/ef01/lingua-portuguesa/lp-audio-fones.png?v=f3b995aa9152",
+                    "recommendedUsage": "Atividades de escuta ativa, registro de relatos orais e produção de podcasts.",
+                    "slug": "lp-audio-fones",
+                    "subject": "lingua-portuguesa",
+                    "theme": "oralidade",
+                    "title": "Fone acolchoado para escuta ativa",
+                    "type": "IMAGEM",
+                    "uri": "/assets/ef01/lingua-portuguesa/lp-audio-fones.svg?v=f3b995aa9152",
+                  },
+                ],
+                "audioCue": {
+                  "description": "Utilize uma campainha suave para lembrar que é hora de observar os gestos.",
+                  "steps": [
+                    "Toque o sinal no início de cada rodada e explique o que será observado.",
+                    "Dê alguns segundos após o som para que todos ajustem a postura.",
+                  ],
+                  "title": "SINAL DE ESCUTA",
+                },
+                "feedback": {
+                  "accessibility": "Disponibilize recursos táteis, contrastes altos e apoio auditivo conforme necessário.",
+                  "encouragement": "Respire fundo, observe novamente as imagens e tente mais uma vez.",
+                  "retry": "Repita mentalmente o combinado de escuta antes de responder novamente.",
+                  "success": "Excelente! Você escolheu o gesto que valoriza a fala do colega.",
+                },
+                "hints": [
+                  {
+                    "audience": "EDUCADOR",
+                    "text": "Convide educadores a oferecer apoio individual quando necessário.",
+                  },
+                  {
+                    "audience": "EDUCADOR",
+                    "text": "Combine gestos e linguagem simples para garantir compreensão coletiva.",
+                  },
+                  {
+                    "audience": "ESTUDANTE",
+                    "text": "Passo 1: Observe o enunciado e perceba qual gesto mostra que a pessoa está ouvindo com cuidado.",
+                  },
+                  {
+                    "audience": "ESTUDANTE",
+                    "text": "Passo 2: Compare as alternativas imaginando como cada gesto aparece no corpo.",
+                  },
+                  {
+                    "audience": "ESTUDANTE",
+                    "text": "Passo 3: Comente com a dupla como você reconheceu o gesto de escuta.",
+                  },
+                  {
+                    "audience": "EDUCADOR",
+                    "text": "Demonstre cada postura com apoio visual e verbal para garantir compreensão coletiva.",
+                  },
+                  {
+                    "audience": "FAMILIA",
+                    "text": "Compartilhe dicas simples de postura atenta para serem praticadas durante conversas em casa.",
+                  },
+                ],
+                "motorSupport": [
+                  {
+                    "description": "Ofereça almofadas, encostos ou apoiadores para quem precisa ajustar a posição.",
+                    "steps": [
+                      "Permita ajustes de cadeira e tempo adicional para mudança de postura.",
+                      "Ofereça ponteiras ou teclas grandes para seleção das respostas.",
+                    ],
+                    "title": "SUPORTE DE POSTURA",
+                  },
+                ],
+              },
+              "assetSlug": "lp-audio-fones",
+              "assetUsage": "Mostre o fone de escuta como lembrete visual de que todos devem ouvir com atenção.",
+              "bncc": {
+                "code": "EF01LP18",
+                "habilidades": [
+                  "EF01LP18",
+                ],
+              },
+              "categoria": "Expressão corporal",
+              "difficultyTier": "INICIAR",
+              "duracaoMinutos": 9,
+              "familiaEngajamento": "Sugira às famílias brincadeiras de espelho para praticar gestos de escuta respeitosa.",
+              "habilidades": [
+                "EF01LP18",
+              ],
+              "interactiveSlug": "quiz-gestos-de-escuta",
+              "interactiveType": "QUIZ",
+              "prerequisites": [
+                {
+                  "description": "Revisitar com a turma as atitudes corporais que demonstram respeito na roda de conversa.",
+                  "reference": "EF01LP18",
+                  "type": "SKILL",
+                },
+              ],
+            },
+            "slug": "gestos-de-escuta",
+          },
+          {
+            "activityType": "QUIZ",
+            "bnccCode": "EF01LP18",
+            "difficulty": "INTERMEDIATE",
+            "metadata": {
+              "accessibility": {
+                "alternatives": [
+                  {
+                    "description": "Registre palavras-chave em cartões para apoiar a formulação das perguntas.",
+                    "steps": [
+                      "Fixe cartões com início, meio e fim do relato.",
+                      "Incentive que toquem nos cartões antes de responder.",
+                    ],
+                    "title": "QUADRO DE IDEIAS",
+                  },
+                ],
+                "assets": [
+                  {
+                    "altText": "Tapete circular com livro aberto, cartões e almofadas coloridas ao redor prontos para contação.",
+                    "colorProfile": [
+                      "surface-200",
+                      "primary-500",
+                      "secondary-400",
+                      "accent-300",
+                    ],
+                    "hash": "8b45c8f1d5f2",
+                    "license": {
+                      "document": "/assets/ef01/LICENSE.md",
+                      "name": "CC BY 4.0",
+                      "url": "https://creativecommons.org/licenses/by/4.0/",
+                    },
+                    "png": "/assets/ef01/lingua-portuguesa/lp-roda-contacao.png?v=8b45c8f1d5f2",
+                    "recommendedUsage": "Rodas de conversa, contação de histórias e mediação de diálogo.",
+                    "slug": "lp-roda-contacao",
+                    "subject": "lingua-portuguesa",
+                    "theme": "oralidade",
+                    "title": "Tapete de perguntas em roda",
+                    "type": "IMAGEM",
+                    "uri": "/assets/ef01/lingua-portuguesa/lp-roda-contacao.svg?v=8b45c8f1d5f2",
+                  },
+                ],
+                "audioCue": {
+                  "description": "Utilize um sino suave para marcar o momento de pensar na pergunta.",
+                  "steps": [
+                    "Avise que o som indica tempo de reflexão.",
+                    "Dê alguns segundos até liberar as respostas.",
+                  ],
+                  "title": "PAUSA REFLEXIVA",
+                },
+                "feedback": {
+                  "accessibility": "Ofereça apoio auditivo, pictogramas e tempo adicional para planejar perguntas.",
+                  "encouragement": "Tudo bem errar! Releia o relato e verifique quais perguntas fazem sentido.",
+                  "retry": "Organize ideias com tópicos antes de tentar novamente.",
+                  "success": "Excelente! Sua pergunta mantém a conversa ligada ao que foi ouvido.",
+                },
+                "hints": [
+                  {
+                    "audience": "EDUCADOR",
+                    "text": "Convide educadores a oferecer apoio individual quando necessário.",
+                  },
+                  {
+                    "audience": "EDUCADOR",
+                    "text": "Combine gestos e linguagem simples para garantir compreensão coletiva.",
+                  },
+                  {
+                    "audience": "ESTUDANTE",
+                    "text": "Passo 1: Relembre mentalmente o que foi contado antes de analisar as perguntas.",
+                  },
+                  {
+                    "audience": "ESTUDANTE",
+                    "text": "Passo 2: Pense se cada pergunta se conecta ao que você ouviu.",
+                  },
+                  {
+                    "audience": "ESTUDANTE",
+                    "text": "Passo 3: Explique para a dupla por que sua pergunta escolhida continua a conversa.",
+                  },
+                  {
+                    "audience": "EDUCADOR",
+                    "text": "Registre no quadro palavras-chave do relato para apoiar quem precisa.",
+                  },
+                  {
+                    "audience": "FAMILIA",
+                    "text": "Compartilhe orientações sobre ouvir com atenção e perguntar com curiosidade em casa.",
+                  },
+                ],
+                "motorSupport": [
+                  {
+                    "description": "Disponibilize pranchetas ou teclados ampliados para planejar perguntas.",
+                    "steps": [
+                      "Permita rascunhos com palavras-chave antes de responder.",
+                      "Apoie o posicionamento dos materiais na altura ideal.",
+                    ],
+                    "title": "APOIO ESCRITO",
+                  },
+                ],
+              },
+              "assetSlug": "lp-roda-contacao",
+              "assetUsage": "Utilize a roda de contação como apoio visual para lembrar que a pergunta nasce da escuta.",
+              "bncc": {
+                "code": "EF01LP18",
+                "habilidades": [
+                  "EF01LP18",
+                  "EF01LP19",
+                ],
+              },
+              "categoria": "Formulação de perguntas",
+              "difficultyTier": "PRATICAR",
+              "duracaoMinutos": 10,
+              "familiaEngajamento": "Convide as famílias a anotar perguntas que surgem após histórias contadas em casa.",
+              "habilidades": [
+                "EF01LP18",
+                "EF01LP19",
+              ],
+              "habilidadesSecundarias": [
+                "EF01LP19",
+              ],
+              "interactiveSlug": "quiz-perguntas-curiosas",
+              "interactiveType": "QUIZ",
+              "prerequisites": [
+                {
+                  "description": "Recordar com a turma exemplos de perguntas que surgiram em rodas anteriores.",
+                  "reference": "EF01LP19",
+                  "type": "SKILL",
+                },
+              ],
+            },
+            "slug": "perguntas-curiosas",
+          },
+          {
+            "activityType": "QUIZ",
+            "bnccCode": "EF01LP18",
+            "difficulty": "INTERMEDIATE",
+            "metadata": {
+              "accessibility": {
+                "alternatives": [
+                  {
+                    "description": "Monte cartões com imagens dos trechos principais para auxiliar a escolha.",
+                    "steps": [
+                      "Exponha as imagens na ordem em que aparecem na narrativa.",
+                      "Peça que apontem para a imagem correspondente antes de falar.",
+                    ],
+                    "title": "SÍNTESE VISUAL",
+                  },
+                ],
+                "assets": [
+                  {
+                    "altText": "Fone acolchoado com arco azul, microfone lateral e ondas sonoras coloridas.",
+                    "colorProfile": [
+                      "calm-200",
+                      "primary-600",
+                      "surface-200",
+                      "accent-400",
+                    ],
+                    "hash": "f3b995aa9152",
+                    "license": {
+                      "document": "/assets/ef01/LICENSE.md",
+                      "name": "CC BY 4.0",
+                      "url": "https://creativecommons.org/licenses/by/4.0/",
+                    },
+                    "png": "/assets/ef01/lingua-portuguesa/lp-audio-fones.png?v=f3b995aa9152",
+                    "recommendedUsage": "Atividades de escuta ativa, registro de relatos orais e produção de podcasts.",
+                    "slug": "lp-audio-fones",
+                    "subject": "lingua-portuguesa",
+                    "theme": "oralidade",
+                    "title": "Fone para ecoar histórias",
+                    "type": "IMAGEM",
+                    "uri": "/assets/ef01/lingua-portuguesa/lp-audio-fones.svg?v=f3b995aa9152",
+                  },
+                ],
+                "audioCue": {
+                  "description": "Bata duas vezes em um tambor pequeno para indicar o momento de repetir a frase.",
+                  "steps": [
+                    "Combine o significado do som antes de iniciar.",
+                    "Repita o sinal sempre que um novo trecho precisar ser retomado.",
+                  ],
+                  "title": "BATIDA SUAVE",
+                },
+                "feedback": {
+                  "accessibility": "Disponibilize apoio auditivo, legendas e gestos para reforçar a retomada.",
+                  "encouragement": "Reescute a narrativa, marque palavras importantes e tente novamente.",
+                  "retry": "Faça uma pausa, respire e repita o trecho em voz baixa antes de responder.",
+                  "success": "Excelente! Você destacou o trecho que ajuda todos a entender a história.",
+                },
+                "hints": [
+                  {
+                    "audience": "EDUCADOR",
+                    "text": "Convide educadores a oferecer apoio individual quando necessário.",
+                  },
+                  {
+                    "audience": "EDUCADOR",
+                    "text": "Combine gestos e linguagem simples para garantir compreensão coletiva.",
+                  },
+                  {
+                    "audience": "ESTUDANTE",
+                    "text": "Passo 1: Revise mentalmente a parte da história que acabou de ouvir.",
+                  },
+                  {
+                    "audience": "ESTUDANTE",
+                    "text": "Passo 2: Identifique qual frase ajuda o grupo a compreender o que aconteceu.",
+                  },
+                  {
+                    "audience": "ESTUDANTE",
+                    "text": "Passo 3: Treine a entonação antes de compartilhar o trecho escolhido.",
+                  },
+                  {
+                    "audience": "EDUCADOR",
+                    "text": "Destaque palavras-chave no quadro para apoiar a retomada dos trechos essenciais.",
+                  },
+                  {
+                    "audience": "FAMILIA",
+                    "text": "Incentive as famílias a pedir que a criança conte a melhor frase da história que ouviram juntos.",
+                  },
+                ],
+                "motorSupport": [
+                  {
+                    "description": "Ofereça suporte físico para segurar microfone ou dispositivo durante a fala.",
+                    "steps": [
+                      "Utilize suportes de mesa ou abraçadeiras para estabilizar o equipamento.",
+                      "Autorize pausas rápidas para descanso muscular.",
+                    ],
+                    "title": "MICROFONE ADAPTADO",
+                  },
+                ],
+              },
+              "assetSlug": "lp-audio-fones",
+              "assetUsage": "Utilize o fone de escuta para lembrar da importância de ouvir com atenção antes de repetir.",
+              "bncc": {
+                "code": "EF01LP18",
+                "habilidades": [
+                  "EF01LP18",
+                  "EF01LP20",
+                ],
+              },
+              "categoria": "Recontos imediatos",
+              "difficultyTier": "PRATICAR",
+              "duracaoMinutos": 9,
+              "familiaEngajamento": "Sugerir que as famílias peçam às crianças para repetir partes favoritas de histórias contadas em casa.",
+              "habilidades": [
+                "EF01LP18",
+                "EF01LP20",
+              ],
+              "habilidadesSecundarias": [
+                "EF01LP20",
+              ],
+              "interactiveSlug": "quiz-eco-da-historia",
+              "interactiveType": "QUIZ",
+              "prerequisites": [
+                {
+                  "description": "Relembrar com a turma como destacar frases que marcam o início, o meio e o fim de uma história.",
+                  "reference": "EF01LP20",
+                  "type": "SKILL",
+                },
+              ],
+            },
+            "slug": "eco-da-historia",
+          },
+          {
+            "activityType": "QUIZ",
+            "bnccCode": "EF01LP19",
+            "difficulty": "INTERMEDIATE",
+            "metadata": {
+              "accessibility": {
+                "alternatives": [
+                  {
+                    "description": "Utilize cartões coloridos para representar início, meio e fim do relato.",
+                    "steps": [
+                      "Organize os cartões em uma mesa acessível a todos.",
+                      "Convide os estudantes a posicionar cada cartão antes de responder.",
+                    ],
+                    "title": "LINHA DO TEMPO VISUAL",
+                  },
+                ],
+                "assets": [
+                  {
+                    "altText": "Tapete circular com livro aberto, cartões e almofadas coloridas ao redor prontos para contação.",
+                    "colorProfile": [
+                      "surface-200",
+                      "primary-500",
+                      "secondary-400",
+                      "accent-300",
+                    ],
+                    "hash": "8b45c8f1d5f2",
+                    "license": {
+                      "document": "/assets/ef01/LICENSE.md",
+                      "name": "CC BY 4.0",
+                      "url": "https://creativecommons.org/licenses/by/4.0/",
+                    },
+                    "png": "/assets/ef01/lingua-portuguesa/lp-roda-contacao.png?v=8b45c8f1d5f2",
+                    "recommendedUsage": "Rodas de conversa, contação de histórias e mediação de diálogo.",
+                    "slug": "lp-roda-contacao",
+                    "subject": "lingua-portuguesa",
+                    "theme": "oralidade",
+                    "title": "Tapete de sequência narrativa",
+                    "type": "IMAGEM",
+                    "uri": "/assets/ef01/lingua-portuguesa/lp-roda-contacao.svg?v=8b45c8f1d5f2",
+                  },
+                ],
+                "audioCue": {
+                  "description": "Toque um sino curto para marcar o momento de revisar a sequência.",
+                  "steps": [
+                    "Explique que o som indica hora de reorganizar mentalmente o relato.",
+                    "Aguarde alguns segundos antes de liberar as respostas.",
+                  ],
+                  "title": "SINO DE INÍCIO",
+                },
+                "feedback": {
+                  "accessibility": "Disponibilize linha do tempo tátil, legendas em caixa alta e apoio auditivo conforme necessário.",
+                  "encouragement": "Volte ao início do relato e identifique novamente as palavras de sequência.",
+                  "retry": "Faça um rascunho rápido com números antes de responder.",
+                  "success": "Muito bem! Você manteve o relato organizado para que todos compreendam.",
+                },
+                "hints": [
+                  {
+                    "audience": "EDUCADOR",
+                    "text": "Convide educadores a oferecer apoio individual quando necessário.",
+                  },
+                  {
+                    "audience": "EDUCADOR",
+                    "text": "Combine gestos e linguagem simples para garantir compreensão coletiva.",
+                  },
+                  {
+                    "audience": "ESTUDANTE",
+                    "text": "Passo 1: Relembre como o relato começou e quais ações vieram depois.",
+                  },
+                  {
+                    "audience": "ESTUDANTE",
+                    "text": "Passo 2: Procure palavras como depois, então ou por fim para ajudar na ordem.",
+                  },
+                  {
+                    "audience": "ESTUDANTE",
+                    "text": "Passo 3: Conte a sequência para um colega antes de confirmar a resposta.",
+                  },
+                  {
+                    "audience": "EDUCADOR",
+                    "text": "Use cartões numerados ou setas no quadro para apoiar a organização da sequência.",
+                  },
+                  {
+                    "audience": "FAMILIA",
+                    "text": "Envie dicas de como usar fotos ou desenhos para organizar relatos em casa.",
+                  },
+                ],
+                "motorSupport": [
+                  {
+                    "description": "Disponibilize cartões de ordem com pistas táteis ou ímãs.",
+                    "steps": [
+                      "Permita manipular os cartões para ensaiar a sequência.",
+                      "Ofereça apoios de punho ou suportes para quem escreve as respostas.",
+                    ],
+                    "title": "CARTÕES AMPLIADOS",
+                  },
+                ],
+              },
+              "assetSlug": "lp-roda-contacao",
+              "assetUsage": "Posicione a roda de contação ao centro para representar o percurso do relato compartilhado.",
+              "bncc": {
+                "code": "EF01LP19",
+                "habilidades": [
+                  "EF01LP19",
+                ],
+              },
+              "categoria": "Ordem cronológica",
+              "difficultyTier": "PRATICAR",
+              "duracaoMinutos": 9,
+              "familiaEngajamento": "Incentive as famílias a contar fatos do dia seguindo a sequência início, meio e fim.",
+              "habilidades": [
+                "EF01LP19",
+              ],
+              "interactiveSlug": "quiz-relato-simples",
+              "interactiveType": "QUIZ",
+              "prerequisites": [
+                {
+                  "description": "Relembrar com a turma relatos anteriores organizados em início, meio e fim.",
+                  "reference": "EF01LP19",
+                  "type": "SKILL",
+                },
+              ],
+            },
+            "slug": "relato-simples",
+          },
+          {
+            "activityType": "QUIZ",
+            "bnccCode": "EF01LP18",
+            "difficulty": "BEGINNER",
+            "metadata": {
+              "accessibility": {
+                "alternatives": [
+                  {
+                    "description": "Monte um cartaz com expressões positivas para consulta rápida.",
+                    "steps": [
+                      "Utilize letras grandes e contrastantes.",
+                      "Inclua pictogramas que representem falar, ouvir e esperar.",
+                    ],
+                    "title": "CARTAZ DE FRASES",
+                  },
+                ],
+                "assets": [
+                  {
+                    "altText": "Fone acolchoado com arco azul, microfone lateral e ondas sonoras coloridas.",
+                    "colorProfile": [
+                      "calm-200",
+                      "primary-600",
+                      "surface-200",
+                      "accent-400",
+                    ],
+                    "hash": "f3b995aa9152",
+                    "license": {
+                      "document": "/assets/ef01/LICENSE.md",
+                      "name": "CC BY 4.0",
+                      "url": "https://creativecommons.org/licenses/by/4.0/",
+                    },
+                    "png": "/assets/ef01/lingua-portuguesa/lp-audio-fones.png?v=f3b995aa9152",
+                    "recommendedUsage": "Atividades de escuta ativa, registro de relatos orais e produção de podcasts.",
+                    "slug": "lp-audio-fones",
+                    "subject": "lingua-portuguesa",
+                    "theme": "oralidade",
+                    "title": "Fone que simboliza a vez de falar",
+                    "type": "IMAGEM",
+                    "uri": "/assets/ef01/lingua-portuguesa/lp-audio-fones.svg?v=f3b995aa9152",
+                  },
+                ],
+                "audioCue": {
+                  "description": "Combine uma palma suave para avisar quando o turno será oferecido.",
+                  "steps": [
+                    "Toque a palma e diga quem recebe a palavra.",
+                    "Espere o colega confirmar antes de seguir com a atividade.",
+                  ],
+                  "title": "PALMA SUAVE",
+                },
+                "feedback": {
+                  "accessibility": "Disponibilize cartões grandes com as expressões e ofereça leitura em voz alta.",
+                  "encouragement": "Releia as opções e pense em como cada frase soa ao ser pronunciada.",
+                  "retry": "Faça uma pausa, respire e experimente dramatizar cada frase antes de decidir.",
+                  "success": "Excelente! Você escolheu uma expressão que respeita a vez do colega.",
+                },
+                "hints": [
+                  {
+                    "audience": "EDUCADOR",
+                    "text": "Convide educadores a oferecer apoio individual quando necessário.",
+                  },
+                  {
+                    "audience": "EDUCADOR",
+                    "text": "Combine gestos e linguagem simples para garantir compreensão coletiva.",
+                  },
+                  {
+                    "audience": "ESTUDANTE",
+                    "text": "Passo 1: Leia ou escute cada frase atentamente.",
+                  },
+                  {
+                    "audience": "ESTUDANTE",
+                    "text": "Passo 2: Imagine como a pessoa se sentiria ao receber cada convite.",
+                  },
+                  {
+                    "audience": "ESTUDANTE",
+                    "text": "Passo 3: Repita em voz baixa a frase escolhida para confirmar se ela é gentil.",
+                  },
+                  {
+                    "audience": "EDUCADOR",
+                    "text": "Registre no quadro expressões de convite e incentive combinações próprias da turma.",
+                  },
+                  {
+                    "audience": "FAMILIA",
+                    "text": "Envie exemplos de frases acolhedoras para uso em conversas familiares.",
+                  },
+                ],
+                "motorSupport": [
+                  {
+                    "description": "Disponibilize botões ou setas grandes para seleção das frases.",
+                    "steps": [
+                      "Permita que a pessoa teste os botões antes de iniciar.",
+                      "Ajuste o tempo de resposta conforme a necessidade.",
+                    ],
+                    "title": "BOTÕES DE RESPOSTA",
+                  },
+                ],
+              },
+              "assetSlug": "lp-audio-fones",
+              "assetUsage": "Exiba o fone de escuta como símbolo de que a palavra circula com cuidado entre todos.",
+              "bncc": {
+                "code": "EF01LP18",
+                "habilidades": [
+                  "EF01LP18",
+                ],
+              },
+              "categoria": "Expressões orais",
+              "difficultyTier": "INICIAR",
+              "duracaoMinutos": 8,
+              "familiaEngajamento": "Sugira que as famílias usem expressões de convite durante refeições ou rodas caseiras.",
+              "habilidades": [
+                "EF01LP18",
+              ],
+              "interactiveSlug": "quiz-palavra-sinal",
+              "interactiveType": "QUIZ",
+              "prerequisites": [
+                {
+                  "description": "Relembrar com o grupo as frases acordadas para passar a palavra durante a roda.",
+                  "reference": "EF01LP18",
+                  "type": "SKILL",
+                },
+              ],
+            },
+            "slug": "palavra-sinal",
+          },
+          {
+            "activityType": "QUIZ",
+            "bnccCode": "EF01LP19",
+            "difficulty": "INTERMEDIATE",
+            "metadata": {
+              "accessibility": {
+                "alternatives": [
+                  {
+                    "description": "Monte um mapa visual com cores diferentes para cada ideia.",
+                    "steps": [
+                      "Posicione cartões com lupa, coração e relógio para representar tema, sentimento e tempo.",
+                      "Conecte os cartões com fitas ou cordões para reforçar a ligação entre eles.",
+                    ],
+                    "title": "MAPA DE PALAVRAS",
+                  },
+                ],
+                "assets": [
+                  {
+                    "altText": "Tapete circular com livro aberto, cartões e almofadas coloridas ao redor prontos para contação.",
+                    "colorProfile": [
+                      "surface-200",
+                      "primary-500",
+                      "secondary-400",
+                      "accent-300",
+                    ],
+                    "hash": "8b45c8f1d5f2",
+                    "license": {
+                      "document": "/assets/ef01/LICENSE.md",
+                      "name": "CC BY 4.0",
+                      "url": "https://creativecommons.org/licenses/by/4.0/",
+                    },
+                    "png": "/assets/ef01/lingua-portuguesa/lp-roda-contacao.png?v=8b45c8f1d5f2",
+                    "recommendedUsage": "Rodas de conversa, contação de histórias e mediação de diálogo.",
+                    "slug": "lp-roda-contacao",
+                    "subject": "lingua-portuguesa",
+                    "theme": "oralidade",
+                    "title": "Tapete de memórias compartilhadas",
+                    "type": "IMAGEM",
+                    "uri": "/assets/ef01/lingua-portuguesa/lp-roda-contacao.svg?v=8b45c8f1d5f2",
+                  },
+                ],
+                "audioCue": {
+                  "description": "Toque um sino curto para marcar o momento de revisar os registros.",
+                  "steps": [
+                    "Após o sinal, convide a turma a apontar as palavras-chave.",
+                    "Aguarde respostas antes de avançar para a próxima pergunta.",
+                  ],
+                  "title": "SINO DE REVISÃO",
+                },
+                "feedback": {
+                  "accessibility": "Disponibilize quadro magnético com pictogramas e recursos auditivos conforme necessário.",
+                  "encouragement": "Releia as palavras principais do relato antes de tentar novamente.",
+                  "retry": "Faça uma lista rápida com três palavras-chave para guiar sua próxima escolha.",
+                  "success": "Ótimo! Você escolheu o registro que conserva as ideias centrais do relato.",
+                },
+                "hints": [
+                  {
+                    "audience": "EDUCADOR",
+                    "text": "Convide educadores a oferecer apoio individual quando necessário.",
+                  },
+                  {
+                    "audience": "EDUCADOR",
+                    "text": "Combine gestos e linguagem simples para garantir compreensão coletiva.",
+                  },
+                  {
+                    "audience": "ESTUDANTE",
+                    "text": "Passo 1: Relembre as três partes mais importantes do relato.",
+                  },
+                  {
+                    "audience": "ESTUDANTE",
+                    "text": "Passo 2: Procure registros que mencionem todas as ideias principais.",
+                  },
+                  {
+                    "audience": "ESTUDANTE",
+                    "text": "Passo 3: Conte ao colega quais palavras-chave você manteria no cartaz.",
+                  },
+                  {
+                    "audience": "EDUCADOR",
+                    "text": "Apoie com cartões coloridos cada ideia relevante compartilhada.",
+                  },
+                  {
+                    "audience": "FAMILIA",
+                    "text": "Envie orientações sobre como construir mapas de palavras em família após conversas significativas.",
+                  },
+                ],
+                "motorSupport": [
+                  {
+                    "description": "Use quadro magnético com peças grandes para quem precisa de apoio motor.",
+                    "steps": [
+                      "Permita mover as peças com ambas as mãos ou com ajuda de ponteiras.",
+                      "Ofereça descanso breve entre uma movimentação e outra.",
+                    ],
+                    "title": "QUADRO COOPERATIVO",
+                  },
+                ],
+              },
+              "assetSlug": "lp-roda-contacao",
+              "assetUsage": "Utilize a roda de contação como mapa para apontar cada ideia registrada pelo grupo.",
+              "bncc": {
+                "code": "EF01LP19",
+                "habilidades": [
+                  "EF01LP19",
+                  "EF01LP20",
+                ],
+              },
+              "categoria": "Memória compartilhada",
+              "difficultyTier": "PRATICAR",
+              "duracaoMinutos": 9,
+              "familiaEngajamento": "Sugira que as famílias criem quadros com palavras-chave após conversas importantes em casa.",
+              "habilidades": [
+                "EF01LP19",
+                "EF01LP20",
+              ],
+              "habilidadesSecundarias": [
+                "EF01LP20",
+              ],
+              "interactiveSlug": "quiz-memoria-coletiva",
+              "interactiveType": "QUIZ",
+              "prerequisites": [
+                {
+                  "description": "Revisitar com a turma registros coletivos construídos em rodas anteriores.",
+                  "reference": "EF01LP20",
+                  "type": "SKILL",
+                },
+              ],
+            },
+            "slug": "memoria-coletiva",
+          },
+          {
+            "activityType": "QUIZ",
+            "bnccCode": "EF01LP18",
+            "difficulty": "ADVANCED",
+            "metadata": {
+              "accessibility": {
+                "alternatives": [
+                  {
+                    "description": "Monte bonecos ou marcadores para simular a ordem de fala.",
+                    "steps": [
+                      "Posicione cada marcador em sequência sobre o tapete.",
+                      "Movimente-os conforme cada turno é executado.",
+                    ],
+                    "title": "COREOGRAFIA EM MINIATURA",
+                  },
+                ],
+                "assets": [
+                  {
+                    "altText": "Fone acolchoado com arco azul, microfone lateral e ondas sonoras coloridas.",
+                    "colorProfile": [
+                      "calm-200",
+                      "primary-600",
+                      "surface-200",
+                      "accent-400",
+                    ],
+                    "hash": "f3b995aa9152",
+                    "license": {
+                      "document": "/assets/ef01/LICENSE.md",
+                      "name": "CC BY 4.0",
+                      "url": "https://creativecommons.org/licenses/by/4.0/",
+                    },
+                    "png": "/assets/ef01/lingua-portuguesa/lp-audio-fones.png?v=f3b995aa9152",
+                    "recommendedUsage": "Atividades de escuta ativa, registro de relatos orais e produção de podcasts.",
+                    "slug": "lp-audio-fones",
+                    "subject": "lingua-portuguesa",
+                    "theme": "oralidade",
+                    "title": "Fone sinalizador de turnos",
+                    "type": "IMAGEM",
+                    "uri": "/assets/ef01/lingua-portuguesa/lp-audio-fones.svg?v=f3b995aa9152",
+                  },
+                ],
+                "audioCue": {
+                  "description": "Toque duas batidas leves para indicar a troca de turno.",
+                  "steps": [
+                    "Combine com a turma que a primeira batida sinaliza a conclusão e a segunda o convite.",
+                    "Dê tempo para que cada colega reaja ao som.",
+                  ],
+                  "title": "DUPLA BATIDA",
+                },
+                "feedback": {
+                  "accessibility": "Utilize suportes visuais grandes, áudio descrição dos gestos e tempo estendido.",
+                  "encouragement": "Volte aos gestos combinados e revise quem inicia e encerra a fala.",
+                  "retry": "Faça um ensaio rápido com a turma antes de tentar novamente.",
+                  "success": "Ótimo! Você organizou a ordem garantindo que todas as vozes apareçam.",
+                },
+                "hints": [
+                  {
+                    "audience": "EDUCADOR",
+                    "text": "Convide educadores a oferecer apoio individual quando necessário.",
+                  },
+                  {
+                    "audience": "EDUCADOR",
+                    "text": "Combine gestos e linguagem simples para garantir compreensão coletiva.",
+                  },
+                  {
+                    "audience": "ESTUDANTE",
+                    "text": "Passo 1: Visualize a ordem de quem fala primeiro, segundo e terceiro.",
+                  },
+                  {
+                    "audience": "ESTUDANTE",
+                    "text": "Passo 2: Observe quais gestos indicam convite, pausa e agradecimento.",
+                  },
+                  {
+                    "audience": "ESTUDANTE",
+                    "text": "Passo 3: Simule a sequência com as mãos antes de confirmar a resposta.",
+                  },
+                  {
+                    "audience": "EDUCADOR",
+                    "text": "Disponibilize cartões com os gestos combinados e organize-os no quadro.",
+                  },
+                  {
+                    "audience": "FAMILIA",
+                    "text": "Compartilhe sugestões para usar cartões de vez de falar nas conversas em casa.",
+                  },
+                ],
+                "motorSupport": [
+                  {
+                    "description": "Utilize painel com velcro e fotos para indicar a ordem de fala.",
+                    "steps": [
+                      "Permita que cada estudante mova sua foto ao confirmar o turno.",
+                      "Ofereça apoio postural durante a participação.",
+                    ],
+                    "title": "PAINEL DE TURNOS",
+                  },
+                ],
+              },
+              "assetSlug": "lp-audio-fones",
+              "assetUsage": "Use o fone como símbolo de que a palavra circula em ritmo combinado entre todos.",
+              "bncc": {
+                "code": "EF01LP18",
+                "habilidades": [
+                  "EF01LP18",
+                  "EF01LP19",
+                ],
+              },
+              "categoria": "Planejamento da roda",
+              "difficultyTier": "DOMINAR",
+              "duracaoMinutos": 10,
+              "familiaEngajamento": "Sugira que as famílias experimentem turnos coreografados durante conversas familiares.",
+              "habilidades": [
+                "EF01LP18",
+                "EF01LP19",
+              ],
+              "habilidadesSecundarias": [
+                "EF01LP19",
+              ],
+              "interactiveSlug": "quiz-turnos-coreografados",
+              "interactiveType": "QUIZ",
+              "prerequisites": [
+                {
+                  "description": "Relembrar os combinados de entrada e saída de fala utilizados pela turma.",
+                  "reference": "EF01LP18",
+                  "type": "SKILL",
+                },
+              ],
+            },
+            "slug": "turnos-coreografados",
+          },
+          {
+            "activityType": "QUIZ",
+            "bnccCode": "EF01LP19",
+            "difficulty": "ADVANCED",
+            "metadata": {
+              "accessibility": {
+                "alternatives": [
+                  {
+                    "description": "Distribua cartões com expressões como 'Você disse que...' e 'Eu entendi que...'.",
+                    "steps": [
+                      "Incentive o uso dos cartões antes de falar.",
+                      "Combine gestos que sinalizem a retomada.",
+                    ],
+                    "title": "CARTÕES DE PARÁFRASE",
+                  },
+                ],
+                "assets": [
+                  {
+                    "altText": "Tapete circular com livro aberto, cartões e almofadas coloridas ao redor prontos para contação.",
+                    "colorProfile": [
+                      "surface-200",
+                      "primary-500",
+                      "secondary-400",
+                      "accent-300",
+                    ],
+                    "hash": "8b45c8f1d5f2",
+                    "license": {
+                      "document": "/assets/ef01/LICENSE.md",
+                      "name": "CC BY 4.0",
+                      "url": "https://creativecommons.org/licenses/by/4.0/",
+                    },
+                    "png": "/assets/ef01/lingua-portuguesa/lp-roda-contacao.png?v=8b45c8f1d5f2",
+                    "recommendedUsage": "Rodas de conversa, contação de histórias e mediação de diálogo.",
+                    "slug": "lp-roda-contacao",
+                    "subject": "lingua-portuguesa",
+                    "theme": "oralidade",
+                    "title": "Tapete para retomada de ideias",
+                    "type": "IMAGEM",
+                    "uri": "/assets/ef01/lingua-portuguesa/lp-roda-contacao.svg?v=8b45c8f1d5f2",
+                  },
+                ],
+                "audioCue": {
+                  "description": "Toque um instrumento suave para indicar que a retomada será feita.",
+                  "steps": [
+                    "Após o som, convide a pessoa a reformular a ideia.",
+                    "Ofereça tempo para que ela se organize.",
+                  ],
+                  "title": "TOQUE DE CONFIRMAÇÃO",
+                },
+                "feedback": {
+                  "accessibility": "Ofereça transcrição escrita das falas, recursos auditivos e tempo extra.",
+                  "encouragement": "Releia a fala original e confira se o sentido foi preservado.",
+                  "retry": "Faça uma paráfrase curta em voz baixa antes de escolher novamente.",
+                  "success": "Ótimo! Você retomou a fala mantendo o sentido e ampliando a ideia.",
+                },
+                "hints": [
+                  {
+                    "audience": "EDUCADOR",
+                    "text": "Convide educadores a oferecer apoio individual quando necessário.",
+                  },
+                  {
+                    "audience": "EDUCADOR",
+                    "text": "Combine gestos e linguagem simples para garantir compreensão coletiva.",
+                  },
+                  {
+                    "audience": "ESTUDANTE",
+                    "text": "Passo 1: Relembre a ideia principal do colega.",
+                  },
+                  {
+                    "audience": "ESTUDANTE",
+                    "text": "Passo 2: Veja se a frase mantém o sentido antes de acrescentar algo novo.",
+                  },
+                  {
+                    "audience": "ESTUDANTE",
+                    "text": "Passo 3: Treine a frase com voz calma e clara antes de responder.",
+                  },
+                  {
+                    "audience": "EDUCADOR",
+                    "text": "Registre no quadro palavras-chave do relato para apoiar a retomada.",
+                  },
+                  {
+                    "audience": "FAMILIA",
+                    "text": "Envie orientações para que as famílias pratiquem paráfrases em conversas cotidianas.",
+                  },
+                ],
+                "motorSupport": [
+                  {
+                    "description": "Disponibilize réguas de leitura ou suportes para acompanhar o texto.",
+                    "steps": [
+                      "Permita que a pessoa deslize a régua conforme lê.",
+                      "Ajuste a altura do material conforme cada necessidade.",
+                    ],
+                    "title": "SUPORTE DE LEITURA",
+                  },
+                ],
+              },
+              "assetSlug": "lp-roda-contacao",
+              "assetUsage": "Utilize a roda como referência visual para mostrar quem falou e quem retomará a ideia.",
+              "bncc": {
+                "code": "EF01LP19",
+                "habilidades": [
+                  "EF01LP19",
+                  "EF01LP20",
+                ],
+              },
+              "categoria": "Reformulação oral",
+              "difficultyTier": "DOMINAR",
+              "duracaoMinutos": 10,
+              "familiaEngajamento": "Sugira que as famílias incentivem a criança a repetir com suas palavras o que ouviu em casa.",
+              "habilidades": [
+                "EF01LP19",
+                "EF01LP20",
+              ],
+              "habilidadesSecundarias": [
+                "EF01LP20",
+              ],
+              "interactiveSlug": "quiz-retomar-ideia",
+              "interactiveType": "QUIZ",
+              "prerequisites": [
+                {
+                  "description": "Revisitar com a turma exemplos de paráfrases realizadas em rodas anteriores.",
+                  "reference": "EF01LP20",
+                  "type": "SKILL",
+                },
+              ],
+            },
+            "slug": "retomar-ideia",
+          },
+          {
+            "activityType": "QUIZ",
+            "bnccCode": "EF01LP18",
+            "difficulty": "ADVANCED",
+            "metadata": {
+              "accessibility": {
+                "alternatives": [
+                  {
+                    "description": "Monte um roteiro com verbos de acolher, convidar e resumir.",
+                    "steps": [
+                      "Entregue o roteiro ao mediador da rodada.",
+                      "Revise os verbos antes de iniciar a conversa.",
+                    ],
+                    "title": "ROTEIRO DE MEDIAÇÃO",
+                  },
+                ],
+                "assets": [
+                  {
+                    "altText": "Fone acolchoado com arco azul, microfone lateral e ondas sonoras coloridas.",
+                    "colorProfile": [
+                      "calm-200",
+                      "primary-600",
+                      "surface-200",
+                      "accent-400",
+                    ],
+                    "hash": "f3b995aa9152",
+                    "license": {
+                      "document": "/assets/ef01/LICENSE.md",
+                      "name": "CC BY 4.0",
+                      "url": "https://creativecommons.org/licenses/by/4.0/",
+                    },
+                    "png": "/assets/ef01/lingua-portuguesa/lp-audio-fones.png?v=f3b995aa9152",
+                    "recommendedUsage": "Atividades de escuta ativa, registro de relatos orais e produção de podcasts.",
+                    "slug": "lp-audio-fones",
+                    "subject": "lingua-portuguesa",
+                    "theme": "oralidade",
+                    "title": "Fone do estudante mediador",
+                    "type": "IMAGEM",
+                    "uri": "/assets/ef01/lingua-portuguesa/lp-audio-fones.svg?v=f3b995aa9152",
+                  },
+                ],
+                "audioCue": {
+                  "description": "Utilize um toque breve de xilofone para indicar trocas conduzidas pelo mediador.",
+                  "steps": [
+                    "Toque o instrumento antes de convidar nova fala.",
+                    "Aguarde o sinal ser compreendido por todos.",
+                  ],
+                  "title": "SINAL DE PASSAGEM",
+                },
+                "feedback": {
+                  "accessibility": "Disponibilize fones com volume ajustável, legendas e apoio motor para quem precisar.",
+                  "encouragement": "Retorne às pistas fornecidas e pense em como acolher cada voz.",
+                  "retry": "Ensaiar rapidamente a função de mediador pode ajudar na próxima tentativa.",
+                  "success": "Excelente! Você mediou a conversa com equilíbrio e respeito.",
+                },
+                "hints": [
+                  {
+                    "audience": "EDUCADOR",
+                    "text": "Convide educadores a oferecer apoio individual quando necessário.",
+                  },
+                  {
+                    "audience": "EDUCADOR",
+                    "text": "Combine gestos e linguagem simples para garantir compreensão coletiva.",
+                  },
+                  {
+                    "audience": "ESTUDANTE",
+                    "text": "Passo 1: Observe quem precisa ser convidado e quem precisa de síntese.",
+                  },
+                  {
+                    "audience": "ESTUDANTE",
+                    "text": "Passo 2: Pense em como acolher a fala antes de chamar o próximo colega.",
+                  },
+                  {
+                    "audience": "ESTUDANTE",
+                    "text": "Passo 3: Treine uma frase que resume o que foi dito antes de seguir.",
+                  },
+                  {
+                    "audience": "EDUCADOR",
+                    "text": "Apoie com cartões indicando convidar, resumir e agradecer.",
+                  },
+                  {
+                    "audience": "FAMILIA",
+                    "text": "Compartilhe dicas para rodízio de mediação em reuniões familiares.",
+                  },
+                ],
+                "motorSupport": [
+                  {
+                    "description": "Ofereça bastão leve com apoio anatômico para simbolizar quem conduz a roda.",
+                    "steps": [
+                      "Adapte empunhadura conforme a necessidade.",
+                      "Planeje pausas para alternância do bastão.",
+                    ],
+                    "title": "BASTÃO DO MEDIADOR",
+                  },
+                ],
+              },
+              "assetSlug": "lp-audio-fones",
+              "assetUsage": "Mostre o fone como símbolo da pessoa mediadora que escuta cada voz com atenção.",
+              "bncc": {
+                "code": "EF01LP18",
+                "habilidades": [
+                  "EF01LP18",
+                  "EF01LP19",
+                  "EF01LP20",
+                ],
+              },
+              "categoria": "Mediação colaborativa",
+              "difficultyTier": "DOMINAR",
+              "duracaoMinutos": 11,
+              "familiaEngajamento": "Oriente as famílias a alternar papéis de mediação em conversas domésticas.",
+              "habilidades": [
+                "EF01LP18",
+                "EF01LP19",
+                "EF01LP20",
+              ],
+              "habilidadesSecundarias": [
+                "EF01LP19",
+                "EF01LP20",
+              ],
+              "interactiveSlug": "quiz-mediacao-do-colega",
+              "interactiveType": "QUIZ",
+              "prerequisites": [
+                {
+                  "description": "Revisitar os combinados de mediação utilizados pela turma em rodas anteriores.",
+                  "reference": "EF01LP18",
+                  "type": "SKILL",
+                },
+              ],
+            },
+            "slug": "mediacao-do-colega",
+          },
+          {
+            "activityType": "QUIZ",
+            "bnccCode": "EF01LP18",
+            "difficulty": "BEGINNER",
+            "metadata": {
+              "accessibility": {
+                "alternatives": [
+                  {
+                    "description": "Ofereça pictogramas que representem ações e sentimentos para colar no caderno.",
+                    "steps": [
+                      "Permita que escolham o pictograma durante a escuta.",
+                      "Reforce que levantem a cabeça após colar o símbolo.",
+                    ],
+                    "title": "BLOCO DE PICTOGRAMAS",
+                  },
+                ],
+                "assets": [
+                  {
+                    "altText": "Caderno espiral colorido com lápis apoiado na capa.",
+                    "colorProfile": [
+                      "surface-200",
+                      "primary-400",
+                      "surface-50",
+                      "secondary-400",
+                    ],
+                    "hash": "f2112bacd495",
+                    "license": {
+                      "document": "/assets/ef01/LICENSE.md",
+                      "name": "CC BY 4.0",
+                      "url": "https://creativecommons.org/licenses/by/4.0/",
+                    },
+                    "png": "/assets/ef01/lingua-portuguesa/lp-material-caderno.png?v=f2112bacd495",
+                    "recommendedUsage": "Cartazes de rotinas de escrita e produção de textos.",
+                    "slug": "lp-material-caderno",
+                    "subject": "lingua-portuguesa",
+                    "theme": "materiais-escolares",
+                    "title": "Caderno de anotações rápidas",
+                    "type": "IMAGEM",
+                    "uri": "/assets/ef01/lingua-portuguesa/lp-material-caderno.svg?v=f2112bacd495",
+                  },
+                ],
+                "audioCue": {
+                  "description": "Combine um toque leve para indicar o momento permitido de anotar.",
+                  "steps": [
+                    "Toque o sinal antes de liberar as anotações.",
+                    "Após o sinal, peça que voltem o olhar para a roda.",
+                  ],
+                  "title": "SINAL DE REGISTRO",
+                },
+                "feedback": {
+                  "accessibility": "Disponibilize caderno ampliado, lápis adaptados e ditado lento conforme necessário.",
+                  "encouragement": "Releia as opções e escolha a palavra ou símbolo que represente a ideia principal.",
+                  "retry": "Respire, anote apenas um sinal rápido e tente novamente.",
+                  "success": "Perfeito! Você escolheu uma anotação que apoia a escuta sem interromper.",
+                },
+                "hints": [
+                  {
+                    "audience": "EDUCADOR",
+                    "text": "Convide educadores a oferecer apoio individual quando necessário.",
+                  },
+                  {
+                    "audience": "EDUCADOR",
+                    "text": "Combine gestos e linguagem simples para garantir compreensão coletiva.",
+                  },
+                  {
+                    "audience": "ESTUDANTE",
+                    "text": "Passo 1: Escute atentamente e identifique a palavra que deseja lembrar.",
+                  },
+                  {
+                    "audience": "ESTUDANTE",
+                    "text": "Passo 2: Registre apenas uma palavra ou símbolo para lembrar do assunto.",
+                  },
+                  {
+                    "audience": "ESTUDANTE",
+                    "text": "Passo 3: Feche o caderno e volte a olhar para o colega enquanto ele fala.",
+                  },
+                  {
+                    "audience": "EDUCADOR",
+                    "text": "Modele anotações curtas no quadro para inspirar a turma.",
+                  },
+                  {
+                    "audience": "FAMILIA",
+                    "text": "Compartilhe dicas para usar símbolos simples em anotações familiares.",
+                  },
+                ],
+                "motorSupport": [
+                  {
+                    "description": "Utilize pranchetas inclinadas e apoios para facilitar o registro breve.",
+                    "steps": [
+                      "Ajuste a altura da prancheta conforme a necessidade.",
+                      "Permita pausas curtas para relaxamento das mãos.",
+                    ],
+                    "title": "SUPORTE DE PULSO",
+                  },
+                ],
+              },
+              "assetSlug": "lp-material-caderno",
+              "assetUsage": "Mostre o caderno como espaço de apoio para anotar palavras-chave durante a roda.",
+              "bncc": {
+                "code": "EF01LP18",
+                "habilidades": [
+                  "EF01LP18",
+                  "EF01LP20",
+                ],
+              },
+              "categoria": "Registro rápido",
+              "difficultyTier": "INICIAR",
+              "duracaoMinutos": 8,
+              "familiaEngajamento": "Sugira que as famílias usem blocos de notas para registrar ideias durante conversas em casa.",
+              "habilidades": [
+                "EF01LP18",
+                "EF01LP20",
+              ],
+              "habilidadesSecundarias": [
+                "EF01LP20",
+              ],
+              "interactiveSlug": "quiz-escuta-com-anotacoes",
+              "interactiveType": "QUIZ",
+              "prerequisites": [
+                {
+                  "description": "Relembrar com a turma como focar no colega enquanto realiza anotações curtas.",
+                  "reference": "EF01LP18",
+                  "type": "SKILL",
+                },
+              ],
+            },
+            "slug": "escuta-com-anotacoes",
+          },
+          {
+            "activityType": "QUIZ",
+            "bnccCode": "EF01LP19",
+            "difficulty": "ADVANCED",
+            "metadata": {
+              "accessibility": {
+                "alternatives": [
+                  {
+                    "description": "Utilize cartões coloridos para representar concordância, dúvida e sugestão.",
+                    "steps": [
+                      "Peça que levantem o cartão correspondente antes de falar.",
+                      "Conecte as cores às falas escutadas para apoiar a resposta.",
+                    ],
+                    "title": "TERMÔMETRO DE OPINIÕES",
+                  },
+                ],
+                "assets": [
+                  {
+                    "altText": "Tapete circular com livro aberto, cartões e almofadas coloridas ao redor prontos para contação.",
+                    "colorProfile": [
+                      "surface-200",
+                      "primary-500",
+                      "secondary-400",
+                      "accent-300",
+                    ],
+                    "hash": "8b45c8f1d5f2",
+                    "license": {
+                      "document": "/assets/ef01/LICENSE.md",
+                      "name": "CC BY 4.0",
+                      "url": "https://creativecommons.org/licenses/by/4.0/",
+                    },
+                    "png": "/assets/ef01/lingua-portuguesa/lp-roda-contacao.png?v=8b45c8f1d5f2",
+                    "recommendedUsage": "Rodas de conversa, contação de histórias e mediação de diálogo.",
+                    "slug": "lp-roda-contacao",
+                    "subject": "lingua-portuguesa",
+                    "theme": "oralidade",
+                    "title": "Tapete de escuta de pontos de vista",
+                    "type": "IMAGEM",
+                    "uri": "/assets/ef01/lingua-portuguesa/lp-roda-contacao.svg?v=8b45c8f1d5f2",
+                  },
+                ],
+                "audioCue": {
+                  "description": "Toque uma campainha suave para lembrar que opiniões diferentes serão consideradas.",
+                  "steps": [
+                    "Combine o sinal antes da atividade.",
+                    "Após o toque, convide a pessoa a mencionar os dois pontos.",
+                  ],
+                  "title": "CAMPANHIA DE ESCUTA",
+                },
+                "feedback": {
+                  "accessibility": "Disponibilize legendas, leitura em voz alta e apoio visual com ícones de sentimento.",
+                  "encouragement": "Releia as falas dos colegas e tente novamente considerando os detalhes mencionados.",
+                  "retry": "Faça uma pausa, respire e comece sua resposta citando quem falou primeiro.",
+                  "success": "Excelente! Você reconheceu os pontos de vista antes de apresentar sua ideia.",
+                },
+                "hints": [
+                  {
+                    "audience": "EDUCADOR",
+                    "text": "Convide educadores a oferecer apoio individual quando necessário.",
+                  },
+                  {
+                    "audience": "EDUCADOR",
+                    "text": "Combine gestos e linguagem simples para garantir compreensão coletiva.",
+                  },
+                  {
+                    "audience": "ESTUDANTE",
+                    "text": "Passo 1: Identifique o que cada colega sentiu ou pensou.",
+                  },
+                  {
+                    "audience": "ESTUDANTE",
+                    "text": "Passo 2: Procure respostas que mencionem os dois pontos antes de comentar.",
+                  },
+                  {
+                    "audience": "ESTUDANTE",
+                    "text": "Passo 3: Ajuste sua voz para mostrar respeito ao falar.",
+                  },
+                  {
+                    "audience": "EDUCADOR",
+                    "text": "Registre em duas colunas as ideias de cada colega para apoiar a turma.",
+                  },
+                  {
+                    "audience": "FAMILIA",
+                    "text": "Envie orientações sobre como valorizar opiniões diferentes em casa.",
+                  },
+                ],
+                "motorSupport": [
+                  {
+                    "description": "Disponibilize cartaz com pictogramas de sentimentos para apontar enquanto se fala.",
+                    "steps": [
+                      "Incentive apontar para o sentimento mencionado antes de responder.",
+                      "Ajuste o cartaz à altura dos estudantes.",
+                    ],
+                    "title": "CARTAZ DE SENTIMENTOS",
+                  },
+                ],
+              },
+              "assetSlug": "lp-roda-contacao",
+              "assetUsage": "Use a roda para evidenciar que todos têm espaço para expressar seu ponto de vista.",
+              "bncc": {
+                "code": "EF01LP19",
+                "habilidades": [
+                  "EF01LP19",
+                  "EF01LP20",
+                ],
+              },
+              "categoria": "Perspectivas na roda",
+              "difficultyTier": "DOMINAR",
+              "duracaoMinutos": 11,
+              "familiaEngajamento": "Sugira que as famílias pratiquem responder reconhecendo emoções e ideias antes de apresentar a própria opinião.",
+              "habilidades": [
+                "EF01LP19",
+                "EF01LP20",
+              ],
+              "habilidadesSecundarias": [
+                "EF01LP20",
+              ],
+              "interactiveSlug": "quiz-pontos-de-vista",
+              "interactiveType": "QUIZ",
+              "prerequisites": [
+                {
+                  "description": "Revisitar com a turma como acolher diferentes opiniões em rodas de conversa.",
+                  "reference": "EF01LP19",
+                  "type": "SKILL",
+                },
+              ],
+            },
+            "slug": "pontos-de-vista",
+          },
+        ],
+        "activityCount": 12,
+        "primaryBnccCode": "EF01LP18",
+        "slug": "escuta-em-roda",
+        "stage": "ef01",
+        "subjectSlug": "lingua-portuguesa",
+      },
+      {
+        "activities": [
+          {
             "activityType": "GAME",
             "bnccCode": "EM13MAT305",
             "difficulty": "ADVANCED",
@@ -11881,6 +13699,1539 @@ exports[`content build > gera artefatos determinísticos a partir do workspace 1
         "activityCount": 13,
         "primaryBnccCode": "EF01LP07",
         "slug": "frases-divertidas",
+        "stage": "ef01",
+        "subjectSlug": "lingua-portuguesa",
+      },
+      {
+        "activities": [
+          {
+            "activityType": "QUIZ",
+            "bnccCode": "EF01LP19",
+            "difficulty": "BEGINNER",
+            "metadata": {
+              "accessibility": {
+                "alternatives": [
+                  {
+                    "description": "Monte uma miniatura do cenário com blocos ou bonecos para apoiar a escolha.",
+                    "steps": [
+                      "Posicione os personagens conforme cada opção.",
+                      "Releia a descrição enquanto aponta a cena na maquete.",
+                    ],
+                    "title": "MAQUETE DE CENA",
+                  },
+                ],
+                "assets": [
+                  {
+                    "altText": "Tapete circular com livro aberto, cartões e almofadas coloridas ao redor prontos para contação.",
+                    "colorProfile": [
+                      "surface-200",
+                      "primary-500",
+                      "secondary-400",
+                      "accent-300",
+                    ],
+                    "hash": "8b45c8f1d5f2",
+                    "license": {
+                      "document": "/assets/ef01/LICENSE.md",
+                      "name": "CC BY 4.0",
+                      "url": "https://creativecommons.org/licenses/by/4.0/",
+                    },
+                    "png": "/assets/ef01/lingua-portuguesa/lp-roda-contacao.png?v=8b45c8f1d5f2",
+                    "recommendedUsage": "Rodas de conversa, contação de histórias e mediação de diálogo.",
+                    "slug": "lp-roda-contacao",
+                    "subject": "lingua-portuguesa",
+                    "theme": "oralidade",
+                    "title": "Roda com cartões de abertura",
+                    "type": "IMAGEM",
+                    "uri": "/assets/ef01/lingua-portuguesa/lp-roda-contacao.svg?v=8b45c8f1d5f2",
+                  },
+                ],
+                "audioCue": {
+                  "description": "Utilize um sino suave para indicar o momento de revisar a cena inicial.",
+                  "steps": [
+                    "Toque o sino antes de mostrar as opções.",
+                    "Aguarde alguns segundos para a turma visualizar cada cena.",
+                  ],
+                  "title": "SINO DE INÍCIO",
+                },
+                "feedback": {
+                  "accessibility": "Ofereça imagens ampliadas, descrição oral e tempo extra para análise das cenas.",
+                  "encouragement": "Volte ao relato e procure quem apareceu primeiro e onde tudo começou.",
+                  "retry": "Faça uma lista com personagem, lugar e tempo antes de escolher novamente.",
+                  "success": "Excelente! Você identificou a cena que apresenta a história com clareza.",
+                },
+                "hints": [
+                  {
+                    "audience": "EDUCADOR",
+                    "text": "Convide educadores a oferecer apoio individual quando necessário.",
+                  },
+                  {
+                    "audience": "EDUCADOR",
+                    "text": "Combine gestos e linguagem simples para garantir compreensão coletiva.",
+                  },
+                  {
+                    "audience": "ESTUDANTE",
+                    "text": "Passo 1: Relembre o começo da história e quem apareceu primeiro.",
+                  },
+                  {
+                    "audience": "ESTUDANTE",
+                    "text": "Passo 2: Observe qual opção mostra o cenário e os personagens antes do conflito.",
+                  },
+                  {
+                    "audience": "ESTUDANTE",
+                    "text": "Passo 3: Compartilhe com a dupla por que a cena escolhida apresenta bem a história.",
+                  },
+                  {
+                    "audience": "EDUCADOR",
+                    "text": "Disponibilize cartões com personagens e lugares para apoiar a decisão.",
+                  },
+                  {
+                    "audience": "FAMILIA",
+                    "text": "Envie orientações sobre como nomear personagens e espaços ao iniciar histórias em casa.",
+                  },
+                ],
+                "motorSupport": [
+                  {
+                    "description": "Disponibilize cartões magnéticos que possam ser manipulados em painel vertical.",
+                    "steps": [
+                      "Permita que posicionem os cartões com apoio de ponteiras.",
+                      "Ofereça estabilizadores de pulso para quem precisar.",
+                    ],
+                    "title": "CARTÕES MAGNÉTICOS",
+                  },
+                ],
+              },
+              "assetSlug": "lp-roda-contacao",
+              "assetUsage": "Utilize o tapete de contação para posicionar cartões com personagens e espaços do início da história.",
+              "bncc": {
+                "code": "EF01LP19",
+                "habilidades": [
+                  "EF01LP19",
+                ],
+              },
+              "categoria": "Planejamento de cena",
+              "difficultyTier": "INICIAR",
+              "duracaoMinutos": 8,
+              "familiaEngajamento": "Convide as famílias a assistir a vídeos curtos e identificar juntos o momento de abertura do enredo.",
+              "habilidades": [
+                "EF01LP19",
+              ],
+              "interactiveSlug": "quiz-cena-de-abertura",
+              "interactiveType": "QUIZ",
+              "prerequisites": [
+                {
+                  "description": "Recordar com a turma como identificar personagens e cenário no início de um relato.",
+                  "reference": "EF01LP19",
+                  "type": "SKILL",
+                },
+              ],
+            },
+            "slug": "cena-de-abertura",
+          },
+          {
+            "activityType": "QUIZ",
+            "bnccCode": "EF01LP19",
+            "difficulty": "BEGINNER",
+            "metadata": {
+              "accessibility": {
+                "alternatives": [
+                  {
+                    "description": "Use máscaras com expressões para apoiar a escolha da voz.",
+                    "steps": [
+                      "Combine a máscara com a voz antes de responder.",
+                      "Discuta com a turma como a expressão ajuda a ajustar a fala.",
+                    ],
+                    "title": "MÁSCARAS EMOCIONAIS",
+                  },
+                ],
+                "assets": [
+                  {
+                    "altText": "Fone acolchoado com arco azul, microfone lateral e ondas sonoras coloridas.",
+                    "colorProfile": [
+                      "calm-200",
+                      "primary-600",
+                      "surface-200",
+                      "accent-400",
+                    ],
+                    "hash": "f3b995aa9152",
+                    "license": {
+                      "document": "/assets/ef01/LICENSE.md",
+                      "name": "CC BY 4.0",
+                      "url": "https://creativecommons.org/licenses/by/4.0/",
+                    },
+                    "png": "/assets/ef01/lingua-portuguesa/lp-audio-fones.png?v=f3b995aa9152",
+                    "recommendedUsage": "Atividades de escuta ativa, registro de relatos orais e produção de podcasts.",
+                    "slug": "lp-audio-fones",
+                    "subject": "lingua-portuguesa",
+                    "theme": "oralidade",
+                    "title": "Fone para explorar vozes",
+                    "type": "IMAGEM",
+                    "uri": "/assets/ef01/lingua-portuguesa/lp-audio-fones.svg?v=f3b995aa9152",
+                  },
+                ],
+                "audioCue": {
+                  "description": "Marque a troca de personagem com batidas leves em tambor.",
+                  "steps": [
+                    "Realize três batidas antes da nova fala.",
+                    "Peça para todos imitarem a entonação sugerida.",
+                  ],
+                  "title": "BATIDA RÍTMICA",
+                },
+                "feedback": {
+                  "accessibility": "Disponibilize legendas, apoio auditivo individual e tempo ampliado para ensaios.",
+                  "encouragement": "Releia a cena e perceba pistas sobre o humor e a intenção do personagem.",
+                  "retry": "Respire, teste a fala em voz alta e faça outra tentativa.",
+                  "success": "Muito bem! Sua escolha combinou com o sentimento do personagem.",
+                },
+                "hints": [
+                  {
+                    "audience": "EDUCADOR",
+                    "text": "Convide educadores a oferecer apoio individual quando necessário.",
+                  },
+                  {
+                    "audience": "EDUCADOR",
+                    "text": "Combine gestos e linguagem simples para garantir compreensão coletiva.",
+                  },
+                  {
+                    "audience": "ESTUDANTE",
+                    "text": "Passo 1: Relembre como o personagem se sente na cena apresentada.",
+                  },
+                  {
+                    "audience": "ESTUDANTE",
+                    "text": "Passo 2: Ouça ou imagine a voz com calma antes de decidir.",
+                  },
+                  {
+                    "audience": "ESTUDANTE",
+                    "text": "Passo 3: Repita a fala escolhida para confirmar se combina com o personagem.",
+                  },
+                  {
+                    "audience": "EDUCADOR",
+                    "text": "Modele entonações diferentes utilizando gestos que indiquem sentimentos.",
+                  },
+                  {
+                    "audience": "FAMILIA",
+                    "text": "Compartilhe sugestões de brincadeiras com vozes e expressões em casa.",
+                  },
+                ],
+                "motorSupport": [
+                  {
+                    "description": "Ofereça cartões com passos de respiração para controlar a voz.",
+                    "steps": [
+                      "Inspire contando até três antes de começar a fala.",
+                      "Solte a voz devagar, acompanhando o ritmo indicado.",
+                    ],
+                    "title": "GUIA DE RESPIRAÇÃO",
+                  },
+                ],
+              },
+              "assetSlug": "lp-audio-fones",
+              "assetUsage": "Mostre o fone para lembrar que ouvir as pistas sonoras ajuda a ajustar a voz.",
+              "bncc": {
+                "code": "EF01LP19",
+                "habilidades": [
+                  "EF01LP19",
+                  "EF01LP20",
+                ],
+              },
+              "categoria": "Expressividade vocal",
+              "difficultyTier": "INICIAR",
+              "duracaoMinutos": 9,
+              "familiaEngajamento": "Sugira que as famílias conversem sobre sentimentos usando diferentes entonações.",
+              "habilidades": [
+                "EF01LP19",
+                "EF01LP20",
+              ],
+              "habilidadesSecundarias": [
+                "EF01LP20",
+              ],
+              "interactiveSlug": "quiz-voz-de-personagem",
+              "interactiveType": "QUIZ",
+              "prerequisites": [
+                {
+                  "description": "Retomar com a turma como as emoções aparecem na fala dos personagens.",
+                  "reference": "EF01LP20",
+                  "type": "SKILL",
+                },
+              ],
+            },
+            "slug": "voz-de-personagem",
+          },
+          {
+            "activityType": "QUIZ",
+            "bnccCode": "EF01LP19",
+            "difficulty": "BEGINNER",
+            "metadata": {
+              "accessibility": {
+                "alternatives": [
+                  {
+                    "description": "Entregue cartões plastificados para manipular com facilidade.",
+                    "steps": [
+                      "Espalhe os cartões sobre a mesa antes da escolha.",
+                      "Permita que estudantes com dificuldades motoras usem suportes magnéticos.",
+                    ],
+                    "title": "BARALHO DE CENAS",
+                  },
+                ],
+                "assets": [
+                  {
+                    "altText": "Tapete circular com livro aberto, cartões e almofadas coloridas ao redor prontos para contação.",
+                    "colorProfile": [
+                      "surface-200",
+                      "primary-500",
+                      "secondary-400",
+                      "accent-300",
+                    ],
+                    "hash": "8b45c8f1d5f2",
+                    "license": {
+                      "document": "/assets/ef01/LICENSE.md",
+                      "name": "CC BY 4.0",
+                      "url": "https://creativecommons.org/licenses/by/4.0/",
+                    },
+                    "png": "/assets/ef01/lingua-portuguesa/lp-roda-contacao.png?v=8b45c8f1d5f2",
+                    "recommendedUsage": "Rodas de conversa, contação de histórias e mediação de diálogo.",
+                    "slug": "lp-roda-contacao",
+                    "subject": "lingua-portuguesa",
+                    "theme": "oralidade",
+                    "title": "Tapete com cenas ordenadas",
+                    "type": "IMAGEM",
+                    "uri": "/assets/ef01/lingua-portuguesa/lp-roda-contacao.svg?v=8b45c8f1d5f2",
+                  },
+                ],
+                "audioCue": {
+                  "description": "Bata levemente três vezes para indicar quando é hora de trocar a cena.",
+                  "steps": [
+                    "Toque sempre que a próxima imagem deva ser analisada.",
+                    "Aguarde que todos reposicionem os cartões.",
+                  ],
+                  "title": "BATIDA DE TRANSIÇÃO",
+                },
+                "feedback": {
+                  "accessibility": "Ofereça ampliação das imagens, contraste alto e apoio verbal para descrição.",
+                  "encouragement": "Revise as pistas das imagens e reorganize conforme necessário.",
+                  "retry": "Use setas ou números no caderno antes de tentar novamente.",
+                  "success": "Ótimo! Você organizou as cenas mantendo a história coerente.",
+                },
+                "hints": [
+                  {
+                    "audience": "EDUCADOR",
+                    "text": "Convide educadores a oferecer apoio individual quando necessário.",
+                  },
+                  {
+                    "audience": "EDUCADOR",
+                    "text": "Combine gestos e linguagem simples para garantir compreensão coletiva.",
+                  },
+                  {
+                    "audience": "ESTUDANTE",
+                    "text": "Passo 1: Observe cada imagem e relembre o que aconteceu nela.",
+                  },
+                  {
+                    "audience": "ESTUDANTE",
+                    "text": "Passo 2: Procure pistas como personagens e objetos que indicam antes e depois.",
+                  },
+                  {
+                    "audience": "ESTUDANTE",
+                    "text": "Passo 3: Diga em voz alta a sequência escolhida para verificar se faz sentido.",
+                  },
+                  {
+                    "audience": "EDUCADOR",
+                    "text": "Disponibilize etiquetas com números ou palavras como início, meio e fim.",
+                  },
+                  {
+                    "audience": "FAMILIA",
+                    "text": "Incentive que contem histórias usando fotos da família para reforçar a ordem.",
+                  },
+                ],
+                "motorSupport": [
+                  {
+                    "description": "Utilize trilhos de velcro horizontais para fixar as imagens em ordem.",
+                    "steps": [
+                      "Posicione as imagens com apoio de ponteiras.",
+                      "Permita ajustes sem perder a sequência.",
+                    ],
+                    "title": "TRILHO DE VELCRO",
+                  },
+                ],
+              },
+              "assetSlug": "lp-roda-contacao",
+              "assetUsage": "Monte no tapete as imagens numeradas para apoiar a ordenação.",
+              "bncc": {
+                "code": "EF01LP19",
+                "habilidades": [
+                  "EF01LP19",
+                ],
+              },
+              "categoria": "Organização narrativa",
+              "difficultyTier": "INICIAR",
+              "duracaoMinutos": 8,
+              "familiaEngajamento": "Sugira que as famílias criem histórias com cartões numerados, pedindo às crianças que contem em ordem.",
+              "habilidades": [
+                "EF01LP19",
+              ],
+              "interactiveSlug": "quiz-sequencia-de-imagens",
+              "interactiveType": "QUIZ",
+              "prerequisites": [
+                {
+                  "description": "Relembrar com a turma histórias curtas já organizadas em início, meio e fim.",
+                  "reference": "EF01LP19",
+                  "type": "SKILL",
+                },
+              ],
+            },
+            "slug": "sequencia-de-imagens",
+          },
+          {
+            "activityType": "QUIZ",
+            "bnccCode": "EF01LP18",
+            "difficulty": "INTERMEDIATE",
+            "metadata": {
+              "accessibility": {
+                "alternatives": [
+                  {
+                    "description": "Combine luz de cor diferente para narrador e personagens.",
+                    "steps": [
+                      "Acenda a luz correspondente a cada fala.",
+                      "Permita que estudantes acionem o botão com apoio motriz.",
+                    ],
+                    "title": "LUZES DE CENA",
+                  },
+                ],
+                "assets": [
+                  {
+                    "altText": "Fone acolchoado com arco azul, microfone lateral e ondas sonoras coloridas.",
+                    "colorProfile": [
+                      "calm-200",
+                      "primary-600",
+                      "surface-200",
+                      "accent-400",
+                    ],
+                    "hash": "f3b995aa9152",
+                    "license": {
+                      "document": "/assets/ef01/LICENSE.md",
+                      "name": "CC BY 4.0",
+                      "url": "https://creativecommons.org/licenses/by/4.0/",
+                    },
+                    "png": "/assets/ef01/lingua-portuguesa/lp-audio-fones.png?v=f3b995aa9152",
+                    "recommendedUsage": "Atividades de escuta ativa, registro de relatos orais e produção de podcasts.",
+                    "slug": "lp-audio-fones",
+                    "subject": "lingua-portuguesa",
+                    "theme": "oralidade",
+                    "title": "Fone para transição de vozes",
+                    "type": "IMAGEM",
+                    "uri": "/assets/ef01/lingua-portuguesa/lp-audio-fones.svg?v=f3b995aa9152",
+                  },
+                ],
+                "audioCue": {
+                  "description": "Bata palmas suaves duas vezes quando o narrador retomar a história.",
+                  "steps": [
+                    "Explique que o som indica troca de voz.",
+                    "Aguarde silêncio antes de continuar.",
+                  ],
+                  "title": "MARCADOR DE PAUSA",
+                },
+                "feedback": {
+                  "accessibility": "Ofereça suporte auditivo individual, legendas e tempo estendido.",
+                  "encouragement": "Releia as falas e marque quem fala em cada momento antes de decidir.",
+                  "retry": "Treine a transição com palmas leves e tente novamente.",
+                  "success": "Excelente! Você organizou a troca de vozes de forma harmoniosa.",
+                },
+                "hints": [
+                  {
+                    "audience": "EDUCADOR",
+                    "text": "Convide educadores a oferecer apoio individual quando necessário.",
+                  },
+                  {
+                    "audience": "EDUCADOR",
+                    "text": "Combine gestos e linguagem simples para garantir compreensão coletiva.",
+                  },
+                  {
+                    "audience": "ESTUDANTE",
+                    "text": "Passo 1: Identifique quem está falando em cada trecho.",
+                  },
+                  {
+                    "audience": "ESTUDANTE",
+                    "text": "Passo 2: Pense no sinal que a turma usa para mudar de narrador para personagem.",
+                  },
+                  {
+                    "audience": "ESTUDANTE",
+                    "text": "Passo 3: Escolha a opção que mantém o ritmo sem interrupções.",
+                  },
+                  {
+                    "audience": "EDUCADOR",
+                    "text": "Use cartões com as palavras narrador e personagem para apoiar.",
+                  },
+                  {
+                    "audience": "FAMILIA",
+                    "text": "Compartilhe dicas de como fazer pausas curtas entre as falas em casa.",
+                  },
+                ],
+                "motorSupport": [
+                  {
+                    "description": "Disponibilize varinha leve para apontar quem fala a seguir.",
+                    "steps": [
+                      "Entregue ao narrador no início da cena.",
+                      "Passe a varinha para o personagem ao final da fala.",
+                    ],
+                    "title": "VARINHA DE TRANSIÇÃO",
+                  },
+                ],
+              },
+              "assetSlug": "lp-audio-fones",
+              "assetUsage": "Mostre o fone para indicar quando a voz do narrador precisa ser retomada.",
+              "bncc": {
+                "code": "EF01LP18",
+                "habilidades": [
+                  "EF01LP18",
+                  "EF01LP19",
+                ],
+              },
+              "categoria": "Fluxo narrativo",
+              "difficultyTier": "PRATICAR",
+              "duracaoMinutos": 9,
+              "familiaEngajamento": "Oriente as famílias a dramatizar diálogos, alternando quem narra e quem interpreta.",
+              "habilidades": [
+                "EF01LP18",
+                "EF01LP19",
+              ],
+              "habilidadesSecundarias": [
+                "EF01LP19",
+              ],
+              "interactiveSlug": "quiz-ritmo-da-narrativa",
+              "interactiveType": "QUIZ",
+              "prerequisites": [
+                {
+                  "description": "Relembrar os sinais combinados para alternar falas durante as rodas de conversa.",
+                  "reference": "EF01LP18",
+                  "type": "SKILL",
+                },
+              ],
+            },
+            "slug": "ritmo-da-narrativa",
+          },
+          {
+            "activityType": "QUIZ",
+            "bnccCode": "EF01LP18",
+            "difficulty": "BEGINNER",
+            "metadata": {
+              "accessibility": {
+                "alternatives": [
+                  {
+                    "description": "Entregue cartões com ícones para apoiar a formulação das perguntas.",
+                    "steps": [
+                      "Escolha o cartão que representa o sentimento desejado.",
+                      "Formule a pergunta a partir desse cartão.",
+                    ],
+                    "title": "CARTÕES DE SENTIMENTO",
+                  },
+                ],
+                "assets": [
+                  {
+                    "altText": "Fone acolchoado com arco azul, microfone lateral e ondas sonoras coloridas.",
+                    "colorProfile": [
+                      "calm-200",
+                      "primary-600",
+                      "surface-200",
+                      "accent-400",
+                    ],
+                    "hash": "f3b995aa9152",
+                    "license": {
+                      "document": "/assets/ef01/LICENSE.md",
+                      "name": "CC BY 4.0",
+                      "url": "https://creativecommons.org/licenses/by/4.0/",
+                    },
+                    "png": "/assets/ef01/lingua-portuguesa/lp-audio-fones.png?v=f3b995aa9152",
+                    "recommendedUsage": "Atividades de escuta ativa, registro de relatos orais e produção de podcasts.",
+                    "slug": "lp-audio-fones",
+                    "subject": "lingua-portuguesa",
+                    "theme": "oralidade",
+                    "title": "Fone para feedback vocal",
+                    "type": "IMAGEM",
+                    "uri": "/assets/ef01/lingua-portuguesa/lp-audio-fones.svg?v=f3b995aa9152",
+                  },
+                ],
+                "audioCue": {
+                  "description": "Utilize uma campainha para marcar o momento de fazer perguntas.",
+                  "steps": [
+                    "Toque antes de abrir o espaço de perguntas.",
+                    "Aguarde silêncio antes da resposta.",
+                  ],
+                  "title": "CAMPANHIA SUAVE",
+                },
+                "feedback": {
+                  "accessibility": "Disponibilize cartões com diferentes sentimentos e perguntas-modelo.",
+                  "encouragement": "Relembre o objetivo da cena antes de perguntar novamente.",
+                  "retry": "Anote palavras que representem o sentimento e tente outra vez.",
+                  "success": "Excelente! Sua pergunta ajuda o colega a melhorar a voz.",
+                },
+                "hints": [
+                  {
+                    "audience": "EDUCADOR",
+                    "text": "Convide educadores a oferecer apoio individual quando necessário.",
+                  },
+                  {
+                    "audience": "EDUCADOR",
+                    "text": "Combine gestos e linguagem simples para garantir compreensão coletiva.",
+                  },
+                  {
+                    "audience": "ESTUDANTE",
+                    "text": "Passo 1: Pense em como o personagem deveria soar na cena.",
+                  },
+                  {
+                    "audience": "ESTUDANTE",
+                    "text": "Passo 2: Formule uma pergunta que ajude o colega a ajustar a voz.",
+                  },
+                  {
+                    "audience": "ESTUDANTE",
+                    "text": "Passo 3: Verifique se a pergunta demonstra cuidado e respeito.",
+                  },
+                  {
+                    "audience": "EDUCADOR",
+                    "text": "Registre modelos de perguntas colaborativas no quadro.",
+                  },
+                  {
+                    "audience": "FAMILIA",
+                    "text": "Compartilhe exemplos de perguntas encorajadoras para usar em casa.",
+                  },
+                ],
+                "motorSupport": [
+                  {
+                    "description": "Use quadro com encaixes para posicionar cartões de pergunta.",
+                    "steps": [
+                      "Posicione o cartão escolhido usando velcro.",
+                      "Leia a pergunta apoiando-se no quadro.",
+                    ],
+                    "title": "QUADRO DE PERGUNTAS",
+                  },
+                ],
+              },
+              "assetSlug": "lp-audio-fones",
+              "assetUsage": "Utilize o fone para lembrar que ouvir com atenção ajuda a fazer perguntas úteis.",
+              "bncc": {
+                "code": "EF01LP18",
+                "habilidades": [
+                  "EF01LP18",
+                  "EF01LP20",
+                ],
+              },
+              "categoria": "Feedback construtivo",
+              "difficultyTier": "INICIAR",
+              "duracaoMinutos": 8,
+              "familiaEngajamento": "Oriente as famílias a fazer perguntas gentis quando praticarem histórias em casa.",
+              "habilidades": [
+                "EF01LP18",
+                "EF01LP20",
+              ],
+              "habilidadesSecundarias": [
+                "EF01LP20",
+              ],
+              "interactiveSlug": "quiz-perguntas-para-voz",
+              "interactiveType": "QUIZ",
+              "prerequisites": [
+                {
+                  "description": "Relembrar com a turma perguntas respeitosas utilizadas em rodas anteriores.",
+                  "reference": "EF01LP18",
+                  "type": "SKILL",
+                },
+              ],
+            },
+            "slug": "perguntas-para-voz",
+          },
+          {
+            "activityType": "QUIZ",
+            "bnccCode": "EF01LP19",
+            "difficulty": "INTERMEDIATE",
+            "metadata": {
+              "accessibility": {
+                "alternatives": [
+                  {
+                    "description": "Use roletas com palavras como antes, depois e finalmente.",
+                    "steps": [
+                      "Gire a roleta para escolher um marcador.",
+                      "Teste o marcador na frase antes de confirmar.",
+                    ],
+                    "title": "ROLETAS DE TEMPO",
+                  },
+                ],
+                "assets": [
+                  {
+                    "altText": "Caderno espiral colorido com lápis apoiado na capa.",
+                    "colorProfile": [
+                      "surface-200",
+                      "primary-400",
+                      "surface-50",
+                      "secondary-400",
+                    ],
+                    "hash": "f2112bacd495",
+                    "license": {
+                      "document": "/assets/ef01/LICENSE.md",
+                      "name": "CC BY 4.0",
+                      "url": "https://creativecommons.org/licenses/by/4.0/",
+                    },
+                    "png": "/assets/ef01/lingua-portuguesa/lp-material-caderno.png?v=f2112bacd495",
+                    "recommendedUsage": "Cartazes de rotinas de escrita e produção de textos.",
+                    "slug": "lp-material-caderno",
+                    "subject": "lingua-portuguesa",
+                    "theme": "materiais-escolares",
+                    "title": "Caderno com marcadores coloridos",
+                    "type": "IMAGEM",
+                    "uri": "/assets/ef01/lingua-portuguesa/lp-material-caderno.svg?v=f2112bacd495",
+                  },
+                ],
+                "audioCue": {
+                  "description": "Toque um pêndulo suave para lembrar a passagem do tempo.",
+                  "steps": [
+                    "Sincronize o som com a leitura da frase.",
+                    "Aguarde silêncio antes de anunciar a resposta.",
+                  ],
+                  "title": "BATIDA DO RELÓGIO",
+                },
+                "feedback": {
+                  "accessibility": "Disponibilize cartões com marcadores em caixa alta, áudio de apoio e tempo extra.",
+                  "encouragement": "Releia as cenas e compare cada marcador.",
+                  "retry": "Experimente trocar apenas o marcador e veja como a frase muda.",
+                  "success": "Perfeito! O marcador conecta bem as cenas.",
+                },
+                "hints": [
+                  {
+                    "audience": "EDUCADOR",
+                    "text": "Convide educadores a oferecer apoio individual quando necessário.",
+                  },
+                  {
+                    "audience": "EDUCADOR",
+                    "text": "Combine gestos e linguagem simples para garantir compreensão coletiva.",
+                  },
+                  {
+                    "audience": "ESTUDANTE",
+                    "text": "Passo 1: Relembre as cenas e perceba a ordem em que aconteceram.",
+                  },
+                  {
+                    "audience": "ESTUDANTE",
+                    "text": "Passo 2: Identifique qual marcador deixa clara a passagem de tempo.",
+                  },
+                  {
+                    "audience": "ESTUDANTE",
+                    "text": "Passo 3: Leia em voz alta para verificar se a frase faz sentido.",
+                  },
+                  {
+                    "audience": "EDUCADOR",
+                    "text": "Liste marcadores no quadro e destaque seus usos.",
+                  },
+                  {
+                    "audience": "FAMILIA",
+                    "text": "Compartilhe exemplos simples de marcadores para usar em casa.",
+                  },
+                ],
+                "motorSupport": [
+                  {
+                    "description": "Disponibilize fitas com marcadores acoplados por velcro.",
+                    "steps": [
+                      "Permita movimentar os marcadores com apoio de ponteiras.",
+                      "Ajuste a altura da lista para diferentes estaturas.",
+                    ],
+                    "title": "LISTA MANIPULÁVEL",
+                  },
+                ],
+              },
+              "assetSlug": "lp-material-caderno",
+              "assetUsage": "Use o caderno para registrar os marcadores escolhidos e reutilizá-los em outras cenas.",
+              "bncc": {
+                "code": "EF01LP19",
+                "habilidades": [
+                  "EF01LP19",
+                ],
+              },
+              "categoria": "Coesão temporal",
+              "difficultyTier": "PRATICAR",
+              "duracaoMinutos": 9,
+              "familiaEngajamento": "Recomende que as famílias conversem sobre o dia usando palavras como depois e por fim.",
+              "habilidades": [
+                "EF01LP19",
+              ],
+              "interactiveSlug": "quiz-marcadores-de-tempo",
+              "interactiveType": "QUIZ",
+              "prerequisites": [
+                {
+                  "description": "Revisitar marcadores temporais simples já utilizados pela turma.",
+                  "reference": "EF01LP19",
+                  "type": "SKILL",
+                },
+              ],
+            },
+            "slug": "marcadores-de-tempo",
+          },
+          {
+            "activityType": "QUIZ",
+            "bnccCode": "EF01LP19",
+            "difficulty": "INTERMEDIATE",
+            "metadata": {
+              "accessibility": {
+                "alternatives": [
+                  {
+                    "description": "Distribua cartões com palavras-chave para cada participante.",
+                    "steps": [
+                      "Use o cartão como gatilho para a fala.",
+                      "Aponte para o próximo cartão ao finalizar.",
+                    ],
+                    "title": "CÍRCULO DE CARTÕES",
+                  },
+                ],
+                "assets": [
+                  {
+                    "altText": "Tapete circular com livro aberto, cartões e almofadas coloridas ao redor prontos para contação.",
+                    "colorProfile": [
+                      "surface-200",
+                      "primary-500",
+                      "secondary-400",
+                      "accent-300",
+                    ],
+                    "hash": "8b45c8f1d5f2",
+                    "license": {
+                      "document": "/assets/ef01/LICENSE.md",
+                      "name": "CC BY 4.0",
+                      "url": "https://creativecommons.org/licenses/by/4.0/",
+                    },
+                    "png": "/assets/ef01/lingua-portuguesa/lp-roda-contacao.png?v=8b45c8f1d5f2",
+                    "recommendedUsage": "Rodas de conversa, contação de histórias e mediação de diálogo.",
+                    "slug": "lp-roda-contacao",
+                    "subject": "lingua-portuguesa",
+                    "theme": "oralidade",
+                    "title": "Tapete para recontos colaborativos",
+                    "type": "IMAGEM",
+                    "uri": "/assets/ef01/lingua-portuguesa/lp-roda-contacao.svg?v=8b45c8f1d5f2",
+                  },
+                ],
+                "audioCue": {
+                  "description": "Toque um instrumento leve para indicar a vez do próximo colega.",
+                  "steps": [
+                    "Combine o som antes de começar o recontar.",
+                    "Aguarde que a pessoa seguinte repita rapidamente o que já foi dito.",
+                  ],
+                  "title": "CLAVE DE PASSAGEM",
+                },
+                "feedback": {
+                  "accessibility": "Forneça transcrição das falas, apoio auditivo e tempo para reorganizar ideias.",
+                  "encouragement": "Relembre a fala anterior e pense em como completá-la.",
+                  "retry": "Use cartões com tópicos antes de tentar novamente.",
+                  "success": "Excelente! Você manteve o enredo em andamento sem repetir falas.",
+                },
+                "hints": [
+                  {
+                    "audience": "EDUCADOR",
+                    "text": "Convide educadores a oferecer apoio individual quando necessário.",
+                  },
+                  {
+                    "audience": "EDUCADOR",
+                    "text": "Combine gestos e linguagem simples para garantir compreensão coletiva.",
+                  },
+                  {
+                    "audience": "ESTUDANTE",
+                    "text": "Passo 1: Relembre o que cada colega disse na roda.",
+                  },
+                  {
+                    "audience": "ESTUDANTE",
+                    "text": "Passo 2: Procure a opção que complementa a fala anterior sem repetir.",
+                  },
+                  {
+                    "audience": "ESTUDANTE",
+                    "text": "Passo 3: Certifique-se de que a sequência termina a história.",
+                  },
+                  {
+                    "audience": "EDUCADOR",
+                    "text": "Anote no quadro as falas já ditas para apoio visual.",
+                  },
+                  {
+                    "audience": "FAMILIA",
+                    "text": "Oriente sobre como fazer relatos compartilhados em casa, respeitando turnos.",
+                  },
+                ],
+                "motorSupport": [
+                  {
+                    "description": "Utilize ampulhetas pequenas para mostrar o tempo de cada fala.",
+                    "steps": [
+                      "Vire a ampulheta no início de cada turno.",
+                      "Permita ajustes para quem precisa de mais tempo.",
+                    ],
+                    "title": "CRONÔMETRO VISUAL",
+                  },
+                ],
+              },
+              "assetSlug": "lp-roda-contacao",
+              "assetUsage": "Disponha cartões com início, meio e fim para cada colega pegar o seu.",
+              "bncc": {
+                "code": "EF01LP19",
+                "habilidades": [
+                  "EF01LP19",
+                  "EF01LP20",
+                ],
+              },
+              "categoria": "Narração coletiva",
+              "difficultyTier": "PRATICAR",
+              "duracaoMinutos": 10,
+              "familiaEngajamento": "Sugira que as famílias façam recontos cooperativos, cada um completando a fala do outro.",
+              "habilidades": [
+                "EF01LP19",
+                "EF01LP20",
+              ],
+              "habilidadesSecundarias": [
+                "EF01LP20",
+              ],
+              "interactiveSlug": "quiz-reconto-colaborativo",
+              "interactiveType": "QUIZ",
+              "prerequisites": [
+                {
+                  "description": "Retomar com a turma como compartilhar relatos orais em sequência.",
+                  "reference": "EF01LP19",
+                  "type": "SKILL",
+                },
+              ],
+            },
+            "slug": "reconto-colaborativo",
+          },
+          {
+            "activityType": "QUIZ",
+            "bnccCode": "EF01LP19",
+            "difficulty": "ADVANCED",
+            "metadata": {
+              "accessibility": {
+                "alternatives": [
+                  {
+                    "description": "Monte um quadro com colunas de tempo, lugar e ação para preencher.",
+                    "steps": [
+                      "Preencha cada coluna antes de ler o roteiro.",
+                      "Use o quadro como apoio durante a escolha.",
+                    ],
+                    "title": "QUADRO DE ROTEIRO",
+                  },
+                ],
+                "assets": [
+                  {
+                    "altText": "Caderno espiral colorido com lápis apoiado na capa.",
+                    "colorProfile": [
+                      "surface-200",
+                      "primary-400",
+                      "surface-50",
+                      "secondary-400",
+                    ],
+                    "hash": "f2112bacd495",
+                    "license": {
+                      "document": "/assets/ef01/LICENSE.md",
+                      "name": "CC BY 4.0",
+                      "url": "https://creativecommons.org/licenses/by/4.0/",
+                    },
+                    "png": "/assets/ef01/lingua-portuguesa/lp-material-caderno.png?v=f2112bacd495",
+                    "recommendedUsage": "Cartazes de rotinas de escrita e produção de textos.",
+                    "slug": "lp-material-caderno",
+                    "subject": "lingua-portuguesa",
+                    "theme": "materiais-escolares",
+                    "title": "Caderno do narrador",
+                    "type": "IMAGEM",
+                    "uri": "/assets/ef01/lingua-portuguesa/lp-material-caderno.svg?v=f2112bacd495",
+                  },
+                ],
+                "audioCue": {
+                  "description": "Toque um sino breve sempre que o narrador retomar a palavra.",
+                  "steps": [
+                    "Combine o sinal antes da leitura.",
+                    "Aguarde silêncio antes de continuar a história.",
+                  ],
+                  "title": "SINAL DO NARRADOR",
+                },
+                "feedback": {
+                  "accessibility": "Ofereça leitura em voz alta, ampliação de texto e tempo adicional.",
+                  "encouragement": "Releia os marcadores e pense em qual roteiro orienta melhor os colegas.",
+                  "retry": "Faça uma lista com tempo, lugar e convocação antes de decidir.",
+                  "success": "Excelente! O roteiro escolhido orienta bem cada momento da história.",
+                },
+                "hints": [
+                  {
+                    "audience": "EDUCADOR",
+                    "text": "Convide educadores a oferecer apoio individual quando necessário.",
+                  },
+                  {
+                    "audience": "EDUCADOR",
+                    "text": "Combine gestos e linguagem simples para garantir compreensão coletiva.",
+                  },
+                  {
+                    "audience": "ESTUDANTE",
+                    "text": "Passo 1: Leia o roteiro e perceba se ele apresenta onde e quando a cena ocorre.",
+                  },
+                  {
+                    "audience": "ESTUDANTE",
+                    "text": "Passo 2: Observe se o roteiro convida os personagens na ordem correta.",
+                  },
+                  {
+                    "audience": "ESTUDANTE",
+                    "text": "Passo 3: Verifique se o roteiro termina orientando a próxima cena.",
+                  },
+                  {
+                    "audience": "EDUCADOR",
+                    "text": "Disponibilize cartões com marcadores de tempo e lugar para apoiar a análise.",
+                  },
+                  {
+                    "audience": "FAMILIA",
+                    "text": "Compartilhe sugestões de como narrar fotos utilizando marcadores temporais.",
+                  },
+                ],
+                "motorSupport": [
+                  {
+                    "description": "Utilize planilha com encaixes para mover cartões de tempo e lugar.",
+                    "steps": [
+                      "Posicione os cartões com apoio de ponteiras.",
+                      "Ajuste a planilha para quem precisa de suporte postural.",
+                    ],
+                    "title": "PLANILHA ENCAIXÁVEL",
+                  },
+                ],
+              },
+              "assetSlug": "lp-material-caderno",
+              "assetUsage": "Utilize o caderno como quadro do narrador, anotando marcadores de tempo e locais.",
+              "bncc": {
+                "code": "EF01LP19",
+                "habilidades": [
+                  "EF01LP19",
+                  "EF01LP20",
+                ],
+              },
+              "categoria": "Roteiro oral",
+              "difficultyTier": "DOMINAR",
+              "duracaoMinutos": 10,
+              "familiaEngajamento": "Sugira que as famílias montem pequenos roteiros para narrar fotos antigas em casa.",
+              "habilidades": [
+                "EF01LP19",
+                "EF01LP20",
+              ],
+              "habilidadesSecundarias": [
+                "EF01LP20",
+              ],
+              "interactiveSlug": "quiz-guia-do-narrador",
+              "interactiveType": "QUIZ",
+              "prerequisites": [
+                {
+                  "description": "Revisitar com a turma roteiros orais já construídos em histórias anteriores.",
+                  "reference": "EF01LP19",
+                  "type": "SKILL",
+                },
+              ],
+            },
+            "slug": "guia-do-narrador",
+          },
+          {
+            "activityType": "QUIZ",
+            "bnccCode": "EF01LP18",
+            "difficulty": "ADVANCED",
+            "metadata": {
+              "accessibility": {
+                "alternatives": [
+                  {
+                    "description": "Utilize cubos com imagens surpresa para representar o imprevisto.",
+                    "steps": [
+                      "Lance o cubo e observe a imagem.",
+                      "Discuta rapidamente como integrá-la antes de responder.",
+                    ],
+                    "title": "CUBOS SURPRESA",
+                  },
+                ],
+                "assets": [
+                  {
+                    "altText": "Tapete circular com livro aberto, cartões e almofadas coloridas ao redor prontos para contação.",
+                    "colorProfile": [
+                      "surface-200",
+                      "primary-500",
+                      "secondary-400",
+                      "accent-300",
+                    ],
+                    "hash": "8b45c8f1d5f2",
+                    "license": {
+                      "document": "/assets/ef01/LICENSE.md",
+                      "name": "CC BY 4.0",
+                      "url": "https://creativecommons.org/licenses/by/4.0/",
+                    },
+                    "png": "/assets/ef01/lingua-portuguesa/lp-roda-contacao.png?v=8b45c8f1d5f2",
+                    "recommendedUsage": "Rodas de conversa, contação de histórias e mediação de diálogo.",
+                    "slug": "lp-roda-contacao",
+                    "subject": "lingua-portuguesa",
+                    "theme": "oralidade",
+                    "title": "Tapete de improvisos narrativos",
+                    "type": "IMAGEM",
+                    "uri": "/assets/ef01/lingua-portuguesa/lp-roda-contacao.svg?v=8b45c8f1d5f2",
+                  },
+                ],
+                "audioCue": {
+                  "description": "Toque um chocalho leve quando um novo elemento aparecer.",
+                  "steps": [
+                    "Toque o chocalho antes de anunciar o imprevisto.",
+                    "Aguarde que todos respirem e organizem as ideias.",
+                  ],
+                  "title": "SINAL DE SURPRESA",
+                },
+                "feedback": {
+                  "accessibility": "Disponibilize recursos visuais, áudio descrição e tempo extra para reorganizar as ideias.",
+                  "encouragement": "Relembre os eventos anteriores e tente encaixar o imprevisto novamente.",
+                  "retry": "Faça um pequeno resumo da história antes de inserir o novo elemento.",
+                  "success": "Excelente! Você integrou o imprevisto mantendo a história coerente.",
+                },
+                "hints": [
+                  {
+                    "audience": "EDUCADOR",
+                    "text": "Convide educadores a oferecer apoio individual quando necessário.",
+                  },
+                  {
+                    "audience": "EDUCADOR",
+                    "text": "Combine gestos e linguagem simples para garantir compreensão coletiva.",
+                  },
+                  {
+                    "audience": "ESTUDANTE",
+                    "text": "Passo 1: Escute o imprevisto e recorde o que já aconteceu na história.",
+                  },
+                  {
+                    "audience": "ESTUDANTE",
+                    "text": "Passo 2: Planeje como inserir o novo elemento sem quebrar o sentido.",
+                  },
+                  {
+                    "audience": "ESTUDANTE",
+                    "text": "Passo 3: Combine com o colega que fala depois para manter a continuidade.",
+                  },
+                  {
+                    "audience": "EDUCADOR",
+                    "text": "Forneça cartões de imprevisto e modele como integrá-los com calma.",
+                  },
+                  {
+                    "audience": "FAMILIA",
+                    "text": "Envie orientações para praticar improvisos narrativos em família.",
+                  },
+                ],
+                "motorSupport": [
+                  {
+                    "description": "Disponibilize setas móveis para conectar o imprevisto à cena anterior.",
+                    "steps": [
+                      "Posicione a seta entre os cartões com apoio de ponteiras.",
+                      "Ajuste a conexão conforme a história evoluir.",
+                    ],
+                    "title": "GUIA DE CONEXÕES",
+                  },
+                ],
+              },
+              "assetSlug": "lp-roda-contacao",
+              "assetUsage": "Utilize a roda para posicionar cartões de "imprevisto" que precisam ser incorporados.",
+              "bncc": {
+                "code": "EF01LP18",
+                "habilidades": [
+                  "EF01LP18",
+                  "EF01LP19",
+                ],
+              },
+              "categoria": "Improviso guiado",
+              "difficultyTier": "DOMINAR",
+              "duracaoMinutos": 10,
+              "familiaEngajamento": "Sugira que as famílias criem histórias em que cada pessoa acrescenta um elemento surpresa.",
+              "habilidades": [
+                "EF01LP18",
+                "EF01LP19",
+              ],
+              "habilidadesSecundarias": [
+                "EF01LP19",
+              ],
+              "interactiveSlug": "quiz-cena-imprevisto",
+              "interactiveType": "QUIZ",
+              "prerequisites": [
+                {
+                  "description": "Relembrar combinados de turnos e escuta ativa em rodas de conversa.",
+                  "reference": "EF01LP18",
+                  "type": "SKILL",
+                },
+              ],
+            },
+            "slug": "cena-imprevisto",
+          },
+          {
+            "activityType": "QUIZ",
+            "bnccCode": "EF01LP18",
+            "difficulty": "ADVANCED",
+            "metadata": {
+              "accessibility": {
+                "alternatives": [
+                  {
+                    "description": "Entregue fichas com dicas de voz, gesto e posição.",
+                    "steps": [
+                      "Leia a ficha antes do ensaio.",
+                      "Marque com adesivos os pontos fortes e a melhorar.",
+                    ],
+                    "title": "FICHAS DE ENSAIO",
+                  },
+                ],
+                "assets": [
+                  {
+                    "altText": "Fone acolchoado com arco azul, microfone lateral e ondas sonoras coloridas.",
+                    "colorProfile": [
+                      "calm-200",
+                      "primary-600",
+                      "surface-200",
+                      "accent-400",
+                    ],
+                    "hash": "f3b995aa9152",
+                    "license": {
+                      "document": "/assets/ef01/LICENSE.md",
+                      "name": "CC BY 4.0",
+                      "url": "https://creativecommons.org/licenses/by/4.0/",
+                    },
+                    "png": "/assets/ef01/lingua-portuguesa/lp-audio-fones.png?v=f3b995aa9152",
+                    "recommendedUsage": "Atividades de escuta ativa, registro de relatos orais e produção de podcasts.",
+                    "slug": "lp-audio-fones",
+                    "subject": "lingua-portuguesa",
+                    "theme": "oralidade",
+                    "title": "Fone de ensaio em dupla",
+                    "type": "IMAGEM",
+                    "uri": "/assets/ef01/lingua-portuguesa/lp-audio-fones.svg?v=f3b995aa9152",
+                  },
+                ],
+                "audioCue": {
+                  "description": "Use batidas suaves para iniciar e concluir cada ensaio.",
+                  "steps": [
+                    "Toque no início do ensaio.",
+                    "Toque novamente para indicar a hora do feedback.",
+                  ],
+                  "title": "MARCADOR DE ENSAIO",
+                },
+                "feedback": {
+                  "accessibility": "Ofereça vídeos de referência, apoio auditivo individual e tempo ampliado.",
+                  "encouragement": "Reajuste o plano com base no que o colega precisa e tente novamente.",
+                  "retry": "Faça anotações curtas sobre voz, gesto e tempo antes de repetir.",
+                  "success": "Muito bem! O ensaio planejado prepara a cena com equilíbrio.",
+                },
+                "hints": [
+                  {
+                    "audience": "EDUCADOR",
+                    "text": "Convide educadores a oferecer apoio individual quando necessário.",
+                  },
+                  {
+                    "audience": "EDUCADOR",
+                    "text": "Combine gestos e linguagem simples para garantir compreensão coletiva.",
+                  },
+                  {
+                    "audience": "ESTUDANTE",
+                    "text": "Passo 1: Combine com o seu par quem fala primeiro e quem responde.",
+                  },
+                  {
+                    "audience": "ESTUDANTE",
+                    "text": "Passo 2: Pratique os gestos e veja se a voz combina com a emoção.",
+                  },
+                  {
+                    "audience": "ESTUDANTE",
+                    "text": "Passo 3: Ajuste a cena conforme o feedback do colega.",
+                  },
+                  {
+                    "audience": "EDUCADOR",
+                    "text": "Organize fichas com turnos e gestos sugeridos.",
+                  },
+                  {
+                    "audience": "FAMILIA",
+                    "text": "Incentive ensaios rápidos em casa com histórias conhecidas.",
+                  },
+                ],
+                "motorSupport": [
+                  {
+                    "description": "Disponibilize plataformas ou marcações no chão para orientar os movimentos.",
+                    "steps": [
+                      "Ajuste a posição dos pés seguindo as marcações.",
+                      "Permita pausas para reposicionar com segurança.",
+                    ],
+                    "title": "PLATAFORMA AJUSTÁVEL",
+                  },
+                ],
+              },
+              "assetSlug": "lp-audio-fones",
+              "assetUsage": "Compartilhe o fone para revisar o áudio da cena durante o ensaio.",
+              "bncc": {
+                "code": "EF01LP18",
+                "habilidades": [
+                  "EF01LP18",
+                  "EF01LP19",
+                  "EF01LP20",
+                ],
+              },
+              "categoria": "Ensaios guiados",
+              "difficultyTier": "DOMINAR",
+              "duracaoMinutos": 11,
+              "familiaEngajamento": "Sugira que as famílias organizem pequenos ensaios em dupla para histórias favoritas.",
+              "habilidades": [
+                "EF01LP18",
+                "EF01LP19",
+                "EF01LP20",
+              ],
+              "habilidadesSecundarias": [
+                "EF01LP19",
+                "EF01LP20",
+              ],
+              "interactiveSlug": "quiz-vivencia-em-duplas",
+              "interactiveType": "QUIZ",
+              "prerequisites": [
+                {
+                  "description": "Relembrar combinados de escuta e feedback utilizados em ensaios anteriores.",
+                  "reference": "EF01LP18",
+                  "type": "SKILL",
+                },
+              ],
+            },
+            "slug": "vivencia-em-duplas",
+          },
+          {
+            "activityType": "QUIZ",
+            "bnccCode": "EF01LP18",
+            "difficulty": "INTERMEDIATE",
+            "metadata": {
+              "accessibility": {
+                "alternatives": [
+                  {
+                    "description": "Monte mural com envelopes para elogios e sugestões.",
+                    "steps": [
+                      "Escreva o elogio e coloque no envelope verde.",
+                      "Registre a sugestão no envelope amarelo.",
+                    ],
+                    "title": "MURAL DE ELOGIOS",
+                  },
+                ],
+                "assets": [
+                  {
+                    "altText": "Tapete circular com livro aberto, cartões e almofadas coloridas ao redor prontos para contação.",
+                    "colorProfile": [
+                      "surface-200",
+                      "primary-500",
+                      "secondary-400",
+                      "accent-300",
+                    ],
+                    "hash": "8b45c8f1d5f2",
+                    "license": {
+                      "document": "/assets/ef01/LICENSE.md",
+                      "name": "CC BY 4.0",
+                      "url": "https://creativecommons.org/licenses/by/4.0/",
+                    },
+                    "png": "/assets/ef01/lingua-portuguesa/lp-roda-contacao.png?v=8b45c8f1d5f2",
+                    "recommendedUsage": "Rodas de conversa, contação de histórias e mediação de diálogo.",
+                    "slug": "lp-roda-contacao",
+                    "subject": "lingua-portuguesa",
+                    "theme": "oralidade",
+                    "title": "Tapete para feedback da plateia",
+                    "type": "IMAGEM",
+                    "uri": "/assets/ef01/lingua-portuguesa/lp-roda-contacao.svg?v=8b45c8f1d5f2",
+                  },
+                ],
+                "audioCue": {
+                  "description": "Após a devolutiva, faça o aplauso combinado para valorizar o grupo.",
+                  "steps": [
+                    "Combine o ritmo de aplauso antes da atividade.",
+                    "Execute o aplauso após cada feedback.",
+                  ],
+                  "title": "APLAUSO COMBINADO",
+                },
+                "feedback": {
+                  "accessibility": "Disponibilize cartões com frases-modelo, apoio auditivo e tempo ampliado.",
+                  "encouragement": "Relembre os pontos fortes da cena antes de sugerir melhorias.",
+                  "retry": "Escreva elogio e sugestão em duas colunas e tente novamente.",
+                  "success": "Excelente! Seu feedback valoriza e orienta a cena com respeito.",
+                },
+                "hints": [
+                  {
+                    "audience": "EDUCADOR",
+                    "text": "Convide educadores a oferecer apoio individual quando necessário.",
+                  },
+                  {
+                    "audience": "EDUCADOR",
+                    "text": "Combine gestos e linguagem simples para garantir compreensão coletiva.",
+                  },
+                  {
+                    "audience": "ESTUDANTE",
+                    "text": "Passo 1: Destaque algo que funcionou bem na apresentação.",
+                  },
+                  {
+                    "audience": "ESTUDANTE",
+                    "text": "Passo 2: Sugira uma melhoria específica com linguagem respeitosa.",
+                  },
+                  {
+                    "audience": "ESTUDANTE",
+                    "text": "Passo 3: Confirme se a sugestão ajuda a próxima apresentação.",
+                  },
+                  {
+                    "audience": "EDUCADOR",
+                    "text": "Modele frases de elogio e sugestão equilibradas.",
+                  },
+                  {
+                    "audience": "FAMILIA",
+                    "text": "Sugira que as famílias usem o formato elogio + sugestão em casa.",
+                  },
+                ],
+                "motorSupport": [
+                  {
+                    "description": "Utilize quadro com pictogramas para apoiar estudantes que usam comunicação alternativa.",
+                    "steps": [
+                      "Aponte para os pictogramas de elogio e sugestão.",
+                      "Combine gestos para sinalizar concordância.",
+                    ],
+                    "title": "QUADRO BILÍNGUE",
+                  },
+                ],
+              },
+              "assetSlug": "lp-roda-contacao",
+              "assetUsage": "Use o tapete para registrar elogios e sugestões em cartões.",
+              "bncc": {
+                "code": "EF01LP18",
+                "habilidades": [
+                  "EF01LP18",
+                  "EF01LP20",
+                ],
+              },
+              "categoria": "Devolutiva formativa",
+              "difficultyTier": "PRATICAR",
+              "duracaoMinutos": 8,
+              "familiaEngajamento": "Recomende que as famílias pratiquem feedbacks positivos durante brincadeiras teatrais.",
+              "habilidades": [
+                "EF01LP18",
+                "EF01LP20",
+              ],
+              "habilidadesSecundarias": [
+                "EF01LP20",
+              ],
+              "interactiveSlug": "quiz-feedback-da-plateia",
+              "interactiveType": "QUIZ",
+              "prerequisites": [
+                {
+                  "description": "Relembrar regras de escuta ativa em rodas de apresentação.",
+                  "reference": "EF01LP18",
+                  "type": "SKILL",
+                },
+              ],
+            },
+            "slug": "feedback-da-plateia",
+          },
+          {
+            "activityType": "QUIZ",
+            "bnccCode": "EF01LP19",
+            "difficulty": "ADVANCED",
+            "metadata": {
+              "accessibility": {
+                "alternatives": [
+                  {
+                    "description": "Monte quadro com colunas de início, meio e fim para apoiar o cronista.",
+                    "steps": [
+                      "Registre uma palavra em cada coluna antes de relatar.",
+                      "Utilize o quadro como guia durante o resumo.",
+                    ],
+                    "title": "QUADRO DE RESUMOS",
+                  },
+                ],
+                "assets": [
+                  {
+                    "altText": "Caderno espiral colorido com lápis apoiado na capa.",
+                    "colorProfile": [
+                      "surface-200",
+                      "primary-400",
+                      "surface-50",
+                      "secondary-400",
+                    ],
+                    "hash": "f2112bacd495",
+                    "license": {
+                      "document": "/assets/ef01/LICENSE.md",
+                      "name": "CC BY 4.0",
+                      "url": "https://creativecommons.org/licenses/by/4.0/",
+                    },
+                    "png": "/assets/ef01/lingua-portuguesa/lp-material-caderno.png?v=f2112bacd495",
+                    "recommendedUsage": "Cartazes de rotinas de escrita e produção de textos.",
+                    "slug": "lp-material-caderno",
+                    "subject": "lingua-portuguesa",
+                    "theme": "materiais-escolares",
+                    "title": "Caderno do cronista",
+                    "type": "IMAGEM",
+                    "uri": "/assets/ef01/lingua-portuguesa/lp-material-caderno.svg?v=f2112bacd495",
+                  },
+                ],
+                "audioCue": {
+                  "description": "Toque um sino suave quando o cronista terminar o relato.",
+                  "steps": [
+                    "Combine o sinal antes da atividade.",
+                    "Toque após a fala para indicar transição para a próxima equipe.",
+                  ],
+                  "title": "SINO DE ENCERRAMENTO",
+                },
+                "feedback": {
+                  "accessibility": "Disponibilize apoio auditivo, pictogramas e tempo extra para organizar o relato.",
+                  "encouragement": "Relembre os momentos principais e tente novamente com frases curtas.",
+                  "retry": "Escreva três palavras-chave antes de fazer o resumo.",
+                  "success": "Excelente! Você registrou a cena com clareza e convidou a próxima equipe.",
+                },
+                "hints": [
+                  {
+                    "audience": "EDUCADOR",
+                    "text": "Convide educadores a oferecer apoio individual quando necessário.",
+                  },
+                  {
+                    "audience": "EDUCADOR",
+                    "text": "Combine gestos e linguagem simples para garantir compreensão coletiva.",
+                  },
+                  {
+                    "audience": "ESTUDANTE",
+                    "text": "Passo 1: Relembre o início, o meio e o fim da cena apresentada.",
+                  },
+                  {
+                    "audience": "ESTUDANTE",
+                    "text": "Passo 2: Escolha palavras-chave para cada parte antes de falar.",
+                  },
+                  {
+                    "audience": "ESTUDANTE",
+                    "text": "Passo 3: Finalize com uma frase que convide a próxima equipe.",
+                  },
+                  {
+                    "audience": "EDUCADOR",
+                    "text": "Modele resumos curtos com marcadores temporais.",
+                  },
+                  {
+                    "audience": "FAMILIA",
+                    "text": "Incentive registros orais em casa após eventos familiares.",
+                  },
+                ],
+                "motorSupport": [
+                  {
+                    "description": "Ofereça prancheta inclinada e adaptadores de escrita para quem desejar anotar.",
+                    "steps": [
+                      "Disponibilize lápis grossos ou adaptadores conforme necessidade.",
+                      "Permita que o cronista use a prancheta enquanto relata.",
+                    ],
+                    "title": "SUPORTE ESCRITO",
+                  },
+                ],
+              },
+              "assetSlug": "lp-material-caderno",
+              "assetUsage": "Utilize o caderno do cronista para apontar palavras-chave antes de relatar.",
+              "bncc": {
+                "code": "EF01LP19",
+                "habilidades": [
+                  "EF01LP19",
+                  "EF01LP20",
+                ],
+              },
+              "categoria": "Registro oral",
+              "difficultyTier": "DOMINAR",
+              "duracaoMinutos": 11,
+              "familiaEngajamento": "Sugira que as famílias façam relatos rápidos sobre eventos do fim de semana.",
+              "habilidades": [
+                "EF01LP19",
+                "EF01LP20",
+              ],
+              "habilidadesSecundarias": [
+                "EF01LP20",
+              ],
+              "interactiveSlug": "quiz-cronista-da-roda",
+              "interactiveType": "QUIZ",
+              "prerequisites": [
+                {
+                  "description": "Relembrar com o grupo como registrar oralmente os destaques de uma atividade.",
+                  "reference": "EF01LP19",
+                  "type": "SKILL",
+                },
+              ],
+            },
+            "slug": "cronista-da-roda",
+          },
+        ],
+        "activityCount": 12,
+        "primaryBnccCode": "EF01LP19",
+        "slug": "historia-em-cenas",
         "stage": "ef01",
         "subjectSlug": "lingua-portuguesa",
       },

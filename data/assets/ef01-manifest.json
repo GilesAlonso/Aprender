@@ -1,5 +1,5 @@
 {
-  "version": "3802714429e27166",
+  "version": "86effbd7a34215da",
   "generatedBy": "scripts/generate-ef01-assets.ts",
   "assets": [
     {
@@ -159,10 +159,10 @@
         "document": "/assets/ef01/LICENSE.md"
       },
       "files": {
-        "svg": "/assets/ef01/lingua-portuguesa/lp-letra-a.svg?v=5702173e261b",
-        "png": "/assets/ef01/lingua-portuguesa/lp-letra-a.png?v=5702173e261b"
+        "svg": "/assets/ef01/lingua-portuguesa/lp-letra-a.svg?v=220318d0b2a3",
+        "png": "/assets/ef01/lingua-portuguesa/lp-letra-a.png?v=220318d0b2a3"
       },
-      "hash": "5702173e261b"
+      "hash": "220318d0b2a3"
     },
     {
       "slug": "lp-letra-e",
@@ -177,10 +177,10 @@
         "document": "/assets/ef01/LICENSE.md"
       },
       "files": {
-        "svg": "/assets/ef01/lingua-portuguesa/lp-letra-e.svg?v=9c6853f2e782",
-        "png": "/assets/ef01/lingua-portuguesa/lp-letra-e.png?v=9c6853f2e782"
+        "svg": "/assets/ef01/lingua-portuguesa/lp-letra-e.svg?v=b0d126115c98",
+        "png": "/assets/ef01/lingua-portuguesa/lp-letra-e.png?v=b0d126115c98"
       },
-      "hash": "9c6853f2e782"
+      "hash": "b0d126115c98"
     },
     {
       "slug": "lp-material-caderno",
@@ -231,10 +231,10 @@
         "document": "/assets/ef01/LICENSE.md"
       },
       "files": {
-        "svg": "/assets/ef01/lingua-portuguesa/lp-silaba-ba.svg?v=6b4fc5cd764d",
-        "png": "/assets/ef01/lingua-portuguesa/lp-silaba-ba.png?v=6b4fc5cd764d"
+        "svg": "/assets/ef01/lingua-portuguesa/lp-silaba-ba.svg?v=a20f732ac9c4",
+        "png": "/assets/ef01/lingua-portuguesa/lp-silaba-ba.png?v=a20f732ac9c4"
       },
-      "hash": "6b4fc5cd764d"
+      "hash": "a20f732ac9c4"
     },
     {
       "slug": "lp-silaba-la",
@@ -249,10 +249,10 @@
         "document": "/assets/ef01/LICENSE.md"
       },
       "files": {
-        "svg": "/assets/ef01/lingua-portuguesa/lp-silaba-la.svg?v=4fc2a9d18002",
-        "png": "/assets/ef01/lingua-portuguesa/lp-silaba-la.png?v=4fc2a9d18002"
+        "svg": "/assets/ef01/lingua-portuguesa/lp-silaba-la.svg?v=07ecfb243335",
+        "png": "/assets/ef01/lingua-portuguesa/lp-silaba-la.png?v=07ecfb243335"
       },
-      "hash": "4fc2a9d18002"
+      "hash": "07ecfb243335"
     }
   ]
 }
