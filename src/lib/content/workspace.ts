@@ -19,6 +19,9 @@ export type ContentModuleDocument = ContentModuleFile & {
 
 export type LoadWorkspaceOptions = {
   rootDir?: string;
+  stage?: string;
+  subjectSlug?: string;
+  modules?: string[];
 };
 
 const isPlainObject = (value: unknown): value is Record<string, unknown> =>
@@ -195,6 +198,27 @@ export const loadWorkspace = (options: LoadWorkspaceOptions = {}): ContentModule
   const rootDir = options.rootDir ?? RAW_CONTENT_DIR;
   const absoluteRoot = path.resolve(rootDir);
 
+  const stageValue = options.stage?.trim();
+  const stageFilter = stageValue && stageValue.length > 0 ? stageValue.toLowerCase() : undefined;
+
+  const subjectValue = options.subjectSlug?.trim();
+  const subjectFilter =
+    subjectValue && subjectValue.length > 0 ? subjectValue.toLowerCase() : undefined;
+
+  const moduleSlugs =
+    options.modules?.map((slug) => slug.trim()).filter((slug) => slug.length > 0) ?? [];
+
+  const requestedModules =
+    moduleSlugs.length > 0
+      ? moduleSlugs.reduce<Map<string, string>>((accumulator, slug) => {
+          const normalized = slug.toLowerCase();
+          if (!accumulator.has(normalized)) {
+            accumulator.set(normalized, slug);
+          }
+          return accumulator;
+        }, new Map<string, string>())
+      : undefined;
+
   partialCache.clear();
 
   const entries = fg.sync(["**/*.{yml,yaml,md,mdx}"], {
@@ -204,6 +228,7 @@ export const loadWorkspace = (options: LoadWorkspaceOptions = {}): ContentModule
   });
 
   const documents: ContentModuleDocument[] = [];
+  const matchedModuleSlugs = new Set<string>();
 
   for (const entry of entries) {
     const relativePath = path.relative(absoluteRoot, entry);
@@ -217,8 +242,70 @@ export const loadWorkspace = (options: LoadWorkspaceOptions = {}): ContentModule
       continue;
     }
 
+    const stageSlug = segments[0]?.toLowerCase();
+    if (stageFilter && stageSlug !== stageFilter) {
+      continue;
+    }
+
+    const subjectSlug = segments[1]?.toLowerCase();
+    if (subjectFilter && subjectSlug !== subjectFilter) {
+      continue;
+    }
+
     const document = readModuleDocument(entry, absoluteRoot);
+
+    if (requestedModules) {
+      const normalizedModuleSlug = document.module.slug.toLowerCase();
+      if (!requestedModules.has(normalizedModuleSlug)) {
+        continue;
+      }
+      matchedModuleSlugs.add(normalizedModuleSlug);
+    }
+
     documents.push(document);
+  }
+
+  if (requestedModules) {
+    const missingModules = Array.from(requestedModules.keys()).filter(
+      (slug) => !matchedModuleSlugs.has(slug)
+    );
+
+    if (missingModules.length > 0) {
+      const missingList = missingModules
+        .map((slug) => requestedModules.get(slug) ?? slug)
+        .map((slug) => `'${slug}'`)
+        .join(", ");
+      const prefix =
+        missingModules.length === 1
+          ? "Slug de módulo desconhecido"
+          : "Slugs de módulo desconhecidos";
+      throw new Error(`${prefix}: ${missingList}.`);
+    }
+  }
+
+  const hasFilters =
+    stageFilter !== undefined || subjectFilter !== undefined || requestedModules !== undefined;
+
+  if (hasFilters && documents.length === 0) {
+    const appliedFilters: string[] = [];
+    if (stageValue) {
+      appliedFilters.push(`stage='${stageValue}'`);
+    }
+    if (subjectValue) {
+      appliedFilters.push(`subject='${subjectValue}'`);
+    }
+    if (requestedModules && requestedModules.size > 0) {
+      const modulesDescription = Array.from(requestedModules.values())
+        .map((slug) => `'${slug}'`)
+        .join(", ");
+      appliedFilters.push(`modules=${modulesDescription}`);
+    }
+
+    throw new Error(
+      `Nenhum módulo de conteúdo encontrado para os filtros fornecidos (${appliedFilters.join(
+        ", "
+      )}).`
+    );
   }
 
   return documents.sort((a, b) => a.module.slug.localeCompare(b.module.slug));

@@ -90,6 +90,24 @@ Três scripts foram adicionados ao `package.json`:
 | `pnpm content:build`  | Executa o lint, regenera os assets EF01 e gera `modules.json`, `interactive-activities.json` e `index.json`. |
 | `pnpm check`          | Agora executa `content:lint`, `lint`, `content:build --no-write`, `type-check` e `test`.                     |
 
+### Filtros por etapa e módulos
+
+Tanto `pnpm content:lint` quanto `pnpm content:build` aceitam filtros opcionais para restringir a validação e o build:
+
+- `--stage <slug>` limita o workspace a um estágio específico (por exemplo, `ef01`).
+- `--subject <slug>` foca em um componente curricular único (ex.: `lingua-portuguesa`).
+- `--modules=a,b` processa apenas os módulos informados (lista de slugs separados por vírgula).
+
+Exemplos úteis:
+
+```bash
+pnpm content:lint --stage ef01 --subject lingua-portuguesa
+pnpm content:lint --modules=bilhetes-e-recados
+pnpm content:build --subject=lingua-portuguesa --stage=ef01 --no-write
+```
+
+Caso algum slug informado seja desconhecido, o lint interrompe imediatamente com erro para evitar falsos positivos. Utilize `--no-write` quando quiser inspecionar um recorte do workspace sem sobrescrever os artefatos completos em `data/content/`.
+
 Para fluxo diário:
 
 ```bash

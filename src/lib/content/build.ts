@@ -9,6 +9,9 @@ import { loadWorkspace, CONTENT_DIR } from "./workspace";
 export type BuildOptions = {
   rootDir?: string;
   writeToDisk?: boolean;
+  stage?: string;
+  subjectSlug?: string;
+  modules?: string[];
 };
 
 export type ActivityIndexEntry = {
@@ -491,7 +494,12 @@ const buildModuleActivityEntry = (
 };
 
 export const buildWorkspace = (options: BuildOptions = {}): BuildOutput => {
-  const documents = loadWorkspace({ rootDir: options.rootDir });
+  const documents = loadWorkspace({
+    rootDir: options.rootDir,
+    stage: options.stage,
+    subjectSlug: options.subjectSlug,
+    modules: options.modules,
+  });
   const ef01Manifest = loadEf01AssetManifest();
   const ef01AssetIndex = buildEf01AssetIndex(ef01Manifest);
   const buildTimestamp = new Date().toISOString();
