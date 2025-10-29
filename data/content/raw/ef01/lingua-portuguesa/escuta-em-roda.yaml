@@ -1,0 +1,1413 @@
+module:
+  slug: escuta-em-roda
+  title: Escuta em Roda
+  subtitle: Atenção compartilhada nas rodas de conversa
+  description: Sequência que promove combinados de escuta, respeito aos turnos de fala e retomada oral de histórias em rodas colaborativas.
+  theme: Língua Portuguesa
+  discipline: Língua Portuguesa
+  ageGroupSlug: fundamental-anos-iniciais
+  learningPathSlug: descobertas-palavras
+  primaryBnccCode: EF01LP18
+  secondaryBnccCodes:
+    - EF01LP19
+    - EF01LP20
+  learningOutcomes:
+    - Utilizar sinais combinados para organizar turnos de fala em rodas de conversa.
+    - Formular perguntas e respostas curtas após ouvir relatos e histórias.
+    - Retomar trechos essenciais de narrativas orais com clareza e apoio de registros.
+  tags:
+    - oralidade
+    - escuta
+    - conversa
+activities:
+  - partial: ../../_partials/acolhimento-base.yaml
+    slug: sinal-da-roda
+    title: Sinal da Roda
+    prompt: Escolha o sinal combinado que indica que o colega pode começar a falar.
+    type: QUIZ
+    difficulty: INICIAR
+    bncc:
+      code: EF01LP18
+      habilidades:
+        - EF01LP18
+    learningObjectives:
+      - Reconhecer gestos que organizam turnos de fala durante a roda.
+      - Antecipar o momento de falar após escutar o combinado da turma.
+    description: Sinal da Roda apresenta gestos e objetos sonoros para a turma identificar a melhor forma de convidar alguém a falar.
+    metadata:
+      categoria: Roda de conversa
+      duracaoMinutos: 8
+      habilidades:
+        - EF01LP18
+      assetSlug: lp-roda-contacao
+      assetUsage: Utilize a ilustração da roda de contação para manter os sinais visuais à vista da turma.
+      familiaEngajamento: Oriente as famílias a definir um gesto para sinalizar vez de falar nos encontros em casa.
+      interactiveSlug: quiz-sinal-da-roda
+    accessibility: &escuta_em_roda_sinal_accessibility
+      hints:
+        - audience: ESTUDANTE
+          text: 'Passo 1: Respire fundo e escute o enunciado percebendo qual sinal organiza a vez de falar.'
+        - audience: ESTUDANTE
+          text: 'Passo 2: Observe cada alternativa e imagine como ela aparece na roda.'
+        - audience: ESTUDANTE
+          text: 'Passo 3: Conte para um colega por que a opção escolhida favorece a escuta do grupo.'
+        - audience: EDUCADOR
+          text: Modele os gestos combinados e deixe cartões com símbolos de escuta ao alcance da turma.
+        - audience: FAMILIA
+          text: Envie um bilhete sugerindo que a família crie um sinal para indicar a vez de falar em casa.
+      feedback:
+        success: Excelente! Você reconheceu o sinal que mantém a roda organizada.
+        encouragement: Sem problemas! Revise as pistas visuais e sonoras antes de tentar novamente.
+        retry: Experimente repetir o combinado em voz alta e volte para a pergunta.
+        accessibility: Ofereça tempo extra, legendas em caixa alta e apoio auditivo para quem precisar.
+      assets:
+        - slug: lp-roda-contacao
+          type: IMAGEM
+          title: Tapete de histórias em roda
+      alternatives:
+        - title: CARTÕES GIGANTES
+          description: Ofereça cartões com o gesto de ouvir e falar em contraste alto.
+          steps:
+            - Disponibilize pictogramas ampliados em cores vibrantes.
+            - Reforce o significado com dramatizações rápidas antes de cada pergunta.
+      audioCue:
+        title: SINAL SONORO
+        description: Use um chocalho suave para indicar o turno de resposta.
+        steps:
+          - Combine o significado do som antes de iniciar a atividade.
+          - Reproduza o som sempre que uma nova pergunta começar.
+      motorSupport:
+        - title: APOIO MOTOR
+          description: Ofereça suportes para toque, ponteiras e apoio postural durante a interação.
+          steps:
+            - Permita que duplas revejam a pergunta sem pressa.
+            - Ajuste a altura do dispositivo ou material conforme necessário.
+    prerequisites:
+      - type: SKILL
+        reference: EF01LP18
+        description: Retomar com a turma os sinais combinados para iniciar e finalizar falas na roda.
+    interactive:
+      slug: quiz-sinal-da-roda
+      title: Sinal da Roda — Quiz
+      type: QUIZ
+      bnccDescription: Participar de rodas de conversa, utilizando combinados de escuta e fala para organizar a participação de todos.
+      estimatedTimeMinutes: 8
+      instructions:
+        - Leia ou escute cada situação antes de escolher.
+        - Use o mouse, o toque ou o teclado para selecionar a alternativa.
+        - Explique para a turma como o sinal escolhido ajuda a organizar a roda.
+      objectives:
+        - Reconhecer gestos que organizam turnos de fala durante a roda.
+        - Antecipar o momento de falar após escutar o combinado da turma.
+      scoring:
+        correct: 10
+        incorrect: 0
+      adaptive:
+        increaseAfter: 2
+        decreaseAfter: 1
+      questions:
+        - id: sinal-da-roda-q1
+          type: multiple-choice
+          prompt: O educador levanta o cartão verde com o símbolo de ouvido. O que você faz?
+          hint: Lembre do combinado da turma antes de falar.
+          options:
+            - id: sinal-da-roda-q1-a
+              text: Mantém o silêncio, olha para quem vai falar e sinaliza com o polegar.
+              isCorrect: true
+              feedback: Perfeito! Você mostrou que está pronto para escutar o colega.
+            - id: sinal-da-roda-q1-b
+              text: Começa a falar sobre outro assunto rapidamente.
+              isCorrect: false
+              feedback: Aguarde o sinal de convidar alguém antes de falar.
+            - id: sinal-da-roda-q1-c
+              text: Bate palmas fortes para chamar atenção.
+              isCorrect: false
+              feedback: O combinado pede silêncio para valorizar a fala do colega.
+        - id: sinal-da-roda-q2
+          type: true-false
+          prompt: Se o chocalho toca, todos falam ao mesmo tempo?
+          hint: Relembre como o chocalho é usado na roda.
+          statement: Quando o chocalho toca, apenas a pessoa convidada começa a falar.
+          answer: true
+          feedback:
+            'true': Isso mesmo! O chocalho indica a vez de uma pessoa por vez.
+            'false': Lembre-se de que o chocalho apresenta quem falará em seguida.
+      accessibility: *escuta_em_roda_sinal_accessibility
+  - partial: ../../_partials/acolhimento-base.yaml
+    slug: gestos-de-escuta
+    title: Gestos de Escuta
+    prompt: Identifique o gesto que demonstra atenção ao colega durante a roda.
+    type: QUIZ
+    difficulty: INICIAR
+    bncc:
+      code: EF01LP18
+      habilidades:
+        - EF01LP18
+    learningObjectives:
+      - Identificar expressões corporais que indicam escuta ativa.
+      - Manter postura corporal adequada enquanto ouve o interlocutor.
+    description: Gestos de Escuta apresenta situações do cotidiano para a turma reconhecer atitudes corporais que respeitam a fala do outro.
+    metadata:
+      categoria: Expressão corporal
+      duracaoMinutos: 9
+      habilidades:
+        - EF01LP18
+      assetSlug: lp-audio-fones
+      assetUsage: Mostre o fone de escuta como lembrete visual de que todos devem ouvir com atenção.
+      familiaEngajamento: Sugira às famílias brincadeiras de espelho para praticar gestos de escuta respeitosa.
+      interactiveSlug: quiz-gestos-de-escuta
+    accessibility: &escuta_em_roda_gestos_accessibility
+      hints:
+        - audience: ESTUDANTE
+          text: 'Passo 1: Observe o enunciado e perceba qual gesto mostra que a pessoa está ouvindo com cuidado.'
+        - audience: ESTUDANTE
+          text: 'Passo 2: Compare as alternativas imaginando como cada gesto aparece no corpo.'
+        - audience: ESTUDANTE
+          text: 'Passo 3: Comente com a dupla como você reconheceu o gesto de escuta.'
+        - audience: EDUCADOR
+          text: Demonstre cada postura com apoio visual e verbal para garantir compreensão coletiva.
+        - audience: FAMILIA
+          text: Compartilhe dicas simples de postura atenta para serem praticadas durante conversas em casa.
+      feedback:
+        success: Excelente! Você escolheu o gesto que valoriza a fala do colega.
+        encouragement: Respire fundo, observe novamente as imagens e tente mais uma vez.
+        retry: Repita mentalmente o combinado de escuta antes de responder novamente.
+        accessibility: Disponibilize recursos táteis, contrastes altos e apoio auditivo conforme necessário.
+      assets:
+        - slug: lp-audio-fones
+          type: IMAGEM
+          title: Fone acolchoado para escuta ativa
+      alternatives:
+        - title: DRAMATIZAÇÃO GUIADA
+          description: Modele as posturas em frente à turma com apoio de espelhos portáteis.
+          steps:
+            - Convide um estudante a reproduzir o gesto enquanto os demais observam.
+            - Use cartões em caixa alta com as palavras ouvir, esperar e responder.
+      audioCue:
+        title: SINAL DE ESCUTA
+        description: Utilize uma campainha suave para lembrar que é hora de observar os gestos.
+        steps:
+          - Toque o sinal no início de cada rodada e explique o que será observado.
+          - Dê alguns segundos após o som para que todos ajustem a postura.
+      motorSupport:
+        - title: SUPORTE DE POSTURA
+          description: Ofereça almofadas, encostos ou apoiadores para quem precisa ajustar a posição.
+          steps:
+            - Permita ajustes de cadeira e tempo adicional para mudança de postura.
+            - Ofereça ponteiras ou teclas grandes para seleção das respostas.
+    prerequisites:
+      - type: SKILL
+        reference: EF01LP18
+        description: Revisitar com a turma as atitudes corporais que demonstram respeito na roda de conversa.
+    interactive:
+      slug: quiz-gestos-de-escuta
+      title: Gestos de Escuta — Quiz
+      type: QUIZ
+      bnccDescription: Demonstrar atitudes de escuta ativa nas interações orais, respeitando turnos e sinalizações do grupo.
+      estimatedTimeMinutes: 9
+      instructions:
+        - Leia ou escute cada descrição com calma.
+        - Analise as imagens ou frases antes de escolher.
+        - Compartilhe com o grupo por que a alternativa escolhida representa escuta ativa.
+      objectives:
+        - Identificar expressões corporais que indicam escuta ativa.
+        - Manter postura corporal adequada enquanto ouve o interlocutor.
+      scoring:
+        correct: 10
+        incorrect: 0
+      adaptive:
+        increaseAfter: 2
+        decreaseAfter: 1
+      questions:
+        - id: gestos-de-escuta-q1
+          type: multiple-choice
+          prompt: Qual atitude mostra que você está ouvindo com atenção ao colega?
+          hint: Pense em como o corpo fica quando queremos escutar.
+          options:
+            - id: gestos-de-escuta-q1-a
+              text: Olhar para quem fala, manter o corpo voltado para o centro e sinalizar com a cabeça.
+              isCorrect: true
+              feedback: Ótimo! O corpo alinhado mostra respeito à fala do colega.
+            - id: gestos-de-escuta-q1-b
+              text: Mexer nos materiais enquanto outra pessoa conta algo.
+              isCorrect: false
+              feedback: Guarde os objetos para focar na fala do colega.
+            - id: gestos-de-escuta-q1-c
+              text: Virar o corpo para o lado oposto e cochichar com a dupla.
+              isCorrect: false
+              feedback: Gire o corpo para a roda e mantenha a atenção no relato.
+        - id: gestos-de-escuta-q2
+          type: true-false
+          prompt: Cruzar os braços e olhar para o chão mostra que estou prestando atenção?
+          hint: Lembre-se de como combinamos a postura de escuta.
+          statement: Manter o olhar para o colega e o corpo aberto ajuda a mostrar escuta ativa.
+          answer: true
+          feedback:
+            'true': Perfeito! O corpo aberto comunica interesse e respeito.
+            'false': Vale tentar de novo pensando em como o corpo aberto facilita a escuta.
+      accessibility: *escuta_em_roda_gestos_accessibility
+  - partial: ../../_partials/acolhimento-base.yaml
+    slug: perguntas-curiosas
+    title: Perguntas Curiosas
+    prompt: Após ouvir o relato, qual pergunta ajuda a continuar a conversa?
+    type: QUIZ
+    difficulty: PRATICAR
+    bncc:
+      code: EF01LP18
+      habilidades:
+        - EF01LP18
+        - EF01LP19
+    learningObjectives:
+      - Relacionar perguntas ao conteúdo ouvido para ampliar o diálogo.
+      - Selecionar pronomes interrogativos adequados após escutar um relato.
+    description: Perguntas Curiosas apresenta relatos breves para que a turma escolha perguntas pertinentes e mantenha a conversa viva.
+    metadata:
+      categoria: Formulação de perguntas
+      duracaoMinutos: 10
+      habilidades:
+        - EF01LP18
+        - EF01LP19
+      habilidadesSecundarias:
+        - EF01LP19
+      assetSlug: lp-roda-contacao
+      assetUsage: Utilize a roda de contação como apoio visual para lembrar que a pergunta nasce da escuta.
+      familiaEngajamento: Convide as famílias a anotar perguntas que surgem após histórias contadas em casa.
+      interactiveSlug: quiz-perguntas-curiosas
+    accessibility: &escuta_em_roda_perguntas_accessibility
+      hints:
+        - audience: ESTUDANTE
+          text: 'Passo 1: Relembre mentalmente o que foi contado antes de analisar as perguntas.'
+        - audience: ESTUDANTE
+          text: 'Passo 2: Pense se cada pergunta se conecta ao que você ouviu.'
+        - audience: ESTUDANTE
+          text: 'Passo 3: Explique para a dupla por que sua pergunta escolhida continua a conversa.'
+        - audience: EDUCADOR
+          text: Registre no quadro palavras-chave do relato para apoiar quem precisa.
+        - audience: FAMILIA
+          text: Compartilhe orientações sobre ouvir com atenção e perguntar com curiosidade em casa.
+      feedback:
+        success: Excelente! Sua pergunta mantém a conversa ligada ao que foi ouvido.
+        encouragement: Tudo bem errar! Releia o relato e verifique quais perguntas fazem sentido.
+        retry: Organize ideias com tópicos antes de tentar novamente.
+        accessibility: Ofereça apoio auditivo, pictogramas e tempo adicional para planejar perguntas.
+      assets:
+        - slug: lp-roda-contacao
+          type: IMAGEM
+          title: Tapete de perguntas em roda
+      alternatives:
+        - title: QUADRO DE IDEIAS
+          description: Registre palavras-chave em cartões para apoiar a formulação das perguntas.
+          steps:
+            - Fixe cartões com início, meio e fim do relato.
+            - Incentive que toquem nos cartões antes de responder.
+      audioCue:
+        title: PAUSA REFLEXIVA
+        description: Utilize um sino suave para marcar o momento de pensar na pergunta.
+        steps:
+          - Avise que o som indica tempo de reflexão.
+          - Dê alguns segundos até liberar as respostas.
+      motorSupport:
+        - title: APOIO ESCRITO
+          description: Disponibilize pranchetas ou teclados ampliados para planejar perguntas.
+          steps:
+            - Permita rascunhos com palavras-chave antes de responder.
+            - Apoie o posicionamento dos materiais na altura ideal.
+    prerequisites:
+      - type: SKILL
+        reference: EF01LP19
+        description: Recordar com a turma exemplos de perguntas que surgiram em rodas anteriores.
+    interactive:
+      slug: quiz-perguntas-curiosas
+      title: Perguntas Curiosas — Quiz
+      type: QUIZ
+      bnccDescription: Formular perguntas pertinentes após ouvir relatos orais, demonstrando atenção ao conteúdo compartilhado.
+      estimatedTimeMinutes: 10
+      instructions:
+        - Leia ou escute o relato e destaque palavras importantes.
+        - Compare cada pergunta com o assunto ouvido.
+        - Compartilhe como a pergunta escolhida ajuda a continuar o diálogo.
+      objectives:
+        - Relacionar perguntas ao conteúdo ouvido para ampliar o diálogo.
+        - Selecionar pronomes interrogativos adequados após escutar um relato.
+      scoring:
+        correct: 10
+        incorrect: 0
+      adaptive:
+        increaseAfter: 2
+        decreaseAfter: 1
+      questions:
+        - id: perguntas-curiosas-q1
+          type: multiple-choice
+          prompt: Maria contou que visitou a avó e ajudou a fazer bolo de fubá. Qual pergunta mantém o assunto?
+          hint: Observe o tema do relato antes de perguntar.
+          options:
+            - id: perguntas-curiosas-q1-a
+              text: Qual foi o ingrediente que deixou o bolo mais gostoso?
+              isCorrect: true
+              feedback: Muito bem! A pergunta se relaciona diretamente ao que Maria contou.
+            - id: perguntas-curiosas-q1-b
+              text: Você viu algum filme novo ontem à noite?
+              isCorrect: false
+              feedback: Essa pergunta não dialoga com o assunto do relato.
+            - id: perguntas-curiosas-q1-c
+              text: Quer brincar de pega-pega agora?
+              isCorrect: false
+              feedback: Lembre-se de perguntar algo sobre o bolo ou a visita.
+        - id: perguntas-curiosas-q2
+          type: true-false
+          prompt: Fazer uma pergunta sobre outro tema mostra que você não ouviu com atenção?
+          hint: Pense em como as perguntas ajudam a conversa.
+          statement: Perguntas relacionadas ao relato ouvido mostram que acompanhamos a história com atenção.
+          answer: true
+          feedback:
+            'true': Exato! Perguntar sobre o relato valoriza a fala do colega.
+            'false': Relembre que perguntas fora do tema podem interromper a conversa.
+      accessibility: *escuta_em_roda_perguntas_accessibility
+  - partial: ../../_partials/acolhimento-base.yaml
+    slug: eco-da-historia
+    title: Eco da História
+    prompt: Depois de ouvir a narrativa, escolha qual trecho precisa ser retomado para o grupo.
+    type: QUIZ
+    difficulty: PRATICAR
+    bncc:
+      code: EF01LP18
+      habilidades:
+        - EF01LP18
+        - EF01LP20
+    learningObjectives:
+      - Selecionar trechos importantes da história ouvida para compartilhar com o grupo.
+      - Ajustar a entonação ao repetir frases-chave da narrativa.
+    description: Eco da História estimula os estudantes a destacar frases essenciais para garantir que todos acompanhem a narrativa oral.
+    metadata:
+      categoria: Recontos imediatos
+      duracaoMinutos: 9
+      habilidades:
+        - EF01LP18
+        - EF01LP20
+      habilidadesSecundarias:
+        - EF01LP20
+      assetSlug: lp-audio-fones
+      assetUsage: Utilize o fone de escuta para lembrar da importância de ouvir com atenção antes de repetir.
+      familiaEngajamento: Sugerir que as famílias peçam às crianças para repetir partes favoritas de histórias contadas em casa.
+      interactiveSlug: quiz-eco-da-historia
+    accessibility: &escuta_em_roda_eco_accessibility
+      hints:
+        - audience: ESTUDANTE
+          text: 'Passo 1: Revise mentalmente a parte da história que acabou de ouvir.'
+        - audience: ESTUDANTE
+          text: 'Passo 2: Identifique qual frase ajuda o grupo a compreender o que aconteceu.'
+        - audience: ESTUDANTE
+          text: 'Passo 3: Treine a entonação antes de compartilhar o trecho escolhido.'
+        - audience: EDUCADOR
+          text: Destaque palavras-chave no quadro para apoiar a retomada dos trechos essenciais.
+        - audience: FAMILIA
+          text: Incentive as famílias a pedir que a criança conte a melhor frase da história que ouviram juntos.
+      feedback:
+        success: Excelente! Você destacou o trecho que ajuda todos a entender a história.
+        encouragement: Reescute a narrativa, marque palavras importantes e tente novamente.
+        retry: Faça uma pausa, respire e repita o trecho em voz baixa antes de responder.
+        accessibility: Disponibilize apoio auditivo, legendas e gestos para reforçar a retomada.
+      assets:
+        - slug: lp-audio-fones
+          type: IMAGEM
+          title: Fone para ecoar histórias
+      alternatives:
+        - title: SÍNTESE VISUAL
+          description: Monte cartões com imagens dos trechos principais para auxiliar a escolha.
+          steps:
+            - Exponha as imagens na ordem em que aparecem na narrativa.
+            - Peça que apontem para a imagem correspondente antes de falar.
+      audioCue:
+        title: BATIDA SUAVE
+        description: Bata duas vezes em um tambor pequeno para indicar o momento de repetir a frase.
+        steps:
+          - Combine o significado do som antes de iniciar.
+          - Repita o sinal sempre que um novo trecho precisar ser retomado.
+      motorSupport:
+        - title: MICROFONE ADAPTADO
+          description: Ofereça suporte físico para segurar microfone ou dispositivo durante a fala.
+          steps:
+            - Utilize suportes de mesa ou abraçadeiras para estabilizar o equipamento.
+            - Autorize pausas rápidas para descanso muscular.
+    prerequisites:
+      - type: SKILL
+        reference: EF01LP20
+        description: Relembrar com a turma como destacar frases que marcam o início, o meio e o fim de uma história.
+    interactive:
+      slug: quiz-eco-da-historia
+      title: Eco da História — Quiz
+      type: QUIZ
+      bnccDescription: Retomar trechos essenciais de histórias orais, ajustando a entonação e a clareza para apoiar a compreensão coletiva.
+      estimatedTimeMinutes: 9
+      instructions:
+        - Ouça a narrativa com atenção às frases principais.
+        - Compare as opções e escolha a que resume o trecho destacado.
+        - Compartilhe em voz alta o trecho escolhido com a entonação combinada.
+      objectives:
+        - Selecionar trechos importantes da história ouvida para compartilhar com o grupo.
+        - Ajustar a entonação ao repetir frases-chave da narrativa.
+      scoring:
+        correct: 10
+        incorrect: 0
+      adaptive:
+        increaseAfter: 2
+        decreaseAfter: 1
+      questions:
+        - id: eco-da-historia-q1
+          type: multiple-choice
+          prompt: No conto, o coelho decidiu voltar para ajudar a tartaruga. Qual frase retoma esse momento?
+          hint: Pense no trecho que marca a mudança de atitude do coelho.
+          options:
+            - id: eco-da-historia-q1-a
+              text: "Voltei porque percebi que vencer não é o mais importante, tartaruga!"
+              isCorrect: true
+              feedback: Muito bem! A frase reforça a decisão do coelho de ajudar.
+            - id: eco-da-historia-q1-b
+              text: "Corri tão rápido que ninguém me viu passar."
+              isCorrect: false
+              feedback: Essa frase fala apenas da corrida, não da escolha de ajudar.
+            - id: eco-da-historia-q1-c
+              text: "Hoje o dia está ensolarado e perfeito para brincar."
+              isCorrect: false
+              feedback: A frase não retoma o momento principal da narrativa.
+        - id: eco-da-historia-q2
+          type: true-false
+          prompt: Retomar uma frase com a mesma entonação do narrador ajuda quem perdeu um trecho.
+          hint: Reflita sobre como a voz apoia a compreensão.
+          statement: Ajustar a voz para repetir a frase principal ajuda todos a entenderem o que aconteceu.
+          answer: true
+          feedback:
+            'true': Excelente! A entonação reforça o sentido do trecho.
+            'false': Vale lembrar que a voz bem colocada facilita a compreensão da turma.
+      accessibility: *escuta_em_roda_eco_accessibility
+  - partial: ../../_partials/acolhimento-base.yaml
+    slug: relato-simples
+    title: Relato Simples
+    prompt: Escolha a sequência que organiza o relato ouvido em início, meio e fim.
+    type: QUIZ
+    difficulty: PRATICAR
+    bncc:
+      code: EF01LP19
+      habilidades:
+        - EF01LP19
+    learningObjectives:
+      - Organizar um relato oral curto com marcadores temporais simples.
+      - Utilizar conectivos como depois e por fim para manter a ordem dos acontecimentos.
+    description: Relato Simples convida a turma a ordenar acontecimentos de histórias contadas em primeira pessoa, reforçando a clareza do relato oral.
+    metadata:
+      categoria: Ordem cronológica
+      duracaoMinutos: 9
+      habilidades:
+        - EF01LP19
+      assetSlug: lp-roda-contacao
+      assetUsage: Posicione a roda de contação ao centro para representar o percurso do relato compartilhado.
+      familiaEngajamento: Incentive as famílias a contar fatos do dia seguindo a sequência início, meio e fim.
+      interactiveSlug: quiz-relato-simples
+    accessibility: &escuta_em_roda_relato_accessibility
+      hints:
+        - audience: ESTUDANTE
+          text: 'Passo 1: Relembre como o relato começou e quais ações vieram depois.'
+        - audience: ESTUDANTE
+          text: 'Passo 2: Procure palavras como depois, então ou por fim para ajudar na ordem.'
+        - audience: ESTUDANTE
+          text: 'Passo 3: Conte a sequência para um colega antes de confirmar a resposta.'
+        - audience: EDUCADOR
+          text: Use cartões numerados ou setas no quadro para apoiar a organização da sequência.
+        - audience: FAMILIA
+          text: Envie dicas de como usar fotos ou desenhos para organizar relatos em casa.
+      feedback:
+        success: Muito bem! Você manteve o relato organizado para que todos compreendam.
+        encouragement: Volte ao início do relato e identifique novamente as palavras de sequência.
+        retry: Faça um rascunho rápido com números antes de responder.
+        accessibility: Disponibilize linha do tempo tátil, legendas em caixa alta e apoio auditivo conforme necessário.
+      assets:
+        - slug: lp-roda-contacao
+          type: IMAGEM
+          title: Tapete de sequência narrativa
+      alternatives:
+        - title: LINHA DO TEMPO VISUAL
+          description: Utilize cartões coloridos para representar início, meio e fim do relato.
+          steps:
+            - Organize os cartões em uma mesa acessível a todos.
+            - Convide os estudantes a posicionar cada cartão antes de responder.
+      audioCue:
+        title: SINO DE INÍCIO
+        description: Toque um sino curto para marcar o momento de revisar a sequência.
+        steps:
+          - Explique que o som indica hora de reorganizar mentalmente o relato.
+          - Aguarde alguns segundos antes de liberar as respostas.
+      motorSupport:
+        - title: CARTÕES AMPLIADOS
+          description: Disponibilize cartões de ordem com pistas táteis ou ímãs.
+          steps:
+            - Permita manipular os cartões para ensaiar a sequência.
+            - Ofereça apoios de punho ou suportes para quem escreve as respostas.
+    prerequisites:
+      - type: SKILL
+        reference: EF01LP19
+        description: Relembrar com a turma relatos anteriores organizados em início, meio e fim.
+    interactive:
+      slug: quiz-relato-simples
+      title: Relato Simples — Quiz
+      type: QUIZ
+      bnccDescription: Relatar fatos observados considerando a ordem cronológica e marcadores temporais adequados.
+      estimatedTimeMinutes: 9
+      instructions:
+        - Escute o relato e destaque palavras que indicam tempo.
+        - Compare cada alternativa verificando se mantém a mesma ordem.
+        - Leia o relato em voz baixa antes de compartilhar sua escolha.
+      objectives:
+        - Organizar um relato oral curto com marcadores temporais simples.
+        - Utilizar conectivos como depois e por fim para manter a ordem dos acontecimentos.
+      scoring:
+        correct: 10
+        incorrect: 0
+      adaptive:
+        increaseAfter: 2
+        decreaseAfter: 1
+      questions:
+        - id: relato-simples-q1
+          type: multiple-choice
+          prompt: No relato ouvimos "Primeiro arrumamos a sala, depois escolhemos um livro e por fim contamos para a diretora". Qual sequência respeita o relato?
+          hint: Observe as expressões primeiro, depois e por fim.
+          options:
+            - id: relato-simples-q1-a
+              text: Arrumar a sala → escolher um livro → contar para a diretora.
+              isCorrect: true
+              feedback: Perfeito! A sequência segue exatamente o relato ouvido.
+            - id: relato-simples-q1-b
+              text: Contar para a diretora → arrumar a sala → escolher um livro.
+              isCorrect: false
+              feedback: Veja que essa opção troca o final pelo começo.
+            - id: relato-simples-q1-c
+              text: Escolher um livro → contar para a diretora → arrumar a sala.
+              isCorrect: false
+              feedback: Lembre-se de começar pelo momento em que a sala foi arrumada.
+        - id: relato-simples-q2
+          type: true-false
+          prompt: Usar palavras como depois e por fim ajuda a organizar o relato?
+          hint: Pense nas palavras que mostram a ordem dos fatos.
+          statement: Marcadores temporais como depois e por fim ajudam a organizar o relato oral.
+          answer: true
+          feedback:
+            'true': Isso mesmo! Eles guiam quem escuta e quem conta a história.
+            'false': Repare como essas palavras indicam a ordem correta dos acontecimentos.
+      accessibility: *escuta_em_roda_relato_accessibility
+  - partial: ../../_partials/acolhimento-base.yaml
+    slug: palavra-sinal
+    title: Palavra-Sinal
+    prompt: Escolha a expressão oral que convida o colega a falar sem interromper.
+    type: QUIZ
+    difficulty: INICIAR
+    bncc:
+      code: EF01LP18
+      habilidades:
+        - EF01LP18
+    learningObjectives:
+      - Reconhecer expressões que convidam alguém a falar com respeito.
+      - Demonstrar cortesia ao oferecer o turno para outra pessoa.
+    description: Palavra-Sinal apresenta diferentes frases para que a turma identifique maneiras gentis de passar a vez durante a roda de conversa.
+    metadata:
+      categoria: Expressões orais
+      duracaoMinutos: 8
+      habilidades:
+        - EF01LP18
+      assetSlug: lp-audio-fones
+      assetUsage: Exiba o fone de escuta como símbolo de que a palavra circula com cuidado entre todos.
+      familiaEngajamento: Sugira que as famílias usem expressões de convite durante refeições ou rodas caseiras.
+      interactiveSlug: quiz-palavra-sinal
+    accessibility: &escuta_em_roda_palavra_accessibility
+      hints:
+        - audience: ESTUDANTE
+          text: 'Passo 1: Leia ou escute cada frase atentamente.'
+        - audience: ESTUDANTE
+          text: 'Passo 2: Imagine como a pessoa se sentiria ao receber cada convite.'
+        - audience: ESTUDANTE
+          text: 'Passo 3: Repita em voz baixa a frase escolhida para confirmar se ela é gentil.'
+        - audience: EDUCADOR
+          text: Registre no quadro expressões de convite e incentive combinações próprias da turma.
+        - audience: FAMILIA
+          text: Envie exemplos de frases acolhedoras para uso em conversas familiares.
+      feedback:
+        success: Excelente! Você escolheu uma expressão que respeita a vez do colega.
+        encouragement: Releia as opções e pense em como cada frase soa ao ser pronunciada.
+        retry: Faça uma pausa, respire e experimente dramatizar cada frase antes de decidir.
+        accessibility: Disponibilize cartões grandes com as expressões e ofereça leitura em voz alta.
+      assets:
+        - slug: lp-audio-fones
+          type: IMAGEM
+          title: Fone que simboliza a vez de falar
+      alternatives:
+        - title: CARTAZ DE FRASES
+          description: Monte um cartaz com expressões positivas para consulta rápida.
+          steps:
+            - Utilize letras grandes e contrastantes.
+            - Inclua pictogramas que representem falar, ouvir e esperar.
+      audioCue:
+        title: PALMA SUAVE
+        description: Combine uma palma suave para avisar quando o turno será oferecido.
+        steps:
+          - Toque a palma e diga quem recebe a palavra.
+          - Espere o colega confirmar antes de seguir com a atividade.
+      motorSupport:
+        - title: BOTÕES DE RESPOSTA
+          description: Disponibilize botões ou setas grandes para seleção das frases.
+          steps:
+            - Permita que a pessoa teste os botões antes de iniciar.
+            - Ajuste o tempo de resposta conforme a necessidade.
+    prerequisites:
+      - type: SKILL
+        reference: EF01LP18
+        description: Relembrar com o grupo as frases acordadas para passar a palavra durante a roda.
+    interactive:
+      slug: quiz-palavra-sinal
+      title: Palavra-Sinal — Quiz
+      type: QUIZ
+      bnccDescription: Participar de situações de troca oral usando expressões que indicam o turno de fala com respeito.
+      estimatedTimeMinutes: 8
+      instructions:
+        - Leia ou escute cada frase de convite.
+        - Pense em como o colega se sentiria ao ouvir a expressão.
+        - Compartilhe com a turma a frase escolhida e o motivo.
+      objectives:
+        - Reconhecer expressões que convidam alguém a falar com respeito.
+        - Demonstrar cortesia ao oferecer o turno para outra pessoa.
+      scoring:
+        correct: 10
+        incorrect: 0
+      adaptive:
+        increaseAfter: 2
+        decreaseAfter: 1
+      questions:
+        - id: palavra-sinal-q1
+          type: multiple-choice
+          prompt: Qual frase convida o colega a falar sem pressa?
+          hint: Lembre-se de usar palavras gentis.
+          options:
+            - id: palavra-sinal-q1-a
+              text: Agora é sua vez de contar, quer compartilhar com a gente?
+              isCorrect: true
+              feedback: Perfeito! Você ofereceu a palavra com cuidado.
+            - id: palavra-sinal-q1-b
+              text: Fala logo antes que acabe o tempo.
+              isCorrect: false
+              feedback: Essa frase pressiona o colega e não respeita o turno.
+            - id: palavra-sinal-q1-c
+              text: Não quero ouvir você, vou continuar falando.
+              isCorrect: false
+              feedback: Essa frase interrompe e desrespeita a roda.
+        - id: palavra-sinal-q2
+          type: true-false
+          prompt: Dizer 'posso te ouvir agora?' mostra cuidado ao passar a palavra?
+          hint: Reflita sobre como convidamos alguém para falar.
+          statement: Expressões que perguntam se o colega deseja falar mostram respeito ao turno.
+          answer: true
+          feedback:
+            'true': Exatamente! Perguntar demonstra atenção e cortesia.
+            'false': Vale lembrar que convidar com gentileza fortalece a escuta.
+      accessibility: *escuta_em_roda_palavra_accessibility
+  - partial: ../../_partials/acolhimento-base.yaml
+    slug: memoria-coletiva
+    title: Memória Coletiva
+    prompt: Depois da roda, escolha o registro que guarda as três ideias principais do relato.
+    type: QUIZ
+    difficulty: PRATICAR
+    bncc:
+      code: EF01LP19
+      habilidades:
+        - EF01LP19
+        - EF01LP20
+    learningObjectives:
+      - Selecionar as informações essenciais de um relato oral.
+      - Registrar palavras-chave para apoiar a memória coletiva da turma.
+    description: Memória Coletiva orienta a turma a construir sínteses curtas que preservam as ideias principais compartilhadas na roda.
+    metadata:
+      categoria: Memória compartilhada
+      duracaoMinutos: 9
+      habilidades:
+        - EF01LP19
+        - EF01LP20
+      habilidadesSecundarias:
+        - EF01LP20
+      assetSlug: lp-roda-contacao
+      assetUsage: Utilize a roda de contação como mapa para apontar cada ideia registrada pelo grupo.
+      familiaEngajamento: Sugira que as famílias criem quadros com palavras-chave após conversas importantes em casa.
+      interactiveSlug: quiz-memoria-coletiva
+    accessibility: &escuta_em_roda_memoria_accessibility
+      hints:
+        - audience: ESTUDANTE
+          text: 'Passo 1: Relembre as três partes mais importantes do relato.'
+        - audience: ESTUDANTE
+          text: 'Passo 2: Procure registros que mencionem todas as ideias principais.'
+        - audience: ESTUDANTE
+          text: 'Passo 3: Conte ao colega quais palavras-chave você manteria no cartaz.'
+        - audience: EDUCADOR
+          text: Apoie com cartões coloridos cada ideia relevante compartilhada.
+        - audience: FAMILIA
+          text: Envie orientações sobre como construir mapas de palavras em família após conversas significativas.
+      feedback:
+        success: Ótimo! Você escolheu o registro que conserva as ideias centrais do relato.
+        encouragement: Releia as palavras principais do relato antes de tentar novamente.
+        retry: Faça uma lista rápida com três palavras-chave para guiar sua próxima escolha.
+        accessibility: Disponibilize quadro magnético com pictogramas e recursos auditivos conforme necessário.
+      assets:
+        - slug: lp-roda-contacao
+          type: IMAGEM
+          title: Tapete de memórias compartilhadas
+      alternatives:
+        - title: MAPA DE PALAVRAS
+          description: Monte um mapa visual com cores diferentes para cada ideia.
+          steps:
+            - Posicione cartões com lupa, coração e relógio para representar tema, sentimento e tempo.
+            - Conecte os cartões com fitas ou cordões para reforçar a ligação entre eles.
+      audioCue:
+        title: SINO DE REVISÃO
+        description: Toque um sino curto para marcar o momento de revisar os registros.
+        steps:
+          - Após o sinal, convide a turma a apontar as palavras-chave.
+          - Aguarde respostas antes de avançar para a próxima pergunta.
+      motorSupport:
+        - title: QUADRO COOPERATIVO
+          description: Use quadro magnético com peças grandes para quem precisa de apoio motor.
+          steps:
+            - Permita mover as peças com ambas as mãos ou com ajuda de ponteiras.
+            - Ofereça descanso breve entre uma movimentação e outra.
+    prerequisites:
+      - type: SKILL
+        reference: EF01LP20
+        description: Revisitar com a turma registros coletivos construídos em rodas anteriores.
+    interactive:
+      slug: quiz-memoria-coletiva
+      title: Memória Coletiva — Quiz
+      type: QUIZ
+      bnccDescription: Selecionar e registrar ideias principais de relatos orais, mantendo coesão e sentido para o grupo.
+      estimatedTimeMinutes: 9
+      instructions:
+        - Leia as opções de registro com atenção às palavras-chave.
+        - Verifique se todas as ideias principais aparecem.
+        - Compartilhe como o registro escolhido ajuda a turma a lembrar do relato.
+      objectives:
+        - Selecionar as informações essenciais de um relato oral.
+        - Registrar palavras-chave para apoiar a memória coletiva da turma.
+      scoring:
+        correct: 10
+        incorrect: 0
+      adaptive:
+        increaseAfter: 2
+        decreaseAfter: 1
+      questions:
+        - id: memoria-coletiva-q1
+          type: multiple-choice
+          prompt: A turma ouviu que o grupo plantou sementes, regou todos os dias e anotou o crescimento. Qual registro guarda as três ideias?
+          hint: Procure palavras que contem a sequência completa.
+          options:
+            - id: memoria-coletiva-q1-a
+              text: Plantio das sementes → rega diária → anotações sobre o crescimento.
+              isCorrect: true
+              feedback: Excelente! O registro mantém as três etapas principais.
+            - id: memoria-coletiva-q1-b
+              text: Rega diária → conversa com a diretora → festa de encerramento.
+              isCorrect: false
+              feedback: Essa opção inclui elementos que não apareceram no relato.
+            - id: memoria-coletiva-q1-c
+              text: Plantio das sementes → lanche coletivo → jogo na quadra.
+              isCorrect: false
+              feedback: O registro mistura informações que não foram mencionadas.
+        - id: memoria-coletiva-q2
+          type: true-false
+          prompt: Registrar as três ideias principais ajuda a turma a lembrar do relato?
+          hint: Pense em como o registro apoia a memória coletiva.
+          statement: Registrar palavras-chave durante a roda ajuda todos a lembrar do que foi contado.
+          answer: true
+          feedback:
+            'true': Perfeito! O registro coletivo fortalece a memória da turma.
+            'false': Repare como as palavras-chave mantêm o sentido do relato.
+      accessibility: *escuta_em_roda_memoria_accessibility
+  - partial: ../../_partials/acolhimento-base.yaml
+    slug: turnos-coreografados
+    title: Turnos Coreografados
+    prompt: Escolha a sequência de sinais que garante a vez de cada colega na roda.
+    type: QUIZ
+    difficulty: DOMINAR
+    bncc:
+      code: EF01LP18
+      habilidades:
+        - EF01LP18
+        - EF01LP19
+    learningObjectives:
+      - Planejar a ordem de fala durante a roda com base em combinados coletivos.
+      - Apoiar colegas a iniciar e concluir falas de forma organizada.
+    description: Turnos Coreografados desafia a turma a pensar a organização da roda combinando gestos e frases para que cada voz seja ouvida.
+    metadata:
+      categoria: Planejamento da roda
+      duracaoMinutos: 10
+      habilidades:
+        - EF01LP18
+        - EF01LP19
+      habilidadesSecundarias:
+        - EF01LP19
+      assetSlug: lp-audio-fones
+      assetUsage: Use o fone como símbolo de que a palavra circula em ritmo combinado entre todos.
+      familiaEngajamento: Sugira que as famílias experimentem turnos coreografados durante conversas familiares.
+      interactiveSlug: quiz-turnos-coreografados
+    accessibility: &escuta_em_roda_turnos_accessibility
+      hints:
+        - audience: ESTUDANTE
+          text: 'Passo 1: Visualize a ordem de quem fala primeiro, segundo e terceiro.'
+        - audience: ESTUDANTE
+          text: 'Passo 2: Observe quais gestos indicam convite, pausa e agradecimento.'
+        - audience: ESTUDANTE
+          text: 'Passo 3: Simule a sequência com as mãos antes de confirmar a resposta.'
+        - audience: EDUCADOR
+          text: Disponibilize cartões com os gestos combinados e organize-os no quadro.
+        - audience: FAMILIA
+          text: Compartilhe sugestões para usar cartões de vez de falar nas conversas em casa.
+      feedback:
+        success: Ótimo! Você organizou a ordem garantindo que todas as vozes apareçam.
+        encouragement: Volte aos gestos combinados e revise quem inicia e encerra a fala.
+        retry: Faça um ensaio rápido com a turma antes de tentar novamente.
+        accessibility: Utilize suportes visuais grandes, áudio descrição dos gestos e tempo estendido.
+      assets:
+        - slug: lp-audio-fones
+          type: IMAGEM
+          title: Fone sinalizador de turnos
+      alternatives:
+        - title: COREOGRAFIA EM MINIATURA
+          description: Monte bonecos ou marcadores para simular a ordem de fala.
+          steps:
+            - Posicione cada marcador em sequência sobre o tapete.
+            - Movimente-os conforme cada turno é executado.
+      audioCue:
+        title: DUPLA BATIDA
+        description: Toque duas batidas leves para indicar a troca de turno.
+        steps:
+          - Combine com a turma que a primeira batida sinaliza a conclusão e a segunda o convite.
+          - Dê tempo para que cada colega reaja ao som.
+      motorSupport:
+        - title: PAINEL DE TURNOS
+          description: Utilize painel com velcro e fotos para indicar a ordem de fala.
+          steps:
+            - Permita que cada estudante mova sua foto ao confirmar o turno.
+            - Ofereça apoio postural durante a participação.
+    prerequisites:
+      - type: SKILL
+        reference: EF01LP18
+        description: Relembrar os combinados de entrada e saída de fala utilizados pela turma.
+    interactive:
+      slug: quiz-turnos-coreografados
+      title: Turnos Coreografados — Quiz
+      type: QUIZ
+      bnccDescription: Planejar e respeitar turnos de fala em interações orais, oferecendo apoio aos colegas quando necessário.
+      estimatedTimeMinutes: 10
+      instructions:
+        - Analise os gestos apresentados em cada alternativa.
+        - Observe quem convida, quem fala e quem finaliza o turno.
+        - Explique como a sequência escolhida garante que todos participem.
+      objectives:
+        - Planejar a ordem de fala durante a roda com base em combinados coletivos.
+        - Apoiar colegas a iniciar e concluir falas de forma organizada.
+      scoring:
+        correct: 10
+        incorrect: 0
+      adaptive:
+        increaseAfter: 2
+        decreaseAfter: 1
+      questions:
+        - id: turnos-coreografados-q1
+          type: multiple-choice
+          prompt: Ana levanta o cartão verde para convidar Bruno, Bruno fala e agradece, e Carla encerra reforçando um combinado. Qual sequência respeita o giro da palavra?
+          hint: Pense em quem convida, quem responde e quem encerra.
+          options:
+            - id: turnos-coreografados-q1-a
+              text: Ana convida Bruno → Bruno responde e agradece → Carla encerra convidando Ana novamente.
+              isCorrect: true
+              feedback: Excelente! A palavra girou respeitando os combinados.
+            - id: turnos-coreografados-q1-b
+              text: Bruno começa sem convite → Carla interrompe → Ana tenta falar por cima.
+              isCorrect: false
+              feedback: Observe que essa sequência ignora os sinais combinados.
+            - id: turnos-coreografados-q1-c
+              text: Carla encerra antes do convite → Ana fala sozinha → Bruno só ouve.
+              isCorrect: false
+              feedback: Todos precisam ser convidados e encerrar com cuidado.
+        - id: turnos-coreografados-q2
+          type: true-false
+          prompt: Esperar o colega concluir a frase antes de sinalizar a troca mantém a roda organizada.
+          hint: Reflita sobre o tempo de cada fala.
+          statement: Respeitar a conclusão do colega antes de acionar o próximo sinal mantém a roda organizada.
+          answer: true
+          feedback:
+            'true': Muito bem! Assim ninguém é interrompido.
+            'false': Lembre que interromper quebra o ritmo combinado.
+      accessibility: *escuta_em_roda_turnos_accessibility
+  - partial: ../../_partials/acolhimento-base.yaml
+    slug: retomar-ideia
+    title: Retomar Ideia
+    prompt: Escolha a frase que retoma a fala do colega com outras palavras e amplia a ideia principal.
+    type: QUIZ
+    difficulty: DOMINAR
+    bncc:
+      code: EF01LP19
+      habilidades:
+        - EF01LP19
+        - EF01LP20
+    learningObjectives:
+      - Reformular a fala do colega com clareza antes de acrescentar novas informações.
+      - Destacar a ideia principal ao retomar um relato coletivo.
+    description: Retomar Ideia apresenta falas reais para que a turma aprenda a reafirmar o que foi dito e acrescentar detalhes sem mudar o sentido.
+    metadata:
+      categoria: Reformulação oral
+      duracaoMinutos: 10
+      habilidades:
+        - EF01LP19
+        - EF01LP20
+      habilidadesSecundarias:
+        - EF01LP20
+      assetSlug: lp-roda-contacao
+      assetUsage: Utilize a roda como referência visual para mostrar quem falou e quem retomará a ideia.
+      familiaEngajamento: Sugira que as famílias incentivem a criança a repetir com suas palavras o que ouviu em casa.
+      interactiveSlug: quiz-retomar-ideia
+    accessibility: &escuta_em_roda_retomar_accessibility
+      hints:
+        - audience: ESTUDANTE
+          text: 'Passo 1: Relembre a ideia principal do colega.'
+        - audience: ESTUDANTE
+          text: 'Passo 2: Veja se a frase mantém o sentido antes de acrescentar algo novo.'
+        - audience: ESTUDANTE
+          text: 'Passo 3: Treine a frase com voz calma e clara antes de responder.'
+        - audience: EDUCADOR
+          text: Registre no quadro palavras-chave do relato para apoiar a retomada.
+        - audience: FAMILIA
+          text: Envie orientações para que as famílias pratiquem paráfrases em conversas cotidianas.
+      feedback:
+        success: Ótimo! Você retomou a fala mantendo o sentido e ampliando a ideia.
+        encouragement: Releia a fala original e confira se o sentido foi preservado.
+        retry: Faça uma paráfrase curta em voz baixa antes de escolher novamente.
+        accessibility: Ofereça transcrição escrita das falas, recursos auditivos e tempo extra.
+      assets:
+        - slug: lp-roda-contacao
+          type: IMAGEM
+          title: Tapete para retomada de ideias
+      alternatives:
+        - title: CARTÕES DE PARÁFRASE
+          description: Distribua cartões com expressões como 'Você disse que...' e 'Eu entendi que...'.
+          steps:
+            - Incentive o uso dos cartões antes de falar.
+            - Combine gestos que sinalizem a retomada.
+      audioCue:
+        title: TOQUE DE CONFIRMAÇÃO
+        description: Toque um instrumento suave para indicar que a retomada será feita.
+        steps:
+          - Após o som, convide a pessoa a reformular a ideia.
+          - Ofereça tempo para que ela se organize.
+      motorSupport:
+        - title: SUPORTE DE LEITURA
+          description: Disponibilize réguas de leitura ou suportes para acompanhar o texto.
+          steps:
+            - Permita que a pessoa deslize a régua conforme lê.
+            - Ajuste a altura do material conforme cada necessidade.
+    prerequisites:
+      - type: SKILL
+        reference: EF01LP20
+        description: Revisitar com a turma exemplos de paráfrases realizadas em rodas anteriores.
+    interactive:
+      slug: quiz-retomar-ideia
+      title: Retomar Ideia — Quiz
+      type: QUIZ
+      bnccDescription: Retomar e ampliar falas de colegas em interações orais, mantendo o sentido original e acrescentando detalhes pertinentes.
+      estimatedTimeMinutes: 10
+      instructions:
+        - Leia a fala original com atenção às palavras-chave.
+        - Compare as alternativas e selecione a que mantém o sentido.
+        - Compartilhe a retomada escolhida com voz clara e pausada.
+      objectives:
+        - Reformular a fala do colega com clareza antes de acrescentar novas informações.
+        - Destacar a ideia principal ao retomar um relato coletivo.
+      scoring:
+        correct: 10
+        incorrect: 0
+      adaptive:
+        increaseAfter: 2
+        decreaseAfter: 1
+      questions:
+        - id: retomar-ideia-q1
+          type: multiple-choice
+          prompt: Júlia disse 'Plantamos feijões no algodão e vamos observar o crescimento todos os dias'. Qual retomada respeita a ideia dela?
+          hint: Procure manter o sentido antes de acrescentar algo novo.
+          options:
+            - id: retomar-ideia-q1-a
+              text: Você explicou que os feijões estão no algodão e que vamos acompanhar o crescimento diariamente.
+              isCorrect: true
+              feedback: Ótimo! A fala mantém o sentido original e reforça o plano.
+            - id: retomar-ideia-q1-b
+              text: Todo dia vamos brincar com os feijões no recreio.
+              isCorrect: false
+              feedback: Essa frase muda o objetivo do relato.
+            - id: retomar-ideia-q1-c
+              text: Prefiro plantar flores em vez de feijões.
+              isCorrect: false
+              feedback: A fala não retoma a ideia apresentada por Júlia.
+        - id: retomar-ideia-q2
+          type: true-false
+          prompt: Começar a retomada com 'Você disse que...' ajuda a manter o sentido do colega?
+          hint: Reflita sobre como confirmar a ideia original.
+          statement: Expressões como 'Você disse que...' ajudam a garantir que a retomada mantenha o sentido da fala original.
+          answer: true
+          feedback:
+            'true': Excelente! Assim mostramos que escutamos com atenção.
+            'false': Lembre-se de que confirmar a fala do colega demonstra respeito.
+      accessibility: *escuta_em_roda_retomar_accessibility
+  - partial: ../../_partials/acolhimento-base.yaml
+    slug: mediacao-do-colega
+    title: Mediação do Colega
+    prompt: Em cada situação, escolha a atitude do mediador que organiza a roda e valoriza quem fala.
+    type: QUIZ
+    difficulty: DOMINAR
+    bncc:
+      code: EF01LP18
+      habilidades:
+        - EF01LP18
+        - EF01LP19
+        - EF01LP20
+    learningObjectives:
+      - Mediar turnos de fala com escuta ativa, convites claros e sínteses breves.
+      - Garantir que perguntas e retomadas mantenham o sentido da conversa coletiva.
+    description: Mediação do Colega foca nas estratégias do estudante que conduz a roda, acolhendo falas e distribuindo a palavra com equilíbrio.
+    metadata:
+      categoria: Mediação colaborativa
+      duracaoMinutos: 11
+      habilidades:
+        - EF01LP18
+        - EF01LP19
+        - EF01LP20
+      habilidadesSecundarias:
+        - EF01LP19
+        - EF01LP20
+      assetSlug: lp-audio-fones
+      assetUsage: Mostre o fone como símbolo da pessoa mediadora que escuta cada voz com atenção.
+      familiaEngajamento: Oriente as famílias a alternar papéis de mediação em conversas domésticas.
+      interactiveSlug: quiz-mediacao-do-colega
+    accessibility: &escuta_em_roda_mediacao_accessibility
+      hints:
+        - audience: ESTUDANTE
+          text: 'Passo 1: Observe quem precisa ser convidado e quem precisa de síntese.'
+        - audience: ESTUDANTE
+          text: 'Passo 2: Pense em como acolher a fala antes de chamar o próximo colega.'
+        - audience: ESTUDANTE
+          text: 'Passo 3: Treine uma frase que resume o que foi dito antes de seguir.'
+        - audience: EDUCADOR
+          text: Apoie com cartões indicando convidar, resumir e agradecer.
+        - audience: FAMILIA
+          text: Compartilhe dicas para rodízio de mediação em reuniões familiares.
+      feedback:
+        success: Excelente! Você mediou a conversa com equilíbrio e respeito.
+        encouragement: Retorne às pistas fornecidas e pense em como acolher cada voz.
+        retry: Ensaiar rapidamente a função de mediador pode ajudar na próxima tentativa.
+        accessibility: Disponibilize fones com volume ajustável, legendas e apoio motor para quem precisar.
+      assets:
+        - slug: lp-audio-fones
+          type: IMAGEM
+          title: Fone do estudante mediador
+      alternatives:
+        - title: ROTEIRO DE MEDIAÇÃO
+          description: Monte um roteiro com verbos de acolher, convidar e resumir.
+          steps:
+            - Entregue o roteiro ao mediador da rodada.
+            - Revise os verbos antes de iniciar a conversa.
+      audioCue:
+        title: SINAL DE PASSAGEM
+        description: Utilize um toque breve de xilofone para indicar trocas conduzidas pelo mediador.
+        steps:
+          - Toque o instrumento antes de convidar nova fala.
+          - Aguarde o sinal ser compreendido por todos.
+      motorSupport:
+        - title: BASTÃO DO MEDIADOR
+          description: Ofereça bastão leve com apoio anatômico para simbolizar quem conduz a roda.
+          steps:
+            - Adapte empunhadura conforme a necessidade.
+            - Planeje pausas para alternância do bastão.
+    prerequisites:
+      - type: SKILL
+        reference: EF01LP18
+        description: Revisitar os combinados de mediação utilizados pela turma em rodas anteriores.
+    interactive:
+      slug: quiz-mediacao-do-colega
+      title: Mediação do Colega — Quiz
+      type: QUIZ
+      bnccDescription: Conduzir interações orais respeitando turnos, sintetizando falas e convidando novos participantes com clareza.
+      estimatedTimeMinutes: 11
+      instructions:
+        - Analise a situação e identifique o que falta para a roda continuar.
+        - Escolha a atitude que acolhe a fala anterior e convida a próxima.
+        - Explique como sua escolha fortalece o diálogo coletivo.
+      objectives:
+        - Mediar turnos de fala com escuta ativa, convites claros e sínteses breves.
+        - Garantir que perguntas e retomadas mantenham o sentido da conversa coletiva.
+      scoring:
+        correct: 10
+        incorrect: 0
+      adaptive:
+        increaseAfter: 2
+        decreaseAfter: 1
+      questions:
+        - id: mediacao-do-colega-q1
+          type: multiple-choice
+          prompt: Pedro acaba de relatar a visita ao museu. Como a mediadora deve agir em seguida?
+          hint: Pense em como acolher e convidar outra voz.
+          options:
+            - id: mediacao-do-colega-q1-a
+              text: "Obrigada, Pedro! Maria, você pode contar o que mais te chamou atenção na visita?"
+              isCorrect: true
+              feedback: Excelente! A mediadora acolheu e convidou outra colega de forma clara.
+            - id: mediacao-do-colega-q1-b
+              text: "Agora todo mundo fala ao mesmo tempo para ser mais rápido."
+              isCorrect: false
+              feedback: Isso desorganiza a roda e impede que cada voz seja ouvida.
+            - id: mediacao-do-colega-q1-c
+              text: "Pedro, sua fala terminou. Vamos mudar de assunto e cantar uma música?"
+              isCorrect: false
+              feedback: O mediador precisa acolher a fala antes de trocar de tema.
+        - id: mediacao-do-colega-q2
+          type: true-false
+          prompt: Um bom mediador resume o que ouviu antes de chamar o próximo colega?
+          hint: Pense em como garantir que todos acompanhem a conversa.
+          statement: Resumir a fala anterior e agradecer antes de convidar outra pessoa fortalece a mediação.
+          answer: true
+          feedback:
+            'true': Perfeito! A síntese mostra que a fala foi escutada com atenção.
+            'false': Lembre-se de resumir o que foi dito antes de convidar outra pessoa.
+      accessibility: *escuta_em_roda_mediacao_accessibility
+  - partial: ../../_partials/acolhimento-base.yaml
+    slug: escuta-com-anotacoes
+    title: Escuta com Anotações
+    prompt: Enquanto escuta o colega, qual anotação ajuda a lembrar da pergunta que você quer fazer?
+    type: QUIZ
+    difficulty: INICIAR
+    bncc:
+      code: EF01LP18
+      habilidades:
+        - EF01LP18
+        - EF01LP20
+    learningObjectives:
+      - Utilizar anotações simples para registrar palavras-chave durante a escuta.
+      - Preparar perguntas e comentários respeitando o turno de fala.
+    description: Escuta com Anotações orienta os estudantes a registrar palavras e desenhos rápidos enquanto escutam, facilitando perguntas posteriores sem interromper o colega.
+    metadata:
+      categoria: Registro rápido
+      duracaoMinutos: 8
+      habilidades:
+        - EF01LP18
+        - EF01LP20
+      habilidadesSecundarias:
+        - EF01LP20
+      assetSlug: lp-material-caderno
+      assetUsage: Mostre o caderno como espaço de apoio para anotar palavras-chave durante a roda.
+      familiaEngajamento: Sugira que as famílias usem blocos de notas para registrar ideias durante conversas em casa.
+      interactiveSlug: quiz-escuta-com-anotacoes
+    accessibility: &escuta_em_roda_anotacoes_accessibility
+      hints:
+        - audience: ESTUDANTE
+          text: 'Passo 1: Escute atentamente e identifique a palavra que deseja lembrar.'
+        - audience: ESTUDANTE
+          text: 'Passo 2: Registre apenas uma palavra ou símbolo para lembrar do assunto.'
+        - audience: ESTUDANTE
+          text: 'Passo 3: Feche o caderno e volte a olhar para o colega enquanto ele fala.'
+        - audience: EDUCADOR
+          text: Modele anotações curtas no quadro para inspirar a turma.
+        - audience: FAMILIA
+          text: Compartilhe dicas para usar símbolos simples em anotações familiares.
+      feedback:
+        success: Perfeito! Você escolheu uma anotação que apoia a escuta sem interromper.
+        encouragement: Releia as opções e escolha a palavra ou símbolo que represente a ideia principal.
+        retry: Respire, anote apenas um sinal rápido e tente novamente.
+        accessibility: Disponibilize caderno ampliado, lápis adaptados e ditado lento conforme necessário.
+      assets:
+        - slug: lp-material-caderno
+          type: IMAGEM
+          title: Caderno de anotações rápidas
+      alternatives:
+        - title: BLOCO DE PICTOGRAMAS
+          description: Ofereça pictogramas que representem ações e sentimentos para colar no caderno.
+          steps:
+            - Permita que escolham o pictograma durante a escuta.
+            - Reforce que levantem a cabeça após colar o símbolo.
+      audioCue:
+        title: SINAL DE REGISTRO
+        description: Combine um toque leve para indicar o momento permitido de anotar.
+        steps:
+          - Toque o sinal antes de liberar as anotações.
+          - Após o sinal, peça que voltem o olhar para a roda.
+      motorSupport:
+        - title: SUPORTE DE PULSO
+          description: Utilize pranchetas inclinadas e apoios para facilitar o registro breve.
+          steps:
+            - Ajuste a altura da prancheta conforme a necessidade.
+            - Permita pausas curtas para relaxamento das mãos.
+    prerequisites:
+      - type: SKILL
+        reference: EF01LP18
+        description: Relembrar com a turma como focar no colega enquanto realiza anotações curtas.
+    interactive:
+      slug: quiz-escuta-com-anotacoes
+      title: Escuta com Anotações — Quiz
+      type: QUIZ
+      bnccDescription: Utilizar registros rápidos para apoiar a escuta e o planejamento de perguntas durante interações orais.
+      estimatedTimeMinutes: 8
+      instructions:
+        - Escute a fala e identifique a ideia principal.
+        - Escolha a anotação que ajuda a lembrar sem escrever textos longos.
+        - Compartilhe com o grupo como a anotação apoia a sua escuta.
+      objectives:
+        - Utilizar anotações simples para registrar palavras-chave durante a escuta.
+        - Preparar perguntas e comentários respeitando o turno de fala.
+      scoring:
+        correct: 10
+        incorrect: 0
+      adaptive:
+        increaseAfter: 2
+        decreaseAfter: 1
+      questions:
+        - id: escuta-com-anotacoes-q1
+          type: multiple-choice
+          prompt: Carla contou sobre a coleta de tampinhas para reciclagem. Qual anotação ajuda a lembrar da pergunta que você quer fazer?
+          hint: Escolha a anotação que mantém a ideia principal em poucas palavras.
+          options:
+            - id: escuta-com-anotacoes-q1-a
+              text: Escrever 'tampinhas — como separar?' no canto do caderno.
+              isCorrect: true
+              feedback: Excelente! A anotação curta ajuda a lembrar da pergunta.
+            - id: escuta-com-anotacoes-q1-b
+              text: Desenhar toda a história enquanto Carla fala.
+              isCorrect: false
+              feedback: Esse desenho longo pode tirar o foco da escuta.
+            - id: escuta-com-anotacoes-q1-c
+              text: Anotar 'quero falar agora' bem grande.
+              isCorrect: false
+              feedback: Lembre-se de anotar sobre o assunto e respeitar o turno.
+        - id: escuta-com-anotacoes-q2
+          type: true-false
+          prompt: Anotar uma palavra-chave ou símbolo ajuda a lembrar do assunto depois?
+          hint: Pense em como o registro apoia sua memória.
+          statement: Palavras-chave e símbolos curtos ajudam a lembrar do assunto para perguntar mais tarde.
+          answer: true
+          feedback:
+            'true': Muito bem! Assim você continua ouvindo com atenção.
+            'false': Repare como um registro simples facilita retomar a ideia depois.
+      accessibility: *escuta_em_roda_anotacoes_accessibility
+  - partial: ../../_partials/acolhimento-base.yaml
+    slug: pontos-de-vista
+    title: Pontos de Vista
+    prompt: Após ouvir duas opiniões diferentes, escolha a resposta que reconhece ambas antes de dar sua contribuição.
+    type: QUIZ
+    difficulty: DOMINAR
+    bncc:
+      code: EF01LP19
+      habilidades:
+        - EF01LP19
+        - EF01LP20
+    learningObjectives:
+      - Identificar diferentes pontos de vista durante a roda.
+      - Responder demonstrando compreensão e respeito pelas falas anteriores.
+    description: Pontos de Vista estimula a turma a acolher opiniões diversas, valorizando sentimentos e referências antes de acrescentar novas ideias.
+    metadata:
+      categoria: Perspectivas na roda
+      duracaoMinutos: 11
+      habilidades:
+        - EF01LP19
+        - EF01LP20
+      habilidadesSecundarias:
+        - EF01LP20
+      assetSlug: lp-roda-contacao
+      assetUsage: Use a roda para evidenciar que todos têm espaço para expressar seu ponto de vista.
+      familiaEngajamento: Sugira que as famílias pratiquem responder reconhecendo emoções e ideias antes de apresentar a própria opinião.
+      interactiveSlug: quiz-pontos-de-vista
+    accessibility: &escuta_em_roda_pontos_accessibility
+      hints:
+        - audience: ESTUDANTE
+          text: 'Passo 1: Identifique o que cada colega sentiu ou pensou.'
+        - audience: ESTUDANTE
+          text: 'Passo 2: Procure respostas que mencionem os dois pontos antes de comentar.'
+        - audience: ESTUDANTE
+          text: 'Passo 3: Ajuste sua voz para mostrar respeito ao falar.'
+        - audience: EDUCADOR
+          text: Registre em duas colunas as ideias de cada colega para apoiar a turma.
+        - audience: FAMILIA
+          text: Envie orientações sobre como valorizar opiniões diferentes em casa.
+      feedback:
+        success: Excelente! Você reconheceu os pontos de vista antes de apresentar sua ideia.
+        encouragement: Releia as falas dos colegas e tente novamente considerando os detalhes mencionados.
+        retry: Faça uma pausa, respire e comece sua resposta citando quem falou primeiro.
+        accessibility: Disponibilize legendas, leitura em voz alta e apoio visual com ícones de sentimento.
+      assets:
+        - slug: lp-roda-contacao
+          type: IMAGEM
+          title: Tapete de escuta de pontos de vista
+      alternatives:
+        - title: TERMÔMETRO DE OPINIÕES
+          description: Utilize cartões coloridos para representar concordância, dúvida e sugestão.
+          steps:
+            - Peça que levantem o cartão correspondente antes de falar.
+            - Conecte as cores às falas escutadas para apoiar a resposta.
+      audioCue:
+        title: CAMPANHIA DE ESCUTA
+        description: Toque uma campainha suave para lembrar que opiniões diferentes serão consideradas.
+        steps:
+          - Combine o sinal antes da atividade.
+          - Após o toque, convide a pessoa a mencionar os dois pontos.
+      motorSupport:
+        - title: CARTAZ DE SENTIMENTOS
+          description: Disponibilize cartaz com pictogramas de sentimentos para apontar enquanto se fala.
+          steps:
+            - Incentive apontar para o sentimento mencionado antes de responder.
+            - Ajuste o cartaz à altura dos estudantes.
+    prerequisites:
+      - type: SKILL
+        reference: EF01LP19
+        description: Revisitar com a turma como acolher diferentes opiniões em rodas de conversa.
+    interactive:
+      slug: quiz-pontos-de-vista
+      title: Pontos de Vista — Quiz
+      type: QUIZ
+      bnccDescription: Reconhecer e respeitar diferentes pontos de vista em interações orais, respondendo com clareza e empatia.
+      estimatedTimeMinutes: 11
+      instructions:
+        - Leia ou escute as opiniões compartilhadas.
+        - Escolha a resposta que menciona os dois pontos de vista antes de acrescentar sua ideia.
+        - Compartilhe como você conseguiu respeitar cada fala.
+      objectives:
+        - Identificar diferentes pontos de vista durante a roda.
+        - Responder demonstrando compreensão e respeito pelas falas anteriores.
+      scoring:
+        correct: 10
+        incorrect: 0
+      adaptive:
+        increaseAfter: 2
+        decreaseAfter: 1
+      questions:
+        - id: pontos-de-vista-q1
+          type: multiple-choice
+          prompt: Ana gostou da história porque o final foi feliz. Leo preferiu a parte de suspense. Qual resposta acolhe os dois pontos antes de comentar?
+          hint: Procure a opção que menciona os sentimentos de Ana e Leo.
+          options:
+            - id: pontos-de-vista-q1-a
+              text: Entendi que a Ana gostou do final feliz e o Leo curtiu o suspense. Posso contar qual parte fez sentido para mim?
+              isCorrect: true
+              feedback: Excelente! Você reconheceu os dois pontos antes de trazer o seu.
+            - id: pontos-de-vista-q1-b
+              text: Eu gostei do suspense, então não preciso falar sobre o final feliz.
+              isCorrect: false
+              feedback: Essa resposta ignora a opinião da Ana.
+            - id: pontos-de-vista-q1-c
+              text: Só o final feliz importa, vamos falar disso.
+              isCorrect: false
+              feedback: Valorize também o ponto levantado por Leo.
+        - id: pontos-de-vista-q2
+          type: true-false
+          prompt: Reconhecer sentimentos diferentes antes de responder mostra respeito?
+          hint: Pense em como o respeito aparece na roda de conversa.
+          statement: Reconhecer os sentimentos e ideias dos colegas antes de responder demonstra escuta respeitosa.
+          answer: true
+          feedback:
+            'true': Muito bem! Assim todos se sentem valorizados.
+            'false': Lembre-se de mencionar as falas anteriores antes de dar sua opinião.
+      accessibility: *escuta_em_roda_pontos_accessibility

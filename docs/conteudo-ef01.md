@@ -33,6 +33,8 @@ data/
 - **Palavras Compostas (EF01LP14–EF01LP15)**: amplia vocabulário com palavras compostas, campos semânticos e inferência de significados a partir de pistas contextuais.
 - **Pontuação Animada (EF01LP16–EF01LP17)**: exercita leitura expressiva e escrita de frases com ponto final, interrogação e exclamação, relacionando sinal e entonação.
 - **Jornal da Turma (EF01LP18–EF01LP24)**: percorre todo o ciclo de produção coletiva do jornal escolar, do planejamento e coleta à revisão, diagramação e divulgação.
+- **Escuta em Roda (EF01LP18–EF01LP20)**: fortalece combinados de escuta, turnos de fala e retomada oral de relatos em rodas colaborativas.
+- **História em Cenas (EF01LP18–EF01LP20)**: transforma relatos em roteiros dramatizados, explorando entonação, sequências de cenas e feedbacks da plateia.
 
 ### Tabela de habilidades por módulo
 
@@ -49,6 +51,8 @@ data/
 | Palavras Compostas    | `palavras-compostas`    | EF01LP14        | EF01LP15                                                   |
 | Pontuação Animada     | `pontuacao-animada`     | EF01LP16        | EF01LP17                                                   |
 | Jornal da Turma       | `jornal-da-turma`       | EF01LP18        | EF01LP19, EF01LP20, EF01LP21, EF01LP22, EF01LP23, EF01LP24 |
+| Escuta em Roda        | `escuta-em-roda`        | EF01LP18        | EF01LP19, EF01LP20                                         |
+| História em Cenas     | `historia-em-cenas`     | EF01LP19        | EF01LP18, EF01LP20                                         |
 
 ## Catálogo EF01 de Ciências
 

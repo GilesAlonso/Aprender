@@ -1,6 +1,6 @@
 {
-  "generatedAt": "2025-10-27T00:09:16.707Z",
-  "contentHash": "383ffd95ca0a268f4199260b1e0570f888ebfccb4fd1434b449741e721ee59ac",
+  "generatedAt": "2025-10-29T14:21:58.792Z",
+  "contentHash": "3657b9c95f4a992b15ee810431215c81ca4a8693c0f43eee1bf593c541d571b8",
   "modulesBySubject": {
     "ciencias": [
       "ambientes-da-escola",
@@ -14,8 +14,10 @@
       "bilhetes-e-recados",
       "brincando-com-sons",
       "clubinho-das-palavras",
+      "escuta-em-roda",
       "familia-das-vogais",
       "frases-divertidas",
+      "historia-em-cenas",
       "historias-rimadas",
       "hora-do-dialogo",
       "jornal-da-turma",
@@ -35,8 +37,10 @@
       "brincando-com-sons",
       "clubinho-das-palavras",
       "cuidados-do-corpo",
+      "escuta-em-roda",
       "familia-das-vogais",
       "frases-divertidas",
+      "historia-em-cenas",
       "historias-rimadas",
       "hora-do-dialogo",
       "jornal-da-turma",
@@ -160,6 +164,26 @@
         "activityType": "QUIZ"
       },
       {
+        "moduleSlug": "escuta-em-roda",
+        "activitySlug": "escuta-com-anotacoes",
+        "activityType": "QUIZ"
+      },
+      {
+        "moduleSlug": "escuta-em-roda",
+        "activitySlug": "gestos-de-escuta",
+        "activityType": "QUIZ"
+      },
+      {
+        "moduleSlug": "escuta-em-roda",
+        "activitySlug": "palavra-sinal",
+        "activityType": "QUIZ"
+      },
+      {
+        "moduleSlug": "escuta-em-roda",
+        "activitySlug": "sinal-da-roda",
+        "activityType": "QUIZ"
+      },
+      {
         "moduleSlug": "familia-das-vogais",
         "activitySlug": "corrida-das-vogais",
         "activityType": "GAME"
@@ -198,6 +222,26 @@
         "moduleSlug": "frases-divertidas",
         "activitySlug": "puzzle-frase-imagem",
         "activityType": "PUZZLE"
+      },
+      {
+        "moduleSlug": "historia-em-cenas",
+        "activitySlug": "cena-de-abertura",
+        "activityType": "QUIZ"
+      },
+      {
+        "moduleSlug": "historia-em-cenas",
+        "activitySlug": "perguntas-para-voz",
+        "activityType": "QUIZ"
+      },
+      {
+        "moduleSlug": "historia-em-cenas",
+        "activitySlug": "sequencia-de-imagens",
+        "activityType": "QUIZ"
+      },
+      {
+        "moduleSlug": "historia-em-cenas",
+        "activitySlug": "voz-de-personagem",
+        "activityType": "QUIZ"
       },
       {
         "moduleSlug": "historias-em-movimento",
@@ -517,6 +561,26 @@
         "activityType": "PUZZLE"
       },
       {
+        "moduleSlug": "escuta-em-roda",
+        "activitySlug": "eco-da-historia",
+        "activityType": "QUIZ"
+      },
+      {
+        "moduleSlug": "escuta-em-roda",
+        "activitySlug": "memoria-coletiva",
+        "activityType": "QUIZ"
+      },
+      {
+        "moduleSlug": "escuta-em-roda",
+        "activitySlug": "perguntas-curiosas",
+        "activityType": "QUIZ"
+      },
+      {
+        "moduleSlug": "escuta-em-roda",
+        "activitySlug": "relato-simples",
+        "activityType": "QUIZ"
+      },
+      {
         "moduleSlug": "estudio-dados-solidarios",
         "activitySlug": "podcast-projeto-vida",
         "activityType": "PROJECT"
@@ -569,6 +633,26 @@
       {
         "moduleSlug": "frases-divertidas",
         "activitySlug": "quem-faz-o-que",
+        "activityType": "QUIZ"
+      },
+      {
+        "moduleSlug": "historia-em-cenas",
+        "activitySlug": "feedback-da-plateia",
+        "activityType": "QUIZ"
+      },
+      {
+        "moduleSlug": "historia-em-cenas",
+        "activitySlug": "marcadores-de-tempo",
+        "activityType": "QUIZ"
+      },
+      {
+        "moduleSlug": "historia-em-cenas",
+        "activitySlug": "reconto-colaborativo",
+        "activityType": "QUIZ"
+      },
+      {
+        "moduleSlug": "historia-em-cenas",
+        "activitySlug": "ritmo-da-narrativa",
         "activityType": "QUIZ"
       },
       {
@@ -879,6 +963,26 @@
         "activityType": "GAME"
       },
       {
+        "moduleSlug": "escuta-em-roda",
+        "activitySlug": "mediacao-do-colega",
+        "activityType": "QUIZ"
+      },
+      {
+        "moduleSlug": "escuta-em-roda",
+        "activitySlug": "pontos-de-vista",
+        "activityType": "QUIZ"
+      },
+      {
+        "moduleSlug": "escuta-em-roda",
+        "activitySlug": "retomar-ideia",
+        "activityType": "QUIZ"
+      },
+      {
+        "moduleSlug": "escuta-em-roda",
+        "activitySlug": "turnos-coreografados",
+        "activityType": "QUIZ"
+      },
+      {
         "moduleSlug": "estudio-dados-solidarios",
         "activitySlug": "investigacao-dados-bairro",
         "activityType": "GAME"
@@ -922,6 +1026,26 @@
         "moduleSlug": "frases-divertidas",
         "activitySlug": "puzzle-humor-frase",
         "activityType": "PUZZLE"
+      },
+      {
+        "moduleSlug": "historia-em-cenas",
+        "activitySlug": "cena-imprevisto",
+        "activityType": "QUIZ"
+      },
+      {
+        "moduleSlug": "historia-em-cenas",
+        "activitySlug": "cronista-da-roda",
+        "activityType": "QUIZ"
+      },
+      {
+        "moduleSlug": "historia-em-cenas",
+        "activitySlug": "guia-do-narrador",
+        "activityType": "QUIZ"
+      },
+      {
+        "moduleSlug": "historia-em-cenas",
+        "activitySlug": "vivencia-em-duplas",
+        "activityType": "QUIZ"
       },
       {
         "moduleSlug": "historias-rimadas",
@@ -1736,6 +1860,16 @@
       "activitySlug": "casa-preferida",
       "activityType": "QUIZ"
     },
+    "quiz-cena-de-abertura": {
+      "moduleSlug": "historia-em-cenas",
+      "activitySlug": "cena-de-abertura",
+      "activityType": "QUIZ"
+    },
+    "quiz-cena-imprevisto": {
+      "moduleSlug": "historia-em-cenas",
+      "activitySlug": "cena-imprevisto",
+      "activityType": "QUIZ"
+    },
     "quiz-checar-claridade": {
       "moduleSlug": "bilhetes-e-recados",
       "activitySlug": "checar-claridade",
@@ -1784,6 +1918,11 @@
     "quiz-corrige-a-pontuacao": {
       "moduleSlug": "pontuacao-animada",
       "activitySlug": "corrige-a-pontuacao",
+      "activityType": "QUIZ"
+    },
+    "quiz-cronista-da-roda": {
+      "moduleSlug": "historia-em-cenas",
+      "activitySlug": "cronista-da-roda",
       "activityType": "QUIZ"
     },
     "quiz-deduza-o-significado": {
@@ -1836,6 +1975,11 @@
       "activitySlug": "dupla-significado",
       "activityType": "QUIZ"
     },
+    "quiz-eco-da-historia": {
+      "moduleSlug": "escuta-em-roda",
+      "activitySlug": "eco-da-historia",
+      "activityType": "QUIZ"
+    },
     "quiz-eco-das-rimas": {
       "moduleSlug": "historias-rimadas",
       "activitySlug": "eco-das-rimas",
@@ -1876,14 +2020,34 @@
       "activitySlug": "escuta-atenta",
       "activityType": "QUIZ"
     },
+    "quiz-escuta-com-anotacoes": {
+      "moduleSlug": "escuta-em-roda",
+      "activitySlug": "escuta-com-anotacoes",
+      "activityType": "QUIZ"
+    },
     "quiz-escuta-da-pontuacao": {
       "moduleSlug": "pontuacao-animada",
       "activitySlug": "escuta-da-pontuacao",
       "activityType": "QUIZ"
     },
+    "quiz-feedback-da-plateia": {
+      "moduleSlug": "historia-em-cenas",
+      "activitySlug": "feedback-da-plateia",
+      "activityType": "QUIZ"
+    },
     "quiz-frase-ilustrada": {
       "moduleSlug": "frases-divertidas",
       "activitySlug": "frase-ilustrada",
+      "activityType": "QUIZ"
+    },
+    "quiz-gestos-de-escuta": {
+      "moduleSlug": "escuta-em-roda",
+      "activitySlug": "gestos-de-escuta",
+      "activityType": "QUIZ"
+    },
+    "quiz-guia-do-narrador": {
+      "moduleSlug": "historia-em-cenas",
+      "activitySlug": "guia-do-narrador",
       "activityType": "QUIZ"
     },
     "quiz-intencao-da-frase": {
@@ -1909,6 +2073,21 @@
     "quiz-mapa-da-escola": {
       "moduleSlug": "ambientes-da-escola",
       "activitySlug": "mapa-da-escola",
+      "activityType": "QUIZ"
+    },
+    "quiz-marcadores-de-tempo": {
+      "moduleSlug": "historia-em-cenas",
+      "activitySlug": "marcadores-de-tempo",
+      "activityType": "QUIZ"
+    },
+    "quiz-mediacao-do-colega": {
+      "moduleSlug": "escuta-em-roda",
+      "activitySlug": "mediacao-do-colega",
+      "activityType": "QUIZ"
+    },
+    "quiz-memoria-coletiva": {
+      "moduleSlug": "escuta-em-roda",
+      "activitySlug": "memoria-coletiva",
       "activityType": "QUIZ"
     },
     "quiz-memorias-na-rodinha": {
@@ -1961,6 +2140,11 @@
       "activitySlug": "palavra-em-contexto",
       "activityType": "QUIZ"
     },
+    "quiz-palavra-sinal": {
+      "moduleSlug": "escuta-em-roda",
+      "activitySlug": "palavra-sinal",
+      "activityType": "QUIZ"
+    },
     "quiz-palavra-surpresa": {
       "moduleSlug": "palavras-compostas",
       "activitySlug": "palavra-surpresa",
@@ -1976,6 +2160,16 @@
       "activitySlug": "pergunta-ou-prossegue",
       "activityType": "QUIZ"
     },
+    "quiz-perguntas-curiosas": {
+      "moduleSlug": "escuta-em-roda",
+      "activitySlug": "perguntas-curiosas",
+      "activityType": "QUIZ"
+    },
+    "quiz-perguntas-para-voz": {
+      "moduleSlug": "historia-em-cenas",
+      "activitySlug": "perguntas-para-voz",
+      "activityType": "QUIZ"
+    },
     "quiz-planeja-reportagem": {
       "moduleSlug": "jornal-da-turma",
       "activitySlug": "planeja-reportagem",
@@ -1984,6 +2178,11 @@
     "quiz-ponto-final-basico": {
       "moduleSlug": "pontuacao-animada",
       "activitySlug": "ponto-final-basico",
+      "activityType": "QUIZ"
+    },
+    "quiz-pontos-de-vista": {
+      "moduleSlug": "escuta-em-roda",
+      "activitySlug": "pontos-de-vista",
       "activityType": "QUIZ"
     },
     "quiz-qual-o-destinatario": {
@@ -1996,14 +2195,29 @@
       "activitySlug": "quem-faz-o-que",
       "activityType": "QUIZ"
     },
+    "quiz-reconto-colaborativo": {
+      "moduleSlug": "historia-em-cenas",
+      "activitySlug": "reconto-colaborativo",
+      "activityType": "QUIZ"
+    },
     "quiz-relato-bem-ordenado": {
       "moduleSlug": "hora-do-dialogo",
       "activitySlug": "relato-bem-ordenado",
       "activityType": "QUIZ"
     },
+    "quiz-relato-simples": {
+      "moduleSlug": "escuta-em-roda",
+      "activitySlug": "relato-simples",
+      "activityType": "QUIZ"
+    },
     "quiz-resposta-educada": {
       "moduleSlug": "hora-do-dialogo",
       "activitySlug": "resposta-educada",
+      "activityType": "QUIZ"
+    },
+    "quiz-retomar-ideia": {
+      "moduleSlug": "escuta-em-roda",
+      "activitySlug": "retomar-ideia",
       "activityType": "QUIZ"
     },
     "quiz-revendo-o-texto": {
@@ -2026,6 +2240,11 @@
       "activitySlug": "rimas-do-recreio",
       "activityType": "QUIZ"
     },
+    "quiz-ritmo-da-narrativa": {
+      "moduleSlug": "historia-em-cenas",
+      "activitySlug": "ritmo-da-narrativa",
+      "activityType": "QUIZ"
+    },
     "quiz-ritmo-na-historia": {
       "moduleSlug": "historias-rimadas",
       "activitySlug": "ritmo-na-historia",
@@ -2044,6 +2263,16 @@
     "quiz-seleciona-informacao": {
       "moduleSlug": "jornal-da-turma",
       "activitySlug": "seleciona-informacao",
+      "activityType": "QUIZ"
+    },
+    "quiz-sequencia-de-imagens": {
+      "moduleSlug": "historia-em-cenas",
+      "activitySlug": "sequencia-de-imagens",
+      "activityType": "QUIZ"
+    },
+    "quiz-sinal-da-roda": {
+      "moduleSlug": "escuta-em-roda",
+      "activitySlug": "sinal-da-roda",
       "activityType": "QUIZ"
     },
     "quiz-som-da-mata": {
@@ -2076,6 +2305,11 @@
       "activitySlug": "turno-de-fala",
       "activityType": "QUIZ"
     },
+    "quiz-turnos-coreografados": {
+      "moduleSlug": "escuta-em-roda",
+      "activitySlug": "turnos-coreografados",
+      "activityType": "QUIZ"
+    },
     "quiz-verso-surpresa": {
       "moduleSlug": "historias-rimadas",
       "activitySlug": "verso-surpresa",
@@ -2084,6 +2318,11 @@
     "quiz-visao-detalhista": {
       "moduleSlug": "sentidos-curiosos",
       "activitySlug": "visao-detalhista",
+      "activityType": "QUIZ"
+    },
+    "quiz-vivencia-em-duplas": {
+      "moduleSlug": "historia-em-cenas",
+      "activitySlug": "vivencia-em-duplas",
       "activityType": "QUIZ"
     },
     "quiz-vogal-exploradora": {
@@ -2095,6 +2334,11 @@
       "moduleSlug": "familia-das-vogais",
       "activitySlug": "vogal-misteriosa",
       "activityType": "QUIZ"
+    },
+    "quiz-voz-de-personagem": {
+      "moduleSlug": "historia-em-cenas",
+      "activitySlug": "voz-de-personagem",
+      "activityType": "QUIZ"
     }
   },
   "bncc": {
@@ -2105,9 +2349,11 @@
       "brincando-com-sons": "EF01LP01",
       "clubinho-das-palavras": "EF01LP06",
       "cuidados-do-corpo": "EF01CI02",
+      "escuta-em-roda": "EF01LP18",
       "estudio-dados-solidarios": "EM13MAT305",
       "familia-das-vogais": "EF01LP03",
       "frases-divertidas": "EF01LP07",
+      "historia-em-cenas": "EF01LP19",
       "historias-em-movimento": "EI03ET04",
       "historias-rimadas": "EF01LP11",
       "hora-do-dialogo": "EF01LP12",
@@ -2138,6 +2384,8 @@
       "cantinho-das-palavras": "EF01LP05",
       "cardapio-animal": "EF01CI03",
       "casa-preferida": "EF01CI03",
+      "cena-de-abertura": "EF01LP19",
+      "cena-imprevisto": "EF01LP18",
       "checar-claridade": "EF01LP10",
       "cheiro-surpresa": "EF01CI01",
       "ciclo-da-plantinha": "EF01CI03",
@@ -2151,6 +2399,7 @@
       "corrige-a-frase": "EF01LP10",
       "corrige-a-pontuacao": "EF01LP16",
       "cria-rima-rapida": "EF01LP11",
+      "cronista-da-roda": "EF01LP19",
       "cronometro-escovacao": "EF01CI02",
       "cuidado-ferimentos": "EF01CI02",
       "danca-dos-sons": "EI03ET04",
@@ -2171,6 +2420,7 @@
       "dialogo-rapido": "EF01LP08",
       "duelo-de-palavras": "EF01LP06",
       "dupla-significado": "EF01LP14",
+      "eco-da-historia": "EF01LP18",
       "eco-das-rimas": "EF01LP11",
       "eco-de-sonoridades": "EF01LP11",
       "eco-dos-sons": "EF01LP01",
@@ -2181,17 +2431,21 @@
       "escolha-rapida": "EF01LP06",
       "escova-superpoder": "EF01CI02",
       "escuta-atenta": "EF01LP12",
+      "escuta-com-anotacoes": "EF01LP18",
       "escuta-da-pontuacao": "EF01LP16",
       "estacao-resto-inteligente": "EF05MA08",
       "experimento-da-agua": "EF07CI02",
+      "feedback-da-plateia": "EF01LP18",
       "festival-das-aves": "EF01CI03",
       "festival-das-plantas": "EF01CI04",
       "frase-ilustrada": "EF01LP07",
       "frase-surpresa": "EF01LP08",
+      "gestos-de-escuta": "EF01LP18",
       "grafico-vivo-da-comunidade": "EF07MA16",
       "guardioes-do-jardim": "EF01CI04",
       "guardioes-dos-espacos": "EF01CI04",
       "guardioes-saude": "EF01CI02",
+      "guia-do-narrador": "EF01LP19",
       "intencao-da-frase": "EF01LP08",
       "investigacao-dados-bairro": "EM13MAT305",
       "jogo-busca-ponto": "EF01LP16",
@@ -2221,6 +2475,9 @@
       "mapa-da-escola": "EF01CI04",
       "mapa-das-raizes": "EF01CI03",
       "mapa-dos-sons": "EF01CI01",
+      "marcadores-de-tempo": "EF01LP19",
+      "mediacao-do-colega": "EF01LP18",
+      "memoria-coletiva": "EF01LP19",
       "memoria-das-vogais": "EF01LP04",
       "memoria-de-sabores": "EF01CI01",
       "memorias-na-rodinha": "EF01LP13",
@@ -2238,17 +2495,21 @@
       "palavra-composta-basica": "EF01LP14",
       "palavra-e-figura": "EF01LP05",
       "palavra-em-contexto": "EF01LP05",
+      "palavra-sinal": "EF01LP18",
       "palavra-surpresa": "EF01LP14",
       "pares-de-rima": "EF01LP11",
       "partes-da-planta": "EF01CI03",
       "patrulha-biodiversidade": "EF01CI03",
       "pegadas-misteriosas": "EF01CI03",
       "pergunta-ou-prossegue": "EF01LP17",
+      "perguntas-curiosas": "EF01LP18",
+      "perguntas-para-voz": "EF01LP18",
       "planeja-reportagem": "EF01LP18",
       "planejar-bilhete": "EF01LP09",
       "podcast-projeto-vida": "EM13MAT305",
       "podcast-voz-da-comunidade": "EF69LP28",
       "ponto-final-basico": "EF01LP16",
+      "pontos-de-vista": "EF01LP19",
       "puzzle-apoios-dialogo": "EF01LP12",
       "puzzle-campo-semantico": "EF01LP14",
       "puzzle-compasso-silabico": "EF01LP02",
@@ -2288,15 +2549,19 @@
       "qual-o-destinatario": "EF01LP09",
       "quem-faz-o-que": "EF01LP07",
       "quiz-sustentabilidade": "EF07CI02",
+      "reconto-colaborativo": "EF01LP19",
       "rede-alimentar": "EF01CI03",
       "relato-bem-ordenado": "EF01LP13",
+      "relato-simples": "EF01LP19",
       "resposta-educada": "EF01LP12",
+      "retomar-ideia": "EF01LP19",
       "revendo-o-texto": "EF01LP10",
       "revisao-rapida": "EF01LP10",
       "revise-o-paragrafo": "EF01LP21",
       "rima-e-cena": "EF01LP11",
       "rima-no-final": "EF01LP11",
       "rimas-do-recreio": "EF01LP01",
+      "ritmo-da-narrativa": "EF01LP18",
       "ritmo-da-parlenda": "EF01LP11",
       "ritmo-na-historia": "EF01LP11",
       "roda-das-rimas": "EF01LP06",
@@ -2312,8 +2577,10 @@
       "seleciona-informacao": "EF01LP19",
       "sentidos-em-acao": "EF01CI01",
       "sequencia-banho": "EF01CI02",
+      "sequencia-de-imagens": "EF01LP19",
       "sequencia-do-plantio": "EF01CI03",
       "sinais-da-escola": "EF01CI04",
+      "sinal-da-roda": "EF01LP18",
       "som-da-mata": "EF01CI03",
       "som-e-letra": "EF01LP04",
       "som-inicial-surpresa": "EF01LP01",
@@ -2325,12 +2592,15 @@
       "trilha-dos-sons": "EF01CI03",
       "trilho-das-silabas": "EF01LP02",
       "turno-de-fala": "EF01LP12",
+      "turnos-coreografados": "EF01LP18",
       "uso-dos-espacos": "EF01CI04",
       "usos-das-plantas": "EF01CI03",
       "verso-surpresa": "EF01LP11",
       "visao-detalhista": "EF01CI01",
+      "vivencia-em-duplas": "EF01LP18",
       "vogal-exploradora": "EF01LP03",
       "vogal-misteriosa": "EF01LP04",
+      "voz-de-personagem": "EF01LP19",
       "webdoc-historias-do-bairro": "EF69LP28"
     }
   }

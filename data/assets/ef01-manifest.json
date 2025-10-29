@@ -1,5 +1,5 @@
 {
-  "version": "36be7f61f0459535",
+  "version": "86effbd7a34215da",
   "generatedBy": "scripts/generate-ef01-assets.ts",
   "assets": [
     {
@@ -129,6 +129,24 @@
       "hash": "3de54348a0ab"
     },
     {
+      "slug": "lp-audio-fones",
+      "subject": "lingua-portuguesa",
+      "theme": "oralidade",
+      "recommendedUsage": "Atividades de escuta ativa, registro de relatos orais e produção de podcasts.",
+      "altText": "Fone acolchoado com arco azul, microfone lateral e ondas sonoras coloridas.",
+      "colorProfile": ["calm-200", "primary-600", "surface-200", "accent-400"],
+      "license": {
+        "name": "CC BY 4.0",
+        "url": "https://creativecommons.org/licenses/by/4.0/",
+        "document": "/assets/ef01/LICENSE.md"
+      },
+      "files": {
+        "svg": "/assets/ef01/lingua-portuguesa/lp-audio-fones.svg?v=f3b995aa9152",
+        "png": "/assets/ef01/lingua-portuguesa/lp-audio-fones.png?v=f3b995aa9152"
+      },
+      "hash": "f3b995aa9152"
+    },
+    {
       "slug": "lp-letra-a",
       "subject": "lingua-portuguesa",
       "theme": "letters",
@@ -181,6 +199,24 @@
         "png": "/assets/ef01/lingua-portuguesa/lp-material-caderno.png?v=f2112bacd495"
       },
       "hash": "f2112bacd495"
+    },
+    {
+      "slug": "lp-roda-contacao",
+      "subject": "lingua-portuguesa",
+      "theme": "oralidade",
+      "recommendedUsage": "Rodas de conversa, contação de histórias e mediação de diálogo.",
+      "altText": "Tapete circular com livro aberto, cartões e almofadas coloridas ao redor prontos para contação.",
+      "colorProfile": ["surface-200", "primary-500", "secondary-400", "accent-300"],
+      "license": {
+        "name": "CC BY 4.0",
+        "url": "https://creativecommons.org/licenses/by/4.0/",
+        "document": "/assets/ef01/LICENSE.md"
+      },
+      "files": {
+        "svg": "/assets/ef01/lingua-portuguesa/lp-roda-contacao.svg?v=8b45c8f1d5f2",
+        "png": "/assets/ef01/lingua-portuguesa/lp-roda-contacao.png?v=8b45c8f1d5f2"
+      },
+      "hash": "8b45c8f1d5f2"
     },
     {
       "slug": "lp-silaba-ba",

@@ -1,0 +1,1421 @@
+module:
+  slug: historia-em-cenas
+  title: História em Cenas
+  subtitle: Narração, escuta e dramatização de histórias curtas
+  description: Sequência que transforma relatos em cenas, guiando a turma na organização de enredos, vozes de personagens e devolutivas da plateia em rodas colaborativas.
+  theme: Língua Portuguesa
+  discipline: Língua Portuguesa
+  ageGroupSlug: fundamental-anos-iniciais
+  learningPathSlug: descobertas-palavras
+  primaryBnccCode: EF01LP19
+  secondaryBnccCodes:
+    - EF01LP18
+    - EF01LP20
+  learningOutcomes:
+    - Identificar e recontar cenas principais de histórias orais com clareza e expressividade.
+    - Ajustar entonação, ritmo e gestos para diferenciar narrador e personagens.
+    - Construir devolutivas respeitosas após apresentações, retomando ideias centrais dos colegas.
+  tags:
+    - oralidade
+    - dramatizacao
+    - narrativa
+activities:
+  - partial: ../../_partials/acolhimento-base.yaml
+    slug: cena-de-abertura
+    title: Cena de Abertura
+    prompt: Escolha a cena que apresenta melhor o início da história contada pela turma.
+    type: QUIZ
+    difficulty: INICIAR
+    bncc:
+      code: EF01LP19
+      habilidades:
+        - EF01LP19
+    learningObjectives:
+      - Identificar elementos que compõem a cena inicial de uma narrativa oral.
+      - Relacionar personagens e cenário para situar a história antes do desenvolvimento.
+    description: Cena de Abertura convida a turma a reconhecer quem participa e onde acontece a história antes de seguir para as cenas seguintes.
+    metadata:
+      categoria: Planejamento de cena
+      duracaoMinutos: 8
+      habilidades:
+        - EF01LP19
+      assetSlug: lp-roda-contacao
+      assetUsage: Utilize o tapete de contação para posicionar cartões com personagens e espaços do início da história.
+      familiaEngajamento: Convide as famílias a assistir a vídeos curtos e identificar juntos o momento de abertura do enredo.
+      interactiveSlug: quiz-cena-de-abertura
+    accessibility: &historia_em_cenas_cena_abertura_accessibility
+      hints:
+        - audience: ESTUDANTE
+          text: 'Passo 1: Relembre o começo da história e quem apareceu primeiro.'
+        - audience: ESTUDANTE
+          text: 'Passo 2: Observe qual opção mostra o cenário e os personagens antes do conflito.'
+        - audience: ESTUDANTE
+          text: 'Passo 3: Compartilhe com a dupla por que a cena escolhida apresenta bem a história.'
+        - audience: EDUCADOR
+          text: Disponibilize cartões com personagens e lugares para apoiar a decisão.
+        - audience: FAMILIA
+          text: Envie orientações sobre como nomear personagens e espaços ao iniciar histórias em casa.
+      feedback:
+        success: Excelente! Você identificou a cena que apresenta a história com clareza.
+        encouragement: Volte ao relato e procure quem apareceu primeiro e onde tudo começou.
+        retry: Faça uma lista com personagem, lugar e tempo antes de escolher novamente.
+        accessibility: Ofereça imagens ampliadas, descrição oral e tempo extra para análise das cenas.
+      assets:
+        - slug: lp-roda-contacao
+          type: IMAGEM
+          title: Roda com cartões de abertura
+      alternatives:
+        - title: MAQUETE DE CENA
+          description: Monte uma miniatura do cenário com blocos ou bonecos para apoiar a escolha.
+          steps:
+            - Posicione os personagens conforme cada opção.
+            - Releia a descrição enquanto aponta a cena na maquete.
+      audioCue:
+        title: SINO DE INÍCIO
+        description: Utilize um sino suave para indicar o momento de revisar a cena inicial.
+        steps:
+          - Toque o sino antes de mostrar as opções.
+          - Aguarde alguns segundos para a turma visualizar cada cena.
+      motorSupport:
+        - title: CARTÕES MAGNÉTICOS
+          description: Disponibilize cartões magnéticos que possam ser manipulados em painel vertical.
+          steps:
+            - Permita que posicionem os cartões com apoio de ponteiras.
+            - Ofereça estabilizadores de pulso para quem precisar.
+    prerequisites:
+      - type: SKILL
+        reference: EF01LP19
+        description: Recordar com a turma como identificar personagens e cenário no início de um relato.
+    interactive:
+      slug: quiz-cena-de-abertura
+      title: Cena de Abertura — Quiz
+      type: QUIZ
+      bnccDescription: Reconhecer a cena inicial de histórias orais, situando personagens, espaço e tempo.
+      estimatedTimeMinutes: 8
+      instructions:
+        - Revise o início da história antes de escolher.
+        - Compare quem aparece e onde cada cena acontece.
+        - Explique à turma por que a sua escolha apresenta bem a narrativa.
+      objectives:
+        - Identificar elementos que compõem a cena inicial de uma narrativa oral.
+        - Relacionar personagens e cenário para situar a história antes do desenvolvimento.
+      scoring:
+        correct: 10
+        incorrect: 0
+      adaptive:
+        increaseAfter: 2
+        decreaseAfter: 1
+      questions:
+        - id: cena-de-abertura-q1
+          type: multiple-choice
+          prompt: Na história, Marina encontra um livro mágico na biblioteca. Qual cena mostra melhor esse começo?
+          hint: Procure o personagem principal e o lugar onde tudo começou.
+          options:
+            - id: cena-de-abertura-q1-a
+              text: Marina sozinha em casa dormindo no sofá.
+              isCorrect: false
+              feedback: Essa cena acontece antes de Marina decidir ir à biblioteca.
+            - id: cena-de-abertura-q1-b
+              text: Marina abrindo o livro luminoso dentro da biblioteca silenciosa.
+              isCorrect: true
+              feedback: Excelente! Essa cena mostra o início e o cenário principal da história.
+            - id: cena-de-abertura-q1-c
+              text: Marina e os amigos comemorando o final da aventura no pátio.
+              isCorrect: false
+              feedback: Essa cena representa o desfecho, não a abertura.
+        - id: cena-de-abertura-q2
+          type: true-false
+          prompt: A cena inicial precisa apresentar pelo menos um personagem e o lugar da história?
+          hint: Pense em como entendemos o começo de uma narrativa.
+          statement: A cena de abertura apresenta quem participa e onde a história começa.
+          answer: true
+          feedback:
+            'true': Isso mesmo! Assim todos sabem quem está na história e onde tudo acontece.
+            'false': Volte ao relato e observe como os personagens e o cenário aparecem no início.
+      accessibility: *historia_em_cenas_cena_abertura_accessibility
+  - partial: ../../_partials/acolhimento-base.yaml
+    slug: voz-de-personagem
+    title: Voz de Personagem
+    prompt: Escolha a forma de falar que combina com o personagem apresentado na cena.
+    type: QUIZ
+    difficulty: INICIAR
+    bncc:
+      code: EF01LP19
+      habilidades:
+        - EF01LP19
+        - EF01LP20
+    learningObjectives:
+      - Ajustar entonação e ritmo para diferenciar narrador e personagens.
+      - Reconhecer sentimentos expressos na voz durante a contação de histórias.
+    description: Voz de Personagem trabalha entonação e ritmo, ajudando a turma a associar sentimentos e intenções às falas encenadas.
+    metadata:
+      categoria: Expressividade vocal
+      duracaoMinutos: 9
+      habilidades:
+        - EF01LP19
+        - EF01LP20
+      habilidadesSecundarias:
+        - EF01LP20
+      assetSlug: lp-audio-fones
+      assetUsage: Mostre o fone para lembrar que ouvir as pistas sonoras ajuda a ajustar a voz.
+      familiaEngajamento: Sugira que as famílias conversem sobre sentimentos usando diferentes entonações.
+      interactiveSlug: quiz-voz-de-personagem
+    accessibility: &historia_em_cenas_voz_personagem_accessibility
+      hints:
+        - audience: ESTUDANTE
+          text: 'Passo 1: Relembre como o personagem se sente na cena apresentada.'
+        - audience: ESTUDANTE
+          text: 'Passo 2: Ouça ou imagine a voz com calma antes de decidir.'
+        - audience: ESTUDANTE
+          text: 'Passo 3: Repita a fala escolhida para confirmar se combina com o personagem.'
+        - audience: EDUCADOR
+          text: Modele entonações diferentes utilizando gestos que indiquem sentimentos.
+        - audience: FAMILIA
+          text: Compartilhe sugestões de brincadeiras com vozes e expressões em casa.
+      feedback:
+        success: Muito bem! Sua escolha combinou com o sentimento do personagem.
+        encouragement: Releia a cena e perceba pistas sobre o humor e a intenção do personagem.
+        retry: Respire, teste a fala em voz alta e faça outra tentativa.
+        accessibility: Disponibilize legendas, apoio auditivo individual e tempo ampliado para ensaios.
+      assets:
+        - slug: lp-audio-fones
+          type: IMAGEM
+          title: Fone para explorar vozes
+      alternatives:
+        - title: MÁSCARAS EMOCIONAIS
+          description: Use máscaras com expressões para apoiar a escolha da voz.
+          steps:
+            - Combine a máscara com a voz antes de responder.
+            - Discuta com a turma como a expressão ajuda a ajustar a fala.
+      audioCue:
+        title: BATIDA RÍTMICA
+        description: Marque a troca de personagem com batidas leves em tambor.
+        steps:
+          - Realize três batidas antes da nova fala.
+          - Peça para todos imitarem a entonação sugerida.
+      motorSupport:
+        - title: GUIA DE RESPIRAÇÃO
+          description: Ofereça cartões com passos de respiração para controlar a voz.
+          steps:
+            - Inspire contando até três antes de começar a fala.
+            - Solte a voz devagar, acompanhando o ritmo indicado.
+    prerequisites:
+      - type: SKILL
+        reference: EF01LP20
+        description: Retomar com a turma como as emoções aparecem na fala dos personagens.
+    interactive:
+      slug: quiz-voz-de-personagem
+      title: Voz de Personagem — Quiz
+      type: QUIZ
+      bnccDescription: Utilizar entonação adequada ao narrar falas de personagens, demonstrando compreensão do enredo.
+      estimatedTimeMinutes: 9
+      instructions:
+        - Leia a fala do personagem e perceba o sentimento envolvido.
+        - Escolha a opção que representa a voz mais adequada.
+        - Compartilhe com a turma a entonação escolhida.
+      objectives:
+        - Ajustar entonação e ritmo para diferenciar narrador e personagens.
+        - Reconhecer sentimentos expressos na voz durante a contação de histórias.
+      scoring:
+        correct: 10
+        incorrect: 0
+      adaptive:
+        increaseAfter: 2
+        decreaseAfter: 1
+      questions:
+        - id: voz-de-personagem-q1
+          type: multiple-choice
+          prompt: O personagem encontra uma porta secreta e sente surpresa. Como ele pode falar?
+          hint: Pense no tom de voz quando algo inesperado acontece.
+          options:
+            - id: voz-de-personagem-q1-a
+              text: "Eu já sabia que a porta estava aqui, nada demais. (voz baixa e monótona)"
+              isCorrect: false
+              feedback: Essa voz não mostra surpresa.
+            - id: voz-de-personagem-q1-b
+              text: "Uau! De onde surgiu essa porta brilhante? (voz leve, rápida e curiosa)"
+              isCorrect: true
+              feedback: Muito bem! A voz expressa surpresa e curiosidade.
+            - id: voz-de-personagem-q1-c
+              text: "Abre logo, estou com muita raiva! (voz grossa e irritada)"
+              isCorrect: false
+              feedback: Essa voz mostra raiva, não surpresa.
+        - id: voz-de-personagem-q2
+          type: true-false
+          prompt: Podemos usar a mesma entonação para narrador e personagens?
+          hint: Lembre como diferenciamos quem fala.
+          statement: Narrador e personagens podem ter entonações diferentes para ajudar a compreensão da história.
+          answer: true
+          feedback:
+            'true': Perfeito! Essa diferença ajuda quem ouve a identificar cada fala.
+            'false': Procure mudar a voz para mostrar quem está falando.
+      accessibility: *historia_em_cenas_voz_personagem_accessibility
+  - partial: ../../_partials/acolhimento-base.yaml
+    slug: sequencia-de-imagens
+    title: Sequência de Imagens
+    prompt: Organize a ordem correta das cenas para recontar a história apresentada.
+    type: QUIZ
+    difficulty: INICIAR
+    bncc:
+      code: EF01LP19
+      habilidades:
+        - EF01LP19
+    learningObjectives:
+      - Relacionar imagens e descrições para manter a sequência lógica da história.
+      - Utilizar marcadores iniciais para apresentar a narrativa ao grupo.
+    description: Sequência de Imagens apresenta quadros ilustrados da história para que a turma organize o enredo em ordem.
+    metadata:
+      categoria: Organização narrativa
+      duracaoMinutos: 8
+      habilidades:
+        - EF01LP19
+      assetSlug: lp-roda-contacao
+      assetUsage: Monte no tapete as imagens numeradas para apoiar a ordenação.
+      familiaEngajamento: Sugira que as famílias criem histórias com cartões numerados, pedindo às crianças que contem em ordem.
+      interactiveSlug: quiz-sequencia-de-imagens
+    accessibility: &historia_em_cenas_sequencia_accessibility
+      hints:
+        - audience: ESTUDANTE
+          text: 'Passo 1: Observe cada imagem e relembre o que aconteceu nela.'
+        - audience: ESTUDANTE
+          text: 'Passo 2: Procure pistas como personagens e objetos que indicam antes e depois.'
+        - audience: ESTUDANTE
+          text: 'Passo 3: Diga em voz alta a sequência escolhida para verificar se faz sentido.'
+        - audience: EDUCADOR
+          text: Disponibilize etiquetas com números ou palavras como início, meio e fim.
+        - audience: FAMILIA
+          text: Incentive que contem histórias usando fotos da família para reforçar a ordem.
+      feedback:
+        success: Ótimo! Você organizou as cenas mantendo a história coerente.
+        encouragement: Revise as pistas das imagens e reorganize conforme necessário.
+        retry: Use setas ou números no caderno antes de tentar novamente.
+        accessibility: Ofereça ampliação das imagens, contraste alto e apoio verbal para descrição.
+      assets:
+        - slug: lp-roda-contacao
+          type: IMAGEM
+          title: Tapete com cenas ordenadas
+      alternatives:
+        - title: BARALHO DE CENAS
+          description: Entregue cartões plastificados para manipular com facilidade.
+          steps:
+            - Espalhe os cartões sobre a mesa antes da escolha.
+            - Permita que estudantes com dificuldades motoras usem suportes magnéticos.
+      audioCue:
+        title: BATIDA DE TRANSIÇÃO
+        description: Bata levemente três vezes para indicar quando é hora de trocar a cena.
+        steps:
+          - Toque sempre que a próxima imagem deva ser analisada.
+          - Aguarde que todos reposicionem os cartões.
+      motorSupport:
+        - title: TRILHO DE VELCRO
+          description: Utilize trilhos de velcro horizontais para fixar as imagens em ordem.
+          steps:
+            - Posicione as imagens com apoio de ponteiras.
+            - Permita ajustes sem perder a sequência.
+    prerequisites:
+      - type: SKILL
+        reference: EF01LP19
+        description: Relembrar com a turma histórias curtas já organizadas em início, meio e fim.
+    interactive:
+      slug: quiz-sequencia-de-imagens
+      title: Sequência de Imagens — Quiz
+      type: QUIZ
+      bnccDescription: Organizar os acontecimentos de uma história em ordem cronológica a partir de imagens e descrições.
+      estimatedTimeMinutes: 8
+      instructions:
+        - Analise cada imagem com atenção aos detalhes.
+        - Arraste mentalmente as cenas para a ordem correta antes de responder.
+        - Compartilhe com a turma a sequência escolhida.
+      objectives:
+        - Relacionar imagens e descrições para manter a sequência lógica da história.
+        - Utilizar marcadores iniciais para apresentar a narrativa ao grupo.
+      scoring:
+        correct: 10
+        incorrect: 0
+      adaptive:
+        increaseAfter: 2
+        decreaseAfter: 1
+      questions:
+        - id: sequencia-de-imagens-q1
+          type: multiple-choice
+          prompt: Qual é a ordem correta das cenas vistas (1) crianças montando o cenário, (2) personagem encontra o mapa, (3) personagem celebra o final?
+          hint: Pense em como a história começou, continuou e terminou.
+          options:
+            - id: sequencia-de-imagens-q1-a
+              text: 2 → 1 → 3
+              isCorrect: false
+              feedback: Lembre-se de preparar o cenário antes de encontrar o mapa.
+            - id: sequencia-de-imagens-q1-b
+              text: 1 → 2 → 3
+              isCorrect: true
+              feedback: Perfeito! A história começou com o cenário, seguiu com o mapa e terminou com a celebração.
+            - id: sequencia-de-imagens-q1-c
+              text: 3 → 1 → 2
+              isCorrect: false
+              feedback: Essa ordem começa pelo fim da história.
+        - id: sequencia-de-imagens-q2
+          type: true-false
+          prompt: Podemos começar a história pela cena final?
+          hint: Relembre como apresentamos o enredo.
+          statement: Iniciar pela cena final atrapalha a compreensão do enredo.
+          answer: true
+          feedback:
+            'true': Muito bem! O início prepara quem escuta para o restante.
+            'false': Procure seguir a ordem para facilitar o entendimento.
+      accessibility: *historia_em_cenas_sequencia_accessibility
+  - partial: ../../_partials/acolhimento-base.yaml
+    slug: ritmo-da-narrativa
+    title: Ritmo da Narrativa
+    prompt: Escolha a melhor forma de alternar narrador e personagens sem interromper a história.
+    type: QUIZ
+    difficulty: PRATICAR
+    bncc:
+      code: EF01LP18
+      habilidades:
+        - EF01LP18
+        - EF01LP19
+    learningObjectives:
+      - Alternar falas de narrador e personagens mantendo o ritmo do enredo.
+      - Utilizar sinais combinados para realizar transições suaves entre cenas.
+    description: Ritmo da Narrativa estimula o grupo a observar quando o narrador comenta e quando os personagens entram em cena.
+    metadata:
+      categoria: Fluxo narrativo
+      duracaoMinutos: 9
+      habilidades:
+        - EF01LP18
+        - EF01LP19
+      habilidadesSecundarias:
+        - EF01LP19
+      assetSlug: lp-audio-fones
+      assetUsage: Mostre o fone para indicar quando a voz do narrador precisa ser retomada.
+      familiaEngajamento: Oriente as famílias a dramatizar diálogos, alternando quem narra e quem interpreta.
+      interactiveSlug: quiz-ritmo-da-narrativa
+    accessibility: &historia_em_cenas_ritmo_accessibility
+      hints:
+        - audience: ESTUDANTE
+          text: 'Passo 1: Identifique quem está falando em cada trecho.'
+        - audience: ESTUDANTE
+          text: 'Passo 2: Pense no sinal que a turma usa para mudar de narrador para personagem.'
+        - audience: ESTUDANTE
+          text: 'Passo 3: Escolha a opção que mantém o ritmo sem interrupções.'
+        - audience: EDUCADOR
+          text: Use cartões com as palavras narrador e personagem para apoiar.
+        - audience: FAMILIA
+          text: Compartilhe dicas de como fazer pausas curtas entre as falas em casa.
+      feedback:
+        success: Excelente! Você organizou a troca de vozes de forma harmoniosa.
+        encouragement: Releia as falas e marque quem fala em cada momento antes de decidir.
+        retry: Treine a transição com palmas leves e tente novamente.
+        accessibility: Ofereça suporte auditivo individual, legendas e tempo estendido.
+      assets:
+        - slug: lp-audio-fones
+          type: IMAGEM
+          title: Fone para transição de vozes
+      alternatives:
+        - title: LUZES DE CENA
+          description: Combine luz de cor diferente para narrador e personagens.
+          steps:
+            - Acenda a luz correspondente a cada fala.
+            - Permita que estudantes acionem o botão com apoio motriz.
+      audioCue:
+        title: MARCADOR DE PAUSA
+        description: Bata palmas suaves duas vezes quando o narrador retomar a história.
+        steps:
+          - Explique que o som indica troca de voz.
+          - Aguarde silêncio antes de continuar.
+      motorSupport:
+        - title: VARINHA DE TRANSIÇÃO
+          description: Disponibilize varinha leve para apontar quem fala a seguir.
+          steps:
+            - Entregue ao narrador no início da cena.
+            - Passe a varinha para o personagem ao final da fala.
+    prerequisites:
+      - type: SKILL
+        reference: EF01LP18
+        description: Relembrar os sinais combinados para alternar falas durante as rodas de conversa.
+    interactive:
+      slug: quiz-ritmo-da-narrativa
+      title: Ritmo da Narrativa — Quiz
+      type: QUIZ
+      bnccDescription: Planejar turnos de fala em narrativas orais, garantindo transições adequadas entre narrador e personagens.
+      estimatedTimeMinutes: 9
+      instructions:
+        - Leia a cena e identifique o que narrador e personagens dizem.
+        - Escolha a opção que mantém o ritmo sem interrupções.
+        - Compartilhe a solução com a turma.
+      objectives:
+        - Alternar falas de narrador e personagens mantendo o ritmo do enredo.
+        - Utilizar sinais combinados para realizar transições suaves entre cenas.
+      scoring:
+        correct: 10
+        incorrect: 0
+      adaptive:
+        increaseAfter: 2
+        decreaseAfter: 1
+      questions:
+        - id: ritmo-da-narrativa-q1
+          type: multiple-choice
+          prompt: Ao narrar, Joana descreve o cenário e depois o personagem fala assustado. Qual opção mantém o ritmo?
+          hint: Pense em como apresentar a fala do personagem sem cortar o narrador.
+          options:
+            - id: ritmo-da-narrativa-q1-a
+              text: Joana narra, faz sinal com a mão e o personagem entra com a voz assustada.
+              isCorrect: true
+              feedback: Ótimo! A transição respeita o narrador e o personagem.
+            - id: ritmo-da-narrativa-q1-b
+              text: O personagem começa a gritar antes de Joana terminar a frase.
+              isCorrect: false
+              feedback: Isso interrompe o narrador e confunde quem escuta.
+            - id: ritmo-da-narrativa-q1-c
+              text: Joana e o personagem falam ao mesmo tempo para economizar tempo.
+              isCorrect: false
+              feedback: Lembre-se de que cada voz precisa de seu momento.
+        - id: ritmo-da-narrativa-q2
+          type: true-false
+          prompt: Precisamos combinar sinais para saber quando narrador e personagem falam?
+          hint: Relembre como os combinados ajudam.
+          statement: Sinais combinados ajudam a manter o ritmo da narrativa oral.
+          answer: true
+          feedback:
+            'true': Muito bem! Os sinais evitam interrupções.
+            'false': Revise os combinados para organizar a fala.
+      accessibility: *historia_em_cenas_ritmo_accessibility
+  - partial: ../../_partials/acolhimento-base.yaml
+    slug: perguntas-para-voz
+    title: Perguntas para Voz
+    prompt: Após ouvir a dramatização, escolha a pergunta que ajuda o colega a ajustar a voz do personagem.
+    type: QUIZ
+    difficulty: INICIAR
+    bncc:
+      code: EF01LP18
+      habilidades:
+        - EF01LP18
+        - EF01LP20
+    learningObjectives:
+      - Elaborar perguntas que orientem ajustes de voz e sentimento em cena.
+      - Demonstrar cuidado ao sugerir melhorias para a entonação do colega.
+    description: Perguntas para Voz incentiva a turma a formular questões respeitosas que apoiem a expressividade dos personagens.
+    metadata:
+      categoria: Feedback construtivo
+      duracaoMinutos: 8
+      habilidades:
+        - EF01LP18
+        - EF01LP20
+      habilidadesSecundarias:
+        - EF01LP20
+      assetSlug: lp-audio-fones
+      assetUsage: Utilize o fone para lembrar que ouvir com atenção ajuda a fazer perguntas úteis.
+      familiaEngajamento: Oriente as famílias a fazer perguntas gentis quando praticarem histórias em casa.
+      interactiveSlug: quiz-perguntas-para-voz
+    accessibility: &historia_em_cenas_perguntas_voz_accessibility
+      hints:
+        - audience: ESTUDANTE
+          text: 'Passo 1: Pense em como o personagem deveria soar na cena.'
+        - audience: ESTUDANTE
+          text: 'Passo 2: Formule uma pergunta que ajude o colega a ajustar a voz.'
+        - audience: ESTUDANTE
+          text: 'Passo 3: Verifique se a pergunta demonstra cuidado e respeito.'
+        - audience: EDUCADOR
+          text: Registre modelos de perguntas colaborativas no quadro.
+        - audience: FAMILIA
+          text: Compartilhe exemplos de perguntas encorajadoras para usar em casa.
+      feedback:
+        success: Excelente! Sua pergunta ajuda o colega a melhorar a voz.
+        encouragement: Relembre o objetivo da cena antes de perguntar novamente.
+        retry: Anote palavras que representem o sentimento e tente outra vez.
+        accessibility: Disponibilize cartões com diferentes sentimentos e perguntas-modelo.
+      assets:
+        - slug: lp-audio-fones
+          type: IMAGEM
+          title: Fone para feedback vocal
+      alternatives:
+        - title: CARTÕES DE SENTIMENTO
+          description: Entregue cartões com ícones para apoiar a formulação das perguntas.
+          steps:
+            - Escolha o cartão que representa o sentimento desejado.
+            - Formule a pergunta a partir desse cartão.
+      audioCue:
+        title: CAMPANHIA SUAVE
+        description: Utilize uma campainha para marcar o momento de fazer perguntas.
+        steps:
+          - Toque antes de abrir o espaço de perguntas.
+          - Aguarde silêncio antes da resposta.
+      motorSupport:
+        - title: QUADRO DE PERGUNTAS
+          description: Use quadro com encaixes para posicionar cartões de pergunta.
+          steps:
+            - Posicione o cartão escolhido usando velcro.
+            - Leia a pergunta apoiando-se no quadro.
+    prerequisites:
+      - type: SKILL
+        reference: EF01LP18
+        description: Relembrar com a turma perguntas respeitosas utilizadas em rodas anteriores.
+    interactive:
+      slug: quiz-perguntas-para-voz
+      title: Perguntas para Voz — Quiz
+      type: QUIZ
+      bnccDescription: Formular perguntas construtivas após apresentações orais, apoiando ajustes de entonação dos colegas.
+      estimatedTimeMinutes: 8
+      instructions:
+        - Escute a cena apresentada.
+        - Escolha a pergunta que ajuda o colega a ajustar a voz.
+        - Compartilhe o motivo da escolha com o grupo.
+      objectives:
+        - Elaborar perguntas que orientem ajustes de voz e sentimento em cena.
+        - Demonstrar cuidado ao sugerir melhorias para a entonação do colega.
+      scoring:
+        correct: 10
+        incorrect: 0
+      adaptive:
+        increaseAfter: 2
+        decreaseAfter: 1
+      questions:
+        - id: perguntas-para-voz-q1
+          type: multiple-choice
+          prompt: O personagem deveria soar alegre, mas a voz saiu apagada. Que pergunta ajuda o colega?
+          hint: Procure uma pergunta que convide o colega a ajustar a voz.
+          options:
+            - id: perguntas-para-voz-q1-a
+              text: "Como você pode deixar essa fala mais animada, talvez sorrindo enquanto fala?"
+              isCorrect: true
+              feedback: Ótima pergunta! Ela convida o colega a ajustar a voz com respeito.
+            - id: perguntas-para-voz-q1-b
+              text: "Você não sabe fazer esse personagem, pode trocar?"
+              isCorrect: false
+              feedback: Essa pergunta não ajuda e desmotiva o colega.
+            - id: perguntas-para-voz-q1-c
+              text: "Pode repetir tudo de novo sem nenhuma mudança?"
+              isCorrect: false
+              feedback: A pergunta não aponta como melhorar.
+        - id: perguntas-para-voz-q2
+          type: true-false
+          prompt: Perguntas gentis ajudam os colegas a melhorar a apresentação?
+          hint: Lembre como o feedback construtivo funciona.
+          statement: Perguntas gentis e específicas ajudam a ajustar a voz na próxima tentativa.
+          answer: true
+          feedback:
+            'true': Muito bem! O cuidado torna o feedback útil e respeitoso.
+            'false': Procure formular perguntas que ajudem o colega a melhorar.
+      accessibility: *historia_em_cenas_perguntas_voz_accessibility
+  - partial: ../../_partials/acolhimento-base.yaml
+    slug: marcadores-de-tempo
+    title: Marcadores de Tempo
+    prompt: Escolha a frase que usa melhor os marcadores temporais para conectar as cenas.
+    type: QUIZ
+    difficulty: PRATICAR
+    bncc:
+      code: EF01LP19
+      habilidades:
+        - EF01LP19
+    learningObjectives:
+      - Utilizar marcadores temporais simples ao recontar cenas.
+      - Garantir coesão entre acontecimentos de uma narrativa oral.
+    description: Marcadores de Tempo propõe situações em que os estudantes precisam selecionar expressões que conectam cenas sucessivas.
+    metadata:
+      categoria: Coesão temporal
+      duracaoMinutos: 9
+      habilidades:
+        - EF01LP19
+      assetSlug: lp-material-caderno
+      assetUsage: Use o caderno para registrar os marcadores escolhidos e reutilizá-los em outras cenas.
+      familiaEngajamento: Recomende que as famílias conversem sobre o dia usando palavras como depois e por fim.
+      interactiveSlug: quiz-marcadores-de-tempo
+    accessibility: &historia_em_cenas_marcadores_accessibility
+      hints:
+        - audience: ESTUDANTE
+          text: 'Passo 1: Relembre as cenas e perceba a ordem em que aconteceram.'
+        - audience: ESTUDANTE
+          text: 'Passo 2: Identifique qual marcador deixa clara a passagem de tempo.'
+        - audience: ESTUDANTE
+          text: 'Passo 3: Leia em voz alta para verificar se a frase faz sentido.'
+        - audience: EDUCADOR
+          text: Liste marcadores no quadro e destaque seus usos.
+        - audience: FAMILIA
+          text: Compartilhe exemplos simples de marcadores para usar em casa.
+      feedback:
+        success: Perfeito! O marcador conecta bem as cenas.
+        encouragement: Releia as cenas e compare cada marcador.
+        retry: Experimente trocar apenas o marcador e veja como a frase muda.
+        accessibility: Disponibilize cartões com marcadores em caixa alta, áudio de apoio e tempo extra.
+      assets:
+        - slug: lp-material-caderno
+          type: IMAGEM
+          title: Caderno com marcadores coloridos
+      alternatives:
+        - title: ROLETAS DE TEMPO
+          description: Use roletas com palavras como antes, depois e finalmente.
+          steps:
+            - Gire a roleta para escolher um marcador.
+            - Teste o marcador na frase antes de confirmar.
+      audioCue:
+        title: BATIDA DO RELÓGIO
+        description: Toque um pêndulo suave para lembrar a passagem do tempo.
+        steps:
+          - Sincronize o som com a leitura da frase.
+          - Aguarde silêncio antes de anunciar a resposta.
+      motorSupport:
+        - title: LISTA MANIPULÁVEL
+          description: Disponibilize fitas com marcadores acoplados por velcro.
+          steps:
+            - Permita movimentar os marcadores com apoio de ponteiras.
+            - Ajuste a altura da lista para diferentes estaturas.
+    prerequisites:
+      - type: SKILL
+        reference: EF01LP19
+        description: Revisitar marcadores temporais simples já utilizados pela turma.
+    interactive:
+      slug: quiz-marcadores-de-tempo
+      title: Marcadores de Tempo — Quiz
+      type: QUIZ
+      bnccDescription: Utilizar expressões temporais para organizar e conectar eventos em narrativas orais.
+      estimatedTimeMinutes: 9
+      instructions:
+        - Leia a frase e observe o momento em que cada ação ocorre.
+        - Escolha o marcador temporal que conecta as cenas.
+        - Compartilhe por que ele é o mais adequado.
+      objectives:
+        - Utilizar marcadores temporais simples ao recontar cenas.
+        - Garantir coesão entre acontecimentos de uma narrativa oral.
+      scoring:
+        correct: 10
+        incorrect: 0
+      adaptive:
+        increaseAfter: 2
+        decreaseAfter: 1
+      questions:
+        - id: marcadores-de-tempo-q1
+          type: multiple-choice
+          prompt: "_____ preparar o cenário, os personagens entraram em cena. Qual marcador completa a frase?"
+          hint: Pense no que aconteceu primeiro.
+          options:
+            - id: marcadores-de-tempo-q1-a
+              text: Depois de
+              isCorrect: false
+              feedback: Repare que primeiro o cenário foi preparado.
+            - id: marcadores-de-tempo-q1-b
+              text: Antes de
+              isCorrect: true
+              feedback: Certo! Antes de preparar o cenário, ninguém entra em cena.
+            - id: marcadores-de-tempo-q1-c
+              text: Ao mesmo tempo
+              isCorrect: false
+              feedback: Esse marcador não mostra ordem.
+        - id: marcadores-de-tempo-q2
+          type: true-false
+          prompt: Os marcadores temporais ajudam a plateia a entender a ordem dos fatos?
+          hint: Reflita sobre o papel dessas palavras.
+          statement: Marcadores temporais deixam claro quando cada ação acontece.
+          answer: true
+          feedback:
+            'true': Muito bem! Eles tornam a narrativa mais compreensível.
+            'false': Observe como a ordem fica confusa sem marcadores.
+      accessibility: *historia_em_cenas_marcadores_accessibility
+  - partial: ../../_partials/acolhimento-base.yaml
+    slug: reconto-colaborativo
+    title: Reconto Colaborativo
+    prompt: Após ouvir a história, escolha a sequência de falas que mantém o enredo em grupo.
+    type: QUIZ
+    difficulty: PRATICAR
+    bncc:
+      code: EF01LP19
+      habilidades:
+        - EF01LP19
+        - EF01LP20
+    learningObjectives:
+      - Recontar a história em etapas, garantindo que cada colega retome um trecho relevante.
+      - Ajustar a fala para complementar o que já foi dito sem repetir.
+    description: Reconto Colaborativo estimula a equipe a dividir a narrativa em partes, respeitando o que cada pessoa conta.
+    metadata:
+      categoria: Narração coletiva
+      duracaoMinutos: 10
+      habilidades:
+        - EF01LP19
+        - EF01LP20
+      habilidadesSecundarias:
+        - EF01LP20
+      assetSlug: lp-roda-contacao
+      assetUsage: Disponha cartões com início, meio e fim para cada colega pegar o seu.
+      familiaEngajamento: Sugira que as famílias façam recontos cooperativos, cada um completando a fala do outro.
+      interactiveSlug: quiz-reconto-colaborativo
+    accessibility: &historia_em_cenas_reconto_accessibility
+      hints:
+        - audience: ESTUDANTE
+          text: 'Passo 1: Relembre o que cada colega disse na roda.'
+        - audience: ESTUDANTE
+          text: 'Passo 2: Procure a opção que complementa a fala anterior sem repetir.'
+        - audience: ESTUDANTE
+          text: 'Passo 3: Certifique-se de que a sequência termina a história.'
+        - audience: EDUCADOR
+          text: Anote no quadro as falas já ditas para apoio visual.
+        - audience: FAMILIA
+          text: Oriente sobre como fazer relatos compartilhados em casa, respeitando turnos.
+      feedback:
+        success: Excelente! Você manteve o enredo em andamento sem repetir falas.
+        encouragement: Relembre a fala anterior e pense em como completá-la.
+        retry: Use cartões com tópicos antes de tentar novamente.
+        accessibility: Forneça transcrição das falas, apoio auditivo e tempo para reorganizar ideias.
+      assets:
+        - slug: lp-roda-contacao
+          type: IMAGEM
+          title: Tapete para recontos colaborativos
+      alternatives:
+        - title: CÍRCULO DE CARTÕES
+          description: Distribua cartões com palavras-chave para cada participante.
+          steps:
+            - Use o cartão como gatilho para a fala.
+            - Aponte para o próximo cartão ao finalizar.
+      audioCue:
+        title: CLAVE DE PASSAGEM
+        description: Toque um instrumento leve para indicar a vez do próximo colega.
+        steps:
+          - Combine o som antes de começar o recontar.
+          - Aguarde que a pessoa seguinte repita rapidamente o que já foi dito.
+      motorSupport:
+        - title: CRONÔMETRO VISUAL
+          description: Utilize ampulhetas pequenas para mostrar o tempo de cada fala.
+          steps:
+            - Vire a ampulheta no início de cada turno.
+            - Permita ajustes para quem precisa de mais tempo.
+    prerequisites:
+      - type: SKILL
+        reference: EF01LP19
+        description: Retomar com a turma como compartilhar relatos orais em sequência.
+    interactive:
+      slug: quiz-reconto-colaborativo
+      title: Reconto Colaborativo — Quiz
+      type: QUIZ
+      bnccDescription: Recontar histórias coletivamente, organizando os turnos e complementando as falas dos colegas.
+      estimatedTimeMinutes: 10
+      instructions:
+        - Leia o trecho que já foi contado.
+        - Escolha a continuação que mantém o enredo.
+        - Compartilhe como sua escolha complementa a fala anterior.
+      objectives:
+        - Recontar a história em etapas, garantindo que cada colega retome um trecho relevante.
+        - Ajustar a fala para complementar o que já foi dito sem repetir.
+      scoring:
+        correct: 10
+        incorrect: 0
+      adaptive:
+        increaseAfter: 2
+        decreaseAfter: 1
+      questions:
+        - id: reconto-colaborativo-q1
+          type: multiple-choice
+          prompt: Ana contou o início, dizendo que o grupo recebeu um mapa misterioso. Qual fala deve vir depois?
+          hint: Complete a narrativa sem repetir o que Ana já disse.
+          options:
+            - id: reconto-colaborativo-q1-a
+              text: "Depois, seguimos as pistas do mapa até chegar a uma caverna luminosa."
+              isCorrect: true
+              feedback: Excelente! Você manteve a aventura seguindo o mapa.
+            - id: reconto-colaborativo-q1-b
+              text: "Ana falou de novo a mesma parte porque ficou confusa."
+              isCorrect: false
+              feedback: Essa opção repete o início contado pela colega.
+            - id: reconto-colaborativo-q1-c
+              text: "Então fomos dormir e esquecemos o mapa na escola."
+              isCorrect: false
+              feedback: Essa fala não continua a aventura planejada no relato.
+        - id: reconto-colaborativo-q2
+          type: true-false
+          prompt: Repetir a fala do colega ajuda o recontar coletivo?
+          hint: Pense em como avançar a história em grupo.
+          statement: Em recontos colaborativos, cada fala deve acrescentar uma parte nova do enredo.
+          answer: true
+          feedback:
+            'true': Muito bem! Assim cada pessoa contribui com um trecho diferente.
+            'false': Relembre que é importante complementar, não repetir, a fala do colega.
+      accessibility: *historia_em_cenas_reconto_accessibility
+  - partial: ../../_partials/acolhimento-base.yaml
+    slug: guia-do-narrador
+    title: Guia do Narrador
+    prompt: Escolha o roteiro que orienta cada cena com clareza antes da entrada dos personagens.
+    type: QUIZ
+    difficulty: DOMINAR
+    bncc:
+      code: EF01LP19
+      habilidades:
+        - EF01LP19
+        - EF01LP20
+    learningObjectives:
+      - Planejar o roteiro oral do narrador com marcadores claros de tempo e lugar.
+      - Sinalizar mudanças de cena para orientar a entrada dos personagens.
+    description: Guia do Narrador apresenta roteiros curtos para que a turma identifique aquele que conduz a história com clareza e ritmo.
+    metadata:
+      categoria: Roteiro oral
+      duracaoMinutos: 10
+      habilidades:
+        - EF01LP19
+        - EF01LP20
+      habilidadesSecundarias:
+        - EF01LP20
+      assetSlug: lp-material-caderno
+      assetUsage: Utilize o caderno como quadro do narrador, anotando marcadores de tempo e locais.
+      familiaEngajamento: Sugira que as famílias montem pequenos roteiros para narrar fotos antigas em casa.
+      interactiveSlug: quiz-guia-do-narrador
+    accessibility: &historia_em_cenas_guia_narrador_accessibility
+      hints:
+        - audience: ESTUDANTE
+          text: 'Passo 1: Leia o roteiro e perceba se ele apresenta onde e quando a cena ocorre.'
+        - audience: ESTUDANTE
+          text: 'Passo 2: Observe se o roteiro convida os personagens na ordem correta.'
+        - audience: ESTUDANTE
+          text: 'Passo 3: Verifique se o roteiro termina orientando a próxima cena.'
+        - audience: EDUCADOR
+          text: Disponibilize cartões com marcadores de tempo e lugar para apoiar a análise.
+        - audience: FAMILIA
+          text: Compartilhe sugestões de como narrar fotos utilizando marcadores temporais.
+      feedback:
+        success: Excelente! O roteiro escolhido orienta bem cada momento da história.
+        encouragement: Releia os marcadores e pense em qual roteiro orienta melhor os colegas.
+        retry: Faça uma lista com tempo, lugar e convocação antes de decidir.
+        accessibility: Ofereça leitura em voz alta, ampliação de texto e tempo adicional.
+      assets:
+        - slug: lp-material-caderno
+          type: IMAGEM
+          title: Caderno do narrador
+      alternatives:
+        - title: QUADRO DE ROTEIRO
+          description: Monte um quadro com colunas de tempo, lugar e ação para preencher.
+          steps:
+            - Preencha cada coluna antes de ler o roteiro.
+            - Use o quadro como apoio durante a escolha.
+      audioCue:
+        title: SINAL DO NARRADOR
+        description: Toque um sino breve sempre que o narrador retomar a palavra.
+        steps:
+          - Combine o sinal antes da leitura.
+          - Aguarde silêncio antes de continuar a história.
+      motorSupport:
+        - title: PLANILHA ENCAIXÁVEL
+          description: Utilize planilha com encaixes para mover cartões de tempo e lugar.
+          steps:
+            - Posicione os cartões com apoio de ponteiras.
+            - Ajuste a planilha para quem precisa de suporte postural.
+    prerequisites:
+      - type: SKILL
+        reference: EF01LP19
+        description: Revisitar com a turma roteiros orais já construídos em histórias anteriores.
+    interactive:
+      slug: quiz-guia-do-narrador
+      title: Guia do Narrador — Quiz
+      type: QUIZ
+      bnccDescription: Planejar a fala do narrador em narrativas orais, indicando tempo, lugar e transições de cena.
+      estimatedTimeMinutes: 10
+      instructions:
+        - Leia cada roteiro com atenção aos marcadores.
+        - Escolha o roteiro que orienta melhor a entrada dos personagens.
+        - Compartilhe por que a opção escolhida facilita a compreensão da história.
+      objectives:
+        - Planejar o roteiro oral do narrador com marcadores claros de tempo e lugar.
+        - Sinalizar mudanças de cena para orientar a entrada dos personagens.
+      scoring:
+        correct: 10
+        incorrect: 0
+      adaptive:
+        increaseAfter: 2
+        decreaseAfter: 1
+      questions:
+        - id: guia-do-narrador-q1
+          type: multiple-choice
+          prompt: Qual roteiro orienta melhor a cena em que os personagens chegam ao jardim encantado?
+          hint: Procure o roteiro que indica tempo, lugar e convite aos personagens.
+          options:
+            - id: guia-do-narrador-q1-a
+              text: "Agora todos falam juntos como quiserem."
+              isCorrect: false
+              feedback: Esse roteiro não informa tempo nem lugar.
+            - id: guia-do-narrador-q1-b
+              text: "Quando o relógio bateu três vezes, o jardim se iluminou. Venham, personagens, mostrar o mapa!"
+              isCorrect: true
+              feedback: Excelente! O roteiro indica o tempo, o cenário e convida os personagens.
+            - id: guia-do-narrador-q1-c
+              text: "No final, todos agradeceram à plateia com aplausos."
+              isCorrect: false
+              feedback: Esse roteiro representa o encerramento, não a cena do jardim.
+        - id: guia-do-narrador-q2
+          type: true-false
+          prompt: O narrador precisa anunciar mudanças de cena para a turma se orientar?
+          hint: Pense na função de quem conduz a história.
+          statement: O narrador orienta a plateia e os colegas anunciando tempo, lugar e próximas ações.
+          answer: true
+          feedback:
+            'true': Muito bem! Isso mantém todos alinhados com a história.
+            'false': Lembre-se de que a plateia depende do narrador para se orientar.
+      accessibility: *historia_em_cenas_guia_narrador_accessibility
+
+  - partial: ../../_partials/acolhimento-base.yaml
+    slug: cena-imprevisto
+    title: Cena Improvisto
+    prompt: Um novo acontecimento apareceu na história. Escolha como adaptar a cena sem interromper o enredo.
+    type: QUIZ
+    difficulty: DOMINAR
+    bncc:
+      code: EF01LP18
+      habilidades:
+        - EF01LP18
+        - EF01LP19
+    learningObjectives:
+      - Integrar eventos imprevistos na narrativa mantendo a coesão.
+      - Respeitar turnos de fala enquanto ajusta o roteiro ao vivo.
+    description: Cena Improvisto trabalha a escuta ativa e a adaptação rápida do enredo quando surge uma nova informação.
+    metadata:
+      categoria: Improviso guiado
+      duracaoMinutos: 10
+      habilidades:
+        - EF01LP18
+        - EF01LP19
+      habilidadesSecundarias:
+        - EF01LP19
+      assetSlug: lp-roda-contacao
+      assetUsage: Utilize a roda para posicionar cartões de "imprevisto" que precisam ser incorporados.
+      familiaEngajamento: Sugira que as famílias criem histórias em que cada pessoa acrescenta um elemento surpresa.
+      interactiveSlug: quiz-cena-imprevisto
+    accessibility: &historia_em_cenas_cena_imprevisto_accessibility
+      hints:
+        - audience: ESTUDANTE
+          text: 'Passo 1: Escute o imprevisto e recorde o que já aconteceu na história.'
+        - audience: ESTUDANTE
+          text: 'Passo 2: Planeje como inserir o novo elemento sem quebrar o sentido.'
+        - audience: ESTUDANTE
+          text: 'Passo 3: Combine com o colega que fala depois para manter a continuidade.'
+        - audience: EDUCADOR
+          text: Forneça cartões de imprevisto e modele como integrá-los com calma.
+        - audience: FAMILIA
+          text: Envie orientações para praticar improvisos narrativos em família.
+      feedback:
+        success: Excelente! Você integrou o imprevisto mantendo a história coerente.
+        encouragement: Relembre os eventos anteriores e tente encaixar o imprevisto novamente.
+        retry: Faça um pequeno resumo da história antes de inserir o novo elemento.
+        accessibility: Disponibilize recursos visuais, áudio descrição e tempo extra para reorganizar as ideias.
+      assets:
+        - slug: lp-roda-contacao
+          type: IMAGEM
+          title: Tapete de improvisos narrativos
+      alternatives:
+        - title: CUBOS SURPRESA
+          description: Utilize cubos com imagens surpresa para representar o imprevisto.
+          steps:
+            - Lance o cubo e observe a imagem.
+            - Discuta rapidamente como integrá-la antes de responder.
+      audioCue:
+        title: SINAL DE SURPRESA
+        description: Toque um chocalho leve quando um novo elemento aparecer.
+        steps:
+          - Toque o chocalho antes de anunciar o imprevisto.
+          - Aguarde que todos respirem e organizem as ideias.
+      motorSupport:
+        - title: GUIA DE CONEXÕES
+          description: Disponibilize setas móveis para conectar o imprevisto à cena anterior.
+          steps:
+            - Posicione a seta entre os cartões com apoio de ponteiras.
+            - Ajuste a conexão conforme a história evoluir.
+    prerequisites:
+      - type: SKILL
+        reference: EF01LP18
+        description: Relembrar combinados de turnos e escuta ativa em rodas de conversa.
+    interactive:
+      slug: quiz-cena-imprevisto
+      title: Cena Improvisto — Quiz
+      type: QUIZ
+      bnccDescription: Ajustar narrativas orais diante de eventos inesperados, respeitando turnos e coesão.
+      estimatedTimeMinutes: 10
+      instructions:
+        - Leia o imprevisto apresentado.
+        - Escolha a resposta que mantém o enredo coerente.
+        - Compartilhe como você integrou o novo elemento.
+      objectives:
+        - Integrar eventos imprevistos na narrativa mantendo a coesão.
+        - Respeitar turnos de fala enquanto ajusta o roteiro ao vivo.
+      scoring:
+        correct: 10
+        incorrect: 0
+      adaptive:
+        increaseAfter: 2
+        decreaseAfter: 1
+      questions:
+        - id: cena-imprevisto-q1
+          type: multiple-choice
+          prompt: No meio da apresentação, aparece um pássaro mágico que oferece ajuda. O que fazer?
+          hint: Pense em como continuar sem interromper o enredo.
+          options:
+            - id: cena-imprevisto-q1-a
+              text: Agradecer ao pássaro, explicar como ele pode orientar o grupo e seguir com a busca.
+              isCorrect: true
+              feedback: Excelente! Você integrou o imprevisto e manteve a história.
+            - id: cena-imprevisto-q1-b
+              text: Ignorar o pássaro e repetir toda a cena anterior.
+              isCorrect: false
+              feedback: Isso não aproveita o novo elemento e atrasa a narrativa.
+            - id: cena-imprevisto-q1-c
+              text: Parar a apresentação e discutir fora da história.
+              isCorrect: false
+              feedback: Lembre-se de manter a narrativa em andamento.
+        - id: cena-imprevisto-q2
+          type: true-false
+          prompt: Quando surge um imprevisto, devemos conversar rapidamente para integrar a ideia?
+          hint: Relembre os combinados de escuta e cooperação.
+          statement: Conversar rapidamente e combinar a integração do imprevisto mantém a história coerente.
+          answer: true
+          feedback:
+            'true': Perfeito! A conversa rápida ajuda a alinhar o grupo.
+            'false': Reúna o grupo e combine como continuar antes de seguir.
+      accessibility: *historia_em_cenas_cena_imprevisto_accessibility
+
+  - partial: ../../_partials/acolhimento-base.yaml
+    slug: vivencia-em-duplas
+    title: Vivência em Duplas
+    prompt: Escolha a sequência de ensaio em dupla que prepara melhor a cena antes da apresentação.
+    type: QUIZ
+    difficulty: DOMINAR
+    bncc:
+      code: EF01LP18
+      habilidades:
+        - EF01LP18
+        - EF01LP19
+        - EF01LP20
+    learningObjectives:
+      - Planejar ensaios em dupla combinando turnos de fala e gestos.
+      - Ajustar expressões e entonações com base no feedback do parceiro.
+    description: Vivência em Duplas orienta os estudantes a praticarem cenas em pares antes de apresentá-las ao grupo.
+    metadata:
+      categoria: Ensaios guiados
+      duracaoMinutos: 11
+      habilidades:
+        - EF01LP18
+        - EF01LP19
+        - EF01LP20
+      habilidadesSecundarias:
+        - EF01LP19
+        - EF01LP20
+      assetSlug: lp-audio-fones
+      assetUsage: Compartilhe o fone para revisar o áudio da cena durante o ensaio.
+      familiaEngajamento: Sugira que as famílias organizem pequenos ensaios em dupla para histórias favoritas.
+      interactiveSlug: quiz-vivencia-em-duplas
+    accessibility: &historia_em_cenas_vivencia_duplas_accessibility
+      hints:
+        - audience: ESTUDANTE
+          text: 'Passo 1: Combine com o seu par quem fala primeiro e quem responde.'
+        - audience: ESTUDANTE
+          text: 'Passo 2: Pratique os gestos e veja se a voz combina com a emoção.'
+        - audience: ESTUDANTE
+          text: 'Passo 3: Ajuste a cena conforme o feedback do colega.'
+        - audience: EDUCADOR
+          text: Organize fichas com turnos e gestos sugeridos.
+        - audience: FAMILIA
+          text: Incentive ensaios rápidos em casa com histórias conhecidas.
+      feedback:
+        success: Muito bem! O ensaio planejado prepara a cena com equilíbrio.
+        encouragement: Reajuste o plano com base no que o colega precisa e tente novamente.
+        retry: Faça anotações curtas sobre voz, gesto e tempo antes de repetir.
+        accessibility: Ofereça vídeos de referência, apoio auditivo individual e tempo ampliado.
+      assets:
+        - slug: lp-audio-fones
+          type: IMAGEM
+          title: Fone de ensaio em dupla
+      alternatives:
+        - title: FICHAS DE ENSAIO
+          description: Entregue fichas com dicas de voz, gesto e posição.
+          steps:
+            - Leia a ficha antes do ensaio.
+            - Marque com adesivos os pontos fortes e a melhorar.
+      audioCue:
+        title: MARCADOR DE ENSAIO
+        description: Use batidas suaves para iniciar e concluir cada ensaio.
+        steps:
+          - Toque no início do ensaio.
+          - Toque novamente para indicar a hora do feedback.
+      motorSupport:
+        - title: PLATAFORMA AJUSTÁVEL
+          description: Disponibilize plataformas ou marcações no chão para orientar os movimentos.
+          steps:
+            - Ajuste a posição dos pés seguindo as marcações.
+            - Permita pausas para reposicionar com segurança.
+    prerequisites:
+      - type: SKILL
+        reference: EF01LP18
+        description: Relembrar combinados de escuta e feedback utilizados em ensaios anteriores.
+    interactive:
+      slug: quiz-vivencia-em-duplas
+      title: Vivência em Duplas — Quiz
+      type: QUIZ
+      bnccDescription: Ensaiar cenas em duplas organizando turnos, gestos e feedbacks colaborativos.
+      estimatedTimeMinutes: 11
+      instructions:
+        - Analise as etapas do ensaio proposto.
+        - Escolha a sequência que prepara melhor a cena.
+        - Explique como o plano apoia você e o colega.
+      objectives:
+        - Planejar ensaios em dupla combinando turnos de fala e gestos.
+        - Ajustar expressões e entonações com base no feedback do parceiro.
+      scoring:
+        correct: 10
+        incorrect: 0
+      adaptive:
+        increaseAfter: 2
+        decreaseAfter: 1
+      questions:
+        - id: vivencia-em-duplas-q1
+          type: multiple-choice
+          prompt: Qual sequência prepara melhor a cena de amizade?
+          hint: Pense em ensaio, feedback e ajuste.
+          options:
+            - id: vivencia-em-duplas-q1-a
+              text: Ensaiar rapidamente para terminar logo.
+              isCorrect: false
+              feedback: A cena precisa de ensaio cuidadoso e feedback.
+            - id: vivencia-em-duplas-q1-b
+              text: Ensaiar a voz e gestos, ouvir o colega e ajustar o final juntos.
+              isCorrect: true
+              feedback: Excelente! Essa sequência inclui ensaio, feedback e ajuste.
+            - id: vivencia-em-duplas-q1-c
+              text: Cada um ensaia sozinho e apresenta sem avisar o outro.
+              isCorrect: false
+              feedback: O ensaio em dupla exige planejamento conjunto.
+        - id: vivencia-em-duplas-q2
+          type: true-false
+          prompt: Receber feedback do colega ajuda a melhorar a cena?
+          hint: Relembre como o feedback aparece nos ensaios.
+          statement: Feedbacks respeitosos ajudam a ajustar voz e gestos antes da apresentação.
+          answer: true
+          feedback:
+            'true': Muito bem! O feedback prepara a dupla para a apresentação.
+            'false': Experimente ajustar a cena usando a sugestão do colega.
+      accessibility: *historia_em_cenas_vivencia_duplas_accessibility
+
+  - partial: ../../_partials/acolhimento-base.yaml
+    slug: feedback-da-plateia
+    title: Feedback da Plateia
+    prompt: Após assistir à cena, escolha a devolutiva que valoriza a apresentação e sugere melhorias.
+    type: QUIZ
+    difficulty: PRATICAR
+    bncc:
+      code: EF01LP18
+      habilidades:
+        - EF01LP18
+        - EF01LP20
+    learningObjectives:
+      - Elaborar feedbacks que reconhecem acertos e indicam ajustes na entonação ou gestos.
+      - Demonstrar escuta respeitosa ao comentar as cenas dos colegas.
+    description: Feedback da Plateia orienta o grupo a oferecer devolutivas equilibradas após apresentações orais.
+    metadata:
+      categoria: Devolutiva formativa
+      duracaoMinutos: 8
+      habilidades:
+        - EF01LP18
+        - EF01LP20
+      habilidadesSecundarias:
+        - EF01LP20
+      assetSlug: lp-roda-contacao
+      assetUsage: Use o tapete para registrar elogios e sugestões em cartões.
+      familiaEngajamento: Recomende que as famílias pratiquem feedbacks positivos durante brincadeiras teatrais.
+      interactiveSlug: quiz-feedback-da-plateia
+    accessibility: &historia_em_cenas_feedback_plateia_accessibility
+      hints:
+        - audience: ESTUDANTE
+          text: 'Passo 1: Destaque algo que funcionou bem na apresentação.'
+        - audience: ESTUDANTE
+          text: 'Passo 2: Sugira uma melhoria específica com linguagem respeitosa.'
+        - audience: ESTUDANTE
+          text: 'Passo 3: Confirme se a sugestão ajuda a próxima apresentação.'
+        - audience: EDUCADOR
+          text: Modele frases de elogio e sugestão equilibradas.
+        - audience: FAMILIA
+          text: Sugira que as famílias usem o formato elogio + sugestão em casa.
+      feedback:
+        success: Excelente! Seu feedback valoriza e orienta a cena com respeito.
+        encouragement: Relembre os pontos fortes da cena antes de sugerir melhorias.
+        retry: Escreva elogio e sugestão em duas colunas e tente novamente.
+        accessibility: Disponibilize cartões com frases-modelo, apoio auditivo e tempo ampliado.
+      assets:
+        - slug: lp-roda-contacao
+          type: IMAGEM
+          title: Tapete para feedback da plateia
+      alternatives:
+        - title: MURAL DE ELOGIOS
+          description: Monte mural com envelopes para elogios e sugestões.
+          steps:
+            - Escreva o elogio e coloque no envelope verde.
+            - Registre a sugestão no envelope amarelo.
+      audioCue:
+        title: APLAUSO COMBINADO
+        description: Após a devolutiva, faça o aplauso combinado para valorizar o grupo.
+        steps:
+          - Combine o ritmo de aplauso antes da atividade.
+          - Execute o aplauso após cada feedback.
+      motorSupport:
+        - title: QUADRO BILÍNGUE
+          description: Utilize quadro com pictogramas para apoiar estudantes que usam comunicação alternativa.
+          steps:
+            - Aponte para os pictogramas de elogio e sugestão.
+            - Combine gestos para sinalizar concordância.
+    prerequisites:
+      - type: SKILL
+        reference: EF01LP18
+        description: Relembrar regras de escuta ativa em rodas de apresentação.
+    interactive:
+      slug: quiz-feedback-da-plateia
+      title: Feedback da Plateia — Quiz
+      type: QUIZ
+      bnccDescription: Oferecer feedbacks respeitosos após apresentações orais, reconhecendo pontos fortes e sugerindo melhorias.
+      estimatedTimeMinutes: 8
+      instructions:
+        - Observe a cena exibida.
+        - Escolha a devolutiva que equilibra elogio e sugestão.
+        - Compartilhe por que ela ajuda a próxima apresentação.
+      objectives:
+        - Elaborar feedbacks que reconhecem acertos e indicam ajustes na entonação ou gestos.
+        - Demonstrar escuta respeitosa ao comentar as cenas dos colegas.
+      scoring:
+        correct: 10
+        incorrect: 0
+      adaptive:
+        increaseAfter: 2
+        decreaseAfter: 1
+      questions:
+        - id: feedback-da-plateia-q1
+          type: multiple-choice
+          prompt: Qual devolutiva ajuda a dupla que exagerou no volume?
+          hint: Procure elogio e sugestão respeitosa.
+          options:
+            - id: feedback-da-plateia-q1-a
+              text: "Gostei dos gestos. Talvez diminuir o volume em algumas falas deixe a cena mais equilibrada."
+              isCorrect: true
+              feedback: Excelente! Você valorizou a cena e sugeriu um ajuste específico.
+            - id: feedback-da-plateia-q1-b
+              text: "Não gostei. Vocês deveriam começar tudo de novo sem erros."
+              isCorrect: false
+              feedback: Essa devolutiva não reconhece o esforço da dupla.
+            - id: feedback-da-plateia-q1-c
+              text: "Achei tudo ótimo, não tenho nada a dizer." 
+              isCorrect: false
+              feedback: Procure indicar ao menos um ponto de melhoria.
+        - id: feedback-da-plateia-q2
+          type: true-false
+          prompt: Feedbacks equilibrados ajudam as próximas apresentações?
+          hint: Relembre como o feedback pode orientar ajustes.
+          statement: Elogios acompanhados de sugestões específicas ajudam a próxima apresentação a ficar melhor.
+          answer: true
+          feedback:
+            'true': Muito bem! A dupla saberá o que manter e o que ajustar.
+            'false': Procure sempre incluir uma orientação útil.
+      accessibility: *historia_em_cenas_feedback_plateia_accessibility
+
+  - partial: ../../_partials/acolhimento-base.yaml
+    slug: cronista-da-roda
+    title: Cronista da Roda
+    prompt: Depois da apresentação, escolha o resumo oral que registra os principais acontecimentos para a turma.
+    type: QUIZ
+    difficulty: DOMINAR
+    bncc:
+      code: EF01LP19
+      habilidades:
+        - EF01LP19
+        - EF01LP20
+    learningObjectives:
+      - Sintetizar os acontecimentos principais da cena apresentada.
+      - Utilizar marcadores de tempo e expressões de conclusão ao relatar para o grupo.
+    description: Cronista da Roda convida a turma a produzir registros orais curtos que podem ser convertidos em relatos para o mural da sala.
+    metadata:
+      categoria: Registro oral
+      duracaoMinutos: 11
+      habilidades:
+        - EF01LP19
+        - EF01LP20
+      habilidadesSecundarias:
+        - EF01LP20
+      assetSlug: lp-material-caderno
+      assetUsage: Utilize o caderno do cronista para apontar palavras-chave antes de relatar.
+      familiaEngajamento: Sugira que as famílias façam relatos rápidos sobre eventos do fim de semana.
+      interactiveSlug: quiz-cronista-da-roda
+    accessibility: &historia_em_cenas_cronista_accessibility
+      hints:
+        - audience: ESTUDANTE
+          text: 'Passo 1: Relembre o início, o meio e o fim da cena apresentada.'
+        - audience: ESTUDANTE
+          text: 'Passo 2: Escolha palavras-chave para cada parte antes de falar.'
+        - audience: ESTUDANTE
+          text: 'Passo 3: Finalize com uma frase que convide a próxima equipe.'
+        - audience: EDUCADOR
+          text: Modele resumos curtos com marcadores temporais.
+        - audience: FAMILIA
+          text: Incentive registros orais em casa após eventos familiares.
+      feedback:
+        success: Excelente! Você registrou a cena com clareza e convidou a próxima equipe.
+        encouragement: Relembre os momentos principais e tente novamente com frases curtas.
+        retry: Escreva três palavras-chave antes de fazer o resumo.
+        accessibility: Disponibilize apoio auditivo, pictogramas e tempo extra para organizar o relato.
+      assets:
+        - slug: lp-material-caderno
+          type: IMAGEM
+          title: Caderno do cronista
+      alternatives:
+        - title: QUADRO DE RESUMOS
+          description: Monte quadro com colunas de início, meio e fim para apoiar o cronista.
+          steps:
+            - Registre uma palavra em cada coluna antes de relatar.
+            - Utilize o quadro como guia durante o resumo.
+      audioCue:
+        title: SINO DE ENCERRAMENTO
+        description: Toque um sino suave quando o cronista terminar o relato.
+        steps:
+          - Combine o sinal antes da atividade.
+          - Toque após a fala para indicar transição para a próxima equipe.
+      motorSupport:
+        - title: SUPORTE ESCRITO
+          description: Ofereça prancheta inclinada e adaptadores de escrita para quem desejar anotar.
+          steps:
+            - Disponibilize lápis grossos ou adaptadores conforme necessidade.
+            - Permita que o cronista use a prancheta enquanto relata.
+    prerequisites:
+      - type: SKILL
+        reference: EF01LP19
+        description: Relembrar com o grupo como registrar oralmente os destaques de uma atividade.
+    interactive:
+      slug: quiz-cronista-da-roda
+      title: Cronista da Roda — Quiz
+      type: QUIZ
+      bnccDescription: Registrar oralmente os pontos principais de apresentações, utilizando marcadores temporais e linguagem clara.
+      estimatedTimeMinutes: 11
+      instructions:
+        - Relembre os destaques da cena apresentada.
+        - Escolha o resumo que organiza melhor as informações.
+        - Compartilhe como seu resumo ajuda quem não assistiu à apresentação.
+      objectives:
+        - Sintetizar os acontecimentos principais da cena apresentada.
+        - Utilizar marcadores de tempo e expressões de conclusão ao relatar para o grupo.
+      scoring:
+        correct: 10
+        incorrect: 0
+      adaptive:
+        increaseAfter: 2
+        decreaseAfter: 1
+      questions:
+        - id: cronista-da-roda-q1
+          type: multiple-choice
+          prompt: Qual resumo registra melhor a apresentação?
+          hint: Procure mencionar início, meio e fim.
+          options:
+            - id: cronista-da-roda-q1-a
+              text: "Primeiro recebemos o mapa, depois seguimos as pistas e, por fim, descobrimos o tesouro." 
+              isCorrect: true
+              feedback: Excelente! O resumo apresenta início, meio e fim com clareza.
+            - id: cronista-da-roda-q1-b
+              text: "A cena foi legal, acabou e pronto." 
+              isCorrect: false
+              feedback: Esse resumo não traz detalhes importantes do enredo.
+            - id: cronista-da-roda-q1-c
+              text: "Teve tesouro e passarinhos." 
+              isCorrect: false
+              feedback: Faltou mencionar a sequência dos acontecimentos.
+        - id: cronista-da-roda-q2
+          type: true-false
+          prompt: Concluir o resumo convidando a próxima equipe ajuda na organização da roda?
+          hint: Reflita sobre a dinâmica da roda de apresentações.
+          statement: Encerrar o resumo convidando a próxima apresentação mantém a roda organizada.
+          answer: true
+          feedback:
+            'true': Muito bem! A transição fica clara para todos.
+            'false': Lembre-se de indicar quem apresenta em seguida.
+      accessibility: *historia_em_cenas_cronista_accessibility

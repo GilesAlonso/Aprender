@@ -539,6 +539,194 @@ const drawToothBrushing = (canvas: Svg, helpers: DrawingHelpers, colors: string[
   }
 };
 
+const drawStoryCircle = (canvas: Svg, helpers: DrawingHelpers, colors: string[]) => {
+  const [background, carpet, bookCover, detail] = colors.map(helpers.palette.get);
+
+  addRoundedBackground(canvas, background);
+
+  const centerX = CANVAS_SIZE / 2;
+  const centerY = CANVAS_SIZE / 2 + 18;
+
+  canvas.circle(212).fill(carpet).center(centerX, centerY).opacity(0.95);
+
+  const cushions = [
+    { x: centerX - 86, y: centerY - 48, rotation: -18 },
+    { x: centerX + 86, y: centerY - 48, rotation: 18 },
+    { x: centerX - 96, y: centerY + 40, rotation: -10 },
+    { x: centerX + 96, y: centerY + 40, rotation: 10 },
+  ];
+
+  cushions.forEach(({ x, y, rotation }) => {
+    canvas
+      .ellipse(84, 54)
+      .fill(helpers.palette.get("surface-50"))
+      .stroke({ color: helpers.palette.get("primary-300"), width: 4 })
+      .center(x, y)
+      .rotate(rotation);
+  });
+
+  const cards = [
+    { x: centerX - 32, y: centerY - 18, rotation: -18 },
+    { x: centerX + 34, y: centerY - 12, rotation: 12 },
+    { x: centerX, y: centerY + 28, rotation: 6 },
+  ];
+
+  cards.forEach(({ x, y, rotation }) => {
+    canvas
+      .rect(48, 62)
+      .radius(14)
+      .fill(helpers.palette.get("surface-100"))
+      .stroke({ color: detail, width: 4 })
+      .center(x, y)
+      .rotate(rotation);
+  });
+
+  const book = canvas.group();
+  book
+    .rect(132, 92)
+    .radius(22)
+    .fill(bookCover)
+    .center(centerX, centerY - 4);
+
+  book
+    .rect(120, 80)
+    .radius(18)
+    .fill(helpers.palette.get("surface-50"))
+    .center(centerX, centerY - 4);
+
+  book
+    .rect(32, 96)
+    .radius(12)
+    .fill(detail)
+    .move(centerX - 58, centerY - 52);
+
+  book
+    .circle(18)
+    .fill(detail)
+    .center(centerX + 46, centerY - 8)
+    .opacity(0.9);
+
+  canvas
+    .path(
+      `M${centerX - 92} ${centerY - 92} Q ${centerX - 32} ${centerY - 142} ${centerX + 12} ${
+        centerY - 96
+      }`
+    )
+    .stroke({ color: detail, width: 6, linecap: "round" })
+    .fill("none")
+    .opacity(0.85);
+
+  canvas
+    .circle(16)
+    .fill(helpers.palette.get("surface-50"))
+    .stroke({ color: detail, width: 4 })
+    .center(centerX + 66, centerY - 110);
+
+  canvas
+    .circle(12)
+    .fill(helpers.palette.get("accent-200"))
+    .center(centerX - 110, centerY - 18)
+    .opacity(0.8);
+
+  canvas
+    .circle(10)
+    .fill(helpers.palette.get("accent-300"))
+    .center(centerX + 112, centerY + 12)
+    .opacity(0.8);
+};
+
+const drawListeningHeadset = (canvas: Svg, helpers: DrawingHelpers, colors: string[]) => {
+  const [background, hoop, cushion, waves] = colors.map(helpers.palette.get);
+
+  addRoundedBackground(canvas, background);
+
+  const centerY = CANVAS_SIZE / 2 + 12;
+
+  canvas
+    .path("M70 118 C70 54 186 54 186 118")
+    .stroke({ color: hoop, width: 20, linecap: "round" })
+    .fill("none");
+
+  canvas
+    .path("M82 118 C82 70 174 70 174 118")
+    .stroke({ color: helpers.palette.get("surface-200"), width: 6, linecap: "round" })
+    .fill("none")
+    .opacity(0.35);
+
+  const leftCup = canvas.group();
+  leftCup
+    .rect(62, 96)
+    .radius(30)
+    .fill(cushion)
+    .stroke({ color: hoop, width: 6 })
+    .center(84, centerY + 10);
+
+  leftCup
+    .rect(38, 70)
+    .radius(18)
+    .fill(helpers.palette.get("surface-50"))
+    .center(84, centerY + 10);
+
+  const rightCup = canvas.group();
+  rightCup
+    .rect(62, 96)
+    .radius(30)
+    .fill(cushion)
+    .stroke({ color: hoop, width: 6 })
+    .center(172, centerY + 10);
+
+  rightCup
+    .rect(38, 70)
+    .radius(18)
+    .fill(helpers.palette.get("surface-50"))
+    .center(172, centerY + 10);
+
+  canvas
+    .rect(18, 66)
+    .radius(10)
+    .fill(hoop)
+    .center(198, centerY + 20)
+    .rotate(16);
+
+  canvas
+    .rect(12, 54)
+    .radius(8)
+    .fill(waves)
+    .center(208, centerY + 32)
+    .rotate(16);
+
+  canvas
+    .path(
+      `M${CANVAS_SIZE / 2 + 70} ${centerY - 38} Q ${CANVAS_SIZE / 2 + 96} ${centerY - 12} ${
+        CANVAS_SIZE / 2 + 70
+      } ${centerY + 14}`
+    )
+    .stroke({ color: waves, width: 6, linecap: "round" })
+    .fill("none");
+
+  canvas
+    .path(
+      `M${CANVAS_SIZE / 2 + 54} ${centerY - 32} Q ${CANVAS_SIZE / 2 + 80} ${centerY - 10} ${
+        CANVAS_SIZE / 2 + 54
+      } ${centerY + 10}`
+    )
+    .stroke({ color: waves, width: 4, linecap: "round" })
+    .fill("none")
+    .opacity(0.7);
+
+  canvas
+    .circle(20)
+    .fill(helpers.palette.get("accent-200"))
+    .center(CANVAS_SIZE / 2 - 60, centerY - 70)
+    .opacity(0.85);
+
+  canvas
+    .circle(14)
+    .fill(helpers.palette.get("accent-300"))
+    .center(CANVAS_SIZE / 2 - 78, centerY - 40)
+    .opacity(0.8);
+};
+
 const assetDefinitions: AssetDefinition[] = [
   {
     slug: "lp-letra-a",
@@ -589,6 +777,38 @@ const assetDefinitions: AssetDefinition[] = [
     colorProfile: ["surface-200", "primary-400", "surface-50", "secondary-400"],
     draw: (canvas, helpers) =>
       drawNotebook(canvas, helpers, ["surface-200", "primary-400", "surface-50", "accent-300"]),
+  },
+  {
+    slug: "lp-roda-contacao",
+    subject: "lingua-portuguesa",
+    theme: "oralidade",
+    recommendedUsage: "Rodas de conversa, contação de histórias e mediação de diálogo.",
+    altText:
+      "Tapete circular com livro aberto, cartões e almofadas coloridas ao redor prontos para contação.",
+    colorProfile: ["surface-200", "primary-500", "secondary-400", "accent-300"],
+    draw: (canvas, helpers) =>
+      drawStoryCircle(canvas, helpers, [
+        "surface-200",
+        "primary-500",
+        "secondary-400",
+        "accent-300",
+      ]),
+  },
+  {
+    slug: "lp-audio-fones",
+    subject: "lingua-portuguesa",
+    theme: "oralidade",
+    recommendedUsage:
+      "Atividades de escuta ativa, registro de relatos orais e produção de podcasts.",
+    altText: "Fone acolchoado com arco azul, microfone lateral e ondas sonoras coloridas.",
+    colorProfile: ["calm-200", "primary-600", "surface-200", "accent-400"],
+    draw: (canvas, helpers) =>
+      drawListeningHeadset(canvas, helpers, [
+        "calm-200",
+        "primary-600",
+        "surface-200",
+        "accent-400",
+      ]),
   },
   {
     slug: "cn-material-lupa",
