@@ -22,6 +22,7 @@
     "db:seed": "prisma db seed",
     "content:assets": "tsx scripts/generate-ef01-assets.ts",
     "content:lint": "tsx scripts/content.ts lint",
+    "content:report": "tsx scripts/content.ts report",
     "content:build": "pnpm content:assets && tsx scripts/content.ts build",
     "bncc:validate": "tsx scripts/validate-content.ts",
     "bncc:build": "tsx scripts/bncc.ts",
