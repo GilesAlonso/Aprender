@@ -86,6 +86,7 @@ Três scripts foram adicionados ao `package.json`:
 | Comando               | Descrição                                                                                                    |
 | --------------------- | ------------------------------------------------------------------------------------------------------------ |
 | `pnpm content:lint`   | Valida os arquivos em `data/content/raw`, checando schema, BNCC e unicidade.                                 |
+| `pnpm content:report` | Gera um relatório de cobertura com totais por etapa/componente, códigos BNCC e distribuição de dificuldade.  |
 | `pnpm content:assets` | Regenera as ilustrações e ícones EF01 em `public/assets/ef01` e atualiza `data/assets/ef01-manifest.json`.   |
 | `pnpm content:build`  | Executa o lint, regenera os assets EF01 e gera `modules.json`, `interactive-activities.json` e `index.json`. |
 | `pnpm check`          | Agora executa `content:lint`, `lint`, `content:build --no-write`, `type-check` e `test`.                     |
@@ -107,6 +108,51 @@ pnpm content:build --subject=lingua-portuguesa --stage=ef01 --no-write
 ```
 
 Caso algum slug informado seja desconhecido, o lint interrompe imediatamente com erro para evitar falsos positivos. Utilize `--no-write` quando quiser inspecionar um recorte do workspace sem sobrescrever os artefatos completos em `data/content/`.
+
+### Relatório de cobertura BNCC
+
+O comando `pnpm content:report` utiliza os mesmos filtros de estágio, componente e módulos para gerar um sumário auditável com:
+
+- totais de módulos e atividades por etapa/componente curricular;
+- distribuição de dificuldade (`INICIAR`, `PRATICAR`, `DOMINAR`);
+- frequência de códigos e habilidades BNCC em todas as atividades filtradas.
+
+Exemplo para EF01 de Língua Portuguesa:
+
+```bash
+pnpm content:report --stage=ef01 --subject=lingua-portuguesa
+```
+
+```
+Resumo por etapa/componente curricular:
+Stage  Subject            Modules  Activities
+-----  -----------------  -------  ----------
+ef01   lingua-portuguesa       11         137
+TOTAL                          11         137
+
+Distribuição de dificuldade:
+INICIAR   41
+PRATICAR  51
+DOMINAR   45
+
+Cobertura por código BNCC:
+EF01LP01   6
+EF01LP02   7
+EF01LP03   6
+EF01LP04   7
+EF01LP05   6
+...
+
+Cobertura por habilidade BNCC:
+EF01LP01  13
+EF01LP02  15
+EF01LP03   7
+EF01LP04   7
+EF01LP05   6
+...
+```
+
+Use os flags `--format=json` (ou `--json`) para consumir os resultados em pipelines automatizados. Combine com `--fail-under-modules` e `--fail-under-activities` para quebrar o build caso um lote não atinja o volume mínimo de módulos ou atividades esperado. A recomendação é rodar o relatório antes de promover novos lotes para produção, garantindo que a cobertura anunciada esteja alinhada com os limites acordados.
 
 Para fluxo diário:
 
