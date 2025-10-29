@@ -23,8 +23,10 @@ export type LintResult = {
 
 export type LintOptions = {
   rootDir?: string;
+  stage?: string;
+  subjectSlug?: string;
+  modules?: string[];
 };
-
 
 const addIssue = (collection: LintIssue[], issue: LintIssue) => {
   collection.push(issue);
@@ -183,7 +185,12 @@ export const lintWorkspace = (options: LintOptions = {}): LintResult => {
   let modules: ContentModuleDocument[] = [];
 
   try {
-    modules = loadWorkspace({ rootDir: options.rootDir });
+    modules = loadWorkspace({
+      rootDir: options.rootDir,
+      stage: options.stage,
+      subjectSlug: options.subjectSlug,
+      modules: options.modules,
+    });
   } catch (error) {
     const message = error instanceof Error ? error.message : String(error);
     const fatalIssue: LintIssue = {

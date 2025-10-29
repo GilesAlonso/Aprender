@@ -26,6 +26,9 @@ const printIssues = (issues: LintIssue[]): void => {
 type ParsedOptions = {
   rootDir?: string;
   writeToDisk?: boolean;
+  stage?: string;
+  subjectSlug?: string;
+  modules?: string[];
   args: string[];
 };
 
@@ -33,29 +36,111 @@ const parseOptions = (input: string[]): ParsedOptions => {
   const args: string[] = [];
   let rootDir: string | undefined;
   let writeToDisk: boolean | undefined;
+  let stage: string | undefined;
+  let subjectSlug: string | undefined;
+  const moduleSlugs: string[] = [];
 
-  for (let index = 0; index < input.length; index += 1) {
-    const value = input[index];
-
-    if (value === "--root" || value === "-r") {
-      const next = input[index + 1];
-      if (!next) {
-        throw new Error("O parâmetro --root requer um caminho.");
+  const readValue = (
+    flag: string,
+    inlineValue: string | undefined,
+    currentIndex: number
+  ): { value: string; nextIndex: number } => {
+    if (inlineValue !== undefined) {
+      if (inlineValue.trim().length === 0) {
+        throw new Error(`O parâmetro ${flag} requer um valor.`);
       }
-      rootDir = path.resolve(next);
-      index += 1;
-      continue;
+      return { value: inlineValue, nextIndex: currentIndex };
     }
 
-    if (value === "--no-write") {
+    const next = input[currentIndex + 1];
+    if (!next) {
+      throw new Error(`O parâmetro ${flag} requer um valor.`);
+    }
+
+    return { value: next, nextIndex: currentIndex + 1 };
+  };
+
+  for (let index = 0; index < input.length; index += 1) {
+    const token = input[index];
+    let flag = token;
+    let inlineValue: string | undefined;
+
+    if ((token.startsWith("--") || token.startsWith("-")) && token.includes("=")) {
+      [flag, inlineValue] = token.split("=", 2);
+    }
+
+    if (flag === "--no-write") {
+      if (inlineValue !== undefined) {
+        throw new Error("O parâmetro --no-write não aceita valor.");
+      }
       writeToDisk = false;
       continue;
     }
 
-    args.push(value);
+    if (flag === "--root" || flag === "-r") {
+      const { value, nextIndex } = readValue(flag, inlineValue, index);
+      rootDir = path.resolve(value);
+      index = nextIndex;
+      continue;
+    }
+
+    if (flag === "--stage") {
+      const { value, nextIndex } = readValue(flag, inlineValue, index);
+      const trimmed = value.trim();
+      if (trimmed.length === 0) {
+        throw new Error("O parâmetro --stage requer um valor.");
+      }
+      stage = trimmed;
+      index = nextIndex;
+      continue;
+    }
+
+    if (flag === "--subject") {
+      const { value, nextIndex } = readValue(flag, inlineValue, index);
+      const trimmed = value.trim();
+      if (trimmed.length === 0) {
+        throw new Error("O parâmetro --subject requer um valor.");
+      }
+      subjectSlug = trimmed;
+      index = nextIndex;
+      continue;
+    }
+
+    if (flag === "--modules") {
+      const { value, nextIndex } = readValue(flag, inlineValue, index);
+      const slugs = value
+        .split(",")
+        .map((slug) => slug.trim())
+        .filter((slug) => slug.length > 0);
+
+      if (slugs.length === 0) {
+        throw new Error("O parâmetro --modules requer uma lista de slugs separados por vírgula.");
+      }
+
+      moduleSlugs.push(...slugs);
+      index = nextIndex;
+      continue;
+    }
+
+    args.push(token);
   }
 
-  return { rootDir, writeToDisk, args };
+  const modules =
+    moduleSlugs.length > 0
+      ? Array.from(
+          moduleSlugs
+            .reduce<Map<string, string>>((accumulator, slug) => {
+              const normalized = slug.toLowerCase();
+              if (!accumulator.has(normalized)) {
+                accumulator.set(normalized, slug);
+              }
+              return accumulator;
+            }, new Map<string, string>())
+            .values()
+        )
+      : undefined;
+
+  return { rootDir, writeToDisk, stage, subjectSlug, modules, args };
 };
 
 const summarizeBuild = (output: BuildOutput): void => {
@@ -66,7 +151,12 @@ const summarizeBuild = (output: BuildOutput): void => {
 };
 
 const runLint = (options: ParsedOptions): number => {
-  const result = lintWorkspace({ rootDir: options.rootDir });
+  const result = lintWorkspace({
+    rootDir: options.rootDir,
+    stage: options.stage,
+    subjectSlug: options.subjectSlug,
+    modules: options.modules,
+  });
 
   if (result.errors.length > 0) {
     console.log("❌ Falhas de validação encontradas:\n");
@@ -101,6 +191,9 @@ const runBuild = (options: ParsedOptions): number => {
   const output = buildWorkspace({
     rootDir: options.rootDir,
     writeToDisk: options.writeToDisk,
+    stage: options.stage,
+    subjectSlug: options.subjectSlug,
+    modules: options.modules,
   });
 
   summarizeBuild(output);
@@ -109,7 +202,7 @@ const runBuild = (options: ParsedOptions): number => {
 
 const printHelp = (): void => {
   console.log(
-    `Uso: pnpm content:<comando> [opções]\n\nComandos disponíveis:\n  lint    Valida o conteúdo bruto sob data/content/raw\n  build   Valida e compila o conteúdo para JSON consumível pela aplicação\n\nOpções:\n  --root <caminho>   Altera o diretório raiz do workspace (padrão: data/content/raw)\n  --no-write         Durante o build, evita escrita em disco (somente saída no console)\n`
+    `Uso: pnpm content:<comando> [opções]\n\nComandos disponíveis:\n  lint    Valida o conteúdo bruto sob data/content/raw\n  build   Valida e compila o conteúdo para JSON consumível pela aplicação\n\nOpções:\n  --root <caminho>         Altera o diretório raiz do workspace (padrão: data/content/raw)\n  --stage <slug>           Limita o processamento a um estágio específico (ex: ef01)\n  --subject <slug>         Limita o processamento a um componente curricular (ex: lingua-portuguesa)\n  --modules=a,b            Avalia apenas os módulos informados (slugs separados por vírgula)\n  --no-write               Durante o build, evita escrita em disco (somente saída no console)\n`
   );
 };
 
